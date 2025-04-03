@@ -63,7 +63,7 @@ export default function Footer() {
                 </div>
             </div>
             {/* Header for small screens */}
-            <div className='lg:hidden md:hidden flex flex-col w-full items-center bg-[#252865] h-[150px]'>
+            <div className='lg:hidden md:hidden flex flex-col w-full items-center bg-[#252865] h-[100px]'>
                 
             </div>
         </footer>
