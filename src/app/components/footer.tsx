@@ -56,7 +56,7 @@ export default function Footer() {
                         </div>
                     </div>
                 </div>
-                <div className='flex flex-row items-center justify-between gap-6'>
+                <div className='flex flex-row items-center justify-between gap-12'>
                     <p className='text-[18px] text-center'>Alver Power Systems Ltd &copy; 2022. All rights reserved.</p>
                     <p className='text-[18px] text-center hover:underline'>Privacy</p>
                     <p className='text-[18px] text-center hover:underline'>Terms</p>
