@@ -18,11 +18,11 @@ export default function Footer() {
                         <p className='text-[18px] text-center'>Monday - Friday</p>
                         <p className='text-[18px] text-center'>8 AM - 1PM (Saturday 8AM - 1PM)</p>
                     </div>
-                    <div className='border border-white w-[328px] h-[144px] flex flex-col justify-center'>
+                    <div className='border border-white w-[328px] h-[144px] flex flex-col items-center'>
                         <MapPin size={31} className='text-red'/>
                         <p className='text-[18px] text-center'>Garden estate, along Garden estate rd Nairobi, Kenya</p>
                     </div>
-                    <div className='border border-white w-[328px] h-[144px] flex flex-col justify-center'>
+                    <div className='border border-white w-[328px] h-[144px] flex flex-col items-center'>
                         <p className='text-[18px] text-center'>Visit Us on</p>
                         <div className='flex flex-row w-full items-center justify-between'>
                             <Image
@@ -30,28 +30,28 @@ export default function Footer() {
                                 alt='Twitter Icon'
                                 width={48}
                                 height={48}
-                                className='hover:border hover:border-white'
+                                className='hover:border hover:border-white rounded-full'
                             />
                             <Image
                                 src={facebook}
                                 alt='Facebook Icon'
                                 width={48}
                                 height={48}
-                                className='hover:border hover:border-white'
+                                className='hover:border hover:border-white rounded-full'
                             />
                             <Image
                                 src={instagram}
                                 alt='Instagram Icon'
                                 width={48}
                                 height={48}
-                                className='hover:border hover:border-white'
+                                className='hover:border hover:border-white rounded-full'
                             />
                             <Image
                                 src={linkedin}
                                 alt='Linkedin Icon'
                                 width={48}
                                 height={48}
-                                className='hover:border hover:border-white'
+                                className='hover:border hover:border-white rounded-full'
                             />
                         </div>
                     </div>
