@@ -30,28 +30,28 @@ export default function Footer() {
                                 alt='Twitter Icon'
                                 width={48}
                                 height={48}
-                                className='hover:border hover:border-white rounded-full'
+                                className='hover:border hover:border-white hover:rounded-full hover:p-2'
                             />
                             <Image
                                 src={facebook}
                                 alt='Facebook Icon'
                                 width={48}
                                 height={48}
-                                className='hover:border hover:border-white rounded-full'
+                                className='hover:border hover:border-white hover:rounded-full hover:p-2'
                             />
                             <Image
                                 src={instagram}
                                 alt='Instagram Icon'
                                 width={48}
                                 height={48}
-                                className='hover:border hover:border-white rounded-full'
+                                className='hover:border hover:border-white hover:rounded-full hover:p-2'
                             />
                             <Image
                                 src={linkedin}
                                 alt='Linkedin Icon'
                                 width={48}
                                 height={48}
-                                className='hover:border hover:border-white rounded-full'
+                                className='hover:border hover:border-white hover:rounded-full hover:p2'
                             />
                         </div>
                     </div>
