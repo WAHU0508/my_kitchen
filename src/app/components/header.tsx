@@ -1,5 +1,7 @@
 'use client';
 import React, { useState } from 'react';
+import { usePathname } from 'next/navigation';
+import Link from 'next/link';
 import Image from 'next/image';
 import logo from '../assets/logo2.jpg';
 import { Menu, Clock } from 'lucide-react';
@@ -11,7 +13,8 @@ import linkedin from '../svgs/linkedin.svg';
 
 export default function Header() {
     const [isOpen, setIsOpen] = useState(false);
-
+    const pathname = usePathname();
+    
     return (
         <header className='w-full mb-4 flex items-center justify-center'>
             {/* Header for large and medium screens */}
@@ -24,12 +27,38 @@ export default function Header() {
                     className='w-[150px] h-[48px]'
                 />
                 <div className='flex flex-row gap-6 text-[15px] text-black items-center justify-center'>
-                    <p className='hover:text-[#252865] hover:underline cursor-pointer'>Home</p>
-                    <p className='hover:text-[#252865] hover:underline cursor-pointer'>About Us</p>
-                    <p className='hover:text-[#252865] hover:underline cursor-pointer'>
-                        Products & Service <span className='text-center'>&#8964;</span>
-                    </p>
-                    <p className='hover:text-[#252865] hover:underline cursor-pointer'>Contact Us</p>
+                    <Link
+                          href="/"
+                          className={`cursor-pointer hover:text-[#252865] hover:underline ${
+                            pathname === '/' ? 'text-red-600 underline' : 'text-black'
+                          }`}
+                        >
+                          Home
+                    </Link>
+                    <Link
+                          href="/about"
+                          className={`cursor-pointer hover:text-[#252865] hover:underline ${
+                            pathname === '/about_us' ? 'text-red-600 underline' : 'text-black'
+                          }`}
+                        >
+                          About Us
+                    </Link>
+                    <Link
+                          href="/products"
+                          className={`cursor-pointer hover:text-[#252865] hover:underline ${
+                            pathname === '/products_and_services' ? 'text-red-600 underline' : 'text-black'
+                          }`}
+                        >
+                          Products & Services
+                    </Link>
+                    <Link
+                          href="/contact"
+                          className={`cursor-pointer hover:text-[#252865] hover:underline ${
+                            pathname === '/contact_us' ? 'text-red-600 underline' : 'text-black'
+                          }`}
+                        >
+                          Contact Us
+                    </Link>
                 </div>
             </div>
 
@@ -73,10 +102,38 @@ export default function Header() {
                                 className='w-[120px] h-[38px] mt-[22px] mb-[20px]'
                             />
                             <ul className="space-y-[20px]">
-                                <li><a href="#" className="border-b border-black/10 flex items-center justify-center w-[146px] h-[22px] text-[12px] text-black">Home</a></li>
-                                <li><a href="#" className="border-b border-black/10 flex items-center justify-center w-[146px] h-[22px] text-[12px] text-black">About</a></li>
-                                <li><a href="#" className="border-b border-black/10 flex items-center justify-center w-[146px] h-[22px] text-[12px] text-black">Products & Services</a></li>
-                                <li><a href="#" className="border-b border-black/10 flex items-center justify-center w-[146px] h-[22px] text-[12px] text-black">Contact</a></li>
+                                <li><Link
+                                        href="/"
+                                        className={`border-b border-black/10 flex items-center justify-center w-[146px] h-[22px] text-[12px] ${
+                                          pathname === '/' ? 'text-red-600' : 'text-black'
+                                        }`}>
+                                        Home
+                                    </Link>
+                                </li>
+                                <li><Link
+                                        href="/"
+                                        className={`border-b border-black/10 flex items-center justify-center w-[146px] h-[22px] text-[12px] ${
+                                          pathname === '/about_us' ? 'text-red-600' : 'text-black'
+                                        }`}>
+                                        About Us
+                                    </Link>
+                                </li>
+                                <li><Link
+                                        href="/"
+                                        className={`border-b border-black/10 flex items-center justify-center w-[146px] h-[22px] text-[12px] ${
+                                          pathname === '/products_and_services' ? 'text-red-600' : 'text-black'
+                                        }`}>
+                                        Products & Services
+                                    </Link>
+                                </li>
+                                <li><Link
+                                        href="/"
+                                        className={`border-b border-black/10 flex items-center justify-center w-[146px] h-[22px] text-[12px] ${
+                                          pathname === '/contact_us' ? 'text-red-600' : 'text-black'
+                                        }`}>
+                                        Contact Us
+                                    </Link>
+                                </li>
                             </ul>
                         </div>
                         {/* Footer section */}
