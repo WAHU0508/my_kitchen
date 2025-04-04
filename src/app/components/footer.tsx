@@ -1,6 +1,6 @@
 import React from 'react'
 import Image from 'next/image'
-import { Clock, MapPin } from "lucide-react"
+import { Clock } from "lucide-react"
 import mapPin from "../svgs/mapPin.svg"
 import twitter from '../svgs/twitter.svg'
 import facebook from '../svgs/facebook.svg';
