@@ -2,10 +2,10 @@
 
 import Image from 'next/image';
 import { useEffect, useState } from 'react';
-import solarpanelImg from '../assets/solarpanel.jpg';
-import electricalsImg from '../assets/electricals.jpg';
-import switchboardImg from '../assets/switchboard.jpg';
-import avrImg from '../assets/avr.jpg';
+import solarpanelImg from '../assets/solarpanel.png';
+import electricalsImg from '../assets/electricals.png';
+import switchboardImg from '../assets/switchboard.png'
+import avrImg from '../assets/avr.png';
 
 const images = [solarpanelImg, electricalsImg, switchboardImg, avrImg];
 
