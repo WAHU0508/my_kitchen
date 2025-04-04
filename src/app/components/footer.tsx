@@ -2,9 +2,10 @@ import React from 'react'
 import Image from 'next/image'
 import { Clock, MapPin } from "lucide-react"
 import twitter from '../svgs/twitter.svg'
-import facebook from '../svgs/facebook.svg'
-import instagram from '../svgs/instagram.svg'
-import linkedin from '../svgs/linkedin.svg'
+import facebook from '../svgs/facebook.svg';
+import instagram from '../svgs/instagram.svg';
+import linkedin from '../svgs/linkedin.svg';
+import logo from '../svgs/logo.svg';
     
 
 export default function Footer() {
@@ -63,8 +64,14 @@ export default function Footer() {
                 </div>
             </div>
             {/* Header for small screens */}
-            <div className='lg:hidden md:hidden flex flex-col w-full items-center bg-[#252865] h-[100px]'>
-                
+            <div className='lg:hidden md:hidden flex flex-col w-full items-center justify-between bg-[#252865] h-[70px]'>
+               <Image
+                   src={logo}
+                   alt='Alver Logo'
+                   width={24}
+                   height={24}
+                />
+                <p className='text-[14px] text-center'>Alver Power Systems Ltd &copy; 2022. All rights reserved.</p>
             </div>
         </footer>
     )
