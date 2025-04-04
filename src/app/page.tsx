@@ -86,19 +86,23 @@ We specialize in high-quality electrical installations, solar energy solutions a
         </div>
         
         {/*Get To Know Us*/}
-        <div className='flex flex-col'>
-            <div className='w-full flex flex-row lg:items-center lg:justify-center md:items-center md:justify-center'>
+        <div className='flex flex-col mt-[40px]'>
+            <div className='w-full flex flex-row items-center lg:items-center lg:justify-center md:items-center md:justify-center'>
               <div className="w-[25px] h-0 top-[745px] left-[625px] bg-[#D9D9D9] border-[5px] border-[#252865]"></div>
               <div className="text-black font-inter font-normal text-[14px] lg:text-[24px] md:text-[24px]">
                 Get to know us
               </div>
+            </div>
+            <div className=" w-full flex flex-row lg:items-center lg:justify-center md:items-center md:justify-center gap-[10px] text-[16px] lg:text-[32px] md:text-[28px]">
+              <p className='text-[#FF0105]'>Who</p>
+              <p className='text-[#252865]'>We are</p>
             </div>
             <p className='w-full lg:w-[1186px] flex lg:items-center lg:justify-center md:items-center md:justify-center text-center text-[#000000] text-[12px] lg:text-[24px] md:text-[20px]'>Alver power systems is a manufacturing company that  specializes in electrical installations solar energy solutions and switchboard manufacturing.
                 Mission: Our mission is to build lasting, mutually beneficial relationships with each of our esteemed clients by continually exceeding their expectations and earning their confidence.
                 Vision: Being the most skilled and reputable commercial electrical contractor service provider in east Africa 
             </p>
           
-            <div className='w-full flex items-center justify-center'>
+            <div className='w-full flex items-center justify-center mt-[20px]'>
               <div className="relative w-[123px] h-[23px] lg:w-[290px] lg:h-[46px] md:w-[290px] md:h-[46px]">
                 {/* Rectangle 9 - blurred background box */}
                 <div className="absolute w-[123px] h-[23px] lg:w-[290px] lg:h-[46px] md:w-[290px] md:h-[46px] inset-0 border-[2px] border-[#252865] rounded-[15px] blur-[8.25px]"></div>
@@ -115,6 +119,7 @@ We specialize in high-quality electrical installations, solar energy solutions a
                 </button>
               </div>
             </div>
+
           
         </div>
       </div>
