@@ -44,17 +44,21 @@ export default function Header() {
                 </div>
             </div>
 
-            {/* Side Modal */}
+            {/* Modal and Overlay */}
             {isOpen && (
                 <div className="fixed inset-0 z-50 flex">
-                    {/* Overlay (click outside to close) */}
+                    {/* Overlay */}
                     <div
-                        className="fixed inset-0 bg-black opacity-40"
+                        className="fixed inset-0 bg-black opacity-40 transition-opacity duration-300"
                         onClick={() => setIsOpen(false)}
                     ></div>
 
-                    {/* Modal */}
-                    <div className="relative bg-white w-[262px] h-auto shadow-xl z-50 p-4 transition-all">
+                    {/* Modal with slide-in animation */}
+                    <div
+                        className={`fixed left-0 top-0 h-full w-[262px] bg-white shadow-xl z-50 p-4 transition-transform duration-300 transform ${
+                            isOpen ? 'translate-x-0' : '-translate-x-full'
+                        }`}
+                    >
                         <h2 className="text-lg font-semibold mb-4">Menu</h2>
                         <ul className="space-y-4">
                             <li><a href="#" className="text-blue-600 hover:underline">Home</a></li>
