@@ -64,14 +64,14 @@ export default function Footer() {
                 </div>
             </div>
             {/* Header for small screens */}
-            <div className='lg:hidden md:hidden flex flex-col w-full items-center justify-between bg-[#252865] h-[70px]'>
+            <div className='lg:hidden md:hidden flex flex-col w-full items-center justify-between bg-[#252865] h-[60px]'>
                <Image
                    src={logo}
                    alt='Alver Logo'
                    width={24}
                    height={24}
                 />
-                <p className='text-[10px] text-white'>Alver Power Systems Ltd &copy; 2022. All rights reserved.</p>
+                <p className='text-[14px] text-white'>Alver Power Systems Ltd &copy; 2022. All rights reserved.</p>
             </div>
         </footer>
     )
