@@ -6,18 +6,7 @@ import solarpanelImg from './assets/solarpanel.png'
 import avrImg from './assets/AVR.png'
 import Carousel from './components/image_carousel'
 
-export default function HomePage() {
-  // const images = [solarpanelImg, electricalsImg, switchboardImg, avrImg];
-  // const [currentIndex, setCurrentIndex] = useState(0);
-
-  // useEffect(() => {
-  //   const interval = setInterval(() => {
-  //     setCurrentIndex(prev => (prev + 1) % images.length);
-  //   }, 5000); // Change every 5 seconds
-
-  //   return () => clearInterval(interval);
-  // }, []);
-  
+export default function HomePage() { 
   return (
     <section className='w-full flex items-center justify-center'>
       <div className='border border-black lg:p-4 md:p-2 p-1 lg:w-[1300px] md:w-full w-full flex flex-col'>
@@ -54,6 +43,10 @@ export default function HomePage() {
         </div>
         
         <h1 className='w-full flex lg:items-center lg:justify-center md:items-center md:justify-center text-[#FF0105] text-[16px] lg:text-[32px] md:text-[28px]'>Powering Innovation, Ensuring Reliability</h1>
+        <p className='w-full lg:w-[1186px] flex lg:items-center lg:justify-center md:items-center md:justify-center text-[#FF0105] text-[12px] lg:text-[24px] md:text-[20px]'>
+          Alver Power Systems Ltd is your trusted partner for innovative electrical and renewable energy solutions across Kenya and East Africa.
+We specialize in high-quality electrical installations, solar energy solutions and custom switchboard manufacturing. We also offer end to end services that include engineering, procurement, construction (EPC) and maintenance.
+        </p>
       </div>
     </section>
   );
