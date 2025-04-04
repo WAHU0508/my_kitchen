@@ -1,9 +1,12 @@
-import React from 'react';
+'use client';
+import React, { useState } from 'react';
 import Image from 'next/image';
 import logo from '../assets/logo2.jpg';
 import { Menu } from 'lucide-react';
 
 export default function Header() {
+    const [isOpen, setIsOpen] = useState(false);
+    
     return (
         <header className='w-full mb-4 flex items-center justify-center'>
             {/* Header for large and medium screens*/}
@@ -24,8 +27,8 @@ export default function Header() {
             </div>
             {/* Header for small screens */}
             <div className='lg:hidden md:hidden flex flex-row w-full items-center gap-2 ml-2'>
-                <button>
-                    <Menu size={31}/>
+                <button onClick={() => setIsOpen(true)}>
+                  <Menu size={31} />
                 </button>
                 <div className='border border-[#0000003D] flex items-center justify-center shadow-xl rounded-[10px] w-full h-[40px]'>
                     <Image
@@ -36,6 +39,31 @@ export default function Header() {
                         className='w-[120px] h-[38px]'
                     />
                 </div>
+                
+                {/* Side Modal */}
+                  {isOpen && (
+                    <div className="fixed inset-0 z-50 flex">
+                      {/* Overlay */}
+                    <div
+                        className="fixed inset-0 bg-black opacity-40"
+                        onClick={() => setIsOpen(false)}
+                    ></div>
+                {/* Modal */}
+                  <div className="relative bg-white w-[262px] h-auto shadow-xl z-50 p-4 transition-all">
+                    <div className="flex justify-between items-center mb-4">
+                      <h2 className="text-lg font-semibold">Menu</h2>
+                      <button onClick={() => setIsOpen(false)}>
+                        <X size={24} />
+                      </button>
+                    </div>
+        
+                    {/* Your menu content goes here */}
+                    <ul className="space-y-4">
+                      <li><a href="#" className="text-blue-600 hover:underline">Home</a></li>
+                      <li><a href="#" className="text-blue-600 hover:underline">About</a></li>
+                      <li><a href="#" className="text-blue-600 hover:underline">Services</a></li>
+                      <li><a href="#" className="text-blue-600 hover:underline">Contact</a></li>
+                    </ul>
             </div>
         </header>
     );
