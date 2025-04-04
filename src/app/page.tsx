@@ -5,6 +5,7 @@ import electricalsImg from './assets/electricals.png'
 import switchboardImg from './assets/switchboard.png'
 import solarpanelImg from './assets/solarpanel.png'
 import avrImg from './assets/AVR.png'
+import Carousel from './components/image_carousel.tsx'
 
 export default function HomePage() {
   const images = [solarpanelImg, electricalsImg, switchboardImg, avrImg];
@@ -49,6 +50,9 @@ export default function HomePage() {
           />
         </div>
         {/*Small Screen*/}
+        <div className='lg:hidden md:hidden flex items-center justify-center'>
+          <Carousel />
+        </div>
     </div>
       </div>
     </section>
