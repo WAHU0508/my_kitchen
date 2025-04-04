@@ -10,7 +10,7 @@ export default function HomePage() {
     <section className='w-full flex items-center justify-center'>
       <div className='border border-black lg:p-4 md:p-2 p-1 lg:w-[1300px] md:w-full w-full flex flex-col'>
         {/*Image section*/}
-        <div className='hidden lg:flex lg:flex-row gap-4 md:flex md:flex-row items-center'>
+        <div className='hidden lg:flex lg:flex-row gap-4 md:flex md:flex-row justify-center'>
           <Image 
             src={solarpanelImg}
             alt='Solar Panels Image'
