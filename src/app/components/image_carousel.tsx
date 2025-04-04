@@ -1,10 +1,10 @@
 'use client';
 import React from 'react';
 import Image from 'next/image';
-import electricalsImg from './assets/electricals.png'
-import switchboardImg from './assets/switchboard.png'
-import solarpanelImg from './assets/solarpanel.png'
-import avrImg from './assets/AVR.png'
+import electricalsImg from '../assets/electricals.png'
+import switchboardImg from '../assets/switchboard.png'
+import solarpanelImg from '../assets/solarpanel.png'
+import avrImg from '../assets/AVR.png'
 
 export default function Carousel() {
   return (
