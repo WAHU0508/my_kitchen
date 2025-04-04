@@ -79,12 +79,16 @@ export default function Header() {
                                 <li><a href="#" className="border-b border-black/10 flex items-center justify-center w-[146px] h-[22px] text-[12px] text-black">Contact</a></li>
                             </ul>
                         </div>
+                        {/* Footer section */}
                         <div className='flex flex-col items-center justify-between w-full h-[384px] bg-[#252865]'>
+                            {/* Operating Hours Section */}
                             <div className='w-[193px] h-[108px] flex flex-col items-center justify-between'>
                                 <Clock size={24} className='text-white'/>
                                 <p className='text-[12px] text-center'>Monday - Friday</p>
                                 <p className='text-[12px] text-center'>8 AM - 1PM (Saturday 8AM - 1PM)</p>
                             </div>
+                            
+                            {/* Location section */}
                             <div className='w-[232px] h-[72px] flex flex-col items-center justify-between'>
                                 <Image
                                     src={mapPin}
@@ -94,6 +98,8 @@ export default function Header() {
                                 />
                                 <p className='text-[12px] text-center'>Garden estate, along Garden estate rd Nairobi, Kenya</p>
                             </div>
+                            
+                            {/* Social Media section */}
                             <div className='w-[186px] h-[69px] flex flex-col items-center justify-between'>
                                 <p className='text-[12px] text-center'>Visit Us on</p>
                                 <div className='flex flex-row w-full items-center justify-between'>
@@ -130,7 +136,6 @@ export default function Header() {
                         </div>
                         </div>
                     </div>
-                </div>
             )}
         </header>
     );
