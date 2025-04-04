@@ -48,7 +48,8 @@ export default function HomePage() {
           Alver Power Systems Ltd is your trusted partner for innovative electrical and renewable energy solutions across Kenya and East Africa.
 We specialize in high-quality electrical installations, solar energy solutions and custom switchboard manufacturing. We also offer end to end services that include engineering, procurement, construction (EPC) and maintenance.
         </p>
-        <div className='w-full flex flex-row items-center justify-center lg:gap-[200px] md:gap-[150px] gap-[50px]'>
+        
+        <div className='w-full flex flex-row items-center justify-center lg:gap-[200px] md:gap-[150px] gap-[50px] mt-[20px]'>
           {/*Button 1*/}
           <div className="relative w-[123px] h-[23px] lg:w-[290px] lg:h-[46px] md:w-[290px] md:h-[46px]">
             {/* Rectangle 9 - blurred background box */}
