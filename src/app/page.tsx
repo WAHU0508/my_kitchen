@@ -1,4 +1,5 @@
-import React from "react";
+'use client';
+import React, { useEffect, useState } from 'react';
 import Image from 'next/image';
 import electricalsImg from './assets/electricals.png'
 import switchboardImg from './assets/switchboard.png'
@@ -6,11 +7,22 @@ import solarpanelImg from './assets/solarpanel.png'
 import avrImg from './assets/AVR.png'
 
 export default function HomePage() {
+  const images = [solarpanelImg, electricalsImg, switchboardImg, avrImg];
+  const [currentIndex, setCurrentIndex] = useState(0);
+
+  useEffect(() => {
+    const interval = setInterval(() => {
+      setCurrentIndex(prev => (prev + 1) % images.length);
+    }, 5000); // Change image every 5 seconds
+
+    return () => clearInterval(interval); // Clean up interval on unmount
+  }, []);
+  
   return (
     <section className='w-full flex items-center justify-center'>
       <div className='border border-black lg:p-4 md:p-2 p-1 lg:w-[1300px] md:w-full w-full flex flex-col'>
         {/*Image section*/}
-        <div className='hidden lg:flex lg:flex-row gap-4 md:flex md:flex-row justify-center'>
+        <div className='hidden lg:flex lg:flex-row lg:gap-6 md:flex md:flex-row gap-2 justify-center'>
           <Image 
             src={solarpanelImg}
             alt='Solar Panels Image'
@@ -36,7 +48,15 @@ export default function HomePage() {
             height={250}
           />
         </div>
-        
+        <div className='lg:hidden md:hidden w-full flex items-center'>
+          <Image
+            src={images[currentIndex]}
+            alt={`Slide ${currentIndex + 1}`}
+            width={300}
+            height={150}
+            className='transition-opacity duration-1000 ease-in-out'
+          />
+        </div>
       </div>
     </section>
   );
