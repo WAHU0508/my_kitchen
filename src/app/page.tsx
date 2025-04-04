@@ -8,16 +8,16 @@ import avrImg from './assets/AVR.png'
 import Carousel from './components/image_carousel.tsx'
 
 export default function HomePage() {
-  const images = [solarpanelImg, electricalsImg, switchboardImg, avrImg];
-  const [currentIndex, setCurrentIndex] = useState(0);
+  // const images = [solarpanelImg, electricalsImg, switchboardImg, avrImg];
+  // const [currentIndex, setCurrentIndex] = useState(0);
 
-  useEffect(() => {
-    const interval = setInterval(() => {
-      setCurrentIndex(prev => (prev + 1) % images.length);
-    }, 5000); // Change every 5 seconds
+  // useEffect(() => {
+  //   const interval = setInterval(() => {
+  //     setCurrentIndex(prev => (prev + 1) % images.length);
+  //   }, 5000); // Change every 5 seconds
 
-    return () => clearInterval(interval);
-  }, []);
+  //   return () => clearInterval(interval);
+  // }, []);
   
   return (
     <section className='w-full flex items-center justify-center'>
