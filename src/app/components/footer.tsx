@@ -13,14 +13,14 @@ export default function Footer() {
     return (
         <footer className='w-full mb-4 flex items-center justify-center'>
             {/* Header for large and medium screens*/}
-            <div className='hidden lg:flex lg:flex-col text-white md:flex md:fex-col items-center justify-between lg:px-[60px] lg:w-[1440px] md:w-full lg:h-[215px] md:h-[215px] bg-[#252865]'>
+            <div className='hidden lg:flex lg:flex-col text-white md:flex md:fex-col lg:items-center lg:justify-between lg:px-[60px] lg:w-[1440px] md:w-full lg:h-[215px] md:h-[215px] bg-[#252865]'>
                 <div className='flex flex-row justify-between gap-[10px] lg:gap-[50px]'>
-                    <div className='w-[321px] h-[137px] flex flex-col items-center justify-between'>
+                    <div className='lg:w-[321px] lg:h-[137px] flex flex-col items-center justify-between'>
                         <Clock size={31} className='text-white'/>
                         <p className='text-[18px] text-center'>Monday - Friday</p>
                         <p className='text-[18px] text-center'>8 AM - 1PM (Saturday 8AM - 1PM)</p>
                     </div>
-                    <div className='w-[386px] h-[144px] flex flex-col items-center justify-between'>
+                    <div className='lg:w-[386px] lg:h-[144px] flex flex-col items-center justify-between'>
                         <Image
                             src={mapPin}
                             width={31}
@@ -29,7 +29,7 @@ export default function Footer() {
                         />
                         <p className='text-[18px] text-center'>Garden estate, along Garden estate rd Nairobi, Kenya</p>
                     </div>
-                    <div className='w-[348px] h-[144px] flex flex-col items-center justify-between'>
+                    <div className='lg:w-[348px] lg:h-[144px] flex flex-col items-center justify-between'>
                         <p className='text-[18px] text-center'>Visit Us on</p>
                         <div className='flex flex-row w-full items-center justify-between'>
                             <Image
