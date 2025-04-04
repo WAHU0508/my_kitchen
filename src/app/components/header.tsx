@@ -2,14 +2,14 @@
 import React, { useState } from 'react';
 import Image from 'next/image';
 import logo from '../assets/logo2.jpg';
-import { Menu, X } from 'lucide-react';
+import { Menu } from 'lucide-react';
 
 export default function Header() {
     const [isOpen, setIsOpen] = useState(false);
 
     return (
         <header className='w-full mb-4 flex items-center justify-center'>
-            {/* Header for large and medium screens*/}
+            {/* Header for large and medium screens */}
             <div className='hidden border border-[#0000003D] lg:flex lg:flex-row md:flex md:flex-row items-center justify-between px-10 lg:w-[1250px] md:w-full lg:h-[50px] md:h-[50px] shadow-xl rounded-[20px]'>
                 <Image
                     src={logo}
@@ -47,7 +47,7 @@ export default function Header() {
             {/* Side Modal */}
             {isOpen && (
                 <div className="fixed inset-0 z-50 flex">
-                    {/* Overlay */}
+                    {/* Overlay (click outside to close) */}
                     <div
                         className="fixed inset-0 bg-black opacity-40"
                         onClick={() => setIsOpen(false)}
@@ -55,14 +55,7 @@ export default function Header() {
 
                     {/* Modal */}
                     <div className="relative bg-white w-[262px] h-auto shadow-xl z-50 p-4 transition-all">
-                        <div className="flex justify-between items-center mb-4">
-                            <h2 className="text-lg font-semibold">Menu</h2>
-                            <button onClick={() => setIsOpen(false)}>
-                                <X size={24} />
-                            </button>
-                        </div>
-
-                        {/* Your menu content */}
+                        <h2 className="text-lg font-semibold mb-4">Menu</h2>
                         <ul className="space-y-4">
                             <li><a href="#" className="text-blue-600 hover:underline">Home</a></li>
                             <li><a href="#" className="text-blue-600 hover:underline">About</a></li>
