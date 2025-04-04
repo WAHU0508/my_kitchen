@@ -49,12 +49,29 @@ export default function HomePage() {
 We specialize in high-quality electrical installations, solar energy solutions and custom switchboard manufacturing. We also offer end to end services that include engineering, procurement, construction (EPC) and maintenance.
         </p>
         <div className='w-full flex flex-row items-center justify-center lg:gap-[200px] md:gap-[150px] gap-[50px]'>
-          <div className="relative w-[290px] h-[46px]">
+          {/*Button 1*/}
+          <div className="relative w-[123px] h-[23px] lg:w-[290px] lg:h-[46px] md:w-[290px] md:h-[46px]">
             {/* Rectangle 9 - blurred background box */}
-            <div className="absolute w-[290px] h-[46px] inset-0 border-[2px] border-[#252865] rounded-[15px] blur-[8.25px]"></div>
+            <div className="absolute w-[123px] h-[23px] lg:w-[290px] lg:h-[46px] md:w-[290px] md:h-[46px] inset-0 border-[2px] border-[#252865] rounded-[15px] blur-[8.25px]"></div>
             {/* Rectangle 8 - foreground box */}
-            <button className="absolute w-[290px] h-[46px] inset-0 border-[2px] border-[#252865] rounded-[15px] flex flex-row items-center justify center gap-2">
-              Explore
+            <button className="absolute w-[123px] h-[23px] lg:w-[290px] lg:h-[46px] md:w-[290px] md:h-[46px] text-[24px] inset-0 border-[2px] border-[#252865] rounded-[15px] flex flex-row items-center justify-center gap-2">
+              Explore our products
+              <Image
+                src={externalLink}
+                alt='Explore'
+                width={18}
+                height={18}
+              />
+            </button>
+          </div>
+
+          {/*Button 2*/}
+          <div className="relative w-[123px] h-[23px] lg:w-[290px] lg:h-[46px] md:w-[290px] md:h-[46px]">
+            {/* Rectangle 9 - blurred background box */}
+            <div className="absolute w-[123px] h-[23px] lg:w-[290px] lg:h-[46px] md:w-[290px] md:h-[46px] inset-0 border-[2px] border-[#252865] rounded-[15px] blur-[8.25px]"></div>
+            {/* Rectangle 8 - foreground box */}
+            <button className="absolute w-[123px] h-[23px] lg:w-[290px] lg:h-[46px] md:w-[290px] md:h-[46px] text-[24px] inset-0 border-[2px] border-[#252865] rounded-[15px] flex flex-row items-center justify-center gap-2">
+              Get a Quote
               <Image
                 src={externalLink}
                 alt='Explore'
