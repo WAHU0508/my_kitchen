@@ -54,13 +54,14 @@ We specialize in high-quality electrical installations, solar energy solutions a
             {/* Rectangle 9 - blurred background box */}
             <div className="absolute w-[123px] h-[23px] lg:w-[290px] lg:h-[46px] md:w-[290px] md:h-[46px] inset-0 border-[2px] border-[#252865] rounded-[15px] blur-[8.25px]"></div>
             {/* Rectangle 8 - foreground box */}
-            <button className="absolute w-[123px] h-[23px] lg:w-[290px] lg:h-[46px] md:w-[290px] md:h-[46px] text-[24px] inset-0 border-[2px] border-[#252865] rounded-[15px] flex flex-row items-center justify-center gap-2">
+            <button className="absolute w-[123px] h-[23px] lg:w-[290px] lg:h-[46px] md:w-[290px] md:h-[46px] text-[10px] lg:text-[24px] md:text-[24px] inset-0 border-[2px] border-[#252865] rounded-[15px] flex flex-row items-center justify-center gap-2">
               Explore our products
               <Image
                 src={externalLink}
                 alt='Explore'
                 width={18}
                 height={18}
+                className='w-[10px] h-[10px] lg:w-[18px] lg:h-[18px] md:w-[18px] md:h-[18px]'
               />
             </button>
           </div>
@@ -70,13 +71,14 @@ We specialize in high-quality electrical installations, solar energy solutions a
             {/* Rectangle 9 - blurred background box */}
             <div className="absolute w-[123px] h-[23px] lg:w-[290px] lg:h-[46px] md:w-[290px] md:h-[46px] inset-0 border-[2px] border-[#252865] rounded-[15px] blur-[8.25px]"></div>
             {/* Rectangle 8 - foreground box */}
-            <button className="absolute w-[123px] h-[23px] lg:w-[290px] lg:h-[46px] md:w-[290px] md:h-[46px] text-[24px] inset-0 border-[2px] border-[#252865] rounded-[15px] flex flex-row items-center justify-center gap-2">
+            <button className="absolute w-[123px] h-[23px] lg:w-[290px] lg:h-[46px] md:w-[290px] md:h-[46px] text-[10px] lg:text-[24px] md:text-[24px] inset-0 border-[2px] border-[#252865] rounded-[15px] flex flex-row items-center justify-center gap-2">
               Get a Quote
               <Image
                 src={externalLink}
-                alt='Explore'
+                alt='Get Quote'
                 width={18}
                 height={18}
+                className='w-[10px] h-[10px] lg:w-[18px] lg:h-[18px] md:w-[18px] md:h-[18px]'
               />
             </button>
           </div>
