@@ -49,11 +49,11 @@ export default function HomePage() {
 We specialize in high-quality electrical installations, solar energy solutions and custom switchboard manufacturing. We also offer end to end services that include engineering, procurement, construction (EPC) and maintenance.
         </p>
         <div className='w-full flex flex-row items-center justify-center lg:gap-[200px] md:gap-[150px] gap-[50px]'>
-          <div className="relative w-full h-full">
+          <div className="relative w-[290px] h-[46px]">
             {/* Rectangle 9 - blurred background box */}
-            <div className="absolute inset-0 border-[2px] border-[#252865] rounded-[15px] blur-[8.25px]"></div>
+            <div className="absolute w-[290px] h-[46px] inset-0 border-[2px] border-[#252865] rounded-[15px] blur-[8.25px]"></div>
             {/* Rectangle 8 - foreground box */}
-            <button className="absolute inset-0 border-[2px] border-[#252865] rounded-[15px] flex flex-row items-center justify center gap-2">
+            <button className="absolute w-[290px] h-[46px] inset-0 border-[2px] border-[#252865] rounded-[15px] flex flex-row items-center justify center gap-2">
               Explore
               <Image
                 src={externalLink}
