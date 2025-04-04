@@ -36,7 +36,7 @@ export default function Header() {
                           Home
                     </Link>
                     <Link
-                          href="/about"
+                          href="/about_us"
                           className={`cursor-pointer hover:text-[#252865] hover:underline ${
                             pathname === '/about_us' ? 'text-red-600 underline' : 'text-black'
                           }`}
@@ -44,7 +44,7 @@ export default function Header() {
                           About Us
                     </Link>
                     <Link
-                          href="/products"
+                          href="/products_and_services"
                           className={`cursor-pointer hover:text-[#252865] hover:underline ${
                             pathname === '/products_and_services' ? 'text-red-600 underline' : 'text-black'
                           }`}
@@ -52,7 +52,7 @@ export default function Header() {
                           Products & Services
                     </Link>
                     <Link
-                          href="/contact"
+                          href="/contact_us"
                           className={`cursor-pointer hover:text-[#252865] hover:underline ${
                             pathname === '/contact_us' ? 'text-red-600 underline' : 'text-black'
                           }`}
@@ -111,7 +111,7 @@ export default function Header() {
                                     </Link>
                                 </li>
                                 <li><Link
-                                        href="/"
+                                        href="/about_us"
                                         className={`border-b border-black/10 flex items-center justify-center w-[146px] h-[22px] text-[12px] ${
                                           pathname === '/about_us' ? 'text-red-600' : 'text-black'
                                         }`}>
@@ -119,7 +119,7 @@ export default function Header() {
                                     </Link>
                                 </li>
                                 <li><Link
-                                        href="/"
+                                        href="/products_and_services"
                                         className={`border-b border-black/10 flex items-center justify-center w-[146px] h-[22px] text-[12px] ${
                                           pathname === '/products_and_services' ? 'text-red-600' : 'text-black'
                                         }`}>
@@ -127,7 +127,7 @@ export default function Header() {
                                     </Link>
                                 </li>
                                 <li><Link
-                                        href="/"
+                                        href="/contact_us"
                                         className={`border-b border-black/10 flex items-center justify-center w-[146px] h-[22px] text-[12px] ${
                                           pathname === '/contact_us' ? 'text-red-600' : 'text-black'
                                         }`}>
