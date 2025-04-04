@@ -97,6 +97,7 @@ We specialize in high-quality electrical installations, solar energy solutions a
                 Mission: Our mission is to build lasting, mutually beneficial relationships with each of our esteemed clients by continually exceeding their expectations and earning their confidence.
                 Vision: Being the most skilled and reputable commercial electrical contractor service provider in east Africa 
             </p>
+          
             <div className='w-full flex items-center justify-center'>
               <div className="relative w-[123px] h-[23px] lg:w-[290px] lg:h-[46px] md:w-[290px] md:h-[46px]">
                 {/* Rectangle 9 - blurred background box */}
@@ -114,6 +115,7 @@ We specialize in high-quality electrical installations, solar energy solutions a
                 </button>
               </div>
             </div>
+          
         </div>
       </div>
     </section>
