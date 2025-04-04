@@ -52,6 +52,8 @@ export default function HomePage() {
         <div className='lg:hidden md:hidden flex items-center justify-center'>
           <Carousel />
         </div>
+        
+        <h1 className='w-full flex lg:items-center lg:justify-center md:items-center md:justify-center text-[#FF0105] text-[16px] lg:text-[32px] md:text-[28px]'>Powering Innovation, Ensuring Reliability</h1>
       </div>
     </section>
   );
