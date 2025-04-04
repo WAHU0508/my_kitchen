@@ -1,79 +1,70 @@
 'use client';
-import 'bootstrap/dist/css/bootstrap.min.css'
-import 'bootstrap/dist/js/bootstrap.bundle.min.js'
-import React from 'react';
-import Image from 'next/image';
-import electricalsImg from '../assets/electricals.png'
-import switchboardImg from '../assets/switchboard.png'
-import solarpanelImg from '../assets/solarpanel.png'
-import avrImg from '../assets/AVR.png'
 
-export default function Carousel() {
+import Image from 'next/image';
+import { useEffect, useState } from 'react';
+import solarpanelImg from '../assets/solarpanel.jpg';
+import electricalsImg from '../assets/electricals.jpg';
+import switchboardImg from '../assets/switchboard.jpg';
+import avrImg from '../assets/avr.jpg';
+
+const images = [solarpanelImg, electricalsImg, switchboardImg, avrImg];
+
+export default function TailwindCarousel() {
+  const [current, setCurrent] = useState(0);
+
+  useEffect(() => {
+    const interval = setInterval(() => {
+      setCurrent((prev) => (prev + 1) % images.length);
+    }, 5000); // 5 seconds interval
+
+    return () => clearInterval(interval);
+  }, [images.length]);
+
+  const nextSlide = () => {
+    setCurrent((current + 1) % images.length);
+  };
+
+  const prevSlide = () => {
+    setCurrent((current - 1 + images.length) % images.length);
+  };
+
   return (
-    <div
-      id="carouselExampleAutoplaying"
-      className="carousel slide"
-      data-bs-ride="carousel"
-    >
-      <div className="carousel-inner">
-        <div className="carousel-item active">
-          <Image
-            src={solarpanelImg}
-            alt="Slide 1"
-            className="d-block w-100"
-            width={350}
-            height={150}
-          />
-        </div>
-        <div className="carousel-item">
-          <Image
-            src={electricalsImg}
-            alt="Slide 2"
-            className="d-block w-100"
-            width={350}
-            height={150}
-          />
-        </div>
-        <div className="carousel-item">
-          <Image
-            src={switchboardImg}
-            alt="Slide 3"
-            className="d-block w-100"
-            width={350}
-            height={150}
-          />
-        </div>
-        <div className="carousel-item">
-          <Image
-            src={avrImg}
-            alt="Slide 4"
-            className="d-block w-100"
-            width={350}
-            height={150}
-          />
-        </div>
+    <div className="relative w-full max-w-md mx-auto overflow-hidden rounded-lg">
+      {/* Slide Container */}
+      <div
+        className="flex transition-transform duration-700 ease-in-out"
+        style={{ transform: `translateX(-${current * 100}%)` }}
+      >
+        {images.map((img, index) => (
+          <div key={index} className="min-w-full h-[150px] flex justify-center items-center">
+            <Image
+              src={img}
+              alt={`Slide ${index + 1}`}
+              width={350}
+              height={150}
+              className="object-cover"
+            />
+          </div>
+        ))}
       </div>
 
-      {/* Controls */}
+      {/* Prev Button */}
       <button
-        className="carousel-control-prev"
-        type="button"
-        data-bs-target="#carouselExampleAutoplaying"
-        data-bs-slide="prev"
+        onClick={prevSlide}
+        className="absolute top-1/2 left-2 -translate-y-1/2 bg-gray-800 bg-opacity-50 text-white px-3 py-1 rounded-full hover:bg-opacity-75 z-10"
+        aria-label="Previous Slide"
       >
-        <span className="carousel-control-prev-icon" aria-hidden="true"></span>
-        <span className="visually-hidden">Previous</span>
+        ‹
       </button>
+
+      {/* Next Button */}
       <button
-        className="carousel-control-next"
-        type="button"
-        data-bs-target="#carouselExampleAutoplaying"
-        data-bs-slide="next"
+        onClick={nextSlide}
+        className="absolute top-1/2 right-2 -translate-y-1/2 bg-gray-800 bg-opacity-50 text-white px-3 py-1 rounded-full hover:bg-opacity-75 z-10"
+        aria-label="Next Slide"
       >
-        <span className="carousel-control-next-icon" aria-hidden="true"></span>
-        <span className="visually-hidden">Next</span>
+        ›
       </button>
     </div>
-
-  )
+  );
 }
