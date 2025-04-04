@@ -15,7 +15,7 @@ export default function Header() {
     return (
         <header className='w-full mb-4 flex items-center justify-center'>
             {/* Header for large and medium screens */}
-            <div className='hidden border border-[#0000003D] lg:flex lg:flex-row md:flex md:flex-row items-center justify-between px-10 lg:w-[1250px] md:w-full lg:h-[50px] md:h-[50px] shadow-xl rounded-[20px]'>
+            <div className='hidden border border-[#0000003D] bg-[#000000] lg:flex lg:flex-row md:flex md:flex-row items-center justify-between px-10 lg:w-[1250px] md:w-full lg:h-[50px] md:h-[50px] shadow-xl rounded-[20px]'>
                 <Image
                     src={logo}
                     width={150}
@@ -34,7 +34,7 @@ export default function Header() {
             </div>
 
             {/* Header for small screens */}
-            <div className='lg:hidden md:hidden flex flex-row w-full items-center gap-2 ml-2'>
+            <div className='lg:hidden md:hidden flex flex-row w-full items-center gap-2 ml-2 bg-[#000000]'>
                 <button onClick={() => setIsOpen(true)}>
                     <Menu size={31} />
                 </button>
