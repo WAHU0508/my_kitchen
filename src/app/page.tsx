@@ -13,9 +13,9 @@ export default function HomePage() {
   useEffect(() => {
     const interval = setInterval(() => {
       setCurrentIndex(prev => (prev + 1) % images.length);
-    }, 5000); // Change image every 5 seconds
+    }, 5000); // Change every 5 seconds
 
-    return () => clearInterval(interval); // Clean up interval on unmount
+    return () => clearInterval(interval);
   }, []);
   
   return (
@@ -48,14 +48,22 @@ export default function HomePage() {
             height={250}
           />
         </div>
-        <div className='lg:hidden md:hidden w-full flex items-center'>
-          <Image
-            src={images[currentIndex]}
-            alt={`Slide ${currentIndex + 1}`}
-            width={300}
-            height={150}
-            className='transition-opacity duration-1000 ease-in-out'
-          />
+        <div className='lg:hidden md:hidden w-full flex justify-center'>
+          <div
+        className="flex transition-transform duration-1000 ease-in-out"
+        style={{ transform: `translateX(-${currentIndex * 100}%)` }}
+      >
+        {images.map((img, index) => (
+          <div key={index} className="min-w-full h-[400px] relative">
+            <Image
+              src={img}
+              alt={`Slide ${index + 1}`}
+              width={300}
+              height={150}
+            />
+          </div>
+        ))}
+      </div>
         </div>
       </div>
     </section>
