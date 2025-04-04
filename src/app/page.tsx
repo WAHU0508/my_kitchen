@@ -48,28 +48,7 @@ export default function HomePage() {
             height={250}
           />
         </div>
-        
-          <div className="w-full flex justify-center items-center lg:hidden md:hidden overflow-hidden h-[160px]">
-            <div
-              className="flex transition-transform duration-1000 ease-in-out"
-              style={{ transform: `translateX(-${currentIndex * 300}px)` }}
-            >
-              {images.map((img, index) => (
-                <div
-                  key={index}
-                  className="w-[300px] h-[150px] flex-shrink-0 flex justify-center items-center"
-                >
-                  <Image
-                    src={img}
-                    alt={`Slide ${index + 1}`}
-                    width={300}
-                    height={150}
-                    className="rounded-xl shadow-md"
-                  />
-                </div>
-              ))}
-            </div>
-            
+        {/*Small Screen*/}
     </div>
       </div>
     </section>
