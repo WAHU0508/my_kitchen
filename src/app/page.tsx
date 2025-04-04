@@ -48,9 +48,9 @@ export default function HomePage() {
             height={250}
           />
         </div>
-        <div className='lg:hidden md:hidden w-full flex justify-center'>
+        
           <div
-        className="flex transition-transform duration-1000 ease-in-out"
+        className="lg:hidden md:hidden flex w-full flex justify-center items-center transition-transform duration-1000 ease-in-out"
         style={{ transform: `translateX(-${currentIndex * 100}%)` }}
       >
         {images.map((img, index) => (
@@ -64,7 +64,6 @@ export default function HomePage() {
           </div>
         ))}
       </div>
-        </div>
       </div>
     </section>
   );
