@@ -55,7 +55,7 @@ export default function Header() {
 
                     {/* Modal with slide-in animation */}
                     <div
-                        className={`fixed left-0 top-0 h-full w-[262px] flex flex-col items-center justify-between bg-white shadow-xl z-50 p-4 transition-transform duration-300 transform ${
+                        className={`fixed left-0 top-0 h-full w-[262px] flex flex-col items-center justify-between bg-white shadow-xl z-50 transition-transform duration-300 transform ${
                             isOpen ? 'translate-x-0' : '-translate-x-full'
                         }`}
                     >
@@ -65,12 +65,12 @@ export default function Header() {
                                 width={120}
                                 height={38}
                                 alt='Alver Power Systems logo'
-                                className='w-[120px] h-[38px] mt-[22px]'
+                                className='w-[120px] h-[38px] mt-[22px] mb-[20px]'
                             />
-                            <ul className="space-y-4">
+                            <ul className="space-y-[20px]">
                                 <li><a href="#" className="border-b border-black/10 flex items-center justify-center w-[146px] h-[22px] text-[12px] text-black">Home</a></li>
                                 <li><a href="#" className="border-b border-black/10 flex items-center justify-center w-[146px] h-[22px] text-[12px] text-black">About</a></li>
-                                <li><a href="#" className="border-b border-black/10 flex items-center justify-center w-[146px] h-[22px] text-[12px] text-black">Services</a></li>
+                                <li><a href="#" className="border-b border-black/10 flex items-center justify-center w-[146px] h-[22px] text-[12px] text-black">Products & Services</a></li>
                                 <li><a href="#" className="border-b border-black/10 flex items-center justify-center w-[146px] h-[22px] text-[12px] text-black">Contact</a></li>
                             </ul>
                         </div>
