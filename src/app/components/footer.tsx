@@ -12,7 +12,7 @@ import logo from '../svgs/logo.svg';
 export default function Footer() {
     return (
         <footer className='w-full mb-4 flex items-center justify-center'>
-            {/* Header for large and medium screens*/}
+            {/* Footer for large and medium screens*/}
             <div className='hidden lg:flex lg:flex-col text-white md:flex md:flex-col items-center justify-between lg:px-[60px] lg:w-[1440px] md:w-full lg:h-[215px] md:h-[215px] bg-[#252865]'>
                 <div className='flex flex-row justify-between gap-[10px] lg:gap-[50px]'>
                     <div className='lg:w-[321px] lg:h-[137px] w-[250px] h-[137px] flex flex-col items-center justify-between'>
@@ -63,13 +63,13 @@ export default function Footer() {
                         </div>
                     </div>
                 </div>
-                <div className='flex flex-row items-center justify-between gap-[50px]'>
+                <div className='flex flex-row items-center justify-between px-[60px]'>
                     <p className='text-[18px] text-center'>Alver Power Systems Ltd &copy; 2022. All rights reserved.</p>
                     <p className='text-[18px] text-center hover:underline'>Privacy</p>
                     <p className='text-[18px] text-center hover:underline'>Terms of Use</p>
                 </div>
             </div>
-            {/* Header for small screens */}
+            {/* Footer for small screens */}
             <div className='lg:hidden md:hidden flex flex-col w-full items-center justify-between bg-[#252865] h-[60px]'>
                <Image
                    src={logo}
