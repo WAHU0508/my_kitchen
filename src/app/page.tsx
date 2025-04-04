@@ -53,7 +53,6 @@ export default function HomePage() {
         <div className='lg:hidden md:hidden flex items-center justify-center'>
           <Carousel />
         </div>
-    </div>
       </div>
     </section>
   );
