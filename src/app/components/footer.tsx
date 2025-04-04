@@ -20,7 +20,7 @@ export default function Footer() {
                         <p className='text-[18px] text-center'>Monday - Friday</p>
                         <p className='text-[18px] text-center'>8 AM - 1PM (Saturday 8AM - 1PM)</p>
                     </div>
-                    <div className='lg:w-[386px] lg:h-[144px] w-[250px] h-[144px] flex flex-col items-center justify-between'>
+                    <div className='lg:w-[386px] lg:h-[144px] w-[250px] h-[114px] flex flex-col items-center justify-between'>
                         <Image
                             src={mapPin}
                             width={31}
