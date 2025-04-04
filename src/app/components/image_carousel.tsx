@@ -5,7 +5,7 @@ import { useEffect, useState } from 'react';
 import solarpanelImg from '../assets/solarpanel.png';
 import electricalsImg from '../assets/electricals.png';
 import switchboardImg from '../assets/switchboard.png'
-import avrImg from '../assets/avr.png';
+import avrImg from '../assets/AVR.png';
 
 const images = [solarpanelImg, electricalsImg, switchboardImg, avrImg];
 
