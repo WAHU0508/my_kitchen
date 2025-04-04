@@ -53,7 +53,7 @@ export default function Header() {
                     <div className="flex justify-between items-center mb-4">
                       <h2 className="text-lg font-semibold">Menu</h2>
                       <button onClick={() => setIsOpen(false)}>
-                        <X size={24} />
+{/*                         <X size={24} /> */}
                       </button>
                     </div>
         
