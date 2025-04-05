@@ -10,59 +10,40 @@ import avrImg from '../assets/AVR.png';
 const images = [solarpanelImg, electricalsImg, switchboardImg, avrImg];
 
 export default function TailwindCarousel() {
-  const [current, setCurrent] = useState(1); // Start from real first slide
+  const [current, setCurrent] = useState(0);
   const carouselRef = useRef<HTMLDivElement>(null);
-  const totalSlides = images.length;
 
-  // Clone slides: last | real slides | first
-  const slides = [
-    images[images.length - 1],
-    ...images,
-    images[0]
-  ];
-
-  const goToSlide = (index: number, smooth = true) => {
-    const container = carouselRef.current;
-    if (!container) return;
-    const slideWidth = container.clientWidth;
-    container.scrollTo({
+  const goToSlide = (index: number) => {
+    if (!carouselRef.current) return;
+    const slideWidth = carouselRef.current.clientWidth;
+    carouselRef.current.scrollTo({
       left: index * slideWidth,
-      behavior: smooth ? 'smooth' : 'auto',
+      behavior: 'smooth',
     });
   };
 
-  const nextSlide = () => setCurrent(prev => prev + 1);
-  const prevSlide = () => setCurrent(prev => prev - 1);
+  const nextSlide = () => {
+    const newIndex = (current + 1) % images.length;
+    setCurrent(newIndex);
+    goToSlide(newIndex);
+  };
+
+  const prevSlide = () => {
+    const newIndex = (current - 1 + images.length) % images.length;
+    setCurrent(newIndex);
+    goToSlide(newIndex);
+  };
 
   // Autoplay
   useEffect(() => {
     const interval = setInterval(() => {
       nextSlide();
-    }, 5000);
+    }, 5000); // 5s
+
     return () => clearInterval(interval);
-  }, []);
-
-  // Smooth looping
-  useEffect(() => {
-    const container = carouselRef.current;
-    if (!container) return;
-
-    goToSlide(current);
-
-    const timeout = setTimeout(() => {
-      if (current === totalSlides + 1) {
-        setCurrent(1);
-        goToSlide(1, false);
-      } else if (current === 0) {
-        setCurrent(totalSlides);
-        goToSlide(totalSlides, false);
-      }
-    }, 500); // Wait for transition to finish
-
-    return () => clearTimeout(timeout);
   }, [current]);
 
-  // Sync scroll position with state (for swipe)
+  // Sync scroll with slide index
   useEffect(() => {
     const container = carouselRef.current;
     if (!container) return;
@@ -78,19 +59,19 @@ export default function TailwindCarousel() {
 
   return (
     <div className="relative w-full max-w-md mx-auto overflow-hidden rounded-lg">
-      {/* Slide container */}
+      {/* Slide Container - scrollable and snap-enabled */}
       <div
         ref={carouselRef}
         className="flex overflow-x-auto snap-x snap-mandatory scroll-smooth no-scrollbar"
       >
-        {slides.map((img, index) => (
+        {images.map((img, index) => (
           <div
             key={index}
             className="min-w-full h-[150px] flex justify-center items-center snap-center"
           >
             <Image
               src={img}
-              alt={`Slide ${index}`}
+              alt={`Slide ${index + 1}`}
               width={350}
               height={150}
               className="object-cover"
@@ -99,7 +80,7 @@ export default function TailwindCarousel() {
         ))}
       </div>
 
-      {/* Previous Button */}
+      {/* Prev Button */}
       <button
         onClick={prevSlide}
         className="absolute top-1/2 left-2 -translate-y-1/2 text-white px-3 py-1 rounded-full bg-black bg-opacity-50 hover:bg-opacity-75 z-10"
