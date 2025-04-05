@@ -20,13 +20,13 @@ export default function TailwindCarousel() {
     return () => clearInterval(interval);
   }, [images.length]);
 
-  {/* const nextSlide = () => {
+  const nextSlide = () => {
     setCurrent((current + 1) % images.length);
   };
 
   const prevSlide = () => {
     setCurrent((current - 1 + images.length) % images.length);
-  }; */}
+  };
 
   return (
     <div className="relative w-full max-w-md mx-auto overflow-hidden rounded-lg">
@@ -49,22 +49,22 @@ export default function TailwindCarousel() {
       </div>
 
       {/* Prev Button */}
-            {/* <button
+      <button
         onClick={prevSlide}
-        className="absolute top-1/2 left-2 -translate-y-1/2 bg-gray-800 bg-opacity-50 text-white px-3 py-1 rounded-full hover:bg-opacity-75 z-10"
+        className="absolute top-1/2 left-2 -translate-y-1/2 text-white px-3 py-1 rounded-full hover:bg-opacity-75 z-10"
         aria-label="Previous Slide"
       >
         ‹
-      </button> */}
+      </button>
 
       {/* Next Button */}
-      {/* <button
+      <button
         onClick={nextSlide}
-        className="absolute top-1/2 right-2 -translate-y-1/2 bg-gray-800 bg-opacity-50 text-white px-3 py-1 rounded-full hover:bg-opacity-75 z-10"
+        className="absolute top-1/2 right-2 -translate-y-1/2 text-white px-3 py-1 rounded-full hover:bg-opacity-75 z-10"
         aria-label="Next Slide"
       >
         ›
-      </button> */}
+      </button>
     </div>
   );
 }
