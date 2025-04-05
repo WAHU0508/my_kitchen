@@ -6,12 +6,13 @@ export default function ProductCard() {
   return (
         <div className="w-[386px] h-[379px] border border-[#D9D9D9] shadow-[0px_4px_4px_5px_rgba(0,0,0,0.25)]">
           {/* Background Image with Opacity */}
-          <Image
+          <div className='relative w-[386px] h-[379px]'>
+            <Image
             src={solarImg}
             alt='Solar Image'
             width={386}
             height={304}
-            className="relative w-[386px] h-[304px] left-0 top-0 opacity-45"
+            className="absolute w-[386px] h-[304px] left-0 top-0 opacity-45"
           />
           <p className="absolute w-[141px] h-[24px] text-white lg:text-[20px]">Solar Solutions</p>
           <div className="absolute w-[158.15px] h-0 left-[34.92px] top-[99.5px] border-t-[5px] border-white"></div>
@@ -21,6 +22,8 @@ export default function ProductCard() {
             sustainability. Our solar technology helps businesses, communities, and
             home transition to clean, reliable and cost effective energy
           </p>
+          </div>
+          
           <div className='w-full h-[76px] bg-[172C5F]'></div>
           
     </div>
