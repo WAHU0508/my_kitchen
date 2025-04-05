@@ -6,7 +6,7 @@ export default function ProductCard() {
   return (
         <div className="w-[386px] h-[379px] border border-[#D9D9D9] shadow-[0px_4px_4px_5px_rgba(0,0,0,0.25)]">
           {/* Background Image with Opacity */}
-          <div className='relative w-[386px] h-[379px] bg-[#252865]'>
+          <div className='relative w-[386px] h-[304px] bg-[#252865]'>
             <Image
             src={solarImg}
             alt='Solar Image'
