@@ -8,7 +8,7 @@ export default function ProductCard() {
           {/* Background Image with Opacity */}
           <div className='relative w-[300px] h-[250px] lg:w-[386px] lg:h-[304px] bg-[#B2B3B2]'>
             <Image
-            src={switchboardImg}
+            src={avrImg}
             alt='Switchboard Image'
             width={386}
             height={304}
