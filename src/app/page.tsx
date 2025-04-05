@@ -1,5 +1,6 @@
 import React from 'react';
 import Image from 'next/image';
+import { useRouter } from 'next/router'
 import electricalsImg from './assets/electricals.png'
 import switchboardImg from './assets/switchboard.png'
 import solarpanelImg from './assets/solarpanel.png'
@@ -14,6 +15,17 @@ import ProjectCard2 from './components/project_card2'
 import ProjectCard3 from './components/project_card3'
 
 export default function HomePage() { 
+  const router = useRouter();
+  
+  const about_us = () => {
+    router.push('/about_us');
+  }
+  const products_and_services = () => {
+    router.push('/products_and_services');
+  }
+  const contact_us = () => {
+    router.push('/contact_us');
+  }
   return (
     <section className='w-full flex items-center justify-center'>
       <div className='lg:p-4 md:p-2 p-1 lg:w-[1300px] md:w-full w-full flex flex-col'>
@@ -61,7 +73,9 @@ We specialize in high-quality electrical installations, solar energy solutions a
             {/* Rectangle 9 - blurred background box */}
             <div className="absolute w-[123px] h-[23px] lg:w-[290px] lg:h-[46px] md:w-[290px] md:h-[46px] inset-0 border-[2px] border-[#252865] rounded-[15px] blur-[8.25px]"></div>
             {/* Rectangle 8 - foreground box */}
-            <button className="absolute hover:bg-[#252865] hover:text-white active:bg-[#252865] active:text-white w-[123px] h-[23px] lg:w-[290px] lg:h-[46px] md:w-[290px] md:h-[46px] text-[10px] lg:text-[24px] md:text-[24px] inset-0 border-[2px] border-[#252865] rounded-[15px] flex flex-row items-center lg:items-center lg:justify-center md:items-center md:justify-center lg:gap-2 md:gap-2">
+            <button className="absolute hover:bg-[#252865] hover:text-white active:bg-[#252865] active:text-white w-[123px] h-[23px] lg:w-[290px] lg:h-[46px] md:w-[290px] md:h-[46px] text-[10px] lg:text-[24px] md:text-[24px] inset-0 border-[2px] border-[#252865] rounded-[15px] flex flex-row items-center lg:items-center lg:justify-center md:items-center md:justify-center lg:gap-2 md:gap-2"
+                    onClick={products_and_services}
+              >
               Explore our products
               <Image
                 src={externalLink}
@@ -113,7 +127,9 @@ We specialize in high-quality electrical installations, solar energy solutions a
                 {/* Rectangle 9 - blurred background box */}
                 <div className="absolute w-[123px] h-[23px] lg:w-[290px] lg:h-[46px] md:w-[290px] md:h-[46px] inset-0 border-[2px] border-[#252865] rounded-[15px] blur-[8.25px]"></div>
                 {/* Rectangle 8 - foreground box */}
-                <button className="absolute hover:bg-[#252865] hover:text-white active:bg-[#252865] active:text-white w-[123px] h-[23px] lg:w-[290px] lg:h-[46px] md:w-[290px] md:h-[46px] text-[10px] lg:text-[24px] md:text-[24px] inset-0 border-[2px] border-[#252865] rounded-[15px] flex flex-row items-center justify-center lg:items-center lg:justify-center md:items-center md:justify-center lg:gap-2 md:gap-2">
+                <button className="absolute hover:bg-[#252865] hover:text-white active:bg-[#252865] active:text-white w-[123px] h-[23px] lg:w-[290px] lg:h-[46px] md:w-[290px] md:h-[46px] text-[10px] lg:text-[24px] md:text-[24px] inset-0 border-[2px] border-[#252865] rounded-[15px] flex flex-row items-center justify-center lg:items-center lg:justify-center md:items-center md:justify-center lg:gap-2 md:gap-2"
+                        onClick={about_us}
+                  >
                   Learn More
                   <Image
                     src={externalLink}
@@ -153,7 +169,9 @@ We specialize in high-quality electrical installations, solar energy solutions a
                 {/* Rectangle 9 - blurred background box */}
                 <div className="absolute w-[123px] h-[23px] lg:w-[290px] lg:h-[46px] md:w-[290px] md:h-[46px] inset-0 border-[2px] border-[#252865] rounded-[15px] blur-[8.25px]"></div>
                 {/* Rectangle 8 - foreground box */}
-                <button className="absolute hover:bg-[#252865] hover:text-white active:bg-[#252865] active:text-white w-[123px] h-[23px] lg:w-[290px] lg:h-[46px] md:w-[290px] md:h-[46px] text-[10px] lg:text-[24px] md:text-[24px] inset-0 border-[2px] border-[#252865] rounded-[15px] flex flex-row items-center lg:items-center lg:justify-center md:items-center md:justify-center lg:gap-2 md:gap-2">
+                <button className="absolute hover:bg-[#252865] hover:text-white active:bg-[#252865] active:text-white w-[123px] h-[23px] lg:w-[290px] lg:h-[46px] md:w-[290px] md:h-[46px] text-[10px] lg:text-[24px] md:text-[24px] inset-0 border-[2px] border-[#252865] rounded-[15px] flex flex-row items-center lg:items-center lg:justify-center md:items-center md:justify-center lg:gap-2 md:gap-2"
+                         onClick={products_and_services}
+                  >
                   Explore our products
                   <Image
                     src={externalLink}
