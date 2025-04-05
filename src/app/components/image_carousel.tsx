@@ -1,7 +1,7 @@
 'use client';
 
 import Image from 'next/image';
-import { useRef } from 'react';
+import { useEffect, useRef, useState } from 'react';
 import solarpanelImg from '../assets/solarpanel.png';
 import electricalsImg from '../assets/electricals.png';
 import switchboardImg from '../assets/switchboard.png';
@@ -10,21 +10,56 @@ import avrImg from '../assets/AVR.png';
 const images = [solarpanelImg, electricalsImg, switchboardImg, avrImg];
 
 export default function TailwindCarousel() {
+  const [current, setCurrent] = useState(0);
   const carouselRef = useRef<HTMLDivElement>(null);
 
-  const scrollToSlide = (direction: 'prev' | 'next') => {
+  const goToSlide = (index: number) => {
+    if (!carouselRef.current) return;
+    const slideWidth = carouselRef.current.clientWidth;
+    carouselRef.current.scrollTo({
+      left: index * slideWidth,
+      behavior: 'smooth',
+    });
+  };
+
+  const nextSlide = () => {
+    const newIndex = (current + 1) % images.length;
+    setCurrent(newIndex);
+    goToSlide(newIndex);
+  };
+
+  const prevSlide = () => {
+    const newIndex = (current - 1 + images.length) % images.length;
+    setCurrent(newIndex);
+    goToSlide(newIndex);
+  };
+
+  // Autoplay
+  useEffect(() => {
+    const interval = setInterval(() => {
+      nextSlide();
+    }, 5000); // 5s
+
+    return () => clearInterval(interval);
+  }, [current]);
+
+  // Sync scroll with slide index
+  useEffect(() => {
     const container = carouselRef.current;
     if (!container) return;
 
-    const slideWidth = container.clientWidth;
-    const scrollAmount = direction === 'next' ? slideWidth : -slideWidth;
+    const handleScroll = () => {
+      const index = Math.round(container.scrollLeft / container.clientWidth);
+      setCurrent(index);
+    };
 
-    container.scrollBy({ left: scrollAmount, behavior: 'smooth' });
-  };
+    container.addEventListener('scroll', handleScroll);
+    return () => container.removeEventListener('scroll', handleScroll);
+  }, []);
 
   return (
     <div className="relative w-full max-w-md mx-auto overflow-hidden rounded-lg">
-      {/* Touch Scrollable Slide Container */}
+      {/* Slide Container - scrollable and snap-enabled */}
       <div
         ref={carouselRef}
         className="flex overflow-x-auto snap-x snap-mandatory scroll-smooth no-scrollbar"
@@ -47,8 +82,8 @@ export default function TailwindCarousel() {
 
       {/* Prev Button */}
       <button
-        onClick={() => scrollToSlide('prev')}
-        className="absolute top-1/2 left-2 -translate-y-1/2 text-white px-3 py-1 rounded-full hover:bg-opacity-75 z-10"
+        onClick={prevSlide}
+        className="absolute top-1/2 left-2 -translate-y-1/2 text-white px-3 py-1 rounded-full bg-black bg-opacity-50 hover:bg-opacity-75 z-10"
         aria-label="Previous Slide"
       >
         ‹
@@ -56,8 +91,8 @@ export default function TailwindCarousel() {
 
       {/* Next Button */}
       <button
-        onClick={() => scrollToSlide('next')}
-        className="absolute top-1/2 right-2 -translate-y-1/2 text-white px-3 py-1 rounded-full hover:bg-opacity-75 z-10"
+        onClick={nextSlide}
+        className="absolute top-1/2 right-2 -translate-y-1/2 text-white px-3 py-1 rounded-full bg-black bg-opacity-50 hover:bg-opacity-75 z-10"
         aria-label="Next Slide"
       >
         ›
