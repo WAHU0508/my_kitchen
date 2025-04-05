@@ -121,6 +121,8 @@ We specialize in high-quality electrical installations, solar energy solutions a
               </div>
             </div>
 
+          {/*Product Cards*/}
+          <ProductCard />
           
         </div>
       </div>
