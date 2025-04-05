@@ -67,7 +67,7 @@ export default function Header() {
                 <button onClick={() => setIsOpen(true)}>
                     <Menu size={31} color='black'/>
                 </button>
-                <div className='border border-[#0000003D] flex items-center justify-center shadow-xl rounded-[10px] w-full h-[40px]'>
+                <div className='border border-[#0000003D] bg-[#FFFFFF] flex items-center justify-center shadow-xl rounded-[10px] w-full h-[40px]'>
                     <Image
                         src={logo}
                         width={120}
