@@ -25,7 +25,7 @@ export default function ProjectCard() {
         />
       </div>
       <p className='absolute top-[175px] text-[20px] lg:text-[24px] ml-[20px] text-[#000000]'>Solargen Technologies</p>
-      <div className='absolute flex flex-row gap-2 ml-[20px] top-[195px]'>
+      <div className='absolute flex flex-row gap-2 ml-[20px] top-[215px]'>
         <Image
           src={mapPin}
           alt='Map pin'
