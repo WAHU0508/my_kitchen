@@ -181,11 +181,19 @@ We specialize in high-quality electrical installations, solar energy solutions a
                 <li>Sustainability Focused - Commited to eco-friendly energy solutions</li>
                 <li>Customer Satisfaction - Creating a better and long-term relation with our clients while ensuring excellent service.</li>
                 <li>Expert Team -  Our team comprises of the following:
-                  <ul className="lg:ml-[70px] list-inside">
-                    <li>Highly qualified Electrical Engineers.</li>
-                    <li>Vastly experienced draftsmen.</li>
-                    <li>Highly dedicated sales personnel.</li>
-                    <li>Highly skilled technical staff.</li>
+                  <ul className="lg:ml-[150px] list-inside">
+                    <li>
+                      <span className="mr-2">✓</span>
+                      Highly qualified Electrical Engineers.</li>
+                    <li>
+                      <span className="mr-2">✓</span>
+                      Vastly experienced draftsmen.</li>
+                    <li>
+                      <span className="mr-2">✓</span>
+                      Highly dedicated sales personnel.</li>
+                    <li>
+                      <span className="mr-2">✓</span>
+                      Highly skilled technical staff.</li>
                   </ul>
                 </li>
               </ul>
