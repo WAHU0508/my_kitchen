@@ -18,7 +18,7 @@ export default function Footer() {
                     <div className='lg:w-[321px] lg:h-[137px] w-[250px] h-[137px] flex flex-col items-center justify-between'>
                         <Clock size={31} className='text-white'/>
                         <p className='text-[18px] text-center'>Monday - Friday</p>
-                        <p className='text-[18px] text-center'>8 AM - 1PM (Saturday 8AM - 1PM)</p>
+                        <p className='text-[18px] text-center'>8 AM - 5PM (Saturday 8AM - 1PM)</p>
                     </div>
                     <div className='lg:w-[386px] lg:h-[144px] w-[250px] h-[144px] flex flex-col items-center justify-between'>
                         <Image
