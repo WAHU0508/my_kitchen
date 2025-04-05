@@ -164,8 +164,8 @@ We specialize in high-quality electrical installations, solar energy solutions a
           </div>
           
           {/*Next Section*/}
-          
-        
+         </div> 
+        </div>
       </div>
     </section>
   );
