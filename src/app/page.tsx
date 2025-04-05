@@ -175,6 +175,12 @@ We specialize in high-quality electrical installations, solar energy solutions a
               <p className='text-[#FF0105]'>Why</p>
               <p className='text-[#252865]'>Alver Power Systems Ltd.</p>
             </div>
+            <ul className='w-full flex itesm-center justify-center text-[12px] md:text-[24px] lg:text-[24px] text-black'>
+              <li>High quality manufacturing - Durable and efficient products</li>
+              <li>Sustainability Focused - Commited to eco-friendly energy solutions</li>
+              <li>Customer Satisfaction - Creating a better and long-term relation with our clients while ensuring excellent service.</li>
+              <li>Expert Team -  Our team comprises of the following:</li>
+            </ul>
           </div>
             
           {/*Why us*/} 
