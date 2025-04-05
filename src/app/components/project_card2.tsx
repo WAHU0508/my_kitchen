@@ -7,9 +7,9 @@ import solargen from '../assets/solargen.png'
 
 export default function ProjectCard() {
   return (
-    <div className='relative w-[300px] h-[259px] lg:w-[386px] lg:h-[379px] bg-[rgba(50,101,37,0.47)] border border-[#D9D9D9] shadow-[0px_4px_4px_5px_rgba(0,0,0,0.25)]'>
+    <div className='relative w-[300px] h-[259px] lg:w-[386px] lg:h-[379px] border border-[#D9D9D9] shadow-[0px_4px_4px_5px_rgba(0,0,0,0.25)]'>
       <Image
-          src={solargen}
+          src={rainbowResort}
           alt='Solar Gen'
           width={379}
           height={133}
