@@ -98,9 +98,10 @@ export default function Header() {
 
                     {/* Modal with slide-in animation */}
                     <div
-                        className={`fixed left-0 top-0 h-full w-[262px] flex flex-col items-center justify-between bg-white shadow-xl z-50 transition-transform duration-300 transform ${
+                        className={`fixed left-0 top-0 h-screen w-[262px] flex flex-col items-center justify-between bg-white shadow-xl z-50 transition-transform duration-300 transform ${
                             isOpen ? 'translate-x-0' : '-translate-x-full'
                         }`}
+                        style={{ touchAction: 'none' }}
                     >
                         <div className='flex flex-col items-center'>
                             <Image
