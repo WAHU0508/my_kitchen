@@ -12,7 +12,7 @@ export default function ProductCard() {
             alt='Switchboard Image'
             width={386}
             height={304}
-            className="absolute w-[300px] h-[250px] lg:w-[386px] lg:h-[304px] left-0 top-0 opacity-24"
+            className="absolute w-[300px] h-[250px] lg:w-[386px] lg:h-[304px] left-0 top-0 opacity-12"
           />
           <p className="absolute w-full h-[24px] left-[20px] lg:left-[35px] top-[20px] text-black lg:text-[20px]">Solar Solutions</p>
           <div className="absolute w-[158.15px] h-0 left-[20px] lg:left-[34.92px] top-[60px] border-t-[5px] border-black"></div>
