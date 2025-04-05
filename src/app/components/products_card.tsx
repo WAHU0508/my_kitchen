@@ -14,10 +14,10 @@ export default function ProductCard() {
             height={304}
             className="absolute w-[300px] h-[250px] lg:w-[386px] lg:h-[304px] left-0 top-0"
           />
-          <p className="absolute w-full h-[24px] left:-[20px] lg:left-[35px] top-[20px] text-white lg:text-[20px]">Solar Solutions</p>
+          <p className="absolute w-full h-[24px] left-[20px] lg:left-[35px] top-[20px] text-white lg:text-[20px]">Solar Solutions</p>
           <div className="absolute w-[158.15px] h-0 left-[20px] lg:left-[34.92px] top-[60px] border-t-[5px] border-white"></div>
           {/* Description */}
-          <p className="absolute w-[250px] h-[123px] lg:w-[342px] lg:h-[168px] left:-[20px] lg:left-[35px] top-[70px] text-white text-[14px] lg:text-[20px]">
+          <p className="absolute w-[250px] h-[123px] lg:w-[342px] lg:h-[168px] left-[20px] lg:left-[35px] top-[70px] text-white text-[14px] lg:text-[20px]">
             We provide cutting edge solar solutions to enhance energy efficiency and
             sustainability. Our solar technology helps businesses, communities, and
             home transition to clean, reliable and cost effective energy
