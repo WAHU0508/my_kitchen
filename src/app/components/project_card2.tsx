@@ -1,4 +1,4 @@
-import React from 'react'
+timport React from 'react'
 import Image from 'next/image'
 import mapPin from '../svgs/mapPin2.svg'
 import rainbowResort from '../assets/rainbow_resort.png'
@@ -24,8 +24,8 @@ export default function ProjectCard() {
           className='absolute w-[300px] h-[105px] lg:w-[379px] lg:h-[133px]'
         />
       </div>
-      <p className='absolute top[100px] text-[20px] lg:text-[24px] ml-[20px] mt-[20px] text-[#000000]'>Solargen Technologies</p>
-      <div className='absolute flex flex-row gap-2 ml-[20px] top[140px]'>
+      <p className='absolute top-[100px] text-[20px] lg:text-[24px] ml-[20px] mt-[20px] text-[#000000]'>Solargen Technologies</p>
+      <div className='absolute flex flex-row gap-2 ml-[20px] top-[140px]'>
         <Image
           src={mapPin}
           alt='Map pin'
