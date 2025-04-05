@@ -1,5 +1,5 @@
 'use client'
-import React from 'react';
+import React, { useState } from 'react';
 import Image from 'next/image';
 import { useRouter } from 'next/navigation'
 import electricalsImg from './assets/electricals.png'
@@ -24,6 +24,18 @@ export default function HomePage() {
   const products_and_services = () => {
     router.push('/products_and_services');
   }
+  // State to control modal visibility
+  const [isModalOpen, setIsModalOpen] = useState(false);
+
+  // Function to open modal
+  const openModal = () => {
+    setIsModalOpen(true);
+  };
+
+  // Function to close modal
+  const closeModal = () => {
+    setIsModalOpen(false);
+  };
   
   return (
     <section className='w-full flex items-center justify-center'>
@@ -91,7 +103,9 @@ We specialize in high-quality electrical installations, solar energy solutions a
             {/* Rectangle 9 - blurred background box */}
             <div className="absolute w-[123px] h-[23px] lg:w-[290px] lg:h-[46px] md:w-[290px] md:h-[46px] inset-0 border-[2px] border-[#252865] rounded-[15px] blur-[8.25px]"></div>
             {/* Rectangle 8 - foreground box */}
-            <button className="absolute text-black hover:bg-[#252865] hover:text-white active:bg-[#252865] active:text-white w-[123px] h-[23px] lg:w-[290px] lg:h-[46px] md:w-[290px] md:h-[46px] text-[10px] lg:text-[24px] md:text-[24px] inset-0 border-[2px] border-[#252865] rounded-[15px] flex flex-row items-center justify-center lg:items-center lg:justify-center md:items-center md:justify-center lg:gap-2 md:gap-2">
+            <button className="absolute text-black hover:bg-[#252865] hover:text-white active:bg-[#252865] active:text-white w-[123px] h-[23px] lg:w-[290px] lg:h-[46px] md:w-[290px] md:h-[46px] text-[10px] lg:text-[24px] md:text-[24px] inset-0 border-[2px] border-[#252865] rounded-[15px] flex flex-row items-center justify-center lg:items-center lg:justify-center md:items-center md:justify-center lg:gap-2 md:gap-2"
+                   onClick={openModal}
+              >
               Get a Quote
               <Image
                 src={externalLink}
@@ -103,7 +117,39 @@ We specialize in high-quality electrical installations, solar energy solutions a
             </button>
           </div>
         </div>
-        {/*Modal*/}
+        
+        {/* Modal */}
+      {isModalOpen && (
+        <div className="fixed inset-0 flex items-center justify-center backdrop-blur-sm bg-black/30 z-50">
+          <div className="bg-white p-6 rounded-lg shadow-lg w-full max-w-md relative">
+            {/* Modal Header with close button */}
+            <div className="flex justify-between items-center">
+              <h2 className="text-xl font-bold">Modal Title</h2>
+              <button
+                className="text-xl text-gray-600 hover:text-gray-800"
+                onClick={closeModal}
+              >
+                &times; {/* "X" to close */}
+              </button>
+            </div>
+
+            {/* Modal Content */}
+            <div className="mt-4">
+              <p>This is the content of the modal.</p>
+            </div>
+
+            {/* Modal Footer */}
+            <div className="mt-4 flex justify-end">
+              <button
+                className="px-4 py-2 bg-red-600 text-white rounded hover:bg-red-700"
+                onClick={closeModal}
+              >
+                Close
+              </button>
+            </div>
+          </div>
+        </div>
+      )}
         
 
         
