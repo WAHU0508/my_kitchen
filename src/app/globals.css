@@ -6,8 +6,8 @@
 @import "@fontsource/montserrat/700.css";
 
 :root {
-  --background: #ffffff;
-  --foreground: #171717;
+  --background: #ECECEC;
+  --foreground: #ECECEC;
 }
 
 @theme inline {
