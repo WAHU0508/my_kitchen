@@ -9,6 +9,9 @@ import externalLink from './svgs/external_link.svg'
 import ProductCard1 from './components/products_card1'
 import ProductCard2 from './components/products_card2'
 import ProductCard3 from './components/products_card3'
+import ProjectCard1 from './components/project_card1'
+import ProjectCard2 from './components/project_card2'
+import ProjectCard3 from './components/project_card3'
 
 export default function HomePage() { 
   return (
@@ -215,9 +218,9 @@ We specialize in high-quality electrical installations, solar energy solutions a
           </div>
           <div className="w-full overflow-x-auto lg:overflow-x-hidden lg:overflow-y-hidden">
             <div className="flex lg:grid gap-4 items-center justify-start lg:grid-cols-3 min-w-max">
-              <ProductCard1 />
-              <ProductCard2 />
-              <ProductCard3 />
+              <ProjectCard1 />
+              <ProjectCard2 />
+              <ProjectCard3 />
             </div>
           </div>
 
@@ -228,7 +231,7 @@ We specialize in high-quality electrical installations, solar energy solutions a
             <div className="absolute w-[123px] h-[23px] lg:w-[290px] lg:h-[46px] md:w-[290px] md:h-[46px] inset-0 border-[2px] border-[#252865] rounded-[15px] blur-[8.25px]"></div>
             {/* Rectangle 8 - foreground box */}
             <button className="absolute w-[123px] h-[23px] lg:w-[290px] lg:h-[46px] md:w-[290px] md:h-[46px] text-[10px] lg:text-[24px] md:text-[24px] inset-0 border-[2px] border-[#252865] rounded-[15px] flex flex-row items-center lg:items-center lg:justify-center md:items-center md:justify-center lg:gap-2 md:gap-2">
-              Explore our products
+              See More
               <Image
                 src={externalLink}
                 alt='Explore'
