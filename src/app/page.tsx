@@ -6,6 +6,7 @@ import solarpanelImg from './assets/solarpanel.png'
 import avrImg from './assets/AVR.png'
 import Carousel from './components/image_carousel'
 import externalLink from './svgs/external_link.svg'
+import ProductCard from './components/products_card'
 
 export default function HomePage() { 
   return (
