@@ -103,6 +103,9 @@ We specialize in high-quality electrical installations, solar energy solutions a
             </button>
           </div>
         </div>
+        {/*Modal*/}
+        
+
         
         {/*Get To Know Us*/}
         <div className='flex flex-col mt-[40px]'>
