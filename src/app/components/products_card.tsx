@@ -12,9 +12,9 @@ export default function ProductCard() {
             alt='Solar Image'
             width={386}
             height={304}
-            className="absolute w-[386px] h-[304px] left-0 top-0 opacity-60"
+            className="absolute w-[386px] h-[304px] left-0 top-0"
           />
-          <p className="absolute w-full h-[24px] left-[35px] top-[49px] text-white lg:text-[20px]">Solar Solutions</p>
+          <p className="absolute w-full h-[24px] left-[35px] top-[20px] text-white lg:text-[20px]">Solar Solutions</p>
           <div className="absolute w-[158.15px] h-0 left-[34.92px] top-[99.5px] border-t-[5px] border-white"></div>
           {/* Description */}
           <p className="absolute w-[342px] h-[168px] left-[35px] top-[123px] text-white lg:text-[20px]">
