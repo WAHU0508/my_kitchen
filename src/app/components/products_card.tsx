@@ -6,7 +6,7 @@ export default function ProductCard() {
           {/* Background Image with Opacity */}
           <div
             className="w-[386px] h-[304px] left-0 top-0 opacity-45"
-            style={{ backgroundImage: "url('/image.png')", backgroundSize: 'cover' }}
+            style={{ backgroundImage: "url('../assets/solarpanel')", backgroundSize: 'cover' }}
           />
         
           {/* Rectangle 14 - Overlay color */}
