@@ -24,11 +24,13 @@ export default function ProductCard() {
           </p>
           </div>
           
-            <button className="w-[141px] h-[39px] left-[35px] bg-[#F4A261] border-[2px] border-[#F4A261] rounded-[5px] flex items-center justify-center">
+            <div className='w-full h-[76px] bg-[#172C5F] flex items-center'>
+              <button className="w-[141px] h-[39px] left-[35px] bg-[#F4A261] border-[2px] border-[#F4A261] rounded-[5px] flex items-center justify-center">
               <span className="text-black text-[16px]">
                 Find out more
             </span>
              </button>
+            </div>
 
           
     </div>
