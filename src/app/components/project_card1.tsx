@@ -19,7 +19,7 @@ export default function ProjectCard() {
       <div className='flex flex-row gap-2'>
         <Image
           src={mapPin}
-          alt='Map pin
+          alt='Map pin'
           width={12}
           height={12}
         />
