@@ -83,7 +83,7 @@ export default function TailwindCarousel() {
       {/* Prev Button */}
       <button
         onClick={prevSlide}
-        className="absolute top-1/2 left-2 -translate-y-1/2 text-white px-3 py-1 rounded-full bg-black bg-opacity-50 hover:bg-opacity-75 z-10"
+        className="absolute top-1/2 left-2 -translate-y-1/2 text-white px-3 py-1 rounded-full hover:bg-opacity-75 z-10"
         aria-label="Previous Slide"
       >
         ‹
@@ -92,7 +92,7 @@ export default function TailwindCarousel() {
       {/* Next Button */}
       <button
         onClick={nextSlide}
-        className="absolute top-1/2 right-2 -translate-y-1/2 text-white px-3 py-1 rounded-full bg-black bg-opacity-50 hover:bg-opacity-75 z-10"
+        className="absolute top-1/2 right-2 -translate-y-1/2 text-white px-3 py-1 rounded-full hover:bg-opacity-75 z-10"
         aria-label="Next Slide"
       >
         ›
