@@ -15,8 +15,8 @@ export default function ProjectCard() {
           className='w-[300px] h-[105px] lg:w-[379px] lg:h-[133px]'
         />
       </div>
-      <p className='text-[20px] lg:text-[24px] mt-[20px] text-[#000000]'>Solargen Technologies</p>
-      <div className='flex flex-row gap-2'>
+      <p className='text-[20px] lg:text-[24px] ml-[20px] mt-[20px] text-[#000000]'>Solargen Technologies</p>
+      <div className='flex flex-row gap-2 ml-[20px]'>
         <Image
           src={mapPin}
           alt='Map pin'
@@ -25,7 +25,8 @@ export default function ProjectCard() {
         />
         <p className='text-[16px] text-[#000000]'>Nairobi</p>
       </div>
-      <div className="w-[158.15px] h-0 left-[20px] lg:left-[34.92px] top-[60px] border-t-[5px] border-[#252865]"></div>
+      <div className="w-[158.15px] h-0 ml-[20px] mt-[20px] border-t-[5px] border-[#252865]"></div>
+      <p className='text-[20px] lg:text-[24px] ml-[20px] mt-[20px] text-[#000000]'>Supply of low voltage panels</p>
     </div>
   )
 }
