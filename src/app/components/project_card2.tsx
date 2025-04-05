@@ -35,7 +35,7 @@ export default function ProjectCard() {
         <p className='text-[16px] text-[#000000]'>Nairobi</p>
       </div>
       <div className="absolute top-[235px] w-[158.15px] h-0 ml-[20px] mt-[20px] border-t-[5px] border-[#252865]"></div>
-      <p className='absolute top-[275px] text-[14px] lg:text-[20px] ml-[20px] mt-[20px] text-[#000000]'>Supply of low voltage panels</p>
+      <p className='absolute top-[255px] text-[14px] lg:text-[20px] ml-[20px] mt-[20px] text-[#000000]'>Supply of low voltage panels</p>
     </div>
   )
 }
