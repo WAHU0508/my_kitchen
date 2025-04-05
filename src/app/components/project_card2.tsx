@@ -15,7 +15,7 @@ export default function ProjectCard() {
           height={133}
           className='absolute h-[259px] lg:w-[386px] lg:h-[379px]'
         />
-      <div className='absolute w-[300px] h-[105px] lg:w-[379px] lg:h-[133px] mt-[10px] lg:mt-[20px]'>
+      <div className='absolute top-[200px] w-[300px] h-[105px] lg:w-[379px] lg:h-[133px] mt-[10px] lg:mt-[20px]'>
         <Image
           src={logo1}
           alt='Solar Gen'
