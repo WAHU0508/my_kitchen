@@ -63,7 +63,7 @@ export default function Header() {
             </div>
 
             {/* Header for small screens */}
-            <div className='lg:hidden md:hidden flex flex-row w-full items-center gap-2 ml-2 bg-[#FFFFFF] mr-[20px]'>
+            <div className='lg:hidden md:hidden flex flex-row w-full items-center gap-2 ml-2 mr-[20px]'>
                 <button onClick={() => setIsOpen(true)}>
                     <Menu size={31} color='black'/>
                 </button>
