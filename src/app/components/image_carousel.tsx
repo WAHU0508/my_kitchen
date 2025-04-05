@@ -1,42 +1,39 @@
 'use client';
 
 import Image from 'next/image';
-import { useEffect, useState } from 'react';
+import { useRef } from 'react';
 import solarpanelImg from '../assets/solarpanel.png';
 import electricalsImg from '../assets/electricals.png';
-import switchboardImg from '../assets/switchboard.png'
+import switchboardImg from '../assets/switchboard.png';
 import avrImg from '../assets/AVR.png';
 
 const images = [solarpanelImg, electricalsImg, switchboardImg, avrImg];
 
 export default function TailwindCarousel() {
-  const [current, setCurrent] = useState(0);
+  const carouselRef = useRef<HTMLDivElement>(null);
 
-  useEffect(() => {
-    const interval = setInterval(() => {
-      setCurrent((prev) => (prev + 1) % images.length);
-    }, 5000); // 5 seconds interval
+  const scrollToSlide = (direction: 'prev' | 'next') => {
+    const container = carouselRef.current;
+    if (!container) return;
 
-    return () => clearInterval(interval);
-  }, [images.length]);
+    const slideWidth = container.clientWidth;
+    const scrollAmount = direction === 'next' ? slideWidth : -slideWidth;
 
-  const nextSlide = () => {
-    setCurrent((current + 1) % images.length);
-  };
-
-  const prevSlide = () => {
-    setCurrent((current - 1 + images.length) % images.length);
+    container.scrollBy({ left: scrollAmount, behavior: 'smooth' });
   };
 
   return (
     <div className="relative w-full max-w-md mx-auto overflow-hidden rounded-lg">
-      {/* Slide Container */}
+      {/* Touch Scrollable Slide Container */}
       <div
-        className="flex transition-transform duration-700 ease-in-out"
-        style={{ transform: `translateX(-${current * 100}%)` }}
+        ref={carouselRef}
+        className="flex overflow-x-auto snap-x snap-mandatory scroll-smooth no-scrollbar"
       >
         {images.map((img, index) => (
-          <div key={index} className="min-w-full h-[150px] flex justify-center items-center">
+          <div
+            key={index}
+            className="min-w-full h-[150px] flex justify-center items-center snap-center"
+          >
             <Image
               src={img}
               alt={`Slide ${index + 1}`}
@@ -50,8 +47,8 @@ export default function TailwindCarousel() {
 
       {/* Prev Button */}
       <button
-        onClick={prevSlide}
-        className="absolute top-1/2 left-2 -translate-y-1/2 text-white px-3 py-1 rounded-full hover:bg-opacity-75 z-10"
+        onClick={() => scrollToSlide('prev')}
+        className="absolute top-1/2 left-2 -translate-y-1/2 text-white px-3 py-1 rounded-full bg-black bg-opacity-50 hover:bg-opacity-75 z-10"
         aria-label="Previous Slide"
       >
         ‹
@@ -59,8 +56,8 @@ export default function TailwindCarousel() {
 
       {/* Next Button */}
       <button
-        onClick={nextSlide}
-        className="absolute top-1/2 right-2 -translate-y-1/2 text-white px-3 py-1 rounded-full hover:bg-opacity-75 z-10"
+        onClick={() => scrollToSlide('next')}
+        className="absolute top-1/2 right-2 -translate-y-1/2 text-white px-3 py-1 rounded-full bg-black bg-opacity-50 hover:bg-opacity-75 z-10"
         aria-label="Next Slide"
       >
         ›
