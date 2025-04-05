@@ -6,13 +6,13 @@ import logo1 from '../assets/image 18.png'
 
 export default function ProjectCard() {
   return (
-    <div className='relative w-[300px] h-[270px] lg:w-[386px] lg:h-[379px] border border-[#D9D9D9] shadow-[0px_4px_4px_5px_rgba(0,0,0,0.25)]'>
+    <div className='relative w-[300px] h-[390px] lg:w-[386px] lg:h-[379px] border border-[#D9D9D9] shadow-[0px_4px_4px_5px_rgba(0,0,0,0.25)]'>
       <Image
           src={rupamall}
           alt='Solar Gen'
           width={379}
           height={133}
-          className='absolute w-[300px] h-[270px] lg:w-[386px] lg:h-[379px]'
+          className='absolute w-[300px] h-[300px] lg:w-[386px] lg:h-[379px]'
         />
       <div className='absolute w-[300px] h-[105px] lg:w-[379px] lg:h-[133px] mt-[10px] lg:mt-[20px]'>
         <Image
