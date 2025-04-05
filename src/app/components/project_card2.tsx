@@ -15,7 +15,7 @@ export default function ProjectCard() {
           height={133}
           className='absolute h-[259px] lg:w-[386px] lg:h-[379px]'
         />
-      <div className='absolute top-[200px] w-[300px] h-[105px] lg:w-[379px] lg:h-[133px] mt-[10px] lg:mt-[20px]'>
+      <div className='absolute w-[300px] h-[105px] lg:w-[379px] lg:h-[133px] mt-[10px] lg:mt-[20px]'>
         <Image
           src={logo1}
           alt='Solar Gen'
@@ -24,8 +24,8 @@ export default function ProjectCard() {
           className='absolute w-[300px] h-[105px] lg:w-[379px] lg:h-[133px]'
         />
       </div>
-      <p className='absolute text-[20px] lg:text-[24px] ml-[20px] mt-[20px] text-[#000000]'>Solargen Technologies</p>
-      <div className='absolute flex flex-row gap-2 ml-[20px]'>
+      <p className='absolute top[100px] text-[20px] lg:text-[24px] ml-[20px] mt-[20px] text-[#000000]'>Solargen Technologies</p>
+      <div className='absolute flex flex-row gap-2 ml-[20px] top[140px]'>
         <Image
           src={mapPin}
           alt='Map pin'
