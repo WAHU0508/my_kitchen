@@ -1,6 +1,6 @@
 import React from 'react'
 import Image from 'next/image'
-import solarImg from '../assets/solarpanel.png'
+import solarImg from '../assets/solarPanel (1).png'
 
 export default function ProductCard() {
   return (
@@ -13,6 +13,16 @@ export default function ProductCard() {
             height={304}
             className="relative w-[386px] h-[304px] left-0 top-0 opacity-45"
           />
+          <p className="absolute w-[141px] h-[24px] text-white lg:text-[20px]">Solar Solutions</p>
+          <div className="absolute w-[158.15px] h-0 left-[34.92px] top-[99.5px] border-t-[5px] border-white"></div>
+          {/* Description */}
+          <p className="absolute w-[342px] h-[168px] left-[35px] top-[123px] text-white lg:text-[20px]">
+            We provide cutting edge solar solutions to enhance energy efficiency and
+            sustainability. Our solar technology helps businesses, communities, and
+            home transition to clean, reliable and cost effective energy
+          </p>
+          <div className='w-full h-[76px] bg-[172C5F]'></div>
+          
     </div>
 
   )
