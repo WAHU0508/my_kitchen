@@ -163,7 +163,21 @@ We specialize in high-quality electrical installations, solar energy solutions a
               </div>
           </div>
           
-          {/*Next Section*/}
+          {/*Why us*/}
+          <div className='flex flex-col mt-[40px]'>
+            <div className='w-full flex flex-row items-center lg:items-center lg:justify-center md:items-center md:justify-center'>
+              <div className="w-[25px] h-0 top-[745px] left-[625px] bg-[#D9D9D9] border-[5px] border-[#252865]"></div>
+              <div className="text-black font-inter font-normal text-[14px] lg:text-[24px] md:text-[24px]">
+                Why Us?
+              </div>
+            </div>
+            <div className=" w-full flex flex-row lg:items-center lg:justify-center md:items-center md:justify-center gap-[10px] text-[16px] lg:text-[32px] md:text-[28px]">
+              <p className='text-[#FF0105]'>Why</p>
+              <p className='text-[#252865]'>Alver Power Systems Ltd.</p>
+            </div>
+          </div>
+            
+          {/*Why us*/} 
          </div> 
         </div>
       </div>
