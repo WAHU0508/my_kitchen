@@ -1,6 +1,6 @@
 import React from 'react';
 import Image from 'next/image';
-import { useRouter } from 'next/router'
+import { useRouter } from 'next/navigation'
 import electricalsImg from './assets/electricals.png'
 import switchboardImg from './assets/switchboard.png'
 import solarpanelImg from './assets/solarpanel.png'
