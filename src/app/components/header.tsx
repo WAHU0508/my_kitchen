@@ -1,5 +1,5 @@
 'use client';
-import React, { useState } from 'react';
+import React, { useState, useEffect } from 'react';
 import { usePathname } from 'next/navigation';
 import Link from 'next/link';
 import Image from 'next/image';
@@ -14,7 +14,16 @@ import linkedin from '../svgs/linkedin.svg';
 export default function Header() {
     const [isOpen, setIsOpen] = useState(false);
     const pathname = usePathname();
-    
+
+    // Disable scroll when modal is open
+    useEffect(() => {
+        if (isOpen) {
+            document.body.style.overflow = 'hidden'; // Disable scrolling
+        } else {
+            document.body.style.overflow = 'auto'; // Re-enable scrolling
+        }
+    }, [isOpen]);
+
     return (
         <header className='w-full mb-4 flex items-center justify-center'>
             {/* Header for large and medium screens */}
