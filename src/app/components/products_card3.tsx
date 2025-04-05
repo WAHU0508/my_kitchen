@@ -18,8 +18,7 @@ export default function ProductCard() {
           <div className="absolute w-[158.15px] h-0 left-[20px] lg:left-[34.92px] top-[60px] border-t-[5px] border-black"></div>
           {/* Description */}
           <p className="absolute w-[250px] h-[123px] lg:w-[342px] lg:h-[168px] left-[20px] lg:left-[35px] top-[70px] text-black text-[14px] lg:text-[20px]">
-            We provide high-quality Automatic Voltage Regulators (AVRs) designed to ensure stable and reliable power for homes, businesses and industries.
-            Our AVRs protect electrical equipment from voltage flactuations, surges and power instability, extending their lifespan 
+            We provide high-quality Automatic Voltage Regulators (AVRs) designed to ensure stable and reliable power for homes, businesses and industries. 
           </p>
           </div>
           
