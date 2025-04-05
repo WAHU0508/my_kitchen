@@ -200,7 +200,46 @@ We specialize in high-quality electrical installations, solar energy solutions a
             </div>
           </div>
             
-          {/*Why us*/} 
+          {/*Projects*/}
+          <div className='flex flex-col mt-[40px]'>
+            <div className='w-full flex flex-row items-center lg:items-center lg:justify-center md:items-center md:justify-center'>
+              <div className="w-[25px] h-0 top-[745px] left-[625px] bg-[#D9D9D9] border-b-[5px] border-[#252865]"></div>
+              <div className="text-black font-inter font-normal text-[14px] lg:text-[24px] md:text-[24px]">
+                Portfolio
+              </div>
+            </div>
+            <div className=" w-full flex flex-row lg:items-center lg:justify-center md:items-center md:justify-center gap-[10px] text-[16px] lg:text-[32px] md:text-[28px]">
+              <p className='text-[#FF0105]'>Our</p>
+              <p className='text-[#252865]'>Projects</p>
+            </div>
+          </div>
+          <div className="w-full overflow-x-auto lg:overflow-x-hidden lg:overflow-y-hidden">
+            <div className="flex lg:grid gap-4 items-center justify-start lg:grid-cols-3 min-w-max">
+              <ProductCard1 />
+              <ProductCard2 />
+              <ProductCard3 />
+            </div>
+          </div>
+
+
+         <div className='w-full flex items-center justify-center mt-[20px]'>
+          <div className="relative w-[123px] h-[23px] lg:w-[290px] lg:h-[46px] md:w-[290px] md:h-[46px]">
+            {/* Rectangle 9 - blurred background box */}
+            <div className="absolute w-[123px] h-[23px] lg:w-[290px] lg:h-[46px] md:w-[290px] md:h-[46px] inset-0 border-[2px] border-[#252865] rounded-[15px] blur-[8.25px]"></div>
+            {/* Rectangle 8 - foreground box */}
+            <button className="absolute w-[123px] h-[23px] lg:w-[290px] lg:h-[46px] md:w-[290px] md:h-[46px] text-[10px] lg:text-[24px] md:text-[24px] inset-0 border-[2px] border-[#252865] rounded-[15px] flex flex-row items-center lg:items-center lg:justify-center md:items-center md:justify-center lg:gap-2 md:gap-2">
+              Explore our products
+              <Image
+                src={externalLink}
+                alt='Explore'
+                width={18}
+                height={18}
+                className='w-[10px] h-[10px] lg:w-[18px] lg:h-[18px] md:w-[18px] md:h-[18px]'
+              />
+            </button>
+          </div>
+      </div>
+          {/*Projects*/} 
          </div> 
         </div>
       </div>
