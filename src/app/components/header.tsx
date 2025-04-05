@@ -142,7 +142,7 @@ export default function Header() {
                             <div className='w-[193px] h-[108px] flex flex-col items-center justify-between'>
                                 <Clock size={24} className='text-white'/>
                                 <p className='text-[12px] text-center'>Monday - Friday</p>
-                                <p className='text-[12px] text-center'>8 AM - 1PM (Saturday 8AM - 1PM)</p>
+                                <p className='text-[12px] text-center'>8 AM - 5PM (Saturday 8AM - 1PM)</p>
                             </div>
                             
                             {/* Location section */}
