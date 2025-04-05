@@ -14,13 +14,13 @@ export default function ProductCard() {
             height={304}
             className="absolute w-[300px] h-[250px] lg:w-[386px] lg:h-[304px] left-0 top-0 opacity-24"
           />
-          <p className="absolute w-full h-[24px] left-[20px] lg:left-[35px] top-[20px] text-black lg:text-[20px]">Solar Solutions</p>
+          <p className="absolute w-full h-[24px] left-[20px] lg:left-[35px] top-[20px] text-black lg:text-[20px]">Switchboard Manufacturing</p>
           <div className="absolute w-[158.15px] h-0 left-[20px] lg:left-[34.92px] top-[60px] border-t-[5px] border-black"></div>
           {/* Description */}
           <p className="absolute w-[250px] h-[123px] lg:w-[342px] lg:h-[168px] left-[20px] lg:left-[35px] top-[70px] text-black text-[14px] lg:text-[20px]">
-            We provide cutting edge solar solutions to enhance energy efficiency and
-            sustainability. Our solar technology helps businesses, communities, and
-            home transition to clean, reliable and cost effective energy
+            We specialize in the design and manufacturing of high-quality electrical switchboards for industrial, 
+            commercial, and residential applications.
+            Our switchboards are safe, efficient and reliable
           </p>
           </div>
           
