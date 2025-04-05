@@ -136,11 +136,19 @@ We specialize in high-quality electrical installations, solar energy solutions a
               <p className='text-[#252865]'>Products and Services</p>
             </div>
             
-            <div className='overflow-x-auto whitespace-normal w-full lg:overflow-x-hidden lg:overflow-y-hidden grid grid-cols-1 lg:grid md:grid lg:grid-cols-3 md:grid-cols-3 gap-4 items-center justify-center'>
+{/*             <div className='overflow-x-auto whitespace-normal w-full lg:overflow-x-hidden lg:overflow-y-hidden grid grid-cols-1 lg:grid md:grid lg:grid-cols-3 md:grid-cols-3 gap-4 items-center justify-center'>
+              <ProductCard1 />
+              <ProductCard2 />
+              <ProductCard3 />
+            </div> */}
+            <div className="w-full overflow-x-auto lg:overflow-x-hidden">
+            <div className="flex lg:grid gap-4 items-center justify-start lg:grid-cols-3 min-w-max">
               <ProductCard1 />
               <ProductCard2 />
               <ProductCard3 />
             </div>
+          </div>
+
 
              <div className='w-full flex items-center justify-center mt-[20px]'>
               <div className="relative w-[123px] h-[23px] lg:w-[290px] lg:h-[46px] md:w-[290px] md:h-[46px]">
