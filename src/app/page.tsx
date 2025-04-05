@@ -6,7 +6,9 @@ import solarpanelImg from './assets/solarpanel.png'
 import avrImg from './assets/AVR.png'
 import Carousel from './components/image_carousel'
 import externalLink from './svgs/external_link.svg'
-import ProductCard from './components/products_card'
+import ProductCard1 from './components/products_card1'
+import ProductCard2 from './components/products_card2'
+import ProductCard3 from './components/products_card3'
 
 export default function HomePage() { 
   return (
@@ -122,7 +124,11 @@ We specialize in high-quality electrical installations, solar energy solutions a
             </div>
 
           {/*Product Cards*/}
-          <ProductCard />
+          <div>
+            <ProductCard1 />
+            <ProductCard2 />
+            <ProductCard3 />
+          </div>
           
         </div>
       </div>
