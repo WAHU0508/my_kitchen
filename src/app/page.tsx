@@ -91,7 +91,7 @@ We specialize in high-quality electrical installations, solar energy solutions a
         {/*Get To Know Us*/}
         <div className='flex flex-col mt-[40px]'>
             <div className='w-full flex flex-row items-center lg:items-center lg:justify-center md:items-center md:justify-center'>
-              <div className="w-[25px] h-0 top-[745px] left-[625px] bg-[#D9D9D9] border-[5px] border-[#252865]"></div>
+              <div className="w-[25px] h-0 top-[745px] left-[625px] bg-[#D9D9D9] border-b-[5px] border-[#252865]"></div>
               <div className="text-black font-inter font-normal text-[14px] lg:text-[24px] md:text-[24px]">
                 Get to know us
               </div>
@@ -126,7 +126,7 @@ We specialize in high-quality electrical installations, solar energy solutions a
           {/*Product Cards*/}
           <div className='flex flex-col mt-[40px]'>
             <div className='w-full flex flex-row items-center lg:items-center lg:justify-center md:items-center md:justify-center'>
-              <div className="w-[25px] h-0 top-[745px] left-[625px] bg-[#D9D9D9] border-[5px] border-[#252865]"></div>
+              <div className="w-[25px] h-0 top-[745px] left-[625px] bg-[#D9D9D9] border-b-[5px] border-[#252865]"></div>
               <div className="text-black font-inter font-normal text-[14px] lg:text-[24px] md:text-[24px]">
                 What we do
               </div>
@@ -166,7 +166,7 @@ We specialize in high-quality electrical installations, solar energy solutions a
           {/*Why us*/}
           <div className='flex flex-col mt-[40px]'>
             <div className='w-full flex flex-row items-center lg:items-center lg:justify-center md:items-center md:justify-center'>
-              <div className="w-[25px] h-0 top-[745px] left-[625px] bg-[#D9D9D9] border-[5px] border-[#252865]"></div>
+              <div className="w-[25px] h-0 top-[745px] left-[625px] bg-[#D9D9D9] border-b-[5px] border-[#252865]"></div>
               <div className="text-black font-inter font-normal text-[14px] lg:text-[24px] md:text-[24px]">
                 Why Us?
               </div>
