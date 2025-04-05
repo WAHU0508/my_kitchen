@@ -17,14 +17,20 @@ export default function ProductCard() {
           <p className="absolute w-full h-[24px] left-[35px] top-[20px] text-white lg:text-[20px]">Solar Solutions</p>
           <div className="absolute w-[158.15px] h-0 left-[34.92px] top-[60px] border-t-[5px] border-white"></div>
           {/* Description */}
-          <p className="absolute w-[342px] h-[168px] left-[35px] top-[100px] text-white lg:text-[20px]">
+          <p className="absolute w-[342px] h-[168px] left-[35px] top-[70px] text-white lg:text-[20px]">
             We provide cutting edge solar solutions to enhance energy efficiency and
             sustainability. Our solar technology helps businesses, communities, and
             home transition to clean, reliable and cost effective energy
           </p>
           </div>
           
-          <div className='w-full h-[76px] bg-[172C5F]'></div>
+          <div className='w-full h-[76px] bg-[172C5F]'>
+            <button className="absolute w-[141px] h-[39px] left-[35px] top-[330px] bg-[#F4A261] border-[2px] border-[#F4A261] rounded-[5px] flex items-center justify-center">
+              <span className="text-black text-[16px]">
+                Find out more
+            </span>
+             </button>
+          </div>
           
     </div>
 
