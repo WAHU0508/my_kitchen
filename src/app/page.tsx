@@ -135,13 +135,8 @@ We specialize in high-quality electrical installations, solar energy solutions a
               <p className='text-[#FF0105]'>Our</p>
               <p className='text-[#252865]'>Products and Services</p>
             </div>
-            
-{/*             <div className='overflow-x-auto whitespace-normal w-full lg:overflow-x-hidden lg:overflow-y-hidden grid grid-cols-1 lg:grid md:grid lg:grid-cols-3 md:grid-cols-3 gap-4 items-center justify-center'>
-              <ProductCard1 />
-              <ProductCard2 />
-              <ProductCard3 />
-            </div> */}
-            <div className="w-full overflow-x-auto lg:overflow-x-hidden">
+          
+            <div className="w-full overflow-x-auto lg:overflow-x-hidden lg:overflow-y-hidden">
             <div className="flex lg:grid gap-4 items-center justify-start lg:grid-cols-3 min-w-max">
               <ProductCard1 />
               <ProductCard2 />
@@ -170,7 +165,7 @@ We specialize in high-quality electrical installations, solar energy solutions a
           
           {/*Next Section*/}
           
-        </div>
+        
       </div>
     </section>
   );
