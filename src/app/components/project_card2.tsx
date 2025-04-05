@@ -2,7 +2,7 @@ import React from 'react'
 import Image from 'next/image'
 import mapPin from '../svgs/mapPin2.svg'
 import rainbowResort from '../assets/rainbow_resort.png'
-import logo1 from '../image 16.png'
+import logo1 from '../assets/image 16.png'
 import solargen from '../assets/solargen.png'
 
 export default function ProjectCard() {
