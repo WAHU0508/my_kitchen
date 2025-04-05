@@ -20,13 +20,13 @@ export default function TailwindCarousel() {
     return () => clearInterval(interval);
   }, [images.length]);
 
-  const nextSlide = () => {
+  {/* const nextSlide = () => {
     setCurrent((current + 1) % images.length);
   };
 
   const prevSlide = () => {
     setCurrent((current - 1 + images.length) % images.length);
-  };
+  }; */}
 
   return (
     <div className="relative w-full max-w-md mx-auto overflow-hidden rounded-lg">
