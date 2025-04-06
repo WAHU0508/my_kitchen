@@ -159,7 +159,7 @@ export default function Header() {
                             </div>
                             
                             {/* Location section */}
-                            <div className='border border-white w-[232px] h-[50px] flex flex-col items-center justify-between'>
+                            <div className='border border-white w-[232px] h-[100px] flex flex-col items-center justify-between'>
                                 <Image
                                     src={mapPin}
                                     width={24}
@@ -170,7 +170,7 @@ export default function Header() {
                             </div>
                             
                             {/* Social Media section */}
-                            <div className='border border-white w-[186px] h-[100px] flex flex-col items-center justify-between'>
+                            <div className='border border-white w-[186px] h-[70px] flex flex-col items-center justify-between'>
                                 <p className='text-[12px] text-center'>Visit Us on</p>
                                 <div className='flex flex-row w-full items-center justify-between'>
                                     <Image
