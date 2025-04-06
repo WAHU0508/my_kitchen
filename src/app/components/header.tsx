@@ -150,7 +150,7 @@ export default function Header() {
                             </ul>
                         </div>
                         {/* Footer section */}
-                        <div className='flex flex-col items-center gap-[20px] w-full h-[390px] text-white bg-[#252865] py-2'>
+                        <div className='flex flex-col items-center gap-[20px] w-full h-[320px] text-white bg-[#252865] py-2'>
                             {/* Operating Hours Section */}
                             <div className='border border-white w-[193px] h-[100px] flex flex-col items-center justify-between'>
                                 <Clock size={24} className='text-white'/>
