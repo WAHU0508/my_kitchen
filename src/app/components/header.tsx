@@ -212,7 +212,7 @@ export default function Header() {
                                 </div>
                             </div>
                         </div>
-                        <div className='w-full h-[70px] bg-[#252865]'></div>
+                    
                         </div>
                     </div>
             )}
