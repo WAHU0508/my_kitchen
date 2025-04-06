@@ -166,8 +166,8 @@ We specialize in high-quality electrical installations, solar energy solutions a
               <p className='text-[#252865]'>We are</p>
             </div>
             <p className='w-full lg:w-[1186px] flex lg:items-center lg:justify-center md:items-center md:justify-center text-center text-[#000000] text-[12px] lg:text-[24px] md:text-[20px]'>Alver power systems is a manufacturing company that  specializes in electrical installations solar energy solutions and switchboard manufacturing.
-                Mission: Our mission is to build lasting, mutually beneficial relationships with each of our esteemed clients by continually exceeding their expectations and earning their confidence.
-                Vision: Being the most skilled and reputable commercial electrical contractor service provider in east Africa 
+              Our mission is to build lasting, mutually beneficial relationships with each of our esteemed clients by continually exceeding their expectations and earning their confidence.
+              Our mission is to be the most skilled and reputable commercial electrical contractor service provider in east Africa 
             </p>
           
             <div className='w-full flex items-center justify-center mt-[20px]'>
