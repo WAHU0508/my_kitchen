@@ -178,7 +178,7 @@ export default function Header() {
                             </div>
                             
                             {/* Social Media section */}
-                            <div className='w-[186px] h-[70px] flex flex-col items-center mt-[20px] justify-between'>
+                            <div className='w-[186px] h-[70px] flex flex-col items-center justify-between'>
                                 <p className='text-[12px] text-center'>Visit Us on</p>
                                 <div className='flex flex-row w-full items-center justify-between'>
                                     <Image
