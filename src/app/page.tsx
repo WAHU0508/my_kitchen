@@ -82,7 +82,7 @@ We specialize in high-quality electrical installations, solar energy solutions a
           {/*Button 1*/}
           <div className="relative w-[145px] h-[30px] lg:w-[290px] lg:h-[46px] md:w-[290px] md:h-[46px]">
             {/* Rectangle 9 - blurred background box */}
-            <div className="absolute w-[145px] h-[30px] lg:w-[290px] lg:h-[46px] md:w-[290px] md:h-[46px] inset-0 border-[2px] border-[#252865] rounded-[15px] blur-[8.25px]"></div>
+            {/*<div className="absolute w-[145px] h-[30px] lg:w-[290px] lg:h-[46px] md:w-[290px] md:h-[46px] inset-0 border-[2px] border-[#252865] rounded-[15px] blur-[8.25px]"></div>*/}
             {/* Rectangle 8 - foreground box */}
             <button className="absolute text-black hover:bg-[#252865] hover:text-white active:bg-[#252865] active:text-white w-[145px] h-[30px] lg:w-[290px] lg:h-[46px] md:w-[290px] md:h-[46px] text-[10px] lg:text-[24px] md:text-[24px] inset-0 border-[2px] border-[#252865] rounded-[15px] flex flex-row items-center justify-center lg:items-center lg:justify-center md:items-center md:justify-center gap-2 lg:gap-2 md:gap-2"
                     onClick={products_and_services}
@@ -101,7 +101,7 @@ We specialize in high-quality electrical installations, solar energy solutions a
           {/*Button 2*/}
           <div className="relative w-[145px] h-[30px] lg:w-[290px] lg:h-[46px] md:w-[290px] md:h-[46px]">
             {/* Rectangle 9 - blurred background box */}
-            <div className="absolute w-[145px] h-[30px] lg:w-[290px] lg:h-[46px] md:w-[290px] md:h-[46px] inset-0 border-[2px] border-[#252865] rounded-[15px] blur-[8.25px]"></div>
+            {/*<div className="absolute w-[145px] h-[30px] lg:w-[290px] lg:h-[46px] md:w-[290px] md:h-[46px] inset-0 border-[2px] border-[#252865] rounded-[15px] blur-[8.25px]"></div>*/}
             {/* Rectangle 8 - foreground box */}
             <button className="absolute text-black hover:bg-[#252865] hover:text-white active:bg-[#252865] active:text-white w-[145px] h-[30px] lg:w-[290px] lg:h-[46px] md:w-[290px] md:h-[46px] text-[10px] lg:text-[24px] md:text-[24px] inset-0 border-[2px] border-[#252865] rounded-[15px] flex flex-row items-center justify-center lg:items-center lg:justify-center md:items-center md:justify-center gap-2 lg:gap-2 md:gap-2"
                    onClick={openModal}
@@ -124,7 +124,7 @@ We specialize in high-quality electrical installations, solar energy solutions a
           <div className="bg-white p-6 rounded-lg shadow-lg w-full max-w-md relative">
             {/* Modal Header with close button */}
             <div className="flex justify-between items-center">
-              <h2 className="text-xl font-bold">Modal Title</h2>
+              <h2 className="text-xl font-bold">Get A Quote</h2>
               <button
                 className="text-xl text-gray-600 hover:text-gray-800"
                 onClick={closeModal}
@@ -135,18 +135,18 @@ We specialize in high-quality electrical installations, solar energy solutions a
 
             {/* Modal Content */}
             <div className="mt-4">
-              <p>This is the content of the modal.</p>
+              <p>Development in Progress</p>
             </div>
 
             {/* Modal Footer */}
-            <div className="mt-4 flex justify-end">
+            {/*<div className="mt-4 flex justify-end">
               <button
                 className="px-4 py-2 bg-red-600 text-white rounded hover:bg-red-700"
                 onClick={closeModal}
               >
                 Close
               </button>
-            </div>
+            </div>*/}
           </div>
         </div>
       )}
@@ -173,7 +173,7 @@ We specialize in high-quality electrical installations, solar energy solutions a
             <div className='w-full flex items-center justify-center mt-[20px]'>
               <div className="relative w-[145px] h-[30px] lg:w-[290px] lg:h-[46px] md:w-[290px] md:h-[46px]">
                 {/* Rectangle 9 - blurred background box */}
-                <div className="absolute w-[145px] h-[30px] lg:w-[290px] lg:h-[46px] md:w-[290px] md:h-[46px] inset-0 border-[2px] border-[#252865] rounded-[15px] blur-[8.25px]"></div>
+                {/*<div className="absolute w-[145px] h-[30px] lg:w-[290px] lg:h-[46px] md:w-[290px] md:h-[46px] inset-0 border-[2px] border-[#252865] rounded-[15px] blur-[8.25px]"></div>*/}
                 {/* Rectangle 8 - foreground box */}
                 <button className="absolute text-black hover:bg-[#252865] hover:text-white active:bg-[#252865] active:text-white w-[145px] h-[30px] lg:w-[290px] lg:h-[46px] md:w-[290px] md:h-[46px] text-[10px] lg:text-[24px] md:text-[24px] inset-0 border-[2px] border-[#252865] rounded-[15px] flex flex-row items-center justify-center lg:items-center lg:justify-center md:items-center md:justify-center gap-2 lg:gap-2 md:gap-2"
                         onClick={about_us}
@@ -215,7 +215,7 @@ We specialize in high-quality electrical installations, solar energy solutions a
              <div className='w-full flex items-center justify-center mt-[20px]'>
               <div className="relative w-[145px] h-[30px] lg:w-[290px] lg:h-[46px] md:w-[290px] md:h-[46px]">
                 {/* Rectangle 9 - blurred background box */}
-                <div className="absolute w-[145px] h-[30px] lg:w-[290px] lg:h-[46px] md:w-[290px] md:h-[46px] inset-0 border-[2px] border-[#252865] rounded-[15px] blur-[8.25px]"></div>
+                {/*<div className="absolute w-[145px] h-[30px] lg:w-[290px] lg:h-[46px] md:w-[290px] md:h-[46px] inset-0 border-[2px] border-[#252865] rounded-[15px] blur-[8.25px]"></div>*/}
                 {/* Rectangle 8 - foreground box */}
                 <button className="absolute text-black hover:bg-[#252865] hover:text-white active:bg-[#252865] active:text-white w-[145px] h-[30px] lg:w-[290px] lg:h-[46px] md:w-[290px] md:h-[46px] text-[10px] lg:text-[24px] md:text-[24px] inset-0 border-[2px] border-[#252865] rounded-[15px] flex flex-row items-center justify-center lg:items-center lg:justify-center md:items-center md:justify-center gap-2 lg:gap-2 md:gap-2"
                          onClick={products_and_services}
@@ -294,7 +294,7 @@ We specialize in high-quality electrical installations, solar energy solutions a
          <div className='w-full flex items-center justify-center mt-[20px]'>
               <div className="relative w-[123px] h-[30px] lg:w-[290px] lg:h-[46px] md:w-[290px] md:h-[46px]">
                 {/* Rectangle 9 - blurred background box */}
-                <div className="absolute w-[123px] h-[30px] lg:w-[290px] lg:h-[46px] md:w-[290px] md:h-[46px] inset-0 border-[2px] border-[#252865] rounded-[15px] blur-[8.25px]"></div>
+                {/*<div className="absolute w-[123px] h-[30px] lg:w-[290px] lg:h-[46px] md:w-[290px] md:h-[46px] inset-0 border-[2px] border-[#252865] rounded-[15px] blur-[8.25px]"></div>*/}
                 {/* Rectangle 8 - foreground box */}
                 <button className="absolute text-black hover:bg-[#252865] hover:text-white active:bg-[#252865] active:text-white w-[123px] h-[30px] lg:w-[290px] lg:h-[46px] md:w-[290px] md:h-[46px] text-[10px] lg:text-[24px] md:text-[24px] inset-0 border-[2px] border-[#252865] rounded-[15px] flex flex-row items-center justify-center lg:items-center lg:justify-center md:items-center md:justify-center gap-2 lg:gap-2 md:gap-2">
                   See More
