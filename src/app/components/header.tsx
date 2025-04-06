@@ -211,6 +211,7 @@ export default function Header() {
                                     />
                                 </div>
                             </div>
+                            <div className='w-full h-[30px] bg-[#252865]'></div>
                         </div>
                         </div>
                     </div>
