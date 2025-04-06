@@ -152,14 +152,14 @@ export default function Header() {
                         {/* Footer section */}
                         <div className='flex flex-col items-center gap-[20px] w-full h-[320px] text-white bg-[#252865] py-2'>
                             {/* Operating Hours Section */}
-                            <div className='border border-white w-[193px] h-[100px] flex flex-col items-center justify-between'>
+                            <div className='w-[193px] h-[100px] flex flex-col items-center justify-between'>
                                 <Clock size={24} className='text-white'/>
                                 <p className='text-[12px] text-center'>Monday - Friday</p>
                                 <p className='text-[12px] text-center'>8 AM - 5PM (Saturday 8AM - 1PM)</p>
                             </div>
                             
                             {/* Location section */}
-                            <div className='border border-white w-[232px] h-[100px] flex flex-col items-center justify-between'>
+                            <div className='w-[232px] h-[100px] flex flex-col items-center justify-between'>
                                 <Image
                                     src={mapPin}
                                     width={24}
@@ -170,7 +170,7 @@ export default function Header() {
                             </div>
                             
                             {/* Social Media section */}
-                            <div className='border border-white w-[186px] h-[70px] flex flex-col items-center justify-between'>
+                            <div className='w-[186px] h-[70px] flex flex-col items-center justify-between'>
                                 <p className='text-[12px] text-center'>Visit Us on</p>
                                 <div className='flex flex-row w-full items-center justify-between'>
                                     <Image
