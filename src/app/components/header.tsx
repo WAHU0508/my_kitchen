@@ -119,7 +119,9 @@ export default function Header() {
                                         href="/"
                                         className={`border-b border-black/10 flex items-center justify-center w-[146px] h-[22px] text-[12px] ${
                                           pathname === '/' ? 'text-red-600' : 'text-black'
-                                        }`}>
+                                        }`}
+                                        onClick={() => setIsOpen(false)}
+                                        >
                                         Home
                                     </Link>
                                 </li>
@@ -127,7 +129,9 @@ export default function Header() {
                                         href="/about_us"
                                         className={`border-b border-black/10 flex items-center justify-center w-[146px] h-[22px] text-[12px] ${
                                           pathname === '/about_us' ? 'text-red-600' : 'text-black'
-                                        }`}>
+                                        }`}
+                                        onClick={() => setIsOpen(false)}
+                                        >
                                         About Us
                                     </Link>
                                 </li>
@@ -135,7 +139,9 @@ export default function Header() {
                                         href="/products_and_services"
                                         className={`border-b border-black/10 flex items-center justify-center w-[146px] h-[22px] text-[12px] ${
                                           pathname === '/products_and_services' ? 'text-red-600' : 'text-black'
-                                        }`}>
+                                        }`}
+                                        onClick={() => setIsOpen(false)}
+                                        >
                                         Products & Services
                                     </Link>
                                 </li>
@@ -143,7 +149,9 @@ export default function Header() {
                                         href="/contact_us"
                                         className={`border-b border-black/10 flex items-center justify-center w-[146px] h-[22px] text-[12px] ${
                                           pathname === '/contact_us' ? 'text-red-600' : 'text-black'
-                                        }`}>
+                                        }`}
+                                        onClick={() => setIsOpen(false)}
+                                        >
                                         Contact Us
                                     </Link>
                                 </li>
