@@ -150,16 +150,16 @@ export default function Header() {
                             </ul>
                         </div>
                         {/* Footer section */}
-                        <div className='flex flex-col items-center justify-between w-full h-[384px] text-white bg-[#252865] py-2'>
+                        <div className='flex flex-col items-center justify-between w-full h-auto text-white bg-[#252865] py-2'>
                             {/* Operating Hours Section */}
-                            <div className='w-[193px] h-[108px] flex flex-col items-center justify-between'>
+                            <div className='w-[193px] h-auto flex flex-col items-center justify-between'>
                                 <Clock size={24} className='text-white'/>
                                 <p className='text-[12px] text-center'>Monday - Friday</p>
                                 <p className='text-[12px] text-center'>8 AM - 5PM (Saturday 8AM - 1PM)</p>
                             </div>
                             
                             {/* Location section */}
-                            <div className='w-[232px] h-[72px] flex flex-col items-center justify-between'>
+                            <div className='w-[232px] h-auto flex flex-col items-center justify-between'>
                                 <Image
                                     src={mapPin}
                                     width={24}
@@ -170,7 +170,7 @@ export default function Header() {
                             </div>
                             
                             {/* Social Media section */}
-                            <div className='w-[186px] h-[69px] flex flex-col items-center justify-between'>
+                            <div className='w-[186px] h-auto flex flex-col items-center justify-between'>
                                 <p className='text-[12px] text-center'>Visit Us on</p>
                                 <div className='flex flex-row w-full items-center justify-between'>
                                     <Image
