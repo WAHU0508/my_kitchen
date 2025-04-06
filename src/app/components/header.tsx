@@ -101,7 +101,7 @@ export default function Header() {
 
                     {/* Modal with slide-in animation */}
                     <div
-                        className={`fixed left-0 top-0 h-screen w-[262px] flex flex-col items-center gap-[100px] bg-white shadow-xl z-50 transition-transform duration-300 transform ${
+                        className={`fixed left-0 top-0 h-screen w-[262px] flex flex-col items-center bg-white shadow-xl z-50 transition-transform duration-300 transform ${
                             isOpen ? 'translate-x-0' : '-translate-x-full'
                         }`}
                         style={{ touchAction: 'none' }}
@@ -158,7 +158,7 @@ export default function Header() {
                             </ul>
                         </div>
                         {/* Footer section */}
-                        <div className='flex flex-col items-center gap-[20px] w-full h-[320px] text-white bg-[#252865] py-2'>
+                        <div className='flex flex-col items-center gap-[20px] mt-[100px] w-full h-[320px] text-white bg-[#252865] py-2'>
                             {/* Operating Hours Section */}
                             <div className='w-[193px] h-[100px] flex flex-col items-center justify-between'>
                                 <Clock size={24} className='text-white'/>
