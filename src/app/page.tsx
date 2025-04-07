@@ -39,6 +39,31 @@ export default function HomePage() {
   const closeModal = () => {
     setIsModalOpen(false);
   };
+
+  const [formData, setFormData] = useState({ name: '', email: '', phone: '', message: '' });
+  const [status, setStatus] = useState(null);
+
+  const handleChange = (e) => {
+    setFormData({ ...formData, [e.target.name]: e.target.value });
+  };
+
+  const handleSubmit = async (e) => {
+    e.preventDefault();
+    setStatus('Sending...');
+
+    try {
+      const res = await fetch('/api/contact', {
+        method: 'POST',
+        body: JSON.stringify(formData),
+        headers: { 'Content-Type': 'application/json' },
+      });
+
+      const data = await res.json();
+      setStatus(data.success ? 'Message sent!' : 'Failed to send message.');
+    } catch {
+      setStatus('Something went wrong.');
+    }
+  };
   
   return (
     <section className='w-full flex items-center justify-center'>
@@ -138,7 +163,14 @@ We specialize in high-quality electrical installations, solar energy solutions a
  
              {/* Modal Content */}
              <div className="mt-4">
-               <p className='text-black'>Development in Progress</p>
+               <form onSubmit={handleSubmit} className="space-y-4 max-w-md mx-auto">
+                <input type="text" name="name" placeholder="Name" onChange={handleChange} required className="w-full p-2 border rounded" />
+                <input type="email" name="email" placeholder="Email" onChange={handleChange} required className="w-full p-2 border rounded" />
+                <input type="tel" name="phone" placeholder="Phone Number" onChange={handleChange} required className="w-full p-2 border rounded" />
+                <textarea name="message" placeholder="Quote / Message" onChange={handleChange} required className="w-full p-2 border rounded"></textarea>
+                <button type="submit" className="bg-blue-500 text-white px-4 py-2 rounded">Send</button>
+                {status && <p>{status}</p>}
+              </form>
              </div>
  
              {/* Modal Footer */}
