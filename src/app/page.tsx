@@ -39,7 +39,7 @@ export default function HomePage() {
   // Function to close modal
   const closeModal = () => {
     setIsModalOpen(false);
-    setStatus(null);
+    setStatus('');
   };
   interface FormData {
   name: string;
