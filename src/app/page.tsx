@@ -49,14 +49,14 @@ export default function HomePage() {
             height={250}
           />
           <Image 
-            src={electricalsImg}
-            alt='Electricals Image'
+            src={switchboardImg}
+            alt='Switchboard Image'
             width={250}
             height={250}
           />
           <Image 
-            src={switchboardImg}
-            alt='Switchboard Image'
+            src={electricalsImg}
+            alt='Electricals Image'
             width={250}
             height={250}
           />
