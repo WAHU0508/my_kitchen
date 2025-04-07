@@ -6,7 +6,7 @@ import Footer from '../components/footer';
 
 export default function AboutUsPage() {
   return (
-    <section className="relative w-full flex flex-col items-center">
+    <section className="relative w-full flex flex-col items-center overflow-x-hidden">
 
   {/* Background Image with header and quote overlay */}
   <div className="relative w-[1440px] h-[550px]">
@@ -36,7 +36,7 @@ export default function AboutUsPage() {
     <div className="text-black text-[24px] mb-4">Our journey</div>
     <div className="flex flex-row items-start gap-6">
       <div className="w-[10px] h-[50px] bg-[#FF0105]"></div>
-      <div className="text-black text-[16px]">
+      <div className="w-full text-black text-[14px]">
         Alver Power Systems is a company that was founded and registered in 2022 in accordance with the Kenya Company Act rules, however it has been in operation as a sole proprietor since 2017. 
         Our goal is to offer cost-effective power solutions and sustainable, renewable energy-saving solutions that are both inexpensive and environmentally beneficial for consumers, businesses, and institutions.
         In order to consistently produce high-quality electrical solutions that perform and provide protection, we at Alver Power System have formed our company around understanding the needs and expectations of our customers. 
