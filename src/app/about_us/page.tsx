@@ -1,6 +1,6 @@
 import React from 'react';
 import Image from 'next/image'
-import coverImg from '../assets/switchboard_3_.png'
+import coverImg from '../assets/sivacon.jpg'
 
 export default function AboutUsPage() {  
   return (
