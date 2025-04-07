@@ -96,13 +96,13 @@ export default function AboutUsPage() {
              <div className='text-white'>M logo</div> 
              <div className='text-white'>{mission ? 'Mission Statement' : ''}</div> 
           </div>
-          <div className='rounded-[20px] px-[50px] py-[10px] bg-[#FF0105] flex flex-row items-center justify-center gap-2'
+          <div className='rounded-[20px] px-[50px] py-[50px] bg-[#FF0105] flex flex-row items-center justify-center gap-2'
                onClick={handleVision}
            >
              <div className='text-white'>M logo</div> 
              <div className='text-white'>{vision ? 'Mission Statement' : ''}</div> 
           </div>
-          <div className='rounded-[20px] px-[50px] py-[10px] bg-[#FF0105] flex flex-row items-center justify-center gap-2'
+          <div className='rounded-[20px] px-[50px] py-[50px] bg-[#FF0105] flex flex-row items-center justify-center gap-2'
             onClick={handleValues}
             >
              <div className='text-white'>M logo</div> 
