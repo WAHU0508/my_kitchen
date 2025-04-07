@@ -1,5 +1,5 @@
 'use client'
-import React from 'react';
+import React, { useState } from 'react';
 import Image from 'next/image';
 import coverImg from '../assets/sivacon.jpg';
 import Header from '../components/header';
@@ -7,6 +7,26 @@ import Footer from '../components/footer';
 import { motion } from 'framer-motion';
 
 export default function AboutUsPage() {
+  const [mission, setMission] = useState(true)
+  const [vision, setVision] = useState(false)
+  const [values, setValues] = useState(false)
+
+  const handleMission = () => {
+    setMission(true)
+    setVision(false)
+    setValues(false)
+  }
+  const handleVision = () => {
+    setMission(false)
+    setVision(true)
+    setValues(false)
+  }
+  const handleValues = () => {
+    setMission(false)
+    setVision(false)
+    setValues(true)
+  }
+  
   return (
     <section className="w-full flex items-center justify-center overflow-x-hidden">
       <div className='relative hidden md:block w-full lg:w-[1440px] flex flex-col items-center justify-center'>
@@ -70,17 +90,23 @@ export default function AboutUsPage() {
         </motion.div>
         
         <div className='w-full flex flex-row gap-6 items-center justify-center'>
-          <div className='px-[50px] py-[10px] bg-[#FF0105] flex flex-row items-center justify-center gap-2'>
+          <div className='px-[50px] py-[10px] bg-[#FF0105] flex flex-row items-center justify-center gap-2'
+              onClick={handleMission}
+          >
              <div className='text-white'>M logo</div> 
-             <div className='text-white'>Mission Statement</div> 
+             <div className='text-white'>{mission ? 'Mission Statement' : ''}</div> 
           </div>
-          <div className='px-[50px] py-[10px] bg-[#FF0105] flex flex-row items-center justify-center gap-2'>
+          <div className='px-[50px] py-[10px] bg-[#FF0105] flex flex-row items-center justify-center gap-2'
+               onClick={handleVision}
+           >
              <div className='text-white'>M logo</div> 
-             <div className='text-white'>Mission Statement</div> 
+             <div className='text-white'>{vision ? 'Mission Statement' : ''}</div> 
           </div>
-          <div className='px-[50px] py-[10px] bg-[#FF0105] flex flex-row items-center justify-center gap-2'>
+          <div className='px-[50px] py-[10px] bg-[#FF0105] flex flex-row items-center justify-center gap-2'
+            onClick={handleValues}
+            >
              <div className='text-white'>M logo</div> 
-             <div className='text-white'>Mission Statement</div> 
+             <div className='text-white'>{values ? 'Mission Statement' : ''}</div> 
           </div>
         </div>
         
