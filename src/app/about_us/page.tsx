@@ -6,7 +6,6 @@ import Header from '../components/header'
 export default function AboutUsPage() {  
   return (
     <section className='relative top-0 w-full flex flex-col items-center justify-center'>
-      <Header />
       <div className='w-[1440px]'>
         <Image
           src={coverImg}
@@ -16,6 +15,7 @@ export default function AboutUsPage() {
           className='absolute'
         />
       </div>
+      <Header className='absolute'/>
     </section>
   )
 }
