@@ -68,7 +68,13 @@ export default function AboutUsPage() {
             </div>
           </motion.div>
         </motion.div>
-      
+        
+        <div className='w-full flex flex-row itesm-center justify-center'>
+          <div className='px-[20px] py-[5px] bg-green'>
+{/*             <div >Div 1</div> */}
+          </div>
+        </div>
+        
         <div className='mt-[20px]'>
           <Footer />
         </div>
