@@ -15,7 +15,7 @@ export default function AboutUsPage() {
           className='absolute'
         />
       </div>
-      <Header className='absolute'/>
+      <Header />
     </section>
   )
 }
