@@ -4,6 +4,7 @@ import Image from 'next/image';
 import { useRouter } from 'next/navigation'
 import electricalsImg from './assets/electricals.png'
 import switchboardImg from './assets/switchboard.png'
+import switchboardImg2 from './assets/switchBoard(2).jpeg'
 import solarpanelImg from './assets/solarpanel.png'
 import avrImg from './assets/AVR.png'
 import Carousel from './components/image_carousel'
