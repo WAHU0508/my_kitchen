@@ -12,6 +12,8 @@ export default function AboutUsPage() {
         <Image
           src={coverImg}
           alt='Cover Image'
+          width={1440}
+          height={700}
           className='object-cover'
         />
       </div>
