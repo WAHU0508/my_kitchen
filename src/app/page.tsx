@@ -127,7 +127,7 @@ We specialize in high-quality electrical installations, solar energy solutions a
            <div className="bg-white p-6 rounded-lg shadow-lg w-full max-w-md relative">
              {/* Modal Header with close button */}
              <div className="flex justify-between items-center">
-               <h2 className="text-xl font-bold">Get A Quote</h2>
+               <h2 className="text-black text-xl font-bold">Get A Quote</h2>
                <button
                  className="text-xl text-gray-600 hover:text-gray-800"
                  onClick={closeModal}
@@ -138,7 +138,7 @@ We specialize in high-quality electrical installations, solar energy solutions a
  
              {/* Modal Content */}
              <div className="mt-4">
-               <p>Development in Progress</p>
+               <p className='text-black'>Development in Progress</p>
              </div>
  
              {/* Modal Footer */}
