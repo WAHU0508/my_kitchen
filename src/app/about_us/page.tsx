@@ -26,7 +26,8 @@ export default function AboutUsPage() {
       <div className='absolute lg:w-[1300px]'>
         <p className='text-white font-semibold ml-[150px] text-[50px] w-[600px]'>Driven by Excellence, Energized by Trust.</p>
       </div>
-      <div className='lg:w-[1300px] pl-[150px] flex flex-col'>
+      
+      <div className='lg:w-[1300px] px-[100px] flex flex-col'>
         <div className='text-black lg:text-[24px]'>Our journey</div>
         <div className='flex flex-row'>
           <div className='w-[5px] h-[50px] bg-[#FF0105]'></div>
