@@ -1,3 +1,4 @@
+'use client'
 import type { Metadata } from "next";
 import { usePathname } from "next/navigation";
 import Header from "./components/header";
