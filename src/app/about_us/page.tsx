@@ -5,24 +5,24 @@ import Header from '../components/header';
 
 export default function AboutUsPage() {
   return (
-    <section className='relative top-0 w-full flex flex-col items-center justify-center overflow-hidden'>
+    <section className="relative w-full flex flex-col items-center justify-center overflow-hidden">
 
       {/* Background Image */}
-      <div className='absolute top-0 w-[1440px] h-[700px]'>
+      <div className="relative w-[1440px] h-[700px] z-0">
         <Image
           src={coverImg}
-          alt='Cover Image'
-          width={1440}
-          height={700}
-          className='object-cover'
+          alt="Cover Image"
+          fill
+          className="object-cover"
+          priority
         />
       </div>
 
-      {/* Header in front */}
-      <div className='relative'>
+      {/* Header in front of image */}
+      <div className="absolute top-0 left-0 w-full z-10">
         <Header />
       </div>
-      
+
     </section>
   );
 }
