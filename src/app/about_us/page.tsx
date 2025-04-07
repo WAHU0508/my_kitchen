@@ -39,14 +39,14 @@ export default function AboutUsPage() {
           initial={{ opacity: 0, y: 40 }}
           whileInView={{ opacity: 1, y: 0 }}
           transition={{ duration: 0.8, ease: 'easeOut' }}
-          viewport={{ once: true, amount: 0.2 }}
+          viewport={{ once: false, amount: 0.2 }} // this ensures it's triggered every time the section comes into view
         >
           <motion.div
             className="text-black text-[24px] mb-4"
             initial={{ opacity: 0, x: -50 }}
             whileInView={{ opacity: 1, x: 0 }}
             transition={{ delay: 0.2, duration: 0.6 }}
-            viewport={{ once: true }}
+            viewport={{ once: false }}
           >
             Our journey
           </motion.div>
@@ -56,12 +56,15 @@ export default function AboutUsPage() {
             initial={{ opacity: 0 }}
             whileInView={{ opacity: 1 }}
             transition={{ delay: 0.4, duration: 0.8 }}
-            viewport={{ once: true }}
+            viewport={{ once: false }}
           >
             <div className="w-[10px] h-[50px] bg-[#FF0105]"></div>
             <div className="w-full text-black text-[14px]">
-              Alver Power Systems is a company that was founded and registered in 2022 in accordance with the Kenya Company Act rules...
-              {/* continue the paragraph as-is */}
+              Alver Power Systems is a company that was founded and registered in 2022 in accordance with the Kenya Company Act rules, however it has been in operation as a sole proprietor since 2017. 
+              Our goal is to offer cost-effective power solutions and sustainable, renewable energy-saving solutions that are both inexpensive and environmentally beneficial for consumers, businesses, and institutions.
+              In order to consistently produce high-quality electrical solutions that perform and provide protection, we at Alver Power System have formed our company around understanding the needs and expectations of our customers.
+              Our work is done with no exceptions, and it shows in the final outcome. Every project is handled equally, whether it involves industrial buildings, residential structures, or commercial and retail fit-outs. Experienced project managers, licensed electricians, and office-based support staff guarantee the effective completion of your contract. Our consumers' faith and trust in using our services has contributed to our success. We are committed to delivering high-quality services on time and under budget, keeping everyone safe, and working together with all parties.
+              A focus on quality control and customer service means that a significant amount of our business originates from clients who frequently use our services.
             </div>
           </motion.div>
         </motion.div>
