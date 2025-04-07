@@ -92,14 +92,14 @@ export default function AboutUsPage() {
         </motion.div>
         
         <div className='mt-[20px] w-full flex flex-row gap-6 items-center justify-center'>
-          <div className=`rounded-[20px] px-[50px] py-[50px] ${mission ? bg-[#FF0105] : bg-[C5C5C5]} flex flex-row items-center justify-center gap-2`
+          <div className={`rounded-[20px] px-[50px] py-[50px] ${mission ? 'bg-[#FF0105]' : 'bg-[C5C5C5]'} flex flex-row items-center justify-center gap-2`}
               onClick={handleMission}
           >
              <div className='text-white'>
                <Image
                  src={mission ? mission1 : mission2}
-                 width={}
-                 height={}
+                 width={24}
+                 height={24}
                  alt='Mission'
                 />
              </div> 
