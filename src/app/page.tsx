@@ -66,7 +66,7 @@ export default function HomePage() {
       setStatus(data.success ? 'Message sent!' : 'Failed to send message.');
       // Clear status message after 3 seconds
       setTimeout(() => {
-        setStatus(null); // Reset the status after 3 seconds
+        setStatus(''); // Reset the status after 3 seconds
       }, 5000);
     } catch {
       setStatus('Something went wrong.');
