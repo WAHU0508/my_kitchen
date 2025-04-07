@@ -69,10 +69,11 @@ export default function AboutUsPage() {
           </motion.div>
         </motion.div>
         
-        <div className='w-full flex flex-row itesm-center justify-center'>
-          <div className='px-[20px] py-[5px] bg-green'>
-{/*             <div >Div 1</div> */}
+        <div className='w-full flex flex-row items-center justify-center'>
+          <div className='px-[10px] py-[5px] bg-[#FF0105] flex flex-row items-center justify-center'>
+             <div className='text-white'>Div 1</div>
           </div>
+          
         </div>
         
         <div className='mt-[20px]'>
