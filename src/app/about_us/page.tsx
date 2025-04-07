@@ -20,7 +20,7 @@ export default function AboutUsPage() {
   }, [currentSection]);
     
   return (
-    <section className='absolute w-full flex flex-col items-center justify-center'>
+    <section className='w-full flex flex-col items-center justify-center'>
       <div className='hidden lg:flex md:flex w-[1440px] h-[600px]'>
         <Image
           src={coverImg}
