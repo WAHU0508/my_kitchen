@@ -28,9 +28,9 @@ export default function Header() {
     }, [isOpen]);
 
     return (
-        <header className='w-full mb-4 flex items-center justify-center'>
+        <header className='w-full mb-4 flex items-center justify-center bg-[#131842]'>
             {/* Header for large and medium screens */}
-            <div className='hidden absolute mt-[50px] border border-[#0000003D] bg-[#FFFFFF] lg:flex lg:flex-row md:flex md:flex-row items-center justify-between px-10 lg:w-[1250px] md:w-full lg:h-[50px] md:h-[50px] shadow-xl rounded-[20px]'>
+            <div className='hidden absolute mt-[80px] border border-[#0000003D] bg-[#FFFFFF] lg:flex lg:flex-row md:flex md:flex-row items-center justify-between px-10 lg:w-[1250px] md:w-full lg:h-[50px] md:h-[50px] shadow-xl rounded-[20px]'>
                 <Image
                     src={logo}
                     width={150}
