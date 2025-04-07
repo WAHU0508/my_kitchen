@@ -8,8 +8,8 @@ import { motion } from 'framer-motion';
 
 export default function AboutUsPage() {
   return (
-    <section className="relative w-full flex flex-col items-center justify-center overflow-x-hidden">
-      <div className='hidden md:block w-full flex flex-col items-center justify-center'>
+    <section className="w-full flex items-center justify-center overflow-x-hidden">
+      <div className='relative hidden md:block w-full flex flex-col items-center justify-center'>
         {/* Background Image with header and quote overlay */}
         <div className="relative w-full lg:w-[1440px] h-[550px]">
           <Image
