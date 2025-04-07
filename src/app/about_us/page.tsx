@@ -24,7 +24,7 @@ export default function AboutUsPage() {
         <Header />
       </div>
       <div className='absolute w-[1300px]'>
-        <p className='text-white font-semibold ml-[50px] text-[50px] w-[300px]'>Driven by Excellence, Energized by Trust.</p>
+        <p className='text-white font-semibold ml-[150px] text-[50px] w-[450px]'>Driven by Excellence, Energized by Trust.</p>
       </div>
     </section>
   );
