@@ -19,7 +19,7 @@ export default function AboutUsPage() {
       </div>
 
       {/* Header in front of image */}
-      <div className="absolute top-0 left-0 w-full z-10">
+      <div className="absolute mt-[20px] z-10">
         <Header />
       </div>
 
