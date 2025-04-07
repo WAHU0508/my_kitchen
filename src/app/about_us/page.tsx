@@ -14,7 +14,7 @@ export default function AboutUsPage() {
           src={coverImg}
           alt="Cover Image"
           fill
-          className="object-cover opacity-50"
+          className="object-cover"
           priority
         />
       </div>
