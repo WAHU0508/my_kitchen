@@ -2,7 +2,7 @@ import React from 'react';
 
 export default function AboutUsPage() {
   return (
-    <section className='w-full flex items-center justify-center'>
+    <section className='w-full flex flex-col items-center justify-center'>
       <div className='w-full md:h-[141px] lg:h-[141px] flex items-center justify-center bg-[#CACACA]'>
         <div className='w-full lg:w-[1300px]'>
           <p className='lg:text-[32px] font-semibold text-black md:w-[327px] ml-[20px] lg:w-[327px] w-[214px]'>About Us - Alver Power Systems Ltd.</p>
