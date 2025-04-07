@@ -28,17 +28,17 @@ export default function HomePage() {
     router.push('/products_and_services');
   }
   // State to control modal visibility
-  const [isModalOpen, setIsModalOpen] = useState(false);
+  // const [isModalOpen, setIsModalOpen] = useState(false);
 
   // Function to open modal
-  const openModal = () => {
-    setIsModalOpen(true);
-  };
+  // const openModal = () => {
+  //   setIsModalOpen(true);
+  // };
 
   // Function to close modal
-  const closeModal = () => {
-    setIsModalOpen(false);
-  };
+  // const closeModal = () => {
+  //   setIsModalOpen(false);
+  // };
   
   return (
     <section className='w-full flex items-center justify-center'>
