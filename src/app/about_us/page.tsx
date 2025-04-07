@@ -23,7 +23,9 @@ export default function AboutUsPage() {
       <div className="absolute top-2 z-10">
         <Header />
       </div>
-
+      <div className='w-[1300px]'>
+        <p className='text-white text-[50px] w-[150px]'>Driven by Excellence, Energized by Trust.</p>
+      </div>
     </section>
   );
 }
