@@ -6,8 +6,8 @@
 @import "@fontsource/montserrat/700.css";
 
 :root {
-  --background: #ECECEC;
-  --foreground: #ECECEC;
+  --background: #FFFFFF;
+  --foreground: #FFFFFF;
 }
 
 @theme inline {
@@ -19,8 +19,8 @@
 
 @media (prefers-color-scheme: dark) {
   :root {
-    --background: #ECECEC;
-    --foreground: #ECECEC;
+    --background: #FFFFFF;
+    --foreground: #FFFFFF;
   }
 }
 
