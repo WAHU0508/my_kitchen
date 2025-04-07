@@ -6,13 +6,13 @@ import Footer from "./components/footer";
 
 export default function ClientLayout({
   children,
-}: Readonly<{
+}: {
   children: React.ReactNode;
-}>) {
+}) {
   const pathname = usePathname(); // Get the current route
 
   // Conditionally render Header and Footer based on the route
-  const showHeaderFooter = pathname !== "/about_us";
+  const showHeaderFooter = pathname.includes('about_us');
 
   return (
     <>
