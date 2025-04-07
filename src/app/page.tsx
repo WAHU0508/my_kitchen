@@ -29,7 +29,8 @@ export default function HomePage() {
   }
   // State to control modal visibility
   const [isModalOpen, setIsModalOpen] = useState(false);
-
+  const [formData, setFormData] = useState({ name: '', email: '', phone: '', message: '' });
+  const [status, setStatus] = useState(null);
   // Function to open modal
   const openModal = () => {
     setIsModalOpen(true);
@@ -38,11 +39,8 @@ export default function HomePage() {
   // Function to close modal
   const closeModal = () => {
     setIsModalOpen(false);
+    setStatus(null);
   };
-
-  const [formData, setFormData] = useState({ name: '', email: '', phone: '', message: '' });
-  const [status, setStatus] = useState(null);
-
   const handleChange = (e) => {
     setFormData({ ...formData, [e.target.name]: e.target.value });
   };
@@ -60,6 +58,10 @@ export default function HomePage() {
 
       const data = await res.json();
       setStatus(data.success ? 'Message sent!' : 'Failed to send message.');
+      // Clear status message after 3 seconds
+      setTimeout(() => {
+        setStatus(null); // Reset the status after 3 seconds
+      }, 5000);
     } catch {
       setStatus('Something went wrong.');
     }
@@ -173,7 +175,11 @@ We specialize in high-quality electrical installations, solar energy solutions a
                 <p className='text-black text-[12px] md:text-[20px] lg:text-[18px]'>Your Quote <span className='text-[#FF0105]'>*</span></p>
                 <textarea name="message" placeholder="Quote / Message" onChange={handleChange} required className="w-full p-2 border rounded border-[#D9D9D9] text-black"></textarea>
                 <button type="submit" className="bg-[#F4A261] text-black px-4 py-1 rounded">Send</button>
-                {status && <p>{status}</p>}
+                {status && (
+                  <p className={`mt-2 text-center text-xl ${status === 'Message sent!' ? 'text-green-500' : 'text-red-500'}`}>
+                    {status}
+                  </p>
+                )}
               </form>
              </div>
  
