@@ -89,20 +89,20 @@ export default function AboutUsPage() {
           </motion.div>
         </motion.div>
         
-        <div className='w-full flex flex-row gap-6 items-center justify-center'>
-          <div className='px-[50px] py-[10px] bg-[#FF0105] flex flex-row items-center justify-center gap-2'
+        <div className='mt-[20px] w-full flex flex-row gap-6 items-center justify-center'>
+          <div className='rounded-[20px] px-[50px] py-[50px] bg-[#FF0105] flex flex-row items-center justify-center gap-2'
               onClick={handleMission}
           >
              <div className='text-white'>M logo</div> 
              <div className='text-white'>{mission ? 'Mission Statement' : ''}</div> 
           </div>
-          <div className='px-[50px] py-[10px] bg-[#FF0105] flex flex-row items-center justify-center gap-2'
+          <div className='rounded-[20px] px-[50px] py-[10px] bg-[#FF0105] flex flex-row items-center justify-center gap-2'
                onClick={handleVision}
            >
              <div className='text-white'>M logo</div> 
              <div className='text-white'>{vision ? 'Mission Statement' : ''}</div> 
           </div>
-          <div className='px-[50px] py-[10px] bg-[#FF0105] flex flex-row items-center justify-center gap-2'
+          <div className='rounded-[20px] px-[50px] py-[10px] bg-[#FF0105] flex flex-row items-center justify-center gap-2'
             onClick={handleValues}
             >
              <div className='text-white'>M logo</div> 
