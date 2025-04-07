@@ -2,6 +2,8 @@
 import React, { useState } from 'react';
 import Image from 'next/image';
 import coverImg from '../assets/sivacon.jpg';
+import mission1 from '../assets/mission.png';
+import mission2 from '../assets/target.png';
 import Header from '../components/header';
 import Footer from '../components/footer';
 import { motion } from 'framer-motion';
@@ -90,10 +92,17 @@ export default function AboutUsPage() {
         </motion.div>
         
         <div className='mt-[20px] w-full flex flex-row gap-6 items-center justify-center'>
-          <div className='rounded-[20px] px-[50px] py-[50px] bg-[#FF0105] flex flex-row items-center justify-center gap-2'
+          <div className=`rounded-[20px] px-[50px] py-[50px] ${mission ? bg-[#FF0105] : bg-[C5C5C5]} flex flex-row items-center justify-center gap-2`
               onClick={handleMission}
           >
-             <div className='text-white'>M logo</div> 
+             <div className='text-white'>
+               <Image
+                 src={mission ? mission1 : mission2}
+                 width={}
+                 height={}
+                 alt='Mission'
+                />
+             </div> 
              <div className='text-white'>{mission ? 'Mission Statement' : ''}</div> 
           </div>
           <div className='rounded-[20px] px-[50px] py-[50px] bg-[#FF0105] flex flex-row items-center justify-center gap-2'
