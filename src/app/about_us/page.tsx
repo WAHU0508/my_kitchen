@@ -9,7 +9,7 @@ export default function AboutUsPage() {
     <section className="relative w-full flex flex-col items-center justify-center">
 
       {/* Background Image */}
-      <div className="relative w-[1440px] h-[550px] z-0">
+      <div className="relative w-[1440px] h-[550px]">
         <Image
           src={coverImg}
           alt="Cover Image"
@@ -20,7 +20,7 @@ export default function AboutUsPage() {
       </div>
 
       {/* Header in front of image */}
-      <div className="absolute top-2 z-10">
+      <div className="absolute top-2">
         <Header />
       </div>
       <div className='border border-white flex items-center absolute lg:w-[1300px]'>
