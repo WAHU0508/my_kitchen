@@ -29,8 +29,8 @@ export default function HomePage() {
   }
   // State to control modal visibility
   const [isModalOpen, setIsModalOpen] = useState(false);
-  const [formData, setFormData] = useState({ name: '', email: '', phone: '', message: '' });
-  const [status, setStatus] = useState(null);
+  const [formData, setFormData] = useState<FormData>({ name: '', email: '', phone: '', message: '' });
+  const [status, setStatus] = useState<string>('');
   // Function to open modal
   const openModal = () => {
     setIsModalOpen(true);
@@ -41,11 +41,17 @@ export default function HomePage() {
     setIsModalOpen(false);
     setStatus(null);
   };
-  const handleChange = (e) => {
+  interface FormData {
+  name: string;
+  email: string;
+  phone: string;
+  message: string;
+  }
+  const handleChange = (e: React.ChangeEvent<HTMLInputElement | HTMLTextAreaElement>) => {
     setFormData({ ...formData, [e.target.name]: e.target.value });
   };
 
-  const handleSubmit = async (e) => {
+  const handleSubmit = async (e: React.FormEvent) => {
     e.preventDefault();
     setStatus('Sending...');
 
