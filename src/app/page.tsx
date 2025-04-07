@@ -50,7 +50,7 @@ export default function HomePage() {
             height={250}
           />
           <Image 
-            src={switchboardImg}
+            src={switchboardImg2}
             alt='Switchboard Image'
             width={250}
             height={250}
