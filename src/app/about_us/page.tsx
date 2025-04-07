@@ -12,6 +12,7 @@ export default function AboutUsPage() {
           width={1440}
           height={600}
         />
+      </div>
     </section>
   )
 }
