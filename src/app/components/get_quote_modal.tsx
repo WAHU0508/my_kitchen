@@ -16,7 +16,7 @@ export default function Modal() {
   
   return (
     <div className="fixed inset-0 flex items-center justify-center backdrop-blur-sm bg-black/30 z-50">
-           <div className="bg-white p-6 rounded-lg shadow-lg w-full max-w-md relative">
+           <div className="bg-white p-6 rounded-lg text-black shadow-lg w-full max-w-md relative">
              {/* Modal Header with close button */}
              <div className="flex justify-between items-center">
                <h2 className="text-xl font-bold">Get A Quote</h2>
