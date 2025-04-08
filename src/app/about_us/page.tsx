@@ -85,7 +85,7 @@ export default function AboutUsPage() {
             viewport={{ once: false }}
           >
             <div className="w-[10px] h-[50px] bg-[#FF0105]"></div>
-            <div className="w-full text-black text-[14px]">
+            <div className="w-full text-black text-[14px] font-light">
               Alver Power Systems is a company that was founded and registered in 2022 in accordance with the Kenya Company Act rules, however it has been in operation as a sole proprietor since 2017. 
               Our goal is to offer cost-effective power solutions and sustainable, renewable energy-saving solutions that are both inexpensive and environmentally beneficial for consumers, businesses, and institutions.
               In order to consistently produce high-quality electrical solutions that perform and provide protection, we at Alver Power System have formed our company around understanding the needs and expectations of our customers.
@@ -115,7 +115,10 @@ export default function AboutUsPage() {
                 </div>
               </div>
               <div className='text-white whitespace-nowrap'>
-                {mission ? 'Mission Statement' : ''}
+                {mission ? '<div className='flex flex-col items-center gap-1'>
+                <p className='text-white font-bold text-[20px]'>Mission</p>
+                <p className='text-white font-light text-[16px]'>Mission statement</p>
+              </div>' : ''}
               </div>
             </div>
           
