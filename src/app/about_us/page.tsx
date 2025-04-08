@@ -96,7 +96,7 @@ export default function AboutUsPage() {
         </motion.div>
         
         <div className='mt-[20px] w-full flex flex-row gap-6 items-center justify-center'>
-          <div className={`rounded-[20px] px-[20px] py-[50px] ${mission ? 'bg-[#FF0105]' : 'bg-[CACACA]'} flex flex-row items-center justify-center gap-2`}
+          <div className={`rounded-[20px] px-[20px] py-[50px] ${mission ? 'bg-[#FF0105]' : 'bg-[#CACACA]'} flex flex-row items-center justify-center gap-2`}
               onClick={handleMission}
           >
              <div className='text-white'>
@@ -109,7 +109,7 @@ export default function AboutUsPage() {
              </div> 
              <div className='text-white'>{mission ? 'Mission Statement' : ''}</div> 
           </div>
-          <div className={`rounded-[20px] px-[20px] py-[50px] ${vision ? 'bg-[#FF0105]' : 'bg-[CACACA]'} flex flex-row items-center justify-center gap-2`}
+          <div className={`rounded-[20px] px-[20px] py-[50px] ${vision ? 'bg-[#FF0105]' : 'bg-[#CACACA]'} flex flex-row items-center justify-center gap-2`}
                onClick={handleVision}
            >
              <div className='text-white'>
@@ -122,7 +122,7 @@ export default function AboutUsPage() {
              </div> 
              <div className='text-white'>{vision ? 'Vision Statement' : ''}</div> 
           </div>
-          <div className={`rounded-[20px] px-[20px] py-[50px] ${values ? 'bg-[#FF0105]' : 'bg-[CACACA]'} flex flex-row items-center justify-center gap-2`}
+          <div className={`rounded-[20px] px-[20px] py-[50px] ${values ? 'bg-[#FF0105]' : 'bg-[#CACACA]'} flex flex-row items-center justify-center gap-2`}
             onClick={handleValues}
             >
              <div className='text-white'>
