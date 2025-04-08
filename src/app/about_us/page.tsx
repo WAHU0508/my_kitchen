@@ -116,9 +116,9 @@ export default function AboutUsPage() {
               </div>
               <div className='text-white whitespace-nowrap'>
                 {mission && (
-                  <div className='flex flex-col items-center gap-1'>
+                  <div className='flex flex-col items-start gap-1'>
                     <p className='text-white font-bold text-[20px]'>Mission</p>
-                    <p className='text-white font-light text-[16px]'>Mission statement</p>
+                    <p className='text-white font-light text-[12px]'>Our mission is to build lasting, mutually beneficial relationships with each of our esteemed clients by continually exceeding their expectations and earning their confidence via the excellent and devoted work of every member of the Alver power System Team</p>
                   </div>
                 )}
               </div>
