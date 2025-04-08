@@ -1,99 +1,59 @@
-'use client';
+"use client";
+import { useState, useEffect } from "react";
+import Image from "next/image"; // Optional if you're using Next.js
 
-import Image from 'next/image';
-import { useEffect, useRef, useState } from 'react';
 import solarpanelImg from '../assets/blue-solar-panels.jpg';
 import electricalsImg from '../assets/sivacon.jpg';
 import switchboardImg from '../assets/blockset.jpg';
-// import avrImg from '../assets/AVR.png';
 
 const images = [solarpanelImg, electricalsImg, switchboardImg];
 
 export default function TailwindCarousel() {
   const [current, setCurrent] = useState(0);
-  const carouselRef = useRef<HTMLDivElement>(null);
 
-  const goToSlide = (index: number) => {
-    if (!carouselRef.current) return;
-    const slideWidth = carouselRef.current.clientWidth;
-    carouselRef.current.scrollTo({
-      left: index * slideWidth,
-      behavior: 'smooth',
-    });
-  };
-
-  const nextSlide = () => {
-    const newIndex = (current + 1) % images.length;
-    setCurrent(newIndex);
-    goToSlide(newIndex);
-  };
-
-  const prevSlide = () => {
-    const newIndex = (current - 1 + images.length) % images.length;
-    setCurrent(newIndex);
-    goToSlide(newIndex);
-  };
-
-  // Autoplay
   useEffect(() => {
     const interval = setInterval(() => {
-      nextSlide();
-    }, 5000); // 5s
-
+      setCurrent((prev) => (prev + 1) % images.length);
+    }, 5000);
     return () => clearInterval(interval);
-  }, [current]);
-
-  // Sync scroll with slide index
-  useEffect(() => {
-    const container = carouselRef.current;
-    if (!container) return;
-
-    const handleScroll = () => {
-      const index = Math.round(container.scrollLeft / container.clientWidth);
-      setCurrent(index);
-    };
-
-    container.addEventListener('scroll', handleScroll);
-    return () => container.removeEventListener('scroll', handleScroll);
   }, []);
 
-  return (
-    <div className="relative w-full max-w-md mx-auto overflow-hidden rounded-lg">
-      {/* Slide Container - scrollable and snap-enabled */}
-      <div
-        ref={carouselRef}
-        className="flex overflow-x-auto snap-x snap-mandatory scroll-smooth no-scrollbar"
-      >
-        {images.map((img, index) => (
-          <div
-            key={index}
-            className="min-w-full h-[150px] flex justify-center items-center snap-center"
-          >
-            <Image
-              src={img}
-              alt={`Slide ${index + 1}`}
-              width={1440}
-              height={600}
-              className="object-cover"
-            />
-          </div>
-        ))}
-      </div>
+  const prevSlide = () =>
+    setCurrent((prev) => (prev === 0 ? images.length - 1 : prev - 1));
+  const nextSlide = () =>
+    setCurrent((prev) => (prev + 1) % images.length);
 
-      {/* Prev Button */}
+  return (
+    <div className="relative w-full h-[600px] overflow-hidden">
+      {images.map((img, index) => (
+        <div
+          key={index}
+          className={`absolute inset-0 transition-opacity duration-1000 ease-in-out ${
+            index === current ? "opacity-100" : "opacity-0"
+          }`}
+        >
+          <Image
+            src={img}
+            alt={`Slide ${index + 1}`}
+            layout="fill"
+            objectFit="cover"
+            priority={index === 0}
+          />
+        </div>
+      ))}
+
+      {/* Previous button */}
       <button
         onClick={prevSlide}
-        className="absolute top-1/2 left-2 -translate-y-1/2 text-white px-3 py-1 rounded-full hover:bg-opacity-75 z-10"
-        aria-label="Previous Slide"
+        className="absolute top-1/2 left-5 transform -translate-y-1/2 bg-black bg-opacity-30 text-white p-2 rounded-full hover:bg-opacity-50 transition"
       >
         ‹
       </button>
 
-      {/* Next Button */}
+      {/* Next button */}
       <button
         onClick={nextSlide}
-        className="absolute top-1/2 right-2 -translate-y-1/2 text-white px-3 py-1 rounded-full hover:bg-opacity-75 z-10"
-        aria-label="Next Slide"
+        className="absolute top-1/2 right-5 transform -translate-y-1/2 bg-black bg-opacity-30 text-white p-2 rounded-full hover:bg-opacity-50 transition"
       >
         ›
       </button>
