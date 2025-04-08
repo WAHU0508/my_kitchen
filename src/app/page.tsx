@@ -97,9 +97,9 @@ export default function HomePage() {
           <Carousel />
         </div>
         
-        <div className='flex flex-row'>
+        <div className='flex flex-row items-center justify-center lg:gap-6 md:gap-4'>
         <div className='w-[10px] h-[50px] bg-[#252865]'></div>
-        <p className='w-full lg:w-[1186px] text-left text-center text-[#000000] font-light text-[12px] lg:text-[24px] md:text-[20px]'>
+        <p className='w-full lg:w-[1186px] text-left text-center text-[#000000] font-light text-[12px] lg:text-[18px] md:text-[18px]'>
           Alver Power Systems Ltd is your trusted partner for innovative electrical and renewable energy solutions across Kenya and East Africa.
           We specialize in high-quality electrical installations, solar energy solutions and custom switchboard manufacturing. We also offer end to end services that include engineering, procurement, construction (EPC) and maintenance.
         </p>
