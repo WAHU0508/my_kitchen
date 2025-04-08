@@ -6,7 +6,7 @@ import solarpanelImg from '../assets/blue-photovoltaic-solar-panels.jpg';
 import electricalsImg from '../assets/sivacon.jpg';
 // import switchboardImg from '../assets/BlokSeT.jpg';
 
-const images = [solarpanelImg, electricalsImg, switchboardImg];
+const images = [solarpanelImg, electricalsImg];
 
 export default function TailwindCarousel() {
   const [current, setCurrent] = useState(0);
