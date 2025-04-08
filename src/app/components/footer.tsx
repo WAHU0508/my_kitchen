@@ -7,7 +7,7 @@ import facebook from '../svgs/facebook.svg';
 import instagram from '../svgs/instagram.svg';
 import linkedin from '../svgs/linkedin.svg';
 import logo from '../svgs/logo.svg';
-    
+import { motion } from 'framer-motion';
 
 export default function Footer() {
     return (
@@ -15,12 +15,22 @@ export default function Footer() {
             {/* Footer for large and medium screens*/}
             <div className='hidden lg:flex lg:flex-col text-black font-light mt-[20px] md:flex md:flex-col items-center justify-between lg:px-[60px] lg:w-[1440px] md:w-full lg:h-[215px] md:h-[215px] bg-[#F8F8F8]'>
                 <div className='flex flex-row justify-between gap-[10px] lg:gap-[50px]'>
-                    <div className='lg:w-[321px] lg:h-[137px] w-[250px] h-[137px] flex flex-col items-center justify-between'>
+                    <motion.div className='lg:w-[321px] lg:h-[137px] w-[250px] h-[137px] flex flex-col items-center justify-between'
+                              initial={{ opacity: 0, y: 40 }}
+                              whileInView={{ opacity: 1, y: 0 }}
+                              transition={{ duration: 0.8, ease: 'easeOut' }}
+                              viewport={{ once: false, amount: 0.2 }} // this ensures it's triggered every time the section comes into view
+                    >
                         <Clock size={31} className='text-black'/>
                         <p className='text-[18px] text-center'>Monday - Friday</p>
                         <p className='text-[18px] text-center'>8 AM - 5PM (Saturday 8AM - 1PM)</p>
-                    </div>
-                    <div className='lg:w-[386px] lg:h-[144px] w-[250px] h-[144px] flex flex-col items-center justify-between'>
+                    </motion.div>
+                    <motion.div className='lg:w-[386px] lg:h-[144px] w-[250px] h-[144px] flex flex-col items-center justify-between'
+                                initial={{ opacity: 0, y: 40 }}
+                                whileInView={{ opacity: 1, y: 0 }}
+                                transition={{ duration: 0.8, ease: 'easeOut' }}
+                                viewport={{ once: false, amount: 0.2 }} // this ensures it's triggered every time the section comes into view
+                    >
                         <Image
                             src={mapPin}
                             width={31}
@@ -28,8 +38,13 @@ export default function Footer() {
                             alt='Map Pin'
                         />
                         <p className='text-[18px] text-center'>Garden estate, along Garden estate rd Nairobi, Kenya</p>
-                    </div>
-                    <div className='lg:w-[348px] lg:h-[100px] w-[100px] h-[114px] flex flex-col items-center justify-between'>
+                    </motion.div>
+                    <motion.div className='lg:w-[348px] lg:h-[100px] w-[100px] h-[114px] flex flex-col items-center justify-between'
+                                initial={{ opacity: 0, y: 40 }}
+                                whileInView={{ opacity: 1, y: 0 }}
+                                transition={{ duration: 0.8, ease: 'easeOut' }}
+                                viewport={{ once: false, amount: 0.2 }} // this ensures it's triggered every time the section comes into view
+                    >
                         <p className='text-[18px] text-center'>Follow Us</p>
                         <div className='flex flex-row w-full items-center justify-center gap-4'>
                             <Image
@@ -61,7 +76,7 @@ export default function Footer() {
                                 className='hover:border hover:border-black hover:rounded-full hover:p-1'
                             />
                         </div>
-                    </div>
+                    </motion.div>
                 </div>
                 <div className='w-full border-t border-white flex flex-row items-center justify-center lg:px-[100px]'>
                     <p className='text-[16px] text-center'>Alver Power Systems Ltd &copy; 2022. All rights reserved.</p>
