@@ -95,7 +95,12 @@ export default function AboutUsPage() {
           </motion.div>
         </motion.div>
         
-        <div className='mt-[20px] w-full flex flex-row gap-6 items-stretch justify-center'>
+        <motion.div className='mt-[20px] w-full flex flex-row gap-6 items-stretch justify-center'
+                    initial={{ opacity: 0, y: 40 }}
+                    whileInView={{ opacity: 1, y: 0 }}
+                    transition={{ duration: 0.8, ease: 'easeOut' }}
+                    viewport={{ once: false, amount: 0.2 }} // this ensures it's triggered every time the section comes into view
+        >
             {/* Mission */}
             <div
               className={`rounded-[20px] px-[50px] py-[50px] ${
@@ -114,7 +119,7 @@ export default function AboutUsPage() {
                   {mission ? '' : 'Mission'}
                 </div>
               </div>
-              <div className='text-white transition-all duration-300 ease-in-out'>
+              <div className='text-white'>
                 {mission && (
                   <div className='flex flex-col items-start gap-1 text-white text-left'>
                     <p className='font-bold text-[20px]'>Mission</p>
@@ -130,7 +135,7 @@ export default function AboutUsPage() {
             <div
               className={`rounded-[20px] px-[50px] py-[50px] ${
                 vision ? 'bg-[#FF0105]' : 'bg-[#CACACA]'
-              } flex flex-row items-center justify-center gap-2 cursor-pointer`}
+              } flex flex-row items-center justify-center gap-2 cursor-pointer transition-all duration-300 ease-in-out`}
               onClick={handleVision}
             >
               <div className='flex flex-col items-center justify-center gap-1'>
@@ -160,7 +165,7 @@ export default function AboutUsPage() {
             <div
               className={`rounded-[20px] px-[50px] py-[50px] ${
                 values ? 'bg-[#FF0105]' : 'bg-[#CACACA]'
-              } flex flex-row items-center justify-center gap-2 cursor-pointer`}
+              } flex flex-row items-center justify-center gap-2 cursor-pointer transition-all duration-300 ease-in-out`}
               onClick={handleValues}
             >
               <div className='flex flex-col items-center justify-center gap-1'>
@@ -185,10 +190,9 @@ export default function AboutUsPage() {
                 )}
               </div>
             </div>
-          </div>
+          </motion.div>
 
 
-        
         <div className='mt-[20px]'>
           <Footer />
         </div>
