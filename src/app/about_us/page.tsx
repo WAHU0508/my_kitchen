@@ -96,10 +96,11 @@ export default function AboutUsPage() {
         </motion.div>
         
         <div className='mt-[20px] w-full flex flex-row gap-6 items-stretch justify-center'>
+            {/* Mission */}
             <div
               className={`rounded-[20px] px-[20px] py-[50px] ${
                 mission ? 'bg-[#FF0105]' : 'bg-[#CACACA]'
-              } flex flex-row items-center justify-center gap-2 w-full max-w-[350px]`}
+              } flex flex-row items-center justify-center gap-2 cursor-pointer`}
               onClick={handleMission}
             >
               <div className='flex flex-col items-center justify-center gap-1'>
@@ -113,35 +114,39 @@ export default function AboutUsPage() {
                   {mission ? '' : 'Mission'}
                 </div>
               </div>
-              <div className='text-white'>
+              <div className='text-white whitespace-nowrap'>
                 {mission ? 'Mission Statement' : ''}
               </div>
             </div>
           
+            {/* Vision */}
             <div
               className={`rounded-[20px] px-[20px] py-[50px] ${
                 vision ? 'bg-[#FF0105]' : 'bg-[#CACACA]'
-              } flex flex-row items-center justify-center gap-2 w-full max-w-[350px]`}
+              } flex flex-row items-center justify-center gap-2 cursor-pointer`}
               onClick={handleVision}
             >
-              <div className='text-white flex flex-col items-center gap-1'>
+              <div className='flex flex-col items-center justify-center gap-1'>
                 <Image
                   src={vision ? vision1 : vision2}
                   width={48}
                   height={48}
                   alt='Vision'
                 />
-                <div className='text-white'>{vision ? 'Vision Statement' : 'Vision'}</div>
+                <div className='text-white'>
+                  {vision ? 'Vision Statement' : 'Vision'}
+                </div>
               </div>
             </div>
           
+            {/* Values */}
             <div
               className={`rounded-[20px] px-[20px] py-[50px] ${
                 values ? 'bg-[#FF0105]' : 'bg-[#CACACA]'
-              } flex flex-row items-center justify-center gap-2 w-full max-w-[350px]`}
+              } flex flex-row items-center justify-center gap-2 cursor-pointer`}
               onClick={handleValues}
             >
-              <div className='text-white flex flex-col items-center gap-1'>
+              <div className='flex flex-col items-center justify-center gap-1'>
                 <Image
                   src={values ? value1 : value2}
                   width={48}
@@ -154,6 +159,7 @@ export default function AboutUsPage() {
               </div>
             </div>
           </div>
+
 
         
         <div className='mt-[20px]'>
