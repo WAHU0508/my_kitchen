@@ -209,42 +209,11 @@ export default function HomePage() {
         
 
         
-        {/*Get To Know Us*/}
-        <div className='flex flex-col mt-[40px]'>
-            <div className='w-full flex flex-row items-center lg:items-center lg:justify-center md:items-center md:justify-center'>
-              <div className="w-[25px] h-0 top-[745px] left-[625px] bg-[#D9D9D9] border-b-[5px] border-[#252865]"></div>
-              <div className="text-black font-inter font-normal text-[14px] lg:text-[24px] md:text-[24px]">
-                Get to know us
-              </div>
-            </div>
-            <div className=" w-full flex flex-row lg:items-center lg:justify-center md:items-center md:justify-center gap-[10px] text-[16px] lg:text-[32px] md:text-[28px]">
-              <p className='text-[#FF0105]'>Who</p>
-              <p className='text-[#252865]'>We are</p>
-            </div>
-            <p className='w-full lg:w-[1186px] flex lg:items-center lg:justify-center md:items-center md:justify-center text-center text-[#000000] text-[12px] lg:text-[24px] md:text-[20px]'>Alver power systems is a manufacturing company that  specializes in electrical installations solar energy solutions and switchboard manufacturing.
-              Our mission is to build lasting, mutually beneficial relationships with each of our esteemed clients by continually exceeding their expectations and earning their confidence.
-              Our mission is to be the most skilled and reputable commercial electrical contractor service provider in east Africa 
-            </p>
-          
-            <div className='w-full flex items-center justify-center mt-[20px]'>
-              <div className="relative w-[145px] h-[30px] lg:w-[290px] lg:h-[46px] md:w-[290px] md:h-[46px]">
-                {/* Rectangle 9 - blurred background box */}
-                {/*<div className="absolute w-[145px] h-[30px] lg:w-[290px] lg:h-[46px] md:w-[290px] md:h-[46px] inset-0 border-[2px] border-[#252865] rounded-[15px] blur-[8.25px]"></div>*/}
-                {/* Rectangle 8 - foreground box */}
-                <button className="absolute text-black hover:bg-[#252865] hover:text-white active:bg-[#252865] active:text-white w-[145px] h-[30px] lg:w-[290px] lg:h-[46px] md:w-[290px] md:h-[46px] text-[10px] lg:text-[24px] md:text-[24px] inset-0 border-[2px] border-[#252865] rounded-[15px] flex flex-row items-center justify-center lg:items-center lg:justify-center md:items-center md:justify-center gap-2 lg:gap-2 md:gap-2"
-                        onClick={about_us}
-                  >
-                  Learn More
-                  <Image
-                    src={externalLink}
-                    alt='Get Quote'
-                    width={18}
-                    height={18}
-                    className='w-[10px] h-[10px] lg:w-[18px] lg:h-[18px] md:w-[18px] md:h-[18px]'
-                  />
-                </button>
-              </div>
-            </div>
+          {/*Get To Know Us*/}
+          <div className='flex flex-row lg:gap-[50px] w-full items-center justify-right'>
+            <div className='border border-black w-full h-[50px]'></div>
+            <div className='w-[10px] h-full bg-[#252865]'></div>
+          </div>
 
           {/*Product Cards*/}
           <div className='flex flex-col mt-[40px]'>
