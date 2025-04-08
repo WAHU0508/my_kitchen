@@ -92,11 +92,9 @@ export default function HomePage() {
       {/* main section */}
       <div className='lg:p-4 md:p-2 p-1 lg:w-[1300px] md:w-full w-full flex flex-col'>  
         {/*Small Screen*/}
-        <div className='relative lg:hidden md:hidden flex items-center justify-center'>
+        <div className='lg:hidden md:hidden flex items-center justify-center'>
+          <Header />
           <Carousel />
-          <div className="absolute top-4 left-0 w-full lg:z-20">
-            <Header />
-          </div>
         </div>
         
         <h1 className='w-full flex lg:items-center lg:justify-center md:items-center md:justify-center text-[#FF0105] text-[16px] lg:text-[32px] md:text-[28px]'>Powering Innovation, Ensuring Reliability</h1>
