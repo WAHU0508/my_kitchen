@@ -4,7 +4,7 @@ import Image from "next/image"; // Optional if you're using Next.js
 
 import solarpanelImg from '../assets/blue-photovoltaic-solar-panels.jpg';
 import electricalsImg from '../assets/sivacon.jpg';
-import switchboardImg from '../assets/BlokSet.jpg';
+import switchboardImg from '../assets/BlokSeT.jpg';
 
 const images = [solarpanelImg, electricalsImg, switchboardImg];
 
