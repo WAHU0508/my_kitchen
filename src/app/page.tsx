@@ -85,9 +85,9 @@ export default function HomePage() {
         </div>
       </div>
       
-      <div className='lg:p-4 md:p-2 p-1 lg:w-[1300px] md:w-full w-full flex flex-col'>
+{/*       <div className='lg:p-4 md:p-2 p-1 lg:w-[1300px] md:w-full w-full flex flex-col'>
         {/*Image section*/}
-{/*         <div className='hidden lg:flex lg:flex-row lg:gap-6 md:flex md:flex-row gap-2 justify-center'>
+        <div className='hidden lg:flex lg:flex-row lg:gap-6 md:flex md:flex-row gap-2 justify-center'>
           <Image 
             src={solarpanelImg}
             alt='Solar Panels Image'
@@ -112,7 +112,7 @@ export default function HomePage() {
             width={250}
             height={250}
           />
-        </div> */}
+        </div>
         
         {/*Small Screen*/}
         <div className='lg:hidden md:hidden flex items-center justify-center'>
@@ -376,7 +376,7 @@ We specialize in high-quality electrical installations, solar energy solutions a
           {/*Projects*/} 
          </div> 
         </div>
-      </div>
+      </div> */}
     </section>
   );
 }
