@@ -15,8 +15,8 @@ import ProductCard3 from './components/products_card3'
 import ProjectCard1 from './components/project_card1'
 import ProjectCard2 from './components/project_card2'
 import ProjectCard3 from './components/project_card3'
-// import GetQuoteModal from './components/get_quote_modal'
-
+import Carousel2 from './components/carousel'
+import Header from '../components/header'
 
 export default function HomePage() { 
   const router = useRouter();
@@ -74,10 +74,20 @@ export default function HomePage() {
   };
   
   return (
-    <section className='w-full flex items-center justify-center'>
+    <section className='w-full flex items-center justify-center overflow-x-hidden'>
+      
+      <div className='relative hidden md:block w-full lg:w-[1440px] flex flex-col items-center justify-center'>
+        <div className="relative w-full lg:w-[1440px] h-[550px]">
+          <Carousel />
+          <div className="absolute top-4 left-0 w-full lg:z-20">
+            <Header />
+          </div>
+        </div>
+      </div>
+      
       <div className='lg:p-4 md:p-2 p-1 lg:w-[1300px] md:w-full w-full flex flex-col'>
         {/*Image section*/}
-        <div className='hidden lg:flex lg:flex-row lg:gap-6 md:flex md:flex-row gap-2 justify-center'>
+{/*         <div className='hidden lg:flex lg:flex-row lg:gap-6 md:flex md:flex-row gap-2 justify-center'>
           <Image 
             src={solarpanelImg}
             alt='Solar Panels Image'
@@ -102,7 +112,8 @@ export default function HomePage() {
             width={250}
             height={250}
           />
-        </div>
+        </div> */}
+        
         {/*Small Screen*/}
         <div className='lg:hidden md:hidden flex items-center justify-center'>
           <Carousel />
