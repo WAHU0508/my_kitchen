@@ -4,7 +4,7 @@ import Image from 'next/image';
 import { useEffect, useRef, useState } from 'react';
 import solarpanelImg from '../assets/blue-solar-panels.jpg';
 import electricalsImg from '../assets/sivacon.jpg';
-import switchboardImg from '../assets/blockset.pjg';
+import switchboardImg from '../assets/blockset.jpg';
 // import avrImg from '../assets/AVR.png';
 
 const images = [solarpanelImg, electricalsImg, switchboardImg];
