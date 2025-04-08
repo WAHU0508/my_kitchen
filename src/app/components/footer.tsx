@@ -31,7 +31,7 @@ export default function Footer() {
                     </div>
                     <div className='lg:w-[348px] lg:h-[100px] w-[100px] h-[114px] flex flex-col items-center justify-between'>
                         <p className='text-[18px] text-center'>Follow Us</p>
-                        <div className='flex flex-row w-full items-center justify-between'>
+                        <div className='flex flex-row w-full items-center gap-4'>
                             <Image
                                 src={twitter}
                                 alt='Twitter Icon'
