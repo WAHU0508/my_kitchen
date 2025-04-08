@@ -29,8 +29,8 @@ export default function Footer() {
                         />
                         <p className='text-[18px] text-center'>Garden estate, along Garden estate rd Nairobi, Kenya</p>
                     </div>
-                    <div className='lg:w-[348px] lg:h-[144px] w-[250px] h-[114px] flex flex-col items-center justify-between'>
-                        <p className='text-[18px] text-center'>Visit Us on</p>
+                    <div className='lg:w-[348px] lg:h-[100px] w-[150px] h-[114px] flex flex-col items-center justify-between'>
+                        <p className='text-[18px] text-center'>Follow Usn</p>
                         <div className='flex flex-row w-full items-center justify-between'>
                             <Image
                                 src={twitter}
@@ -63,7 +63,7 @@ export default function Footer() {
                         </div>
                     </div>
                 </div>
-                <div className='w-full border border-white flex flex-row items-center justify-center lg:px-[100px]'>
+                <div className='w-full border-t border-white flex flex-row items-center justify-center lg:px-[100px]'>
                     <p className='text-[16px] text-center'>Alver Power Systems Ltd &copy; 2022. All rights reserved.</p>
 {/*                     <p className='text-[18px] text-center hover:underline'>Privacy</p>
                     <p className='text-[18px] text-center hover:underline'>Terms of Use</p> */}
