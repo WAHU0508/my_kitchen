@@ -24,7 +24,7 @@ export default function TailwindCarousel() {
     setCurrent((prev) => (prev + 1) % images.length);
 
   return (
-    <div className="relative w-full h-[600px] overflow-hidden">
+    <div className="relative w-full overflow-hidden">
       {images.map((img, index) => (
         <div
           key={index}
@@ -45,7 +45,7 @@ export default function TailwindCarousel() {
       {/* Previous button */}
       <button
         onClick={prevSlide}
-        className="absolute top-1/2 left-5 transform -translate-y-1/2 bg-black bg-opacity-30 text-white p-2 rounded-full hover:bg-opacity-50 transition"
+        className="absolute top-1/2 left-5 transform -translate-y-1/2 text-white p-2 rounded-full hover:bg-opacity-50 transition"
       >
         ‹
       </button>
@@ -53,7 +53,7 @@ export default function TailwindCarousel() {
       {/* Next button */}
       <button
         onClick={nextSlide}
-        className="absolute top-1/2 right-5 transform -translate-y-1/2 bg-black bg-opacity-30 text-white p-2 rounded-full hover:bg-opacity-50 transition"
+        className="absolute top-1/2 right-5 transform -translate-y-1/2  text-white p-2 rounded-full hover:bg-opacity-50 transition"
       >
         ›
       </button>
