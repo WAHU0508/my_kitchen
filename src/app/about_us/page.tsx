@@ -95,48 +95,66 @@ export default function AboutUsPage() {
           </motion.div>
         </motion.div>
         
-        <div className='mt-[20px] w-full flex flex-row gap-6 items-center justify-center'>
-          <div className={`rounded-[20px] px-[20px] py-[50px] ${mission ? 'bg-[#FF0105]' : 'bg-[#CACACA]'} flex flex-row items-center justify-center gap-2`}
+        <div className='mt-[20px] w-full flex flex-row gap-6 items-stretch justify-center'>
+            <div
+              className={`rounded-[20px] px-[20px] py-[50px] ${
+                mission ? 'bg-[#FF0105]' : 'bg-[#CACACA]'
+              } flex flex-row items-center justify-center gap-2 w-full max-w-[350px]`}
               onClick={handleMission}
-          >
-             <div className='flex flex-col gap-1'>
-               <Image
-                 src={mission ? mission1 : mission2}
-                 width={48}
-                 height={48}
-                 alt='Mission'
-                />
-               <div className='text-black font-semibold text-[20px]'>{mission ? '' : 'Mission'}</div>
-             </div> 
-             <div className='text-white'>{mission ? 'Mission Statement' : ''}</div> 
-          </div>
-          <div className={`rounded-[20px] px-[20px] py-[50px] ${vision ? 'bg-[#FF0105]' : 'bg-[#CACACA]'} flex flex-row items-center justify-center gap-2`}
-               onClick={handleVision}
-           >
-             <div className='text-white'>
-               <Image
-                 src={vision ? vision1 : vision2}
-                 width={48}
-                 height={48}
-                 alt='Mission'
-                />
-             </div> 
-             <div className='text-white'>{vision ? 'Vision Statement' : ''}</div> 
-          </div>
-          <div className={`rounded-[20px] px-[20px] py-[50px] ${values ? 'bg-[#FF0105]' : 'bg-[#CACACA]'} flex flex-row items-center justify-center gap-2`}
-            onClick={handleValues}
             >
-             <div className='text-white'>
-               <Image
-                 src={values ? value1 : value2}
-                 width={48}
-                 height={48}
-                 alt='Mission'
+              <div className='flex flex-col items-center justify-center gap-1'>
+                <Image
+                  src={mission ? mission1 : mission2}
+                  width={48}
+                  height={48}
+                  alt='Mission'
                 />
-             </div> 
-             <div className='text-white'>{values ? 'Values Statement' : ''}</div> 
+                <div className='text-black font-semibold text-[20px]'>
+                  {mission ? '' : 'Mission'}
+                </div>
+              </div>
+              <div className='text-white'>
+                {mission ? 'Mission Statement' : ''}
+              </div>
+            </div>
+          
+            <div
+              className={`rounded-[20px] px-[20px] py-[50px] ${
+                vision ? 'bg-[#FF0105]' : 'bg-[#CACACA]'
+              } flex flex-row items-center justify-center gap-2 w-full max-w-[350px]`}
+              onClick={handleVision}
+            >
+              <div className='text-white flex flex-col items-center gap-1'>
+                <Image
+                  src={vision ? vision1 : vision2}
+                  width={48}
+                  height={48}
+                  alt='Vision'
+                />
+                <div className='text-white'>{vision ? 'Vision Statement' : 'Vision'}</div>
+              </div>
+            </div>
+          
+            <div
+              className={`rounded-[20px] px-[20px] py-[50px] ${
+                values ? 'bg-[#FF0105]' : 'bg-[#CACACA]'
+              } flex flex-row items-center justify-center gap-2 w-full max-w-[350px]`}
+              onClick={handleValues}
+            >
+              <div className='text-white flex flex-col items-center gap-1'>
+                <Image
+                  src={values ? value1 : value2}
+                  width={48}
+                  height={48}
+                  alt='Values'
+                />
+                <div className='text-white'>
+                  {values ? 'Values Statement' : 'Values'}
+                </div>
+              </div>
+            </div>
           </div>
-        </div>
+
         
         <div className='mt-[20px]'>
           <Footer />
