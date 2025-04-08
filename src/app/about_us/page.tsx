@@ -9,7 +9,7 @@ import vision2 from '../assets/vision (1).png';
 import value1 from '../assets/value.png';
 import value2 from '../assets/diamond.png';
 import Header from '../components/header';
-import Footer from '../components/footer';
+import Footer from '../components/footer2';
 import { motion } from 'framer-motion';
 
 export default function AboutUsPage() {
