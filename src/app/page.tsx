@@ -74,7 +74,7 @@ export default function HomePage() {
   };
   
   return (
-    <section className='relative w-full flex flex-col items-center justify-center overflow-x-hidden'> 
+    <section className=' w-full flex flex-col items-center justify-center overflow-x-hidden'> 
       <div className='relative hidden md:block w-full lg:w-[1440px] flex flex-col items-center justify-center'>
         <div className="relative w-full lg:w-[1440px] h-[550px]">
           <Carousel2 />
@@ -90,10 +90,13 @@ export default function HomePage() {
       </div>
       
       {/* main section */}
-      <div className='absolute lg:p-4 md:p-2 p-1 lg:w-[1300px] md:w-full w-full flex flex-col'>  
+      <div className='lg:p-4 md:p-2 p-1 lg:w-[1300px] md:w-full w-full flex flex-col'>  
         {/*Small Screen*/}
-        <div className='lg:hidden md:hidden flex items-center justify-center'>
+        <div className='relative lg:hidden md:hidden flex items-center justify-center'>
           <Carousel />
+          <div className="absolute top-4 left-0 w-full lg:z-20">
+            <Header />
+          </div>
         </div>
         
         <h1 className='w-full flex lg:items-center lg:justify-center md:items-center md:justify-center text-[#FF0105] text-[16px] lg:text-[32px] md:text-[28px]'>Powering Innovation, Ensuring Reliability</h1>
