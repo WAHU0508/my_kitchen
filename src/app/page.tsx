@@ -16,7 +16,7 @@ import ProjectCard1 from './components/project_card1'
 import ProjectCard2 from './components/project_card2'
 import ProjectCard3 from './components/project_card3'
 import Carousel2 from './components/carousel'
-import Header from '../components/header'
+import Header from './components/header'
 
 export default function HomePage() { 
   const router = useRouter();
