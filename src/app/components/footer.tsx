@@ -11,9 +11,9 @@ import logo from '../svgs/logo.svg';
 
 export default function Footer() {
     return (
-        <footer className='w-full mb-4 flex items-center justify-center bg-[#252865]'>
+        <footer className='w-full mb-4 flex items-center justify-center bg-[#F8F8F8]'>
             {/* Footer for large and medium screens*/}
-            <div className='hidden lg:flex lg:flex-col text-white md:flex md:flex-col items-center justify-between lg:px-[60px] lg:w-[1440px] md:w-full lg:h-[215px] md:h-[215px] bg-[#252865]'>
+            <div className='hidden lg:flex lg:flex-col text-white md:flex md:flex-col items-center justify-between lg:px-[60px] lg:w-[1440px] md:w-full lg:h-[215px] md:h-[215px] bg-[#F8F8F8]'>
                 <div className='flex flex-row justify-between gap-[10px] lg:gap-[50px]'>
                     <div className='lg:w-[321px] lg:h-[137px] w-[250px] h-[137px] flex flex-col items-center justify-between'>
                         <Clock size={31} className='text-white'/>
