@@ -2,9 +2,9 @@
 import { useState, useEffect } from "react";
 import Image from "next/image"; // Optional if you're using Next.js
 
-import solarpanelImg from '../assets/blue-solar-panels.jpg';
+import solarpanelImg from '../assets/blue-photovoltaic-solar-panels.jpg';
 import electricalsImg from '../assets/sivacon.jpg';
-import switchboardImg from '../assets/blockset.jpg';
+import switchboardImg from '../assets/BlokSet.jpg';
 
 const images = [solarpanelImg, electricalsImg, switchboardImg];
 
