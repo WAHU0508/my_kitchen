@@ -100,7 +100,7 @@ export default function AboutUsPage() {
             <div
               className={`rounded-[20px] px-[50px] py-[50px] ${
                 mission ? 'bg-[#FF0105]' : 'bg-[#CACACA]'
-              } flex flex-row items-center justify-center gap-2 cursor-pointer`}
+              } flex flex-row items-center justify-center gap-2 cursor-pointer transition-all duration-300 ease-in-out`}
               onClick={handleMission}
             >
               <div className='flex flex-col items-center justify-center gap-1'>
@@ -114,7 +114,7 @@ export default function AboutUsPage() {
                   {mission ? '' : 'Mission'}
                 </div>
               </div>
-              <div className='text-white'>
+              <div className='text-white transition-all duration-300 ease-in-out'>
                 {mission && (
                   <div className='flex flex-col items-start gap-1 text-white text-left'>
                     <p className='font-bold text-[20px]'>Mission</p>
@@ -144,8 +144,15 @@ export default function AboutUsPage() {
                   {vision ? '' : 'Vision'}
                 </div>
               </div>
-                <div className='text-white whitespace-nowrap'>
-                {vision ? 'Vision Statement' : ''}
+                <div className='text-white'>
+                {vision && (
+                  <div className='flex flex-col items-start gap-1 text-white text-left'>
+                    <p className='font-bold text-[20px]'>Mission</p>
+                    <p className='font-light text-[12px] max-w-[300px] leading-snug'>
+                      Being the most skilled and reputable commercial electrical contractor/ service provider in East Africa.
+                    </p>
+                  </div>
+                )}
               </div>
             </div>
           
@@ -167,8 +174,15 @@ export default function AboutUsPage() {
                   {values ? '' : 'Values'}
                 </div>
               </div>
-                <div className='text-white whitespace-nowrap'>
-                {values ? 'Values Statement' : ''}
+                <div className='text-white'>
+                {values && (
+                  <div className='flex flex-col items-start gap-1 text-white text-left'>
+                    <p className='font-bold text-[20px]'>Mission</p>
+                    <p className='font-light text-[12px] max-w-[300px] leading-snug'>
+                      Customer focus, service, competitive, teamwork and commitment
+                    </p>
+                  </div>
+                )}
               </div>
             </div>
           </div>
