@@ -2,12 +2,14 @@
 
 import Image from 'next/image';
 import { useEffect, useRef, useState } from 'react';
-import solarpanelImg from '../assets/solarpanel.png';
-import electricalsImg from '../assets/electricals.png';
-import switchboardImg from '../assets/switchboard.png';
-import avrImg from '../assets/AVR.png';
+import solarpanelImg from '../assets/blue-photovoltaic-solar-panels.jpg';
+import electricalsImg from '../assets/sivacon.jpg';
+// import solarpanelImg from '../assets/solarpanel.png';
+// import electricalsImg from '../assets/electricals.png';
+// import switchboardImg from '../assets/switchboard.png';
+// import avrImg from '../assets/AVR.png';
 
-const images = [solarpanelImg, electricalsImg, switchboardImg, avrImg];
+const images = [solarpanelImg, electricalsImg];
 
 export default function TailwindCarousel() {
   const [current, setCurrent] = useState(0);
