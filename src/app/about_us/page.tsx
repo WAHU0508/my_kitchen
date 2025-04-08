@@ -122,7 +122,7 @@ export default function AboutUsPage() {
               <div className='text-white'>
                 {mission && (
                   <div className='flex flex-col items-start gap-1 text-white text-left'>
-                    <p className='font-bold text-[20px]'>Mission</p>
+                    <p className='font-bold text-[20px]'>Our Mission</p>
                     <p className='font-light text-[12px] max-w-[300px] leading-snug'>
                       To build strong, lasting client relationships by consistently exceeding expectations through the dedicated work of the Alver Power Systems team.
                     </p>
@@ -152,7 +152,7 @@ export default function AboutUsPage() {
                 <div className='text-white'>
                 {vision && (
                   <div className='flex flex-col items-start gap-1 text-white text-left'>
-                    <p className='font-bold text-[20px]'>Mission</p>
+                    <p className='font-bold text-[20px]'>Our Vision</p>
                     <p className='font-light text-[12px] max-w-[300px] leading-snug'>
                       Being the most skilled and reputable commercial electrical contractor/ service provider in East Africa.
                     </p>
@@ -182,7 +182,7 @@ export default function AboutUsPage() {
                 <div className='text-white'>
                 {values && (
                   <div className='flex flex-col items-start gap-1 text-white text-left'>
-                    <p className='font-bold text-[20px]'>Mission</p>
+                    <p className='font-bold text-[20px]'>Our Values</p>
                     <p className='font-light text-[12px] max-w-[300px] leading-snug'>
                       Customer focus, service, competitive, teamwork and commitment
                     </p>
