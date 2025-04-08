@@ -115,10 +115,12 @@ export default function AboutUsPage() {
                 </div>
               </div>
               <div className='text-white whitespace-nowrap'>
-                {mission ? "<div className='flex flex-col items-center gap-1'>
-                <p className='text-white font-bold text-[20px]'>Mission</p>
-                <p className='text-white font-light text-[16px]'>Mission statement</p>
-              </div>" : ""}
+                {mission && (
+                  <div className='flex flex-col items-center gap-1'>
+                    <p className='text-white font-bold text-[20px]'>Mission</p>
+                    <p className='text-white font-light text-[16px]'>Mission statement</p>
+                  </div>
+                )}
               </div>
             </div>
           
