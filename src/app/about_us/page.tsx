@@ -4,6 +4,10 @@ import Image from 'next/image';
 import coverImg from '../assets/sivacon.jpg';
 import mission1 from '../assets/mission.png';
 import mission2 from '../assets/target.png';
+import vision1 from '../assets/vision.png';
+import vision2 from '../assets/vision (1).png';
+import value1 from '../assets/value.png';
+import value2 from '../assets/diamond.png';
 import Header from '../components/header';
 import Footer from '../components/footer';
 import { motion } from 'framer-motion';
@@ -92,7 +96,7 @@ export default function AboutUsPage() {
         </motion.div>
         
         <div className='mt-[20px] w-full flex flex-row gap-6 items-center justify-center'>
-          <div className={`rounded-[20px] px-[20px] py-[50px] ${mission ? 'bg-[#FF0105]' : 'bg-[D2D2D2]'} flex flex-row items-center justify-center gap-2`}
+          <div className={`rounded-[20px] px-[20px] py-[50px] ${mission ? 'bg-[#FF0105]' : 'bg-[CACACA]'} flex flex-row items-center justify-center gap-2`}
               onClick={handleMission}
           >
              <div className='text-white'>
@@ -105,17 +109,31 @@ export default function AboutUsPage() {
              </div> 
              <div className='text-white'>{mission ? 'Mission Statement' : ''}</div> 
           </div>
-          <div className='rounded-[20px] px-[20px] py-[50px] bg-[#FF0105] flex flex-row items-center justify-center gap-2'
+          <div className={`rounded-[20px] px-[20px] py-[50px] ${vision ? 'bg-[#FF0105]' : 'bg-[CACACA]'} flex flex-row items-center justify-center gap-2`}
                onClick={handleVision}
            >
-             <div className='text-white'>M logo</div> 
-             <div className='text-white'>{vision ? 'Mission Statement' : ''}</div> 
+             <div className='text-white'>
+               <Image
+                 src={vision ? vision1 : vision2}
+                 width={48}
+                 height={48}
+                 alt='Mission'
+                />
+             </div> 
+             <div className='text-white'>{vision ? 'Vision Statement' : ''}</div> 
           </div>
-          <div className='rounded-[20px] px-[20px] py-[50px] bg-[#FF0105] flex flex-row items-center justify-center gap-2'
+          <div className={`rounded-[20px] px-[20px] py-[50px] ${values ? 'bg-[#FF0105]' : 'bg-[CACACA]'} flex flex-row items-center justify-center gap-2`}
             onClick={handleValues}
             >
-             <div className='text-white'>M logo</div> 
-             <div className='text-white'>{values ? 'Mission Statement' : ''}</div> 
+             <div className='text-white'>
+               <Image
+                 src={values ? value1 : value2}
+                 width={48}
+                 height={48}
+                 alt='Mission'
+                />
+             </div> 
+             <div className='text-white'>{values ? 'Values Statement' : ''}</div> 
           </div>
         </div>
         
