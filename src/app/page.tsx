@@ -98,15 +98,25 @@ export default function HomePage() {
           <Carousel />
         </div>
         
-        <div className='flex flex-row gap-4 lg:gap-[50px] md:gap-4'>
-        <div className='w-[10px] h-[50px] bg-[#252865]'></div>
-        <p className='w-full lg:w-[1186px] text-left text-center text-[#000000] font-light text-[12px] lg:text-[18px] md:text-[18px]'>
-          Alver Power Systems Ltd is your trusted partner for innovative electrical and renewable energy solutions across Kenya and East Africa.
-          We specialize in high-quality electrical installations, solar energy solutions and custom switchboard manufacturing. We also offer end to end services that include engineering, procurement, construction (EPC) and maintenance.
-        </p>
-        </div>
+        <motion.div className='flex flex-row gap-4 lg:gap-[50px] md:gap-4'
+              initial={{ opacity: 0, y: 40 }}
+              whileInView={{ opacity: 1, y: 0 }}
+              transition={{ duration: 0.8, ease: 'easeOut' }}
+              viewport={{ once: false, amount: 0.2 }} // this ensures it's triggered every time the section comes into view
+        >
+          <div className='w-[10px] h-[50px] bg-[#252865]'></div>
+          <p className='w-full lg:w-[1186px] text-left text-center text-[#000000] font-light text-[12px] lg:text-[18px] md:text-[18px]'>
+            Alver Power Systems Ltd is your trusted partner for innovative electrical and renewable energy solutions across Kenya and East Africa.
+            We specialize in high-quality electrical installations, solar energy solutions and custom switchboard manufacturing. We also offer end to end services that include engineering, procurement, construction (EPC) and maintenance.
+          </p>
+        </motion.div>
         
-        <div className='w-full flex flex-row items-center justify-center lg:gap-[200px] md:gap-[150px] gap-[50px] mt-[20px]'>
+        <motion.div className='w-full flex flex-row items-center justify-center lg:gap-[200px] md:gap-[150px] gap-[50px] mt-[20px]'
+              initial={{ opacity: 0, y: 40 }}
+              whileInView={{ opacity: 1, y: 0 }}
+              transition={{ duration: 0.8, ease: 'easeOut' }}
+              viewport={{ once: false, amount: 0.2 }} // this ensures it's triggered every time the section comes into view
+        >
           {/*Button 1*/}
           <div className="relative w-[145px] h-[30px] lg:w-[220px] lg:h-[46px] md:w-[220px] md:h-[46px]">
             {/* Rectangle 9 - blurred background box */}
@@ -144,7 +154,7 @@ export default function HomePage() {
               />
             </button>
           </div>
-        </div>
+        </motion.div>
         
         {/* Modal */}
       {isModalOpen && (
