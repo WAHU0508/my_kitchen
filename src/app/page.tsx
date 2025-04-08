@@ -196,13 +196,13 @@ export default function HomePage() {
 
                             {/* Modal Footer */}
                             {/*<div className="mt-4 flex justify-end">
-               <button
-                 className="px-4 py-2 bg-red-600 text-white rounded hover:bg-red-700"
-                 onClick={closeModal}
-               >
-                 Close
-               </button>
-             </div>*/}
+                               <button
+                                 className="px-4 py-2 bg-red-600 text-white rounded hover:bg-red-700"
+                                 onClick={closeModal}
+                               >
+                                 Close
+                               </button>
+                             </div>*/}
                         </div>
                     </div>
                 )}
@@ -213,7 +213,7 @@ export default function HomePage() {
                         <div className="text-black font-inter font-normal text-[14px] lg:text-[24px] md:text-[24px]">
                             Get to know us
                         </div>
-                        <div className=" w-full flex flex-row gap-[10px] text-[16px] lg:text-[32px] md:text-[28px]">
+                        <div className=" w-full flex flex-row justify-right gap-[10px] text-[16px] lg:text-[32px] md:text-[28px]">
                           <p className='text-[#FF0105]'>Who</p>
                           <p className='text-[#252865]'>We are</p>
                         </div>
