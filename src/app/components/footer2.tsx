@@ -7,6 +7,7 @@ export default function () {
         <div className='border border-black w-[100px] h-[200px]'></div>
         <div className='border border-black w-[100px] h-[200px]'></div>
         <div className='border border-black w-[100px] h-[200px]'></div>
+        <div className='border border-black w-[100px] h-[200px]'></div>
       </div>
     </div>
   )
