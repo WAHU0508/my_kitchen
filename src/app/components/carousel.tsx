@@ -24,7 +24,7 @@ export default function TailwindCarousel() {
     setCurrent((prev) => (prev + 1) % images.length);
 
   return (
-    <div className="relative w-full h-[600px] overflow-hidden">
+    <div className="relative w-full h-[550px] overflow-hidden">
       {images.map((img, index) => (
         <div
           key={index}
