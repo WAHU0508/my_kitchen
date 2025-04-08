@@ -37,36 +37,36 @@ export default function Footer() {
                                 alt='Twitter Icon'
                                 width={31}
                                 height={31}
-                                className='hover:border hover:border-white hover:rounded-full hover:p-1'
+                                className='hover:border hover:border-black hover:rounded-full hover:p-1'
                             />
                             <Image
                                 src={facebook}
                                 alt='Facebook Icon'
                                 width={31}
                                 height={31}
-                                className='hover:border hover:border-white hover:rounded-full hover:p-1'
+                                className='hover:border hover:border-black hover:rounded-full hover:p-1'
                             />
                             <Image
                                 src={instagram}
                                 alt='Instagram Icon'
                                 width={31}
                                 height={31}
-                                className='hover:border hover:border-white hover:rounded-full hover:p-1'
+                                className='hover:border hover:border-black hover:rounded-full hover:p-1'
                             />
                             <Image
                                 src={linkedin}
                                 alt='Linkedin Icon'
                                 width={31}
                                 height={31}
-                                className='hover:border hover:border-white hover:rounded-full hover:p-1'
+                                className='hover:border hover:border-black hover:rounded-full hover:p-1'
                             />
                         </div>
                     </div>
                 </div>
                 <div className='w-full flex flex-row items-center justify-between lg:px-[100px]'>
-                    <p className='text-[18px] text-center'>Alver Power Systems Ltd &copy; 2022. All rights reserved.</p>
-                    <p className='text-[18px] text-center hover:underline'>Privacy</p>
-                    <p className='text-[18px] text-center hover:underline'>Terms of Use</p>
+                    <p className='text-[16px] text-center'>Alver Power Systems Ltd &copy; 2022. All rights reserved.</p>
+{/*                     <p className='text-[18px] text-center hover:underline'>Privacy</p>
+                    <p className='text-[18px] text-center hover:underline'>Terms of Use</p> */}
                 </div>
             </div>
             {/* Footer for small screens */}
