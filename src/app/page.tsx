@@ -84,7 +84,7 @@ export default function HomePage() {
         </div>
       </div>
 {/*       main section */}
-      {<div className='lg:p-4 md:p-2 p-1 lg:w-[1300px] md:w-full w-full flex flex-col'>
+      <div className='lg:p-4 md:p-2 p-1 lg:w-[1300px] md:w-full w-full flex flex-col'>
         {/*Image section*/}
         <div className='hidden lg:flex lg:flex-row lg:gap-6 md:flex md:flex-row gap-2 justify-center'>
           <Image 
