@@ -92,16 +92,18 @@ export default function HomePage() {
       {/* main section */}
       <div className='lg:p-4 md:p-2 p-1 lg:w-[1300px] md:w-full w-full flex flex-col'>  
         {/*Small Screen*/}
-        <div className='lg:hidden md:hidden flex items-center justify-center'>
+        <div className='lg:hidden md:hidden flex flex-col items-center justify-center'>
           <Header />
           <Carousel />
         </div>
         
-        <h1 className='w-full flex lg:items-center lg:justify-center md:items-center md:justify-center text-[#FF0105] text-[16px] lg:text-[32px] md:text-[28px]'>Powering Innovation, Ensuring Reliability</h1>
-        <p className='w-full lg:w-[1186px] flex lg:items-center lg:justify-center md:items-center md:justify-center text-center text-[#000000] text-[12px] lg:text-[24px] md:text-[20px]'>
+        <div className='flex flex-row'>
+        <div className='w-[10px] h-[50px]'></div>
+        <p className='w-full lg:w-[1186px] text-left text-center text-[#000000] text-[12px] lg:text-[24px] md:text-[20px]'>
           Alver Power Systems Ltd is your trusted partner for innovative electrical and renewable energy solutions across Kenya and East Africa.
           We specialize in high-quality electrical installations, solar energy solutions and custom switchboard manufacturing. We also offer end to end services that include engineering, procurement, construction (EPC) and maintenance.
         </p>
+        </div>
         
         <div className='w-full flex flex-row items-center justify-center lg:gap-[200px] md:gap-[150px] gap-[50px] mt-[20px]'>
           {/*Button 1*/}
