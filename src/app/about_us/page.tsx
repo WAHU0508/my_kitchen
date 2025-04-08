@@ -99,13 +99,14 @@ export default function AboutUsPage() {
           <div className={`rounded-[20px] px-[20px] py-[50px] ${mission ? 'bg-[#FF0105]' : 'bg-[#CACACA]'} flex flex-row items-center justify-center gap-2`}
               onClick={handleMission}
           >
-             <div className='text-white'>
+             <div className='flex flex-col gap-1'>
                <Image
                  src={mission ? mission1 : mission2}
                  width={48}
                  height={48}
                  alt='Mission'
                 />
+               <div className='text-black font-semibold text-[20px]'>{mission ? '' : 'Mission'}</div>
              </div> 
              <div className='text-white'>{mission ? 'Mission Statement' : ''}</div> 
           </div>
