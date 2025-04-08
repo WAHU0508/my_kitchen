@@ -29,7 +29,7 @@ export default function Footer() {
                         />
                         <p className='text-[18px] text-center'>Garden estate, along Garden estate rd Nairobi, Kenya</p>
                     </div>
-                    <div className='border border-black lg:w-[348px] lg:h-[100px] w-[100px] h-[114px] flex flex-col items-center justify-between'>
+                    <div className='lg:w-[348px] lg:h-[100px] w-[100px] h-[114px] flex flex-col items-center justify-between'>
                         <p className='text-[18px] text-center'>Follow Us</p>
                         <div className='flex flex-row w-full items-center justify-center gap-4'>
                             <Image
