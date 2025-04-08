@@ -118,7 +118,7 @@ export default function AboutUsPage() {
                 {mission && (
                   <div className='flex flex-col items-start gap-1 text-white text-left'>
                     <p className='font-bold text-[20px]'>Mission</p>
-                    <p className='font-light text-[12px] w-[200px] leading-snug'>
+                    <p className='font-light text-[12px] max-w-[200px] leading-snug'>
                       Our mission is to build lasting, mutually beneficial relationships with each of our esteemed clients by continually exceeding their expectations and earning their confidence via the excellent and devoted work of every member of the Alver Power System Team.
                     </p>
                   </div>
