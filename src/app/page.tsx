@@ -1,6 +1,7 @@
 'use client'
 import React, { useState } from 'react';
 import Image from 'next/image';
+import { motion } from 'framer-motion';
 import { useRouter } from 'next/navigation'
 import electricalsImg from './assets/electricals.png'
 import switchboardImg from './assets/switchboard.png'
@@ -97,7 +98,7 @@ export default function HomePage() {
           <Carousel />
         </div>
         
-        <div className='flex flex-row lg:gap-[50px] md:gap-4'>
+        <div className='flex flex-row gap-4 lg:gap-[50px] md:gap-4'>
         <div className='w-[10px] h-[50px] bg-[#252865]'></div>
         <p className='w-full lg:w-[1186px] text-left text-center text-[#000000] font-light text-[12px] lg:text-[18px] md:text-[18px]'>
           Alver Power Systems Ltd is your trusted partner for innovative electrical and renewable energy solutions across Kenya and East Africa.
