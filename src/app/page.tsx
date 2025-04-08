@@ -185,9 +185,9 @@ export default function HomePage() {
                                     <button type="submit" className="bg-[#F4A261] text-black px-4 py-1 rounded">Send</button>
                                     {status && (
                                         <p className={`mt-2 text-center text-xl 
-                  ${status === 'Sending...' ? 'text-black' : ''} 
-                  ${status === 'Message sent!' ? 'text-green-500' : ''} 
-                  ${status === 'Failed to send message.' ? 'text-red-500' : ''}`}>
+                                              ${status === 'Sending...' ? 'text-black' : ''} 
+                                              ${status === 'Message sent!' ? 'text-green-500' : ''} 
+                                              ${status === 'Failed to send message.' ? 'text-red-500' : ''}`}>
                                             {status}
                                         </p>
                                     )}
@@ -208,8 +208,20 @@ export default function HomePage() {
                 )}
 
                 {/*Get To Know Us*/}
-                <div className='flex flex-row lg:gap-[50px] w-full items-center justify-right'>
-                    <div className='border border-black w-full h-[50px]'></div>
+                <div className='flex flex-row lg:gap-[50px] w-full justify-right'>
+                    <div className='border border-black w-full h-[50px] flex flex-col justify-right text-right'>
+                        <div className="text-black font-inter font-normal text-[14px] lg:text-[24px] md:text-[24px]">
+                            Get to know us
+                        </div>
+                        <div className=" w-full flex flex-row lg:items-center lg:justify-center md:items-center md:justify-center gap-[10px] text-[16px] lg:text-[32px] md:text-[28px]">
+                          <p className='text-[#FF0105]'>Who</p>
+                          <p className='text-[#252865]'>We are</p>
+                        </div>
+                        <p className='w-full lg:w-[1186px] text-right text-[#000000] text-[12px] lg:text-[24px] md:text-[20px]'>Alver power systems is a manufacturing company that  specializes in electrical installations solar energy solutions and switchboard manufacturing.
+                          Our mission is to build lasting, mutually beneficial relationships with each of our esteemed clients by continually exceeding their expectations and earning their confidence.
+                          Our mission is to be the most skilled and reputable commercial electrical contractor service provider in east Africa 
+                        </p>
+                    </div>
                     <div className='w-[10px] h-[90px] bg-[#252865]'></div>
                 </div>
 
