@@ -105,7 +105,7 @@ export default function AboutUsPage() {
             <div
               className={`rounded-[20px] px-[50px] py-[50px] ${
                 mission ? 'bg-[#FF0105]' : 'bg-[#CACACA]'
-              } flex flex-row items-center justify-center gap-2 cursor-pointer transition-all duration-300 ease-in-out`}
+              } flex flex-row items-center justify-center gap-2 cursor-pointer transition-all duration-800 ease-in-out`}
               onClick={handleMission}
             >
               <div className='flex flex-col items-center justify-center gap-1'>
@@ -135,7 +135,7 @@ export default function AboutUsPage() {
             <div
               className={`rounded-[20px] px-[50px] py-[50px] ${
                 vision ? 'bg-[#FF0105]' : 'bg-[#CACACA]'
-              } flex flex-row items-center justify-center gap-2 cursor-pointer transition-all duration-300 ease-in-out`}
+              } flex flex-row items-center justify-center gap-2 cursor-pointer transition-all duration-800 ease-in-out`}
               onClick={handleVision}
             >
               <div className='flex flex-col items-center justify-center gap-1'>
@@ -165,7 +165,7 @@ export default function AboutUsPage() {
             <div
               className={`rounded-[20px] px-[50px] py-[50px] ${
                 values ? 'bg-[#FF0105]' : 'bg-[#CACACA]'
-              } flex flex-row items-center justify-center gap-2 cursor-pointer transition-all duration-300 ease-in-out`}
+              } flex flex-row items-center justify-center gap-2 cursor-pointer transition-all duration-800 ease-in-out`}
               onClick={handleValues}
             >
               <div className='flex flex-col items-center justify-center gap-1'>
