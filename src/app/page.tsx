@@ -210,7 +210,7 @@ export default function HomePage() {
                 {/*Get To Know Us*/}
                 <div className='flex flex-row lg:gap-[50px] w-full items-center justify-right'>
                     <div className='border border-black w-full h-[50px]'></div>
-                    <div className='w-[10px] h-full bg-[#252865]'></div>
+                    <div className='w-[10px] h-[90px] bg-[#252865]'></div>
                 </div>
 
                 {/*Product Cards*/}
