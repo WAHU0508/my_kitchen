@@ -98,7 +98,7 @@ export default function AboutUsPage() {
         <div className='mt-[20px] w-full flex flex-row gap-6 items-stretch justify-center'>
             {/* Mission */}
             <div
-              className={`rounded-[20px] px-[20px] py-[50px] ${
+              className={`rounded-[20px] px-[50px] py-[50px] ${
                 mission ? 'bg-[#FF0105]' : 'bg-[#CACACA]'
               } flex flex-row items-center justify-center gap-2 cursor-pointer`}
               onClick={handleMission}
@@ -121,7 +121,7 @@ export default function AboutUsPage() {
           
             {/* Vision */}
             <div
-              className={`rounded-[20px] px-[20px] py-[50px] ${
+              className={`rounded-[20px] px-[50px] py-[50px] ${
                 vision ? 'bg-[#FF0105]' : 'bg-[#CACACA]'
               } flex flex-row items-center justify-center gap-2 cursor-pointer`}
               onClick={handleVision}
@@ -133,15 +133,18 @@ export default function AboutUsPage() {
                   height={48}
                   alt='Vision'
                 />
-                <div className='text-white'>
-                  {vision ? 'Vision Statement' : 'Vision'}
+                <div className='text-black font-semibold text-[20px]'>
+                  {vision ? '' : 'Vision'}
                 </div>
+              </div>
+                <div className='text-white whitespace-nowrap'>
+                {vision ? 'Vision Statement' : ''}
               </div>
             </div>
           
             {/* Values */}
             <div
-              className={`rounded-[20px] px-[20px] py-[50px] ${
+              className={`rounded-[20px] px-[50px] py-[50px] ${
                 values ? 'bg-[#FF0105]' : 'bg-[#CACACA]'
               } flex flex-row items-center justify-center gap-2 cursor-pointer`}
               onClick={handleValues}
@@ -153,9 +156,12 @@ export default function AboutUsPage() {
                   height={48}
                   alt='Values'
                 />
-                <div className='text-white'>
-                  {values ? 'Values Statement' : 'Values'}
+                <div className='text-black font-semibold text-[20px]'>
+                  {values ? '' : 'Values'}
                 </div>
+              </div>
+                <div className='text-white whitespace-nowrap'>
+                {values ? 'Values Statement' : ''}
               </div>
             </div>
           </div>
