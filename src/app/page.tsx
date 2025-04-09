@@ -82,10 +82,10 @@ export default function HomePage() {
                     <div className="absolute top-4 left-0 w-full lg:z-20">
                         <Header />
                     </div>
-                    <div className="absolute bottom-50 left-1/2 z-10 text-center animate-swivel">
-                      <p className="text-white font-semibold text-[32px] md:text-[50px] w-[80vw] max-w-[800px] mx-auto">
-                        Powering Innovation, Ensuring Reliability
-                      </p>
+                    <div className="animate-swivel absolute bottom-50 left-1/2 transform -translate-x-1/2 z-10 text-center">
+                        <p className="text-white font-semibold text-[32px] md:text-[50px] w-[80vw] max-w-[800px] mx-auto">
+                            Powering Innovation, Ensuring Reliability
+                        </p>
                     </div>
                 </div>
             </div>
