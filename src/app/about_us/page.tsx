@@ -53,7 +53,7 @@ export default function AboutUsPage() {
       
           {/* Quote overlay */}
           <div className="absolute bottom-20 lg:bottom-50 md:bottom-50 left-1/2 transform -translate-x-1/2 z-10 text-center">
-            <p className="text-white font-semibold text-[20px] lg:text-[32px] md:text-[32px] w-[80vw] max-w-[800px] mx-auto">
+            <p className="text-white font-semibold text-[32px] lg:text-[50px] md:text-[50px] w-[80vw] max-w-[800px] mx-auto">
               Driven by Excellence, Energized by Trust.
             </p>
           </div>
