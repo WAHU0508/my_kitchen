@@ -98,6 +98,7 @@ export default function HomePage() {
                     <Carousel />
                 </div>
 
+                {/* heading1 */}
                 <motion.div className='flex flex-row gap-4 lg:gap-[50px] md:gap-4'
                     initial={{ opacity: 0, y: 40 }}
                     whileInView={{ opacity: 1, y: 0 }}
@@ -110,7 +111,8 @@ export default function HomePage() {
                         We specialize in high-quality electrical installations, solar energy solutions and custom switchboard manufacturing. We also offer end to end services that include engineering, procurement, construction (EPC) and maintenance.
                     </p>
                 </motion.div>
-
+                
+                {/* Two buttons */}
                 <motion.div className='w-full flex flex-row items-center justify-center lg:gap-[200px] md:gap-[150px] gap-[50px] mt-[20px]'
                     initial={{ opacity: 0, y: 40 }}
                     whileInView={{ opacity: 1, y: 0 }}
@@ -156,7 +158,7 @@ export default function HomePage() {
                     </div>
                 </motion.div>
 
-                {/* Modal */}
+                {/*Get Quote Modal */}
                 {isModalOpen && (
                     <div className="fixed inset-0 flex items-center justify-center backdrop-blur-sm bg-black/30 z-50">
                         <div className="bg-white p-6 rounded-lg shadow-lg w-full max-w-md relative">
@@ -316,8 +318,13 @@ export default function HomePage() {
                             </button>
                         </div>
                     </motion.div>
+                    
+                    
+                    
+                </div>
 
-                    <div className='flex flex-row mt-[20px] lg:gap-[50px] w-full justify-end'>
+                {/* why us */}
+                <div className='flex flex-row mt-[20px] lg:gap-[50px] w-full justify-end'>
                     {/* column */}
                     <motion.div className='w-[10px] h-auto bg-[#252865]'
                                 initial={{ opacity: 0, y: 40 }}
@@ -364,69 +371,64 @@ export default function HomePage() {
                     </motion.div>
                     
                 </div>
-                    
-                    {/*Why us*/}
-                    
 
-                    {/*Projects*/}
-                    <div className='flex flex-col mt-[40px]'>
-                        <motion.div className='w-full flex flex-row items-center lg:items-center lg:justify-center md:items-center md:justify-center'
-                                    initial={{ opacity: 0, y: 40 }}
-                                    whileInView={{ opacity: 1, y: 0 }}
-                                    transition={{ duration: 0.8, ease: 'easeOut' }}
-                                    viewport={{ once: false, amount: 0.2 }} // this ensures it's triggered every time the section comes into view
-                        >
-                            {/* <div className="w-[25px] h-0 top-[745px] left-[625px] bg-[#D9D9D9] border-b-[5px] border-[#252865]"></div> */}
-                            <div className="text-black font-inter font-normal text-[14px] lg:text-[20px] md:text-[20px]">
-                                Portfolio
-                            </div>
-                        </motion.div>
-                        <motion.div className=" w-full flex flex-row lg:items-center lg:justify-center md:items-center md:justify-center gap-[10px] text-[16px] lg:text-[24px] md:text-[24px]"
-                                    initial={{ opacity: 0, y: 40 }}
-                                    whileInView={{ opacity: 1, y: 0 }}
-                                    transition={{ duration: 0.8, ease: 'easeOut' }}
-                                    viewport={{ once: false, amount: 0.2 }} // this ensures it's triggered every time the section comes into view
-                        >
-                            <p className='text-[#FF0105]'>Our</p>
-                            <p className='text-[#252865]'>Projects</p>
-                        </motion.div>
-                    </div>
+                {/*Projects Done*/}
+                <div className='flex flex-col mt-[40px]'>
+                    <motion.div className='w-full flex flex-row items-center lg:items-center lg:justify-center md:items-center md:justify-center'
+                                initial={{ opacity: 0, y: 40 }}
+                                whileInView={{ opacity: 1, y: 0 }}
+                                transition={{ duration: 0.8, ease: 'easeOut' }}
+                                viewport={{ once: false, amount: 0.2 }} // this ensures it's triggered every time the section comes into view
+                    >
+                        {/* <div className="w-[25px] h-0 top-[745px] left-[625px] bg-[#D9D9D9] border-b-[5px] border-[#252865]"></div> */}
+                        <div className="text-black font-inter font-normal text-[14px] lg:text-[20px] md:text-[20px]">
+                            Portfolio
+                        </div>
+                    </motion.div>
+                    <motion.div className=" w-full flex flex-row lg:items-center lg:justify-center md:items-center md:justify-center gap-[10px] text-[16px] lg:text-[24px] md:text-[24px]"
+                                initial={{ opacity: 0, y: 40 }}
+                                whileInView={{ opacity: 1, y: 0 }}
+                                transition={{ duration: 0.8, ease: 'easeOut' }}
+                                viewport={{ once: false, amount: 0.2 }} // this ensures it's triggered every time the section comes into view
+                    >
+                        <p className='text-[#FF0105]'>Our</p>
+                        <p className='text-[#252865]'>Projects</p>
+                    </motion.div>
                     <div className="w-full overflow-x-auto lg:overflow-x-hidden lg:overflow-y-hidden">
-                        <motion.div className="flex lg:grid gap-4 items-center justify-start lg:grid-cols-3 min-w-max"
-                                    initial={{ opacity: 0, y: 40 }}
-                                    whileInView={{ opacity: 1, y: 0 }}
-                                    transition={{ duration: 0.8, ease: 'easeOut' }}
-                                    viewport={{ once: false, amount: 0.2 }} // this ensures it's triggered every time the section comes into view
-                        >
-                            <ProjectCard1 />
-                            <ProjectCard2 />
-                            <ProjectCard3 />
-                        </motion.div>
-                    </div>
+                    <motion.div className="flex lg:grid gap-4 items-center justify-start lg:grid-cols-3 min-w-max"
+                                initial={{ opacity: 0, y: 40 }}
+                                whileInView={{ opacity: 1, y: 0 }}
+                                transition={{ duration: 0.8, ease: 'easeOut' }}
+                                viewport={{ once: false, amount: 0.2 }} // this ensures it's triggered every time the section comes into view
+                    >
+                        <ProjectCard1 />
+                        <ProjectCard2 />
+                        <ProjectCard3 />
+                    </motion.div>
+                </div>
 
-                    <div className='w-full flex items-center justify-center mt-[20px]'>
-                        <motion.div className="relative w-[123px] h-[30px] lg:w-[220px] lg:h-[46px] md:w-[220px] md:h-[46px]"
-                                    initial={{ opacity: 0, y: 40 }}
-                                    whileInView={{ opacity: 1, y: 0 }}
-                                    transition={{ duration: 0.8, ease: 'easeOut' }}
-                                    viewport={{ once: false, amount: 0.2 }} // this ensures it's triggered every time the section comes into view
-                        >
-                            {/* Rectangle 9 - blurred background box */}
-                            {/*<div className="absolute w-[123px] h-[30px] lg:w-[290px] lg:h-[46px] md:w-[290px] md:h-[46px] inset-0 border-[2px] border-[#252865] rounded-[15px] blur-[8.25px]"></div>*/}
-                            {/* Rectangle 8 - foreground box */}
-                            <button className="absolute text-black hover:bg-[#252865] hover:text-white active:bg-[#252865] active:text-white w-[123px] h-[30px] lg:w-[220px] lg:h-[46px] md:w-[220px] md:h-[46px] text-[10px] lg:text-[16px] md:text-[16px] inset-0 border-[2px] border-[#252865] rounded-[15px] flex flex-row items-center justify-center lg:items-center lg:justify-center md:items-center md:justify-center gap-2 lg:gap-2 md:gap-2">
-                                See More
-                                <Image
-                                    src={externalLink}
-                                    alt='Get Quote'
-                                    width={16}
-                                    height={16}
-                                    className='w-[10px] h-[10px] lg:w-[16px] lg:h-[16px] md:w-[16px] md:h-[16px]'
-                                />
-                            </button>
-                        </motion.div>
-                    </div>
-                    
+                <div className='w-full flex items-center justify-center mt-[20px]'>
+                    <motion.div className="relative w-[123px] h-[30px] lg:w-[220px] lg:h-[46px] md:w-[220px] md:h-[46px]"
+                                initial={{ opacity: 0, y: 40 }}
+                                whileInView={{ opacity: 1, y: 0 }}
+                                transition={{ duration: 0.8, ease: 'easeOut' }}
+                                viewport={{ once: false, amount: 0.2 }} // this ensures it's triggered every time the section comes into view
+                    >
+                        {/* Rectangle 9 - blurred background box */}
+                        {/*<div className="absolute w-[123px] h-[30px] lg:w-[290px] lg:h-[46px] md:w-[290px] md:h-[46px] inset-0 border-[2px] border-[#252865] rounded-[15px] blur-[8.25px]"></div>*/}
+                        {/* Rectangle 8 - foreground box */}
+                        <button className="absolute text-black hover:bg-[#252865] hover:text-white active:bg-[#252865] active:text-white w-[123px] h-[30px] lg:w-[220px] lg:h-[46px] md:w-[220px] md:h-[46px] text-[10px] lg:text-[16px] md:text-[16px] inset-0 border-[2px] border-[#252865] rounded-[15px] flex flex-row items-center justify-center lg:items-center lg:justify-center md:items-center md:justify-center gap-2 lg:gap-2 md:gap-2">
+                            See More
+                            <Image
+                                src={externalLink}
+                                alt='Get Quote'
+                                width={16}
+                                height={16}
+                                className='w-[10px] h-[10px] lg:w-[16px] lg:h-[16px] md:w-[16px] md:h-[16px]'
+                            />
+                        </button>
+                    </motion.div>
+                </div>
                 </div>
             </div>
 
