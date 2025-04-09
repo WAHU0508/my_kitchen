@@ -17,6 +17,7 @@ import ProjectCard1 from './components/project_card1'
 import ProjectCard2 from './components/project_card2'
 import ProjectCard3 from './components/project_card3'
 import Carousel2 from './components/carousel'
+import Item from './components/item1.tsx'
 import Header from './components/header'
 import Footer from './components/footer'
 
@@ -282,15 +283,16 @@ export default function HomePage() {
                     </motion.div>
 
                     <div className="w-full overflow-x-auto lg:overflow-x-hidden lg:overflow-y-hidden">
-                        <motion.div className="flex lg:grid gap-4 items-center justify-start lg:grid-cols-3 min-w-max"
+                        <motion.div className="flex lg:grid items-center justify-center lg:grid-cols-3 min-w-max"
                                     initial={{ opacity: 0, y: 40 }}
                                     whileInView={{ opacity: 1, y: 0 }}
                                     transition={{ duration: 0.8, ease: 'easeOut' }}
                                     viewport={{ once: false, amount: 0.2 }} // this ensures it's triggered every time the section comes into view
                         >
-                            <ProductCard1 />
-                            <ProductCard2 />
-                            <ProductCard3 />
+                            <Item />
+                            <Item />
+                            <Item />
+                            <Item /> 
                         </motion.div>
                     </div>
 
