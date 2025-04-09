@@ -257,27 +257,47 @@ export default function HomePage() {
 
                 {/*Product Cards*/}
                 <div className='flex flex-col mt-[40px]'>
-                    <div className='w-full flex flex-row items-center lg:items-center lg:justify-center md:items-center md:justify-center'>
-                        <div className="w-[25px] h-0 top-[745px] left-[625px] bg-[#D9D9D9] border-b-[5px] border-[#252865]"></div>
-                        <div className="text-black font-inter font-normal text-[14px] lg:text-[24px] md:text-[24px]">
+                    <motion.div className='w-full flex flex-row items-center lg:items-center lg:justify-center md:items-center md:justify-center'
+                                initial={{ opacity: 0, y: 40 }}
+                                whileInView={{ opacity: 1, y: 0 }}
+                                transition={{ duration: 0.8, ease: 'easeOut' }}
+                                viewport={{ once: false, amount: 0.2 }} // this ensures it's triggered every time the section comes into view
+                    >
+                        {/* <div className="w-[25px] h-0 top-[745px] left-[625px] bg-[#D9D9D9] border-b-[5px] border-[#252865]"></div> */}
+                        <div className="text-black font-inter font-normal text-[14px] lg:text-[16px] md:text-[16px]">
                             What we do
                         </div>
-                    </div>
-                    <div className=" w-full flex flex-row lg:items-center lg:justify-center md:items-center md:justify-center gap-[10px] text-[16px] lg:text-[32px] md:text-[28px]">
+                    </motion.div>
+                    <motion.div className=" w-full flex flex-row lg:items-center lg:justify-center md:items-center md:justify-center gap-[10px] text-[16px] lg:text-[20px] md:text-[20px]"
+                                initial={{ opacity: 0, y: 40 }}
+                                whileInView={{ opacity: 1, y: 0 }}
+                                transition={{ duration: 0.8, ease: 'easeOut' }}
+                                viewport={{ once: false, amount: 0.2 }} // this ensures it's triggered every time the section comes into view
+                    >
                         <p className='text-[#FF0105]'>Our</p>
                         <p className='text-[#252865]'>Products and Services</p>
-                    </div>
+                    </motion.div>
 
                     <div className="w-full overflow-x-auto lg:overflow-x-hidden lg:overflow-y-hidden">
-                        <div className="flex lg:grid gap-4 items-center justify-start lg:grid-cols-3 min-w-max">
+                        <motion.div className="flex lg:grid gap-4 items-center justify-start lg:grid-cols-3 min-w-max"
+                                    initial={{ opacity: 0, y: 40 }}
+                                    whileInView={{ opacity: 1, y: 0 }}
+                                    transition={{ duration: 0.8, ease: 'easeOut' }}
+                                    viewport={{ once: false, amount: 0.2 }} // this ensures it's triggered every time the section comes into view
+                        >
                             <ProductCard1 />
                             <ProductCard2 />
                             <ProductCard3 />
-                        </div>
+                        </motion.div>
                     </div>
 
 
-                    <div className='w-full flex items-center justify-center mt-[20px]'>
+                    <motion.div className='w-full flex items-center justify-center mt-[20px]'
+                                initial={{ opacity: 0, y: 40 }}
+                                whileInView={{ opacity: 1, y: 0 }}
+                                transition={{ duration: 0.8, ease: 'easeOut' }}
+                                viewport={{ once: false, amount: 0.2 }} // this ensures it's triggered every time the section comes into view
+                    >
                         <div className="relative w-[145px] h-[30px] lg:w-[290px] lg:h-[46px] md:w-[290px] md:h-[46px]">
                             {/* Rectangle 9 - blurred background box */}
                             {/*<div className="absolute w-[145px] h-[30px] lg:w-[290px] lg:h-[46px] md:w-[290px] md:h-[46px] inset-0 border-[2px] border-[#252865] rounded-[15px] blur-[8.25px]"></div>*/}
@@ -295,7 +315,7 @@ export default function HomePage() {
                                 />
                             </button>
                         </div>
-                    </div>
+                    </motion.div>
 
                     {/*Why us*/}
                     <div className='flex flex-col mt-[40px]'>
