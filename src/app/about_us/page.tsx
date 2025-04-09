@@ -255,7 +255,7 @@ export default function AboutUsPage() {
           </div>
         
       </div>
-      <div className='mt-[20px]'>
+      <div className='w-full bg-[#252865] mt-[20px]'>
           <Footer />
       </div>
     </section>
