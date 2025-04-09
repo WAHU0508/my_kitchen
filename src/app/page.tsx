@@ -91,7 +91,7 @@ export default function HomePage() {
             </div>
 
             {/* main section */}
-            <div className='lg:p-4 md:p-2 p-1 lg:w-[1300px] md:w-full w-full flex flex-col'>
+            <div className='lg:p-4 md:p-2 p-1 lg:w-[1300px] md:w-full w-full flex flex-col overflow-y-hidden'>
                 {/*Small Screen*/}
                 <div className='lg:hidden md:hidden flex flex-col items-center justify-center'>
                     <Header />
