@@ -83,7 +83,7 @@ export default function HomePage() {
                         <Header />
                     </div>
                     <div className="absolute bottom-50 left-1/2 transform -translate-x-1/2 z-10 text-center">
-                        <p className="text-white font-semibold text-[32px] md:text-[50px] w-[80vw] max-w-[800px] mx-auto">
+                        <p className="spinning-text text-white font-semibold text-[32px] md:text-[50px] w-[80vw] max-w-[800px] mx-auto">
                             Powering Innovation, Ensuring Reliability
                         </p>
                     </div>
