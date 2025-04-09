@@ -8,8 +8,9 @@ export default function Product1() {
       <Image 
         src={solarimg}
         alt='Solar Img'
-        fill
-        style={{ objectFit: "cover" }}
+        width={250}
+        height={400}
+        className='w-[200px] h-[400px] lg:w-[250px] lg:h-[400px] md:w-[250px] md:h-[400px]'
       />
     </div>
   )
