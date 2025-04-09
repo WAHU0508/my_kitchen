@@ -1,6 +1,6 @@
 import React from 'react'
 import Image from 'next/image'
-import solarimg form '../assets/solar_homes.png'
+import solarimg from '../assets/solar_homes.png'
 
 export default function Product1() {
   return (
@@ -9,7 +9,7 @@ export default function Product1() {
         src={solarimg}
         alt='Solar Img'
         fill
-        style={{objectfit: 'cover'}}
+        style={{ objectFit: "cover" }}
       />
     </div>
   )
