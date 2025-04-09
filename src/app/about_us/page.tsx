@@ -37,7 +37,7 @@ export default function AboutUsPage() {
     <section className="w-full flex items-center justify-center overflow-x-hidden">
       <div className='relative w-full lg:w-[1440px] flex flex-col items-center justify-center'>
         {/* Background Image with header and quote overlay */}
-        <div className="relative w-full lg:w-[1440px] h-[550px]">
+        <div className="relative w-full h-[300px] lg:w-[1440px] lg:h-[550px] md:h-[550px]">
           <Image
             src={coverImg}
             alt="Cover Image"
