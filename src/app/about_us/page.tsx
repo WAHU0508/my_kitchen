@@ -191,7 +191,7 @@ export default function AboutUsPage() {
               </div>
             </div>
           </motion.div>
-          <div className='md:hidden lg:hidden flex flex-col gap-2'>
+          <div className='md:hidden lg:hidden flex flex-col gap-2 mt-[20px]'>
             <motion.div 
                     className='rounded-[10px] px-[20px] py-[10px] bg-[#FF0105] flex flex-row items-center justify-center gap-2 cursor-pointer'
                     initial={{ opacity: 0, y: 40 }}
