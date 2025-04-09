@@ -193,7 +193,7 @@ export default function AboutUsPage() {
           </motion.div>
           <div className='md:hidden lg:hidden flex flex-col gap-2'>
             <motion.div 
-                    className='rounded-[20px] px-[20px] py-[10px] bg-[#FF0105] flex flex-row items-center justify-center gap-2 cursor-pointer'
+                    className='rounded-[10px] px-[20px] py-[10px] bg-[#FF0105] flex flex-row items-center justify-center gap-2 cursor-pointer'
                     initial={{ opacity: 0, y: 40 }}
                     whileInView={{ opacity: 1, y: 0 }}
                     transition={{ duration: 0.8, ease: 'easeOut' }}
@@ -212,22 +212,52 @@ export default function AboutUsPage() {
                     </p>
                 </div>
           </motion.div>
-          <motion.div initial={{ opacity: 0, y: 40 }}
+          <motion.div 
+                    className='rounded-[10px] px-[20px] py-[10px] bg-[#FF0105] flex flex-row items-center justify-center gap-2 cursor-pointer'
+                    initial={{ opacity: 0, y: 40 }}
                     whileInView={{ opacity: 1, y: 0 }}
                     transition={{ duration: 0.8, ease: 'easeOut' }}
                     viewport={{ once: false, amount: 0.2 }}
           >
+              <Image
+                  src={vision1}
+                  width={48}
+                  height={48}
+                  alt='Vision'
+                />
+                <div className='flex flex-col items-start gap-1 text-white text-left'>
+                    <p className='font-bold text-[20px]'>Our Vision</p>
+                    <p className='font-light text-[12px] max-w-[300px] leading-snug'>
+                      Being the most skilled and reputable commercial electrical contractor/ service provider in East Africa.
+                    </p>
+                </div>
           </motion.div>
-          <motion.div initial={{ opacity: 0, y: 40 }}
+          <motion.div 
+                    className='rounded-[10px] px-[20px] py-[10px] bg-[#FF0105] flex flex-row items-center justify-center gap-2 cursor-pointer'
+                    initial={{ opacity: 0, y: 40 }}
                     whileInView={{ opacity: 1, y: 0 }}
                     transition={{ duration: 0.8, ease: 'easeOut' }}
                     viewport={{ once: false, amount: 0.2 }}
           >
+              <Image
+                  src={value1}
+                  width={48}
+                  height={48}
+                  alt='Values'
+                />
+                <div className='flex flex-col items-start gap-1 text-white text-left'>
+                    <p className='font-bold text-[20px]'>Our Values</p>
+                    <p className='font-light text-[12px] max-w-[300px] leading-snug'>
+                      Customer focus, service, competitive, teamwork and commitment
+                    </p>
+                </div>
           </motion.div>
           </div>
+        
         <div className='mt-[20px]'>
           <Footer />
         </div>
+        
       </div>
     </section>
 
