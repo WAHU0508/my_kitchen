@@ -25,20 +25,20 @@
 }
 @keyframes swivel {
   0% {
-    transform: rotate(-30deg); /* Start at -30 degrees */
+    transform: translateX(-50%) rotate(-30deg);
   }
   50% {
-    transform: rotate(30deg);  /* Swivel to 30 degrees */
+    transform: translateX(-50%) rotate(30deg);
   }
   100% {
-    transform: rotate(-30deg); /* Return to -30 degrees */
+    transform: translateX(-50%) rotate(-30deg);
   }
 }
 
-/* Create a class for the swiveling animation */
 .animate-swivel {
   animation: swivel 2s ease-in-out infinite;
 }
+
 
 html,
 body {
