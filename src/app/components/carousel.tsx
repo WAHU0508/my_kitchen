@@ -35,8 +35,8 @@
            <Image
              src={img}
              alt={`Slide ${index + 1}`}
-             layout="fill"
-             objectFit="cover"
+             fill
+             style={{objectFit: "cover"}}
              priority={index === 0}
            />
          </div>
