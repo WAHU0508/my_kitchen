@@ -243,8 +243,8 @@ export default function HomePage() {
                               />
                             </button>
                           </div>
-                        </motion.div>
-                    </div>
+                        </div>
+                    </motion.div>
                     {/* column */}
                     <motion.div className='w-[10px] h-auto bg-[#252865]'
                                 initial={{ y: 50, opacity: 0 }}
