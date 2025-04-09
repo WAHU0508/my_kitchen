@@ -25,19 +25,21 @@
 }
 @keyframes swivel {
   0% {
-    transform: translateX(-50%) rotate(-30deg);
+    transform: translateX(-50%) rotateY(-30deg);
   }
   50% {
-    transform: translateX(-50%) rotate(30deg);
+    transform: translateX(-50%) rotateY(30deg);
   }
   100% {
-    transform: translateX(-50%) rotate(-30deg);
+    transform: translateX(-50%) rotateY(-30deg);
   }
 }
 
 .animate-swivel {
   animation: swivel 2s ease-in-out infinite;
+  transform-style: preserve-3d;
 }
+
 
 
 html,
