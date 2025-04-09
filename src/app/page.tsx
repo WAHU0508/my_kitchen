@@ -209,7 +209,7 @@ export default function HomePage() {
 
                 {/*Get To Know Us*/}
                 <div className='flex flex-row lg:gap-[50px] w-full justify-end'>
-                    <div className='border border-black w-full h-full flex flex-col justify-end'>
+                    <div className='w-full h-full flex flex-col justify-end'>
                         <div className="w-full flex justify-end text-black font-inter font-normal text-[14px] lg:text-[20px] md:text-[20px]">
                             Get to know us
                         </div>
@@ -221,6 +221,25 @@ export default function HomePage() {
                           Our mission is to build lasting, mutually beneficial relationships with each of our esteemed clients by continually exceeding their expectations and earning their confidence.
                           Our mission is to be the most skilled and reputable commercial electrical contractor service provider in east Africa 
                         </p>
+                        <div className='w-full flex items-center justify-center mt-[20px]'>
+                          <div className="relative w-[145px] h-[30px] lg:w-[220px] lg:h-[46px] md:w-[220px] md:h-[46px]">
+                            {/* Rectangle 9 - blurred background box */}
+                            {/*<div className="absolute w-[145px] h-[30px] lg:w-[290px] lg:h-[46px] md:w-[290px] md:h-[46px] inset-0 border-[2px] border-[#252865] rounded-[15px] blur-[8.25px]"></div>*/}
+                            {/* Rectangle 8 - foreground box */}
+                            <button className="absolute text-black hover:bg-[#252865] hover:text-white active:bg-[#252865] active:text-white w-[145px] h-[30px] lg:w-[220px] lg:h-[46px] md:w-[220px] md:h-[46px] text-[10px] lg:text-[16px] md:text-[16px] inset-0 border-[2px] border-[#252865] rounded-[15px] flex flex-row items-center justify-center lg:items-center lg:justify-center md:items-center md:justify-center gap-2 lg:gap-2 md:gap-2"
+                                    onClick={about_us}
+                              >
+                              Learn More
+                              <Image
+                                src={externalLink}
+                                alt='Get Quote'
+                                width={18}
+                                height={18}
+                                className='w-[10px] h-[10px] lg:w-[18px] lg:h-[18px] md:w-[18px] md:h-[18px]'
+                              />
+                            </button>
+                          </div>
+                        </div>
                     </div>
                     <div className='w-[10px] h-auto bg-[#252865]'></div>
                 </div>
