@@ -191,8 +191,40 @@ export default function AboutUsPage() {
               </div>
             </div>
           </motion.div>
-
-
+          <div className='md:hidden lg:hidden flex flex-col gap-2'>
+            <motion.div 
+                    className='rounded-[20px] px-[20px] py-[10px] bg-[#FF0105] flex flex-row items-center justify-center gap-2 cursor-pointer'
+                    initial={{ opacity: 0, y: 40 }}
+                    whileInView={{ opacity: 1, y: 0 }}
+                    transition={{ duration: 0.8, ease: 'easeOut' }}
+                    viewport={{ once: false, amount: 0.2 }}
+          >
+              <Image
+                  src={mission1}
+                  width={48}
+                  height={48}
+                  alt='Values'
+                />
+                <div className='flex flex-col items-start gap-1 text-white text-left'>
+                    <p className='font-bold text-[20px]'>Our Mission</p>
+                    <p className='font-light text-[12px] max-w-[300px] leading-snug'>
+                      To build strong, lasting client relationships by consistently exceeding expectations through the dedicated work of the Alver Power Systems team.
+                    </p>
+                </div>
+          </motion.div>
+          <motion.div initial={{ opacity: 0, y: 40 }}
+                    whileInView={{ opacity: 1, y: 0 }}
+                    transition={{ duration: 0.8, ease: 'easeOut' }}
+                    viewport={{ once: false, amount: 0.2 }}
+          >
+          </motion.div>
+          <motion.div initial={{ opacity: 0, y: 40 }}
+                    whileInView={{ opacity: 1, y: 0 }}
+                    transition={{ duration: 0.8, ease: 'easeOut' }}
+                    viewport={{ once: false, amount: 0.2 }}
+          >
+          </motion.div>
+          </div>
         <div className='mt-[20px]'>
           <Footer />
         </div>
