@@ -377,11 +377,11 @@ export default function HomePage() {
                                     viewport={{ once: false, amount: 0.2 }} // this ensures it's triggered every time the section comes into view
                         >
                             {/* <div className="w-[25px] h-0 top-[745px] left-[625px] bg-[#D9D9D9] border-b-[5px] border-[#252865]"></div> */}
-                            <div className="text-black font-inter font-normal text-[14px] lg:text-[24px] md:text-[24px]">
+                            <div className="text-black font-inter font-normal text-[14px] lg:text-[20px] md:text-[20px]">
                                 Portfolio
                             </div>
                         </motion.div>
-                        <motion.div className=" w-full flex flex-row lg:items-center lg:justify-center md:items-center md:justify-center gap-[10px] text-[16px] lg:text-[32px] md:text-[28px]"
+                        <motion.div className=" w-full flex flex-row lg:items-center lg:justify-center md:items-center md:justify-center gap-[10px] text-[16px] lg:text-[24px] md:text-[24px]"
                                     initial={{ opacity: 0, y: 40 }}
                                     whileInView={{ opacity: 1, y: 0 }}
                                     transition={{ duration: 0.8, ease: 'easeOut' }}
