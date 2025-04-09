@@ -35,8 +35,9 @@ export default function TailwindCarousel() {
           <Image
             src={img}
             alt={`Slide ${index + 1}`}
-            layout="fill"
-            objectFit="cover"
+            
+{/*             layout="fill"
+            objectFit="cover" */}
             priority={index === 0}
           />
         </div>
