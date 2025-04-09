@@ -208,11 +208,12 @@ export default function HomePage() {
                 )}
 
                 {/*Get To Know Us*/}
-                <div className='flex flex-row lg:gap-[50px] w-full justify-end'>
+                <div className='flex flex-row mt-[20px] lg:gap-[50px] w-full justify-end'>
                     <motion.div className='w-full h-full flex flex-col justify-end'
-                                initial={{ x: -100, opacity: 0 }}
-                                animate={{ x: 0, opacity: 1 }}
-                                transition={{ duration: 1 }}
+                                initial={{ opacity: 0, y: 40 }}
+                                whileInView={{ opacity: 1, y: 0 }}
+                                transition={{ duration: 0.8, ease: 'easeOut' }}
+                                viewport={{ once: false, amount: 0.2 }} // this ensures it's triggered every time the section comes into view
                     >
                         <div className="w-full flex justify-center text-black font-inter font-normal text-[14px] lg:text-[20px] md:text-[20px]">
                             Get to know us
@@ -247,9 +248,10 @@ export default function HomePage() {
                     </motion.div>
                     {/* column */}
                     <motion.div className='w-[10px] h-auto bg-[#252865]'
-                                initial={{ y: 50, opacity: 0 }}
-                                animate={{ y: 0, opacity: 1 }}
-                                transition={{ duration: 1.2, delay: 0.5 }}
+                                initial={{ opacity: 0, y: 40 }}
+                                whileInView={{ opacity: 1, y: 0 }}
+                                transition={{ duration: 0.8, ease: 'easeOut' }}
+                                viewport={{ once: false, amount: 0.2 }} // this ensures it's triggered every time the section comes into view
                     ></motion.div>
                 </div>
 
