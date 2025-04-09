@@ -209,11 +209,15 @@ export default function HomePage() {
 
                 {/*Get To Know Us*/}
                 <div className='flex flex-row lg:gap-[50px] w-full justify-end'>
-                    <div className='w-full h-full flex flex-col justify-end'>
-                        <div className="w-full flex justify-end text-black font-inter font-normal text-[14px] lg:text-[20px] md:text-[20px]">
+                    <motion.div className='w-full h-full flex flex-col justify-end'
+                                initial={{ x: -100, opacity: 0 }}
+                                animate={{ x: 0, opacity: 1 }}
+                                transition={{ duration: 1 }}
+                    >
+                        <div className="w-full flex justify-center text-black font-inter font-normal text-[14px] lg:text-[20px] md:text-[20px]">
                             Get to know us
                         </div>
-                        <div className=" w-full flex flex-row justify-end gap-[10px] text-[16px] lg:text-[24px] md:text-[24px]">
+                        <div className=" w-full flex flex-row mb-[15px] justify-center gap-[10px] text-[16px] lg:text-[24px] md:text-[24px]">
                           <p className='text-[#FF0105]'>Who</p>
                           <p className='text-[#252865]'>We are</p>
                         </div>
@@ -239,9 +243,14 @@ export default function HomePage() {
                               />
                             </button>
                           </div>
-                        </div>
+                        </motion.div>
                     </div>
-                    <div className='w-[10px] h-auto bg-[#252865]'></div>
+                    {/* column */}
+                    <motion.div className='w-[10px] h-auto bg-[#252865]'
+                                initial={{ y: 50, opacity: 0 }}
+                                animate={{ y: 0, opacity: 1 }}
+                                transition={{ duration: 1.2, delay: 0.5 }}
+                    ></motion.div>
                 </div>
 
                 {/*Product Cards*/}
