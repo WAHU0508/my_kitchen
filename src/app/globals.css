@@ -36,7 +36,7 @@
 }
 
 .animate-swivel {
-  animation: swivel 2s ease-in-out 4s;
+  animation: swivel 4s ease-in-out forward;
 }
 
 
