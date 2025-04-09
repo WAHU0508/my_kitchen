@@ -9,9 +9,10 @@ import electricalsImg from '../assets/sivacon.jpg';
 // import switchboardImg from '../assets/switchboard.png';
 // import avrImg from '../assets/AVR.png';
 
-const images = [solarpanelImg, electricalsImg];
+
 
 export default function TailwindCarousel() {
+  const images = [solarpanelImg, electricalsImg];
   const [current, setCurrent] = useState(0);
   const carouselRef = useRef<HTMLDivElement>(null);
 
