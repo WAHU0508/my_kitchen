@@ -18,6 +18,7 @@ import ProjectCard2 from './components/project_card2'
 import ProjectCard3 from './components/project_card3'
 import Carousel2 from './components/carousel'
 import Header from './components/header'
+import Footer from './components/footer'
 
 export default function HomePage() {
     const router = useRouter();
@@ -431,7 +432,9 @@ export default function HomePage() {
                 </div>
                 </div>
             </div>
-
+            <div className='mt-[20px]'>
+              <Footer />
+            </div>
         </section>
     );
 }
