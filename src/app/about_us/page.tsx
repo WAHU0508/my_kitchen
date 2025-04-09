@@ -95,7 +95,7 @@ export default function AboutUsPage() {
           </motion.div>
         </motion.div>
         
-        <motion.div className='mt-[20px] w-full flex flex-row gap-6 items-stretch justify-center'
+        <motion.div className='hidden mt-[20px] w-full lg:flex md:flex flex-row gap-6 items-stretch justify-center'
                     initial={{ opacity: 0, y: 40 }}
                     whileInView={{ opacity: 1, y: 0 }}
                     transition={{ duration: 0.8, ease: 'easeOut' }}
