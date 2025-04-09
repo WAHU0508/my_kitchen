@@ -209,20 +209,20 @@ export default function HomePage() {
 
                 {/*Get To Know Us*/}
                 <div className='flex flex-row lg:gap-[50px] w-full justify-end'>
-                    <div className='border border-black w-full h-full flex flex-col justify-end text-right'>
-                        <div className="text-black font-inter font-normal text-[14px] lg:text-[24px] md:text-[24px]">
+                    <div className='border border-black w-full h-full flex flex-col justify-end'>
+                        <div className="text-black font-inter font-normal text-[14px] lg:text-[20px] md:text-[20px]">
                             Get to know us
                         </div>
-                        <div className=" w-full flex flex-row justify-end gap-[10px] text-[16px] lg:text-[32px] md:text-[28px]">
+                        <div className=" w-full flex flex-row justify-end gap-[10px] text-[16px] lg:text-[24px] md:text-[24px]">
                           <p className='text-[#FF0105]'>Who</p>
                           <p className='text-[#252865]'>We are</p>
                         </div>
-                        <p className='w-full lg:w-[1186px] mx-auto text-[#000000] text-[12px] lg:text-[24px] md:text-[20px]'>Alver power systems is a manufacturing company that  specializes in electrical installations solar energy solutions and switchboard manufacturing.
+                        <p className='w-full lg:w-[1186px] mx-auto text-[#000000] text-light text-[12px] text-justify lg:text-[18px] md:text-[18px]'>Alver power systems is a manufacturing company that  specializes in electrical installations solar energy solutions and switchboard manufacturing.
                           Our mission is to build lasting, mutually beneficial relationships with each of our esteemed clients by continually exceeding their expectations and earning their confidence.
                           Our mission is to be the most skilled and reputable commercial electrical contractor service provider in east Africa 
                         </p>
                     </div>
-                    <div className='w-[10px] h-[90px] bg-[#252865]'></div>
+                    <div className='w-[10px] h-full bg-[#252865]'></div>
                 </div>
 
                 {/*Product Cards*/}
