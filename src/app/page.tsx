@@ -339,7 +339,7 @@ export default function HomePage() {
                           <p className='text-[#252865]'>Alver Power Systems Ltd.</p>
                         </div>
                         <div className='w-full flex flex-col items-center justify-center'>
-                            <ul className='list-disc list-inside md:w-[700px] lg:w-[1004px] text-[12px] md:text-[20px] lg:text-[24px] text-black text-left'>
+                            <ul className='list-disc list-inside md:w-[700px] lg:w-[1004px] text-[12px] font-light md:text-[16px] lg:text-[16px] text-black text-left'>
                                 <li>High quality manufacturing - Durable and efficient products</li>
                                 <li>Sustainability Focused - Commited to eco-friendly energy solutions</li>
                                 <li>Customer Satisfaction - Creating a better and long-term relation with our clients while ensuring excellent service.</li>
@@ -370,44 +370,63 @@ export default function HomePage() {
 
                     {/*Projects*/}
                     <div className='flex flex-col mt-[40px]'>
-                        <div className='w-full flex flex-row items-center lg:items-center lg:justify-center md:items-center md:justify-center'>
-                            <div className="w-[25px] h-0 top-[745px] left-[625px] bg-[#D9D9D9] border-b-[5px] border-[#252865]"></div>
+                        <motion.div className='w-full flex flex-row items-center lg:items-center lg:justify-center md:items-center md:justify-center'
+                                    initial={{ opacity: 0, y: 40 }}
+                                    whileInView={{ opacity: 1, y: 0 }}
+                                    transition={{ duration: 0.8, ease: 'easeOut' }}
+                                    viewport={{ once: false, amount: 0.2 }} // this ensures it's triggered every time the section comes into view
+                        >
+                            {/* <div className="w-[25px] h-0 top-[745px] left-[625px] bg-[#D9D9D9] border-b-[5px] border-[#252865]"></div> */}
                             <div className="text-black font-inter font-normal text-[14px] lg:text-[24px] md:text-[24px]">
                                 Portfolio
                             </div>
-                        </div>
-                        <div className=" w-full flex flex-row lg:items-center lg:justify-center md:items-center md:justify-center gap-[10px] text-[16px] lg:text-[32px] md:text-[28px]">
+                        </motion.div>
+                        <motion.div className=" w-full flex flex-row lg:items-center lg:justify-center md:items-center md:justify-center gap-[10px] text-[16px] lg:text-[32px] md:text-[28px]"
+                                    initial={{ opacity: 0, y: 40 }}
+                                    whileInView={{ opacity: 1, y: 0 }}
+                                    transition={{ duration: 0.8, ease: 'easeOut' }}
+                                    viewport={{ once: false, amount: 0.2 }} // this ensures it's triggered every time the section comes into view
+                        >
                             <p className='text-[#FF0105]'>Our</p>
                             <p className='text-[#252865]'>Projects</p>
-                        </div>
+                        </motion.div>
                     </div>
                     <div className="w-full overflow-x-auto lg:overflow-x-hidden lg:overflow-y-hidden">
-                        <div className="flex lg:grid gap-4 items-center justify-start lg:grid-cols-3 min-w-max">
+                        <motion.div className="flex lg:grid gap-4 items-center justify-start lg:grid-cols-3 min-w-max"
+                                    initial={{ opacity: 0, y: 40 }}
+                                    whileInView={{ opacity: 1, y: 0 }}
+                                    transition={{ duration: 0.8, ease: 'easeOut' }}
+                                    viewport={{ once: false, amount: 0.2 }} // this ensures it's triggered every time the section comes into view
+                        >
                             <ProjectCard1 />
                             <ProjectCard2 />
                             <ProjectCard3 />
-                        </div>
+                        </motion.div>
                     </div>
 
-
                     <div className='w-full flex items-center justify-center mt-[20px]'>
-                        <div className="relative w-[123px] h-[30px] lg:w-[290px] lg:h-[46px] md:w-[290px] md:h-[46px]">
+                        <motion.div className="relative w-[123px] h-[30px] lg:w-[220px] lg:h-[46px] md:w-[220px] md:h-[46px]"
+                                    initial={{ opacity: 0, y: 40 }}
+                                    whileInView={{ opacity: 1, y: 0 }}
+                                    transition={{ duration: 0.8, ease: 'easeOut' }}
+                                    viewport={{ once: false, amount: 0.2 }} // this ensures it's triggered every time the section comes into view
+                        >
                             {/* Rectangle 9 - blurred background box */}
                             {/*<div className="absolute w-[123px] h-[30px] lg:w-[290px] lg:h-[46px] md:w-[290px] md:h-[46px] inset-0 border-[2px] border-[#252865] rounded-[15px] blur-[8.25px]"></div>*/}
                             {/* Rectangle 8 - foreground box */}
-                            <button className="absolute text-black hover:bg-[#252865] hover:text-white active:bg-[#252865] active:text-white w-[123px] h-[30px] lg:w-[290px] lg:h-[46px] md:w-[290px] md:h-[46px] text-[10px] lg:text-[24px] md:text-[24px] inset-0 border-[2px] border-[#252865] rounded-[15px] flex flex-row items-center justify-center lg:items-center lg:justify-center md:items-center md:justify-center gap-2 lg:gap-2 md:gap-2">
+                            <button className="absolute text-black hover:bg-[#252865] hover:text-white active:bg-[#252865] active:text-white w-[123px] h-[30px] lg:w-[220px] lg:h-[46px] md:w-[220px] md:h-[46px] text-[10px] lg:text-[16px] md:text-[16px] inset-0 border-[2px] border-[#252865] rounded-[15px] flex flex-row items-center justify-center lg:items-center lg:justify-center md:items-center md:justify-center gap-2 lg:gap-2 md:gap-2">
                                 See More
                                 <Image
                                     src={externalLink}
                                     alt='Get Quote'
-                                    width={18}
-                                    height={18}
-                                    className='w-[10px] h-[10px] lg:w-[18px] lg:h-[18px] md:w-[18px] md:h-[18px]'
+                                    width={16}
+                                    height={16}
+                                    className='w-[10px] h-[10px] lg:w-[16px] lg:h-[16px] md:w-[16px] md:h-[16px]'
                                 />
                             </button>
-                        </div>
+                        </motion.div>
                     </div>
-                    {/*Projects*/}
+                    
                 </div>
             </div>
 
