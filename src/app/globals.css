@@ -23,18 +23,21 @@
     --foreground: #FFFFFF;
   }
 }
-@keyframes spin {
+@keyframes swivel {
   0% {
-    transform: rotate(0deg);
+    transform: rotate(-30deg); /* Start at -30 degrees */
+  }
+  50% {
+    transform: rotate(30deg);  /* Swivel to 30 degrees */
   }
   100% {
-    transform: rotate(360deg);
+    transform: rotate(-30deg); /* Return to -30 degrees */
   }
 }
 
-.spinning-text {
-  display: inline-block; /* Make sure the element can rotate */
-  animation: spin 4s linear infinite; /* Animation duration: 4s, infinite spin */
+/* Create a class for the swiveling animation */
+.animate-swivel {
+  animation: swivel 2s ease-in-out infinite;
 }
 
 html,
