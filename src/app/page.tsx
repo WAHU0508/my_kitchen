@@ -3,11 +3,11 @@ import React, { useState } from 'react';
 import Image from 'next/image';
 import { motion } from 'framer-motion';
 import { useRouter } from 'next/navigation'
-import electricalsImg from './assets/electricals.png'
-import switchboardImg from './assets/switchboard.png'
+// import electricalsImg from './assets/electricals.png'
+// import switchboardImg from './assets/switchboard.png'
 // import switchboardImg2 from './assets/switchBoard(2).jpeg'
-import solarpanelImg from './assets/solarpanel.png'
-import avrImg from './assets/AVR.png'
+// import solarpanelImg from './assets/solarpanel.png'
+// import avrImg from './assets/AVR.png'
 import Carousel from './components/image_carousel'
 import externalLink from './svgs/external_link.svg'
 import ProductCard1 from './components/products_card1'
