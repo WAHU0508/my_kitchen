@@ -99,7 +99,7 @@ export default function HomePage() {
                 </div>
 
                 {/* heading1 */}
-                <motion.div className='flex flex-row gap-4 lg:gap-[50px] md:gap-4'
+                <motion.div className='flex flex-row gap-4 lg:gap-[50px] md:gap-[50px]'
                     initial={{ opacity: 0, y: 40 }}
                     whileInView={{ opacity: 1, y: 0 }}
                     transition={{ duration: 0.8, ease: 'easeOut' }}
@@ -210,7 +210,7 @@ export default function HomePage() {
                 )}
 
                 {/*Get To Know Us*/}
-                <div className='flex flex-row mt-[20px] lg:gap-[50px] w-full justify-end'>
+                <div className='flex flex-row mt-[20px] gap-4 md:gap-[50px] lg:gap-[50px] w-full justify-end'>
                     <motion.div className='w-full h-full flex flex-col justify-end'
                                 initial={{ opacity: 0, y: 40 }}
                                 whileInView={{ opacity: 1, y: 0 }}
@@ -324,7 +324,7 @@ export default function HomePage() {
                 </div>
 
                 {/* why us */}
-                <div className='flex flex-row mt-[20px] lg:gap-[50px] w-full justify-end'>
+                <div className='flex flex-row mt-[20px] gap-4 md:gap-[50px] lg:gap-[50px] w-full justify-end'>
                     {/* column */}
                     <motion.div className='w-[10px] h-auto bg-[#252865]'
                                 initial={{ opacity: 0, y: 40 }}
@@ -374,7 +374,7 @@ export default function HomePage() {
 
                 {/*Projects Done*/}
                 <div className='flex flex-col mt-[40px]'>
-                    <motion.div className='w-full flex flex-row items-center lg:items-center lg:justify-center md:items-center md:justify-center'
+                    <motion.div className='w-full flex flex-row items-center items-center justify-center'
                                 initial={{ opacity: 0, y: 40 }}
                                 whileInView={{ opacity: 1, y: 0 }}
                                 transition={{ duration: 0.8, ease: 'easeOut' }}
@@ -385,7 +385,7 @@ export default function HomePage() {
                             Portfolio
                         </div>
                     </motion.div>
-                    <motion.div className=" w-full flex flex-row lg:items-center lg:justify-center md:items-center md:justify-center gap-[10px] text-[16px] lg:text-[24px] md:text-[24px]"
+                    <motion.div className=" w-full flex flex-row items-center justify-center  gap-[10px] text-[16px] lg:text-[24px] md:text-[24px]"
                                 initial={{ opacity: 0, y: 40 }}
                                 whileInView={{ opacity: 1, y: 0 }}
                                 transition={{ duration: 0.8, ease: 'easeOut' }}
