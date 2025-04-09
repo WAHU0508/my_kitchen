@@ -10,7 +10,7 @@ export default function Product1() {
         alt='Solar Img'
         width={250}
         height={400}
-        className='w-[200px] h-[400px] lg:w-[250px] lg:h-[400px] md:w-[250px] md:h-[400px]'
+        className='w-full h-full object-cover'
       />
     </div>
   )
