@@ -254,10 +254,9 @@ export default function AboutUsPage() {
           </motion.div>
           </div>
         
-        <div className='mt-[20px]'>
+      </div>
+      <div className='mt-[20px]'>
           <Footer />
-        </div>
-        
       </div>
     </section>
 
