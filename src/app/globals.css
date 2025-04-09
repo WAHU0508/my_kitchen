@@ -23,6 +23,19 @@
     --foreground: #FFFFFF;
   }
 }
+@keyframes spin {
+  0% {
+    transform: rotate(0deg);
+  }
+  100% {
+    transform: rotate(360deg);
+  }
+}
+
+.spinning-text {
+  display: inline-block; /* Make sure the element can rotate */
+  animation: spin 4s linear infinite; /* Animation duration: 4s, infinite spin */
+}
 
 html,
 body {
