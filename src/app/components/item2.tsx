@@ -4,7 +4,7 @@ import sivacon from '../assets/ss8.png'
 
 export default function Product1() {
   return (
-    <div className="relative w-[200px] h-[400px] md:w-[250px] md:h-[400px] lg:w-[320px] lg:h-[500px] group overflow-hidden">
+    <div className="relative w-[320px] h-[500px] group overflow-hidden">
       <Image 
         src={sivacon}
         alt="Solar Img"
