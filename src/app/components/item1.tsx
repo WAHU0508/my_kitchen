@@ -4,18 +4,18 @@ import solarimg from '../assets/solar-homes.png'
 
 export default function Product1() {
   return (
-    <div className='relative w-[200px] h-[400px] lg:w-[250px] lg:h-[400px] md:w-[250px] md:h-[400px]'>
+    <div className="relative w-[200px] h-[400px] md:w-[250px] md:h-[400px] lg:w-[250px] lg:h-[400px]">
       <Image 
         src={solarimg}
-        alt='Solar Img'
+        alt="Solar Img"
         width={250}
         height={400}
-        className='w-full h-full object-cover'
+        className="w-full h-full object-cover"
       />
-      <div className='absolute w-full h-full bg-none hover:bg-[bg-black/60] flex flex-col'>
-        <div className='ml-[50px] flex flex-col'>
-          <p className='text-white'>01</p>
-          <div className='w-[50px] border-b border-[#252865]'></div>
+      <div className="absolute w-full h-full bg-none hover:bg-black/60 flex flex-col">
+        <div className="ml-[50px] mb-4 flex flex-col">
+          <p className="text-white text-lg font-medium">01</p>
+          <div className="w-[50px] border-b-2 border-[#252865]" />
         </div>
       </div>
     </div>
