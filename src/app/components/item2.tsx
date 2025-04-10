@@ -1,6 +1,6 @@
 import React from 'react'
 import Image from 'next/image'
-import solarimg from '../assets/sivacons4.jpg'
+import solarimg from '../assets/ss4.png'
 
 export default function Product1() {
   return (
