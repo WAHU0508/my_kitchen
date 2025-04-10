@@ -285,7 +285,7 @@ export default function HomePage() {
                         <p className='text-[#252865]'>Products and Services</p>
                     </motion.div>
 
-                    <div className="border border-black w-screen flex items-center justify-center overflow-x-auto lg:overflow-x-hidden lg:overflow-y-hidden">
+                    <div className="lg:w-screen border border-black overflow-x-auto">
                         <motion.div className="w-full lg:w-[1440px] flex flex-row items-center justify-center  min-w-max"
                                     initial={{ opacity: 0, y: 40 }}
                                     whileInView={{ opacity: 1, y: 0 }}
