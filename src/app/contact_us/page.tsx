@@ -3,7 +3,7 @@ import Image from 'next/image'
 import location from '../assets/image 25.png'
 import phone from '../assets/Icon.png'
 import mail from '../assets/image 26.png'
-import Header from '../components/header'
+import Header from '../components/header';
 import contactus from '../assets/contactus.jpg'
 import { motion } from 'framer-motion';
 
@@ -33,7 +33,7 @@ export default function ContactUsPage() {
             </p>
           </div>
         </div>
-          <motion.div
+        <motion.div
             className="flex flex-row items-start gap-6"
             initial={{ opacity: 0 }}
             whileInView={{ opacity: 1 }}
@@ -42,7 +42,7 @@ export default function ContactUsPage() {
           >
             <div className="w-[10px] h-[50px] bg-[#FF0105]"></div>
             <div className="w-full text-black text-[14px] font-light">
-              We’re here to help with all your electrical and energy solution. Visit us at our location or simply call us or send an email. 
+              We&apos;re here to help with all your electrical and energy solution. Visit us at our location or simply call us or send an email. 
               For any questions, feel free to contact us 
             </div>
         </motion.div>
