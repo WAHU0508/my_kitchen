@@ -41,8 +41,8 @@ export default function Header() {
                 <div className='flex flex-row gap-6 h-full text-[15px] text-black items-center justify-center'>
                     <Link
                           href="/"
-                          className={`border border-black h-full cursor-pointer hover:text-[#252865] hover:underline ${
-                            pathname === '/' ? 'text-red-600 underline' : 'text-black'
+                          className={`border border-black h-full flex items-center justify-center font-semibold cursor-pointer hover:text-[#252865] hover:underline ${
+                            pathname === '/' ? 'text-[#FF0105]' : 'text-black'
                           }`}
                         >
                           Home
