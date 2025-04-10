@@ -98,9 +98,16 @@ export default function HomePage() {
             {/* main section */}
             <div className='lg:p-4 md:p-2 p-1 lg:w-[1300px] md:w-full w-full flex flex-col overflow-y-hidden'>
                 {/*Small Screen*/}
-                <div className='lg:hidden md:hidden flex flex-col items-center justify-center'>
-                    <Header />
+                <div className='relative w-full lg:hidden md:hidden flex flex-col items-center justify-center'>
                     <Carousel />
+                    <div className="fixed top-0 left-0 w-full lg:z-20">
+                        <Header />
+                    </div>
+                    <div className="absolute bottom-50 left-1/2 transform -translate-x-1/2 z-10 text-center">
+                      <p className="text-white font-semibold text-[20px]">
+                        Powering Innovation, Ensuring Reliability
+                      </p>
+                    </div>
                 </div>
 
                 {/* heading1 */}
