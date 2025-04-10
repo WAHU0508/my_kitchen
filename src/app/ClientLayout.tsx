@@ -12,7 +12,9 @@ export default function ClientLayout({
   const pathname = usePathname(); // Get the current route
 
   // Conditionally render Header and Footer based on the route
-  const showHeaderFooter = pathname !== '/' && !pathname.includes('about_us');
+  const showHeaderFooter = pathname !== '/' 
+                            && !pathname.includes('about_us')
+                            && !pathname.includes('contact_us')
 
   return (
     <>
