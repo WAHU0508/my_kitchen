@@ -5,7 +5,7 @@ import phone from '../assets/Icon.png'
 import mail from '../assets/image 26.png'
 import Header from '../components/header';
 import contactus from '../assets/contactus.jpg'
-import { motion } from 'framer-motion';
+// import { motion } from 'framer-motion';
 
 export default function ContactUsPage() {
   return (
@@ -33,19 +33,13 @@ export default function ContactUsPage() {
             </p>
           </div>
         </div>
-        <motion.div
-            className="flex flex-row items-start gap-6"
-            initial={{ opacity: 0 }}
-            whileInView={{ opacity: 1 }}
-            transition={{ delay: 0.4, duration: 0.8 }}
-            viewport={{ once: false }}
-          >
+        <div>
             <div className="w-[10px] h-[50px] bg-[#FF0105]"></div>
             <div className="w-full text-black text-[14px] font-light">
               We&apos;re here to help with all your electrical and energy solution. Visit us at our location or simply call us or send an email. 
               For any questions, feel free to contact us 
             </div>
-        </motion.div>
+        </div>
         <div className='w-full flex flex-row items-center justify-center lg:gap-6'>
           <div className='flex flex-col items-center justify-center'>
             <Image
