@@ -24,7 +24,7 @@
      setCurrent((prev) => (prev + 1) % images.length);
  
    return (
-     <div className="relative w-full h-[550px] overflow-hidden">
+     <div className="relative w-full h-[300px] md:h-[550px] lg:h-[550px] overflow-hidden">
        {images.map((img, index) => (
          <div
            key={index}
