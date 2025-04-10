@@ -444,7 +444,7 @@ export default function HomePage() {
                 </div>
                 </div>
             </div>
-            <div className='mt-[20px] w-full'>
+            <div className='mt-[20px] w-full bg-[#F8F8F8]'>
               <Footer />
             </div>
         </section>
