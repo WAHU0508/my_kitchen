@@ -6,7 +6,7 @@ export default function Product1() {
   return (
     <div className="relative w-[200px] h-[400px] md:w-[250px] md:h-[400px] lg:w-[350px] lg:h-[500px] group overflow-hidden">
       <Image 
-        src={solarimg}
+        src={sivacon}
         alt="Solar Img"
         fill
         className="object-cover"
