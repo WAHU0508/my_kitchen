@@ -38,7 +38,7 @@ export default function Header() {
                     alt='Alver Power Systems logo'
                     className='w-[150px] h-[48px]'
                 />
-                <div className='flex flex-row gap-6 text-[15px] text-black items-center justify-center'>
+                <div className='flex flex-row gap-6 h-full text-[15px] text-black items-center justify-center'>
                     <Link
                           href="/"
                           className={`border border-black h-full cursor-pointer hover:text-[#252865] hover:underline ${
