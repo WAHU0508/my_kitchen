@@ -3,6 +3,7 @@ import Image from 'next/image'
 import location from '../assets/image 25.png'
 import phone from '../assets/Icon.png'
 import mail from '../assets/image 26.png'
+import Header from '../components/header'
 import contactus from '../assets/contactus.jpg'
 
 export default function ContactUsPage() {
