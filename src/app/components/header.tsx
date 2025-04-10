@@ -5,7 +5,7 @@ import Link from 'next/link';
 import Image from 'next/image';
 import logo from '../assets/logo2.jpg';
 import { Menu, Clock } from 'lucide-react';
-import mapPin from "../svgs/mapPin.svg"
+import mapPin from "../svgs/mapPin2.svg"
 import twitter from '../svgs/twitter.svg'
 import facebook from '../svgs/facebook.svg';
 import instagram from '../svgs/instagram.svg';
@@ -158,10 +158,10 @@ export default function Header() {
                             </ul>
                         </div>
                         {/* Footer section */}
-                        <div className='flex flex-col items-center gap-[40px] mt-[100px] w-full h-full text-white bg-[#252865] py-2'>
+                        <div className='flex flex-col items-center gap-[40px] mt-[100px] w-full h-full text-black bg-[#F8F8F8] py-2'>
                             {/* Operating Hours Section */}
                             <div className='w-[193px] h-[100px] flex flex-col items-center justify-between'>
-                                <Clock size={24} className='text-white'/>
+                                <Clock size={24} className='text-black'/>
                                 <p className='text-[12px] text-center'>Monday - Friday</p>
                                 <p className='text-[12px] text-center'>8 AM - 5PM (Saturday 8AM - 1PM)</p>
                             </div>
@@ -186,28 +186,28 @@ export default function Header() {
                                         alt='Twitter Icon'
                                         width={23}
                                         height={23}
-                                        className='hover:border hover:border-white hover:rounded-full hover:p-1'
+                                        className='hover:border hover:border-black hover:rounded-full hover:p-1'
                                     />
                                     <Image
                                         src={facebook}
                                         alt='Facebook Icon'
                                         width={23}
                                         height={23}
-                                        className='hover:border hover:border-white hover:rounded-full hover:p-1'
+                                        className='hover:border hover:border-black hover:rounded-full hover:p-1'
                                     />
                                     <Image
                                         src={instagram}
                                         alt='Instagram Icon'
                                         width={23}
                                         height={23}
-                                        className='hover:border hover:border-white hover:rounded-full hover:p-1'
+                                        className='hover:border hover:border-black hover:rounded-full hover:p-1'
                                     />
                                     <Image
                                         src={linkedin}
                                         alt='Linkedin Icon'
                                         width={23}
                                         height={23}
-                                        className='hover:border hover:border-white hover:rounded-full hover:p-1'
+                                        className='hover:border hover:border-black hover:rounded-full hover:p-1'
                                     />
                                 </div>
                             </div>
