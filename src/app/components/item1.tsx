@@ -8,9 +8,8 @@ export default function Product1() {
       <Image 
         src={solarimg}
         alt="Solar Img"
-        width={350}
-        height={500}
-        className="w-full h-full object-cover"
+        fill
+        className="object-cover"
       />
       <div className="absolute top-0 left-0 w-full h-full bg-none hover:bg-black/60 flex flex-col">
         <div className="ml-[50px] mt-[100px] mb-4 gap-2 flex flex-col">
