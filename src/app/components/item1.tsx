@@ -17,10 +17,10 @@ export default function Product1() {
         <div className="ml-[50px] mt-[100px] mb-4 flex flex-col gap-3">
           <p className="text-white text-[32px] font-bold">01</p>
           <p className="text-white text-[32px] font-bold">Solar Solutions</p>
-          <div className="w-[50px] group-hover:w-[150px] border-b-2 border-[#FF0105] transition-all duration-300"></div>
+          <div className="w-[50px] group-hover:w-[150px] border-b-4 border-[#FF0105] transition-all duration-300"></div>
 
           {/* Description shown only on hover */}
-          <p className="text-white text-[16px] font-medium max-w-[250px] opacity-0 translate-y-4 group-hover:opacity-100 group-hover:translate-y-0 transition-all duration-500 ease-in-out">
+          <p className="text-white text-[16px] font-normal max-w-[250px] opacity-0 translate-y-4 group-hover:opacity-100 group-hover:translate-y-0 transition-all duration-500 ease-in-out">
             We provide cutting edge solar solutions to enhance energy efficiency and sustainability. 
             Our solar technology helps businesses, communities, and homes transition to clean, reliable, and cost-effective energy.
           </p>
