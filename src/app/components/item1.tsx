@@ -15,7 +15,7 @@ export default function Product1() {
         <div className="ml-[50px] mt-[100px] mb-4 flex flex-col">
           <p className="text-white text-[32px] font-bold">01</p>
           <p className="text-white text-[32px] font-bold">Solar Solutions</p>
-          <div className="w-[50px] border-b-2 border-[#252865]"></div></div>
+          <div className="w-[50px] border-b-2 border-[#252865]"></div>
         </div>
       </div>
     </div>
