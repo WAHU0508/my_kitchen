@@ -1,6 +1,6 @@
 import React from 'react'
 import Image from 'next/image'
-import sivacon from '../assets/ss4.png'
+import sivacon from '../assets/ss8.png'
 
 export default function Product1() {
   return (
