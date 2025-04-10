@@ -17,7 +17,10 @@ import ProjectCard1 from './components/project_card1'
 import ProjectCard2 from './components/project_card2'
 import ProjectCard3 from './components/project_card3'
 import Carousel2 from './components/carousel'
-import Item from './components/item1.tsx'
+import Item1 from './components/item1.tsx'
+import Item2 from './components/item2.tsx'
+import Item3 from './components/item3.tsx'
+import Item4 from './components/item4.tsx'
 import Header from './components/header'
 import Footer from './components/footer'
 
@@ -289,10 +292,10 @@ export default function HomePage() {
                                     transition={{ duration: 0.8, ease: 'easeOut' }}
                                     viewport={{ once: false, amount: 0.2 }} // this ensures it's triggered every time the section comes into view
                         >
-                            <Item />
-                            <Item />
-                            <Item />
-                            <Item /> 
+                            <Item1 />
+                            <Item2 />
+                            <Item3 />
+                            <Item4 /> 
                         </motion.div>
                     </div>
 
