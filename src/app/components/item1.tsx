@@ -13,7 +13,7 @@ export default function Product1() {
         className="w-full h-full object-cover"
       />
       <div className="absolute top-0 left-0 w-full h-full bg-none hover:bg-black/60 flex flex-col">
-        <div className="ml-[50px] mb-4 flex flex-col">
+        <div className="ml-[50px] mt-[30px] mb-4 flex flex-col">
           <p className="text-white text-lg font-medium">01</p>
           <div className="w-[50px] border-b-2 border-[#252865]" />
         </div>
