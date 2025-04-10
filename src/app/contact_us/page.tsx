@@ -5,6 +5,7 @@ import phone from '../assets/Icon.png'
 import mail from '../assets/image 26.png'
 import Header from '../components/header'
 import contactus from '../assets/contactus.jpg'
+import { motion } from 'framer-motion';
 
 export default function ContactUsPage() {
   return (
