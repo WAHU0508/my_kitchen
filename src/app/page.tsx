@@ -444,7 +444,7 @@ export default function HomePage() {
                 </div>
                 </div>
             </div>
-            <div className='mt-[20px]'>
+            <div className='mt-[20px] w-full'>
               <Footer />
             </div>
         </section>
