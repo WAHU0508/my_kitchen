@@ -103,7 +103,7 @@ export default function HomePage() {
                     <div className="fixed top-0 left-0 w-full lg:z-20">
                         <Header />
                     </div>
-                    <div className="absolute bottom-50 left-1/2 transform -translate-x-1/2 z-10 text-center">
+                    <div className="absolute bottom-10 md:bottom-50 lg:bottom-50 left-1/2 transform -translate-x-1/2 z-10 text-center">
                       <p className="text-white font-semibold text-[20px]">
                         Powering Innovation, Ensuring Reliability
                       </p>
