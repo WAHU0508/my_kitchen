@@ -9,9 +9,9 @@ import Footer from '../components/footer';
 import map from '../assets/image 27.png'
 import products from '../assets/product2.png'
 import Item1 from '../components/solar'
-import Item2 from '../components/item2'
-import Item3 from '../components/item3'
-import Item4 from '../components/item4'
+import Item2 from '../components/switchboard'
+import Item3 from '../components/cnc'
+import Item4 from '../components/electricals'
 // import { motion } from 'framer-motion';
 
 export default function ProductsPage() {
