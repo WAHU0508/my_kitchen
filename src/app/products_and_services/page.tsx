@@ -41,7 +41,7 @@ export default function ProductsPage() {
           </div>
         </div>
         {/* Main section */}
-        <div className="w-full overflow-x-auto lg:overflow-x-hidden lg:overflow-y-hidden">
+        <div className="w-full mt-[20px] overflow-x-auto lg:overflow-x-hidden lg:overflow-y-hidden">
             <div className="flex flex-row items-center justify-center  min-w-max">
                 <Item1 />
                 <Item2 />
