@@ -37,7 +37,7 @@ export default function SolarSolutions() {
                         </p>
 
                         <p className="text-lg md:text-xl mb-6 text-gray-700">
-                            Whether it's for commercial, industrial, or utility applications, our switchboards are engineered for durability, safety, and optimal energy distribution. With precision workmanship and top-grade components, we deliver solutions that keep your power systems running smoothly and securely.
+                            Whether it&apos;s for commercial, industrial, or utility applications, our switchboards are engineered for durability, safety, and optimal energy distribution. With precision workmanship and top-grade components, we deliver solutions that keep your power systems running smoothly and securely.
                         </p>
 
                         <ul className="text-left text-gray-700 space-y-3 max-w-2xl mx-auto">
