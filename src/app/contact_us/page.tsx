@@ -83,7 +83,7 @@ export default function ContactUsPage() {
               width={48}
               height={48}
             />
-            <p className='lg:w-[250px] lg:text-[16px] mt-[20px] text-black text-center'>Garden estate along Garden Estate Road Nairobi, Kenya</p>
+            <p className='md:w-[200px] lg:w-[250px] lg:text-[16px] mt-[20px] text-black text-center'>Garden estate along Garden Estate Road Nairobi, Kenya</p>
           </div>
           <div className='flex flex-col items-center'>
             <Image
