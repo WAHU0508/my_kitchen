@@ -29,7 +29,12 @@ export default function ProductsPage() {
           <div className="fixed top-4 left-0 w-full lg:z-20">
             <Header />
           </div>
-
+          
+          <div className="absolute bottom-5 lg:bottom-50 md:bottom-50 left-1/2 transform -translate-x-1/2 z-10 text-center">
+            <p className="text-white font-semibold text-[32px] lg:text-[50px] md:text-[50px] w-[80vw] max-w-[800px] mx-auto">
+              Products and Services
+            </p>
+          </div>
         </div>
         
         <div className='w-full bg-[#252865] mt-[20px]'>
