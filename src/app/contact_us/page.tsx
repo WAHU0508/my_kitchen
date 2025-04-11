@@ -1,13 +1,49 @@
-import React from 'react';
+import React, { useState, useEffect} from 'react';
 import Image from 'next/image'
 import location from '../assets/image 25.png'
 import phone from '../assets/Icon.png'
 import mail from '../assets/image 26.png'
 import Header from '../components/header';
+import map from '../assets/image 27.png'
 import contactus from '../assets/contactus.jpg'
 // import { motion } from 'framer-motion';
 
 export default function ContactUsPage() {
+  const [formData, setFormData] = useState<FormData>({ name: '', email: '', phone: '', message: '' });
+  const [status, setStatus] = useState<string>('');
+
+  interface FormData {
+        name: string;
+        email: string;
+        phone: string;
+        message: string;
+    }
+    const handleChange = (e: React.ChangeEvent<HTMLInputElement | HTMLTextAreaElement>) => {
+        setFormData({ ...formData, [e.target.name]: e.target.value });
+    };
+
+    const handleSubmit = async (e: React.FormEvent) => {
+        e.preventDefault();
+        setStatus('Sending...');
+
+        try {
+            const res = await fetch('/api/message', {
+                method: 'POST',
+                body: JSON.stringify(formData),
+                headers: { 'Content-Type': 'application/json' },
+            });
+
+            const data = await res.json();
+            setStatus(data.success ? 'Message sent!' : 'Failed to send message.');
+            // Clear status message after 3 seconds
+            setTimeout(() => {
+                setStatus(''); // Reset the status after 3 seconds
+            }, 5000);
+        } catch {
+            setStatus('Something went wrong.');
+        }
+    };
+  
   return (
     <section className="w-full flex flex-col items-center justify-center overflow-x-hidden">
       <div className='relative w-full lg:w-[1440px] flex flex-col items-center justify-center'>
@@ -34,7 +70,7 @@ export default function ContactUsPage() {
               For any questions, feel free to contact us 
             </div>
         </div>
-        <div className='w-full flex flex-row items-center lg:gap-6'>
+        <div className='w-full flex flex-col md:flex-row lg:flex-row items-center gap-4 md:gap-4 lg:gap-6'>
           <div className='flex flex-col items-center justify-center'>
             <Image
               src={location}
@@ -67,7 +103,36 @@ export default function ContactUsPage() {
             <p className='lg:w-[250px] lg:text-[16px] mt-[20px] text-black text-center'>info@alverpower.com</p>
           </div>
         </div>
-        
+        <div className='w-full flex items-center justify-center'>
+          <Image
+            src={map}
+            width={815}
+            height={500}
+            alt='Map Location'
+            className='w-[200px] h-[130px] md:w-[500px] md:h-[200px] lg:w-[815px] lg:h-[500px]'
+          />
+        </div>
+        <div className="mt-4">
+            <form onSubmit={handleSubmit} className="space-y-1 max-w-md mx-auto text-[black]">
+                <p className='text-black text-[12px] md:text-[20px] lg:text-[18px]'>Your Name <span className='text-[#FF0105]'>*</span></p>
+                <input type="text" name="name" placeholder="Name" onChange={handleChange} required className="w-full p-2 border border-[#D9D9D9] rounded text-black" />
+                <p className='text-black text-[12px] md:text-[20px] lg:text-[18px]'>Your Email <span className='text-[#FF0105]'>*</span></p>
+                <input type="email" name="email" placeholder="Email" onChange={handleChange} required className="w-full p-2 border border-[#D9D9D9] rounded text-black" />
+                <p className='text-black text-[12px] md:text-[20px] lg:text-[18px]'>Tel No. <span className='text-[#FF0105]'>*</span></p>
+                <input type="tel" name="phone" placeholder="Phone Number" onChange={handleChange} required className="w-full p-2 border border-[#D9D9D9] rounded text-black" />
+                <p className='text-black text-[12px] md:text-[20px] lg:text-[18px]'>Your Message <span className='text-[#FF0105]'>*</span></p>
+                <textarea name="message" placeholder="Quote / Message" onChange={handleChange} required className="w-full p-2 border rounded border-[#D9D9D9] text-black"></textarea>
+                <button type="submit" className="bg-[#F4A261] text-black px-4 py-1 rounded">Send</button>
+                {status && (
+                    <p className={`mt-2 text-center text-xl 
+                          ${status === 'Sending...' ? 'text-black' : ''} 
+                          ${status === 'Message sent!' ? 'text-green-500' : ''} 
+                          ${status === 'Failed to send message.' ? 'text-red-500' : ''}`}>
+                        {status}
+                    </p>
+                )}
+            </form>
+        </div>
         </div>
       </section>
   )
