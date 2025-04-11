@@ -1,5 +1,5 @@
 import React from 'react'
-import solarimg from '.../assets/img01.jpg'
+import solarimg from 'src/app/assets/img01.jpg'
 
 export default function SolarSolutions() {
   return (
