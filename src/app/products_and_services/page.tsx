@@ -1,5 +1,5 @@
 'use client'
-import React, { useState } from 'react';
+import React from 'react';
 import Image from 'next/image'
 import location from '../assets/image 25.png'
 import phone from '../assets/Icon.png'
