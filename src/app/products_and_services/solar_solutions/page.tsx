@@ -1,6 +1,6 @@
 import React from 'react'
 import Image from 'next/image'
-import solarimg from '../../../assets/img01.jpg';
+
 
 export default function SolarSolutions() {
   return (
@@ -9,7 +9,7 @@ export default function SolarSolutions() {
         {/* Background Image with header and quote overlay */}
         <div className="relative w-full h-[300px] lg:w-[1440px] lg:h-[550px] md:h-[550px]">
           <Image
-            src={solarimg}
+            src='/img01.jpg'
             alt="Cover Image"
             fill
             className="object-cover"
