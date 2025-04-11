@@ -44,6 +44,9 @@ export default function ContactUsPage() {
             setStatus('Something went wrong.');
         }
     };
+  const handleClick = () => {
+    window.open('https://www.google.com/maps/place/Your+Location+Here', '_blank');
+  };
   
   return (
     <section className="w-full flex flex-col items-center justify-center overflow-x-hidden">
@@ -109,6 +112,7 @@ export default function ContactUsPage() {
             src={map}
             width={815}
             height={500}
+            onClick={handleClick}
             alt='Map Location'
             className='w-[200px] h-[130px] md:w-[500px] md:h-[200px] lg:w-[500px] lg:h-[200px]'
           />
