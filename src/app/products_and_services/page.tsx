@@ -1,12 +1,8 @@
 'use client'
 import React from 'react';
 import Image from 'next/image'
-import location from '../assets/image 25.png'
-import phone from '../assets/Icon.png'
-import mail from '../assets/image 26.png'
 import Header from '../components/header';
 import Footer from '../components/footer';
-import map from '../assets/image 27.png'
 import products from '../assets/product2.png'
 import Item1 from '../components/solar'
 import Item2 from '../components/switchboard'
