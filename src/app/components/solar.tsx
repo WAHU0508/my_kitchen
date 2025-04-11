@@ -1,8 +1,13 @@
+'use client'; // required for using router
+
 import React from 'react'
 import Image from 'next/image'
 import solarimg from '../assets/img01.jpg'
+import { useRouter } from 'next/navigation'
 
 export default function Product1() {
+  const router = useRouter();
+  
   return (
     <div className="relative w-[320px] h-[250px] group overflow-hidden">
       <Image 
@@ -18,7 +23,9 @@ export default function Product1() {
           <p className="text-white text-[32px] font-bold">01</p>
           <p className="text-white text-[32px] font-bold">Solar Solutions</p>
           <div className="w-[50px] group-hover:w-[150px] border-b-4 border-[#FF0105] transition-all duration-300"></div>
-          <button className='w-[120px] py-2 rounded-[5px] border border-white text-[16px] text-white active:bg-white active:text-black opacity-0 translate-y-4 group-hover:opacity-100 group-hover:translate-y-0 transition-all duration-500 ease-in-out'>
+          <button 
+            onClick={() => router.push('/products_and_services/solar_solutions')}
+            className='w-[120px] py-2 rounded-[5px] border border-white text-[16px] text-white active:bg-white active:text-black opacity-0 translate-y-4 group-hover:opacity-100 group-hover:translate-y-0 transition-all duration-500 ease-in-out'>
             See More
           </button>
         </div>
