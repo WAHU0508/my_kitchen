@@ -113,7 +113,9 @@ export default function ContactUsPage() {
             className='w-[200px] h-[130px] md:w-[500px] md:h-[200px] lg:w-[500px] lg:h-[200px]'
           />
         </div>
-        <div className="mt-4">
+        <div className="mt-4 w-full">
+            <p className='text-[#FF0105] text-[12px] md:text-[20px] lg:text-[18px]'>Send us a message</p>
+            <p className='text-black text-[12px] md:text-[20px] lg:text-[18px]'>Required fields are marked <span className='text-[#FF0105]'>*</span></p>
             <form onSubmit={handleSubmit} className="space-y-1 max-w-md mx-auto text-[black]">
                 <p className='text-black text-[12px] md:text-[20px] lg:text-[18px]'>Your Name <span className='text-[#FF0105]'>*</span></p>
                 <input type="text" name="name" placeholder="Name" onChange={handleChange} required className="w-full p-2 border border-[#D9D9D9] rounded text-black" />
