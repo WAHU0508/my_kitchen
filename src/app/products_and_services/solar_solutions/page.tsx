@@ -18,7 +18,7 @@ export default function SolarSolutions() {
                 {/* Background Image with header and quote overlay */}
                 <div className="relative w-full h-[300px] lg:w-[1440px] lg:h-[550px] md:h-[550px]">
                     <Image
-                        src='/img01.jpg'
+                        src='/img05.png'
                         alt="Cover Image"
                         fill
                         className="object-cover"
