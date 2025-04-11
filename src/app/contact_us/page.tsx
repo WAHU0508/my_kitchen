@@ -34,7 +34,7 @@ export default function ContactUsPage() {
               For any questions, feel free to contact us 
             </div>
         </div>
-        <div className='w-full flex flex-row items-center justify-center lg:gap-6'>
+        <div className='w-full flex flex-row items-center lg:gap-6'>
           <div className='flex flex-col items-center justify-center'>
             <Image
               src={location}
@@ -51,7 +51,7 @@ export default function ContactUsPage() {
               width={48}
               height={48}
             />
-            <div className='flex flex-col'>
+            <div className='mt-[20px] flex flex-col'>
               <p className='lg:w-[250px] lg:text-[16px] text-black text-center'>(+254) 116 004 001</p>
               <p className='lg:w-[250px] lg:text-[16px] text-black text-center'>(+254) 116 004 002</p>
               <p className='lg:w-[250px] lg:text-[16px] text-black text-center'>(+254) 116 004 003</p>
