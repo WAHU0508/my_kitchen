@@ -1,4 +1,5 @@
 import React from 'react'
+import Image from 'next/image'
 import solarimg from '@/app/assets/img01.jpg';
 
 export default function SolarSolutions() {
