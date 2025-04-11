@@ -35,7 +35,7 @@ export default function SolarSolutions() {
 
                 {/* Main section */}
                 <div className="w-full h-auto flex items-center justify-center px-6 py-12 bg-white text-gray-900">
-                    <div className="max-w-6xl mx-auto text-center">
+                    <div className="w-full h-auto text-center">
                         <h2 className="text-3xl md:text-4xl font-bold mb-4 text-[#FF0105]">Power Your Future with Our Solar Energy Solutions</h2>
                         <p className="text-lg md:text-xl mb-10 text-gray-700">
                             At <span className="font-semibold">Alver Power Systems</span>, we provide clean, reliable, and customized solar energy solutions that empower homes, businesses, and communities.
