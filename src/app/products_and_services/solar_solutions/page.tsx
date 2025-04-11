@@ -26,7 +26,6 @@ export default function SolarSolutions() {
                         className="object-cover"
                         priority
                     />
-
                     <div className="absolute bottom-5 lg:bottom-50 md:bottom-50 left-1/2 transform -translate-x-1/2 z-10 text-center">
                         <p className="text-white font-semibold text-[32px] lg:text-[50px] md:text-[50px] w-[80vw] max-w-[800px] mx-auto">
                             Solar Solutions
@@ -35,7 +34,7 @@ export default function SolarSolutions() {
                 </div>
 
                 {/* Main section */}
-                <div className="w-full flex items-center justify-center px-6 py-12 bg-white text-gray-900">
+                <div className="w-full h-auto flex items-center justify-center px-6 py-12 bg-white text-gray-900">
                     <div className="max-w-6xl mx-auto text-center">
                         <h2 className="text-3xl md:text-4xl font-bold mb-4 text-[#FF0105]">Power Your Future with Our Solar Energy Solutions</h2>
                         <p className="text-lg md:text-xl mb-10 text-gray-700">
