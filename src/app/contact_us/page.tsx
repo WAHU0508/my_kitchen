@@ -45,7 +45,7 @@ export default function ContactUsPage() {
         }
     };
   const handleClick = () => {
-    window.open('https://www.google.com/maps/place/Your+Location+Here', '_blank');
+    window.open('https://maps.app.goo.gl/EnXGKAmnnb6kVJ5E7', '_blank');
   };
   
   return (
