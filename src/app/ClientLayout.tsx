@@ -15,6 +15,7 @@ export default function ClientLayout({
   const showHeaderFooter = pathname !== '/' 
                             && !pathname.includes('about_us')
                             && !pathname.includes('contact_us')
+                            && !pathname.includes('products_and_services')
 
   return (
     <>
