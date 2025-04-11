@@ -1,8 +1,10 @@
 'use client'
 import React from 'react'
 import Image from 'next/image'
+import { useRouter } from 'next/navigation';
 
 export default function SolarSolutions() {
+    const router = useRouter();
     const services = [
         'Off-Grid Solar Solutions',
         'Solar Grid-Tie Systems',
@@ -60,7 +62,9 @@ export default function SolarSolutions() {
                         </div>
 
                         <div className="mt-8">
-                            <button className="mt-6 px-6 py-3 bg-[#FF0105] hover:bg-[#e40004] text-white rounded-lg text-lg font-semibold transition">
+                            <button 
+                                onClick={() => router.push('/products_and_services/solar_solutions')}
+                                className="mt-6 px-6 py-3 bg-[#FF0105] hover:bg-[#e40004] text-white rounded-lg text-lg font-semibold transition">
                                 Contact Us Today
                             </button>
                         </div>
