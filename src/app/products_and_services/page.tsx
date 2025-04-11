@@ -8,10 +8,10 @@ import Header from '../components/header';
 import Footer from '../components/footer';
 import map from '../assets/image 27.png'
 import products from '../assets/product2.png'
-import Item1 from './components/item1'
-import Item2 from './components/item2'
-import Item3 from './components/item3'
-import Item4 from './components/item4'
+import Item1 from '../components/item1'
+import Item2 from '../components/item2'
+import Item3 from '../components/item3'
+import Item4 from '../components/item4'
 // import { motion } from 'framer-motion';
 
 export default function ProductsPage() {
