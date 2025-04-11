@@ -70,7 +70,7 @@ export default function ContactUsPage() {
               For any questions, feel free to contact us 
             </div>
         </div>
-        <div className='w-full flex flex-col md:flex-row lg:flex-row items-center gap-4 md:gap-4 lg:gap-6'>
+        <div className='w-full flex flex-col md:flex-row lg:flex-row justify-center gap-4 md:gap-4 lg:gap-6'>
           <div className='flex flex-col items-center justify-center'>
             <Image
               src={location}
