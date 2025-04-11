@@ -25,15 +25,9 @@ export default function ContactUsPage() {
           <div className="absolute top-4 left-0 w-full lg:z-20">
             <Header />
           </div>
-      
-          {/* Quote overlay */}
-          <div className="absolute bottom-5 lg:bottom-50 md:bottom-50 left-1/2 transform -translate-x-1/2 z-10 text-center">
-            <p className="text-white font-semibold text-[32px] lg:text-[50px] md:text-[50px] w-[80vw] max-w-[800px] mx-auto">
-              Get In Touch
-            </p>
-          </div>
+
         </div>
-        <div>
+        <div className='flex flex-row gap-6'>
             <div className="w-[10px] h-[50px] bg-[#FF0105]"></div>
             <div className="w-full text-black text-[14px] font-light">
               We&apos;re here to help with all your electrical and energy solution. Visit us at our location or simply call us or send an email. 
@@ -48,10 +42,30 @@ export default function ContactUsPage() {
               width={48}
               height={48}
             />
-            <p className='lg:w-[250px] lg:text-[16px] text-black'>Garden estate along Garden Estate Road Nairobi, Kenya</p>
+            <p className='lg:w-[250px] lg:text-[16px] mt-[20px] text-black text-center'>Garden estate along Garden Estate Road Nairobi, Kenya</p>
           </div>
-          <div className='flex flex-col items-center justify-center'></div>
-          <div className='flex flex-col items-center justify-center'></div>
+          <div className='flex flex-col items-center justify-center'>
+            <Image
+              src={phone}
+              alt='Phone Icon'
+              width={48}
+              height={48}
+            />
+            <div className='flex flex-col'>
+              <p className='lg:w-[250px] lg:text-[16px] text-black text-center'>(+254) 116 004 001</p>
+              <p className='lg:w-[250px] lg:text-[16px] text-black text-center'>(+254) 116 004 002</p>
+              <p className='lg:w-[250px] lg:text-[16px] text-black text-center'>(+254) 116 004 003</p>
+            </div>
+          </div>
+          <div className='flex flex-col items-center justify-center'>
+            <Image
+              src={mail}
+              alt='Mail Icon'
+              width={48}
+              height={48}
+            />
+            <p className='lg:w-[250px] lg:text-[16px] mt-[20px] text-black text-center'>info@alverpower.com</p>
+          </div>
         </div>
         
         </div>
