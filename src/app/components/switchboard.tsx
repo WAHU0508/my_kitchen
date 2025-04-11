@@ -1,8 +1,10 @@
 import React from 'react'
 import Image from 'next/image'
 import sivaconimg from '../assets/sivacon.jpg'
+import { useRouter } from 'next/navigation';
 
 export default function Product1() {
+  const router = useRouter();
   return (
     <div className="relative w-[320px] h-[250px] group overflow-hidden">
       <Image 
