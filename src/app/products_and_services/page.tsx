@@ -8,6 +8,10 @@ import Header from '../components/header';
 import Footer from '../components/footer';
 import map from '../assets/image 27.png'
 import products from '../assets/product2.png'
+import Item1 from './components/item1'
+import Item2 from './components/item2'
+import Item3 from './components/item3'
+import Item4 from './components/item4'
 // import { motion } from 'framer-motion';
 
 export default function ProductsPage() {
@@ -36,7 +40,17 @@ export default function ProductsPage() {
             </p>
           </div>
         </div>
+        {/* Main section */}
+        <div className="w-full overflow-x-auto lg:overflow-x-hidden lg:overflow-y-hidden">
+            <div className="flex flex-row items-center justify-center  min-w-max">
+                <Item1 />
+                <Item2 />
+                <Item3 />
+                <Item4 /> 
+            </div>
+        </div>
         
+        {/* Footer section */}
         <div className='w-full bg-[#252865] mt-[20px]'>
           <Footer />
         </div>
