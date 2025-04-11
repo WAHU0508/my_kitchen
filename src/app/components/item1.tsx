@@ -24,6 +24,9 @@ export default function Product1() {
             We provide cutting edge solar solutions to enhance energy efficiency and sustainability. 
             Our solar technology helps businesses, communities, and homes transition to clean, reliable, and cost-effective energy.
           </p>
+          <button className='px-1 py-2 border border-white text-[16px] text-black hover:bg-white hover:text-black active:bg-white active:text-black'>
+            See More
+          </button>
         </div>
       </div>
     </div>
