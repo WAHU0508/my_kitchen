@@ -19,7 +19,9 @@ export default function Product1() {
           <p className="text-white text-[32px] font-bold">04</p>
           <p className="text-white text-[32px] font-bold">Electrical Installation</p>
           <div className="w-[50px] group-hover:w-[150px] border-b-4 border-[#FF0105] transition-all duration-300"></div>
-          <button className='w-[120px] py-2 rounded-[5px] border border-white text-[16px] text-white active:bg-white active:text-black opacity-0 translate-y-4 group-hover:opacity-100 group-hover:translate-y-0 transition-all duration-500 ease-in-out'>
+          <button 
+            onClick={() => router.push('/products_and_services/electrical_installation')}
+            className='w-[120px] py-2 rounded-[5px] border border-white text-[16px] text-white active:bg-white active:text-black opacity-0 translate-y-4 group-hover:opacity-100 group-hover:translate-y-0 transition-all duration-500 ease-in-out'>
             See More
           </button>
         </div>
