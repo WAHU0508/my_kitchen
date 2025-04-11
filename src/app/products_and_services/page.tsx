@@ -7,7 +7,7 @@ import mail from '../assets/image 26.png'
 import Header from '../components/header';
 import Footer from '../components/footer';
 import map from '../assets/image 27.png'
-import products from '../assets/products1.jpg'
+import products from '../assets/product2.png'
 // import { motion } from 'framer-motion';
 
 export default function ProductsPage() {
