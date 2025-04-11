@@ -5,6 +5,7 @@ import location from '../assets/image 25.png'
 import phone from '../assets/Icon.png'
 import mail from '../assets/image 26.png'
 import Header from '../components/header';
+import Footer from '../components/footer';
 import map from '../assets/image 27.png'
 import contactus from '../assets/contactus.jpg'
 // import { motion } from 'framer-motion';
@@ -62,7 +63,7 @@ export default function ContactUsPage() {
           />
       
           {/* Header inside image container (or move outside if needed) */}
-          <div className="absolute top-4 left-0 w-full lg:z-20">
+          <div className="fixed top-4 left-0 w-full lg:z-20">
             <Header />
           </div>
 
@@ -139,6 +140,9 @@ export default function ContactUsPage() {
                     </p>
                 )}
             </form>
+        </div>
+        <div className='w-full bg-[#252865] mt-[20px]'>
+          <Footer />
         </div>
         </div>
       </section>
