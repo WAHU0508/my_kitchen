@@ -71,8 +71,8 @@ export default function ContactUsPage() {
               For any questions, feel free to contact us 
             </div>
         </div>
-        <div className='w-full flex flex-col md:flex-row lg:flex-row justify-center gap-4 md:gap-4 lg:gap-6'>
-          <div className='flex flex-col items-center justify-center'>
+        <div className='w-full flex flex-col md:flex-row lg:flex-row items-center justify-center gap-4 md:gap-4 lg:gap-6'>
+          <div className='flex flex-col justify-center'>
             <Image
               src={location}
               alt='Location Icon'
@@ -81,7 +81,7 @@ export default function ContactUsPage() {
             />
             <p className='lg:w-[250px] lg:text-[16px] mt-[20px] text-black text-center'>Garden estate along Garden Estate Road Nairobi, Kenya</p>
           </div>
-          <div className='flex flex-col items-center justify-center'>
+          <div className='flex flex-col justify-center'>
             <Image
               src={phone}
               alt='Phone Icon'
@@ -94,7 +94,7 @@ export default function ContactUsPage() {
               <p className='lg:w-[250px] lg:text-[16px] text-black text-center'>(+254) 116 004 003</p>
             </div>
           </div>
-          <div className='flex flex-col items-center justify-center'>
+          <div className='flex flex-col justify-center'>
             <Image
               src={mail}
               alt='Mail Icon'
@@ -110,7 +110,7 @@ export default function ContactUsPage() {
             width={815}
             height={500}
             alt='Map Location'
-            className='w-[200px] h-[130px] md:w-[500px] md:h-[200px] lg:w-[815px] lg:h-[500px]'
+            className='w-[200px] h-[130px] md:w-[500px] md:h-[200px] lg:w-[500px] lg:h-[200px]'
           />
         </div>
         <div className="mt-4">
