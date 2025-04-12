@@ -4,8 +4,8 @@
  
  import solarpanelImg from '../assets/blue-photovoltaic-solar-panels.jpg';
  import sivaconImg from '../assets/sivacon.jpg';
- import electricalsimg from '/img03.jpg'
- import cncimg from '/img04.jpg'
+ import electricalsimg from '../assets/img03.jpg'
+ import cncimg from '../assets/img04.jpg'
  // import switchboardImg from '../assets/BlokSeT.jpg';
  
  const images = [solarpanelImg, sivaconImg, cncimg, electricalsimg];
