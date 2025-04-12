@@ -68,7 +68,7 @@ export default function AboutUsPage() {
           viewport={{ once: false, amount: 0.2 }} // this ensures it's triggered every time the section comes into view
         >
           <motion.div
-            className="text-black text-[24px] mb-4"
+            className="w-full text-black text-[24px] mb-4"
             initial={{ opacity: 0, x: -50 }}
             whileInView={{ opacity: 1, x: 0 }}
             transition={{ delay: 0.2, duration: 0.6 }}
@@ -78,7 +78,7 @@ export default function AboutUsPage() {
           </motion.div>
         
           <motion.div
-            className="flex flex-row items-start gap-6"
+            className="w-full flex flex-row items-start gap-6"
             initial={{ opacity: 0 }}
             whileInView={{ opacity: 1 }}
             transition={{ delay: 0.4, duration: 0.8 }}
