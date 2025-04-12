@@ -29,9 +29,9 @@ export default function SolarSolutions() {
                     <div className="absolute top-2 left-2">
                       <button
                         onClick={() => router.back()}
-                        className="bg-white/80 text-sm text-black px-3 py-1 rounded-md shadow hover:bg-white transition"
+                        className="text-[14px] text-black px-3 py-1 rounded-md shadow hover:bg-white transition"
                       >
-                        ← Back
+                        ←
                       </button>
                     </div>
                     <div className="absolute bottom-40 lg:bottom-50 md:bottom-50 left-1/2 transform -translate-x-1/2 z-10 text-center">
