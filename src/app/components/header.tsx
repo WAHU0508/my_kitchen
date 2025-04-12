@@ -72,9 +72,33 @@ export default function Header() {
                                 Solar Solutions
                             </Link>
                           </li>
-                          <li>Swithboard Manufacruring</li>
-                          <li>CNC Machining</li>
-                          <li>Electrical Installation</li>
+                          <li><Link
+                                href="/products_and_services/switchboard_manufacturing"
+                                className={`border-b border-black/10 flex items-center justify-center w-[146px] h-[22px] ${
+                                  pathname === '/products_and_services/switchboard_manufacturing' ? 'text-red-600' : 'text-black'
+                                }`}
+                                >
+                                Switchboard Manufacturing
+                            </Link>
+                          </li>
+                          <li><Link
+                                href="/products_and_services/switchboard_manufacturing"
+                                className={`border-b border-black/10 flex items-center justify-center w-[146px] h-[22px] ${
+                                  pathname === '/products_and_services/CNC' ? 'text-red-600' : 'text-black'
+                                }`}
+                                >
+                                CNC
+                            </Link>
+                          </li>
+                          <li><Link
+                                href="/products_and_services/switchboard_manufacturing"
+                                className={`border-b border-black/10 flex items-center justify-center w-[146px] h-[22px] ${
+                                  pathname === '/products_and_services/electrical_installation' ? 'text-red-600' : 'text-black'
+                                }`}
+                                >
+                                Electrical Installation
+                            </Link>
+                          </li>
                         </ul>
                       </div>
                     </div>
