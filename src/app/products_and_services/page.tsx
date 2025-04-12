@@ -44,7 +44,7 @@ export default function ProductsPage() {
             <p className="text-gray-600 text-base lg:text-lg mb-10 max-w-3xl mx-auto">
               From solar energy to precision CNC machining, we provide a full suite of expert solutions tailored to power industries, infrastructures, and innovations.
             </p>
-            <div className="w-full flex lg:flex flex-col md:grid md:grid-cols-2 lg:flex-row items-center justify-center  min-w-max overflow-x-auto lg:overflow-x-hidden lg:overflow-y-hidden">
+            <div className="w-full flex lg:flex flex-col md:grid md:grid-cols-2 md:gap-4 lg:flex-row items-center justify-center overflow-x-auto lg:overflow-x-hidden lg:overflow-y-hidden">
                 <Item1 />
                 <Item2 />
                 <Item3 />
