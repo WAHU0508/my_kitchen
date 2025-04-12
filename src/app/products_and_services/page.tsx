@@ -30,7 +30,7 @@ export default function ProductsPage() {
             </div>
             {/* Heading */}
             <div className="absolute bottom-20 md:bottom-50 lg:bottom-50 left-1/2 transform -translate-x-1/2 z-10 text-center">
-                <p className="text-white font-semibold text-[32px] md:text-[50px] w-[80vw] max-w-[800px] mx-auto">
+                <p className="text-white font-semibold text-[24px] md:text-[30px] lg:text-[32px] md:text-[50px] w-[80vw] max-w-[800px] mx-auto">
                     Our Range of Electrical & Engineering Solutions
                 </p>
             </div>
