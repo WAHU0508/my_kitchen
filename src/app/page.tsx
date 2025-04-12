@@ -96,7 +96,7 @@ export default function HomePage() {
             </div>
 
             {/* main section */}
-            <div className='lg:p-4 md:p-2 p-1 lg:w-[1300px] md:w-full w-full flex flex-col overflow-y-hidden'>
+            <div className='lg:p-4 md:p-2 p-1 lg:w-full md:w-full w-full flex flex-col overflow-y-hidden'>
                 {/*Small Screen*/}
                 <div className='relative w-full lg:hidden md:hidden flex flex-col items-center justify-center'>
                     <Carousel2 />
