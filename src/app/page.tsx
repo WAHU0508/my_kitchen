@@ -84,7 +84,7 @@ export default function HomePage() {
             <div className='relative hidden md:block w-full lg:w-[1440px] xl:w-full 2xl:w-full flex flex-col items-center justify-center overflow-y-hidden'>
                 <div className="relative w-full flex items-center justify-center lg:w-full h-[550px] xl:w-full 2xl:w-full">
                     <Carousel2 />
-                    <div className="fixed top-0 left-0 w-full lg:z-20">
+                    <div className="fixed top-4 left-0 w-full lg:z-20">
                         <Header />
                     </div>
                     <div className="absolute bottom-50 left-1/2 transform -translate-x-1/2 z-10 text-center">
