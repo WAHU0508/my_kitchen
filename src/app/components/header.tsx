@@ -30,7 +30,7 @@ export default function Header() {
     return (
         <header className='w-full mb-4 flex items-center justify-center'>
             {/* Header for large and medium screens */}
-            <div className='hidden border border-[#0000003D] bg-[#FFFFFF] lg:flex lg:flex-row md:flex md:flex-row items-center justify-between px-10 lg:w-[1250px] xl:w-[1440px] 2xl:w-[1640px] md:w-full lg:h-[50px] md:h-[50px] shadow-xl rounded-[5px]'>
+            <div className='hidden border border-[#0000003D] bg-[#FFFFFF] lg:flex lg:flex-row md:flex md:flex-row items-center justify-between px-10 lg:w-[1250px] xl:w-[2000px] 2xl:w-[2640px] md:w-full lg:h-[50px] md:h-[50px] shadow-xl rounded-[5px]'>
                 <Image
                     src={logo}
                     width={150}
