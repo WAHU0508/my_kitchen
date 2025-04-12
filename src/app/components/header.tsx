@@ -30,7 +30,7 @@ export default function Header() {
     return (
         <header className='w-full mb-4 flex items-center justify-center'>
             {/* Header for large and medium screens */}
-            <div className='hidden border border-[#0000003D] bg-[#FFFFFF] lg:flex lg:flex-row md:flex md:flex-row items-center justify-between px-10 lg:w-[90%] xl:w-[90%] 2xl:w-[90%] md:w-full lg:h-[50px] md:h-[50px] shadow-xl rounded-[5px]'>
+            <div className='relative group hidden border border-[#0000003D] bg-[#FFFFFF] lg:flex lg:flex-row md:flex md:flex-row items-center justify-between px-10 lg:w-[90%] xl:w-[90%] 2xl:w-[90%] md:w-full lg:h-[50px] md:h-[50px] shadow-xl rounded-[5px]'>
                 <Image
                     src={logo}
                     width={150}
@@ -55,14 +55,23 @@ export default function Header() {
                         >
                           About Us
                     </Link>
-                    <Link
-                          href="/products_and_services"
-                          className={`h-full flex items-center justify-center font-semibold cursor-pointer hover:text-[#252865] hover:border-b-4 hover:border-[#FF0105] ${
-                            pathname === '/products_and_services' ? 'text-[#FF0105] border-b-4 border-[#FF0105]' : 'text-black'
-                          }`}
-                        >
-                          Products & Services
-                    </Link>
+                    <div className="relative group">
+                      <Link href="/products_and_services" className={`h-full flex items-center justify-center font-semibold cursor-pointer hover:text-[#252865] hover:border-b-4 hover:border-[#FF0105] ${pathname === '/products_and_services' ? 'text-[#FF0105] border-b-4 border-[#FF0105]' : 'text-black'}`}>
+                        Products & Services
+                      </Link>
+                
+                      {/* Modal shown on hover */}
+                      <div className="absolute top-full left-0 mt-2 w-[300px] bg-white shadow-lg border border-gray-300 rounded p-4 opacity-0 group-hover:opacity-100 pointer-events-none group-hover:pointer-events-auto transition-all duration-300 z-50">
+                        <p className="font-semibold text-black mb-2">Our Offerings:</p>
+                        <ul className="text-sm text-gray-700 space-y-1">
+                          <li>• Solar Installation</li>
+                          <li>• Electrical Wiring</li>
+                          <li>• Automation</li>
+                          <li>• CNC Machining</li>
+                          <li>• Energy Audit</li>
+                        </ul>
+                      </div>
+                    </div>
                     <Link
                           href="/contact_us"
                           className={`h-full flex items-center justify-center font-semibold cursor-pointer hover:text-[#252865] hover:border-b-4 hover:border-[#FF0105] ${
