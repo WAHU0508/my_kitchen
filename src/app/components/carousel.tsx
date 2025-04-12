@@ -3,10 +3,12 @@
  import Image from "next/image"; // Optional if you're using Next.js
  
  import solarpanelImg from '../assets/blue-photovoltaic-solar-panels.jpg';
- import electricalsImg from '../assets/sivacon.jpg';
+ import sivaconImg from '../assets/sivacon.jpg';
+ import electricalsimg from '/img03.jpg'
+ import cncimg from '/img04.jpg'
  // import switchboardImg from '../assets/BlokSeT.jpg';
  
- const images = [solarpanelImg, electricalsImg];
+ const images = [solarpanelImg, sivaconImg, cncimg, electricalsimg];
  
  export default function TailwindCarousel() {
    const [current, setCurrent] = useState(0);
