@@ -61,7 +61,7 @@ export default function AboutUsPage() {
       
         {/* Main content */}
         <motion.div
-          className="md:w-full lg:max-w-[1300px] px-6 md:px-[100px] flex flex-col mt-10"
+          className="md:w-full lg:w-[90%] px-6 md:px-[100px] flex flex-col mt-10"
           initial={{ opacity: 0, y: 40 }}
           whileInView={{ opacity: 1, y: 0 }}
           transition={{ duration: 0.8, ease: 'easeOut' }}
