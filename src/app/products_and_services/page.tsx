@@ -43,7 +43,7 @@ export default function ProductsPage() {
                       className="object-cover"
                       priority
                     />
-                    <div className="absolute top-2 left-0 w-full lg:z-20">
+                    <div className="fixed top-2 left-0 w-full lg:z-20">
                         <Header />
                     </div>
                     <div className="absolute bottom-10 md:bottom-50 lg:bottom-50 left-1/2 transform -translate-x-1/2 z-10 text-center">
