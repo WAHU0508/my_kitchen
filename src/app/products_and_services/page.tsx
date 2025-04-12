@@ -35,7 +35,7 @@ export default function ProductsPage() {
       </div>
       
       <div className='relative w-full lg:w-[1440px] flex flex-col items-center justify-center'>
-        <div className='relative w-full lg:hidden md:hidden flex flex-col items-center justify-center'>
+        <div className='relative w-full h-[300px] lg:hidden md:hidden flex flex-col items-center justify-center'>
                     <Image
                       src={products}
                       alt="Cover Image"
