@@ -25,7 +25,7 @@ export default function ProductsPage() {
                 priority
             />
 
-            <div className="fixed top-4 left-0 w-full lg:z-20">
+            <div className="absolute lg:fixed top-4 left-0 w-full lg:z-20">
                 <Header />
             </div>
             {/* Heading */}
