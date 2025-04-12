@@ -61,14 +61,20 @@ export default function Header() {
                       </Link>
                 
                       {/* Modal shown on hover */}
-                      <div className="absolute top-full left-0 mt-2 w-[300px] bg-white shadow-lg border border-gray-300 rounded p-4 opacity-0 group-hover:opacity-100 pointer-events-none group-hover:pointer-events-auto transition-all duration-300 z-50">
-                        <p className="font-semibold text-black mb-2">Our Offerings:</p>
-                        <ul className="text-sm text-gray-700 space-y-1">
-                          <li>• Solar Installation</li>
-                          <li>• Electrical Wiring</li>
-                          <li>• Automation</li>
-                          <li>• CNC Machining</li>
-                          <li>• Energy Audit</li>
+                      <div className="absolute top-full left-0 mt-2 w-[250px] bg-white shadow-lg border border-gray-300 rounded p-4 opacity-0 group-hover:opacity-100 pointer-events-none group-hover:pointer-events-auto transition-all duration-300 z-50">
+                        <ul className="text-sm text-gray-700 space-y-2">
+                          <li><Link
+                                href="/products_and_services/solar_solutions"
+                                className={`border-b border-black/10 flex items-center justify-center w-[146px] h-[22px] ${
+                                  pathname === '/products_and_services/solar_solutions' ? 'text-red-600' : 'text-black'
+                                }`}
+                                >
+                                Solar Solutions
+                            </Link>
+                          </li>
+                          <li>Swithboard Manufacruring</li>
+                          <li>CNC Machining</li>
+                          <li>Electrical Installation</li>
                         </ul>
                       </div>
                     </div>
