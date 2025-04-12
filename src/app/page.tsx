@@ -236,7 +236,7 @@ export default function HomePage() {
                           <p className='text-[#FF0105]'>Who</p>
                           <p className='text-[#252865]'>We are</p>
                         </div>
-                        <p className='w-full lg:w-[1186px] mx-auto text-[#000000] font-light text-[12px] text-justify lg:text-[18px] md:text-[18px]'>Alver power systems is a manufacturing company that  specializes in electrical installations solar energy solutions and switchboard manufacturing.
+                        <p className='w-full lg:w-full mx-auto text-[#000000] font-light text-[12px] text-justify lg:text-[18px] md:text-[18px]'>Alver power systems is a manufacturing company that  specializes in electrical installations solar energy solutions and switchboard manufacturing.
                           Our mission is to build lasting, mutually beneficial relationships with each of our esteemed clients by continually exceeding their expectations and earning their confidence.
                           Our mission is to be the most skilled and reputable commercial electrical contractor service provider in east Africa 
                         </p>
