@@ -15,7 +15,7 @@ export default function ProjectCard() {
           className='w-[300px] h-[105px] lg:w-[379px] lg:h-[133px]'
         />
       </div>
-      <p className='text-[20px] lg:text-[24px] ml-[20px] mt-[20px] text-[#000000]'>imperial college of medical and health sciences</p>
+      <p className='text-[20px] lg:text-[16px] ml-[20px] mt-[20px] text-[#000000]'>Imperial college of medical and health sciences</p>
       <div className='flex flex-row gap-2 ml-[20px]'>
         <Image
           src={mapPin}
@@ -23,10 +23,10 @@ export default function ProjectCard() {
           width={12}
           height={12}
         />
-        <p className='text-[16px] text-[#000000]'>Mlolongo</p>
+        <p className='text-[12px] text-[#000000]'>Mlolongo</p>
       </div>
       <div className="w-[158.15px] h-0 ml-[20px] mt-[20px] border-t-[5px] border-[#252865]"></div>
-      <p className='text-[14px] lg:text-[20px] ml-[20px] mt-[20px] text-[#000000]'>Maintenance of RMU, transformer and low voltage panels</p>
+      <p className='text-[14px] lg:text-[16px] ml-[20px] mt-[20px] text-[#000000]'>Maintenance of RMU, transformer and low voltage panels</p>
     </div>
   )
 }
