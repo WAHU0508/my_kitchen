@@ -292,8 +292,8 @@ export default function HomePage() {
                         <p className='text-[#252865]'>Products and Services</p>
                     </motion.div>
 
-                    <div className="w-full flex items-center justify-center overflow-x-auto overflow-y-hidden">
-                        <motion.div className="flex flex-row gap-2 lg:gap-0 md:gap-2"
+                    <div className="w-full overflow-x-auto lg:overflow-x-hidden lg:overflow-y-hidden">
+                        <motion.div className="flex flex-row items-center justify-center gap-2 lg:gap-0 md:gap-2 min-w-max"
                                     initial={{ opacity: 0, y: 40 }}
                                     whileInView={{ opacity: 1, y: 0 }}
                                     transition={{ duration: 0.8, ease: 'easeOut' }}
