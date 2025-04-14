@@ -3,8 +3,8 @@ import React from 'react'
 // import Image from 'next/image';
 import { motion } from 'framer-motion';
 // import coverImg from '../assets/portfolio.jpg';
-import Header from '../components/header';
-import Footer from '../components/footer';
+// import Header from '../components/header';
+// import Footer from '../components/footer';
 import ProjectCard1 from '../components/project_card1'
 import ProjectCard2 from '../components/project_card2'
 import ProjectCard3 from '../components/project_card3'
