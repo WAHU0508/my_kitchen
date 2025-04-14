@@ -13,7 +13,7 @@ export default function ProjectsPage() {
   return (
     <section className="w-full flex flex-col items-center justify-center overflow-x-hidden">
       <div className="w-full overflow-x-auto lg:overflow-y-hidden flex flex-col items-center justify-center">
-        <p className='w-full items-center justify-center text-black text-[24px] lg:text-[32px]'>Our Projects</p>
+        <p className='w-full flex items-center justify-center text-black text-[24px] lg:text-[32px]'>Our Projects</p>
           <motion.div
             className="w-fit flex flex-col items-center justify-center gap-4 
                        lg:grid lg:grid-cols-3 lg:gap-6 
