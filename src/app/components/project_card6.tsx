@@ -1,7 +1,7 @@
 import React from 'react'
 import Image from 'next/image'
 import mapPin from '../svgs/mapPin2.svg'
-import rainbowResort from '../assets/vipingo.png'
+import rainbowResort from '../assets/Vipingo+Ridge.png'
 import logo1 from '../assets/vr.jpg'
 
 export default function ProjectCard() {
