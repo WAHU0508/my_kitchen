@@ -407,19 +407,21 @@ export default function HomePage() {
                         <p className='text-[#FF0105]'>Our</p>
                         <p className='text-[#252865]'>Projects</p>
                     </motion.div>
-                    <div className="w-full overflow-x-auto lg:overflow-y-hidden">
-                    <motion.div className="w-full flex lg:grid gap-4 items-center justify-center lg:grid-cols-3 min-w-max"
-                                initial={{ opacity: 0, y: 40 }}
-                                whileInView={{ opacity: 1, y: 0 }}
-                                transition={{ duration: 0.8, ease: 'easeOut' }}
-                                viewport={{ once: false, amount: 0.2 }} // this ensures it's triggered every time the section comes into view
-                    >
+                    <div className="w-full overflow-x-auto lg:overflow-y-hidden flex items-center justify-center">
+                      <motion.div
+                        className="w-fit flex flex-col items-center justify-center gap-4 
+                                   lg:grid lg:grid-cols-3 lg:gap-6 
+                                   px-4 py-6"
+                        initial={{ opacity: 0, y: 40 }}
+                        whileInView={{ opacity: 1, y: 0 }}
+                        transition={{ duration: 0.8, ease: 'easeOut' }}
+                        viewport={{ once: false, amount: 0.2 }}
+                      >
                         <ProjectCard1 />
                         <ProjectCard2 />
                         <ProjectCard3 />
-                    </motion.div>
-                </div>
-
+                      </motion.div>
+                    </div>
                 <div className='w-full flex items-center justify-center mt-[20px]'>
                     <motion.div className="relative w-[123px] h-[30px] lg:w-[220px] lg:h-[46px] md:w-[220px] md:h-[46px]"
                                 initial={{ opacity: 0, y: 40 }}
