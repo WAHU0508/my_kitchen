@@ -71,11 +71,11 @@ export default function Header() {
                     
                       {/* Modal shown on hover */}
                       <div className="absolute top-full left-0 mt-2 w-[250px] bg-white shadow-lg border border-gray-300 rounded p-4 opacity-0 group-hover:opacity-100 invisible group-hover:visible transition-all duration-300 z-50">
-                        <ul className="text-sm text-gray-700 space-y-2">
+                        <ul className="text-sm text-gray-700 space-y-4">
                           <li>
                             <Link
                               href="/products_and_services/solar_solutions"
-                              className={`border-b border-black/10 flex items-center justify-center w-[146px] h-[22px] ${
+                              className={`border-b border-black/10 flex items-center justify-center px-2 py-1 ${
                                 pathname === '/products_and_services/solar_solutions' ? 'text-red-600' : 'text-black'
                               }`}
                             >
@@ -85,7 +85,7 @@ export default function Header() {
                           <li>
                             <Link
                               href="/products_and_services/switchboard_manufacturing"
-                              className={`border-b border-black/10 flex items-center justify-center w-[146px] h-[22px] ${
+                              className={`border-b border-black/10 flex items-center justify-center px-2 py-1  ${
                                 pathname === '/products_and_services/switchboard_manufacturing' ? 'text-red-600' : 'text-black'
                               }`}
                             >
@@ -95,7 +95,7 @@ export default function Header() {
                           <li>
                             <Link
                               href="/products_and_services/CNC"
-                              className={`border-b border-black/10 flex items-center justify-center w-[146px] h-[22px] ${
+                              className={`border-b border-black/10 flex items-center justify-center px-2 py-1  ${
                                 pathname === '/products_and_services/CNC' ? 'text-red-600' : 'text-black'
                               }`}
                             >
@@ -105,7 +105,7 @@ export default function Header() {
                           <li>
                             <Link
                               href="/products_and_services/electrical_installation"
-                              className={`border-b border-black/10 flex items-center justify-center w-[146px] h-[22px] ${
+                              className={`border-b border-black/10 flex items-center justify-center px-2 py-1  ${
                                 pathname === '/products_and_services/electrical_installation' ? 'text-red-600' : 'text-black'
                               }`}
                             >
