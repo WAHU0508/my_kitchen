@@ -13,6 +13,7 @@ import linkedin from '../svgs/linkedin.svg';
 
 export default function Header() {
     const [isOpen, setIsOpen] = useState(false);
+    const [isExpanded, setIsExpanded] = useState(false);
     const pathname = usePathname();
 
     // Disable scroll when modal is open
@@ -188,16 +189,53 @@ export default function Header() {
                                         About Us
                                     </Link>
                                 </li>
-                                <li><Link
+                                <li className="flex items-center justify-between w-full">
+                                      <Link
                                         href="/products_and_services"
-                                        className={`border-b border-black/10 flex items-center justify-center w-[146px] h-[22px] text-[12px] ${
+                                        className={`border-b border-black/10 flex items-center justify-start w-[146px] h-[22px] text-[12px] ${
                                           pathname === '/products_and_services' ? 'text-red-600' : 'text-black'
                                         }`}
                                         onClick={() => setIsOpen(false)}
-                                        >
+                                      >
                                         Products & Services
-                                    </Link>
-                                </li>
+                                      </Link>
+                                    
+                                      {/* Plus/Minus button */}
+                                      <button
+                                        className="text-[16px] text-black ml-2"
+                                        onClick={(e) => {
+                                          e.preventDefault(); // prevent Link click
+                                          setIsExpanded(!isExpanded);
+                                        }}
+                                      >
+                                        {isExpanded ? '−' : '+'}
+                                      </button>
+                                    </li>
+                                {isExpanded && (
+                                  <ul className="pl-4 mt-2 space-y-2 text-[12px]">
+                                    <li>
+                                      <Link href="/products_and_services/solar_solutions" className="text-gray-700 hover:text-red-500">
+                                        Solar Solutions
+                                      </Link>
+                                    </li>
+                                    <li>
+                                      <Link href="/products_and_services/switchboard_manufacturing" className="text-gray-700 hover:text-red-500">
+                                        Switchboard Manufacturing
+                                      </Link>
+                                    </li>
+                                    <li>
+                                      <Link href="/products_and_services/CNC" className="text-gray-700 hover:text-red-500">
+                                        CNC
+                                      </Link>
+                                    </li>
+                                    <li>
+                                      <Link href="/products_and_services/electrical_installation" className="text-gray-700 hover:text-red-500">
+                                        Electrical Installation
+                                      </Link>
+                                    </li>
+                                  </ul>
+                                )}
+
                                 <li><Link
                                         href="/contact_us"
                                         className={`border-b border-black/10 flex items-center justify-center w-[146px] h-[22px] text-[12px] ${
