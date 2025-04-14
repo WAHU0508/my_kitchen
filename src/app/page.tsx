@@ -386,7 +386,7 @@ export default function HomePage() {
                 </div>
 
                 {/*Projects Done*/}
-                <div className='flex flex-col mt-[40px]'>
+                <div className='w-full flex flex-col mt-[40px]'>
                     <motion.div className='w-full flex flex-row items-center items-center justify-center'
                                 initial={{ opacity: 0, y: 40 }}
                                 whileInView={{ opacity: 1, y: 0 }}
@@ -408,7 +408,7 @@ export default function HomePage() {
                         <p className='text-[#252865]'>Projects</p>
                     </motion.div>
                     <div className="w-full overflow-x-auto lg:overflow-y-hidden">
-                    <motion.div className="flex lg:grid gap-4 items-center justify-center lg:grid-cols-3 min-w-max"
+                    <motion.div className="w-full flex lg:grid gap-4 items-center justify-center lg:grid-cols-3 min-w-max"
                                 initial={{ opacity: 0, y: 40 }}
                                 whileInView={{ opacity: 1, y: 0 }}
                                 transition={{ duration: 0.8, ease: 'easeOut' }}
