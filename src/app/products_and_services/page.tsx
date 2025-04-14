@@ -46,15 +46,14 @@ export default function ProductsPage() {
                 From solar energy to precision CNC machining, we provide a full suite of expert solutions tailored to power industries, infrastructures, and innovations.
             </p>
             <div className="w-full flex flex-col items-center justify-center overflow-x-auto lg:overflow-x-hidden lg:overflow-y-hidden">
-                <div className="w-full grid md:grid-cols-2 lg:flex lg:flex-row gap-4 place-items-center px-4">
-                    <Item1 />
-                    <Item2 />
-                    <Item3 />
-                    <Item4 />
-                </div>
+              <div className="w-full flex flex-wrap justify-center gap-4 px-4">
+                <Item1 />
+                <Item2 />
+                <Item3 />
+                <Item4 />
+              </div>
             </div>
         </div>
-
         {/* Footer Section */}
         <div className='w-full bg-[#252865] mt-[20px]'>
             <Footer />
