@@ -1,7 +1,7 @@
 'use client'
 import React from 'react'
 import Image from 'next/image';
-import coverImg from '../assets/sivacon.jpg';
+import coverImg from '../assets/portfolio.jpg';
 import Header from '../components/header';
 import Footer from '../components/footer';
 
