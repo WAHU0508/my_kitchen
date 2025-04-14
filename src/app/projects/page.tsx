@@ -19,7 +19,7 @@ export default function ProjectsPage() {
         <p className='w-full flex items-center justify-center text-black text-[24px] lg:text-[32px]'>Our Projects</p>
           <motion.div
             className="w-fit flex flex-col items-center justify-center gap-4 
-                       lg:grid lg:grid-cols-3 lg:gap-6 
+                       lg:grid lg:grid-cols-3 lg:gap-6 md:grid md:grid-cols-2
                        px-4 py-6"
             initial={{ opacity: 0, y: 40 }}
             whileInView={{ opacity: 1, y: 0 }}
