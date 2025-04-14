@@ -423,31 +423,20 @@ export default function HomePage() {
                         <ProjectCard3 />
                       </motion.div>
                     </div>
-                <div className='w-full flex items-center justify-center mt-[20px]'>
-                    <motion.div className="relative w-[123px] h-[30px] lg:w-[220px] lg:h-[46px] md:w-[220px] md:h-[46px]"
-                                initial={{ opacity: 0, y: 40 }}
-                                whileInView={{ opacity: 1, y: 0 }}
-                                transition={{ duration: 0.8, ease: 'easeOut' }}
-                                viewport={{ once: false, amount: 0.2 }} // this ensures it's triggered every time the section comes into view
-                    >
-                        {/* Rectangle 9 - blurred background box */}
-                        {/*<div className="absolute w-[123px] h-[30px] lg:w-[290px] lg:h-[46px] md:w-[290px] md:h-[46px] inset-0 border-[2px] border-[#252865] rounded-[15px] blur-[8.25px]"></div>*/}
-                        {/* Rectangle 8 - foreground box */}
-                        <button 
-                            className="absolute text-black hover:bg-[#252865] hover:text-white active:bg-[#252865] active:text-white w-[123px] h-[30px] lg:w-[220px] lg:h-[46px] md:w-[220px] md:h-[46px] text-[10px] lg:text-[16px] md:text-[16px] inset-0 border-[2px] border-[#252865] rounded-[15px] flex flex-row items-center justify-center lg:items-center lg:justify-center md:items-center md:justify-center gap-2 lg:gap-2 md:gap-2"
-                            onClick={projects}
-                            >
+                <div className="relative w-[145px] h-[30px] lg:w-[220px] lg:h-[46px] md:w-[220px] md:h-[46px]">
+                        <button className="absolute text-black hover:bg-[#252865] hover:text-white active:bg-[#252865] active:text-white w-[145px] h-[30px] lg:w-[220px] lg:h-[46px] md:w-[220px] md:h-[46px] text-[10px] lg:text-[16px] md:text-[16px] inset-0 border-[2px] border-[#252865] rounded-[15px] flex flex-row items-center justify-center lg:items-center lg:justify-center md:items-center md:justify-center gap-2 lg:gap-2 md:gap-2"
+                            onClick={products_and_services}
+                        >
                             See More
                             <Image
                                 src={externalLink}
-                                alt='Get Quote'
+                                alt='Explore'
                                 width={16}
                                 height={16}
                                 className='w-[10px] h-[10px] lg:w-[16px] lg:h-[16px] md:w-[16px] md:h-[16px]'
                             />
                         </button>
-                    </motion.div>
-                </div>
+                    </div>
                 </div>
             </div>
             <div className='mt-[20px] w-full bg-[#F8F8F8]'>
