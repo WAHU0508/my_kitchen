@@ -293,7 +293,7 @@ export default function HomePage() {
                     </motion.div>
 
                     <div className="w-full overflow-x-auto">
-                        <motion.div className="flex flex-row gap-2 lg:gap-0 md:gap-2 items-center justify-center w-full"
+                        <motion.div className="flex flex-row gap-2 lg:gap-0 md:gap-2 items-center justify-center w-full overflow-x-auto"
                                     initial={{ opacity: 0, y: 40 }}
                                     whileInView={{ opacity: 1, y: 0 }}
                                     transition={{ duration: 0.8, ease: 'easeOut' }}
