@@ -30,8 +30,8 @@ export default function ProjectsPage() {
             <ProjectCard2 />
             <ProjectCard3 />
             <ProjectCard4 />
-            <ProjectCard5 />
             <ProjectCard6 />
+            <ProjectCard5 />
           </motion.div>
         </div>
         
