@@ -33,6 +33,9 @@ export default function HomePage() {
     const products_and_services = () => {
         router.push('/products_and_services');
     }
+    const projects = () => {
+        router.push('/projects')
+    }
     // State to control modal visibility
     const [isModalOpen, setIsModalOpen] = useState(false);
     const [formData, setFormData] = useState<FormData>({ name: '', email: '', phone: '', message: '' });
@@ -432,7 +435,10 @@ export default function HomePage() {
                         {/* Rectangle 9 - blurred background box */}
                         {/*<div className="absolute w-[123px] h-[30px] lg:w-[290px] lg:h-[46px] md:w-[290px] md:h-[46px] inset-0 border-[2px] border-[#252865] rounded-[15px] blur-[8.25px]"></div>*/}
                         {/* Rectangle 8 - foreground box */}
-                        <button className="absolute text-black hover:bg-[#252865] hover:text-white active:bg-[#252865] active:text-white w-[123px] h-[30px] lg:w-[220px] lg:h-[46px] md:w-[220px] md:h-[46px] text-[10px] lg:text-[16px] md:text-[16px] inset-0 border-[2px] border-[#252865] rounded-[15px] flex flex-row items-center justify-center lg:items-center lg:justify-center md:items-center md:justify-center gap-2 lg:gap-2 md:gap-2">
+                        <button 
+                            className="absolute text-black hover:bg-[#252865] hover:text-white active:bg-[#252865] active:text-white w-[123px] h-[30px] lg:w-[220px] lg:h-[46px] md:w-[220px] md:h-[46px] text-[10px] lg:text-[16px] md:text-[16px] inset-0 border-[2px] border-[#252865] rounded-[15px] flex flex-row items-center justify-center lg:items-center lg:justify-center md:items-center md:justify-center gap-2 lg:gap-2 md:gap-2"
+                            onClick={projects}
+                            >
                             See More
                             <Image
                                 src={externalLink}
