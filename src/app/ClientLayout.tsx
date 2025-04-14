@@ -16,6 +16,7 @@ export default function ClientLayout({
                             && !pathname.includes('about_us')
                             && !pathname.includes('contact_us')
                             && !pathname.includes('products_and_services')
+                            && !pathname.includes('projects')
 
   return (
     <>
