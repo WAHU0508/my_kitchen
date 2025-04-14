@@ -412,7 +412,7 @@ export default function HomePage() {
                     </motion.div>
                     <div className="w-full overflow-x-auto lg:overflow-y-hidden flex items-center justify-center">
                       <motion.div
-                        className="w-fit flex flex-col items-center justify-center gap-4 
+                        className="w-fit flex flex-row items-center justify-center gap-4 
                                    lg:grid lg:grid-cols-3 lg:gap-6 
                                    px-4 py-6"
                         initial={{ opacity: 0, y: 40 }}
