@@ -189,7 +189,7 @@ export default function Header() {
                                         About Us
                                     </Link>
                                 </li>
-                                <li className="flex items-center justify-between w-full">
+                                <li className="flex flex-row gap-2 items-center justify-center w-full">
                                       <Link
                                         href="/products_and_services"
                                         className={`border-b border-black/10 flex items-center justify-start w-[146px] h-[22px] text-[12px] ${
@@ -214,22 +214,22 @@ export default function Header() {
                                 {isExpanded && (
                                   <ul className="pl-4 mt-2 space-y-2 text-[12px]">
                                     <li>
-                                      <Link href="/products_and_services/solar_solutions" className="text-gray-700 hover:text-red-500">
+                                      <Link href="/products_and_services/solar_solutions" className="border-b border-black/10 p-1 flex items-center justify-center text-gray-700 hover:text-red-500">
                                         Solar Solutions
                                       </Link>
                                     </li>
                                     <li>
-                                      <Link href="/products_and_services/switchboard_manufacturing" className="text-gray-700 hover:text-red-500">
+                                      <Link href="/products_and_services/switchboard_manufacturing" className="border-b border-black/10 p-1 flex items-center justify-center text-gray-700 hover:text-red-500">
                                         Switchboard Manufacturing
                                       </Link>
                                     </li>
                                     <li>
-                                      <Link href="/products_and_services/CNC" className="text-gray-700 hover:text-red-500">
+                                      <Link href="/products_and_services/CNC" className="border-b border-black/10 p-1 flex items-center justify-center text-gray-700 hover:text-red-500">
                                         CNC
                                       </Link>
                                     </li>
                                     <li>
-                                      <Link href="/products_and_services/electrical_installation" className="text-gray-700 hover:text-red-500">
+                                      <Link href="/products_and_services/electrical_installation" className="border-b border-black/10 p-1 flex items-center justify-center text-gray-700 hover:text-red-500">
                                         Electrical Installation
                                       </Link>
                                     </li>
