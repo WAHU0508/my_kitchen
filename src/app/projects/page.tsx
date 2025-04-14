@@ -1,9 +1,9 @@
+'use client'
 import React from 'react'
 import Image from 'next/image';
 import coverImg from '../assets/sivacon.jpg';
 import Header from '../components/header';
 import Footer from '../components/footer';
-import { motion } from 'framer-motion';
 
 export default function ProjectsPage() {
   return (
