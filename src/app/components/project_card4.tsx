@@ -26,7 +26,7 @@ export default function ProjectCard() {
         <p className='text-[12px] text-[#000000]'>Mlolongo</p>
       </div>
       <div className="w-[158.15px] h-0 ml-[20px] mt-[20px] border-t-[5px] border-[#252865]"></div>
-      <p className='text-[14px] lg:text-[16px] ml-[20px] mt-[20px] text-[#000000]'>Maintenance of RMU, transformer and low voltage panels</p>
+      <p className='text-[14px] lg:text-[16px] ml-[20px] mt-[5px] text-[#000000]'>Maintenance of RMU, transformer and low voltage panels</p>
     </div>
   )
 }
