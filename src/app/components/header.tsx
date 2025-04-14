@@ -56,52 +56,66 @@ export default function Header() {
                           About Us
                     </Link>
                     <div className="relative group">
-                      <Link href="/products_and_services" className={`h-full flex items-center justify-center font-semibold cursor-pointer hover:text-[#252865] hover:border-b-4 hover:border-[#FF0105] ${pathname === '/products_and_services' ? 'text-[#FF0105] border-b-4 border-[#FF0105]' : 'text-black'}`}>
-                        Products & Services
-                      </Link>
-                
+                      <div className="h-full flex items-center justify-center font-semibold cursor-pointer hover:text-[#252865] hover:border-b-4 hover:border-[#FF0105]">
+                        <Link
+                          href="/products_and_services"
+                          className={`${
+                            pathname === '/products_and_services'
+                              ? 'text-[#FF0105] border-b-4 border-[#FF0105]'
+                              : 'text-black'
+                          }`}
+                        >
+                          Products & Services
+                        </Link>
+                      </div>
+                    
                       {/* Modal shown on hover */}
-                      <div className="absolute top-full left-0 mt-2 w-[250px] bg-white shadow-lg border border-gray-300 rounded p-4 opacity-0 group-hover:opacity-100 pointer-events-none group-hover:pointer-events-auto transition-all duration-300 z-50">
+                      <div className="absolute top-full left-0 mt-2 w-[250px] bg-white shadow-lg border border-gray-300 rounded p-4 opacity-0 group-hover:opacity-100 invisible group-hover:visible transition-all duration-300 z-50">
                         <ul className="text-sm text-gray-700 space-y-2">
-                          <li><Link
-                                href="/products_and_services/solar_solutions"
-                                className={`border-b border-black/10 flex items-center justify-center w-[146px] h-[22px] ${
-                                  pathname === '/products_and_services/solar_solutions' ? 'text-red-600' : 'text-black'
-                                }`}
-                                >
-                                Solar Solutions
+                          <li>
+                            <Link
+                              href="/products_and_services/solar_solutions"
+                              className={`border-b border-black/10 flex items-center justify-center w-[146px] h-[22px] ${
+                                pathname === '/products_and_services/solar_solutions' ? 'text-red-600' : 'text-black'
+                              }`}
+                            >
+                              Solar Solutions
                             </Link>
                           </li>
-                          <li><Link
-                                href="/products_and_services/switchboard_manufacturing"
-                                className={`border-b border-black/10 flex items-center justify-center w-[146px] h-[22px] ${
-                                  pathname === '/products_and_services/switchboard_manufacturing' ? 'text-red-600' : 'text-black'
-                                }`}
-                                >
-                                Switchboard Manufacturing
+                          <li>
+                            <Link
+                              href="/products_and_services/switchboard_manufacturing"
+                              className={`border-b border-black/10 flex items-center justify-center w-[146px] h-[22px] ${
+                                pathname === '/products_and_services/switchboard_manufacturing' ? 'text-red-600' : 'text-black'
+                              }`}
+                            >
+                              Switchboard Manufacturing
                             </Link>
                           </li>
-                          <li><Link
-                                href="/products_and_services/switchboard_manufacturing"
-                                className={`border-b border-black/10 flex items-center justify-center w-[146px] h-[22px] ${
-                                  pathname === '/products_and_services/CNC' ? 'text-red-600' : 'text-black'
-                                }`}
-                                >
-                                CNC
+                          <li>
+                            <Link
+                              href="/products_and_services/CNC"
+                              className={`border-b border-black/10 flex items-center justify-center w-[146px] h-[22px] ${
+                                pathname === '/products_and_services/CNC' ? 'text-red-600' : 'text-black'
+                              }`}
+                            >
+                              CNC
                             </Link>
                           </li>
-                          <li><Link
-                                href="/products_and_services/switchboard_manufacturing"
-                                className={`border-b border-black/10 flex items-center justify-center w-[146px] h-[22px] ${
-                                  pathname === '/products_and_services/electrical_installation' ? 'text-red-600' : 'text-black'
-                                }`}
-                                >
-                                Electrical Installation
+                          <li>
+                            <Link
+                              href="/products_and_services/electrical_installation"
+                              className={`border-b border-black/10 flex items-center justify-center w-[146px] h-[22px] ${
+                                pathname === '/products_and_services/electrical_installation' ? 'text-red-600' : 'text-black'
+                              }`}
+                            >
+                              Electrical Installation
                             </Link>
                           </li>
                         </ul>
                       </div>
                     </div>
+
                     <Link
                           href="/contact_us"
                           className={`h-full flex items-center justify-center font-semibold cursor-pointer hover:text-[#252865] hover:border-b-4 hover:border-[#FF0105] ${
