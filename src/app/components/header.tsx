@@ -75,7 +75,7 @@ export default function Header() {
                           <li>
                             <Link
                               href="/products_and_services/solar_solutions"
-                              className={`border-b border-black/10 flex items-center justify-center px-2 py-1 ${
+                              className={`border-b border-black/10 flex hover:text-[#FF0105] items-center justify-center px-2 py-1 ${
                                 pathname === '/products_and_services/solar_solutions' ? 'text-red-600' : 'text-black'
                               }`}
                             >
@@ -85,7 +85,7 @@ export default function Header() {
                           <li>
                             <Link
                               href="/products_and_services/switchboard_manufacturing"
-                              className={`border-b border-black/10 flex items-center justify-center px-2 py-1  ${
+                              className={`border-b border-black/10 flex hover:text-[#FF0105] items-center justify-center px-2 py-1  ${
                                 pathname === '/products_and_services/switchboard_manufacturing' ? 'text-red-600' : 'text-black'
                               }`}
                             >
@@ -95,7 +95,7 @@ export default function Header() {
                           <li>
                             <Link
                               href="/products_and_services/CNC"
-                              className={`border-b border-black/10 flex items-center justify-center px-2 py-1  ${
+                              className={`border-b border-black/10 flex hover:text-[#FF0105] items-center justify-center px-2 py-1  ${
                                 pathname === '/products_and_services/CNC' ? 'text-red-600' : 'text-black'
                               }`}
                             >
@@ -105,7 +105,7 @@ export default function Header() {
                           <li>
                             <Link
                               href="/products_and_services/electrical_installation"
-                              className={`border-b border-black/10 flex items-center justify-center px-2 py-1  ${
+                              className={`border-b border-black/10 flex hover:text-[#FF0105] items-center justify-center px-2 py-1  ${
                                 pathname === '/products_and_services/electrical_installation' ? 'text-red-600' : 'text-black'
                               }`}
                             >
