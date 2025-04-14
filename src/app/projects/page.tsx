@@ -12,11 +12,8 @@ import ProjectCard3 from '../components/project_card3'
 export default function ProjectsPage() {
   return (
     <section className="w-full flex flex-col items-center justify-center overflow-x-hidden">
-        <div className="fixed top-4 left-0 w-full lg:z-20">
-            <Header />
-        </div>
       <div className="w-full overflow-x-auto lg:overflow-y-hidden flex items-center justify-center">
-        <p>Our Projects</p>
+        <p className='w-full items-center justify-center text-black text-[24px] lg:text-[32px]'>Our Projects</p>
           <motion.div
             className="w-fit flex flex-col items-center justify-center gap-4 
                        lg:grid lg:grid-cols-3 lg:gap-6 
@@ -31,9 +28,7 @@ export default function ProjectsPage() {
             <ProjectCard3 />
           </motion.div>
         </div>
-        <div className='w-full bg-[#252865] mt-[20px]'>
-              <Footer />
-        </div>
+        
       </section>
   )
 }
