@@ -189,10 +189,10 @@ export default function Header() {
                                         About Us
                                     </Link>
                                 </li>
-                                <li className="flex flex-row gap-2 items-center justify-center w-full">
+                                <li className="border-b border-black/10 flex flex-row gap-2 items-center justify-center w-full">
                                       <Link
                                         href="/products_and_services"
-                                        className={`border-b border-black/10 flex items-center justify-start w-[146px] h-[22px] text-[12px] ${
+                                        className={`flex items-center justify-start w-[146px] h-[22px] text-[12px] ${
                                           pathname === '/products_and_services' ? 'text-red-600' : 'text-black'
                                         }`}
                                         onClick={() => setIsOpen(false)}
