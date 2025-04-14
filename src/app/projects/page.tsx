@@ -9,6 +9,8 @@ import ProjectCard1 from '../components/project_card1'
 import ProjectCard2 from '../components/project_card2'
 import ProjectCard3 from '../components/project_card3'
 import ProjectCard4 from '../components/project_card4'
+import ProjectCard5 from '../components/project_card5'
+import ProjectCard6 from '../components/project_card6'
 
 export default function ProjectsPage() {
   return (
@@ -28,6 +30,8 @@ export default function ProjectsPage() {
             <ProjectCard2 />
             <ProjectCard3 />
             <ProjectCard4 />
+            <ProjectCard5 />
+            <ProjectCard6 />
           </motion.div>
         </div>
         
