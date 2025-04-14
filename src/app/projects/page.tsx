@@ -8,6 +8,7 @@ import { motion } from 'framer-motion';
 import ProjectCard1 from '../components/project_card1'
 import ProjectCard2 from '../components/project_card2'
 import ProjectCard3 from '../components/project_card3'
+import ProjectCard4 from '../components/project_card4'
 
 export default function ProjectsPage() {
   return (
@@ -26,6 +27,7 @@ export default function ProjectsPage() {
             <ProjectCard1 />
             <ProjectCard2 />
             <ProjectCard3 />
+            <ProjectCard4 />
           </motion.div>
         </div>
         
