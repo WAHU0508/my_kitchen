@@ -270,7 +270,7 @@ export default function HomePage() {
                 </div>
 
                 {/*Product Cards*/}
-                <div className='flex flex-col mt-[40px]'>
+                <div className='w-full flex flex-col mt-[40px]'>
                     <motion.div className='w-full flex flex-row items-center lg:items-center lg:justify-center md:items-center md:justify-center'
                                 initial={{ opacity: 0, y: 40 }}
                                 whileInView={{ opacity: 1, y: 0 }}
@@ -292,8 +292,8 @@ export default function HomePage() {
                         <p className='text-[#252865]'>Products and Services</p>
                     </motion.div>
 
-                    <div className="w-full overflow-x-auto">
-                        <motion.div className="flex flex-row gap-2 lg:gap-0 md:gap-2 items-center justify-center w-full overflow-x-auto"
+                    <div className="w-full flex items-center justify-center overflow-x-auto overflow-y-hidden">
+                        <motion.div className="flex flex-row gap-2 lg:gap-0 md:gap-2 items-center justify-center"
                                     initial={{ opacity: 0, y: 40 }}
                                     whileInView={{ opacity: 1, y: 0 }}
                                     transition={{ duration: 0.8, ease: 'easeOut' }}
