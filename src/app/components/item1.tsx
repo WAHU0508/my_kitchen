@@ -28,7 +28,7 @@ export default function Product1() {
         
         <div className="ml-[50px] mt-[100px] mb-4 flex flex-col gap-3">
           <p className="text-white text-[32px] font-bold">01</p>
-          <p className="text-white text-[32px] font-bold">Solar Solutions</p>
+          <p className="text-white text-[32px] font-bold h-[50px]">Solar Solutions</p>
           
           <div className={`border-b-4 border-[#FF0105] transition-all duration-300 
             ${showDetails ? 'w-[150px]' : 'w-[50px]'} group-hover:w-[150px]`}></div>
