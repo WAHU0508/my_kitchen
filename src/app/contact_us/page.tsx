@@ -7,7 +7,7 @@ import mail from '../assets/image 26.png'
 import Header from '../components/header';
 import Footer from '../components/footer';
 import map from '../assets/image 27.png'
-import contactus from '../assets/contactus.jpg'
+import contactus from '../assets/contact_us.jpg'
 // import { motion } from 'framer-motion';
 
 export default function ContactUsPage() {
