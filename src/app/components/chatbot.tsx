@@ -2,7 +2,10 @@
 
 import { useEffect, useState } from 'react'
 
-export default function Chatbot({ userId }) {
+type ChatbotProps = {
+  userId?: string
+}
+export default function Chatbot({ userId }: ChatbotProps) {
   const [userHash, setUserHash] = useState(null)
 
   useEffect(() => {
