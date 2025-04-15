@@ -68,7 +68,7 @@ export default function ContactUsPage() {
           </div>
 
         </div>
-        <div className='flex flex-row gap-6'>
+        <div className='mt-[20px] flex flex-row gap-6'>
             <div className="w-[10px] h-auto bg-[#FF0105]"></div>
             <div className="w-full text-black text-[14px] font-light">
               We&apos;re here to help with all your electrical and energy solution. Visit us at our location or simply call us or send an email. 
