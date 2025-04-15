@@ -119,7 +119,7 @@ export default function ContactUsPage() {
           />
         </div>
         <div className="mt-4 w-full flex flex-col items-center justify-center">
-          <div className='border border-gray shadow-lg p-2 '>
+          <div className='border border-gray shadow-lg px-[50px] py-[20px] rounded-[20px]'>
             <p className='text-[#FF0105] text-[12px] md:text-[20px] lg:text-[18px]'>Send us a message</p>
             <p className='text-black text-[12px] md:text-[20px] lg:text-[18px]'>Required fields are marked <span className='text-[#FF0105]'>*</span></p>
             <form onSubmit={handleSubmit} className="space-y-1 max-w-md mx-auto text-[black]">
