@@ -19,7 +19,7 @@ export default function Product1() {
       <div className="absolute top-0 left-0 w-full h-full bg-transparent group-hover:bg-black/60 transition-colors duration-300 flex flex-col">
         <div className="ml-[20px] mt-[10px] mb-4 flex flex-col gap-3">
           <p className="text-white text-[32px] font-bold">04</p>
-          <p className="text-white text-[32px] h-[64px] font-bold">Electrical Installation</p>
+          <p className="text-white text-[32px] h-[90px] font-bold">Electrical Installation</p>
           <div className="w-[50px] group-hover:w-[150px] border-b-4 border-[#FF0105] transition-all duration-300"></div>
           <button 
             onClick={() => router.push('/products_and_services/electrical_installation')}
