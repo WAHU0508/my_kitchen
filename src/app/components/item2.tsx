@@ -28,7 +28,7 @@ export default function Product1() {
       } group-hover:bg-black/60`}>
         <div className="ml-[50px] mt-[100px] mb-4 flex flex-col gap-3">
           <p className="text-white text-[32px] font-bold">02</p>
-          <p className="text-white text-[24px] font-bold leading-tight h-[70px]">Switchboard Manufacturing</p>
+          <p className="text-white text-[28px] font-bold leading-tight h-[60px]">Switchboard Manufacturing</p>
           <div className={`w-[50px] border-b-4 border-[#FF0105] transition-all duration-300 ${
             showDetails ? 'w-[150px]' : ''
           } group-hover:w-[150px]`}></div>
