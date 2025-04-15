@@ -75,7 +75,7 @@ export default function ContactUsPage() {
               For any questions, feel free to contact us 
             </div>
         </div>
-        <div className='w-full flex flex-col md:flex-row lg:flex-row items-center justify-center gap-4 md:gap-4 lg:gap-6'>
+        <div className='w-full flex flex-col mt-[20px] md:flex-row lg:flex-row items-center justify-center gap-4 md:gap-4 lg:gap-6'>
           <div className='flex flex-col items-center'>
             <Image
               src={location}
@@ -118,7 +118,7 @@ export default function ContactUsPage() {
             className='w-[200px] h-[130px] md:w-[500px] md:h-[200px] lg:w-[500px] lg:h-[200px]'
           />
         </div>
-        <div className="mt-4 w-full flex flex-col items-center justify-center">
+        <div className="border border-gray shadow-lg p-2 mt-4 w-full flex flex-col items-center justify-center">
             <p className='text-[#FF0105] text-[12px] md:text-[20px] lg:text-[18px]'>Send us a message</p>
             <p className='text-black text-[12px] md:text-[20px] lg:text-[18px]'>Required fields are marked <span className='text-[#FF0105]'>*</span></p>
             <form onSubmit={handleSubmit} className="space-y-1 max-w-md mx-auto text-[black]">
