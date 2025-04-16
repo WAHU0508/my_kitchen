@@ -71,7 +71,7 @@ export default function Header() {
                       </div>
                     
                       {/* Modal shown on hover */}
-                      <div className="absolute top-full left-0 mt-2 w-[250px] bg-white shadow-lg border border-gray-300 rounded p-4 opacity-0 group-hover:opacity-100 invisible group-hover:visible transition-all duration-300 z-50">
+                      <div className="absolute top-full left-0 mt-4 w-[250px] bg-white shadow-lg border border-gray-300 rounded p-4 opacity-0 group-hover:opacity-100 invisible group-hover:visible transition-all duration-300 z-50">
                         <ul className="text-sm text-gray-700 space-y-4">
                           <li>
                             <Link
@@ -129,7 +129,7 @@ export default function Header() {
             </div>
 
             {/* Header for small screens */}
-            <div className='lg:hidden md:hidden flex flex-row w-full items-center gap-2 ml-2 mr-[20px]'>
+            <div className='lg:hidden md:hidden flex flex-row w-full items-center gap-2 mt-2 ml-2 mr-[20px]'>
                 <button onClick={() => setIsOpen(true)}>
                     <Menu size={31} color='black'/>
                 </button>
