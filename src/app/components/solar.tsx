@@ -30,18 +30,10 @@ export default function Product1() {
         ${isActive ? 'bg-black/60' : 'bg-transparent group-hover:bg-black/60'}
       `}>
         <div className="ml-[20px] mt-[10px] mb-4 flex flex-col gap-3">
-          <p className={`
-            text-white text-[32px] font-bold 
-            transition-opacity duration-300 
-            ${isActive ? 'opacity-100' : 'opacity-0 group-hover:opacity-100'}
-          `}>
+          <p className='text-white text-[32px] font-bold'>
             01
           </p>
-          <p className={`
-            text-white text-[32px] font-bold h-[90px]
-            transition-opacity duration-300 
-            ${isActive ? 'opacity-100' : 'opacity-0 group-hover:opacity-100'}
-          `}>
+          <p className='text-white text-[32px] font-bold h-[90px]'>
             Solar Solutions
           </p>
           <div className={`
