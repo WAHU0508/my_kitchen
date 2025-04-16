@@ -6,7 +6,7 @@ import phone from '../assets/Icon.png'
 import mail from '../assets/image 26.png'
 import Header from '../components/header';
 import Footer from '../components/footer';
-import map from '../assets/image 27.png'
+// import map from '../assets/image 27.png'
 import contactus from '../assets/contact1.jpg'
 // import { motion } from 'framer-motion';
 
@@ -45,9 +45,9 @@ export default function ContactUsPage() {
             setStatus('Something went wrong.');
         }
     };
-  const handleClick = () => {
-    window.open('https://maps.app.goo.gl/EnXGKAmnnb6kVJ5E7', '_blank');
-  };
+  // const handleClick = () => {
+  //   window.open('https://maps.app.goo.gl/EnXGKAmnnb6kVJ5E7', '_blank');
+  // };
   
   return (
     <section className="w-full flex flex-col items-center justify-center overflow-x-hidden">
