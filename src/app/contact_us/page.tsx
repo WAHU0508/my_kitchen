@@ -108,16 +108,20 @@ export default function ContactUsPage() {
             <p className='lg:w-[250px] lg:text-[16px] mt-[20px] text-black text-center'>info@alverpower.com</p>
           </div>
         </div>
+        {/* Map Section */}
         <div className='w-full flex items-center justify-center'>
-          <Image
-            src={map}
-            width={815}
-            height={500}
-            onClick={handleClick}
-            alt='Map Location'
-            className='w-[200px] h-[130px] md:w-[500px] md:h-[200px] lg:w-[500px] lg:h-[200px]'
-          />
+          <iframe
+            src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3988.8959166499553!2d36.8628763749657!3d-1.232054598756198!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x182f17ceae8844ab%3A0x97092c44af547341!2sAlver%20power%20systems%20Ltd!5e0!3m2!1sen!2ske!4v1744791662882!5m2!1sen!2ske"
+            width="400"
+            height="300"
+            style={{ border: 0 }}
+            allowFullScreen
+            loading="lazy"
+            referrerPolicy="no-referrer-when-downgrade"
+            className="rounded-lg shadow-md"
+          ></iframe>
         </div>
+        
         <div className="mt-4 w-full flex flex-col items-center justify-center">
           <div className='border border-gray shadow-lg px-[50px] py-[20px] rounded-[20px]'>
             <p className='text-[#FF0105] text-[12px] md:text-[20px] lg:text-[18px]'>Send us a message</p>
