@@ -55,7 +55,7 @@ export default function ProductsPage() {
             </div>
         </div>
         {/* Footer Section */}
-        <div className='w-full bg-[#252865] mt-[20px]'>
+        <div className='w-full bg-[#F8F8F8] mt-[20px]'>
             <Footer />
         </div>
     </div>
