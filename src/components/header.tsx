@@ -56,20 +56,23 @@ export default function Header() {
                     className='w-[150px] h-[48px]'
                 />
                 <div className='flex flex-row gap-6 h-full text-[15px] text-black items-center justify-center'>
-                        <Link
-                              href="/"
-                              className={`h-full flex flex-col items-center justify-between font-semibold cursor-pointer hover:text-[#252865] hover:border-b-4 hover:border-[#FF0105] ${
-                                pathname === '/' ? 'text-[#FF0105] border-b-4 border-[#FF0105]' : 'text-black'
-                              }`}
-                            >
-                                <span className='mt-[17px]'>Home</span>
-                                <Image
-                                    src={pointer}
-                                    alt='pointer'
-                                    width={18}
-                                    height={6}
-                                />
-                        </Link>
+                    <Link
+                          href="/"
+                          className={`group h-full flex flex-col items-center justify-between font-semibold cursor-pointer hover:text-[#252865] hover:border-b-4 hover:border-[#FF0105] ${
+                            pathname === '/' ? 'text-[#FF0105] border-b-4 border-[#FF0105]' : 'text-black'
+                          }`}
+                        >
+                            <span className='mt-[17px]'>Home</span>
+                            <Image
+                                src={pointer}
+                                alt='pointer'
+                                width={18}
+                                height={6}
+                                className={`transition-opacity duration-200 ${
+                                pathname === '/' ? 'opacity-100' : 'opacity-0 group-hover:opacity-100'
+                                }`}
+                            />
+                    </Link>
                     <Link
                           href="/about_us"
                           className={`h-full flex items-center justify-center font-semibold cursor-pointer hover:text-[#252865] hover:border-b-4 hover:border-[#FF0105] ${
