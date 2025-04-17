@@ -62,12 +62,12 @@ export default function Header() {
                                 pathname === '/' ? 'text-[#FF0105] border-b-4 border-[#FF0105]' : 'text-black'
                               }`}
                             >
-                                <span className='mt-[20px]'>Home</span>
+                                <span className='mt-[15px]'>Home</span>
                                 <Image
                                     src={pointer}
                                     alt='pointer'
                                     width={14}
-                                    height={5}
+                                    height={10}
                                 />
                         </Link>
                     <Link
