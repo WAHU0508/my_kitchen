@@ -1,5 +1,5 @@
 import type { Metadata } from "next";
-import Chatbot from './components/chatbot'
+import Chatbot from '@//components/chatbot'
 import ClientLayout from "./ClientLayout"; // Import the client-side component
 import "./globals.css";
 
