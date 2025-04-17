@@ -56,20 +56,22 @@ export default function Header() {
                     className='w-[150px] h-[48px]'
                 />
                 <div className='flex flex-row gap-6 h-full text-[15px] text-black items-center justify-center'>
-                    <Link
-                          href="/"
-                          className={`h-full flex-col items-center justify-between font-semibold cursor-pointer hover:text-[#252865] hover:border-b-4 hover:border-[#FF0105] ${
-                            pathname === '/' ? 'text-[#FF0105] border-b-4 border-[#FF0105]' : 'text-black'
-                          }`}
-                        >
-                          Home
+                    <div className='border border-black h-full flex flex-col items-center justify-between'>
+                        <Link
+                              href="/"
+                              className={`h-full flex items-center justify-center font-semibold cursor-pointer hover:text-[#252865] hover:border-b-4 hover:border-[#FF0105] ${
+                                pathname === '/' ? 'text-[#FF0105] border-b-4 border-[#FF0105]' : 'text-black'
+                              }`}
+                            >
+                              Home
+                        </Link>
                         <Image
                             src={pointer}
                             alt='pointer'
                             width={14}
-                            height={12}
+                            height={10}
                         />
-                    </Link>
+                    </div>
                     <Link
                           href="/about_us"
                           className={`h-full flex items-center justify-center font-semibold cursor-pointer hover:text-[#252865] hover:border-b-4 hover:border-[#FF0105] ${
