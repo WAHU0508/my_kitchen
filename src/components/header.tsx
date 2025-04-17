@@ -66,7 +66,7 @@ export default function Header() {
                                 <Image
                                     src={pointer}
                                     alt='pointer'
-                                    width={14}
+                                    width={18}
                                     height={6}
                                 />
                         </Link>
