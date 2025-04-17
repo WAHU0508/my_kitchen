@@ -75,22 +75,40 @@ export default function Header() {
                     </Link>
                     <Link
                           href="/about_us"
-                          className={`h-full flex items-center justify-center font-semibold cursor-pointer hover:text-[#252865] hover:border-b-4 hover:border-[#FF0105] ${
+                          className={`group h-full flex items-center justify-center font-semibold cursor-pointer hover:text-[#252865] hover:border-b-4 hover:border-[#FF0105] ${
                             pathname === '/about_us' ? 'text-[#FF0105] border-b-4 border-[#FF0105]' : 'text-black'
                           }`}
                         >
-                          About Us
+                          <span className='mt-[17px]'>About Us</span>
+                            <Image
+                                src={pointer}
+                                alt='pointer'
+                                width={18}
+                                height={6}
+                                className={`transition-opacity duration-200 ${
+                                pathname === '/about_us' ? 'opacity-100' : 'opacity-0 group-hover:opacity-100'
+                                }`}
+                            />
                     </Link>
                     <div className="h-full relative group">
                       <Link
                         href="/products_and_services"
-                        className={`h-full flex items-center justify-center font-semibold cursor-pointer hover:text-[#252865] hover:border-b-4 hover:border-[#FF0105] ${
+                        className={`group h-full flex items-center justify-center font-semibold cursor-pointer hover:text-[#252865] hover:border-b-4 hover:border-[#FF0105] ${
                           pathname === '/products_and_services'
                             ? 'text-[#FF0105] border-b-4 border-[#FF0105]'
                             : 'text-black'
                         }`}
                       >
-                        Products & Services
+                        <span className='mt-[17px]'>Products & Services</span>
+                            <Image
+                                src={pointer}
+                                alt='pointer'
+                                width={18}
+                                height={6}
+                                className={`transition-opacity duration-200 ${
+                                pathname === '/products_and_services' ? 'opacity-100' : 'opacity-0 group-hover:opacity-100'
+                                }`}
+                            />
                       </Link>
                     
                       {/* Dropdown */}
@@ -143,11 +161,20 @@ export default function Header() {
 
                     <Link
                           href="/contact_us"
-                          className={`h-full flex items-center justify-center font-semibold cursor-pointer hover:text-[#252865] hover:border-b-4 hover:border-[#FF0105] ${
+                          className={`group h-full flex items-center justify-center font-semibold cursor-pointer hover:text-[#252865] hover:border-b-4 hover:border-[#FF0105] ${
                             pathname === '/contact_us' ? 'text-[#FF0105] border-b-4 border-[#FF0105]' : 'text-black'
                           }`}
                         >
-                          Contact Us
+                         <span className='mt-[17px]'>Contact Us</span>
+                            <Image
+                                src={pointer}
+                                alt='pointer'
+                                width={18}
+                                height={6}
+                                className={`transition-opacity duration-200 ${
+                                pathname === '/contact_us' ? 'opacity-100' : 'opacity-0 group-hover:opacity-100'
+                                }`}
+                            />
                     </Link>
                 </div>
             </div>
