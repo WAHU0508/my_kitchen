@@ -40,12 +40,12 @@ export default function Header() {
     }, [isOpen]);
 
     return (
-        <header className='w-full mt-4 flex items-center justify-center'>
+        <header className='w-full flex items-center justify-center'>
             {/* Header for large and medium screens */}
             <div className={`
                     hidden border border-[#0000003D] bg-[#FFFFFF] lg:flex lg:flex-row md:flex md:flex-row items-center justify-between px-10 
-                    shadow-xl rounded-[5px] transition-all duration-300 ease-in-out fixed top-0 left-0 right-0 z-50
-                    ${isScrolled ? 'w-full mt-0' : 'lg:w-[90%] xl:w-[90%] 2xl:w-[90%] md:w-full mt-8 mx-auto'}
+                    shadow-xl transition-all duration-500 ease-in-out fixed top-0 left-0 right-0 z-50
+                    ${isScrolled ? 'w-full mt-0' : 'lg:w-[90%] xl:w-[90%] 2xl:w-[90%] md:w-full rounded-[5px] mt-4 mx-auto'}
                   `}>
                 <Image
                     src={logo}
