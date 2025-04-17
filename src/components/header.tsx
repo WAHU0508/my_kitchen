@@ -3,18 +3,29 @@ import React, { useState, useEffect } from 'react';
 import { usePathname } from 'next/navigation';
 import Link from 'next/link';
 import Image from 'next/image';
-import logo from '@//assets/logo2.jpg';
+import logo from '../assets/logo2.jpg';
 import { Menu, Clock } from 'lucide-react';
-import mapPin from "@//svgs/mapPin2.svg"
-import twitter from '@//svgs/twitter.svg'
-import facebook from '@//svgs/facebook.svg';
-import instagram from '@//svgs/instagram.svg';
-import linkedin from '@//svgs/linkedin.svg';
+import mapPin from "../svgs/mapPin2.svg"
+import twitter from '../svgs/twitter.svg'
+import facebook from '../svgs/facebook.svg';
+import instagram from '../svgs/instagram.svg';
+import linkedin from '../svgs/linkedin.svg';
 
 export default function Header() {
     const [isOpen, setIsOpen] = useState(false);
     const [isExpanded, setIsExpanded] = useState(false);
     const pathname = usePathname();
+
+    const [isScrolled, setIsScrolled] = useState(false)
+
+    useEffect(() => {
+        const handleScroll = () => {
+          setIsScrolled(window.scrollY > 50)
+        }
+
+        window.addEventListener('scroll', handleScroll)
+        return () => window.removeEventListener('scroll', handleScroll)
+      }, [])
 
     // Disable scroll when modal is open
     useEffect(() => {
@@ -29,9 +40,13 @@ export default function Header() {
     }, [isOpen]);
 
     return (
-        <header className='w-full mb-4 flex items-center justify-center'>
+        <header className='w-full flex items-center justify-center'>
             {/* Header for large and medium screens */}
-            <div className='hidden border border-[#0000003D] bg-[#FFFFFF] lg:flex lg:flex-row md:flex md:flex-row items-center justify-between px-10 lg:w-[90%] xl:w-[90%] 2xl:w-[90%] md:w-full h-[60px] shadow-xl rounded-[5px]'>
+            <div className={`
+                    hidden border border-[#0000003D] bg-[#FFFFFF] lg:flex lg:flex-row md:flex md:flex-row items-center justify-between px-10 
+                    shadow-xl transition-all duration-500 ease-in-out fixed top-0 left-0 right-0 z-50
+                    ${isScrolled ? 'w-full md:h-[50px] lg:h-[70px] mt-0' : 'lg:w-[95%] xl:w-[95%] 2xl:w-[95%] lg:h-[60px] md:w-full rounded-[5px] mt-4 mx-auto'}
+                  `}>
                 <Image
                     src={logo}
                     width={150}
