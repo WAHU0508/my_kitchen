@@ -2,7 +2,7 @@
 
 import React, { useState } from 'react';
 import Image from 'next/image';
-import cncimg from '../assets/img04.jpg';
+import cncimg from '@//assets/img04.jpg';
 import { useRouter } from 'next/navigation';
 
 export default function Product3() {

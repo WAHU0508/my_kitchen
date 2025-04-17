@@ -2,10 +2,10 @@
 
 import React, { useState } from 'react';
 import Image from 'next/image';
-import electricalsimg from '../assets/img03.jpg';
+import solarimg from '@//assets/img01.jpg';
 import { useRouter } from 'next/navigation';
 
-export default function Product4() {
+export default function Product1() {
   const router = useRouter();
   const [isActive, setIsActive] = useState(false);
 
@@ -17,8 +17,8 @@ export default function Product4() {
       onClick={toggleActive}
     >
       <Image 
-        src={electricalsimg}
-        alt="Electrical Img"
+        src={solarimg}
+        alt="Solar Img"
         fill
         className="object-cover"
       />
@@ -30,17 +30,21 @@ export default function Product4() {
         ${isActive ? 'bg-black/60' : 'bg-transparent group-hover:bg-black/60'}
       `}>
         <div className="ml-[20px] mt-[10px] mb-4 flex flex-col gap-3">
-          <p className="text-white text-[32px] font-bold">04</p>
-          <p className="text-white text-[32px] h-[90px] font-bold">Electrical Installation</p>
+          <p className='text-white text-[32px] font-bold'>
+            01
+          </p>
+          <p className='text-white text-[32px] font-bold h-[90px]'>
+            Solar Solutions
+          </p>
           <div className={`
-            border-b-4 border-[#FF0105]
-            transition-all duration-300
+            border-b-4 border-[#FF0105] 
+            transition-all duration-300 
             ${isActive ? 'w-[150px]' : 'w-[50px] group-hover:w-[150px]'}
           `}></div>
           <button 
             onClick={(e) => {
               e.stopPropagation(); // prevent re-toggling
-              router.push('/products_and_services/electrical_installation');
+              router.push('/products_and_services/solar_solutions');
             }}
             className={`
               w-[120px] py-2 rounded-[5px] border border-white text-[16px] text-white

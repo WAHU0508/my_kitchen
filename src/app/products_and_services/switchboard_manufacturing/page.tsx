@@ -1,6 +1,7 @@
 'use client'
 import React from 'react'
 import Image from 'next/image'
+import sivaconImg from '@//assets/sivacon.jpg'
 import { useRouter } from 'next/navigation';
 
 export default function SolarSolutions() {
@@ -12,7 +13,7 @@ export default function SolarSolutions() {
                 {/* Background Image with header and quote overlay */}
                 <div className="relative w-full h-[300px] lg:w-[1440px] lg:h-[550px] md:h-[550px]">
                     <Image
-                        src='/sivacon.jpg'
+                        src={sivaconImg}
                         alt="Cover Image"
                         fill
                         className="object-cover"

@@ -1,7 +1,7 @@
 import React from 'react'
 import Image from 'next/image'
-import mapPin from '../svgs/mapPin2.svg'
-import ue from '../assets/UE.png'
+import mapPin from '@//svgs/mapPin2.svg'
+import ue from '@//assets/UE.png'
 
 export default function ProjectCard() {
   return (

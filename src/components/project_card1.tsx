@@ -1,7 +1,7 @@
 import React from 'react'
 import Image from 'next/image'
-import mapPin from '../svgs/mapPin2.svg'
-import solargen from '../assets/solargen.png'
+import mapPin from '@//svgs/mapPin2.svg'
+import solargen from '@//assets/solargen.png'
 
 export default function ProjectCard() {
   return (

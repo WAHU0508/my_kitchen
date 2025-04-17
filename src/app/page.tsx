@@ -3,26 +3,17 @@ import React, { useState } from 'react';
 import Image from 'next/image';
 import { motion } from 'framer-motion';
 import { useRouter } from 'next/navigation'
-// import electricalsImg from './assets/electricals.png'
-// import switchboardImg from './assets/switchboard.png'
-// import switchboardImg2 from './assets/switchBoard(2).jpeg'
-// import solarpanelImg from './assets/solarpanel.png'
-// import avrImg from './assets/AVR.png'
-// import Carousel from './components/image_carousel'
-import externalLink from './svgs/external_link.svg'
-// import ProductCard1 from './components/products_card1'
-// import ProductCard2 from './components/products_card2'
-// import ProductCard3 from './components/products_card3'
-import ProjectCard1 from './components/project_card1'
-import ProjectCard2 from './components/project_card2'
-import ProjectCard3 from './components/project_card3'
-import Carousel2 from './components/carousel'
-import Item1 from './components/item1'
-import Item2 from './components/item2'
-import Item3 from './components/item3'
-import Item4 from './components/item4'
-import Header from './components/header'
-import Footer from './components/footer'
+import externalLink from '@//svgs/external_link.svg'
+import ProjectCard1 from '@//components/project_card1'
+import ProjectCard2 from '@//components/project_card2'
+import ProjectCard3 from '@//components/project_card3'
+import Carousel2 from '@//components/carousel'
+import Item1 from '@//components/item1'
+import Item2 from '@//components/item2'
+import Item3 from '@//components/item3'
+import Item4 from '@//components/item4'
+import Header from '@//components/header'
+import Footer from '@//components/footer'
 
 export default function HomePage() {
     const router = useRouter();
@@ -84,7 +75,7 @@ export default function HomePage() {
 
     return (
         <section className=' w-full flex flex-col items-center justify-center overflow-x-hidden'>
-            <div className='relative hidden md:block w-full lg:w-[1440px] xl:w-full 2xl:w-full flex flex-col items-center justify-center overflow-y-hidden'>
+            <div className='relative hidden md:block w-full lg:w-[1440px] xl:w-full 2xl:w-full lg:flex flex-col items-center justify-center overflow-y-hidden'>
                 <div className="relative w-full flex items-center justify-center lg:w-full h-[550px] xl:w-full 2xl:w-full">
                     <Carousel2 />
                     <div className="fixed top-4 left-0 w-full lg:z-20">
@@ -121,7 +112,7 @@ export default function HomePage() {
                     viewport={{ once: false, amount: 0.2 }} // this ensures it's triggered every time the section comes into view
                 >
                     <div className='w-[10px] h-[50px] bg-[#252865]'></div>
-                    <p className='w-full lg:w-full text-left text-center text-[#000000] font-light text-[12px] lg:text-[18px] md:text-[18px]'>
+                    <p className='w-full lg:w-full text-center text-[#000000] font-light text-[12px] lg:text-[18px] md:text-[18px]'>
                         Alver Power Systems Ltd is your trusted partner for innovative electrical and renewable energy solutions across Kenya and East Africa.
                         We specialize in high-quality electrical installations, solar energy solutions and custom switchboard manufacturing. We also offer end to end services that include engineering, procurement, construction (EPC) and maintenance.
                     </p>
@@ -390,7 +381,7 @@ export default function HomePage() {
 
                 {/*Projects Done*/}
                 <div className='w-full flex flex-col mt-[40px]'>
-                    <motion.div className='w-full flex flex-row items-center items-center justify-center'
+                    <motion.div className='w-full flex flex-row items-center justify-center'
                                 initial={{ opacity: 0, y: 40 }}
                                 whileInView={{ opacity: 1, y: 0 }}
                                 transition={{ duration: 0.8, ease: 'easeOut' }}

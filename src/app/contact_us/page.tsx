@@ -1,14 +1,12 @@
 'use client'
 import React, { useState } from 'react';
 import Image from 'next/image'
-import location from '../assets/image 25.png'
-import phone from '../assets/Icon.png'
-import mail from '../assets/image 26.png'
-import Header from '../components/header';
-import Footer from '../components/footer';
-// import map from '../assets/image 27.png'
-import contactus from '../assets/contact1.jpg'
-// import { motion } from 'framer-motion';
+import location from '@//assets/image 25.png'
+import phone from '@//assets/Icon.png'
+import mail from '@//assets/image 26.png'
+import Header from '@//components/header';
+import Footer from '@//components/footer';
+import contactus from '@//assets/contact1.jpg'
 
 export default function ContactUsPage() {
   const [formData, setFormData] = useState<FormData>({ name: '', email: '', phone: '', message: '' });

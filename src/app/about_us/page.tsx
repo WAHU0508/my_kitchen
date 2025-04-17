@@ -1,15 +1,15 @@
 'use client'
 import React, { useState } from 'react';
 import Image from 'next/image';
-import coverImg from '../assets/sivacon.jpg';
-import mission1 from '../assets/mission.png';
-import mission2 from '../assets/target.png';
-import vision1 from '../assets/vision.png';
-import vision2 from '../assets/vision (1).png';
-import value1 from '../assets/value.png';
-import value2 from '../assets/diamond.png';
-import Header from '../components/header';
-import Footer from '../components/footer';
+import coverImg from '@//assets/sivacon.jpg';
+import mission1 from '@//assets/mission.png';
+import mission2 from '@//assets/target.png';
+import vision1 from '@//assets/vision.png';
+import vision2 from '@//assets/vision (1).png';
+import value1 from '@//assets/value.png';
+import value2 from '@//assets/diamond.png';
+import Header from '@//components/header';
+import Footer from '@//components/footer';
 import { motion } from 'framer-motion';
 
 export default function AboutUsPage() {

@@ -1,7 +1,7 @@
 import React from 'react'
 import Image from 'next/image'
-import mapPin from '../svgs/mapPin2.svg'
-import imperial from '../assets/Group 23.png'
+import mapPin from '@//svgs/mapPin2.svg'
+import imperial from '@//assets/Group 23.png'
 
 export default function ProjectCard() {
   return (

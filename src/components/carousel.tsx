@@ -1,16 +1,14 @@
 "use client";
  import { useState, useEffect } from "react";
- import Image from "next/image"; // Optional if you're using Next.js
- 
- import solarpanelImg from '../assets/blue-photovoltaic-solar-panels.jpg';
- import sivaconImg from '../assets/sivacon.jpg';
- import electricalsimg from '../assets/img03.jpg'
- import cncimg from '../assets/img04.jpg'
- // import switchboardImg from '../assets/BlokSeT.jpg';
+ import Image from "next/image";
+ import solarpanelImg from '@//assets/blue-photovoltaic-solar-panels.jpg';
+ import sivaconImg from '@//assets/sivacon.jpg';
+ import electricalsimg from '@//assets/img03.jpg'
+ import cncimg from '@//assets/img04.jpg'
  
  const images = [solarpanelImg, sivaconImg, cncimg, electricalsimg];
  
- export default function TailwindCarousel() {
+ export default function HomePageCarousel() {
    const [current, setCurrent] = useState(0);
  
    useEffect(() => {

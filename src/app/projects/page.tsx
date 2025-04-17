@@ -1,16 +1,12 @@
 'use client'
 import React from 'react'
-// import Image from 'next/image';
 import { motion } from 'framer-motion';
-// import coverImg from '../assets/portfolio.jpg';
-// import Header from '../components/header';
-// import Footer from '../components/footer';
-import ProjectCard1 from '../components/project_card1'
-import ProjectCard2 from '../components/project_card2'
-import ProjectCard3 from '../components/project_card3'
-import ProjectCard4 from '../components/project_card4'
-import ProjectCard5 from '../components/project_card5'
-import ProjectCard6 from '../components/project_card6'
+import ProjectCard1 from '@//components/project_card1'
+import ProjectCard2 from '@//components/project_card2'
+import ProjectCard3 from '@//components/project_card3'
+import ProjectCard4 from '@//components/project_card4'
+import ProjectCard5 from '@//components/project_card5'
+import ProjectCard6 from '@//components/project_card6'
 
 export default function ProjectsPage() {
   return (

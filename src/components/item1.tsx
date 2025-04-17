@@ -1,7 +1,7 @@
 'use client';
 import React, { useState } from 'react';
 import Image from 'next/image';
-import solarimg from '../assets/solar-homes.png';
+import solarimg from '@//assets/solar-homes.png';
 
 export default function Product1() {
   const [showDetails, setShowDetails] = useState(false);
