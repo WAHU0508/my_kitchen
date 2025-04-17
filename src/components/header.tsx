@@ -75,7 +75,7 @@ export default function Header() {
                     </Link>
                     <Link
                           href="/about_us"
-                          className={`group h-full flex items-center justify-center font-semibold cursor-pointer hover:text-[#252865] hover:border-b-4 hover:border-[#FF0105] ${
+                          className={`group h-full flex flex-col items-center justify-between font-semibold cursor-pointer hover:text-[#252865] hover:border-b-4 hover:border-[#FF0105] ${
                             pathname === '/about_us' ? 'text-[#FF0105] border-b-4 border-[#FF0105]' : 'text-black'
                           }`}
                         >
@@ -93,7 +93,7 @@ export default function Header() {
                     <div className="h-full relative group">
                       <Link
                         href="/products_and_services"
-                        className={`group h-full flex items-center justify-center font-semibold cursor-pointer hover:text-[#252865] hover:border-b-4 hover:border-[#FF0105] ${
+                        className={`group h-full flex flex-col items-center justify-between font-semibold cursor-pointer hover:text-[#252865] hover:border-b-4 hover:border-[#FF0105] ${
                           pathname === '/products_and_services'
                             ? 'text-[#FF0105] border-b-4 border-[#FF0105]'
                             : 'text-black'
@@ -161,7 +161,7 @@ export default function Header() {
 
                     <Link
                           href="/contact_us"
-                          className={`group h-full flex items-center justify-center font-semibold cursor-pointer hover:text-[#252865] hover:border-b-4 hover:border-[#FF0105] ${
+                          className={`group h-full flex flex-col items-center justify-between font-semibold cursor-pointer hover:text-[#252865] hover:border-b-4 hover:border-[#FF0105] ${
                             pathname === '/contact_us' ? 'text-[#FF0105] border-b-4 border-[#FF0105]' : 'text-black'
                           }`}
                         >
