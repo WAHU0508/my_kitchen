@@ -16,6 +16,17 @@ export default function Header() {
     const [isExpanded, setIsExpanded] = useState(false);
     const pathname = usePathname();
 
+    const [isScrolled, setIsScrolled] = useState(false)
+
+    useEffect(() => {
+        const handleScroll = () => {
+          setIsScrolled(window.scrollY > 50)
+        }
+
+        window.addEventListener('scroll', handleScroll)
+        return () => window.removeEventListener('scroll', handleScroll)
+      }, [])
+
     // Disable scroll when modal is open
     useEffect(() => {
         if (isOpen) {
@@ -29,9 +40,13 @@ export default function Header() {
     }, [isOpen]);
 
     return (
-        <header className='w-full mb-4 flex items-center justify-center'>
+        <header className='w-full mt-4 flex items-center justify-center'>
             {/* Header for large and medium screens */}
-            <div className='hidden border border-[#0000003D] bg-[#FFFFFF] lg:flex lg:flex-row md:flex md:flex-row items-center justify-between px-10 lg:w-[90%] xl:w-[90%] 2xl:w-[90%] md:w-full h-[60px] shadow-xl rounded-[5px]'>
+            <div className={`
+                    hidden border border-[#0000003D] bg-[#FFFFFF] lg:flex lg:flex-row md:flex md:flex-row items-center justify-between px-10 
+                    shadow-xl rounded-[5px] transition-all duration-300 ease-in-out fixed top-0 left-0 right-0 z-50
+                    ${isScrolled ? 'w-full mt-0' : 'lg:w-[90%] xl:w-[90%] 2xl:w-[90%] md:w-full mt-8 mx-auto'}
+                  `}>
                 <Image
                     src={logo}
                     width={150}
