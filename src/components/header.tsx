@@ -71,7 +71,7 @@ export default function Header() {
                         >
                           About Us
                     </Link>
-                    <div className="relative group">
+                    <div className="h-full relative group">
                       <Link
                         href="/products_and_services"
                         className={`h-full flex items-center justify-center font-semibold cursor-pointer hover:text-[#252865] hover:border-b-4 hover:border-[#FF0105] ${
