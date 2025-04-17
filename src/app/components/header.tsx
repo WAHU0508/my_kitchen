@@ -45,7 +45,7 @@ export default function Header() {
             <div className={`
                     hidden border border-[#0000003D] bg-[#FFFFFF] lg:flex lg:flex-row md:flex md:flex-row items-center justify-between px-10 
                     shadow-xl transition-all duration-500 ease-in-out fixed top-0 left-0 right-0 z-50
-                    ${isScrolled ? 'w-full md:h-[50px] lg:h-[70px] mt-0 py-8' : 'lg:w-[95%] xl:w-[95%] 2xl:w-[95%] lg:h-[60px] md:w-full rounded-[5px] mt-4 mx-auto'}
+                    ${isScrolled ? 'w-full md:h-[50px] lg:h-[70px] mt-0' : 'lg:w-[95%] xl:w-[95%] 2xl:w-[95%] lg:h-[60px] md:w-full rounded-[5px] mt-4 mx-auto'}
                   `}>
                 <Image
                     src={logo}
