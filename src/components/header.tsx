@@ -72,21 +72,19 @@ export default function Header() {
                           About Us
                     </Link>
                     <div className="relative group">
-                      <div className="h-full flex items-center justify-center font-semibold cursor-pointer hover:text-[#252865] hover:border-b-4 hover:border-[#FF0105]">
-                        <Link
-                          href="/products_and_services"
-                          className={`${
-                            pathname === '/products_and_services'
-                              ? 'text-[#FF0105] border-b-4 border-[#FF0105]'
-                              : 'text-black'
-                          }`}
-                        >
-                          Products & Services
-                        </Link>
-                      </div>
+                      <Link
+                        href="/products_and_services"
+                        className={`h-full flex items-center justify-center font-semibold cursor-pointer hover:text-[#252865] hover:border-b-4 hover:border-[#FF0105] ${
+                          pathname === '/products_and_services'
+                            ? 'text-[#FF0105] border-b-4 border-[#FF0105]'
+                            : 'text-black'
+                        }`}
+                      >
+                        Products & Services
+                      </Link>
                     
-                      {/* Modal shown on hover */}
-                      <div className="absolute top-full left-0 mt-4 w-[250px] bg-white shadow-lg border border-gray-300 rounded p-4 opacity-0 group-hover:opacity-100 invisible group-hover:visible transition-all duration-300">
+                      {/* Dropdown */}
+                      <div className="absolute top-full left-0 mt-4 w-[250px] bg-white shadow-lg border border-gray-300 rounded p-4 opacity-0 group-hover:opacity-100 invisible group-hover:visible transition-all duration-300 z-10">
                         <ul className="text-sm text-gray-700 space-y-4">
                           <li>
                             <Link
@@ -101,7 +99,7 @@ export default function Header() {
                           <li>
                             <Link
                               href="/products_and_services/switchboard_manufacturing"
-                              className={`border-b border-black/10 flex hover:text-[#FF0105] items-center justify-center px-2 py-1  ${
+                              className={`border-b border-black/10 flex hover:text-[#FF0105] items-center justify-center px-2 py-1 ${
                                 pathname === '/products_and_services/switchboard_manufacturing' ? 'text-red-600' : 'text-black'
                               }`}
                             >
@@ -111,7 +109,7 @@ export default function Header() {
                           <li>
                             <Link
                               href="/products_and_services/CNC"
-                              className={`border-b border-black/10 flex hover:text-[#FF0105] items-center justify-center px-2 py-1  ${
+                              className={`border-b border-black/10 flex hover:text-[#FF0105] items-center justify-center px-2 py-1 ${
                                 pathname === '/products_and_services/CNC' ? 'text-red-600' : 'text-black'
                               }`}
                             >
@@ -121,7 +119,7 @@ export default function Header() {
                           <li>
                             <Link
                               href="/products_and_services/electrical_installation"
-                              className={`border-b border-black/10 flex hover:text-[#FF0105] items-center justify-center px-2 py-1  ${
+                              className={`border-b border-black/10 flex hover:text-[#FF0105] items-center justify-center px-2 py-1 ${
                                 pathname === '/products_and_services/electrical_installation' ? 'text-red-600' : 'text-black'
                               }`}
                             >
@@ -131,6 +129,7 @@ export default function Header() {
                         </ul>
                       </div>
                     </div>
+
 
                     <Link
                           href="/contact_us"
