@@ -29,7 +29,7 @@ export default function HomePage() {
     }
     // State to control modal visibility
     const [isModalOpen, setIsModalOpen] = useState(false);
-    const [formData, setFormData] = useState<FormData>({ name: '', email: '', phone: '', message: '' });
+    const [formData, setFormData] = useState<FormData>({ name: '', email: '', phone: '', message: '', attachment: null, });
     const [status, setStatus] = useState<string>('');
     // Function to open modal
     const openModal = () => {
@@ -46,32 +46,46 @@ export default function HomePage() {
         email: string;
         phone: string;
         message: string;
+        attachment?: File | null;
     }
     const handleChange = (e: React.ChangeEvent<HTMLInputElement | HTMLTextAreaElement>) => {
         setFormData({ ...formData, [e.target.name]: e.target.value });
     };
 
+    const handleFileChange = (e: React.ChangeEvent<HTMLInputElement>) => {
+        if (e.target.files && e.target.files.length > 0) {
+          setFormData({ ...formData, attachment: e.target.files[0] });
+        }
+      };
+
     const handleSubmit = async (e: React.FormEvent) => {
         e.preventDefault();
         setStatus('Sending...');
 
+        const payload = new FormData();
+        payload.append('name', formData.name);
+        payload.append('email', formData.email);
+        payload.append('phone', formData.phone);
+        payload.append('message', formData.message);
+        if (formData.attachment) {
+            payload.append('attachment', formData.attachment);
+        }
+
         try {
             const res = await fetch('/api/contact', {
-                method: 'POST',
-                body: JSON.stringify(formData),
-                headers: { 'Content-Type': 'application/json' },
+            method: 'POST',
+            body: payload,
+            // Don't set headers — let the browser set `Content-Type` with boundary
             });
 
             const data = await res.json();
             setStatus(data.success ? 'Message sent!' : 'Failed to send message.');
-            // Clear status message after 3 seconds
-            setTimeout(() => {
-                setStatus(''); // Reset the status after 3 seconds
-            }, 5000);
+            setTimeout(() => setStatus(''), 5000);
         } catch {
             setStatus('Something went wrong.');
         }
     };
+
 
     return (
         <section className=' w-full flex flex-col items-center justify-center overflow-x-hidden'>
@@ -190,6 +204,12 @@ export default function HomePage() {
                                     <input type="tel" name="phone" placeholder="Phone Number" onChange={handleChange} required className="w-full p-2 border border-[#D9D9D9] rounded text-black" />
                                     <p className='text-black text-[12px] md:text-[20px] lg:text-[18px]'>Your Quote <span className='text-[#FF0105]'>*</span></p>
                                     <textarea name="message" placeholder="Quote / Message" onChange={handleChange} required className="w-full p-2 border rounded border-[#D9D9D9] text-black"></textarea>
+                                    <input
+                                        type="file"
+                                        name="attachment"
+                                        accept=".pdf,.doc,.docx,.jpg,.png"
+                                        onChange={handleFileChange}
+                                    />
                                     <button type="submit" className="bg-[#F4A261] text-black px-4 py-1 rounded">Send</button>
                                     {status && (
                                         <p className={`mt-2 text-center text-xl 
