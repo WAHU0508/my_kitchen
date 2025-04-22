@@ -78,6 +78,7 @@ export default function HomePage() {
             });
 
             const data = await res.json();
+            console.log(payload)
             setStatus(data.success ? 'Message sent!' : 'Failed to send message.');
             setTimeout(() => setStatus(''), 5000);
         } catch {

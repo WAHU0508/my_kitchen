@@ -25,7 +25,18 @@ export async function POST(request) {
       }
 
       const { name, email, phone, message } = fields;
-      const file = files?.attachment;
+      const uploadedFile = Array.isArray(files.attachment) ? files.attachment[0] : files.attachment;
+      console.log('File received:', uploadedFile);
+      
+      const attachments = uploadedFile
+        ? [
+            {
+              filename: uploadedFile.originalFilename,
+              path: uploadedFile.filepath,
+              contentType: uploadedFile.mimetype || 'application/octet-stream',
+            },
+          ]
+        : [];
 
       const transporter = nodemailer.createTransport({
         service: 'gmail',
@@ -34,7 +45,7 @@ export async function POST(request) {
           pass: process.env.MAIL_PASS,
         },
       });
-
+      
       const mailToYou = {
         from: process.env.MAIL_USER,
         to: 'wahugikenye5@gmail.com',
@@ -45,14 +56,7 @@ export async function POST(request) {
           Phone: ${phone}
           Quote: ${message}
         `,
-        attachments: file
-          ? [
-              {
-                filename: file.originalFilename,
-                path: file.filepath,
-              },
-            ]
-          : [],
+        attachments,
       };
 
       const mailToUser = {
