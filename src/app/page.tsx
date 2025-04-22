@@ -75,13 +75,13 @@ export default function HomePage() {
             const res = await fetch('/api/contact', {
             method: 'POST',
             body: payload,
-            // Don't set headers — let the browser set `Content-Type` with boundary
             });
 
             const data = await res.json();
             setStatus(data.success ? 'Message sent!' : 'Failed to send message.');
             setTimeout(() => setStatus(''), 5000);
         } catch {
+            console.log('Error Here')
             setStatus('Something went wrong.');
         }
     };

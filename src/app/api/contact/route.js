@@ -4,7 +4,7 @@ import { IncomingForm } from 'formidable';
 
 export const config = {
   api: {
-    bodyParser: false, // IMPORTANT: disable default body parser
+    bodyParser: false, 
   },
 };
 
