@@ -206,17 +206,24 @@ export default function HomePage() {
                                     <input type="tel" name="phone" placeholder="Phone Number" onChange={handleChange} required className="w-full p-2 border border-[#D9D9D9] rounded text-black" />
                                     <p className='text-black text-[12px] md:text-[20px] lg:text-[18px]'>Your Quote <span className='text-[#FF0105]'>*</span></p>
                                     <textarea name="message" placeholder="Quote / Message" onChange={handleChange} required className="w-full p-2 border rounded border-[#D9D9D9] text-black"></textarea>
-                                    <label className="flex items-center gap-2 cursor-pointer bg-blue-600 hover:bg-blue-700 text-white px-4 py-2 rounded-md shadow-md w-fit">
-                                        <FiUpload className="text-lg" />
-                                        <span>Upload File</span>
-                                        <input
-                                            type="file"
-                                            name="attachment"
-                                            accept=".pdf,.doc,.docx,.xls,.xlsx,.jpg,.png"
-                                            onChange={handleFileChange}
-                                            className="hidden"
-                                        />
-                                    </label>
+                                    <div className='flex flex-row gap-2'>
+                                        <label className="flex items-center gap-2 cursor-pointer bg-blue-600 hover:bg-blue-700 text-white px-4 py-2 rounded-md shadow-md w-fit">
+                                            <FiUpload className="text-lg" />
+                                            <span>Upload File</span>
+                                            <input
+                                                type="file"
+                                                name="attachment"
+                                                accept=".pdf,.doc,.docx,.xls,.xlsx,.jpg,.png"
+                                                onChange={handleFileChange}
+                                                className="hidden"
+                                            />
+                                        </label>
+                                        {formData.attachment && (
+                                                <p className="mt-2 text-sm text-gray-700">
+                                                    Selected file: <strong>{formData.attachment.name}</strong>
+                                                </p>
+                                            )}
+                                    </div>
                                     <button type="submit" className="bg-[#F4A261] text-black px-4 py-1 rounded">Send</button>
                                     {status && (
                                         <p className={`mt-2 text-center text-xl 
