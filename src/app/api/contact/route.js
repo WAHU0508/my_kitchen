@@ -7,10 +7,12 @@ export const config = {
     bodyParser: false, 
   },
 };
-
+console.log('Step 1')
 export async function POST(req) {
+  console.log('Step 2')
   const form = new IncomingForm();
 
+  console.log('Step 3')
   return new Promise((resolve) => {
     form.parse(req, async (err, fields, files) => {
       if (err) {
