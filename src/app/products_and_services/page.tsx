@@ -11,6 +11,18 @@ import Item4 from '@//components/electricals'
 import { motion } from 'framer-motion';
 
 export default function ProductsPage() {
+  const cardVariants = {
+    hidden: { opacity: 0, y: 40 },
+    visible: (i: number) => ({
+      opacity: 1,
+      y: 0,
+      transition: {
+        delay: i * 0.2,
+        duration: 0.6,
+        ease: 'easeOut',
+      },
+    }),
+  };
   
   return (
     <section className="w-full flex flex-col items-center justify-center overflow-x-hidden">
@@ -62,10 +74,18 @@ export default function ProductsPage() {
             </motion.div>
             <div className="w-full flex flex-col items-center justify-center overflow-x-auto lg:overflow-x-hidden lg:overflow-y-hidden">
               <div className="w-full flex flex-wrap justify-center gap-4 px-4">
-                <Item1 />
-                <Item2 />
-                <Item3 />
-                <Item4 />
+                {[Item1, Item2, Item3, Item4].map((Component, index) => (
+                  <motion.div
+                    key={index}
+                    custom={index}
+                    initial="hidden"
+                    whileInView="visible"
+                    viewport={{ once: false, amount: 0.2 }}
+                    variants={cardVariants}
+                  >
+                    <Component />
+                  </motion.div>
+                ))}
               </div>
             </div>
         </motion.div>
