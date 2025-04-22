@@ -1,18 +1,18 @@
 import nodemailer from 'nodemailer';
 import { IncomingForm } from 'formidable';
-//import fs from 'fs';
+import { Readable } from 'stream';
 
 export const config = {
   api: {
-    bodyParser: false, 
+    bodyParser: false,
   },
 };
-console.log('Step 1')
-export async function POST(req) {
-  console.log('Step 2')
+
+export async function POST(request) {
   const form = new IncomingForm();
 
-  console.log('Step 3')
+  const req = await streamRequest(request);
+
   return new Promise((resolve) => {
     form.parse(req, async (err, fields, files) => {
       if (err) {
@@ -65,7 +65,6 @@ export async function POST(req) {
       try {
         await transporter.sendMail(mailToYou);
         await transporter.sendMail(mailToUser);
-
         return resolve(new Response(JSON.stringify({ success: true }), { status: 200 }));
       } catch (error) {
         console.error('Mail error:', error);
@@ -73,4 +72,21 @@ export async function POST(req) {
       }
     });
   });
+}
+
+// Helper to convert NextRequest to Node Readable Stream
+async function streamRequest(request) {
+  const reader = request.body.getReader();
+  const stream = new Readable({
+    async read() {
+      const { done, value } = await reader.read();
+      if (done) this.push(null);
+      else this.push(value);
+    },
+  });
+
+  stream.headers = Object.fromEntries(request.headers.entries());
+  stream.method = request.method;
+  stream.url = request.url;
+  return stream;
 }
