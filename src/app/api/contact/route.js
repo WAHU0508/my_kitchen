@@ -1,6 +1,6 @@
 import nodemailer from 'nodemailer';
 import { IncomingForm } from 'formidable';
-import fs from 'fs';
+//import fs from 'fs';
 
 export const config = {
   api: {
@@ -11,7 +11,7 @@ export const config = {
 export async function POST(req) {
   const form = new IncomingForm();
 
-  return new Promise((resolve, reject) => {
+  return new Promise((resolve) => {
     form.parse(req, async (err, fields, files) => {
       if (err) {
         console.error('Form parse error:', err);
