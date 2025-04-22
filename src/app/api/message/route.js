@@ -14,7 +14,7 @@ export async function POST(req) {
   // Email to you
   const mailToYou = {
     from: process.env.MAIL_USER,
-    to: 'sharonwg0508@gmail.com',
+    to: 'wahugikenye5@gmail.com',
     subject: 'New Message from Alver Website',
     text: `
       Name: ${name}
