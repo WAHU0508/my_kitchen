@@ -29,14 +29,13 @@ export default function Product1() {
         <div className="ml-[50px] mt-[100px] mb-4 flex flex-col gap-3">
           <p className="text-white text-[32px] font-bold">04</p>
           <p className="text-white text-[28px] font-bold h-[60px] leading-tight">Electrical Installation</p>
-          <div className={`w-[50px] border-b-4 border-[#FF0105] transition-all duration-300 ${
-            showDetails ? 'w-[150px]' : ''
-          } group-hover:w-[150px]`}></div>
+          <div className={`border-b-4 border-[#FF0105] transition-all duration-300 
+            ${showDetails ? 'w-[150px]' : 'w-[50px]'} group-hover:w-[150px] lg:group-hover:w-[150px] xl:group-hover:w-[200px] 2xl:group-hover:w-[250px]`}></div>
 
           {/* Description */}
-          <p className={`text-white text-[16px] font-normal max-w-[250px] transition-all duration-500 ease-in-out ${
-            showDetails ? 'opacity-100 translate-y-0' : 'opacity-0 translate-y-4'
-          } group-hover:opacity-100 group-hover:translate-y-0`}>
+          <p className={`text-white text-[16px] font-normal max-w-[250px] lg:max-w-[250px] xl:max-w-[300px] transition-all duration-500 ease-in-out 
+            ${showDetails ? 'opacity-100 translate-y-0' : 'opacity-0 translate-y-4'} 
+            group-hover:opacity-100 group-hover:translate-y-0`}>
             We offer complete electrical installation and wiring services for buildings, from planning and layout to final testing. 
             Our team ensures safe, efficient, and reliable electrical systems tailored to your needs.
           </p>

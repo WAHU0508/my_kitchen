@@ -29,14 +29,13 @@ export default function Product1() {
         <div className="w-full ml-[50px] mt-[100px] mb-4 flex flex-col gap-3">
           <p className="text-white text-[32px] font-bold">02</p>
           <p className="text-white text-[28px] font-bold leading-tight h-[60px]">Switchboard Manufacturing</p>
-          <div className={`w-[50px] border-b-4 border-[#FF0105] transition-all duration-300 ${
-            showDetails ? 'w-[150px]' : ''
-          } group-hover:w-[150px]`}></div>
+          <div className={`border-b-4 border-[#FF0105] transition-all duration-300 
+            ${showDetails ? 'w-[150px]' : 'w-[50px]'} group-hover:w-[150px] lg:group-hover:w-[150px] xl:group-hover:w-[200px] 2xl:group-hover:w-[250px]`}></div>
 
           {/* Description: visible on tap or hover */}
-          <p className={`text-white text-[16px] font-normal max-w-[250px] transition-all duration-500 ease-in-out ${
-            showDetails ? 'opacity-100 translate-y-0' : 'opacity-0 translate-y-4'
-          } group-hover:opacity-100 group-hover:translate-y-0`}>
+          <p className={`text-white text-[16px] font-normal max-w-[250px] lg:max-w-[250px] xl:max-w-[300px] transition-all duration-500 ease-in-out 
+            ${showDetails ? 'opacity-100 translate-y-0' : 'opacity-0 translate-y-4'} 
+            group-hover:opacity-100 group-hover:translate-y-0`}>
             We specialize in the design and manufacturing of high-quality electrical switchboards for industrial, commercial, and residential applications. 
             Our switchboards are safe, efficient, and reliable.
           </p>
