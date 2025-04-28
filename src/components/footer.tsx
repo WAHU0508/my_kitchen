@@ -47,34 +47,58 @@ export default function Footer() {
                     >
                         <p className='text-[18px] text-center'>Follow Us</p>
                         <div className='flex flex-row w-full items-center justify-center gap-4'>
-                            <Image
-                                src={twitter}
-                                alt='Twitter Icon'
-                                width={31}
-                                height={31}
-                                className='hover:border hover:border-black hover:rounded-full hover:p-1'
-                            />
-                            <Image
-                                src={facebook}
-                                alt='Facebook Icon'
-                                width={31}
-                                height={31}
-                                className='hover:border hover:border-black hover:rounded-full hover:p-1'
-                            />
-                            <Image
-                                src={instagram}
-                                alt='Instagram Icon'
-                                width={31}
-                                height={31}
-                                className='hover:border hover:border-black hover:rounded-full hover:p-1'
-                            />
-                            <Image
-                                src={linkedin}
-                                alt='Linkedin Icon'
-                                width={31}
-                                height={31}
-                                className='hover:border hover:border-black hover:rounded-full hover:p-1'
-                            />
+                            <a
+                                href="https://x.com/AlverPower?t=sFrlL2lI0IN8B6d5m7gDgQ&s=09"
+                                target="_blank"
+                                rel="noopener noreferrer"
+                            >
+                                <Image
+                                    src={twitter}
+                                    alt='Twitter Icon'
+                                    width={31}
+                                    height={31}
+                                    className='hover:border hover:border-black hover:rounded-full hover:p-1'
+                                />
+                            </a>
+                            <a
+                                href="https://www.facebook.com/Alver?utm_source=qr&igsh=NzgzcDdzNTFrczV4"
+                                target="_blank"
+                                rel="noopener noreferrer"
+                            >
+                                <Image
+                                    src={facebook}
+                                    alt='Facebook Icon'
+                                    width={31}
+                                    height={31}
+                                    className='hover:border hover:border-black hover:rounded-full hover:p-1'
+                                />
+                            </a>
+                            <a
+                                href="https://www.instagram.com/alverpower?utm_source=qr&igsh=NzgzcDdzNTFrczV4"
+                                target="_blank"
+                                rel="noopener noreferrer"
+                            >
+                                <Image
+                                    src={instagram}
+                                    alt='Instagram Icon'
+                                    width={31}
+                                    height={31}
+                                    className='hover:border hover:border-black hover:rounded-full hover:p-1'
+                                />
+                            </a>
+                            <a
+                                href="https://www.linkedin.com/company/alver-power-systems"
+                                target="_blank"
+                                rel="noopener noreferrer"
+                            >
+                                <Image
+                                    src={linkedin}
+                                    alt='Linkedin Icon'
+                                    width={31}
+                                    height={31}
+                                    className='hover:border hover:border-black hover:rounded-full hover:p-1'
+                                />
+                            </a>
                         </div>
                     </motion.div>
                 </div>
