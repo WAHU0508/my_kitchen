@@ -48,7 +48,7 @@ export async function POST(request) {
       
       const mailToYou = {
         from: process.env.MAIL_USER,
-        to: 'wahugikenye5@gmail.com',
+        to: 'info@alverpower.com',
         subject: 'New Quote Request from Website',
         text: `
           Name: ${name}
