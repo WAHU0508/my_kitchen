@@ -323,27 +323,50 @@ export default function Header() {
                             <div className='w-[186px] h-[70px] flex flex-col items-center justify-between'>
                                 <p className='text-[12px] text-center'>Visit Us on</p>
                                 <div className='flex flex-row w-full items-center justify-between'>
-                                    <Image
-                                        src={twitter}
-                                        alt='Twitter Icon'
-                                        width={23}
-                                        height={23}
-                                        className='hover:border hover:border-black hover:rounded-full hover:p-1'
-                                    />
-                                    <Image
-                                        src={facebook}
-                                        alt='Facebook Icon'
-                                        width={23}
-                                        height={23}
-                                        className='hover:border hover:border-black hover:rounded-full hover:p-1'
-                                    />
-                                    <Image
-                                        src={instagram}
-                                        alt='Instagram Icon'
-                                        width={23}
-                                        height={23}
-                                        className='hover:border hover:border-black hover:rounded-full hover:p-1'
-                                    />
+                                    <a
+                                      href="https://x.com/AlverPower?t=sFrlL2lI0IN8B6d5m7gDgQ&s=09"
+                                      target="_blank"
+                                      rel="noopener noreferrer"
+                                    >
+                                      <Image
+                                          src={twitter}
+                                          alt='Twitter Icon'
+                                          width={23}
+                                          height={23}
+                                          className='hover:border hover:border-black hover:rounded-full hover:p-1'
+                                      />
+                                    </a>
+                                    <a
+                                      href="https://www.facebook.com/Alver?utm_source=qr&igsh=NzgzcDdzNTFrczV4"
+                                      target="_blank"
+                                      rel="noopener noreferrer"
+                                    >
+                                      <Image
+                                          src={facebook}
+                                          alt='Facebook Icon'
+                                          width={23}
+                                          height={23}
+                                          className='hover:border hover:border-black hover:rounded-full hover:p-1'
+                                      />
+                                    </a>
+                                    <a
+                                      href="https://www.instagram.com/alverpower?utm_source=qr&igsh=NzgzcDdzNTFrczV4"
+                                      target="_blank"
+                                      rel="noopener noreferrer"
+                                    >
+                                      <Image
+                                          src={instagram}
+                                          alt='Instagram Icon'
+                                          width={23}
+                                          height={23}
+                                          className='hover:border hover:border-black hover:rounded-full hover:p-1'
+                                      />
+                                    </a>
+                                    <a
+                                      href="https://www.linkedin.com/company/alver-power-systems"
+                                      target="_blank"
+                                      rel="noopener noreferrer"
+                                    >
                                     <Image
                                         src={linkedin}
                                         alt='Linkedin Icon'
@@ -351,6 +374,7 @@ export default function Header() {
                                         height={23}
                                         className='hover:border hover:border-black hover:rounded-full hover:p-1'
                                     />
+                                    </a>
                                 </div>
                             </div>
                         </div>
