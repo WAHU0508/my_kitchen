@@ -12,7 +12,7 @@ export default function Product1() {
 
   return (
     <div 
-      className="relative min-w-[25%] h-[500px] group overflow-hidden cursor-pointer"
+      className="relative min-w-[300px] md:min-w-[300px] lg:min-w-[25%] h-[500px] group overflow-hidden cursor-pointer"
       onClick={toggleDetails}
     >
       <Image 
