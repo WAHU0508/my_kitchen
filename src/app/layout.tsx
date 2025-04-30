@@ -4,8 +4,34 @@ import ClientLayout from "./ClientLayout"; // Import the client-side component
 import "./globals.css";
 
 export const metadata: Metadata = {
-  title: "Alver Power Systems",
-  description: "Alver Power systems Website",
+  title: "Alver Power Systems | Electrical, Solar & Manufacturing Experts",
+  description: " Alver Power System Ltd, a company that offers electrical 
+              consulting and services and is focused on offering full EPC services, including engineering, 
+              procurement, construction, operation, and maintenance, for electrical equipment in Kenya and 
+              Africa at large.",
+  keywords: [
+    "Alver Power Systems",
+    "switchboard manufacturing",
+    "CNC machining",
+    "laser cutting",
+    "solar energy solutions",
+    "electrical installations",
+    "Kenya",
+    "East Africa",
+    "renewable energy",
+    "solar PV systems",
+    "EPC services"
+  ],
+  authors: [{ name: "Alver Power Systems Ltd" }],
+  creator: "Alver Power Systems",
+  themeColor: "#ffffff",
+  openGraph: {
+    title: "Alver Power Systems | Powering Innovation, Ensuring Reliability",
+    description: "Leading provider of electrical and solar energy solutions including switchboard manufacturing, solar installations, and custom fabrication services.",
+    url: "https://alverpower.com",
+    siteName: "Alver Power Systems",
+    type: "website"
+  }
 };
 
 export default function RootLayout({
