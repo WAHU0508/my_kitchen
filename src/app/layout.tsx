@@ -42,6 +42,20 @@ export default function RootLayout({
   }
   return (
     <html lang="en">
+      <head>
+        <script
+          type="application/ld+json"
+          dangerouslySetInnerHTML={{
+            __html: JSON.stringify({
+              "@context": "https://schema.org",
+              "@type": "Organization",
+              "name": "Alver Power Systems",
+              "url": "https://alverpower.com",
+              "logo": "https://alverpower.com/logo.png"
+            }),
+          }}
+        />
+      </head>
       <body>
         {/* Wrap children with ClientLayout to manage client-side rendering */}
         <ClientLayout>{children}</ClientLayout>
