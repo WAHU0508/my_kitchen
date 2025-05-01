@@ -5,10 +5,10 @@ import "./globals.css";
 
 export const metadata: Metadata = {
   title: "Alver Power Systems | Electrical, Solar & Manufacturing Experts",
-  description: " Alver Power System Ltd, a company that offers electrical 
-              consulting and services and is focused on offering full EPC services, including engineering, 
-              procurement, construction, operation, and maintenance, for electrical equipment in Kenya and 
-              Africa at large.",
+  description: `Alver Power System Ltd, a company that offers electrical 
+             consulting and services and is focused on offering full EPC services, including engineering, 
+             procurement, construction, operation, and maintenance, for electrical equipment in Kenya and 
+             Africa at large.`,
   keywords: [
     "Alver Power Systems",
     "switchboard manufacturing",
