@@ -51,7 +51,7 @@ export default function RootLayout({
               "@type": "Organization",
               "name": "Alver Power Systems",
               "url": "https://alverpower.com",
-              "logo": "https://alverpower.com/logo.png"
+              "logo": "https://alverpower.com/logo.jpg"
             }),
           }}
         />
