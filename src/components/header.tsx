@@ -19,7 +19,7 @@ export default function Header() {
     <header className="w-full flex items-center justify-center">
       {/* Header for large and medium screens */}
       <div
-        className={`hidden w-full md:flex md:flex-row items-center justify-between text-white px-4 py-2 ${
+        className={`hidden w-full transition-all duration-500 ease-in-out md:flex md:flex-row items-center justify-between text-white px-8 py-2 ${
           isScrolled ? 'bg-white' : 'bg-black/60'
         } transition-all duration-300 sticky top-0 z-50`}
       >
@@ -53,7 +53,7 @@ export default function Header() {
           >
             Contact Us
           </p>
-          <button className="bg-black text-white px-2 py-1 hover:bg-white hover:text-black transition-all duration-300">
+          <button className={`${isScrolled? 'bg-black text-white' : 'bg-white text-black'} px-2 py-1 hover:bg-white hover:text-black transition-all duration-300`}>
             Get Quote
           </button>
         </nav>
