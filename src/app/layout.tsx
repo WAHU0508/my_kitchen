@@ -39,9 +39,7 @@ export const metadata: Metadata = {
 export default function RootLayout({
   children,
 }: Readonly<{ children: React.ReactNode }>) {
-  const currentUser = {
-    id: 'abc123-user-id', 
-  }
+
   return (
     <html lang="en">
       <head>
