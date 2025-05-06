@@ -5,6 +5,7 @@ export default function HomePage() {
     return (
         <div className='text-black relative'>
             <div className='w-full relative'>
+                <Header className='fixed top-0 left-0 z-20'/>
                 <video
                     src='/Myvideo.mp4'
                     autoPlay
@@ -12,7 +13,6 @@ export default function HomePage() {
                     muted
                     className="w-full"
                 />
-                <Header className='fixed top-0 left-0 z-20'/>
             </div>
         </div>
     )
