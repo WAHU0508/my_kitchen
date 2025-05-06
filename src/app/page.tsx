@@ -5,7 +5,7 @@ export default function HomePage() {
     return (
         <div className='text-black relative'>
             <video
-                src="/promo.mp4"
+                src={appvideo}
                 controls
                 autoPlay
                 loop
