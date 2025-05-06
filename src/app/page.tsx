@@ -15,7 +15,9 @@ export default function HomePage() {
                     muted
                     className="w-full"
                 />
-                <p className='absolute text-[64px] text-white font-bold w-full'>Powering Innovation, Ensuring Reliability</p>
+                <div className='w-full absolute top-4 '>
+                    <p className='text-[64px] text-white font-bold w-full'>Powering Innovation, Ensuring Reliability</p>
+                </div>
             </div>
         </div>
     )
