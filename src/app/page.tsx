@@ -1,12 +1,10 @@
 import React from 'react'
-import appvideo from '@//assets/My video.mp4'
 
 export default function HomePage() {
     return (
         <div className='text-black relative'>
             <video
-                src={appvideo}
-                controls
+                src='/Myvideo.mp4'
                 autoPlay
                 loop
                 muted
