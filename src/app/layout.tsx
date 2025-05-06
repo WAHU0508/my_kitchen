@@ -1,7 +1,7 @@
 import type { Metadata } from "next";
-import Chatbot from '@//components/chatbot'
-import ClientLayout from "./ClientLayout"; // Import the client-side component
 import "./globals.css";
+import Header from "@//components/header";
+import Footer from "@//components/footer";
 
 export const metadata: Metadata = {
   title: "Alver Power Systems | Electrical, Solar & Manufacturing Experts",
@@ -61,9 +61,9 @@ export default function RootLayout({
         />
       </head>
       <body>
-        {/* Wrap children with ClientLayout to manage client-side rendering */}
-        <ClientLayout>{children}</ClientLayout>
-        <Chatbot userId={currentUser.id} />
+        <Header/>
+        {children}
+        <Footer/>
       </body>
     </html>
   );

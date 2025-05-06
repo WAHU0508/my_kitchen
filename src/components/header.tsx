@@ -1,44 +1,7 @@
 'use client';
-import React, { useState, useEffect } from 'react';
-import { usePathname } from 'next/navigation';
-import Link from 'next/link';
-import Image from 'next/image';
-import logo from '@//assets/logo2.jpg';
-import { Menu, Clock } from 'lucide-react';
-import mapPin from "@//svgs/mapPin2.svg"
-import twitter from '@//svgs/twitter.svg'
-import facebook from '@//svgs/facebook.svg';
-import instagram from '@//svgs/instagram.svg';
-import linkedin from '@//svgs/linkedin.svg';
-import pointer from '@//svgs/pointer.svg';
+import React from 'react';
 
 export default function Header() {
-    const [isOpen, setIsOpen] = useState(false);
-    const [isExpanded, setIsExpanded] = useState(false);
-    const pathname = usePathname();
-
-    const [isScrolled, setIsScrolled] = useState(false)
-
-    useEffect(() => {
-        const handleScroll = () => {
-          setIsScrolled(window.scrollY > 50)
-        }
-
-        window.addEventListener('scroll', handleScroll)
-        return () => window.removeEventListener('scroll', handleScroll)
-      }, [])
-
-    // Disable scroll when modal is open
-    useEffect(() => {
-        if (isOpen) {
-            document.body.style.overflow = 'hidden';
-            document.body.style.position = 'fixed';
-            document.body.style.width = '100%';
-        } else {
-            document.body.style.overflow = 'auto';
-            document.body.style.position = 'static';
-        }
-    }, [isOpen]);
 
     return (
         <header className='w-full flex items-center justify-center'>
