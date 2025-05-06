@@ -15,6 +15,7 @@ export default function HomePage() {
                     muted
                     className="w-full"
                 />
+                <p className='absolute text-[64px] text-white font-bold w-full'>Powering Innovation, Ensuring Reliability</p>
             </div>
         </div>
     )
