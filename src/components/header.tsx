@@ -26,32 +26,32 @@ export default function Header() {
         } transition-all duration-300 sticky top-0 z-50`}
       >
         <Image src={logo} alt="Alver Power Logo" width={150} height={45} />
-        <nav className="flex flex-row md:gap-2 lg:gap-6 items-center">
+        <nav className="flex flex-row md:gap-4 lg:gap-6 items-center">
           <p
             className={`${
               isScrolled ? 'text-black' : 'text-white'
-            } text-[18px] hover:text-[#C45308] cursor-pointer transition-colors duration-300`}
+            } md:text-[12px] lg:text-[18px] xl:text-[20px] hover:text-[#C45308] cursor-pointer transition-colors duration-300`}
           >
             Home
           </p>
           <p
             className={`${
               isScrolled ? 'text-black' : 'text-white'
-            } text-[18px] hover:text-[#C45308] cursor-pointer transition-colors duration-300`}
+            } md:text-[12px] lg:text-[18px] xl:text-[20px] hover:text-[#C45308] cursor-pointer transition-colors duration-300`}
           >
             About
           </p>
           <p
             className={`${
               isScrolled ? 'text-black' : 'text-white'
-            } text-[18px] hover:text-[#C45308] cursor-pointer transition-colors duration-300`}
+            } md:text-[12px] lg:text-[18px] xl:text-[20px] hover:text-[#C45308] cursor-pointer transition-colors duration-300`}
           >
             Products & Services
           </p>
           <p
             className={`${
               isScrolled ? 'text-black' : 'text-white'
-            } text-[18px] hover:text-[#C45308] cursor-pointer transition-colors duration-300`}
+            } md:text-[12px] lg:text-[18px] xl:text-[20px] hover:text-[#C45308] cursor-pointer transition-colors duration-300`}
           >
             Contact Us
           </p>
@@ -62,8 +62,8 @@ export default function Header() {
       </div>
 
       {/* header for smaller screens */}
-      <div className='lg:hidden md:hidden flex flex-row w-full items-center gap-2 mt-2 ml-2 mr-[20px]'>
-        <div className='bg-black/60 flex items-center justify-center shadow-xl rounded-[10px] w-full'>
+      <div className='lg:hidden md:hidden flex flex-row w-full items-center justify-between bg-black/60'>
+        <div className='flex items-center justify-center w-full'>
             <Image
                 src={logo}
                 width={120}
