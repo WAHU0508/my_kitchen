@@ -1,9 +1,11 @@
 'use client';
 import React, { useEffect, useState } from 'react';
 import Image from 'next/image';
+import { Menu } from 'lucide-react';
 import logo from '@//assets/logo.png';
 
 export default function Header() {
+  const [isOpen, setIsOpen] = useState(false);
   const [isScrolled, setIsScrolled] = useState(false);
 
   useEffect(() => {
@@ -57,6 +59,22 @@ export default function Header() {
             Get Quote
           </button>
         </nav>
+      </div>
+
+      {/* header for smaller screens */}
+      <div className='lg:hidden md:hidden flex flex-row w-full items-center gap-2 mt-2 ml-2 mr-[20px]'>
+        <div className='border border-[#0000003D] bg-[#FFFFFF] flex items-center justify-center shadow-xl rounded-[10px] w-full h-[40px]'>
+            <Image
+                src={logo}
+                width={120}
+                height={38}
+                alt='Alver Power Systems logo'
+                className='w-[120px] h-[38px]'
+            />
+        </div>
+        <button onClick={() => setIsOpen(true)}>
+            <Menu size={31} color='white'/>
+        </button>
       </div>
     </header>
   );
