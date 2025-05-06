@@ -15,8 +15,9 @@ export default function HomePage() {
                     muted
                     className="w-full"
                 />
-                <div className='absolute top-50 left-1/2 transform -translate-x-1/2 text-center'>
+                <div className='absolute top-40 left-1/2 transform -translate-x-1/2 text-center'>
                     <p className='text-[64px] text-white font-bold'>Powering Innovation, Ensuring Reliability</p>
+                    <p className='text-[24px] text-white font-normal'>Experience the power of alver power</p>
                 </div>
             </div>
         </div>
