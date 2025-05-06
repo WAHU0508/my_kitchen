@@ -58,10 +58,8 @@ export default function RootLayout({
           }}
         />
       </head>
-      <body className='relative'>
-        <Header className="fixed top-4 left-0 w-full lg:z-20"/>
+      <body>
         {children}
-        <Footer/>
       </body>
     </html>
   );
