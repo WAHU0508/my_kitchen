@@ -1,4 +1,5 @@
 import React from 'react'
+import Image from 'next/image'
 import Header from '@//components/header'
 import strip1 from '@//assets/strip1.png'
 
