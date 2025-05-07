@@ -5,7 +5,6 @@ import { Menu } from 'lucide-react';
 import logo from '@//assets/logo.png';
 
 export default function Header() {
-  const [isOpen, setIsOpen] = useState(false);
   const [isScrolled, setIsScrolled] = useState(false);
 
   useEffect(() => {
@@ -72,7 +71,7 @@ export default function Header() {
                 className='w-[120px] h-[38px]'
             />
         </div>
-        <button onClick={() => setIsOpen(true)}>
+        <button>
             <Menu size={31} color='white'/>
         </button>
       </div>
