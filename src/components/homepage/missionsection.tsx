@@ -1,4 +1,6 @@
-import React from 'react'
+import React from 'react';
+import sivacon from '@//assets/sivacon.png'
+import Image from 'next/image';
 
 function MissionSection() {
   return (
@@ -14,6 +16,11 @@ function MissionSection() {
                     implementation or supporting technical, managerial and business operational systems
                 </p>
             </div>
+            <Image
+                src={sivacon}
+                alt='sivacon'
+                className='w-full h-auto object-cover'
+            />
         </div>
     </div>
   )
