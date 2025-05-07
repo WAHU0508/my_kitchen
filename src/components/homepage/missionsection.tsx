@@ -4,7 +4,7 @@ import Image from 'next/image';
 
 function MissionSection() {
   return (
-    <div className='w-full bg-black h-auto text-white flex items-center justify-center lg:pt-[30px]'>
+    <div className='w-full bg-black h-auto text-white flex items-center justify-center lg:pt-[70px]'>
         <div className='w-[80%] border-l-1 border-white h-auto flex lg:flex-row'>
             <div className='mt-[50px] border-l-2 border-white lg:h-[100px]'></div>
             <div className='flex flex-col lg:ml-[50px]'>
