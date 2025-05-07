@@ -62,7 +62,7 @@ export default function Header() {
       </div>
 
       {/* header for smaller screens */}
-      <div className='lg:hidden md:hidden flex flex-row w-full items-center justify-between bg-black/60'>
+      <div className='lg:hidden md:hidden flex flex-row w-full items-center justify-between bg-black/60 px-2'>
         <div className='flex items-center justify-center w-full'>
             <Image
                 src={logo}
