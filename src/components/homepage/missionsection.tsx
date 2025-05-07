@@ -16,13 +16,11 @@ function MissionSection() {
                     implementation or supporting technical, managerial and business operational systems
                 </p>
             </div>
-            <div className='w-full'>
-                <Image
-                    src={sivacon}
-                    alt='sivacon'
-                    className='w-full h-auto object-cover'
-                />
-            </div>
+            <Image
+                src={sivacon}
+                alt='sivacon'
+                className='w-full h-auto object-cover'
+            />
         </div>
     </div>
   )
