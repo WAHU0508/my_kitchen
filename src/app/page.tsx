@@ -21,7 +21,7 @@ export default function HomePage() {
                     <p className='text-[24px] md:text-[50px] lg:text-[64px] text-white font-bold'>Powering Innovation, Ensuring Reliability</p>
                     <p className='text-[16px] md:text-[20px] lg:text-[24px] text-white font-normal'>Experience the power of alver power</p>
                 </div>
-                <div className='w-full absolute top-50 md:top-70 lg:top-100'>
+                <div className='w-full absolute top-30 md:top-70 lg:top-130'>
                     <Image
                         src={strip1}
                         alt='Strip1'

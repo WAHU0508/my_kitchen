@@ -1,4 +1,4 @@
-import type { Metadata } from "next";
+import type { Metadata, Viewport } from "next";
 import "./globals.css";
 
 export const metadata: Metadata = {
@@ -24,7 +24,6 @@ export const metadata: Metadata = {
   ],
   authors: [{ name: "Alver Power Systems Ltd" }],
   creator: "Alver Power Systems",
-  themeColor: "#ffffff",
   openGraph: {
     title: "Alver Power Systems | Powering Innovation, Ensuring Reliability",
     description: "Leading provider of electrical and solar energy solutions including switchboard manufacturing, solar installations, and custom fabrication services.",
@@ -32,6 +31,12 @@ export const metadata: Metadata = {
     siteName: "Alver Power Systems",
     type: "website"
   }
+};
+
+export const viewport: Viewport = {
+  themeColor: "#ffffff",
+  width: "device-width",
+  initialScale: 1,
 };
 
 export default function RootLayout({
