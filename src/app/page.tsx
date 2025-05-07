@@ -32,7 +32,7 @@ export default function HomePage() {
             </div>
 
             {/* Mission section */}
-            <div className='w-full mt-[50px] md:mt-[100px] lg:mt-[150px]'>
+            <div className='w-full mt-[10px] md:mt-[70px] lg:mt-[130px]'>
                 <MissionSection/>
             </div>
         </div>
