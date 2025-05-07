@@ -6,7 +6,7 @@ import MissionSection from '@//components/homepage/missionsection'
 
 export default function HomePage() {
     return (
-        <div className='w-full flex flex-col items-center justify-center'>
+        <div className='w-full flex flex-col items-center justify-center bg-black'>
             <div className='w-full relative'>
                 <div className='w-full fixed top-0 left-0 z-20'>
                     <Header/>
