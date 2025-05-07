@@ -2,10 +2,11 @@ import React from 'react'
 import Image from 'next/image'
 import Header from '@//components/header'
 import strip1 from '@//assets/strip1.png'
+import MissionSection from '@//components/homepage/missionsection'
 
 export default function HomePage() {
     return (
-        <div className='text-black relative'>
+        <div className='w-full flex items-center justify-center'>
             <div className='w-full relative'>
                 <div className='w-full fixed top-0 left-0 z-20'>
                     <Header/>
@@ -28,6 +29,10 @@ export default function HomePage() {
                         className='w-full h-auto object-cover'
                     />
                 </div>
+            </div>
+            {/* Mission section */}
+            <div className='w-full'>
+                <MissionSection/>
             </div>
         </div>
     )
