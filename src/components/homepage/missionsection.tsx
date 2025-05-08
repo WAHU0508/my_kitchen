@@ -7,7 +7,7 @@ function MissionSection() {
     <div className='w-full bg-black h-auto text-white flex items-center justify-center lg:pt-[70px]'>
         <div className=' w-[95%] md:w-[95%] lg:w-[80%] border-l-1 border-white h-auto flex flex-row'>
             <div className='mt-[50px] border-l-2 border-white h-[100px] md:h-[100px] lg:h-[100px]'></div>
-            <div className='flex flex-col md:flex-row lg:flex-row'>
+            <div className='w-full flex flex-col md:flex-row lg:flex-row'>
                 <div className='flex flex-col ml-[30px] md:ml-[30px] md:w-[600px] lg:ml-[50px] lg:w-[600px]'>
                     <p className='text-[12px] md:text-[14px] lg:text-[14px]'>Mission</p>
                     <p className='text-[16px] md:text-[18px] lg:text-[18px] mt-[30px] md:mt-[30px] lg:mt-[50px]'>Our mission is to build lasting, mutually beneficial relationships with each of our esteemed 
