@@ -1,6 +1,6 @@
 import React from 'react';
 import sivacon from '@//assets/sivacon.png'
-// import Image from 'next/image';
+import Image from 'next/image';
 
 function MissionSection() {
   return (
@@ -16,10 +16,10 @@ function MissionSection() {
                     implementation or supporting technical, managerial and business operational systems
                 </p>
             </div>
-            <div
-                className="w-full bg-no-repeat bg-cover bg-center"
-                style={{ backgroundImage: `url(${sivacon.src})` }}
-            ></div>
+            <Image
+                src={sivacon}
+                className='w-full h-auto object-contain'
+            />
         </div>
     </div>
   )
