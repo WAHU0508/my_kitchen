@@ -18,6 +18,7 @@ function MissionSection() {
             </div>
             <Image
                 src={sivacon}
+                alt='Sivacon Image'
                 className='w-full h-auto object-contain'
             />
         </div>
