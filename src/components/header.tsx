@@ -27,22 +27,22 @@ export default function Header() {
         <Image src={logo} alt="Alver Power Logo" width={150} height={45} />
         <nav className="flex flex-row md:gap-4 lg:gap-6 items-center">
           <p
-            className='text-white md:text-[12px] lg:text-[18px] xl:text-[20px] hover:text-[#C45308] cursor-pointer transition-colors duration-300'
+            className='text-white md:text-[12px] lg:text-[16px] xl:text-[16px] hover:text-[#C45308] cursor-pointer transition-colors duration-300'
           >
             Home
           </p>
           <p
-            className='text-white md:text-[12px] lg:text-[18px] xl:text-[20px] hover:text-[#C45308] cursor-pointer transition-colors duration-300'
+            className='text-white md:text-[12px] lg:text-[16px] xl:text-[16px] hover:text-[#C45308] cursor-pointer transition-colors duration-300'
           >
             About
           </p>
           <p
-            className='text-white md:text-[12px] lg:text-[18px] xl:text-[20px] hover:text-[#C45308] cursor-pointer transition-colors duration-300'
+            className='text-white md:text-[12px] lg:text-[16px] xl:text-[16px] hover:text-[#C45308] cursor-pointer transition-colors duration-300'
           >
             Products & Services
           </p>
           <p
-            className='text-white md:text-[12px] lg:text-[18px] xl:text-[20px] hover:text-[#C45308] cursor-pointer transition-colors duration-300'
+            className='text-white md:text-[12px] lg:text-[16px] xl:text-[16px] hover:text-[#C45308] cursor-pointer transition-colors duration-300'
           >
             Contact Us
           </p>
