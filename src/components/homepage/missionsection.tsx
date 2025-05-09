@@ -16,7 +16,7 @@ function MissionSection() {
         <div className='w-full flex flex-col md:flex-row lg:flex-row'>
           <div className='flex flex-col ml-[30px] md:ml-[30px] md:w-[600px] lg:ml-[50px] lg:w-[600px]'>
             <p className='text-[12px] md:text-[14px] lg:text-[14px]'>Mission</p>
-            <p className='text-[16px] md:text-[18px] lg:text-[18px] mt-[30px]'>
+            <p className='text-[14px] md:text-[18px] lg:text-[18px] mt-[30px] text-justify'>
               Our mission is to build lasting, mutually beneficial relationships with each of our esteemed 
               clients by continually exceeding their expectations and earning their confidence via the 
               excellent and devoted work of every member of the Alver power System Team. Also to offer 

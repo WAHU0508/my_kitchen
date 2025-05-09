@@ -9,7 +9,7 @@ import MissionSection from '@//components/homepage/missionsection'
 export default function HomePage() {
     return (
         <div className='w-full flex flex-col items-center justify-center bg-black'>
-            <div className='w-full relative h-auto'>
+            <div className='w-full relative'>
                 <div className='w-full fixed top-0 left-0 z-20'>
                     <Header/>
                 </div>
@@ -20,11 +20,11 @@ export default function HomePage() {
                     muted
                     className="w-full lg:min-h-screen"
                 />
-                <div className='absolute top-10 md:top-20 lg:top-40 lg:left-1/2 lg:transform lg:-translate-x-1/2 text-center'>
+                {/* <div className='absolute top-10 md:top-20 lg:top-40 lg:left-1/2 lg:transform lg:-translate-x-1/2 text-center'>
                     <p className='text-[24px] md:text-[50px] lg:text-[64px] text-white font-bold'>Powering Innovation, Ensuring Reliability</p>
                     <p className='text-[16px] md:text-[20px] lg:text-[24px] text-white font-normal'>Experience the power of alver power</p>
-                </div>
-                <div className='w-full absolute top-30 md:top-70 lg:top-130'>
+                </div> */}
+                <div className='hidden md:block w-full absolute top-30 md:top-70 lg:top-130'>
                     <Image
                         src={strip1}
                         alt='Strip1'
