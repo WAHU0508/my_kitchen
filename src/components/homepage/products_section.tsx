@@ -4,7 +4,7 @@ import sivacon from '@//assets/sivacon(2).jpg'
 
 function ProductsSection() {
   return (
-    <div className='w-full bg-white h-auto text-black flex flex-col md:flex-row items-center justify-center mt-[20px]'>
+    <div className='w-full bg-white h-auto text-black flex flex-col md:flex-row items-center justify-center pt-[20px]'>
         <div className='w-[95%] md:w-[95%] lg:w-[80%] h-auto flex flex-col md:flex-row items-center justify-center'>
             <div className='w-[50%]'>
                 <div className='text-black lg:w-[70%] flex flex-col gap-[50px]'>
