@@ -13,8 +13,8 @@ function ProductsSection() {
                         we offer high-quality manufacturing solutions tailored to meet your specific requirements.
                     </p>
                     <button className='bg-white text-black flex flex-row'>
-                        <p className='border border-black px-4 py-1'>read more</p>
-                        <p className='border border-l-0 border-black px-4 py-1'>A</p>
+                        <p className='border border-black px-4 py-1 rounded-tl-[10px] rounded-bl-[10px]'>read more</p>
+                        <p className='border border-l-0 border-black px-4 py-1 rounded-tr-[10px] rounded-br-[10px]'>A</p>
                     </button>
                 </div>
                 
