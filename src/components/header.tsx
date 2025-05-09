@@ -27,36 +27,28 @@ export default function Header() {
         <Image src={logo} alt="Alver Power Logo" width={150} height={45} />
         <nav className="flex flex-row md:gap-4 lg:gap-6 items-center">
           <p
-            className={`${
-              isScrolled ? 'text-black' : 'text-white'
-            } md:text-[12px] lg:text-[18px] xl:text-[20px] hover:text-[#C45308] cursor-pointer transition-colors duration-300`}
+            className='text-white md:text-[12px] lg:text-[18px] xl:text-[20px] hover:text-[#C45308] cursor-pointer transition-colors duration-300'
           >
             Home
           </p>
           <p
-            className={`${
-              isScrolled ? 'text-black' : 'text-white'
-            } md:text-[12px] lg:text-[18px] xl:text-[20px] hover:text-[#C45308] cursor-pointer transition-colors duration-300`}
+            className='text-white md:text-[12px] lg:text-[18px] xl:text-[20px] hover:text-[#C45308] cursor-pointer transition-colors duration-300'
           >
             About
           </p>
           <p
-            className={`${
-              isScrolled ? 'text-black' : 'text-white'
-            } md:text-[12px] lg:text-[18px] xl:text-[20px] hover:text-[#C45308] cursor-pointer transition-colors duration-300`}
+            className='text-white md:text-[12px] lg:text-[18px] xl:text-[20px] hover:text-[#C45308] cursor-pointer transition-colors duration-300'
           >
             Products & Services
           </p>
           <p
-            className={`${
-              isScrolled ? 'text-black' : 'text-white'
-            } md:text-[12px] lg:text-[18px] xl:text-[20px] hover:text-[#C45308] cursor-pointer transition-colors duration-300`}
+            className='text-white md:text-[12px] lg:text-[18px] xl:text-[20px] hover:text-[#C45308] cursor-pointer transition-colors duration-300'
           >
             Contact Us
           </p>
-          <button className={`${isScrolled? 'bg-black text-white' : 'bg-white text-black'} px-2 py-1 hover:bg-white hover:text-black transition-all duration-300`}>
+          {/* <button className={`${isScrolled? 'bg-black text-white' : 'bg-white text-black'} px-2 py-1 hover:bg-white hover:text-black transition-all duration-300`}>
             Get Quote
-          </button>
+          </button> */}
         </nav>
       </div>
 
