@@ -18,7 +18,7 @@ export default function HomePage() {
                     autoPlay
                     loop
                     muted
-                    className="w-full"
+                    className="w-full min-h-screen"
                 />
                 <div className='absolute top-10 md:top-20 lg:top-40 lg:left-1/2 lg:transform lg:-translate-x-1/2 text-center'>
                     <p className='text-[24px] md:text-[50px] lg:text-[64px] text-white font-bold'>Powering Innovation, Ensuring Reliability</p>
