@@ -21,7 +21,7 @@ export default function Header() {
       {/* Header for large and medium screens */}
       <div
         className={`hidden w-full transition-all duration-500 ease-in-out md:flex md:flex-row items-center justify-between text-white lg:px-8 py-2 ${
-          isScrolled ? 'bg-white' : 'bg-black/60'
+          isScrolled ? 'bg-black/60' : ''
         } transition-all duration-300 sticky top-0 z-50`}
       >
         <Image src={logo} alt="Alver Power Logo" width={150} height={45} />
