@@ -5,7 +5,7 @@ import sivacon from '@//assets/sivacon(2).jpg'
 function ProductsSection() {
   return (
     <div className='w-full bg-white h-auto text-black flex flex-col md:flex-row items-center justify-center pt-[20px]'>
-        <div className='w-full h-auto flex flex-col md:flex-row items-center justify-between lg:pl-[20%]'>
+        <div className='w-full h-auto flex flex-col md:flex-row items-center justify-between lg:pl-[10%]'>
             <div className='w-[50%]'>
                 <div className='text-black lg:w-[70%] flex flex-col gap-[50px]'>
                     <p className='lg:text-[40px]'>Switchboard Manufacturing</p>
