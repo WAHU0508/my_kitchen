@@ -7,7 +7,7 @@ function ProductsSection() {
     <div className='w-full bg-white h-auto text-black flex flex-col md:flex-row items-center justify-center pt-[20px]'>
         <div className='w-full h-auto flex flex-col md:flex-row items-center justify-center md:justify-between md:pl-[5%] lg:pl-[10%]'>
             <div className='w-[95%] md:w-[50%] h-auto'>
-                <div className='text-black w-full md:w-[90%] flex flex-col items-center justify-between'>
+                <div className='text-black w-full md:w-[90%] flex flex-col items-start gap-[20px] md:gap-[20px] lg:gap-[100px]'>
                     <p className='text-[24px] md:text-[32px] lg:text-[40px]'>Switchboard Manufacturing</p>
                     <p className='text-[12px] md:text-[16px] lg:text-[16px]'>From custom-designed switch boards to panel assemblies, 
                         we offer high-quality manufacturing solutions tailored to meet your specific requirements.
