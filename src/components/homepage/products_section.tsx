@@ -18,7 +18,7 @@ function ProductsSection() {
                     </button>
                 </div>
             </div>
-            <div className='w-full h-auto'>
+            <div className='w-full lg:w-[50%] h-auto'>
                 <Image
                     src={sivacon}
                     alt='Sivacon Image'
