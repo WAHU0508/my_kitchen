@@ -6,10 +6,10 @@ function ProductsSection() {
   return (
     <div className='w-full bg-white h-auto text-black flex flex-col md:flex-row items-center justify-center pt-[20px]'>
         <div className='w-full h-auto flex flex-col md:flex-row items-center justify-between lg:pl-[10%]'>
-            <div className='w-[50%]'>
-                <div className='text-black lg:w-[70%] flex flex-col gap-[50px]'>
-                    <p className='lg:text-[40px]'>Switchboard Manufacturing</p>
-                    <p className='lg:text-[16px]'>From custom-designed switch boards to panel assemblies, 
+            <div className='md:w-[50%]'>
+                <div className='text-black w-full md:w-[50%] lg:w-[70%] flex flex-col gap-[50px]'>
+                    <p className='text-[24px] md:text-[32px] lg:text-[40px]'>Switchboard Manufacturing</p>
+                    <p className='text-[12px] md:text-[14px] lg:text-[16px]'>From custom-designed switch boards to panel assemblies, 
                         we offer high-quality manufacturing solutions tailored to meet your specific requirements.
                     </p>
                     <button className='bg-white text-black flex flex-row'>
@@ -30,4 +30,4 @@ function ProductsSection() {
   )
 }
 
-export default ProductsSection
+export default ProductsSection;
