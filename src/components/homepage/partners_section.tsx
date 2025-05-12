@@ -23,12 +23,12 @@ function PartnersSection() {
             </p>
           </div>
 
-          <div className='w-full h-auto grid grid-cols-2 items-center justify-center'>
+          <div className='ml-[20px] w-full h-auto grid grid-cols-2 items-center justify-center'>
             <div>
                 <Image
                     src={schneider_logo}
                     alt='Schneider Logo'
-                    className='w-[150px] h-[100px]'
+                    className='w-[100px] h-[70px]'
                 />
             </div>
             <div>
