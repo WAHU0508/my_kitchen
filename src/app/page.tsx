@@ -7,6 +7,7 @@ import strip1 from '@//assets/strip1.png'
 import MissionSection from '@//components/homepage/missionsection'
 import ProductsSection from '@//components/homepage/products_section'
 import backgroundImg from '@//assets/background1.png'
+import downloadImg from '@//assets/download (1).png'
 
 export default function HomePage() {
     return (
@@ -78,6 +79,20 @@ export default function HomePage() {
                             </button>
                         </div>
                     </div>
+                </div>
+            </div>
+
+            {/* Alver In Numbers */}
+            <div className='flex flex-col-reverse md:flex-row w-full h-auto bg-white'>
+                <div className='w-full md:w-[50%]'>
+                    <Image
+                    src={downloadImg}
+                    alt='Alver In Numbers'
+                    className='w-full h-auto'
+                />
+                </div>
+                <div className='w-full flex items-center justify-center'>
+                    <p>Alver power in Numbers</p>
                 </div>
             </div>
         </div>
