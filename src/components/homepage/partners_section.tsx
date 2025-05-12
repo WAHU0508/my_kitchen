@@ -28,28 +28,28 @@ function PartnersSection() {
                 <Image
                     src={schneider_logo}
                     alt='Schneider Logo'
-                    className='w-[100px] h-[70px]'
+                    
                 />
             </div>
             <div>
                 <Image
                     src={siemens_logo}
                     alt='Siemens Logo'
-                    className='w-[150px] h-[100px]'
+                    
                 />
             </div>
             <div>
                 <Image
                     src={bodor_logo}
                     alt='Bodor Logo'
-                    className='w-[150px] h-[100px]'
+                    
                 />
             </div>
             <div>
                 <Image
                     src={cs_logo}
                     alt='C&S Logo'
-                    className='w-[150px] h-[100px]'
+                    
                 />
             </div>
           </div>
