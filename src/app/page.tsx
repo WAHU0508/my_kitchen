@@ -42,7 +42,7 @@ export default function HomePage() {
             </div>
 
             {/* Our Expertise */}
-            <div className='w-full bg-white h-auto text-black flex items-center justify-center lg:pt-[70px]'>
+            <div className='w-full bg-white pt-[20px] h-auto text-black flex items-center justify-center lg:pt-[70px]'>
                 <div className=' w-[95%] md:w-[95%] lg:w-[80%] border-l-2 border-black h-auto flex flex-row'>
                     <div className='mt-[50px] border-l-2 border-black h-[100px] md:h-[100px] lg:h-[100px]'></div>
                     <div className='w-full flex flex-col md:flex-row lg:flex-row'>
@@ -91,9 +91,9 @@ export default function HomePage() {
                     className='w-full h-auto'
                 />
                 </div>
-                <div className='w-full md:w-[50%] flex flex-col items-center justify-center text-black'>
+                <div className='border border-black w-full md:w-[50%] ml-[20px] md:ml-[50px] flex flex-col text-black'>
                     <p className='text-[24px]'>Alver power in Numbers</p>
-                    <div className='w-full grid grid-cols-2 items-center justify-center'>
+                    <div className='w-full grid grid-cols-2 border border-black '>
                        <div className='flex flex-col'>
                         <p className='text-[40px] mt-4 mb-4'>200+</p>
                         <div className='border-b-2 border-black w-[40px]'></div>
