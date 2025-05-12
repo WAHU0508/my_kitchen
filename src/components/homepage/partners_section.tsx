@@ -52,6 +52,13 @@ function PartnersSection() {
             </div>
             <div>
                 <Image
+                    src={cs_logo}
+                    alt='Bodor Logo'
+                    className='border border-white h-[200px]'
+                />
+            </div>
+            <div>
+                <Image
                     src={ABB_logo}
                     alt='ABB Logo'
                     className='border border-white h-[200px]'
