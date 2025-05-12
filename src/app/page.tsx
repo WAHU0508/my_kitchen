@@ -93,7 +93,7 @@ export default function HomePage() {
                 </div>
                 <div className='w-full flex flex-col items-center justify-center text-black'>
                     <p className='text-[24px]'>Alver power in Numbers</p>
-                    <div className='grid grid-cols-2'>
+                    <div className='w-full grid grid-cols-2 items-center justify-center'>
                        <div className='flex flex-col'>
                         <p className='text-[40px] mt-4 mb-4'>200+</p>
                         <div className='border-b-2 border-black w-[40px]'></div>
