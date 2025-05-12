@@ -91,7 +91,7 @@ export default function HomePage() {
                     className='w-full h-auto'
                 />
                 </div>
-                <div className='w-full flex flex-col items-center justify-center text-black'>
+                <div className='w-full md:w-[50%] flex flex-col items-center justify-center text-black'>
                     <p className='text-[24px]'>Alver power in Numbers</p>
                     <div className='w-full grid grid-cols-2 items-center justify-center'>
                        <div className='flex flex-col'>
