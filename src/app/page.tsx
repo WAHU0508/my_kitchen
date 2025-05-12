@@ -66,12 +66,16 @@ export default function HomePage() {
                 <div className='bg-black lg:w-[45%] pl-[20px]'>
                     <div className='border-l-2 border-white flex flex-row'>
                         <div className='border border-white mt-[50px] h-[100px] mr-[50px]'></div>
-                        <div className='flex flex-col'>
-                            <p>Why Choose Alver Power</p>
-                            <p>Innovative Solutions For A Sustainable Future</p>
-                            <p>At Alver Power Systems, we adopt advanced manufacturing techniques and sustainable practices to create reliable and efficient power solutions. 
+                        <div className='flex flex-col gap-[50px]'>
+                            <p className='text-[14px]'>Why Choose Alver Power</p>
+                            <p className='text-[24px]'>Innovative Solutions For A Sustainable Future</p>
+                            <p className='text-[16px]'>At Alver Power Systems, we adopt advanced manufacturing techniques and sustainable practices to create reliable and efficient power solutions. 
                                 Our commitment to excellence and environmental responsibility sets us apart in the industry.
                             </p>
+                            <button className='bg-black text-white flex flex-row mb-[20px] md:mb-0'>
+                                <p className='border border-white px-4 py-1 rounded-tl-[10px] rounded-bl-[10px]'>read more</p>
+                                <p className='border border-l-0 border-white px-4 py-1 rounded-tr-[10px] rounded-br-[10px]'>A</p>
+                            </button>
                         </div>
                     </div>
                 </div>
