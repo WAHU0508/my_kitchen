@@ -7,7 +7,7 @@ import siemens_logo from '@//assets/siemens_logo.png'
 import bodor_logo from '@//assets/bodor_logo.png'
 import cs_logo from '@//assets/c&sLogo.png'
 
-function MissionSection() {
+function PartnersSection() {
 
   return (
     <div className='w-full bg-black h-auto text-white flex items-center justify-center lg:pt-[70px]'>
@@ -59,4 +59,4 @@ function MissionSection() {
   )
 }
 
-export default MissionSection
+export default PartnersSection

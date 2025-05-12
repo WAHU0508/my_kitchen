@@ -8,6 +8,7 @@ import MissionSection from '@//components/homepage/missionsection'
 import ProductsSection from '@//components/homepage/products_section'
 import backgroundImg from '@//assets/background1.png'
 import downloadImg from '@//assets/download (1).png'
+import PartnersSection from '@//components/homepage/partners_section'
 
 export default function HomePage() {
     return (
@@ -123,7 +124,9 @@ export default function HomePage() {
             </div>
 
             {/* Partners */}
-            
+            <div className='w-full mt-[10px] md:mt-[50px] lg:mt-[130px]'>
+                <PartnersSection/>
+            </div>
         </div>
     )
 }
