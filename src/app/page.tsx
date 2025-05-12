@@ -124,7 +124,7 @@ export default function HomePage() {
             </div>
 
             {/* Partners */}
-            <div className='w-full mt-[10px] md:mt-[50px] lg:mt-[130px]'>
+            <div className='w-full mt-[10px] md:mt-[50px] lg:mt-[10px]'>
                 <PartnersSection/>
             </div>
         </div>
