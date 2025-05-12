@@ -69,7 +69,7 @@ function ProductsSection() {
             </div>
             <div className='w-full md:w-[50%] lg:w-[50%] h-full'>
                 <Image
-                    src={sivacon}
+                    src={solar}
                     alt='Sivacon Image'
                     className='w-full h-full'
                 />
