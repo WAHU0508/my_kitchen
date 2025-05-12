@@ -91,8 +91,16 @@ export default function HomePage() {
                     className='w-full h-auto'
                 />
                 </div>
-                <div className='w-full flex items-center justify-center'>
-                    <p>Alver power in Numbers</p>
+                <div className='w-full flex flex-col items-center justify-center text-black'>
+                    <p className='text-[24px]'>Alver power in Numbers</p>
+                    <div className='grid grid-cols-2'>
+                       <div className='flex flex-col'>
+                        <p className='text-[40px] mt-4 mb-4'>200+</p>
+                        <div className='border-b-2 border-black w-[100px]'></div>
+                        <div className='border-b-2 border-black w-[40px]'></div>
+                        <p className='text-[14px] mt-4 mb-4'>PROJECTS DELIVERED</p>
+                       </div>
+                    </div>
                 </div>
             </div>
         </div>
