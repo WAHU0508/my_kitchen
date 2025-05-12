@@ -5,7 +5,7 @@ import laser from '@//assets/laser (2).jpg'
 
 function ProductsSection() {
   return (
-    <div className='w-full bg-white h-auto text-black flex flex-col md:flex-row items-center justify-center pt-[20px]'>
+    <div className='w-full bg-white h-auto text-black flex flex-col items-center justify-center pt-[20px]'>
         {/* SwitchBoard */}
         <div className='w-full h-auto flex flex-col md:flex-row items-center justify-center md:justify-between md:pl-[5%] lg:pl-[10%]'>
             <div className='w-[95%] md:w-[50%] h-auto'>
