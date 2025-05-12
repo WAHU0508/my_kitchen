@@ -96,9 +96,27 @@ export default function HomePage() {
                     <div className='grid grid-cols-2'>
                        <div className='flex flex-col'>
                         <p className='text-[40px] mt-4 mb-4'>200+</p>
-                        <div className='border-b-2 border-black w-[100px]'></div>
                         <div className='border-b-2 border-black w-[40px]'></div>
+                        <div className='border-b-2 border-black w-[100px]'></div>
                         <p className='text-[14px] mt-4 mb-4'>PROJECTS DELIVERED</p>
+                       </div>
+                       <div className='flex flex-col'>
+                        <p className='text-[40px] mt-4 mb-4'>5+</p>
+                        <div className='border-b-2 border-black w-[40px]'></div>
+                        <div className='border-b-2 border-black w-[100px]'></div>
+                        <p className='text-[14px] mt-4 mb-4'>YEARS OF EXPERIENCE</p>
+                       </div>
+                       <div className='flex flex-col'>
+                        <p className='text-[40px] mt-4 mb-4'>100+</p>
+                        <div className='border-b-2 border-black w-[40px]'></div>
+                        <div className='border-b-2 border-black w-[100px]'></div>
+                        <p className='text-[14px] mt-4 mb-4'>SATISFIED CLIENTS</p>
+                       </div>
+                       <div className='flex flex-col'>
+                        <p className='text-[40px] mt-4 mb-4'>20+</p>
+                        <div className='border-b-2 border-black w-[40px]'></div>
+                        <div className='border-b-2 border-black w-[100px]'></div>
+                        <p className='text-[14px] mt-4 mb-4'>AWARDS AND RECOGNITIONS</p>
                        </div>
                     </div>
                 </div>
