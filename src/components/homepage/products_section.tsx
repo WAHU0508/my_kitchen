@@ -34,7 +34,7 @@ function ProductsSection() {
                 <Image
                     src={laser}
                     alt='Sivacon Image'
-                    className='w-full h-full'
+                    className='w-full h-full md:h-[200px] lg:h-full'
                 />
             </div>
             <div className='w-[95%] md:w-[50%] h-auto'>
