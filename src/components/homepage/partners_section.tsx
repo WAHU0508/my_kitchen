@@ -6,6 +6,11 @@ import schneider_logo from '@//assets/schneider_logo.png'
 import siemens_logo from '@//assets/siemens_logo.png'
 import bodor_logo from '@//assets/bodor_logo.png'
 import cs_logo from '@//assets/c&sLogo.png'
+import ABB_logo from '@//assets/ABB_Logo.png'
+import CNC_logo from '@//assets/CNC_Logo.png'
+import jinko_logo from '@//assets/jinko_logo.png'
+import himel_logo from '@//assets/himel_Logo.png'
+import chint_logo from '@//assets/chint_Logo.png'
 
 function PartnersSection() {
 
@@ -28,28 +33,56 @@ function PartnersSection() {
                 <Image
                     src={schneider_logo}
                     alt='Schneider Logo'
-                    className='border border-white h-[50px]'
+                    className='border border-white h-[200px]'
                 />
             </div>
             <div>
                 <Image
                     src={siemens_logo}
                     alt='Siemens Logo'
-                    className='border border-white h-[50px]'
+                    className='border border-white h-[200px]'
                 />
             </div>
             <div>
                 <Image
                     src={bodor_logo}
                     alt='Bodor Logo'
-                    className='border border-white h-[50px]'
+                    className='border border-white h-[200px]'
                 />
             </div>
             <div>
                 <Image
-                    src={cs_logo}
-                    alt='C&S Logo'
-                    className='border border-white h-[50px]'
+                    src={ABB_logo}
+                    alt='ABB Logo'
+                    className='border border-white h-[200px]'
+                />
+            </div>
+            <div>
+                <Image
+                    src={CNC_logo}
+                    alt='CNC Logo'
+                    className='border border-white h-[200px]'
+                />
+            </div>
+            <div>
+                <Image
+                    src={jinko_logo}
+                    alt='Jinko Logo'
+                    className='border border-white h-[200px]'
+                />
+            </div>
+            <div>
+                <Image
+                    src={himel_logo}
+                    alt='Himel Logo'
+                    className='border border-white h-[200px]'
+                />
+            </div>
+            <div>
+                <Image
+                    src={chint_logo}
+                    alt='Chint Logo'
+                    className='border border-white h-[200px]'
                 />
             </div>
           </div>
