@@ -29,7 +29,7 @@ function ProductsSection() {
             </div>
         </div>
         {/* CNC MACHINING */}
-        <div className='w-full h-auto flex flex-col md:flex-row items-center justify-center md:justify-between md:pl-[5%] lg:pl-[10%]'>
+        <div className='w-full h-auto flex flex-col-reverse md:flex-row items-center justify-center md:justify-between md:pl-[5%] lg:pl-[10%]'>
             <div className='w-full md:w-[50%] lg:w-[50%] h-auto'>
                 <Image
                     src={laser}
@@ -38,7 +38,7 @@ function ProductsSection() {
                 />
             </div>
             <div className='w-[95%] md:w-[50%] h-auto'>
-                <div className='text-black w-full md:w-[90%] lg:w-[70%] flex flex-col items-start gap-[20px] md:gap-[20px] lg:gap-[50px]'>
+                <div className='text-black w-full md:w-[90%] lg:w-[70%] flex flex-col items-start gap-[20px] md:gap-[20px] md:pl-[20px] lg:pl-[30px] lg:gap-[50px]'>
                     <p className='text-[24px] md:text-[32px] lg:text-[40px]'>CNC MACHINING</p>
                     <p className='text-[12px] md:text-[16px] lg:text-[16px]'>​Our CNC machining services combine cutting-edge technology with 
                         expert craftsmanship to deliver high-precision components tailored to your exact specifications. 
