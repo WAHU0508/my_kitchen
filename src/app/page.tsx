@@ -6,6 +6,7 @@ import Header from '@//components/header'
 import strip1 from '@//assets/strip1.png'
 import MissionSection from '@//components/homepage/missionsection'
 import ProductsSection from '@//components/homepage/products_section'
+import backgroundImg from '@//assets/background1.png'
 
 export default function HomePage() {
     return (
@@ -53,8 +54,17 @@ export default function HomePage() {
                     </div>
                 </div>
             </div>
+
             {/* Products Section */}
             <ProductsSection />
+
+            {/* Why Us */}
+            <div className='w-full h-auto pl-[50px] pt-[50px] pb-[50px]'
+                style={{
+                    backgroundImage: `url(${backgroundImg.src})`
+            }}>
+                <div className='bg-black lg:w-[45%]'></div>
+            </div>
         </div>
     )
 }
