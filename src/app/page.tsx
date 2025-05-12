@@ -63,7 +63,7 @@ export default function HomePage() {
                 style={{
                     backgroundImage: `url(${backgroundImg.src})`
             }}>
-                <div className='bg-black w-[95%] md:w-[40%] lg:w-[40%] pl-[20px] md:pl-[50px] rounded-[20px]'>
+                <div className='bg-black w-[95%] md:w-[50%] lg:w-[40%] pl-[20px] md:pl-[50px] rounded-[20px]'>
                     <div className='border-l-2 border-white flex flex-row'>
                         <div className='border border-white mt-[50px] h-[100px]'></div>
                         <div className='flex flex-col gap-[50px] px-[10px] md:px-[50px] lg:px-[100px] py-[50px]'>
