@@ -41,7 +41,7 @@ export default function HomePage() {
 
             {/* Our Expertise */}
             <div className='w-full bg-white h-auto text-black flex items-center justify-center lg:pt-[70px]'>
-                <div className=' w-[95%] md:w-[95%] lg:w-[80%] border-l-1 border-black h-auto flex flex-row'>
+                <div className=' w-[95%] md:w-[95%] lg:w-[80%] border-l-2 border-black h-auto flex flex-row'>
                     <div className='mt-[50px] border-l-2 border-black h-[100px] md:h-[100px] lg:h-[100px]'></div>
                     <div className='w-full flex flex-col md:flex-row lg:flex-row'>
                         <div className='flex flex-col ml-[30px] md:ml-[30px] w-[200px] md:w-[300px] lg:ml-[50px] lg:w-[300px]'>
