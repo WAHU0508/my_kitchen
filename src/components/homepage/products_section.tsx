@@ -29,7 +29,7 @@ function ProductsSection() {
             </div>
         </div>
         {/* CNC MACHINING */}
-        <div className='w-full h-auto flex flex-col-reverse md:flex-row items-center justify-center md:justify-between md:pl-[5%] lg:pl-[10%]'>
+        <div className='w-full h-auto md:h-[300px] lg:h-auto flex flex-col-reverse md:flex-row items-center justify-center md:justify-between md:pl-[5%] lg:pl-[10%]'>
             <div className='w-full md:w-[50%] lg:w-[50%] h-auto'>
                 <Image
                     src={laser}
