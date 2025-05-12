@@ -91,9 +91,9 @@ export default function HomePage() {
                     className='w-full h-auto'
                 />
                 </div>
-                <div className='border border-black w-full md:w-[50%] ml-[20px] md:ml-[50px] flex flex-col text-black'>
+                <div className='w-full md:w-[50%] ml-[20px] md:ml-[50px] flex flex-col text-black'>
                     <p className='text-[24px]'>Alver power in Numbers</p>
-                    <div className='w-full grid grid-cols-2 border border-black '>
+                    <div className='w-full grid grid-cols-2'>
                        <div className='flex flex-col'>
                         <p className='text-[40px] mt-4 mb-4'>200+</p>
                         <div className='border-b-2 border-black w-[40px]'></div>
@@ -121,6 +121,9 @@ export default function HomePage() {
                     </div>
                 </div>
             </div>
+
+            {/* Partners */}
+            
         </div>
     )
 }
