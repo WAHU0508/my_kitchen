@@ -83,7 +83,7 @@ export default function HomePage() {
             </div>
 
             {/* Alver In Numbers */}
-            <div className='flex flex-col-reverse md:flex-row w-full h-auto bg-white'>
+            <div className='flex flex-col-reverse md:flex-row items-center justify-between w-full h-auto bg-white'>
                 <div className='w-full md:w-[50%]'>
                     <Image
                     src={downloadImg}
