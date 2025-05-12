@@ -63,10 +63,10 @@ export default function HomePage() {
                 style={{
                     backgroundImage: `url(${backgroundImg.src})`
             }}>
-                <div className='bg-black lg:w-[45%] pl-[20px] rounded-[20px]'>
+                <div className='bg-black lg:w-[45%] pl-[50px] rounded-[20px]'>
                     <div className='border-l-2 border-white flex flex-row'>
                         <div className='border border-white mt-[50px] h-[100px]'></div>
-                        <div className='flex flex-col gap-[50px] px-[50px]'>
+                        <div className='flex flex-col gap-[50px] px-[100px] py-[50px]'>
                             <p className='text-[14px]'>Why Choose Alver Power</p>
                             <p className='text-[24px]'>Innovative Solutions For A Sustainable Future</p>
                             <p className='text-[16px]'>At Alver Power Systems, we adopt advanced manufacturing techniques and sustainable practices to create reliable and efficient power solutions. 
