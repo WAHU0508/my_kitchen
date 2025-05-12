@@ -7,7 +7,7 @@ function ProductsSection() {
   return (
     <div className='w-full bg-white h-auto text-black flex flex-col items-center justify-center pt-[20px]'>
         {/* SwitchBoard */}
-        <div className='border border-black w-full h-auto md:h-[300px] lg:h-auto flex flex-col md:flex-row items-center justify-center md:justify-between md:pl-[5%] lg:pl-[10%]'>
+        <div className='border border-black w-full h-auto md:h-[350px] lg:h-auto flex flex-col md:flex-row items-center justify-center md:justify-between md:pl-[5%] lg:pl-[10%]'>
             <div className='w-[95%] md:w-[50%] h-auto'>
                 <div className='text-black w-full md:w-[90%] lg:w-[70%] flex flex-col items-start gap-[20px] md:gap-[20px] lg:gap-[50px]'>
                     <p className='text-[24px] md:text-[32px] lg:text-[40px]'>Switchboard Manufacturing</p>
@@ -20,7 +20,7 @@ function ProductsSection() {
                     </button>
                 </div>
             </div>
-            <div className='w-full md:w-[50%] lg:w-[50%] h-auto'>
+            <div className='w-full md:w-[50%] lg:w-[50%] h-full'>
                 <Image
                     src={sivacon}
                     alt='Sivacon Image'
@@ -29,8 +29,8 @@ function ProductsSection() {
             </div>
         </div>
         {/* CNC MACHINING */}
-        <div className='border border-black w-full h-auto md:h-[300px] lg:h-auto flex flex-col-reverse md:flex-row items-center justify-center md:justify-between md:pl-[5%] lg:pl-[10%]'>
-            <div className='w-full md:w-[50%] lg:w-[50%] h-auto'>
+        <div className='border border-black w-full h-auto md:h-[350px] lg:h-auto flex flex-col-reverse md:flex-row items-center justify-center md:justify-between md:pl-[5%] lg:pl-[10%]'>
+            <div className='w-full h-full md:w-[50%] lg:w-[50%]'>
                 <Image
                     src={laser}
                     alt='Sivacon Image'
