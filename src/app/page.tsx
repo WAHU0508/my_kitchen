@@ -59,11 +59,22 @@ export default function HomePage() {
             <ProductsSection />
 
             {/* Why Us */}
-            <div className='w-full h-auto pl-[50px] pt-[50px] pb-[50px]'
+            <div className='w-full mt-[20px] h-auto pl-[50px] pt-[50px] pb-[50px] text-white'
                 style={{
                     backgroundImage: `url(${backgroundImg.src})`
             }}>
-                <div className='bg-black lg:w-[45%]'></div>
+                <div className='bg-black lg:w-[45%] pl-[20px]'>
+                    <div className='border-l-2 border-white flex flex-row'>
+                        <div className='border border-white mt-[50px] h-[100px] mr-[50px]'></div>
+                        <div className='flex flex-col'>
+                            <p>Why Choose Alver Power</p>
+                            <p>Innovative Solutions For A Sustainable Future</p>
+                            <p>At Alver Power Systems, we adopt advanced manufacturing techniques and sustainable practices to create reliable and efficient power solutions. 
+                                Our commitment to excellence and environmental responsibility sets us apart in the industry.
+                            </p>
+                        </div>
+                    </div>
+                </div>
             </div>
         </div>
     )
