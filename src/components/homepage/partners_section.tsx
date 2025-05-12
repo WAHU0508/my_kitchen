@@ -33,63 +33,63 @@ function PartnersSection() {
                 <Image
                     src={schneider_logo}
                     alt='Schneider Logo'
-                    className='border border-white h-[100px]'
+                    className='h-[100px]'
                 />
             </div>
             <div>
                 <Image
                     src={siemens_logo}
                     alt='Siemens Logo'
-                    className='border border-white h-[100px]'
+                    className='h-[100px]'
                 />
             </div>
             <div>
                 <Image
                     src={bodor_logo}
                     alt='Bodor Logo'
-                    className='border border-white h-[100px]'
+                    className='h-[100px]'
                 />
             </div>
             <div>
                 <Image
                     src={cs_logo}
                     alt='Bodor Logo'
-                    className='border border-white h-[100px]'
+                    className='h-[100px]'
                 />
             </div>
             <div>
                 <Image
                     src={ABB_logo}
                     alt='ABB Logo'
-                    className='border border-white h-[100px]'
+                    className='h-[100px]'
                 />
             </div>
             <div>
                 <Image
                     src={CNC_logo}
                     alt='CNC Logo'
-                    className='border border-white h-[100px]'
+                    className='h-[100px]'
                 />
             </div>
             <div>
                 <Image
                     src={jinko_logo}
                     alt='Jinko Logo'
-                    className='border border-white h-[100px]'
+                    className='h-[100px]'
                 />
             </div>
             <div>
                 <Image
                     src={himel_logo}
                     alt='Himel Logo'
-                    className='border border-white h-[100px]'
+                    className='h-[100px]'
                 />
             </div>
             <div>
                 <Image
                     src={chint_logo}
                     alt='Chint Logo'
-                    className='border border-white h-[100px]'
+                    className='h-[100px]'
                 />
             </div>
           </div>
