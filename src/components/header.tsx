@@ -47,8 +47,9 @@ export default function Header() {
     <header className={`w-full flex items-center justify-center transition-all duration-500 ease-in-out ${visible ? 'opacity-100' : 'opacity-0 pointer-events-none'}`}>
       {/* Header for large and medium screens */}
       <div
-        className={`hidden w-full transition-all duration-500 ease-in-out md:flex md:flex-row items-center justify-between lg:px-8 py-2 ${
-          isScrolled ? 'bg-black/60 text-white' : ''} ${pathname === '/about_us' ? 'text-black' : 'text-white'} transition-all duration-300 sticky top-0 z-50`}
+        className={`hidden w-full md:flex md:flex-row items-center justify-between lg:px-8 py-2 sticky top-0 z-50 transition-all duration-500 ease-in-out 
+          ${isScrolled ? 'bg-black/60 text-white' : ''} 
+          ${pathname === '/about_us' ? 'text-black' : 'text-white'}`}
       >
         <Image src={logo} alt="Alver Power Logo" width={150} height={45} />
         <nav className="flex flex-row md:gap-4 lg:gap-6 items-center">
