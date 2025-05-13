@@ -8,7 +8,7 @@ import linkedin from '@//svgs/linkedin.svg';
 
 export default function Footer() {
     return (
-        <footer className='w-full flex items-center justify-center bg-[#F8F8F8] text-black'>
+        <footer className='w-full flex flex-col items-center justify-center bg-[#F8F8F8] text-black'>
             {/* Footer for large and medium screens*/}
             <div className='hidden w-full md:flex md:flex-row justify-between md:px-[2%] lg:px-[10%] mt-[50px]'>
                 <div className='flex flex-col w-full md:w-[50%] '>
