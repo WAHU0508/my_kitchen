@@ -10,7 +10,7 @@ import backgroundImg from '@//assets/background1.png'
 import downloadImg from '@//assets/download (1).png'
 import PartnersSection from '@//components/homepage/partners_section'
 import Footer from '@//components/footer'
-import arrow from '@//svgs/arrow2.svg'
+import arrow2 from '@//svgs/arrow2.svg'
 
 export default function HomePage() {
     return (
@@ -78,9 +78,9 @@ export default function HomePage() {
                             </p>
                             <button className='bg-black text-white flex flex-row mb-[20px] md:mb-0'>
                                 <p className='border border-white px-4 py-1 rounded-tl-[10px] rounded-bl-[10px]'>read more</p>
-                                <div className='border border-l-0 border-black px-4 py-1 rounded-tr-[10px] flex items-center justify-center rounded-br-[10px]'>
+                                <div className='border border-l-0 border-white px-4 py-1 rounded-tr-[10px] flex items-center justify-center rounded-br-[10px]'>
                                     <Image
-                                        src={arrow}
+                                        src={arrow2}
                                         alt='arrow'
                                         width={16}
                                         height={16}
