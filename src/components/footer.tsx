@@ -1,6 +1,10 @@
 import React from 'react'
 import Image from 'next/image'
 import logo from '@//assets/logo.png'
+import twitter from '@//svgs/twitter.svg'
+import facebook from '@//svgs/facebook.svg';
+import instagram from '@//svgs/instagram.svg';
+import linkedin from '@//svgs/linkedin.svg';
 
 export default function Footer() {
     return (
@@ -71,7 +75,7 @@ export default function Footer() {
             </div>
             
             {/* Small Screens */}
-            <div className='md:hidden flex flex-col items-center justify-center mt-[20px]'>
+            <div className='md:hidden flex flex-col items-center justify-center mt-[20px] px-4'>
                <Image
                         src={logo}
                         alt='Alver power Logo'
@@ -79,7 +83,7 @@ export default function Footer() {
                         height={45}
                         className=''
                 /> 
-                <div className='flex flex-col w-full px-2'>
+                <div className='flex flex-col w-full'>
                     <h1 className='font-semibold text-[24px]'>Contact Us</h1>
                     <form className='flex flex-col'>
                         <div className='flex flex-row gap-2'>
@@ -128,6 +132,64 @@ export default function Footer() {
                         </div>
                         <p className='text-[14px]'>Contact Us</p>
                         <p className='text-[14px]'>Garden Estate rd, off Thika Road</p>
+                </div>
+            </div>
+
+            <div className='w-full md:px-[5%] md:py-[30px] lg:px-[10%] flex md:flex-row md:justify-between'>
+                <p>&copy; 2022 by Alver Power Systems Ltd.</p>
+                <div className='flex flex-row w-full items-center justify-center gap-4'>
+                    <a
+                        href="https://x.com/AlverPower?t=sFrlL2lI0IN8B6d5m7gDgQ&s=09"
+                        target="_blank"
+                        rel="noopener noreferrer"
+                    >
+                        <Image
+                            src={twitter}
+                            alt='Twitter Icon'
+                            width={31}
+                            height={31}
+                            className='hover:border hover:border-black hover:rounded-full hover:p-1'
+                        />
+                    </a>
+                    <a
+                        href="https://www.facebook.com/Alver?utm_source=qr&igsh=NzgzcDdzNTFrczV4"
+                        target="_blank"
+                        rel="noopener noreferrer"
+                    >
+                        <Image
+                            src={facebook}
+                            alt='Facebook Icon'
+                            width={31}
+                            height={31}
+                            className='hover:border hover:border-black hover:rounded-full hover:p-1'
+                        />
+                    </a>
+                    <a
+                        href="https://www.instagram.com/alverpower?utm_source=qr&igsh=NzgzcDdzNTFrczV4"
+                        target="_blank"
+                        rel="noopener noreferrer"
+                    >
+                        <Image
+                            src={instagram}
+                            alt='Instagram Icon'
+                            width={31}
+                            height={31}
+                            className='hover:border hover:border-black hover:rounded-full hover:p-1'
+                        />
+                    </a>
+                    <a
+                        href="https://www.linkedin.com/company/alver-power-systems"
+                        target="_blank"
+                        rel="noopener noreferrer"
+                    >
+                        <Image
+                            src={linkedin}
+                            alt='Linkedin Icon'
+                            width={31}
+                            height={31}
+                            className='hover:border hover:border-black hover:rounded-full hover:p-1'
+                        />
+                    </a>
                 </div>
             </div>
         </footer>
