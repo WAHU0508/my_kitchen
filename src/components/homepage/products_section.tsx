@@ -17,7 +17,7 @@ function ProductsSection() {
                     </p>
                     <button className='bg-white text-black flex flex-row mb-[20px] md:mb-0'>
                         <p className='border border-black px-4 py-1 rounded-tl-[10px] rounded-bl-[10px]'>read more</p>
-                        <p className='border border-l-0 border-black px-4 py-1 rounded-tr-[10px] rounded-br-[10px]'>A</p>
+                        <p className='border border-l-0 border-black px-4 py-1 rounded-tr-[10px] rounded-br-[10px]'></p>
                     </button>
                 </div>
             </div>
