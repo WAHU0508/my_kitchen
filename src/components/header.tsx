@@ -1,7 +1,7 @@
 'use client';
 import React, { useEffect, useState, useRef } from 'react';
 import { usePathname } from 'next/navigation';
-import Link from 'next/Link'
+import Link from 'next/link'
 import Image from 'next/image';
 import { Menu } from 'lucide-react';
 import logo from '@//assets/logo.png';
