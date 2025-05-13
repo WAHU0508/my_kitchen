@@ -142,6 +142,7 @@ export default function Footer() {
                                 <label>First name*</label>
                                     <input
                                         type='text'
+                                        name='first_name'
                                         onChange={handleChange}
                                         className='w-full border-b border-black px-2 py-2 rounded-md'
                                         required
@@ -151,6 +152,7 @@ export default function Footer() {
                                 <label>Last name</label>
                                     <input
                                         type='text'
+                                        name='last_name'
                                         onChange={handleChange}
                                         className='w-full border-b border-black px-2 py-2 rounded-md'
                                     />
@@ -160,6 +162,7 @@ export default function Footer() {
                             <label>Email*</label>
                                 <input
                                     type='text'
+                                    name='email'
                                     onChange={handleChange}
                                     className='w-full border-b border-black px-2 py-2 rounded-md'
                                     required
@@ -169,6 +172,7 @@ export default function Footer() {
                             <label>Write your message *</label>
                                 <textarea
                                     rows={5}
+                                    name='message'
                                     onChange={handleChange}
                                     className="w-full p-3 border-b border-black rounded-md"
                                     required
