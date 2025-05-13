@@ -114,7 +114,7 @@ export default function Footer() {
                         </div>
                         <button type='submit' className='text-white bg-black px-4 py-2 rounded-[30px] mt-[20px] max-w-max'>Submit</button>
                         {status && (
-                            <p className={`mt-2 text-center text-xl 
+                            <p className={`mt-2 text-left text-[16px] 
                                 ${status === 'Sending...' ? 'text-black' : ''} 
                                 ${status === 'Message sent!' ? 'text-green-500' : ''} 
                                 ${status === 'Failed to send message.' ? 'text-red-500' : ''}`}>
