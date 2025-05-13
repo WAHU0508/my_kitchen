@@ -8,13 +8,13 @@ import instagram from '@//svgs/instagram.svg';
 import linkedin from '@//svgs/linkedin.svg';
 
 export default function Footer() {
-    const [formData, setFormData] = useState<FormData>({ name: '', email: '', phone: '', message: '' });
+    const [formData, setFormData] = useState<FormData>({ first_name: '', last_name: '',  email: '', message: '' });
     const [status, setStatus] = useState<string>('');
 
   interface FormData {
-        name: string;
+        first_name: string;
+        last_name: string;
         email: string;
-        phone: string;
         message: string;
     }
     const handleChange = (e: React.ChangeEvent<HTMLInputElement | HTMLTextAreaElement>) => {
@@ -76,6 +76,7 @@ export default function Footer() {
                                 <label>First name*</label>
                                     <input
                                         type='text'
+                                        name='first_name'
                                         onChange={handleChange}
                                         className='w-full border-b border-black px-2 py-2 rounded-md'
                                         required
@@ -85,6 +86,7 @@ export default function Footer() {
                                 <label>Last name</label>
                                     <input
                                         type='text'
+                                        name='last_name'
                                         onChange={handleChange}
                                         className='w-full border-b border-black px-2 py-2 rounded-md'
                                     />
@@ -94,6 +96,7 @@ export default function Footer() {
                             <label>Email*</label>
                                 <input
                                     type='text'
+                                    name='email'
                                     onChange={handleChange}
                                     className='w-full border-b border-black px-2 py-2 rounded-md'
                                     required
@@ -103,6 +106,7 @@ export default function Footer() {
                             <label>Write your message *</label>
                                 <textarea
                                     rows={5}
+                                    name='message'
                                     onChange={handleChange}
                                     className="w-full p-3 border-b border-black rounded-md"
                                     required
