@@ -22,7 +22,7 @@ function MissionSection() {
               </div>
 
               {/* Image */}
-              <div className='bordr border-black w-full h-auto flex items-center justify-center'>
+              <div className='border border-black w-full h-auto flex items-center justify-center'>
                 <Image
                   src={mission}
                   alt='Mission Image'
