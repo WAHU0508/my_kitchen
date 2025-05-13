@@ -4,7 +4,7 @@ import mission from '@//assets/mission.png';
 
 function MissionSection() {
   return (
-    <div className='w-full bg-white h-auto text-black flex items-center justify-center lg:pt-[70px]'>
+    <div className='w-full bg-white h-auto text-black flex items-center justify-center'>
           <div className='w-[95%] md:w-[95%] lg:w-[80%] border-l-1 border-black h-auto flex flex-row'>
 
             <div className='mt-[50px] border-l-2 border-black h-[100px]'></div>
@@ -22,7 +22,7 @@ function MissionSection() {
               </div>
 
               {/* Image */}
-              <div className='border border-black w-full h-auto flex items-center justify-center'>
+              <div className='w-full h-auto flex items-center justify-center'>
                 <Image
                   src={mission}
                   alt='Mission Image'
