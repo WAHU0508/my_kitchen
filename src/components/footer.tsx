@@ -79,7 +79,7 @@ export default function Footer() {
                         height={45}
                         className=''
                 /> 
-                <div className='flex flex-col w-full md:w-[50%]'>
+                <div className='flex flex-col w-full px-2'>
                     <h1 className='font-semibold text-[24px]'>Contact Us</h1>
                     <form className='flex flex-col'>
                         <div className='flex flex-row gap-2'>
@@ -108,16 +108,26 @@ export default function Footer() {
                                 />
                         </div>
                         <div className='w-full flex flex-col'>
-                            <label>Your Message *</label>
+                            <label>Write your message *</label>
                                 <textarea
-                                    placeholder="Your Message"
                                     rows={5}
                                     className="w-full p-3 border-b border-black rounded-md"
                                     required
                                 />
                         </div>
-                        <button className='text-white bg-black px-4 py-2 rounded-[30px] mt-[20px] max-w-max'>Submit</button>
+                        <button className='text-white bg-black px-8 py-2 rounded-[30px] mt-[20px] max-w-max'>Submit</button>
                     </form>
+                </div>
+                <div className='w-full grid grid-cols-2 mt-[50px] space-x-2 space-y-6'>
+                        <p className='text-[14px]'>About</p>
+                        <p className='text-[14px]'>Tel: 0116004003</p>
+                        <p className='text-[14px]'>Products | Services</p>
+                        <div className='flex flex-col text-[14px]'>
+                            <p>Email:</p>
+                            <p>info@alverpower.com</p>
+                        </div>
+                        <p className='text-[14px]'>Contact Us</p>
+                        <p className='text-[14px]'>Garden Estate rd, off Thika Road</p>
                 </div>
             </div>
         </footer>
