@@ -1,5 +1,4 @@
 // homepage
-
 import React from 'react'
 import Image from 'next/image'
 import Header from '@//components/header'
@@ -13,6 +12,7 @@ import Footer from '@//components/footer'
 import arrow2 from '@//svgs/arrow2.svg'
 
 export default function HomePage() {
+
     return (
         <div className='w-full flex flex-col items-center justify-center bg-black'>
             <div className='w-full relative'>

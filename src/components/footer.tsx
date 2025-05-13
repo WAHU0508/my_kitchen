@@ -1,3 +1,4 @@
+'use client'
 import React from 'react'
 import Image from 'next/image'
 import logo from '@//assets/logo.png'
@@ -7,6 +8,41 @@ import instagram from '@//svgs/instagram.svg';
 import linkedin from '@//svgs/linkedin.svg';
 
 export default function Footer() {
+    const [formData, setFormData] = useState<FormData>({ name: '', email: '', phone: '', message: '' });
+    const [status, setStatus] = useState<string>('');
+
+  interface FormData {
+        name: string;
+        email: string;
+        phone: string;
+        message: string;
+    }
+    const handleChange = (e: React.ChangeEvent<HTMLInputElement | HTMLTextAreaElement>) => {
+        setFormData({ ...formData, [e.target.name]: e.target.value });
+    };
+
+    const handleSubmit = async (e: React.FormEvent) => {
+        e.preventDefault();
+        setStatus('Sending...');
+
+        try {
+            const res = await fetch('/api/message', {
+                method: 'POST',
+                body: JSON.stringify(formData),
+                headers: { 'Content-Type': 'application/json' },
+            });
+
+            const data = await res.json();
+            setStatus(data.success ? 'Message sent!' : 'Failed to send message.');
+            // Clear status message after 3 seconds
+            setTimeout(() => {
+                setStatus(''); // Reset the status after 3 seconds
+            }, 5000);
+        } catch {
+            setStatus('Something went wrong.');
+        }
+    };
+
     return (
         <footer className='w-full flex flex-col items-center justify-center bg-[#F8F8F8] text-black'>
             {/* Footer for large and medium screens*/}
@@ -34,12 +70,13 @@ export default function Footer() {
 
                 <div className='flex flex-col w-full md:w-[50%]'>
                     <h1 className='font-semibold text-[24px]'>Contact Us</h1>
-                    <form className='flex flex-col'>
+                    <form onSubmit={handleSubmit} className='flex flex-col'>
                         <div className='flex flex-row gap-2'>
                             <div className='w-[50%] flex flex-col'>
                                 <label>First name*</label>
                                     <input
                                         type='text'
+                                        onChange={handleChange}
                                         className='w-full border-b border-black px-2 py-2 rounded-md'
                                         required
                                     />
@@ -48,6 +85,7 @@ export default function Footer() {
                                 <label>Last name</label>
                                     <input
                                         type='text'
+                                        onChange={handleChange}
                                         className='w-full border-b border-black px-2 py-2 rounded-md'
                                     />
                             </div>
@@ -56,20 +94,29 @@ export default function Footer() {
                             <label>Email*</label>
                                 <input
                                     type='text'
+                                    onChange={handleChange}
                                     className='w-full border-b border-black px-2 py-2 rounded-md'
                                     required
                                 />
                         </div>
                         <div className='w-full flex flex-col'>
-                            <label>Your Message *</label>
+                            <label>Write your message *</label>
                                 <textarea
-                                    placeholder="Your Message"
                                     rows={5}
+                                    onChange={handleChange}
                                     className="w-full p-3 border-b border-black rounded-md"
                                     required
                                 />
                         </div>
-                        <button className='text-white bg-black px-4 py-2 rounded-[30px] mt-[20px] max-w-max'>Submit</button>
+                        <button type='submit' className='text-white bg-black px-4 py-2 rounded-[30px] mt-[20px] max-w-max'>Submit</button>
+                        {status && (
+                            <p className={`mt-2 text-center text-xl 
+                                ${status === 'Sending...' ? 'text-black' : ''} 
+                                ${status === 'Message sent!' ? 'text-green-500' : ''} 
+                                ${status === 'Failed to send message.' ? 'text-red-500' : ''}`}>
+                                {status}
+                            </p>
+                        )}
                     </form>
                 </div>
             </div>
@@ -85,12 +132,13 @@ export default function Footer() {
                 /> 
                 <div className='flex flex-col w-full'>
                     <h1 className='font-semibold text-[24px]'>Contact Us</h1>
-                    <form className='flex flex-col'>
+                    <form onSubmit={handleSubmit} className='flex flex-col'>
                         <div className='flex flex-row gap-2'>
                             <div className='w-[50%] flex flex-col'>
                                 <label>First name*</label>
                                     <input
                                         type='text'
+                                        onChange={handleChange}
                                         className='w-full border-b border-black px-2 py-2 rounded-md'
                                         required
                                     />
@@ -99,6 +147,7 @@ export default function Footer() {
                                 <label>Last name</label>
                                     <input
                                         type='text'
+                                        onChange={handleChange}
                                         className='w-full border-b border-black px-2 py-2 rounded-md'
                                     />
                             </div>
@@ -107,6 +156,7 @@ export default function Footer() {
                             <label>Email*</label>
                                 <input
                                     type='text'
+                                    onChange={handleChange}
                                     className='w-full border-b border-black px-2 py-2 rounded-md'
                                     required
                                 />
@@ -115,11 +165,20 @@ export default function Footer() {
                             <label>Write your message *</label>
                                 <textarea
                                     rows={5}
+                                    onChange={handleChange}
                                     className="w-full p-3 border-b border-black rounded-md"
                                     required
                                 />
                         </div>
-                        <button className='text-white bg-black px-8 py-2 rounded-[30px] mt-[20px] max-w-max'>Submit</button>
+                        <button type='submit' className='text-white bg-black px-8 py-2 rounded-[30px] mt-[20px] max-w-max'>Submit</button>
+                        {status && (
+                            <p className={`mt-2 text-center text-xl 
+                                ${status === 'Sending...' ? 'text-black' : ''} 
+                                ${status === 'Message sent!' ? 'text-green-500' : ''} 
+                                ${status === 'Failed to send message.' ? 'text-red-500' : ''}`}>
+                                {status}
+                            </p>
+                        )}
                     </form>
                 </div>
                 <div className='w-full grid grid-cols-2 mt-[50px] space-x-2 space-y-6'>
@@ -146,8 +205,8 @@ export default function Footer() {
                         <Image
                             src={twitter}
                             alt='Twitter Icon'
-                            width={31}
-                            height={31}
+                            width={20}
+                            height={20}
                             className='hover:border hover:border-black hover:rounded-full hover:p-1'
                         />
                     </a>
@@ -159,8 +218,8 @@ export default function Footer() {
                         <Image
                             src={facebook}
                             alt='Facebook Icon'
-                            width={31}
-                            height={31}
+                            width={20}
+                            height={20}
                             className='hover:border hover:border-black hover:rounded-full hover:p-1'
                         />
                     </a>
@@ -172,8 +231,8 @@ export default function Footer() {
                         <Image
                             src={instagram}
                             alt='Instagram Icon'
-                            width={31}
-                            height={31}
+                            width={20}
+                            height={20}
                             className='hover:border hover:border-black hover:rounded-full hover:p-1'
                         />
                     </a>
@@ -185,8 +244,8 @@ export default function Footer() {
                         <Image
                             src={linkedin}
                             alt='Linkedin Icon'
-                            width={31}
-                            height={31}
+                            width={20}
+                            height={20}
                             className='hover:border hover:border-black hover:rounded-full hover:p-1'
                         />
                     </a>
