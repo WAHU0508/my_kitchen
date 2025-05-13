@@ -16,7 +16,7 @@ export async function POST(req) {
   const mailToYou = {
     from: process.env.MAIL_USER,
     // to: 'info@alverpower.com',
-    to: 'wahugikenye5@gmail.com',
+    to: 'sharonwg0508@gmail.com',
     subject: 'New Message from Alver Website',
     text: `
       FirstName: ${first_name}
