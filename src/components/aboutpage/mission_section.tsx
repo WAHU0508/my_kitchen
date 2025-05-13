@@ -20,7 +20,7 @@ function MissionSection() {
                 <Image
                   src={mission}
                   alt='Mission Image'
-                  className='w-full h-auto object-contain'
+                  className='w-[60%] h-auto object-contain rounded-[20px]'
                 />
               </div>
             </div>
