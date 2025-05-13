@@ -15,7 +15,7 @@ export default function Footer() {
                         height={45}
                         className=''
                     />
-                    <div className='w-full grid grid-cols-2 space-x-4 space-y-6'>
+                    <div className='w-full grid grid-cols-2 mt-[50px] space-x-4 space-y-6'>
                         <p className='text-[16px]'>About</p>
                         <p className='text-[16px]'>Tel: 0116004003</p>
                         <p className='text-[16px]'>Products | Services</p>
@@ -28,7 +28,7 @@ export default function Footer() {
                     </div>
                 </div>
                 <div className='flex flex-col w-full md:w-[50%]'>
-                    <h1>Contact Us</h1>
+                    <h1 className='font-semibold text-[24px]'>Contact Us</h1>
                     <form className='flex flex-col'>
                         <div className='flex flex-row gap-2'>
                             <div className='w-[50%] flex flex-col'>
@@ -64,7 +64,7 @@ export default function Footer() {
                                     required
                                 />
                         </div>
-                        <button className='text-white bg-black px-2 py-2 rounded-[5px]'>Submit</button>
+                        <button className='text-white bg-black px-2 py-2 rounded-[5px] mt-[20px] max-w-max'>Submit</button>
                     </form>
                 </div>
             </div>
