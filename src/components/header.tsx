@@ -1,6 +1,7 @@
 'use client';
 import React, { useEffect, useState, useRef } from 'react';
 import { usePathname } from 'next/navigation';
+import Link from 'next/Link'
 import Image from 'next/image';
 import { Menu } from 'lucide-react';
 import logo from '@//assets/logo.png';
@@ -51,30 +52,30 @@ export default function Header() {
       >
         <Image src={logo} alt="Alver Power Logo" width={150} height={45} />
         <nav className="flex flex-row md:gap-4 lg:gap-6 items-center">
-          <link
+          <Link
             href='/'
             className={`text-white md:text-[12px] lg:text-[16px] xl:text-[16px] hover:text-[#C45308] cursor-pointer transition-colors duration-300 ${pathname === '/' ? 'text-[#C45308] border-b-4 border-[#C45308]' : 'text-white'}`}
           >
             Home
-          </link>
-          <link
+          </Link>
+          <Link
             href='/about_us'
             className={`text-white md:text-[12px] lg:text-[16px] xl:text-[16px] hover:text-[#C45308] cursor-pointer transition-colors duration-300 ${pathname === '/about_us' ? 'text-[#C45308] border-b-4 border-[#C45308]' : 'text-white'}`}
           >
             About Us
-          </link>
-          <link
+          </Link>
+          <Link
             href='/products_and_services'
             className={`text-white md:text-[12px] lg:text-[16px] xl:text-[16px] hover:text-[#C45308] cursor-pointer transition-colors duration-300 ${pathname === '/products_and_services' ? 'text-[#C45308] border-b-4 border-[#C45308]' : 'text-white'}`}
           >
             Products & Services
-          </link>
-          <link
+          </Link>
+          <Link
             href='/contact_us'
             className={`text-white md:text-[12px] lg:text-[16px] xl:text-[16px] hover:text-[#C45308] cursor-pointer transition-colors duration-300 ${pathname === '/contact_us' ? 'text-[#C45308] border-b-4 border-[#C45308]' : 'text-white'}`}
           >
             Contact Us
-          </link>
+          </Link>
           {/* <button className={`${isScrolled? 'bg-black text-white' : 'bg-white text-black'} px-2 py-1 hover:bg-white hover:text-black transition-all duration-300`}>
             Get Quote
           </button> */}
