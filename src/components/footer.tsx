@@ -6,8 +6,8 @@ export default function Footer() {
     return (
         <footer className='w-full flex items-center justify-center bg-[#F8F8F8] text-black'>
             {/* Footer for large and medium screens*/}
-            <div className='hidden w-full md:flex md:flex-row items-center justify-between px-[10%]'>
-                <div className='flex flex-col w-full md:w-[50%] items-center justify-center'>
+            <div className='hidden w-full md:flex md:flex-row items-center justify-between md:px-[5%] lg:px-[10%] mt-[50px]'>
+                <div className='flex flex-col w-full md:w-[50%]'>
                     <Image
                         src={logo}
                         alt='Alver power Logo'
@@ -27,7 +27,7 @@ export default function Footer() {
                         <p className='text-[16px]'>Garden Estate rd, off Thika Road</p>
                     </div>
                 </div>
-                <div className='flex flex-col w-full md:w-[50%] items-start'>
+                <div className='flex flex-col w-full md:w-[50%]'>
                     <h1>Contact Us</h1>
                     <form className='flex flex-col'>
                         <div className='flex flex-row gap-2'>
@@ -35,7 +35,7 @@ export default function Footer() {
                                 <label>First name*</label>
                                     <input
                                         type='text'
-                                        className='w-full border border-black px-2 py-2'
+                                        className='w-full border border-black px-2 py-2 rounded-md'
                                         required
                                     />
                             </div>
@@ -43,7 +43,7 @@ export default function Footer() {
                                 <label>Last name</label>
                                     <input
                                         type='text'
-                                        className='w-full border border-black px-2 py-2'
+                                        className='w-full border border-black px-2 py-2 rounded-md'
                                     />
                             </div>
                         </div>
@@ -51,7 +51,7 @@ export default function Footer() {
                             <label>Email*</label>
                                 <input
                                     type='text'
-                                    className='w-full border border-black px-2 py-2'
+                                    className='w-full border border-black px-2 py-2 rounded-md'
                                     required
                                 />
                         </div>
@@ -60,10 +60,11 @@ export default function Footer() {
                                 <textarea
                                     placeholder="Your Message"
                                     rows={5}
-                                    className="w-full p-3 border border-gray-300 rounded-md focus:outline-none focus:ring-2 focus:ring-black"
+                                    className="w-full p-3 border border-black rounded-md"
                                     required
-                                    />
+                                />
                         </div>
+                        <button className='text-white bg-black px-2 py-2 rounded-[5px]'>Submit</button>
                     </form>
                 </div>
             </div>
