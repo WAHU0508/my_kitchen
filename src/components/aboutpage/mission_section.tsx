@@ -26,7 +26,7 @@ function MissionSection() {
                 <Image
                   src={mission}
                   alt='Mission Image'
-                  className='w-[60%] h-full rounded-[20px]'
+                  className='w-[60%] md:h-[350px] rounded-[20px]'
                 />
               </div>
 
