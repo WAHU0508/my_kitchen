@@ -55,25 +55,25 @@ export default function Header() {
         <nav className="flex flex-row md:gap-4 lg:gap-6 items-center">
           <Link
             href='/'
-            className={`md:text-[12px] lg:text-[16px] xl:text-[16px] hover:text-[#C45308] cursor-pointer transition-colors duration-300 ${pathname === '/' ? 'text-[#C45308] border-b-4 border-[#C45308]' : 'text-white'}`}
+            className={`md:text-[12px] lg:text-[16px] xl:text-[16px] hover:text-[#C45308] cursor-pointer transition-colors duration-300 ${pathname === '/' ? 'text-[#C45308] border-b-4 border-[#C45308]' : ''}`}
           >
             Home
           </Link>
           <Link
             href='/about_us'
-            className={`md:text-[12px] lg:text-[16px] xl:text-[16px] hover:text-[#C45308] cursor-pointer transition-colors duration-300 ${pathname === '/about_us' ? 'text-[#C45308] border-b-4 border-[#C45308]' : 'text-white'}`}
+            className={`md:text-[12px] lg:text-[16px] xl:text-[16px] hover:text-[#C45308] cursor-pointer transition-colors duration-300 ${pathname === '/about_us' ? 'text-[#C45308] border-b-4 border-[#C45308]' : ''}`}
           >
             About Us
           </Link>
           <Link
             href='/products_and_services'
-            className={`md:text-[12px] lg:text-[16px] xl:text-[16px] hover:text-[#C45308] cursor-pointer transition-colors duration-300 ${pathname === '/products_and_services' ? 'text-[#C45308] border-b-4 border-[#C45308]' : 'text-white'}`}
+            className={`md:text-[12px] lg:text-[16px] xl:text-[16px] hover:text-[#C45308] cursor-pointer transition-colors duration-300 ${pathname === '/products_and_services' ? 'text-[#C45308] border-b-4 border-[#C45308]' : ''}`}
           >
             Products & Services
           </Link>
           <Link
             href='/contact_us'
-            className={`md:text-[12px] lg:text-[16px] xl:text-[16px] hover:text-[#C45308] cursor-pointer transition-colors duration-300 ${pathname === '/contact_us' ? 'text-[#C45308] border-b-4 border-[#C45308]' : 'text-white'}`}
+            className={`md:text-[12px] lg:text-[16px] xl:text-[16px] hover:text-[#C45308] cursor-pointer transition-colors duration-300 ${pathname === '/contact_us' ? 'text-[#C45308] border-b-4 border-[#C45308]' : ''}`}
           >
             Contact Us
           </Link>
