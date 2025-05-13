@@ -10,7 +10,7 @@ function Aboutpage() {
         <Header/>
       </div>
       
-      <div className='w-full flex flex-col items-center justify-center text-black top-70'>
+      <div className='w-full flex flex-col items-center justify-center text-black top-100'>
         <h1 className='text-[32px] md:text-[40px]lg:text-[60px] xl:text-[64px]'>About Alver Power</h1>
         <p className='md:w-[40%] text-[12px] md:text-[16px] lg:text-[16px] xl:text-[20px] text-center'>Alver Power Systems is a leading company specializing in switchboard manufacturing, 
           EPC services, solar solutions, electrical installation, and laser cutting machining.
