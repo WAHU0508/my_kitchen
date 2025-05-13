@@ -26,7 +26,7 @@ export default function Footer() {
         setStatus('Sending...');
 
         try {
-            const res = await fetch('/api/message', {
+            const res = await fetch('/api/contact', {
                 method: 'POST',
                 body: JSON.stringify(formData),
                 headers: { 'Content-Type': 'application/json' },
