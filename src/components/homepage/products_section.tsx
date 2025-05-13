@@ -3,6 +3,7 @@ import Image from 'next/image'
 import sivacon from '@//assets/sivacon(2).jpg'
 import laser from '@//assets/laser (2).jpg'
 import solar from '@//assets/solar (1).jpeg'
+import arrow from '@//svgs/arrow.svg'
 
 function ProductsSection() {
   return (
@@ -17,7 +18,14 @@ function ProductsSection() {
                     </p>
                     <button className='bg-white text-black flex flex-row mb-[20px] md:mb-0'>
                         <p className='border border-black px-4 py-1 rounded-tl-[10px] rounded-bl-[10px]'>read more</p>
-                        <p className='border border-l-0 border-black px-4 py-1 rounded-tr-[10px] rounded-br-[10px]'></p>
+                        <div className='border border-l-0 border-black px-4 py-1 rounded-tr-[10px] rounded-br-[10px]'>
+                            <Image
+                                src={arrow}
+                                alt='arrow'
+                                width={16}
+                                height={16}
+                            />
+                        </div>
                     </button>
                 </div>
             </div>
