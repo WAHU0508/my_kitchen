@@ -1,5 +1,5 @@
 'use client'
-import React from 'react'
+import React, { useState } from 'react'
 import Image from 'next/image'
 import logo from '@//assets/logo.png'
 import twitter from '@//svgs/twitter.svg'
