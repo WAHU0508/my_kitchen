@@ -1,3 +1,4 @@
+import MissionSection from '@//components/aboutpage/mission_section'
 import Footer from '@//components/footer'
 import Header from '@//components/header'
 import React from 'react'
