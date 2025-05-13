@@ -16,7 +16,7 @@ function Aboutpage() {
           EPC services, solar solutions, electrical installation, and laser cutting machining.
            We are dedicated to providing high-quality, innovative solutions to meet the evolving needs of our clients.
         </p>
-        <div className='w-full md:mt-[100px]'>
+        <div className='w-full md:mt-[20px]'>
             <MissionSection/>
         </div>
       </div>
