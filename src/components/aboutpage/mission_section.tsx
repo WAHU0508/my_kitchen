@@ -12,8 +12,7 @@ function MissionSection() {
               <div className='flex flex-col ml-[30px] md:ml-[30px] md:w-[600px] lg:ml-[50px] lg:w-[600px]'>
                 <p className='text-[12px] md:text-[14px] lg:text-[14px]'>Our Mission</p>
                 <p className='text-[16px] md:text-[20px] lg:text-[20px]'>Empowering Industries with Cutting-Edge Solutions</p>
-                <p className='border-l-1 border-black md:border-none px-4 md:px-2 text-[12px] md:text-[18px] lg:text-[18px] mt-[30px] text-justify'>
-                  <div className='mt-[50px] border-l-2 border-black md:border-none h-[100px]'></div>
+                <p className='border-l-2 border-black md:border-none px-4 md:px-2 text-[12px] md:text-[18px] lg:text-[18px] mt-[30px] text-justify'>
                   At Alver Power Systems, we are committed to redefining industry standards through our 
                   comprehensive range of services. Our team is driven by a passion for excellence, ensuring that we deliver 
                   top-notch solutions in switchboard manufacturing, EPC services, solar solutions, electrical installation, 
