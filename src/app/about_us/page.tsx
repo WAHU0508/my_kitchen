@@ -18,16 +18,16 @@ function Aboutpage() {
            We are dedicated to providing high-quality, innovative solutions to meet the evolving needs of our clients.
         </p>
 
-        <div className='w-full border-b-1 border-black'></div>
+        <div className='mt-[50px] w-full border-b-1 border-black'></div>
         <div className='w-full mt-[20px] md:mt-[20px]'>
             <MissionSection/>
         </div>
 
-        <div className='w-full border-b-1 border-black'></div>
+        <div className='mt-[50px] w-full border-b-1 border-black'></div>
         <div className='w-full flex items-center justify-center mt-[20px] md:mt-[20px]'>
             <OurJourney />
         </div>
-        <div className='w-full border-b-1 border-black'></div>
+        <div className='mt-[50px] w-full border-b-1 border-black'></div>
       </div>
 
       <Footer/>

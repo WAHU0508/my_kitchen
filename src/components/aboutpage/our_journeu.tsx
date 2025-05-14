@@ -6,7 +6,7 @@ function OurJourney() {
 
         {/* year one */}
         <div className='w-full md:items-start'>
-            <div className='border-b border-black md:p-4 flex flex-col'>
+            <div className='border-b border-black md:p-4 flex flex-col md:w-[40%]'>
                 <p className='text-[#C45308] lg:text-[24px] py-4 border border-black'>2017</p>
             </div>
         </div>
@@ -16,7 +16,7 @@ function OurJourney() {
 
         {/* year two */}
         <div className='w-full md:items-end'>
-            <div className='border-b border-black md:p-4 flex flex-col'>
+            <div className='border-b border-black md:p-4 flex flex-col md:w-[40%]'>
                 <p className='text-[#C45308] lg:text-[24px] py-4 border border-black'>2017</p>
             </div>
         </div>
