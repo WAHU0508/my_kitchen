@@ -22,12 +22,12 @@ function Aboutpage() {
         </p>
 
         {/* <div className='mt-[50px] w-full border-b-1 border-black'></div> */}
-        <div className='w-full mt-[20px] md:mt-[20px]'>
+        <div className='w-full mt-[50px] md:mt-[20px]'>
             <MissionSection/>
         </div>
 
         {/* <div className='mt-[50px] w-full border-b-1 border-black'></div> */}
-        <div className='w-full flex items-center justify-center mt-[20px] md:mt-[20px]'>
+        <div className='w-full mt-[50px] flex items-center justify-center mt-[20px] md:mt-[20px]'>
             <OurJourney />
         </div>
 
