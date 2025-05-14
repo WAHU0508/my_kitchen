@@ -6,6 +6,7 @@ import OurJourney from '@//components/aboutpage/our_journeu'
 import Footer from '@//components/footer'
 import Header from '@//components/header'
 import coverImg from '@//assets/cover1.png'
+import NewsLetter from '@//components/aboutpage/newsletter'
 
 function Aboutpage() {
   return (
@@ -38,7 +39,10 @@ function Aboutpage() {
             alt='coverImg'
           />
         </div>
-
+         
+        <div className='w-full mt-[30px] flex items-center justify-center  md:mt-[60px]'>
+            <NewsLetter/>
+        </div>
       </div>
 
       <Footer/>
