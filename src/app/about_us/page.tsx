@@ -22,17 +22,17 @@ function Aboutpage() {
         </p>
 
         {/* <div className='mt-[50px] w-full border-b-1 border-black'></div> */}
-        <div className='w-full mt-[50px] md:mt-[20px]'>
+        <div className='w-full mt-[30px] md:mt-[60px]'>
             <MissionSection/>
         </div>
 
         {/* <div className='mt-[50px] w-full border-b-1 border-black'></div> */}
-        <div className='w-full mt-[50px] flex items-center justify-center mt-[20px] md:mt-[20px]'>
+        <div className='w-full mt-[30px] flex items-center justify-center  md:mt-[60px]'>
             <OurJourney />
         </div>
 
         {/* <div className='mt-[50px] w-full border-b-1 border-black'></div> */}
-        <div className='px-2 w-full h-[250px] md:h-[500px] lg:h-[600px]'>
+        <div className='px-2 w-full h-[250px] md:h-[500px] lg:h-[600px] mt-[30px] md:mt-[60px]'>
           <Image
             src={coverImg}
             alt='coverImg'
