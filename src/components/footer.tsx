@@ -203,7 +203,7 @@ export default function Footer() {
             </div>
             
             {/* All rights */}
-            <div className='w-full md:px-[5%] md:py-[30px] lg:px-[10%] flex flex-col md:flex-row md:items-center md:justify-between'>
+            <div className='w-full  md:px-[5%] md:py-[30px] lg:px-[10%] flex flex-col md:flex-row items-center md:justify-between'>
                 <p className='w-full'>&copy; 2022 by Alver Power Systems Ltd.</p>
                 <div className='flex flex-row w-full md:items-center md:justify-end gap-2 md:gap-4  mt-[20px] md:mt-0'>
                     <a
