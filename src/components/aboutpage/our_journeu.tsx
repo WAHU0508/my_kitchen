@@ -1,6 +1,8 @@
 import React from 'react'
 
+
 function OurJourney() {
+   
   return (
     <div className='w-[95%] md:w-[90%] lg:w-[80%] flex items-center justify-center flex-col'>
 
@@ -8,6 +10,10 @@ function OurJourney() {
         <div className='w-full flex items-center justify-center md:items-start md:justify-start'>
             <div className='border border-black p-4 w-[90%] md:p-4 flex flex-col md:w-[40%] rounded-[20px]'>
                 <p className='text-[#C45308] text-[20px] md:text-[24px] p-4 max-w-max border-b border-black'>2017</p>
+                <p className='mt-[20px] text-black text-[10px] md:text-[14px]'>COMPANY ESTABLISHED AS A SOLE PROPRIETOR</p>
+                <p className='mt-[20px] text-black text-[12px] md:text-[16px]'>Alver Power Systems was founded with a vision to 
+                    revolutionize the power and energy industry with advanced manufacturing and engineering capabilities.
+                </p>
             </div>
         </div>
 
@@ -25,6 +31,10 @@ function OurJourney() {
         <div className='w-full flex items-center justify-center md:items-end md:justify-end'>
             <div className='border border-black p-4 w-[90%] md:p-4 flex flex-col md:w-[40%] rounded-[20px]'>
                 <p className='text-[#C45308] text-[20px] md:text-[24px] p-4 max-w-max border-b  border-black'>2022</p>
+                <p className='mt-[20px] text-black text-[10px] md:text-[14px]'>COMPANY WAS RESISTERED</p>
+                <p className='mt-[20px] text-black text-[12px] md:text-[16px]'>
+                    The company was registered in 2022 in accordance with the Kenya Company Act rules.
+                </p>
             </div>
         </div>
 
