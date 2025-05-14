@@ -34,7 +34,7 @@ function OurJourney() {
       {/* First Entry */}
       <div className={`w-full flex items-center justify-center ${flipped ? 'md:items-end md:justify-end' : 'md:items-start md:justify-start'}`}>
             <div className={`
-                border border-black p-4 w-[90%] md:p-4 flex flex-col md:w-[40%] rounded-[20px]
+                border border-black p-4 w-[90%] md:p-4 flex flex-col md:w-[45%] lg:w-[40%] rounded-[20px]
                 transition-all duration-500 ease-in-out transform
                 ${flipped ? 'translate-x-4 opacity-90' : '-translate-x-4 opacity-90'}
             `}>
@@ -58,7 +58,7 @@ function OurJourney() {
       {second && (
         <div className={`w-full flex items-center justify-center ${flipped ? 'md:items-start md:justify-start' : 'md:items-end md:justify-end'}`}>
             <div className={`
-                border border-black p-4 w-[90%] md:p-4 flex flex-col md:w-[40%] rounded-[20px]
+                border border-black p-4 w-[90%] md:p-4 flex flex-col md:w-[45%] lg:w-[40%] rounded-[20px]
                 transition-all duration-500 ease-in-out transform
                 ${flipped ? 'translate-x-4 opacity-90' : '-translate-x-4 opacity-90'}
             `}>
