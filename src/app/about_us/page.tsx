@@ -1,9 +1,11 @@
 'use client'
+import React from 'react'
+import Image from 'next/image'
 import MissionSection from '@//components/aboutpage/mission_section'
 import OurJourney from '@//components/aboutpage/our_journeu'
 import Footer from '@//components/footer'
 import Header from '@//components/header'
-import React from 'react'
+import coverImg from '@//assets/cover1.png'
 
 function Aboutpage() {
   return (
@@ -28,7 +30,15 @@ function Aboutpage() {
         <div className='w-full flex items-center justify-center mt-[20px] md:mt-[20px]'>
             <OurJourney />
         </div>
+
         {/* <div className='mt-[50px] w-full border-b-1 border-black'></div> */}
+        <div className='px-2 w-full h-[250px] md:h-[500px] lg:h-[600px]'>
+          <Image
+            src={coverImg}
+            alt='coverImg'
+          />
+        </div>
+
       </div>
 
       <Footer/>
