@@ -1,3 +1,4 @@
+'use client'
 import MissionSection from '@//components/aboutpage/mission_section'
 import OurJourney from '@//components/aboutpage/our_journeu'
 import Footer from '@//components/footer'
