@@ -1,6 +1,33 @@
-import React from 'react'
+import React, { useState} from 'react'
 
 function NewsLetter() {
+    const [email, setEmail] = useState('');
+    const [isChecked, setIsChecked] = useState(false);
+    const [message, setMessage] = useState('');
+    const [error, setError] = useState('');
+
+    const handleSubmit = (e) => {
+        e.preventDefault();
+
+        fetch('/api/subscribe', {
+            method: 'POST',
+            headers: { 'Content-Type': 'application/json' },
+            body: JSON.stringify({ email })
+        })
+            .then(res => {
+            if (!res.ok) return res.json().then(data => Promise.reject(data.message));
+            return res.json();
+            })
+            .then(data => {
+            setMessage(data.message);
+            setError('');
+            })
+            .catch(err => {
+            setError(err);
+            setMessage('');
+            });
+        };
+        
   return (
     <div className='w-[95%] md:w-[90%] lg:w-[80%] flex items-center justify-center flex-col h-auto mb-4'>
         {/* text section */}
@@ -12,28 +39,43 @@ function NewsLetter() {
             </div>
         </div>
         {/* form section */}
-        <div className='w-full md:[70%] lg:w-[50%] items-center justify-center'>
-            <form className='bg-white text-black px-4 py-4 md:px-2'>
-                <p>Join our mailing list</p>
-                <p>Email*</p>
+        <div className='w-full md:w-[70%] lg:w-[50%] items-center justify-center'>
+            <form onSubmit={handleSubmit} className='bg-white text-black px-4 py-4 md:px-2'>
+                <p className='font-bold text-lg mb-2'>Join our mailing list</p>
+                <p className='text-sm'>Email*</p>
+                
                 <div className='w-full flex flex-col md:flex-row gap-2'>
-                    <input
-                        type='text'
-                        name='email'
-                        className='w-full border-b px-2 border-black'
-                    />
-                    <button className='border border-black text-black bg-white px-4 py-2 max-w-max'>Subscribe</button>
+                <input
+                    type='text'
+                    name='email'
+                    value={email}
+                    onChange={(e) => setEmail(e.target.value)}
+                    className='w-full border-b px-2 focus:outline-none border-black'
+                />
+                <button
+                    type='submit'
+                    className='border border-black text-black bg-white px-4 py-2 max-w-max hover:bg-black hover:text-white transition'
+                >
+                    Subscribe
+                </button>
                 </div>
+
                 <div className='w-full flex flex-row mt-2 gap-2'>
-                    <input
-                        type='checkbox'
-                        name='checkbox'
-                        className='border-b border-black'
-                    />
-                    <p>I want to subscribe to your mailing list.</p>
+                <input
+                    type='checkbox'
+                    name='checkbox'
+                    checked={isChecked}
+                    onChange={(e) => setIsChecked(e.target.checked)}
+                    className='mt-1'
+                />
+                <p className='text-sm'>I want to subscribe to your mailing list.</p>
                 </div>
+
+                {/* Feedback Messages */}
+                {message && <p className='text-green-600 mt-2'>{message}</p>}
+                {error && <p className='text-red-600 mt-2'>{error}</p>}
             </form>
-        </div>
+            </div>
     </div>
   )
 }
