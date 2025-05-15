@@ -1,6 +1,6 @@
-import { supabase } from '@/lib/supabaseClient';
+import { supabase } from '@//lib/supabaseClient';
 
-export async function POST(request: Request) {
+export async function POST(request) {
   const { email } = await request.json();
 
   if (!email) {
