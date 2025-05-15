@@ -41,7 +41,7 @@ function Aboutpage() {
           />
         </div>
          
-        <div className='w-full mt-[30px] flex items-center justify-center  md:mt-[60px]'>
+        <div className='w-full mt-[30px] flex items-center justify-center  md:mt-[60px] bg-black'>
             <NewsLetter/>
         </div>
       </div>

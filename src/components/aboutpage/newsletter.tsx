@@ -2,7 +2,7 @@ import React from 'react'
 
 function NewsLetter() {
   return (
-    <div className='w-[95%] md:w-[90%] lg:w-[80%] flex items-center justify-center flex-col bg-black h-auto'>
+    <div className='w-[95%] md:w-[90%] lg:w-[80%] flex items-center justify-center flex-col h-auto'>
         {/* text section */}
         <div className='text-white border-l-2 border-white h-auto w-full ml-[10px] flex flex-row gap-4'>
             <div className='border-l-2 border-white mt-[20px] h-[30px]'></div>
