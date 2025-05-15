@@ -1,4 +1,4 @@
-import { supabase } from '@//lib/supabaseClient';
+import { supabase } from '@/lib/supabaseClient';
 
 export async function POST(request: Request) {
   const { email } = await request.json();
@@ -8,21 +8,25 @@ export async function POST(request: Request) {
   }
 
   // Check if already subscribed
-  const { data: existing, error: findError } = await supabase
+  const { data: existing, error: checkError } = await supabase
     .from('subscribers')
     .select('id')
     .eq('email', email)
-    .single();
+    .maybeSingle(); // safer than single() in this context
+
+  if (checkError) {
+    return new Response(JSON.stringify({ message: 'Database error' }), { status: 500 });
+  }
 
   if (existing) {
     return new Response(JSON.stringify({ message: 'Already subscribed' }), { status: 400 });
   }
 
-  const { error } = await supabase
+  const { error: insertError } = await supabase
     .from('subscribers')
     .insert([{ email }]);
 
-  if (error) {
+  if (insertError) {
     return new Response(JSON.stringify({ message: 'Failed to subscribe' }), { status: 500 });
   }
 
