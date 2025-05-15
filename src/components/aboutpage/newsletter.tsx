@@ -12,17 +12,17 @@ function NewsLetter() {
             </div>
         </div>
         {/* form section */}
-        <div className='w-full items-center justify-center'>
+        <div className='w-full md:w-[50%] items-center justify-center'>
             <form className='bg-white text-black py-4 px-2'>
                 <p>Join our mailing list</p>
                 <p>Email*</p>
-                <div className='w-full flex flex-col md:flex-row'>
+                <div className='w-full px-2 flex flex-col md:flex-row'>
                     <input
                         type='text'
                         name='email'
-                        className='border-b border-black'
+                        className='w-full border-b border-black'
                     />
-                    <button className='border-black text-black bg-white px-4 py-2 max-w-max'>Subscribe</button>
+                    <button className='border border-black text-black bg-white px-4 py-2 max-w-max'>Subscribe</button>
                 </div>
                 <div className='w-full flex flex-row'>
                     <input
