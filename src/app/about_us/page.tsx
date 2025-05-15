@@ -37,8 +37,7 @@ function Aboutpage() {
           <Image
             src={coverImg}
             alt='coverImg'
-            fill
-            className='object-cover'
+            className='object-contain'
           />
         </div>
          
