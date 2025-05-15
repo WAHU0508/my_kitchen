@@ -11,6 +11,29 @@ function NewsLetter() {
                 <p className='text-[20px]'>Alver Power in the Press</p>
             </div>
         </div>
+        {/* form section */}
+        <div className='w-full items-center justify-center'>
+            <form className='bg-white text-black py-4 px-2'>
+                <p>Join our mailing list</p>
+                <p>Email*</p>
+                <div className='w-full flex flex-col md:flex-row'>
+                    <input
+                        type='text'
+                        name='email'
+                        className='border-b border-black'
+                    />
+                    <button className='border-black text-black bg-white px-4 py-2 max-w-max'>Subscribe</button>
+                </div>
+                <div className='w-full flex flex-row'>
+                    <input
+                        type='checkbox'
+                        name='checkbox'
+                        className='border-b border-black'
+                    />
+                    <p>I want to subscribe to your mailing list.</p>
+                </div>
+            </form>
+        </div>
     </div>
   )
 }
