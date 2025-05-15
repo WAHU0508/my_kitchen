@@ -1,4 +1,4 @@
-import React, { useState} from 'react'
+import React, { useState, FormEvent} from 'react'
 
 function NewsLetter() {
     const [email, setEmail] = useState('');
@@ -6,7 +6,7 @@ function NewsLetter() {
     const [message, setMessage] = useState('');
     const [error, setError] = useState('');
 
-    const handleSubmit = (e) => {
+    const handleSubmit = (e: FormEvent<HTMLFormElement>) => {
         e.preventDefault();
 
         fetch('/api/subscribe', {
@@ -27,7 +27,7 @@ function NewsLetter() {
             setMessage('');
             });
         };
-        
+
   return (
     <div className='w-[95%] md:w-[90%] lg:w-[80%] flex items-center justify-center flex-col h-auto mb-4'>
         {/* text section */}
