@@ -18,6 +18,7 @@ export async function POST(request) {
     subscribers = JSON.parse(data);
   } catch (error) {
     // If file doesn't exist, start fresh
+    console.warn('Error reading subscribers file:', error);
     subscribers = [];
   }
 
