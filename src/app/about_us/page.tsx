@@ -33,7 +33,7 @@ function Aboutpage() {
         </div>
 
         {/* <div className='mt-[50px] w-full border-b-1 border-black'></div> */}
-        <div className='px-2 w-full h-[250px] md:h-[500px] lg:h-[600px] mt-[30px] md:mt-[60px]'>
+        <div className='px-2 md:px-0 w-full h-[250px] md:h-[500px] lg:h-[600px] mt-[30px] md:mt-[60px]'>
           <Image
             src={coverImg}
             alt='coverImg'
@@ -41,7 +41,7 @@ function Aboutpage() {
           />
         </div>
          
-        <div className='w-full mt-[30px] flex items-center justify-center  md:mt-[60px] bg-black'>
+        <div className='w-full mt-[0px] flex items-center justify-center pt-[30px] md:mt-[0px] lg:mt-[60px] bg-black'>
             <NewsLetter/>
         </div>
       </div>
