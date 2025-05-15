@@ -12,7 +12,7 @@ function NewsLetter() {
             </div>
         </div>
         {/* form section */}
-        <div className='w-full md:[70%] lg::w-[50%] items-center justify-center'>
+        <div className='w-full md:[70%] lg:w-[50%] items-center justify-center'>
             <form className='bg-white text-black px-4 py-4 md:px-2'>
                 <p>Join our mailing list</p>
                 <p>Email*</p>
