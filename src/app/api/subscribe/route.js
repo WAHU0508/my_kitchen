@@ -1,35 +1,30 @@
-// app/api/subscribe/route.js
-import { promises as fs } from 'fs';
-import path from 'path';
+import { supabase } from '@//lib/supabaseClient';
 
-const filePath = path.join(process.cwd(), 'subscribers.json');
-
-export async function POST(request) {
+export async function POST(request: Request) {
   const { email } = await request.json();
 
   if (!email) {
     return new Response(JSON.stringify({ message: 'Email is required' }), { status: 400 });
   }
 
-  // Read existing data
-  let subscribers = [];
-  try {
-    const data = await fs.readFile(filePath, 'utf8');
-    subscribers = JSON.parse(data);
-  } catch (error) {
-    // If file doesn't exist, start fresh
-    console.warn('Error reading subscribers file:', error);
-    subscribers = [];
-  }
+  // Check if already subscribed
+  const { data: existing, error: findError } = await supabase
+    .from('subscribers')
+    .select('id')
+    .eq('email', email)
+    .single();
 
-  // Check for duplicates
-  if (subscribers.find(sub => sub.email === email)) {
+  if (existing) {
     return new Response(JSON.stringify({ message: 'Already subscribed' }), { status: 400 });
   }
 
-  // Save new subscriber
-  subscribers.push({ email, subscribedAt: new Date().toISOString() });
-  await fs.writeFile(filePath, JSON.stringify(subscribers, null, 2));
+  const { error } = await supabase
+    .from('subscribers')
+    .insert([{ email }]);
+
+  if (error) {
+    return new Response(JSON.stringify({ message: 'Failed to subscribe' }), { status: 500 });
+  }
 
   return new Response(JSON.stringify({ message: 'Successfully subscribed' }), { status: 201 });
 }
