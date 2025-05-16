@@ -12,14 +12,14 @@ function ProductsAndServicesPage() {
         <div className='w-full fixed top-0 left-0 z-20'>
             <Header/>
         </div>
-        <div className='w-full h-full'>
+        <div className='w-full h-full md:h-[600px]'>
             <Image
             src={background}
             alt='Products and Services'
             className='w-full h-full'
           />
         </div>
-        <div className='absolute top-10 md:top-20 lg:top-40 lg:left-1/2 lg:transform lg:-translate-x-1/2 text-center'>
+        <div className='absolute top-10 md:top-70 lg:top-100 lg:left-1/2 lg:transform lg:-translate-x-1/2 text-center'>
             <p className='text-[24px] md:text-[50px] lg:text-[64px] text-white font-bold'>Our Products and Services</p>
         </div>
       </div>
