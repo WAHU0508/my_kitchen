@@ -29,7 +29,7 @@ function NewsLetter() {
         };
 
   return (
-    <div className='w-[95%] md:w-[90%] lg:w-[80%] flex items-center justify-center flex-col h-auto mb-4'>
+    <div className='w-[95%] md:w-[90%] lg:w-[80%] flex items-center justify-center flex-col gap-4 h-auto mb-4'>
         {/* text section */}
         <div className='text-white border-l-2 border-white h-auto w-full ml-[10px] flex flex-row gap-4'>
             <div className='border-l-2 border-white mt-[40px] h-[30px]'></div>
@@ -51,6 +51,7 @@ function NewsLetter() {
                     value={email}
                     onChange={(e) => setEmail(e.target.value)}
                     className='w-full border-b px-2 focus:outline-none border-black'
+                    required
                 />
                 <button
                     type='submit'
@@ -67,6 +68,7 @@ function NewsLetter() {
                     checked={isChecked}
                     onChange={(e) => setIsChecked(e.target.checked)}
                     className='mt-1'
+                    required
                 />
                 <p className='text-sm'>I want to subscribe to your mailing list.</p>
                 </div>

@@ -45,9 +45,7 @@ function Aboutpage() {
             <NewsLetter/>
         </div>
 
-        
       </div>
-
       <Footer/>
     </div>
   )
