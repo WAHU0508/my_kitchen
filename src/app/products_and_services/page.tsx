@@ -1,5 +1,8 @@
 import React from 'react'
 import background from '@//assets/background1.png'
+import Image from 'next/image'
+import Header from '@//components/header'
+
 
 function ProductsAndServicesPage() {
   return (
