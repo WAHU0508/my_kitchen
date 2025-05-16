@@ -19,8 +19,8 @@ function ProductsAndServicesPage() {
             className='w-full h-full'
           />
         </div>
-        <div className='absolute top-30 md:top-50 lg:top-50 left-1/2 transform -translate-x-1/2 text-center'>
-            <p className='text-[24px] md:text-[50px] lg:text-[64px] text-white font-bold'>Our Products and Services</p>
+        <div className='absolute top-10 md:top-50 lg:top-50 left-1/2 transform -translate-x-1/2 text-center'>
+            <p className='text-[24px] md:text-[50px] lg:text-[64px] text-white font-bold'>Our Products & Services</p>
         </div>
       </div>
     </div>
