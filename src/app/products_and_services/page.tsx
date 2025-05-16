@@ -3,7 +3,7 @@ import background from '@//assets/background1.png'
 import Image from 'next/image'
 import Header from '@//components/header'
 import Footer from '@//components/footer'
-
+import { motion } from 'framer-motion';
 
 function ProductsAndServicesPage() {
   return (
