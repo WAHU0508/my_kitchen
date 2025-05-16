@@ -4,6 +4,10 @@ import Image from 'next/image'
 import Header from '@//components/header'
 import Footer from '@//components/footer'
 import { motion } from 'framer-motion';
+import Item4 from '@//components/productsandservicespage/solar'
+import Item1 from '@//components/productsandservicespage/switchboard'
+import Item3 from '@//components/productsandservicespage/cnc'
+import Item2 from '@//components/productsandservicespage/electricals'
 
 function ProductsAndServicesPage() {
   return (
