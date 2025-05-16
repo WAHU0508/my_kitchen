@@ -25,7 +25,7 @@ function ProductsAndServicesPage() {
   };
   
   return (
-    <div className='w-full flex flex-col items-center justify-center bg-black'>
+    <div className='w-full flex flex-col items-center justify-center bg-white mb-[50px]'>
       <div className='w-full relative'>
         {/* Header */}
         <div className='w-full fixed top-0 left-0 z-20'>
