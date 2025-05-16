@@ -10,6 +10,19 @@ import Item3 from '@//components/productsandservicespage/cnc'
 import Item2 from '@//components/productsandservicespage/electricals'
 
 function ProductsAndServicesPage() {
+  const cardVariants = {
+    hidden: { opacity: 0, y: 40 },
+    visible: (i: number) => ({
+      opacity: 1,
+      y: 0,
+      transition: {
+        delay: i * 0.2,
+        duration: 0.6,
+        ease: 'easeOut',
+      },
+    }),
+  };
+  
   return (
     <div className='w-full flex flex-col items-center justify-center bg-black'>
       <div className='w-full relative'>
