@@ -1,4 +1,7 @@
 import React, { useState } from 'react'
+import Image from 'next/image'
+import { FiUpload } from 'react-icons/fi';
+import arrow from '@//svgs/arrow.svg'
 
 function GetQuoteButton() {
     const [isModalOpen, setIsModalOpen] = useState(false);
@@ -66,7 +69,7 @@ function GetQuoteButton() {
             {/* Rectangle 9 - blurred background box */}
             {/*<div className="absolute w-[145px] h-[30px] lg:w-[290px] lg:h-[46px] md:w-[290px] md:h-[46px] inset-0 border-[2px] border-[#252865] rounded-[15px] blur-[8.25px]"></div>*/}
             {/* Rectangle 8 - foreground box */}
-            <button className="absolute text-black hover:bg-[#252865] hover:text-white active:bg-[#252865] active:text-white w-[145px] h-[30px] lg:w-[220px] lg:h-[46px] md:w-[220px] md:h-[46px] text-[10px] lg:text-[16px] md:text-[16px] inset-0 border-[2px] border-[#252865] rounded-[15px] flex flex-row items-center justify-center lg:items-center lg:justify-center md:items-center md:justify-center gap-2 lg:gap-2 md:gap-2"
+            {/* <button className="absolute text-black hover:bg-[#252865] hover:text-white active:bg-[#252865] active:text-white w-[145px] h-[30px] lg:w-[220px] lg:h-[46px] md:w-[220px] md:h-[46px] text-[10px] lg:text-[16px] md:text-[16px] inset-0 border-[2px] border-[#252865] rounded-[15px] flex flex-row items-center justify-center lg:items-center lg:justify-center md:items-center md:justify-center gap-2 lg:gap-2 md:gap-2"
                 onClick={openModal}
             >
                 Get a Quote
@@ -77,6 +80,17 @@ function GetQuoteButton() {
                     height={16}
                     className='w-[10px] h-[10px] lg:w-[16px] lg:h-[16px] md:w-[16px] md:h-[16px]'
                 />
+            </button> */}
+            <button className='bg-black text-black flex flex-row mb-[20px] md:mb-0'>
+                <p className='border border-black px-4 py-1 rounded-tl-[10px] rounded-bl-[10px]' onClick={openModal}>Get Quote</p>
+                <div className='border border-l-0 border-black px-4 py-1 rounded-tr-[10px] flex items-center justify-center rounded-br-[10px]'>
+                    <Image
+                        src={arrow}
+                        alt='arrow'
+                        width={16}
+                        height={16}
+                    />
+                </div>
             </button>
         </div>
         {/*Get Quote Modal */}
