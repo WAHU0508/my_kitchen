@@ -68,7 +68,7 @@ export default function SolarSolutions() {
                             </ul>
                         </div>
 
-                        <div className="mt-8">
+                        <div className="mt-8 w-full flex items-center justify-center">
                             {/* <button 
                                 onClick={() => router.push('/contact_us')}
                                 className="mt-6 px-6 py-3 bg-[#FF0105] hover:bg-[#e40004] text-white rounded-lg text-lg font-semibold transition">

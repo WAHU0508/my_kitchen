@@ -81,7 +81,7 @@ function GetQuoteButton() {
                     className='w-[10px] h-[10px] lg:w-[16px] lg:h-[16px] md:w-[16px] md:h-[16px]'
                 />
             </button> */}
-            <button className='bg-black text-black flex flex-row mb-[20px] md:mb-0'>
+            <button className='bg-white text-black flex flex-row mb-[20px] md:mb-0'>
                 <p className='border border-black px-4 py-1 rounded-tl-[10px] rounded-bl-[10px]' onClick={openModal}>Get Quote</p>
                 <div className='border border-l-0 border-black px-4 py-1 rounded-tr-[10px] flex items-center justify-center rounded-br-[10px]'>
                     <Image
