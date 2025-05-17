@@ -31,7 +31,7 @@ export default function Product1() {
       `}>
         <div className="ml-[20px] mt-[10px] mb-4 flex flex-col gap-3">
           <p className='text-white text-[32px] font-bold'>
-            01
+            04
           </p>
           <p className='text-white text-[32px] font-bold h-[90px]'>
             Solar Solutions
