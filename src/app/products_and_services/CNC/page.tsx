@@ -78,7 +78,6 @@ export default function SolarSolutions() {
                         </div>
                     </div>
                 </div>
-
             </div>
         </section>
     )
