@@ -61,7 +61,7 @@ export default function ContactUsPage() {
           />
       
           {/* Header inside image container (or move outside if needed) */}
-          <div className="fixed top-4 left-0 w-full lg:z-20">
+          <div className="fixed top-0 left-0 w-full lg:z-20">
             <Header />
           </div>
 
