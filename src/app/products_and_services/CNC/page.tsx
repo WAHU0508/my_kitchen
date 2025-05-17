@@ -3,6 +3,7 @@ import React from 'react'
 import Image from 'next/image'
 import cncImg from '@//assets/img04.jpg'
 import { useRouter } from 'next/navigation';
+import GetQuoteButton from '@//components/getQuoteBtn';
 
 export default function SolarSolutions() {
     const router = useRouter();
@@ -68,11 +69,12 @@ export default function SolarSolutions() {
                         </div>
 
                         <div className="mt-8">
-                            <button 
+                            {/* <button 
                                 onClick={() => router.push('/contact_us')}
                                 className="mt-6 px-6 py-3 bg-[#FF0105] hover:bg-[#e40004] text-white rounded-lg text-lg font-semibold transition">
                                 Contact Us Today
-                            </button>
+                            </button> */}
+                            <GetQuoteButton/>
                         </div>
                     </div>
                 </div>
