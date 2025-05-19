@@ -120,31 +120,7 @@ export default function ContactUsPage() {
           ></iframe>
         </div>
         
-        <div className="mt-4 w-full flex flex-col items-center justify-center">
-          <div className='border border-gray shadow-lg px-[50px] py-[20px] rounded-[20px]'>
-            <p className='text-[#FF0105] text-[12px] md:text-[20px] lg:text-[18px]'>Send us a message</p>
-            <p className='text-black text-[12px] md:text-[20px] lg:text-[18px]'>Required fields are marked <span className='text-[#FF0105]'>*</span></p>
-            <form onSubmit={handleSubmit} className="space-y-1 max-w-md mx-auto text-[black]">
-                <p className='text-black text-[12px] md:text-[20px] lg:text-[18px]'>Your Name <span className='text-[#FF0105]'>*</span></p>
-                <input type="text" name="name" placeholder="Name" onChange={handleChange} required className="w-full p-2 border border-[#D9D9D9] rounded text-black" />
-                <p className='text-black text-[12px] md:text-[20px] lg:text-[18px]'>Your Email <span className='text-[#FF0105]'>*</span></p>
-                <input type="email" name="email" placeholder="Email" onChange={handleChange} required className="w-full p-2 border border-[#D9D9D9] rounded text-black" />
-                <p className='text-black text-[12px] md:text-[20px] lg:text-[18px]'>Tel No. <span className='text-[#FF0105]'>*</span></p>
-                <input type="tel" name="phone" placeholder="Phone Number" onChange={handleChange} required className="w-full p-2 border border-[#D9D9D9] rounded text-black" />
-                <p className='text-black text-[12px] md:text-[20px] lg:text-[18px]'>Your Message <span className='text-[#FF0105]'>*</span></p>
-                <textarea name="message" placeholder="Quote / Message" onChange={handleChange} required className="w-full p-2 border rounded border-[#D9D9D9] text-black"></textarea>
-                <button type="submit" className="bg-[#F4A261] text-black px-4 py-1 rounded">Send</button>
-                {status && (
-                    <p className={`mt-2 text-center text-xl 
-                          ${status === 'Sending...' ? 'text-black' : ''} 
-                          ${status === 'Message sent!' ? 'text-green-500' : ''} 
-                          ${status === 'Failed to send message.' ? 'text-red-500' : ''}`}>
-                        {status}
-                    </p>
-                )}
-            </form>
-          </div>
-        </div>
+        
         <div className='w-full bg-[#F8F8F8] mt-[20px]'>
           <Footer />
         </div>
