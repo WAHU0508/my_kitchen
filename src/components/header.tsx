@@ -125,7 +125,7 @@ export default function Header() {
 
                     {/* Modal with slide-in animation */}
                     <div
-                        className={`overflow-x-auto fixed left-0 top-0 h-screen w-[262px] flex flex-col items-center bg-white shadow-xl z-50 transition-transform duration-300 transform ${
+                        className={`overflow-x-auto fixed right-0 top-0 h-screen w-full flex flex-col items-center bg-white shadow-xl z-50 transition-transform duration-300 transform ${
                             isOpen ? 'translate-x-0' : '-translate-x-full'
                         }`}
                         style={{ touchAction: 'none' }}
@@ -136,9 +136,9 @@ export default function Header() {
                                 width={120}
                                 height={38}
                                 alt='Alver Power Systems logo'
-                                className='w-[120px] h-[38px] mt-[22px] mb-[20px]'
+                                className='w-[120px] h-[38px] mt-[22px] mb-[50px]'
                             />
-                            <ul className="space-y-[20px]">
+                            <ul className="space-y-[50px]">
                                 <li><Link
                                         href="/"
                                         className={`border-b border-black/10 flex items-center justify-center w-[146px] h-[22px] text-[12px] ${
