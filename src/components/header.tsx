@@ -109,7 +109,7 @@ export default function Header() {
                 className='w-[120px] h-[38px]'
             />
         </div>
-        <button>
+        <button onClick={() => setIsOpen(true)}>
             <Menu size={31} color='white'/>
         </button>
       </div>
