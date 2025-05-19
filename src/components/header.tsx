@@ -125,7 +125,7 @@ export default function Header() {
 
                     {/* Modal with slide-in animation */}
                     <div
-                        className={`overflow-x-auto fixed right-0 top-0 h-screen w-full flex flex-col items-center bg-white shadow-xl z-50 transition-transform duration-300 transform ${
+                        className={`overflow-x-auto fixed right-0 top-0 h-screen w-[270px] flex flex-col items-center bg-white shadow-xl z-50 transition-transform duration-300 transform ${
                             isOpen ? 'translate-x-0' : '-translate-x-full'
                         }`}
                         style={{ touchAction: 'none' }}
