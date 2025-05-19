@@ -1,5 +1,6 @@
 import type { Metadata, Viewport } from "next";
 import "./globals.css";
+import Chatbot from '@//components/chatbot'
 
 export const metadata: Metadata = {
   title: "Alver Power Systems | Electrical, Solar & Manufacturing Experts",
@@ -42,7 +43,9 @@ export const viewport: Viewport = {
 export default function RootLayout({
   children,
 }: Readonly<{ children: React.ReactNode }>) {
-
+  const currentUser = {
+    id: 'abc123-user-id', 
+  }
   return (
     <html lang="en">
       <head>
@@ -63,6 +66,7 @@ export default function RootLayout({
       </head>
       <body>
         {children}
+        <Chatbot userId={currentUser.id} />
       </body>
     </html>
   );
