@@ -56,14 +56,14 @@ function ProductsSection() {
                         From prototypes to full-scale production, we guarantee speed, accuracy, and unmatched quality.
                     </p>
                     <button
-                        className='bg-white text-black flex flex-row mb-[20px] md:mb-0 hover:bg-black hover:text-white group'
+                        className='text-black flex flex-row mb-[20px] md:mb-0 hover:text-white group'
                         onMouseEnter={() => setIsHovered(true)}
                         onMouseLeave={() => setIsHovered(false)}
                         >
-                        <p className='border border-black px-4 py-1 rounded-tl-[10px] rounded-bl-[10px] group-hover:text-white'>
+                        <p className='bg-white group-hover:bg-black border border-black px-4 py-1 rounded-tl-[10px] rounded-bl-[10px] group-hover:text-white'>
                             read more
                         </p>
-                        <div className='border border-l-0 border-black px-4 py-1 rounded-tr-[10px] rounded-br-[10px] flex items-center justify-center group-hover:text-white'>
+                        <div className='bg-white group-hover:bg-black border border-l-0 border-black px-4 py-1 rounded-tr-[10px] rounded-br-[10px] flex items-center justify-center group-hover:text-white'>
                             <Image
                             src={isHovered ? arrow2 : arrow}
                             alt='arrow'
