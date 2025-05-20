@@ -1,4 +1,5 @@
-import React, { useState } from 'react'
+import React, { useState } from 'react';
+import Link from 'next/link';
 import Image from 'next/image'
 import sivacon from '@//assets/sivacon(2).jpg'
 import laser from '@//assets/laser (2).jpg'
@@ -8,6 +9,8 @@ import arrow2 from '@//svgs/arrow2.svg'
 
 function ProductsSection() {
     const [isHovered, setIsHovered] = useState(false);
+    const [isHovered1, setIsHovered1] = useState(false);
+    const [isHovered2, setIsHovered2] = useState(false);
   return (
     <div className='w-full bg-white h-auto text-black flex flex-col items-center justify-center pt-[20px]'>
         {/* SwitchBoard */}
@@ -18,17 +21,24 @@ function ProductsSection() {
                     <p className='text-[12px] md:text-[16px] lg:text-[16px]'>From custom-designed switch boards to panel assemblies, 
                         we offer high-quality manufacturing solutions tailored to meet your specific requirements.
                     </p>
-                    <button className='bg-white text-black flex flex-row mb-[20px] md:mb-0'>
-                        <p className='border border-black px-4 py-1 rounded-tl-[10px] rounded-bl-[10px]'>read more</p>
-                        <div className='border border-l-0 border-black px-4 py-1 rounded-tr-[10px] flex items-center justify-center rounded-br-[10px]'>
+                    <Link
+                        href='/products_and_services/switchboard_manufacturing'
+                        className='text-black flex flex-row mb-[20px] md:mb-0 hover:text-white group'
+                        onMouseEnter={() => setIsHovered(true)}
+                        onMouseLeave={() => setIsHovered(false)}
+                        >
+                        <p className='bg-white group-hover:bg-black border border-black px-4 py-1 rounded-tl-[10px] rounded-bl-[10px] group-hover:text-white'>
+                            read more
+                        </p>
+                        <div className='bg-white group-hover:bg-black border border-l-0 border-black px-4 py-1 rounded-tr-[10px] rounded-br-[10px] flex items-center justify-center group-hover:text-white'>
                             <Image
-                                src={arrow}
-                                alt='arrow'
-                                width={16}
-                                height={16}
+                            src={isHovered ? arrow2 : arrow}
+                            alt='arrow'
+                            width={16}
+                            height={16}
                             />
                         </div>
-                    </button>
+                    </Link>
                 </div>
             </div>
             <div className='w-full md:w-[50%] lg:w-[50%] h-full'>
@@ -55,23 +65,24 @@ function ProductsSection() {
                         expert craftsmanship to deliver high-precision components tailored to your exact specifications. 
                         From prototypes to full-scale production, we guarantee speed, accuracy, and unmatched quality.
                     </p>
-                    <button
+                    <Link
+                        href='/products_and_services/CNC'
                         className='text-black flex flex-row mb-[20px] md:mb-0 hover:text-white group'
-                        onMouseEnter={() => setIsHovered(true)}
-                        onMouseLeave={() => setIsHovered(false)}
+                        onMouseEnter={() => setIsHovered1(true)}
+                        onMouseLeave={() => setIsHovered1(false)}
                         >
                         <p className='bg-white group-hover:bg-black border border-black px-4 py-1 rounded-tl-[10px] rounded-bl-[10px] group-hover:text-white'>
                             read more
                         </p>
                         <div className='bg-white group-hover:bg-black border border-l-0 border-black px-4 py-1 rounded-tr-[10px] rounded-br-[10px] flex items-center justify-center group-hover:text-white'>
                             <Image
-                            src={isHovered ? arrow2 : arrow}
+                            src={isHovered1 ? arrow2 : arrow}
                             alt='arrow'
                             width={16}
                             height={16}
                             />
                         </div>
-                    </button>
+                    </Link>
                 </div>
             </div>
             
@@ -84,17 +95,24 @@ function ProductsSection() {
                     <p className='text-[12px] md:text-[16px] lg:text-[16px]'>Harness the power of solar energy with our comprehensive solutions, including design, 
                         installation, and maintenance of solar systems for residential, commercial, and industrial applications.
                     </p>
-                    <button className='bg-white text-black flex flex-row mb-[20px] md:mb-0'>
-                        <p className='border border-black px-4 py-1 rounded-tl-[10px] rounded-bl-[10px]'>read more</p>
-                        <div className='border border-l-0 border-black px-4 py-1 rounded-tr-[10px] flex items-center justify-center rounded-br-[10px]'>
+                    <Link
+                        href='/products_and_services/solar_solutions'
+                        className='text-black flex flex-row mb-[20px] md:mb-0 hover:text-white group'
+                        onMouseEnter={() => setIsHovered2(true)}
+                        onMouseLeave={() => setIsHovered2(false)}
+                        >
+                        <p className='bg-white group-hover:bg-black border border-black px-4 py-1 rounded-tl-[10px] rounded-bl-[10px] group-hover:text-white'>
+                            read more
+                        </p>
+                        <div className='bg-white group-hover:bg-black border border-l-0 border-black px-4 py-1 rounded-tr-[10px] rounded-br-[10px] flex items-center justify-center group-hover:text-white'>
                             <Image
-                                src={arrow}
-                                alt='arrow'
-                                width={16}
-                                height={16}
+                            src={isHovered2 ? arrow2 : arrow}
+                            alt='arrow'
+                            width={16}
+                            height={16}
                             />
                         </div>
-                    </button>
+                    </Link>
                 </div>
             </div>
             <div className='w-full md:w-[50%] lg:w-[50%] h-full'>
