@@ -67,7 +67,7 @@ export default function Header() {
       >
         <Image src={logo} alt="Alver Power Logo" width={150} height={45} />
         <nav className="flex flex-row md:gap-4 lg:gap-6 items-center">
-          <div className="relative group">
+          <div className="w-full relative group">
             <Link
               href="/"
               className={`md:text-[12px] lg:text-[16px] xl:text-[16px] hover:text-[#C45308] cursor-pointer transition-colors duration-300 ${
@@ -78,7 +78,7 @@ export default function Header() {
             </Link>
 
             {/* Dropdown menu */}
-            <div className="absolute left-0 right-0 top-full w-screen mt-2 hidden group-hover:flex justify-center bg-white text-black py-10 shadow-md z-40">
+            <div className="absolute left-0 right-0 top-full w-full mt-2 hidden group-hover:flex justify-center bg-white text-black py-10 shadow-md z-40">
             {/* You can add more items here or style it as a grid or flex row */}
             <div className="flex gap-10 max-w-[1200px] w-full px-8">
               <Link href="/overview" className="hover:text-[#C45308] text-[14px]">Overview</Link>
