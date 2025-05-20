@@ -78,11 +78,10 @@ export default function Header() {
             </Link>
 
             {/* Full-width dropdown */}
-            <div className="absolute left-0 top-full w-screen hidden group-hover:flex justify-center bg-white text-black py-10 shadow-xl z-50">
-              <div className="w-full max-w-[1200px] px-8 flex justify-between">
+            <div className="absolute top-full left-0 w-screen hidden group-hover:flex bg-white text-black py-10 shadow-xl z-50">
+              <div className="mx-auto w-full max-w-[1200px] px-8 flex justify-between">
                 <Link href="/overview" className="text-sm hover:text-[#C45308]">Overview</Link>
-                <Link href="/team" className="text-sm hover:text-[#C45308]">Our Team</Link>
-                <Link href="/contact" className="text-sm hover:text-[#C45308]">Contact</Link>
+                {/* Add more items if needed */}
               </div>
             </div>
           </div>
