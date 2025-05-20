@@ -67,7 +67,6 @@ export default function Header() {
       >
         <Image src={logo} alt="Alver Power Logo" width={150} height={45} />
         <nav className="flex flex-row md:gap-4 lg:gap-6 items-center">
-          <div className="relative group">
             <Link
               href="/"
               className={`md:text-[12px] lg:text-[16px] xl:text-[16px] hover:text-[#C45308] cursor-pointer transition-colors duration-300 ${
@@ -76,15 +75,6 @@ export default function Header() {
             >
               Home
             </Link>
-
-            {/* Full-width dropdown */}
-            <div className="absolute top-full left-0 w-screen hidden group-hover:flex bg-white text-black py-10 shadow-xl z-50">
-              <div className="mx-auto w-full max-w-[1200px] px-8 flex justify-between">
-                <Link href="/overview" className="text-sm hover:text-[#C45308]">Overview</Link>
-                {/* Add more items if needed */}
-              </div>
-            </div>
-          </div>
 
           <Link
             href='/about_us'
@@ -108,6 +98,13 @@ export default function Header() {
             Get Quote
           </button> */}
         </nav>
+
+        <div className="absolute top-full left-0 w-screen hidden group-hover:flex bg-white text-black py-10 shadow-xl z-50">
+          <div className="mx-auto w-full max-w-[1200px] px-8 flex justify-between">
+            <Link href="/overview" className="text-sm hover:text-[#C45308]">Overview</Link>
+            {/* Add more items if needed */}
+          </div>
+        </div>
       </div>
 
       {/* header for smaller screens */}
