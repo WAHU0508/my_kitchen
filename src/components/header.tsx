@@ -67,26 +67,24 @@ export default function Header() {
       >
         <Image src={logo} alt="Alver Power Logo" width={150} height={45} />
         <nav className="flex flex-row md:gap-4 lg:gap-6 items-center">
-          <div className="relative group">
+          <div className="h-full relative group">
             <Link
               href="/"
-              className={`md:text-[12px] lg:text-[16px] xl:text-[16px] hover:text-[#C45308] cursor-pointer transition-colors duration-300 ${
-                pathname === '/' ? 'text-[#C45308] border-b-4 border-[#C45308]' : ''
-              }`}
+              className={`md:text-[12px] lg:text-[16px] xl:text-[16px] hover:text-[#C45308] cursor-pointer transition-colors duration-300 ${pathname === '/' ? 'text-[#C45308] border-b-4 border-[#C45308]' : ''}`}
             >
               Home
             </Link>
-
-            {/* Dropdown menu */}
-            <div className="absolute left-0 right-0 top-full md:w-[1000px] lg:w-[1300px] xl:w-[1500px] 2xl:w-[2000px]  mt-2 hidden group-hover:flex justify-center bg-white text-black py-10 shadow-md z-40">
-            {/* You can add more items here or style it as a grid or flex row */}
-            <div className="flex gap-10 px-8">
-              <Link href="/overview" className="hover:text-[#C45308] text-[14px]">Overview</Link>
-              <Link href="/team" className="hover:text-[#C45308] text-[14px]">Our Team</Link>
-              <Link href="/contact" className="hover:text-[#C45308] text-[14px]">Contact</Link>
+          
+            {/* Dropdown */}
+            <div className="absolute top-full left-0 mt-0 w-full bg-white shadow-lg border border-gray-300 rounded p-4 opacity-0 group-hover:opacity-100 invisible group-hover:visible transition-all duration-300 z-10">
+              <ul className="text-sm text-gray-700 space-y-4">
+                <li>Item</li>
+                <li>Item</li>
+                <li>Item</li>
+              </ul>
             </div>
           </div>
-          </div>
+
           <Link
             href='/about_us'
             className={`md:text-[12px] lg:text-[16px] xl:text-[16px] hover:text-[#C45308] cursor-pointer transition-colors duration-300 ${pathname === '/about_us' ? 'text-[#C45308] border-b-4 border-[#C45308]' : ''}`}
