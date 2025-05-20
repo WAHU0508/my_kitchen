@@ -1,5 +1,5 @@
 'use client'
-import React, { useState } from 'react';
+import React from 'react';
 import Image from 'next/image'
 import location from '@//assets/image 25.png'
 import phone from '@//assets/Icon.png'
@@ -9,40 +9,40 @@ import Footer from '@//components/footer';
 import contactus from '@//assets/contact_us.png'
 
 export default function ContactUsPage() {
-  const [formData, setFormData] = useState<FormData>({ name: '', email: '', phone: '', message: '' });
-  const [status, setStatus] = useState<string>('');
+  // const [formData, setFormData] = useState<FormData>({ name: '', email: '', phone: '', message: '' });
+  // const [status, setStatus] = useState<string>('');
 
-  interface FormData {
-        name: string;
-        email: string;
-        phone: string;
-        message: string;
-    }
-    const handleChange = (e: React.ChangeEvent<HTMLInputElement | HTMLTextAreaElement>) => {
-        setFormData({ ...formData, [e.target.name]: e.target.value });
-    };
+  // interface FormData {
+  //       name: string;
+  //       email: string;
+  //       phone: string;
+  //       message: string;
+  //   }
+    // const handleChange = (e: React.ChangeEvent<HTMLInputElement | HTMLTextAreaElement>) => {
+    //     setFormData({ ...formData, [e.target.name]: e.target.value });
+    // };
 
-    const handleSubmit = async (e: React.FormEvent) => {
-        e.preventDefault();
-        setStatus('Sending...');
+    // const handleSubmit = async (e: React.FormEvent) => {
+    //     e.preventDefault();
+    //     setStatus('Sending...');
 
-        try {
-            const res = await fetch('/api/message', {
-                method: 'POST',
-                body: JSON.stringify(formData),
-                headers: { 'Content-Type': 'application/json' },
-            });
+    //     try {
+    //         const res = await fetch('/api/message', {
+    //             method: 'POST',
+    //             body: JSON.stringify(formData),
+    //             headers: { 'Content-Type': 'application/json' },
+    //         });
 
-            const data = await res.json();
-            setStatus(data.success ? 'Message sent!' : 'Failed to send message.');
-            // Clear status message after 3 seconds
-            setTimeout(() => {
-                setStatus(''); // Reset the status after 3 seconds
-            }, 5000);
-        } catch {
-            setStatus('Something went wrong.');
-        }
-    };
+    //         const data = await res.json();
+    //         setStatus(data.success ? 'Message sent!' : 'Failed to send message.');
+    //         // Clear status message after 3 seconds
+    //         setTimeout(() => {
+    //             setStatus(''); // Reset the status after 3 seconds
+    //         }, 5000);
+    //     } catch {
+    //         setStatus('Something went wrong.');
+    //     }
+    // };
   // const handleClick = () => {
   //   window.open('https://maps.app.goo.gl/EnXGKAmnnb6kVJ5E7', '_blank');
   // };
