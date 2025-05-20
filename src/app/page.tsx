@@ -1,7 +1,8 @@
 // homepage
 'use client'
-import React from 'react'
-import Image from 'next/image'
+import React, { useState } from 'react';
+import Link from 'next/link';
+import Image from 'next/image';
 import Header from '@//components/header'
 import strip1 from '@//assets/strip1.png'
 import MissionSection from '@//components/homepage/missionsection'
@@ -10,10 +11,11 @@ import backgroundImg from '@//assets/background1.png'
 import downloadImg from '@//assets/download (1).png'
 import PartnersSection from '@//components/homepage/partners_section'
 import Footer from '@//components/footer'
+import arrow from '@//svgs/arrow.svg'
 import arrow2 from '@//svgs/arrow2.svg'
 
 export default function HomePage() {
-
+    const [isHovered, setIsHovered] = useState(false);
     return (
         <div className='w-full flex flex-col items-center justify-center bg-black'>
             <div className='w-full relative'>
@@ -77,17 +79,22 @@ export default function HomePage() {
                             <p className='text-[16px]'>At Alver Power Systems, we adopt advanced manufacturing techniques and sustainable practices to create reliable and efficient power solutions. 
                                 Our commitment to excellence and environmental responsibility sets us apart in the industry.
                             </p>
-                            <button className='bg-black text-white flex flex-row mb-[20px] md:mb-0'>
-                                <p className='border border-white px-4 py-1 rounded-tl-[10px] rounded-bl-[10px]'>read more</p>
-                                <div className='border border-l-0 border-white px-4 py-1 rounded-tr-[10px] flex items-center justify-center rounded-br-[10px]'>
+                            <Link
+                                href='/about_us'
+                                className='text-white hover:text-black group flex flex-row mb-[20px] md:mb-0'
+                                onMouseEnter={() => setIsHovered(true)}
+                                onMouseLeave={() => setIsHovered(false)}
+                            >
+                                <p className='border border-white bg-black group-hover:bg-white px-4 py-1 rounded-tl-[10px] rounded-bl-[10px]'>read more</p>
+                                <div className='border border-l-0 border-white bg-black group-hover:bg-white px-4 py-1 rounded-tr-[10px] flex items-center justify-center rounded-br-[10px]'>
                                     <Image
-                                        src={arrow2}
+                                        src={isHovered ? arrow : arrow2}
                                         alt='arrow'
                                         width={16}
                                         height={16}
                                     />
                                 </div>
-                            </button>
+                            </Link>
                         </div>
                     </div>
                 </div>
