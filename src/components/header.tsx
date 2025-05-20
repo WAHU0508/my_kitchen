@@ -58,7 +58,7 @@ export default function Header() {
     }, [isOpen]);
 
   return (
-    <header className={`w-full flex items-center justify-center transition-all duration-500 ease-in-out ${visible ? 'opacity-100' : 'opacity-0 pointer-events-none'}`}>
+    <header className={`w-full relative flex items-center justify-center transition-all duration-500 ease-in-out ${visible ? 'opacity-100' : 'opacity-0 pointer-events-none'}`}>
       {/* Header for large and medium screens */}
       <div
         className={`hidden w-full md:flex md:flex-row items-center justify-between lg:px-8 py-2 sticky top-0 z-50 transition-all duration-500 ease-in-out 
@@ -98,14 +98,14 @@ export default function Header() {
             Get Quote
           </button> */}
         </nav>
-
-        <div className="absolute top-full left-0 w-full flex items-center justify-center text-black py-10 shadow-xl z-50">
-          <div className="mx-auto w-[98%] px-8 flex bg-white">
+      </div>
+      
+      <div className="absolute top-full left-0 w-[98%] bg-white text-black py-10 shadow-xl z-50">
+          <div className="mx-auto w-full max-w-[1200px] px-8 flex justify-between">
             <Link href="/overview" className="text-sm hover:text-[#C45308]">Overview</Link>
             {/* Add more items if needed */}
           </div>
         </div>
-      </div>
 
       {/* header for smaller screens */}
       <div className={`lg:hidden md:hidden flex flex-row w-full items-center justify-between ${isScrolled? 'bg-black/60' : ''} px-2`}>
