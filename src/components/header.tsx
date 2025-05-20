@@ -103,7 +103,10 @@ export default function Header() {
         </nav>
       </div>
 
-      <div className={`absolute top-full w-[98%] bg-white text-black py-10 shadow-xl z-50 ${isHovered ? 'flex' : 'hidden'}`}>
+      <div className={`absolute top-full w-[98%] bg-white text-black py-10 shadow-xl z-50 ${isHovered ? 'flex' : 'hidden'}`}
+          onMouseEnter={() => setIsHovered(true)}
+          onMouseLeave={() => setIsHovered(false)}
+      >
         <div className="mx-auto w-full max-w-[1200px] px-8 flex justify-between">
           <Link href="/overview" className="text-sm hover:text-[#C45308]">Overview</Link>
           {/* Add more items if needed */}
