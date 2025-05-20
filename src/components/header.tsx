@@ -12,6 +12,7 @@ export default function Header() {
   const [isExpanded, setIsExpanded] = useState(false);
   const [isScrolled, setIsScrolled] = useState(false);
   const [visible, setVisible] = useState(true);
+  const [isHovered, setIsHovered] = useState(false);
   const timeoutRef = useRef<NodeJS.Timeout | null>(null);
   const pathname = usePathname();
 
@@ -72,6 +73,8 @@ export default function Header() {
               className={`md:text-[12px] lg:text-[16px] xl:text-[16px] hover:text-[#C45308] cursor-pointer transition-colors duration-300 ${
                 pathname === '/' ? 'text-[#C45308] border-b-4 border-[#C45308]' : ''
               }`}
+              onMouseEnter={() => setIsHovered(true)}
+              onMouseLeave={() => setIsHovered(false)}
             >
               Home
             </Link>
@@ -100,7 +103,7 @@ export default function Header() {
         </nav>
       </div>
 
-      <div className="absolute top-full w-[98%] bg-white text-black py-10 shadow-xl z-50">
+      <div className={`absolute top-full w-[98%] bg-white text-black py-10 shadow-xl z-50 ${isHovered ? 'flex' : 'hidden'}`}>
         <div className="mx-auto w-full max-w-[1200px] px-8 flex justify-between">
           <Link href="/overview" className="text-sm hover:text-[#C45308]">Overview</Link>
           {/* Add more items if needed */}
