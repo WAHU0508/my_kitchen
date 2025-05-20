@@ -26,7 +26,7 @@ const logos = [
 
 function PartnersSection() {
   return (
-    <div className='w-full bg-black py-10 overflow-hidden'>
+    <div className='w-full bg-black py-4 overflow-hidden'>
       <div className='relative w-full h-[100px]'>
         <div className='absolute animate-scroll whitespace-nowrap flex gap-[50px] items-center'>
           {[...logos, ...logos].map((logo, index) => (
@@ -34,7 +34,8 @@ function PartnersSection() {
               <Image
                 src={logo}
                 alt={`Partner Logo ${index}`}
-                className='h-[80px] object-contain grayscale hover:grayscale-0 transition duration-300'
+                className='h-[80px] object-contain hover:grayscale-0 transition duration-300'
+                style={{ filter: 'grayscale(50%)' }}
               />
             </div>
           ))}
