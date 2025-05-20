@@ -76,7 +76,7 @@ export default function Header() {
             </Link>
           
             {/* Dropdown */}
-            <div className="absolute top-full left-0 mt-0 w-full bg-white shadow-lg border border-gray-300 rounded p-4 opacity-0 group-hover:opacity-100 invisible group-hover:visible transition-all duration-300 z-10">
+            <div className="absolute top-full left-0 mt-0 md:-[1000px] lg:w-[1300px] xl:w-[1500px] 2xl:w-[2000px] bg-white shadow-lg border border-gray-300 rounded p-4 opacity-0 group-hover:opacity-100 invisible group-hover:visible transition-all duration-300 z-10">
               <ul className="text-sm text-gray-700 space-y-4">
                 <li>Item</li>
                 <li>Item</li>
