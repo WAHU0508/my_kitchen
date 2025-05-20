@@ -99,13 +99,13 @@ export default function Header() {
           </button> */}
         </nav>
       </div>
-      
-      <div className="absolute top-full left-0 w-[98%] bg-white text-black py-10 shadow-xl z-50">
-          <div className="mx-auto w-full max-w-[1200px] px-8 flex justify-between">
-            <Link href="/overview" className="text-sm hover:text-[#C45308]">Overview</Link>
-            {/* Add more items if needed */}
-          </div>
+
+      <div className="absolute top-full w-[98%] bg-white text-black py-10 shadow-xl z-50">
+        <div className="mx-auto w-full max-w-[1200px] px-8 flex justify-between">
+          <Link href="/overview" className="text-sm hover:text-[#C45308]">Overview</Link>
+          {/* Add more items if needed */}
         </div>
+      </div>
 
       {/* header for smaller screens */}
       <div className={`lg:hidden md:hidden flex flex-row w-full items-center justify-between ${isScrolled? 'bg-black/60' : ''} px-2`}>
