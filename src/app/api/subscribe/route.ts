@@ -12,7 +12,7 @@ export async function POST(request: Request) {
     .from('subscribers')
     .select('id')
     .eq('email', email)
-    .maybeSingle(); // safer than single() in this context
+    .maybeSingle(); 
 
   if (checkError) {
     return new Response(JSON.stringify({ message: 'Database error' }), { status: 500 });

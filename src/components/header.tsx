@@ -99,7 +99,7 @@ export default function Header() {
           </button> */}
         </nav>
 
-        <div className="absolute top-full left-0 w-screen bg-white text-black py-10 shadow-xl z-50">
+        <div className="absolute top-full left-0 w-[95%] bg-white text-black py-10 shadow-xl z-50">
           <div className="mx-auto w-full max-w-[1200px] px-8 flex justify-between">
             <Link href="/overview" className="text-sm hover:text-[#C45308]">Overview</Link>
             {/* Add more items if needed */}
