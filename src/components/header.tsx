@@ -67,7 +67,7 @@ export default function Header() {
       >
         <Image src={logo} alt="Alver Power Logo" width={150} height={45} />
         <nav className="flex flex-row md:gap-4 lg:gap-6 items-center">
-          <div className="w-full relative group">
+          <div className="relative group">
             <Link
               href="/"
               className={`md:text-[12px] lg:text-[16px] xl:text-[16px] hover:text-[#C45308] cursor-pointer transition-colors duration-300 ${
