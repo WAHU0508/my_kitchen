@@ -78,7 +78,7 @@ export default function Header() {
             </Link>
 
             {/* Dropdown menu */}
-            <div className="absolute left-0 top-full mt-2 hidden group-hover:block bg-white text-black py-10 rounded-md shadow-lg z-10 min-w-[160px]">
+            <div className="w-full absolute left-0 top-full mt-2 hidden group-hover:block bg-white text-black py-10 rounded-md shadow-lg z-10 min-w-[160px]">
               <p>Item</p>
             </div>
           </div>
