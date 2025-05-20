@@ -78,9 +78,9 @@ export default function Header() {
             </Link>
 
             {/* Dropdown menu */}
-            <div className="absolute left-0 right-0 top-full w-full mt-2 hidden group-hover:flex justify-center bg-white text-black py-10 shadow-md z-40">
+            <div className="absolute left-0 right-0 top-full md:w-[1000px] lg:w-[1300px] xl:w-[1500px] 2xl:w-[2000px]  mt-2 hidden group-hover:flex justify-center bg-white text-black py-10 shadow-md z-40">
             {/* You can add more items here or style it as a grid or flex row */}
-            <div className="flex gap-10 max-w-[1200px] w-full px-8">
+            <div className="flex gap-10 px-8">
               <Link href="/overview" className="hover:text-[#C45308] text-[14px]">Overview</Link>
               <Link href="/team" className="hover:text-[#C45308] text-[14px]">Our Team</Link>
               <Link href="/contact" className="hover:text-[#C45308] text-[14px]">Contact</Link>
