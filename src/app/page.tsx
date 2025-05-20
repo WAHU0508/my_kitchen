@@ -85,8 +85,8 @@ export default function HomePage() {
                                 onMouseEnter={() => setIsHovered(true)}
                                 onMouseLeave={() => setIsHovered(false)}
                             >
-                                <p className='border border-white bg-black group-hover:bg-white px-4 py-1 rounded-tl-[10px] rounded-bl-[10px]'>read more</p>
-                                <div className='border border-l-0 border-white bg-black group-hover:bg-white px-4 py-1 rounded-tr-[10px] flex items-center justify-center rounded-br-[10px]'>
+                                <p className='border border-white group-hover:border-black bg-black group-hover:bg-white px-4 py-1 rounded-tl-[10px] rounded-bl-[10px]'>read more</p>
+                                <div className='border border-l-0 border-white group-hover:border-black bg-black group-hover:bg-white px-4 py-1 rounded-tr-[10px] flex items-center justify-center rounded-br-[10px]'>
                                     <Image
                                         src={isHovered ? arrow : arrow2}
                                         alt='arrow'

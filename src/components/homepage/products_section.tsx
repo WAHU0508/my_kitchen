@@ -27,10 +27,10 @@ function ProductsSection() {
                         onMouseEnter={() => setIsHovered(true)}
                         onMouseLeave={() => setIsHovered(false)}
                         >
-                        <p className='bg-white group-hover:bg-black border border-black px-4 py-1 rounded-tl-[10px] rounded-bl-[10px] group-hover:text-white'>
+                        <p className='bg-white group-hover:bg-black border border-black group-hover:border-white bpx-4 py-1 rounded-tl-[10px] rounded-bl-[10px] group-hover:text-white'>
                             read more
                         </p>
-                        <div className='bg-white group-hover:bg-black border border-l-0 border-black px-4 py-1 rounded-tr-[10px] rounded-br-[10px] flex items-center justify-center group-hover:text-white'>
+                        <div className='bg-white group-hover:bg-black border border-l-0 border-black group-hover:border-white px-4 py-1 rounded-tr-[10px] rounded-br-[10px] flex items-center justify-center group-hover:text-white'>
                             <Image
                             src={isHovered ? arrow2 : arrow}
                             alt='arrow'
@@ -71,10 +71,10 @@ function ProductsSection() {
                         onMouseEnter={() => setIsHovered1(true)}
                         onMouseLeave={() => setIsHovered1(false)}
                         >
-                        <p className='bg-white group-hover:bg-black border border-black px-4 py-1 rounded-tl-[10px] rounded-bl-[10px] group-hover:text-white'>
+                        <p className='bg-white group-hover:bg-black border border-black group-hover:border-white px-4 py-1 rounded-tl-[10px] rounded-bl-[10px] group-hover:text-white'>
                             read more
                         </p>
-                        <div className='bg-white group-hover:bg-black border border-l-0 border-black px-4 py-1 rounded-tr-[10px] rounded-br-[10px] flex items-center justify-center group-hover:text-white'>
+                        <div className='bg-white group-hover:bg-black border border-l-0 border-black group-hover:border-white px-4 py-1 rounded-tr-[10px] rounded-br-[10px] flex items-center justify-center group-hover:text-white'>
                             <Image
                             src={isHovered1 ? arrow2 : arrow}
                             alt='arrow'
@@ -101,10 +101,10 @@ function ProductsSection() {
                         onMouseEnter={() => setIsHovered2(true)}
                         onMouseLeave={() => setIsHovered2(false)}
                         >
-                        <p className='bg-white group-hover:bg-black border border-black px-4 py-1 rounded-tl-[10px] rounded-bl-[10px] group-hover:text-white'>
+                        <p className='bg-white group-hover:bg-black border border-black group-hover:border-white px-4 py-1 rounded-tl-[10px] rounded-bl-[10px] group-hover:text-white'>
                             read more
                         </p>
-                        <div className='bg-white group-hover:bg-black border border-l-0 border-black px-4 py-1 rounded-tr-[10px] rounded-br-[10px] flex items-center justify-center group-hover:text-white'>
+                        <div className='bg-white group-hover:bg-black border border-l-0 border-black group-hover:border-white px-4 py-1 rounded-tr-[10px] rounded-br-[10px] flex items-center justify-center group-hover:text-white'>
                             <Image
                             src={isHovered2 ? arrow2 : arrow}
                             alt='arrow'
