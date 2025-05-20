@@ -67,21 +67,23 @@ export default function Header() {
       >
         <Image src={logo} alt="Alver Power Logo" width={150} height={45} />
         <nav className="flex flex-row md:gap-4 lg:gap-6 items-center">
-          <div className="h-full relative group">
+          <div className="relative group">
             <Link
               href="/"
-              className={`md:text-[12px] lg:text-[16px] xl:text-[16px] hover:text-[#C45308] cursor-pointer transition-colors duration-300 ${pathname === '/' ? 'text-[#C45308] border-b-4 border-[#C45308]' : ''}`}
+              className={`md:text-[12px] lg:text-[16px] xl:text-[16px] hover:text-[#C45308] cursor-pointer transition-colors duration-300 ${
+                pathname === '/' ? 'text-[#C45308] border-b-4 border-[#C45308]' : ''
+              }`}
             >
               Home
             </Link>
-          
-            {/* Dropdown */}
-            <div className="absolute top-full left-0 mt-0 md:-[1000px] lg:w-[1300px] xl:w-[1500px] 2xl:w-[2000px] bg-white shadow-lg border border-gray-300 rounded p-4 opacity-0 group-hover:opacity-100 invisible group-hover:visible transition-all duration-300 z-10">
-              <ul className="text-sm text-gray-700 space-y-4">
-                <li>Item</li>
-                <li>Item</li>
-                <li>Item</li>
-              </ul>
+
+            {/* Full-width dropdown */}
+            <div className="absolute left-0 top-full w-screen hidden group-hover:flex justify-center bg-white text-black py-10 shadow-xl z-50">
+              <div className="w-full max-w-[1200px] px-8 flex justify-between">
+                <Link href="/overview" className="text-sm hover:text-[#C45308]">Overview</Link>
+                <Link href="/team" className="text-sm hover:text-[#C45308]">Our Team</Link>
+                <Link href="/contact" className="text-sm hover:text-[#C45308]">Contact</Link>
+              </div>
             </div>
           </div>
 
