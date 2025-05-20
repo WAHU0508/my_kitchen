@@ -67,12 +67,19 @@ export default function Header() {
       >
         <Image src={logo} alt="Alver Power Logo" width={150} height={45} />
         <nav className="flex flex-row md:gap-4 lg:gap-6 items-center">
-          <Link
-            href='/'
-            className={`md:text-[12px] lg:text-[16px] xl:text-[16px] hover:text-[#C45308] cursor-pointer transition-colors duration-300 ${pathname === '/' ? 'text-[#C45308] border-b-4 border-[#C45308]' : ''}`}
-          >
-            Home
-          </Link>
+          <div className="relative group">
+            <Link
+              href="/"
+              className={`md:text-[12px] lg:text-[16px] xl:text-[16px] hover:text-[#C45308] cursor-pointer transition-colors duration-300 ${
+                pathname === '/' ? 'text-[#C45308] border-b-4 border-[#C45308]' : ''
+              }`}
+            >
+              Home
+            </Link>
+
+            {/* Dropdown menu */}
+            <div className="absolute left-0 top-full mt-2 hidden group-hover:block bg-white text-black rounded-md shadow-lg z-10 min-w-[160px]">
+            </div>
           <Link
             href='/about_us'
             className={`md:text-[12px] lg:text-[16px] xl:text-[16px] hover:text-[#C45308] cursor-pointer transition-colors duration-300 ${pathname === '/about_us' ? 'text-[#C45308] border-b-4 border-[#C45308]' : ''}`}
