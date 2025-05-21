@@ -73,8 +73,6 @@ export default function Header() {
               className={`md:text-[12px] lg:text-[16px] h-full flex items-center justify-center text-center xl:text-[16px] hover:text-[#C45308] cursor-pointer transition-colors duration-300 ${
                 pathname === '/' ? 'text-[#C45308] border-b-4 border-[#C45308]' : ''
               }`}
-              onMouseEnter={() => setIsHovered(true)}
-              onMouseLeave={() => setIsHovered(false)}
             >
               Home
             </Link>
@@ -88,6 +86,8 @@ export default function Header() {
           <Link
             href='/products_and_services'
             className={`md:text-[12px] lg:text-[16px] xl:text-[16px] hover:text-[#C45308] cursor-pointer transition-colors duration-300 ${pathname === '/products_and_services' ? 'text-[#C45308] border-b-4 border-[#C45308]' : ''}`}
+            onMouseEnter={() => setIsHovered(true)}
+            onMouseLeave={() => setIsHovered(false)}
           >
             Products & Services
           </Link>
@@ -108,7 +108,7 @@ export default function Header() {
           onMouseLeave={() => setIsHovered(false)}
       >
         <div className="w-full px-8 py-8 ">
-          <Link href="/overview" className="text-sm hover:text-[#C45308]">Overview</Link>
+          <Link href="/products_and_services" className="text-[20px] hover:text-[#C45308]">Overview</Link>
           {/* Add more items if needed */}
         </div>
 
