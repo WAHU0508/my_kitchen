@@ -1,4 +1,3 @@
-
 import nodemailer from 'nodemailer';
 
 export async function POST(req) {
@@ -15,8 +14,8 @@ export async function POST(req) {
   // Email to you
   const mailToYou = {
     from: process.env.MAIL_USER,
-    // to: 'info@alverpower.com',
-    to: 'sharonwg0508@gmail.com',
+    to: 'info@alverpower.com',
+    // to: 'sharonwg0508@gmail.com',
     subject: 'New Message from Alver Website',
     text: `
       FirstName: ${first_name}

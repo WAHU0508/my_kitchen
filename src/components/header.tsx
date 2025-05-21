@@ -66,7 +66,9 @@ export default function Header() {
           ${isScrolled ? 'bg-black/60 text-white group-hover:bg-white group-hover:text-black' : 'group-hover:bg-white group-hover:text-black'} 
           ${pathname === '/about_us' ? 'text-black' : 'text-white'}`}
       >
-        <Image src={logo} alt="Alver Power Logo" width={150} height={45} />
+        <Link href='/'>
+          <Image src={logo} alt="Alver Power Logo" width={150} height={45} />
+        </Link>
         <nav className="h-full flex flex-row md:gap-4 lg:gap-6 items-center">
             <Link
               href="/"
