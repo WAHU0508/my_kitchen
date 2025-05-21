@@ -63,7 +63,7 @@ export default function Header() {
       {/* Header for large and medium screens */}
       <div
         className={`hidden w-full md:flex md:flex-row hover:bg-white hover:text-black items-center justify-between lg:px-8 h-[60px] sticky top-0 z-50 transition-all duration-500 ease-in-out 
-          ${isScrolled ? 'bg-black/60 text-white hover:bg-white' : ''} 
+          ${isScrolled ? 'bg-black/60 text-white hover:text-black hover:bg-white' : ''} 
           ${pathname === '/about_us' ? 'text-black' : 'text-white'}`}
       >
         <Image src={logo} alt="Alver Power Logo" width={150} height={45} />
