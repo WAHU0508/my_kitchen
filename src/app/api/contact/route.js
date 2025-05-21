@@ -44,7 +44,7 @@
 //   }
 // }
 import nodemailer from 'nodemailer';
-import { supabase } from '@/lib/supabaseClient';
+import { supabase } from '@//lib/supabaseClient';
 
 export async function POST(req) {
   const { first_name, last_name, email, message } = await req.json();
