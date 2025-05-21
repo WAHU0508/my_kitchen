@@ -102,7 +102,7 @@ export default function Header() {
           </button> */}
         </nav>
 
-        <div className={`absolute top-full w-full flex items-center text-black py-10 shadow-xl z-50 ${isHovered ? 'flex' : 'hidden'}`}
+        <div className={`absolute top-full w-full flex justify-center text-black py-10 shadow-xl z-50 ${isHovered ? 'flex' : 'hidden'}`}
           onMouseEnter={() => setIsHovered(true)}
           onMouseLeave={() => setIsHovered(false)}
       >
