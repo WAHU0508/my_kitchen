@@ -67,7 +67,7 @@ export default function Header() {
           ${pathname === '/about_us' ? 'text-black' : 'text-white'}`}
       >
         <Image src={logo} alt="Alver Power Logo" width={150} height={45} />
-        <nav className="flex flex-row md:gap-4 lg:gap-6 items-center">
+        <nav className="h-full flex flex-row md:gap-4 lg:gap-6 items-center">
             <Link
               href="/"
               className={`md:text-[12px] lg:text-[16px] h-full xl:text-[16px] hover:text-[#C45308] cursor-pointer transition-colors duration-300 ${
