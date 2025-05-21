@@ -79,13 +79,13 @@ export default function Header() {
 
           <Link
             href='/about_us'
-            className={`md:text-[12px] lg:text-[16px] xl:text-[16px] hover:text-[#C45308] cursor-pointer transition-colors duration-300 ${pathname === '/about_us' ? 'text-[#C45308] border-b-4 border-[#C45308]' : ''}`}
+            className={`md:text-[12px] lg:text-[16px] h-full flex items-center justify-center text-center xl:text-[16px] hover:text-[#C45308] cursor-pointer transition-colors duration-300 ${pathname === '/about_us' ? 'text-[#C45308] border-b-4 border-[#C45308]' : ''}`}
           >
             About Us
           </Link>
           <Link
             href='/products_and_services'
-            className={`md:text-[12px] lg:text-[16px] xl:text-[16px] hover:text-[#C45308] cursor-pointer transition-colors duration-300 ${pathname === '/products_and_services' ? 'text-[#C45308] border-b-4 border-[#C45308]' : ''}`}
+            className={`md:text-[12px] lg:text-[16px] h-full flex items-center justify-center text-center xl:text-[16px] hover:text-[#C45308] cursor-pointer transition-colors duration-300 ${pathname === '/products_and_services' ? 'text-[#C45308] border-b-4 border-[#C45308]' : ''}`}
             onMouseEnter={() => setIsHovered(true)}
             onMouseLeave={() => setIsHovered(false)}
           >
@@ -93,7 +93,7 @@ export default function Header() {
           </Link>
           <Link
             href='/contact_us'
-            className={`md:text-[12px] lg:text-[16px] xl:text-[16px] hover:text-[#C45308] cursor-pointer transition-colors duration-300 ${pathname === '/contact_us' ? 'text-[#C45308] border-b-4 border-[#C45308]' : ''}`}
+            className={`md:text-[12px] lg:text-[16px] h-full flex items-center justify-center text-center xl:text-[16px] hover:text-[#C45308] cursor-pointer transition-colors duration-300 ${pathname === '/contact_us' ? 'text-[#C45308] border-b-4 border-[#C45308]' : ''}`}
           >
             Contact Us
           </Link>
@@ -101,6 +101,7 @@ export default function Header() {
             Get Quote
           </button> */}
         </nav>
+        
       </div>
 
       <div className={`w-full rounded-b-md drop-shadow-2xl px-4 text-black z-50 ${isHovered ? 'flex' : 'hidden'}`}
