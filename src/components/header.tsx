@@ -101,9 +101,7 @@ export default function Header() {
             Get Quote
           </button> */}
         </nav>
-      </div>
-
-      <div className={`absolute top-full w-[98%] bg-white text-black py-10 shadow-xl z-50 ${isHovered ? 'flex' : 'hidden'}`}
+        <div className={`absolute top-full w-[98%] bg-white text-black py-10 shadow-xl z-50 ${isHovered ? 'flex' : 'hidden'}`}
           onMouseEnter={() => setIsHovered(true)}
           onMouseLeave={() => setIsHovered(false)}
       >
@@ -112,6 +110,9 @@ export default function Header() {
           {/* Add more items if needed */}
         </div>
       </div>
+      </div>
+
+      
 
       {/* header for smaller screens */}
       <div className={`lg:hidden md:hidden flex flex-row w-full items-center justify-between ${isScrolled? 'bg-black/60' : ''} px-2`}>
