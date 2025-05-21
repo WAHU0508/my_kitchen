@@ -7,7 +7,7 @@ export async function POST(request: Request) {
     return new Response(JSON.stringify({ message: 'Email is required' }), { status: 400 });
   }
 
-  // Check if already subscribed
+  // Check if already subscribed and upload
   const { data: existing, error: checkError } = await supabase
     .from('subscribers')
     .select('id')
