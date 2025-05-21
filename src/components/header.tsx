@@ -62,7 +62,7 @@ export default function Header() {
     <header className={`w-full relative flex flex-col items-center justify-center transition-all duration-500 ease-in-out ${visible ? 'opacity-100' : 'opacity-0 pointer-events-none'}`}>
       {/* Header for large and medium screens */}
       <div
-        className={`hidden w-full md:flex md:flex-row bg-white hover:text-black items-center justify-between lg:px-8 h-[60px] sticky top-0 z-50 transition-all duration-500 ease-in-out 
+        className={`hidden w-full md:flex md:flex-row hover:bg-white hover:text-black items-center justify-between lg:px-8 h-[60px] sticky top-0 z-50 transition-all duration-500 ease-in-out 
           ${isScrolled ? 'bg-black/60 text-white' : ''} 
           ${pathname === '/about_us' ? 'text-black' : 'text-white'}`}
       >
@@ -104,7 +104,7 @@ export default function Header() {
 
       </div>
 
-      <div className={`w-full rounded-b-md drop-shadow-2xl px-4 z-50 ${isHovered ? 'flex' : 'hidden'}`}
+      <div className={`w-full bg-white rounded-b-md drop-shadow-2xl px-4 z-50 ${isHovered ? 'flex' : 'hidden'}`}
           onMouseEnter={() => setIsHovered(true)}
           onMouseLeave={() => setIsHovered(false)}
       >
