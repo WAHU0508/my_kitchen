@@ -107,7 +107,7 @@ export default function Header() {
           onMouseEnter={() => setIsHovered(true)}
           onMouseLeave={() => setIsHovered(false)}
       >
-        <div className="w-full bg-white px-8 py-8 ">
+        <div className="w-full px-8 py-8 ">
           <Link href="/overview" className="text-sm hover:text-[#C45308]">Overview</Link>
           {/* Add more items if needed */}
         </div>
