@@ -110,23 +110,35 @@ export default function Header() {
       >
         <div className="w-full px-8 py-8 flex flex-row justify-between ">
          <div className='flex flex-col'>
-          <p className='text-[16px] text-black'>Switchboard Manufacturing</p>
+          <p className='text-[16px] text-black font-semibold'>Switchboard Manufacturing</p>
+          <Link href='/products_and_services/switchboard_manufacturing' className='text-[16px] text-black hover:text-[#C45308]'>Switchboards</Link>
+          <Link href='/products_and_services/switchboard_manufacturing' className='text-[16px] text-black hover:text-[#C45308]'>Meterboards</Link>
          </div>
 
          <div className='flex flex-col'>
-          <p className='text-[16px] text-black'>Electrical Installation</p>
+          <p className='text-[16px] text-black font-semibold'>Electrical Installation</p>
+          <Link href='/products_and_services/switchboard_manufacturing' className='text-[16px] text-black hover:text-[#C45308]'>Electrical works</Link>
+          <Link href='/products_and_services/electrical_installation' className='text-[16px] text-black hover:text-[#C45308]'>Structured Cabling</Link>
          </div>
 
          <div className='flex flex-col'>
-          <p className='text-[16px] text-black'>AVR</p>
+          <p className='text-[16px] text-black font-semibold'>AVR</p>
+          <Link href='/products_and_services/' className='text-[16px] text-black hover:text-[#C45308]'>Custom AVR</Link>
          </div>
 
          <div className='flex flex-col'>
-          <p className='text-[16px] text-black'>Solar Solutions</p>
+          <p className='text-[16px] text-black font-semibold'>Solar Solutions</p>
+          <Link href='/products_and_services/solar_solutions' className='text-[16px] text-black hover:text-[#C45308]'>Off grid solar solutions</Link>
+          <Link href='/products_and_services/solar_solutions' className='text-[16px] text-black hover:text-[#C45308]'>Solar grid tie system</Link>
+          <Link href='/products_and_services/solar_solutions' className='text-[16px] text-black hover:text-[#C45308]'>Solar street lighting</Link>
+          <Link href='/products_and_services/solar_solutions' className='text-[16px] text-black hover:text-[#C45308]'>Solar water pumping</Link>
+          <Link href='/products_and_services/solar_solutions' className='text-[16px] text-black hover:text-[#C45308]'>Solar water heating system</Link>
+          <Link href='/products_and_services/solar_solutions' className='text-[16px] text-black hover:text-[#C45308]'>Mini grid system</Link>
          </div>
         
          <div className='flex flex-col'>
-          <p className='text-[16px] text-black'>CNC</p>
+          <p className='text-[16px] text-black font-semibold'>CNC</p>
+          <Link href='/products_and_services/solar_solutions' className='text-[16px] text-black hover:text-[#C45308]'>CNC and Laser Machining</Link>
          </div>   
         
         </div>
