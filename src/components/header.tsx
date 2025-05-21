@@ -62,7 +62,7 @@ export default function Header() {
     <header className={`w-full relative flex items-center justify-center transition-all duration-500 ease-in-out ${visible ? 'opacity-100' : 'opacity-0 pointer-events-none'}`}>
       {/* Header for large and medium screens */}
       <div
-        className={`hidden w-full md:flex hover:bg-white hover:text-black md:flex-row items-center justify-between lg:px-8 py-2 sticky top-0 z-50 transition-all duration-500 ease-in-out 
+        className={`hidden w-full md:flex hover:bg-white hover:text-black md:flex-row items-center justify-between lg:px-8 h-[40px] sticky top-0 z-50 transition-all duration-500 ease-in-out 
           ${isScrolled ? 'bg-black/60 text-white' : ''} 
           ${pathname === '/about_us' ? 'text-black' : 'text-white'}`}
       >
@@ -70,7 +70,7 @@ export default function Header() {
         <nav className="flex flex-row md:gap-4 lg:gap-6 items-center">
             <Link
               href="/"
-              className={`md:text-[12px] lg:text-[16px] xl:text-[16px] hover:text-[#C45308] cursor-pointer transition-colors duration-300 ${
+              className={`md:text-[12px] lg:text-[16px] h-full xl:text-[16px] hover:text-[#C45308] cursor-pointer transition-colors duration-300 ${
                 pathname === '/' ? 'text-[#C45308] border-b-4 border-[#C45308]' : ''
               }`}
               onMouseEnter={() => setIsHovered(true)}
