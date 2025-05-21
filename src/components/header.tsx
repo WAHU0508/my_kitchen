@@ -101,7 +101,7 @@ export default function Header() {
             Get Quote
           </button> */}
         </nav>
-        <div className={`absolute top-full w-[98%] bg-white text-black py-10 shadow-xl z-50 ${isHovered ? 'flex' : 'hidden'}`}
+        <div className={`absolute top-full w-full bg-white text-black py-10 shadow-xl z-50 ${isHovered ? 'flex' : 'hidden'}`}
           onMouseEnter={() => setIsHovered(true)}
           onMouseLeave={() => setIsHovered(false)}
       >
