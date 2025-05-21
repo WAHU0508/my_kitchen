@@ -101,16 +101,34 @@ export default function Header() {
             Get Quote
           </button> */}
         </nav>
-        
+
       </div>
 
-      <div className={`w-full rounded-b-md drop-shadow-2xl px-4 text-black z-50 ${isHovered ? 'flex' : 'hidden'}`}
+      <div className={`w-full rounded-b-md drop-shadow-2xl px-4 z-50 ${isHovered ? 'flex' : 'hidden'}`}
           onMouseEnter={() => setIsHovered(true)}
           onMouseLeave={() => setIsHovered(false)}
       >
-        <div className="w-full px-8 py-8 ">
-          <Link href="/products_and_services" className="text-[20px] hover:text-[#C45308]">Overview</Link>
-          {/* Add more items if needed */}
+        <div className="w-full px-8 py-8 flex flex-row justify-between ">
+         <div className='flex flex-col'>
+          <p className='text-[16px] text-black'>Switchboard Manufacturing</p>
+         </div>
+
+         <div className='flex flex-col'>
+          <p className='text-[16px] text-black'>Electrical Installation</p>
+         </div>
+
+         <div className='flex flex-col'>
+          <p className='text-[16px] text-black'>AVR</p>
+         </div>
+
+         <div className='flex flex-col'>
+          <p className='text-[16px] text-black'>Solar Solutions</p>
+         </div>
+        
+         <div className='flex flex-col'>
+          <p className='text-[16px] text-black'>CNC</p>
+         </div>   
+        
         </div>
 
       </div>
