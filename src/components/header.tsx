@@ -70,7 +70,7 @@ export default function Header() {
         <nav className="h-full flex flex-row md:gap-4 lg:gap-6 items-center">
             <Link
               href="/"
-              className={`md:text-[12px] lg:text-[16px] h-full xl:text-[16px] hover:text-[#C45308] cursor-pointer transition-colors duration-300 ${
+              className={`md:text-[12px] lg:text-[16px] h-full text-center xl:text-[16px] hover:text-[#C45308] cursor-pointer transition-colors duration-300 ${
                 pathname === '/' ? 'text-[#C45308] border-b-4 border-[#C45308]' : ''
               }`}
               onMouseEnter={() => setIsHovered(true)}
