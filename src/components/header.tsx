@@ -59,7 +59,7 @@ export default function Header() {
     }, [isOpen]);
 
   return (
-    <header className={`w-full relative hover:bg-white hover:text-black flex items-center justify-center transition-all duration-500 ease-in-out ${visible ? 'opacity-100' : 'opacity-0 pointer-events-none'}`}>
+    <header className={`w-full relative hover:bg-white hover:text-black flex flex-col items-center justify-center transition-all duration-500 ease-in-out ${visible ? 'opacity-100' : 'opacity-0 pointer-events-none'}`}>
       {/* Header for large and medium screens */}
       <div
         className={`hidden w-full md:flex md:flex-row hover:bg-white hover:text-black items-center justify-between lg:px-8 h-[60px] sticky top-0 z-50 transition-all duration-500 ease-in-out 
@@ -101,8 +101,8 @@ export default function Header() {
             Get Quote
           </button> */}
         </nav>
-
-        <div className={`absolute top-full w-full px-4 text-black z-50 ${isHovered ? 'flex' : 'hidden'}`}
+      </div>
+      <div className={`w-full px-4 text-black z-50 ${isHovered ? 'flex' : 'hidden'}`}
           onMouseEnter={() => setIsHovered(true)}
           onMouseLeave={() => setIsHovered(false)}
       >
@@ -111,7 +111,6 @@ export default function Header() {
           {/* Add more items if needed */}
         </div>
 
-      </div>
       </div>
 
       
