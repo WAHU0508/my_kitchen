@@ -1,5 +1,6 @@
 'use client'
 import React, { useState } from 'react'
+import Link from 'next/link'
 import Image from 'next/image'
 import logo from '@//assets/logo.png'
 import twitter from '@//svgs/twitter.svg'
@@ -190,12 +191,19 @@ export default function Footer() {
                     </form>
                 </div>
                 <div className='w-full grid grid-cols-2 mt-[50px] space-x-2 space-y-6'>
-                        <p className='text-[14px]'>About</p>
-                        <p className='text-[14px]'>Tel: 0116004003</p>
-                        <p className='text-[14px]'>Products | Services</p>
+                        <Link href='/about_us' className='text-[14px] hover:underline'>About</Link>
+                        <div className='flex flex-row gap-2'>
+                            <p className='text-[14px]'>Tel:</p>
+                            <a href="tel:0116004003" className="text-[14px] text-white hover:text-[#282565] hover:underline">
+                                0116004003
+                            </a>
+                        </div>
+                        <Link href='/products_and_services' className='text-[14px] hover:underline'>Products | Services</Link>
                         <div className='flex flex-col text-[14px]'>
                             <p>Email:</p>
-                            <p>info@alverpower.com</p>
+                            <a href="mailto:info@alverpower.com" className="text-sm text-white hover:text-[#282565] hover:underline">
+                            info@alverpower.com
+                            </a>
                         </div>
                         <p className='text-[14px]'>Contact Us</p>
                         <p className='text-[14px]'>Garden Estate rd, off Thika Road</p>
