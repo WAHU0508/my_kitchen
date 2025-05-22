@@ -57,14 +57,21 @@ export default function Footer() {
                         className=''
                     />
                     <div className='w-full grid grid-cols-2 mt-[50px] space-x-4 space-y-6'>
-                        <p className='text-[16px]'>About</p>
-                        <p className='text-[16px]'>Tel: 0116004003</p>
-                        <p className='text-[16px]'>Products | Services</p>
+                        <Link href='/about_us' className='text-[16px] hover:underline active:text-[#9b3705]'>About</Link>
+                        <div className='flex flex-row gap-2'>
+                            <p className='text-[16px]'>Tel:</p>
+                            <a href="tel:0116004003" className="text-[16px] text-black hover:text-[#282565] hover:underline active:text-[#9b3705]">
+                                0116004003
+                            </a>
+                        </div>
+                        <Link href='/products_and_services' className='text-[16px] hover:underline active:text-[#9b3705]'>Products | Services</Link>
                         <div className='flex flex-col text-[16px]'>
                             <p>Email:</p>
-                            <p>info@alverpower.com</p>
+                            <a href="mailto:info@alverpower.com" className="text-black hover:text-[#282565] hover:underline active:text-[#9b3705]">
+                            info@alverpower.com
+                            </a>
                         </div>
-                        <p className='text-[16px]'>Contact Us</p>
+                        <Link href='/contact_us' className='text-[16px] hover:underline active:text-[#9b3705]'>Contact Us</Link>
                         <p className='text-[16px]'>Garden Estate rd, off Thika Road</p>
                     </div>
                 </div>
@@ -191,21 +198,21 @@ export default function Footer() {
                     </form>
                 </div>
                 <div className='w-full grid grid-cols-2 mt-[50px] space-x-2 space-y-6'>
-                        <Link href='/about_us' className='text-[14px] hover:underline'>About</Link>
+                        <Link href='/about_us' className='text-[14px] hover:underline active:text-[#9b3705]'>About</Link>
                         <div className='flex flex-row gap-2'>
                             <p className='text-[14px]'>Tel:</p>
-                            <a href="tel:0116004003" className="text-[14px] text-white hover:text-[#282565] hover:underline">
+                            <a href="tel:0116004003" className="text-[14px] text-black hover:text-[#282565] hover:underline active:text-[#9b3705]">
                                 0116004003
                             </a>
                         </div>
-                        <Link href='/products_and_services' className='text-[14px] hover:underline'>Products | Services</Link>
+                        <Link href='/products_and_services' className='text-[14px] hover:underline active:text-[#9b3705]'>Products | Services</Link>
                         <div className='flex flex-col text-[14px]'>
                             <p>Email:</p>
-                            <a href="mailto:info@alverpower.com" className="text-sm text-white hover:text-[#282565] hover:underline">
+                            <a href="mailto:info@alverpower.com" className="text-sm text-black hover:text-[#282565] hover:underline active:text-[#9b3705]">
                             info@alverpower.com
                             </a>
                         </div>
-                        <p className='text-[14px]'>Contact Us</p>
+                        <Link href='/contact_us' className='text-[14px] hover:underline active:text-[#9b3705]'>Contact Us</Link>
                         <p className='text-[14px]'>Garden Estate rd, off Thika Road</p>
                 </div>
             </div>
