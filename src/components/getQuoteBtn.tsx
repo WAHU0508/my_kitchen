@@ -44,24 +44,33 @@ function GetQuoteButton() {
         payload.append('phone', formData.phone);
         payload.append('message', formData.message);
         if (formData.attachment) {
-            payload.append('attachment', formData.attachment);
+        payload.append('attachment', formData.attachment);
         }
 
         try {
-            const res = await fetch('/api/getquote', {
+        const res = await fetch('/api/getquote', {
             method: 'POST',
             body: payload,
-            });
+        });
 
-            const data = await res.json();
-            console.log(payload)
-            setStatus(data.success ? 'Message sent!' : 'Failed to send message.');
-            setTimeout(() => setStatus(''), 5000);
+        const data = await res.json();
+        console.log(payload);
+
+        if (data.success) {
+            setStatus('Message sent!');
+            // ✅ Clear form after success
+            setFormData({ name: '', email: '', phone: '', message: '', attachment: null });
+        } else {
+            setStatus('Failed to send message.');
+        }
+
+        setTimeout(() => setStatus(''), 5000);
         } catch {
-            console.log('Error Here')
-            setStatus('Something went wrong.');
+        console.log('Error Here');
+        setStatus('Something went wrong.');
         }
     };
+
 
   return (
     <div>

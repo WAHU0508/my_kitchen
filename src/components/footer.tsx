@@ -21,28 +21,34 @@ export default function Footer() {
     const handleChange = (e: React.ChangeEvent<HTMLInputElement | HTMLTextAreaElement>) => {
         setFormData({ ...formData, [e.target.name]: e.target.value });
     };
-
     const handleSubmit = async (e: React.FormEvent) => {
         e.preventDefault();
         setStatus('Sending...');
 
         try {
-            const res = await fetch('/api/contact', {
-                method: 'POST',
-                body: JSON.stringify(formData),
-                headers: { 'Content-Type': 'application/json' },
-            });
+        const res = await fetch('/api/contact', {
+            method: 'POST',
+            body: JSON.stringify(formData),
+            headers: { 'Content-Type': 'application/json' },
+        });
 
-            const data = await res.json();
-            setStatus(data.success ? 'Message sent!' : 'Failed to send message.');
-            // Clear status message after 3 seconds
-            setTimeout(() => {
-                setStatus(''); // Reset the status after 3 seconds
-            }, 5000);
+        const data = await res.json();
+        if (data.success) {
+            setStatus('Message sent!');
+            setFormData({ first_name: '', last_name: '', email: '', message: '' }); // ✅ Clear the form
+        } else {
+            setStatus('Failed to send message.');
+        }
+
+        // Clear status after 5 seconds
+        setTimeout(() => {
+            setStatus('');
+        }, 5000);
         } catch {
-            setStatus('Something went wrong.');
+        setStatus('Something went wrong.');
         }
     };
+
 
     return (
         <footer className='w-full flex flex-col items-center justify-center bg-[#F8F8F8] text-black'>
