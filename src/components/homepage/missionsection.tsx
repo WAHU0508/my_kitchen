@@ -16,7 +16,7 @@ function MissionSection() {
         <div className='w-full flex items-center justify-center flex-col md:flex-row lg:flex-row lg:gap-[200px]'>
           <div className='flex flex-col ml-[30px] md:ml-[30px] md:w-[600px] lg:ml-[50px] lg:w-[600px]'>
             <p className='text-[12px] md:text-[14px] lg:text-[14px]'>Mission</p>
-            <p className='text-[14px] md:text-[18px] lg:text-[18px] mt-[30px] text-justify'>
+            <p className='text-[14px] md:text-[16px] lg:text-[16px] mt-[30px] text-justify'>
               Build long-term, mutually beneficial relationships with all clients. <br /><br />
               Continuously exceed client expectations through exceptional service. <br /><br />
               Earn client trust through the dedication and professionalism of every team member. <br /><br />
