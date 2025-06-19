@@ -17,11 +17,19 @@ function MissionSection() {
           <div className='flex flex-col ml-[30px] md:ml-[30px] md:w-[600px] lg:ml-[50px] lg:w-[600px]'>
             <p className='text-[12px] md:text-[14px] lg:text-[14px]'>Mission</p>
             <p className='text-[14px] md:text-[18px] lg:text-[18px] mt-[30px] text-justify'>
-              Our mission is to build lasting, mutually beneficial relationships with each of our esteemed 
-              clients by continually exceeding their expectations and earning their confidence via the 
-              excellent and devoted work of every member of the Alver power System Team. Also to offer 
-              quality, safe, innovative, and flexible electrical services by ensuring commitment to the 
-              implementation or supporting technical, managerial and business operational systems
+              Build long-term, mutually beneficial relationships with all clients. \n
+
+              Continuously exceed client expectations through exceptional service.\n
+              
+              Earn client trust through the dedication and professionalism of every team member. \n
+              
+              Deliver high-quality, safe, and innovative electrical solutions.\n
+              
+              Remain flexible and responsive to diverse client needs.\n
+              
+              Commit to strong technical, managerial, and business systems to ensure operational excellence.\n
+              
+              Promote a culture of reliability, integrity, and continuous improvement in all services offered.
             </p>
           </div>
 
