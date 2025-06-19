@@ -23,7 +23,7 @@ function MissionSection() {
               Deliver high-quality, safe, and innovative electrical solutions. <br /><br />
               Remain flexible and responsive to diverse client needs. <br /><br />
               Commit to strong technical, managerial, and business systems to ensure operational excellence. <br /><br />
-              Promote a culture of reliability, integrity, and continuous improvement in all services offered.
+              Promote a culture of reliability, integrity, and continuous improvement in all services offered. <br /><br />
             </p>
           </div>
 
