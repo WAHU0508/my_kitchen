@@ -140,7 +140,7 @@ export default function Header() {
         
          <div className='flex flex-col'>
           <p className='text-[16px] text-black font-semibold'>CNC</p>
-          <Link href='/products_and_services/solar_solutions' className='text-[16px] text-black hover:text-[#C45308]'>CNC and Laser Machining</Link>
+          <Link href='/products_and_services/CNC' className='text-[16px] text-black hover:text-[#C45308]'>CNC and Laser Machining</Link>
          </div>   
         
         </div>
