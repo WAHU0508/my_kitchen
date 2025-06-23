@@ -124,7 +124,7 @@ export default function Header() {
          </div>
 
          <div className='flex flex-col'>
-          <p className='text-[16px] text-black font-semibold'>Automatic Voltage Regulator</p>
+          <p className='text-[16px] text-black font-semibold'>Automatic Voltage Regulator(AVR)</p>
           <Link href='/products_and_services/' className='text-[16px] text-black hover:text-[#C45308]'>A-PLUS AVR</Link>
          </div>
 
