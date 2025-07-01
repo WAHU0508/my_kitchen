@@ -2,6 +2,7 @@
 import Image from "next/image"
 import { ArrowLeft, Zap, Shield, Clock, Wrench, Leaf, CheckCircle } from "lucide-react"
 import { useRouter } from "next/navigation"
+import AVR30 from "@//assets/AVR-30.jpg"
 
 export default function AVRDetailsPage() {
   const router = useRouter()
@@ -100,7 +101,7 @@ export default function AVRDetailsPage() {
             </div>
             <div className="relative h-80 lg:h-96">
               <Image
-                src="/placeholder.svg?height=400&width=600"
+                src={AVR30}
                 alt="AVR Solutions"
                 fill
                 className="object-cover rounded-lg shadow-2xl"
