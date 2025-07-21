@@ -90,7 +90,7 @@ function GetQuoteButton() {
                     className='w-[10px] h-[10px] lg:w-[16px] lg:h-[16px] md:w-[16px] md:h-[16px]'
                 />
             </button> */}
-            <button className=''>
+            <button className='flex items-center justify-center'>
                 <p className='' onClick={openModal}>Get Quote</p>
 {/*                 <div className='px-4 py-1 flex items-center justify-center'>
                     <Image
