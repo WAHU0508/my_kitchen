@@ -1,7 +1,7 @@
 import React, { useState } from 'react'
-import Image from 'next/image'
+// import Image from 'next/image'
 import { FiUpload } from 'react-icons/fi';
-import arrow from '@//svgs/arrow.svg'
+// import arrow from '@//svgs/arrow.svg'
 
 function GetQuoteButton() {
     const [isModalOpen, setIsModalOpen] = useState(false);
