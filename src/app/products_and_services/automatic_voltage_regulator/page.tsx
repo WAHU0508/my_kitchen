@@ -3,6 +3,7 @@ import Image from "next/image"
 import { ArrowLeft, Zap, Shield, Clock, Wrench, Leaf, CheckCircle } from "lucide-react"
 import { useRouter } from "next/navigation"
 import AVR30 from "@//assets/AVR-30.jpg"
+import GetQuoteButton from '@//components/getQuoteBtn';
 
 export default function AVRDetailsPage() {
   const router = useRouter()
@@ -208,9 +209,9 @@ export default function AVRDetailsPage() {
             Contact us today for a customized AVR solution that meets your specific requirements.
           </p>
           <div className="flex flex-col sm:flex-row gap-4 justify-center">
-            <button className="bg-blue-600 hover:bg-blue-700 text-white px-8 py-3 rounded-lg font-semibold transition-colors">
-              Get Quote
-            </button>
+            <div className="bg-blue-600 hover:bg-blue-700 text-white px-8 py-3 rounded-lg font-semibold transition-colors">
+              <GetQuoteButton />
+            </div>
             <button className="border border-gray-300 hover:bg-gray-800 text-white px-8 py-3 rounded-lg font-semibold transition-colors">
               Technical Support
             </button>
