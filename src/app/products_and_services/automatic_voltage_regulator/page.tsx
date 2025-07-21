@@ -9,9 +9,11 @@ export default function AVRDetailsPage() {
   const router = useRouter()
 
   const models = [
-    { model: "AVR-5K", rating: "5kVA", phase: "Single", inputRange: "140V-260V", output: "220V/230V" },
-    { model: "AVR-20K", rating: "20kVA", phase: "Three", inputRange: "300V-480V", output: "380V/400V" },
-    { model: "AVR-100K", rating: "100kVA", phase: "Three", inputRange: "320V-500V", output: "415V ±1%" },
+    { model: "A-PLUS", rating: "10kVA", phase: "Single", inputRange: "140V-260V", output: "220V/230V" },
+    { model: "A-PLUS", rating: "15kVA", phase: "Single", inputRange: "140V-260V", output: "220V/230V" },
+    { model: "A-PLUS", rating: "30kVA", phase: "Three", inputRange: "300V-480V", output: "380V/400V" },
+    { model: "A-PLUS", rating: "60kVA", phase: "Three", inputRange: "320V-500V", output: "415V ±1%" },
+    { model: "A-PLUS", rating: "90kVA", phase: "Three", inputRange: "320V-500V", output: "415V ±1%" },
   ]
 
   const applications = [
