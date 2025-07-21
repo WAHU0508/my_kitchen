@@ -91,7 +91,7 @@ function GetQuoteButton() {
                 />
             </button> */}
             <button className=''>
-                <p className='px-4 py-1' onClick={openModal}>Get Quote</p>
+                <p className='' onClick={openModal}>Get Quote</p>
 {/*                 <div className='px-4 py-1 flex items-center justify-center'>
                     <Image
                         src={arrow}
