@@ -1,6 +1,6 @@
 import React from "react"
 // import Link from "next/link"
-import { Utensils } from "lucide-react"
+// import { Utensils } from "lucide-react"
 
 export default function Header() {
   return (
