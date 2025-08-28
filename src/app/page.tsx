@@ -16,7 +16,7 @@ export default function HomePage() {
                     src='/beautiful-rustic-kitchen-with-fresh-ingredients-an.png'
                     className="w-full lg:min-h-screen"
                 />
-              <div
+            </div>
         </div>
     )
 }
