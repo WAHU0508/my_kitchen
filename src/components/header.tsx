@@ -11,15 +11,20 @@ export default function Header() {
           hidden md:flex 
           w-full flex-row items-center justify-between 
           lg:px-8 h-[60px]
-          bg-[#e46f2b]/40
+          bg-[#e46f2b]/50
           backdrop-blur-md
           transition-all duration-500 ease-in-out
         "
       >
-        {/* Logo + any other header content will remain crisp */}
         <Link href="/">
           <Image src={logo} alt="KitchenTik" width={50} height={45} />
         </Link>
+        
+        <nav className='space-x-6 text-white hover:text-[#e46f2b] md:text-[20px]'>
+          <p>Big Appliances</p>
+          <p>Small Appliances</p>
+          <p>Recipes</p>
+        </nav>
 
       </div>
     </header>
