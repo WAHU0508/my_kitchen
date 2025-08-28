@@ -24,12 +24,12 @@ export default function Header() {
         <nav className='flex flex-row items-center md:space-x-6 lg:space-x-8 text-white md:text-[16px]'>
           <p className='hover:text-[#e46f2b] cursor-pointer'>Big Appliances</p>
           <p className='hover:text-[#e46f2b] cursor-pointer'>Small Appliances</p>
-          <p className='hover:text-[#e46f2b] cursor-pointer'>Recipes</p>   
-        </nav>
-       {/* Subscribe */}
-        <button className="bg-blue-600 hover:bg-blue-700 text-white md:text-[14px] rounded-[10px] px-4 py-2">
+          <p className='hover:text-[#e46f2b] cursor-pointer'>Recipes</p>
+          {/* Subscribe */}
+        <button className="bg-blue-600 hover:bg-blue-700 text-white md:text-[14px] rounded-[10px] px-4 py-2 ml-[50px] lg:ml-[300px]">
           Subscribe
         </button>
+        </nav>
         <div>
         </div>
       </div>
