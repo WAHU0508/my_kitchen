@@ -7,7 +7,7 @@ export default function Header() {
           <div className="flex items-center justify-between">
             <div className="flex items-center gap-3">
               <div className="bg-[#ea580c] text-white p-2 rounded-lg">
-                <Utensils className="h-6 w-6" />
+{/*                 <Utensils className="h-6 w-6" /> */}
               </div>
               <div>
                 <h1 className="text-2xl font-bold text-[#4b5563]">Kitchen Chronicles</h1>
@@ -24,9 +24,9 @@ export default function Header() {
               <Link href="/recipes" className="text-[#4b5563] hover:text-[#ea580c] transition-colors">
                 Recipes
               </Link>
-              <Button variant="outline" size="sm">
+              <button>
                 Subscribe
-              </Button>
+              </button>
             </nav>
           </div>
         </div>
