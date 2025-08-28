@@ -1,5 +1,7 @@
 import React from "react"
 import Link from "next/link"
+import { Utensils } from "lucide-react"
+
 export default function Header() {
   return (
      <header className="border-b border-black bg-[#fffbeb]">
@@ -7,7 +9,7 @@ export default function Header() {
           <div className="flex items-center justify-between">
             <div className="flex items-center gap-3">
               <div className="bg-[#ea580c] text-white p-2 rounded-lg">
-{/*                 <Utensils className="h-6 w-6" /> */}
+                <Utensils className="h-6 w-6" />
               </div>
               <div>
                 <h1 className="text-2xl font-bold text-[#4b5563]">Kitchen Chronicles</h1>
