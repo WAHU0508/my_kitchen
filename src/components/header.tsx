@@ -33,11 +33,12 @@ export default function Header() {
           Subscribe
         </button>
       </div>
+      
       {/* Small screens */}
       <div className="md:hidden w-full bg-[#e46f2b]/40 backdrop-blur-md transition-all duration-500 ease-in-out">
         <div className="flex items-center justify-between px-4 h-[60px]">
           <Link href="/" className="flex items-center">
-            <Image src="/kitchentik-logo.png" alt="KitchenTik" width={40} height={36} />
+            <Image src={logo} alt="KitchenTik" width={40} height={36} />
           </Link>
 
           <div className="flex items-center space-x-3">
@@ -83,44 +84,6 @@ export default function Header() {
         )}
       </div>
 
-      {/* Desktop Header */}
-      <div
-        className="
-          hidden md:flex 
-          w-full flex-row items-center justify-between px-6
-          lg:px-12 h-[60px]
-          bg-[#e46f2b]/50
-          backdrop-blur-md
-          transition-all duration-500 ease-in-out
-        "
-      >
-        {/* Logo */}
-        <Link href="/" className="flex flex-row">
-          <Image src="/kitchentik-logo.png" alt="KitchenTik" width={50} height={45} />
-        </Link>
-
-        <nav className="flex flex-row items-center space-x-8 lg:space-x-12 text-white md:text-[16px]">
-          <Link
-            href="/big-appliances"
-            className="hover:text-[#e46f2b] cursor-pointer transition-colors duration-200 py-2"
-          >
-            Big Appliances
-          </Link>
-          <Link
-            href="/small-appliances"
-            className="hover:text-[#e46f2b] cursor-pointer transition-colors duration-200 py-2"
-          >
-            Small Appliances
-          </Link>
-          <Link href="/recipes" className="hover:text-[#e46f2b] cursor-pointer transition-colors duration-200 py-2">
-            Recipes
-          </Link>
-        </nav>
-
-        <button className="bg-blue-600 hover:bg-blue-700 text-white md:text-[14px] rounded-[10px] px-6 py-2 transition-colors duration-200">
-          Subscribe
-        </button>
-      </div>
     </header>
   )
 }
