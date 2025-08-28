@@ -16,20 +16,20 @@ export default function Header() {
           transition-all duration-500 ease-in-out
         "
       >
-{/*         Icon */}
-        <Link href="/" className='flex flex-row gap-4 md:w-[200px] lg:w-[300px]'>
+        {/* Icon */}
+        <Link href="/" className='flex flex-row gap-4 lg:w-[300px]'>
           <Image src={logo} alt="KitchenTik" width={50} height={45} />
         </Link>
-{/*         Nav bar */}
+        {/* Nav bar */}
         <nav className='flex flex-row space-x-8 text-white md:text-[16px]'>
           <p className='hover:text-[#e46f2b] cursor-pointer'>Big Appliances</p>
           <p className='hover:text-[#e46f2b] cursor-pointer'>Small Appliances</p>
-          <p className='hover:text-[#e46f2b] cursor-pointer'>Recipes</p>
-        </nav>
-{/*         Subscribe */}
+          <p className='hover:text-[#e46f2b] cursor-pointer'>Recipes</p>   
+        {/* Subscribe */}
         <button className="bg-blue-600 hover:bg-blue-700 text-white md:text-[14px] rounded-[10px] px-4 py-2">
           Subscribe
         </button>
+        </nav>
   
         <div>
         </div>
