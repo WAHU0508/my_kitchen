@@ -15,8 +15,11 @@ export default function HomePage() {
                 <Image
                     src='/rustic-kitchen.png'
                     alt='Rustic Kitchen'
-                    className="w-full lg:h-[700px]"
+                    className="w-full lg:h-[700px] object-cover"
                 />
+                <div className="absolute inset-0 flex items-center justify-center">
+                  <h1 className="lg:text-6xl font-bold text-white text-center drop-shadow-2xl">Discover the joy of <span className='text-[#000000]'>Home cooking</span></h1>
+                </div>
             </div>
         </div>
     )
