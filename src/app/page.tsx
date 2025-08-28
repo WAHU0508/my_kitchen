@@ -13,7 +13,7 @@ export default function HomePage() {
                     <Header/>
                 </div>
                 <Image
-                    src='/beautiful-rustic-kitchen-with-fresh-ingredients-an.png'
+                    src='/rustic-kitchen.png'
                     alt='Rustic Kitchen'
                     className="w-full lg:min-h-screen"
                 />
