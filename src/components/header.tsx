@@ -4,11 +4,11 @@ import { Utensils } from "lucide-react"
 
 export default function Header() {
   return (
-     <header className="border-b border-black bg-[#fffbeb]">
+     <header className="w-full flex items-center justify-center border-b border-black bg-[#fffbeb]">
         <div className="container mx-auto px-4 py-6">
           <div className="flex items-center justify-between">
             <div className="flex items-center gap-[30px]">
-              <div className="bg-[#ea580c] text-white p-2 rounded-lg">
+              <div className="bg-[#ea580c] text-white p-4 rounded-lg">
                 <Utensils className="h-[30px] w-[30px] stroke-[#ffffff]"/>
               </div>
               <div>
