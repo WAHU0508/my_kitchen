@@ -10,7 +10,6 @@ import logo from '@//assets/logo.png';
 export default function Header() {
   const [isOpen, setIsOpen] = useState(false);
   const [isExpanded, setIsExpanded] = useState(false);
-  const [isScrolled, setIsScrolled] = useState(false);
   const [visible, setVisible] = useState(true);
   const timeoutRef = useRef<NodeJS.Timeout | null>(null);
   const pathname = usePathname();
@@ -62,17 +61,20 @@ export default function Header() {
       {/* Header for large and medium screens */}
       <div
         className='hidden w-full md:flex md:flex-row items-center justify-between lg:px-8 h-[60px] sticky top-0 z-50 transition-all duration-500 ease-in-out 
-         bg-[#e46f2b]/95'
+         bg-[#e46f2b]/60'
       >
         <Link href='/'>
-          <Image src={logo} alt="KitchenTik" width={150} height={45} />
+          <Image src={logo} alt="KitchenTik" width={50} height={45} />
         </Link>
 
       </div>
       
 
       {/* header for smaller screens */}
-      <div className={`lg:hidden md:hidden flex flex-row w-full items-center justify-between ${isScrolled? 'bg-black/60' : ''} px-2`}>
+      <div className={`lg:hidden md:hidden flex flex-row w-full items-center justify-between bg-[#e46f2b]/60 px-2`}>
+        <button onClick={() => setIsOpen(true)}>
+            <Menu size={31} color='white'/>
+        </button>
         <div className='flex items-center justify-center w-full'>
             <Image
                 src={logo}
@@ -82,9 +84,6 @@ export default function Header() {
                 className='w-[120px] h-[38px]'
             />
         </div>
-        <button onClick={() => setIsOpen(true)}>
-            <Menu size={31} color='white'/>
-        </button>
       </div>
 
       {/* Modal and Overlay */}
