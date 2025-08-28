@@ -1,50 +1,35 @@
-import { Button } from "@/components/ui/button"
-import { Search, Menu } from "lucide-react"
+
 
 export default function Header() {
   return (
-    <header className="sticky top-0 z-50 w-full border-b bg-primary/95 backdrop-blur supports-[backdrop-filter]:bg-primary/60">
-      <div className="container flex h-16 items-center justify-between px-4">
-        <div className="flex items-center space-x-4">
-          <Button
-            variant="ghost"
-            size="icon"
-            className="md:hidden text-primary-foreground hover:bg-primary-foreground/10"
-          >
-            <Menu className="h-5 w-5" />
-          </Button>
-          <div className="flex items-center space-x-2">
-            <div className="h-8 w-8 rounded-full bg-primary-foreground/20 flex items-center justify-center">
-              <span className="text-primary-foreground font-bold text-lg">🍳</span>
+     <header className="border-b border-black bg-[#fffbeb]">
+        <div className="container mx-auto px-4 py-6">
+          <div className="flex items-center justify-between">
+            <div className="flex items-center gap-3">
+              <div className="bg-[#ea580c] text-white p-2 rounded-lg">
+                <Utensils className="h-6 w-6" />
+              </div>
+              <div>
+                <h1 className="text-2xl font-bold text-[#4b5563]">Kitchen Chronicles</h1>
+                <p className="text-[#374151] text-sm">Your guide to better cooking</p>
+              </div>
             </div>
-            <h1 className="text-xl font-bold text-primary-foreground">Kitchen Chronicles</h1>
+            <nav className="hidden md:flex items-center gap-6">
+              <Link href="/big-appliances" className="text-[#4b5563] hover:text-[#ea580c] transition-colors">
+                Big Appliances
+              </Link>
+              <Link href="/small-appliances" className="text-[#4b5563] hover:text-[#ea580c] transition-colors">
+                Small Appliances
+              </Link>
+              <Link href="/recipes" className="text-[#4b5563] hover:text-[#ea580c] transition-colors">
+                Recipes
+              </Link>
+              <Button variant="outline" size="sm">
+                Subscribe
+              </Button>
+            </nav>
           </div>
         </div>
-
-        <nav className="hidden md:flex items-center space-x-6">
-          <a href="#" className="text-primary-foreground hover:text-primary-foreground/80 transition-colors">
-            Recipes
-          </a>
-          <a href="#" className="text-primary-foreground hover:text-primary-foreground/80 transition-colors">
-            Tips
-          </a>
-          <a href="#" className="text-primary-foreground hover:text-primary-foreground/80 transition-colors">
-            About
-          </a>
-          <a href="#" className="text-primary-foreground hover:text-primary-foreground/80 transition-colors">
-            Contact
-          </a>
-        </nav>
-
-        <div className="flex items-center space-x-2">
-          <Button variant="ghost" size="icon" className="text-primary-foreground hover:bg-primary-foreground/10">
-            <Search className="h-5 w-5" />
-          </Button>
-          <Button variant="secondary" size="sm" className="hidden sm:inline-flex">
-            Subscribe
-          </Button>
-        </div>
-      </div>
-    </header>
+      </header>
   )
 }
