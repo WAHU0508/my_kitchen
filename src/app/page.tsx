@@ -22,7 +22,7 @@ export default function HomePage() {
               <h1 className="text-5xl lg:text-7xl font-bold text-white mb-6 drop-shadow-2xl text-balance">
                 Discover the joy of <span className='text-[#e46f2b]'>home cooking</span>
               </h1>
-              <p className="text-lg lg:text-xl text-white/90 leading-relaxed drop-shadow-lg text-pretty">
+              <p className="text-lg lg:text-xl text-white leading-relaxed drop-shadow-lg text-pretty">
                 Transform your kitchen into a culinary haven with our premium appliances and expert recipes. From
                 everyday meals to special occasions, we provide everything you need to create memorable dining
                 experiences for you and your loved ones.
