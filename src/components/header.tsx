@@ -9,7 +9,7 @@ export default function Header() {
       <div
         className="
           hidden md:flex 
-          w-full flex-row items-center justify-between 
+          w-full flex-row items-center justify-between px-4
           lg:px-8 h-[60px]
           bg-[#e46f2b]/50
           backdrop-blur-md
@@ -26,6 +26,12 @@ export default function Header() {
           <p className='hover:text-[#e46f2b]'>Recipes</p>
         </nav>
 
+        <button className='bg-blue text-white md:text-[10px] rounded-[10px] p-2'>
+            Subscribe
+          </button>
+        
+        <div>
+        </div>
       </div>
     </header>
   );
