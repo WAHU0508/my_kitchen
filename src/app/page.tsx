@@ -15,7 +15,7 @@ export default function HomePage() {
                 <Image
                     src='/rustic-kitchen.png'
                     alt='Rustic Kitchen'
-                    className="w-full lg:h-[500px]"
+                    className="w-full lg:h-[700px]"
                 />
             </div>
         </div>
