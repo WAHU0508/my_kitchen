@@ -2,6 +2,7 @@
 'use client'
 import React from 'react';
 import Image from 'next/image';
+import { ArrowLeft } from "lucide-react";
 import Header from '@//components/header'
 
 export default function HomePage() {
@@ -31,6 +32,16 @@ export default function HomePage() {
                         experiences for you and your loved ones.
                       </p>
                     </div>
+                    {/* Buttons */}
+                    <div className="flex flex-col sm:flex-row gap-4 mt-8 justify-center">
+                        <button className="bg-[#e46f2b] hover:bg-[#d4621f] text-white font-semibold px-8 py-4 rounded-lg transition-colors duration-300 shadow-lg flex items-center justify-center gap-2">
+                          Explore Recipes
+                          <ArrowLeft className="w-5 h-5 stroke-white" />
+                        </button>
+                        <button className="bg-white hover:bg-gray-100 text-gray-900 font-semibold px-8 py-4 rounded-lg transition-colors duration-300 shadow-lg">
+                          Product Reviews
+                        </button>
+                      </div>
                </div>
                 
             </div>
