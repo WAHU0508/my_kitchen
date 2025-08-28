@@ -18,11 +18,11 @@ export default function Header() {
         "
       >
         {/* Icon */}
-        <Link href="/" className='flex flex-row gap-4 lg:w-[300px] border border-white'>
+        <Link href="/" className='flex flex-row border border-white'>
           <Image src={logo} alt="KitchenTik" width={50} height={45} />
         </Link>
         {/* Nav bar */}
-        <nav className='flex flex-row space-x-8 text-white md:text-[16px] border border-white'>
+        <nav className='flex flex-row md:space-x-6 lg:space-x-8 text-white md:text-[16px] border border-white'>
           <p className='hover:text-[#e46f2b] cursor-pointer'>Big Appliances</p>
           <p className='hover:text-[#e46f2b] cursor-pointer'>Small Appliances</p>
           <p className='hover:text-[#e46f2b] cursor-pointer'>Recipes</p>   
