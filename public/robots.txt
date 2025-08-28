@@ -1,9 +1,0 @@
-# *
-User-agent: *
-Allow: /
-
-# Host
-Host: https://alverpower.com
-
-# Sitemaps
-Sitemap: https://alverpower.com/sitemap.xml
