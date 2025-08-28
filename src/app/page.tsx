@@ -2,7 +2,7 @@
 'use client'
 import React from 'react';
 import Image from 'next/image';
-import { ArrowLeft } from "lucide-react";
+// import { ArrowLeft } from "lucide-react";
 import Header from '@//components/header'
 
 export default function HomePage() {
