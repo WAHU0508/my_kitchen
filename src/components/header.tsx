@@ -9,30 +9,28 @@ export default function Header() {
       <div
         className="
           hidden md:flex 
-          w-full flex-row items-center justify-between px-4
-          lg:px-8 h-[60px]
+          w-full flex-row items-center justify-between px-6
+          lg:px-12 h-[60px]
           bg-[#e46f2b]/50
           backdrop-blur-md
           transition-all duration-500 ease-in-out
         "
       >
-        {/* Icon */}
-        <Link href="/" className='flex flex-row'>
+        {/* Logo */}
+        <Link href="/" className="flex flex-row">
           <Image src={logo} alt="KitchenTik" width={50} height={45} />
         </Link>
-        {/* Nav bar */}
-        <nav className='flex flex-row items-center md:space-x-6 lg:space-x-8 text-white md:text-[16px]'>
-          <p className='hover:text-[#e46f2b] cursor-pointer'>Big Appliances</p>
-          <p className='hover:text-[#e46f2b] cursor-pointer'>Small Appliances</p>
-          <p className='hover:text-[#e46f2b] cursor-pointer'>Recipes</p>
-          {/* Subscribe */}
-        <button className="bg-blue-600 hover:bg-blue-700 text-white md:text-[14px] rounded-[10px] px-4 py-2 ml-[50px] lg:ml-[300px]">
+
+        <nav className="flex flex-row items-center space-x-8 lg:space-x-12 text-white md:text-[16px]">
+          <p className="hover:text-[#e46f2b] cursor-pointer transition-colors duration-200">Big Appliances</p>
+          <p className="hover:text-[#e46f2b] cursor-pointer transition-colors duration-200">Small Appliances</p>
+          <p className="hover:text-[#e46f2b] cursor-pointer transition-colors duration-200">Recipes</p>
+        </nav>
+
+        <button className="bg-blue-600 hover:bg-blue-700 text-white md:text-[14px] rounded-[10px] px-6 py-2 transition-colors duration-200">
           Subscribe
         </button>
-        </nav>
-        <div>
-        </div>
       </div>
     </header>
-  );
+  )
 }
