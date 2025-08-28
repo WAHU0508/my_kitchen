@@ -14,15 +14,6 @@ export default function Header() {
   const timeoutRef = useRef<NodeJS.Timeout | null>(null);
   const pathname = usePathname();
 
-  useEffect(() => {
-    const handleScroll = () => {
-      setIsScrolled(window.scrollY > 50);
-    };
-
-    window.addEventListener('scroll', handleScroll);
-    return () => window.removeEventListener('scroll', handleScroll);
-  }, []);
-
   // Handle visibility on inactivity
   useEffect(() => {
     const resetTimer = () => {
