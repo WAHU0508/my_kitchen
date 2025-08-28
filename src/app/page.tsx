@@ -32,14 +32,14 @@ export default function HomePage() {
                         experiences for you and your loved ones.
                       </p>
                       {/* Buttons */}
-                      <div className="flex flex-col sm:flex-row gap-4 lg:gap-8 md:mt-8 justify-center">
-                        <button className="bg-[#e46f2b] hover:bg-[#d4621f] text-white font-semibold p-2 md:px-8 md:py-4 rounded-lg transition-colors duration-300 shadow-lg flex items-center justify-center gap-2">
+                     <div className="flex flex-col sm:flex-row gap-3 sm:gap-4 justify-center items-center">
+                        <button className="bg-[#e46f2b] hover:bg-[#d4621f] text-white font-semibold px-4 sm:px-8 py-3 sm:py-4 rounded-lg transition-colors duration-300 shadow-lg flex items-center justify-center gap-2 text-sm sm:text-base max-w-[200px] sm:max-w-none">
                           Explore Recipes
-                          <svg className="w-5 h-5" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                          <svg className="w-4 h-4 sm:w-5 sm:h-5" fill="none" stroke="currentColor" viewBox="0 0 24 24">
                             <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M14 5l7 7m0 0l-7 7m7-7H3" />
                           </svg>
                         </button>
-                        <button className="bg-white hover:bg-gray-100 text-gray-900 font-semibold p-2 md:px-8 md:py-4 rounded-lg transition-colors duration-300 shadow-lg">
+                        <button className="bg-white hover:bg-gray-100 text-gray-900 font-semibold px-4 sm:px-8 py-3 sm:py-4 rounded-lg transition-colors duration-300 shadow-lg text-sm sm:text-base max-w-[200px] sm:max-w-none">
                           Product Reviews
                         </button>
                       </div>
