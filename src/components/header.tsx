@@ -8,7 +8,6 @@ export default function Header() {
     <header className="w-full sticky top-0 z-50">
       <div
         className="
-        border border-white
           hidden md:flex 
           w-full flex-row items-center justify-between px-4
           lg:px-8 h-[60px]
@@ -18,16 +17,16 @@ export default function Header() {
         "
       >
         {/* Icon */}
-        <Link href="/" className='flex flex-row border border-white'>
+        <Link href="/" className='flex flex-row'>
           <Image src={logo} alt="KitchenTik" width={50} height={45} />
         </Link>
         {/* Nav bar */}
-        <nav className='flex flex-row md:space-x-6 lg:space-x-8 text-white md:text-[16px] border border-white'>
+        <nav className='flex flex-row items-center md:space-x-6 lg:space-x-8 text-white md:text-[16px]'>
           <p className='hover:text-[#e46f2b] cursor-pointer'>Big Appliances</p>
           <p className='hover:text-[#e46f2b] cursor-pointer'>Small Appliances</p>
           <p className='hover:text-[#e46f2b] cursor-pointer'>Recipes</p>   
         {/* Subscribe */}
-        <button className="bg-blue-600 hover:bg-blue-700 text-white md:text-[14px] rounded-[10px] px-4 py-2">
+        <button className="bg-blue-600 hover:bg-blue-700 text-white md:text-[14px] rounded-[10px] px-4 py-2 md:ml-[50px] lg:ml-[100px]">
           Subscribe
         </button>
         </nav>
