@@ -8,8 +8,8 @@ export default function Header() {
         <div className="container mx-auto px-4 py-6">
           <div className="flex items-center justify-between">
             <div className="flex items-center gap-[30px]">
-              <div className="bg-[#ea580c] text-white p-8 rounded-lg">
-                <Utensils className="h-[15px] w-[15px] stroke-white text-white"/>
+              <div className="bg-[#ea580c] text-white p-2 rounded-lg">
+                <Utensils className="h-[30px] w-[30px] stroke-[#ffffff]"/>
               </div>
               <div>
                 <h1 className="text-2xl font-bold text-[#4b5563]">Kitchen Chronicles</h1>
