@@ -21,12 +21,6 @@ export default function Header() {
           <Image src={logo} alt="KitchenTik" width={50} height={45} />
         </Link>
 
-        {/* Example nav links */}
-        <nav className="flex gap-6 text-white font-medium">
-          <Link href="/about">About</Link>
-          <Link href="/recipes">Recipes</Link>
-          <Link href="/contact">Contact</Link>
-        </nav>
       </div>
     </header>
   );
