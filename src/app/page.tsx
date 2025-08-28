@@ -1,8 +1,8 @@
 // homepage
 'use client'
-import React, { useState } from 'react';
-import Link from 'next/link';
+import React from 'react';
 import Image from 'next/image';
+import Header from '@//components/header'
 
 export default function HomePage() {
     return (
@@ -14,6 +14,7 @@ export default function HomePage() {
                 </div>
                 <Image
                     src='/beautiful-rustic-kitchen-with-fresh-ingredients-an.png'
+                    alt='Rustic Kitchen'
                     className="w-full lg:min-h-screen"
                 />
             </div>
