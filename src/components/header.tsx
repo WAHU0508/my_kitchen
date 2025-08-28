@@ -21,7 +21,7 @@ export default function Header() {
           <Image src={logo} alt="KitchenTik" width={50} height={45} />
         </Link>
 {/*         Nav bar */}
-        <nav className='flex flex-row items-center justify-center space-x-8 text-white md:text-[16px]'>
+        <nav className='flex flex-row space-x-8 text-white md:text-[16px]'>
           <p className='hover:text-[#e46f2b] cursor-pointer'>Big Appliances</p>
           <p className='hover:text-[#e46f2b] cursor-pointer'>Small Appliances</p>
           <p className='hover:text-[#e46f2b] cursor-pointer'>Recipes</p>
