@@ -22,7 +22,7 @@ export default function HomePage() {
                 <div className="absolute inset-0 bg-black/40"></div>
                 {/* Header text */}
                 <div className="absolute inset-0 flex items-center justify-center">
-                    <div className="text-center max-w-4xl px-6">
+                    <div className="mt-6 md:mt-0 text-center max-w-4xl px-6">
                       <h1 className="text-[12px] md:text-5xl lg:text-7xl font-bold text-white mb-6 md:drop-shadow-2xl text-balance">
                         Discover the joy of <span className='text-[#e46f2b]'>home cooking</span>
                       </h1>
