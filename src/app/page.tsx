@@ -31,17 +31,19 @@ export default function HomePage() {
                         everyday meals to special occasions, we provide everything you need to create memorable dining
                         experiences for you and your loved ones.
                       </p>
-                    </div>
-                    {/* Buttons */}
-                    <div className="flex flex-col sm:flex-row gap-4 mt-8 justify-center">
+                      {/* Buttons */}
+                      <div className="flex flex-col sm:flex-row gap-4 mt-8 justify-center">
                         <button className="bg-[#e46f2b] hover:bg-[#d4621f] text-white font-semibold px-8 py-4 rounded-lg transition-colors duration-300 shadow-lg flex items-center justify-center gap-2">
                           Explore Recipes
-                          <ArrowLeft className="w-5 h-5 stroke-white" />
+                          <svg className="w-5 h-5" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                            <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M14 5l7 7m0 0l-7 7m7-7H3" />
+                          </svg>
                         </button>
                         <button className="bg-white hover:bg-gray-100 text-gray-900 font-semibold px-8 py-4 rounded-lg transition-colors duration-300 shadow-lg">
                           Product Reviews
                         </button>
                       </div>
+                    </div>
                </div>
                 
             </div>
