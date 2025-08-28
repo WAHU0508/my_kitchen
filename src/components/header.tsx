@@ -12,7 +12,6 @@ export default function Header() {
   const [isExpanded, setIsExpanded] = useState(false);
   const [isScrolled, setIsScrolled] = useState(false);
   const [visible, setVisible] = useState(true);
-  const [isHovered, setIsHovered] = useState(false);
   const timeoutRef = useRef<NodeJS.Timeout | null>(null);
   const pathname = usePathname();
 
