@@ -1,78 +1,34 @@
+import type React from "react"
 import type { Metadata, Viewport } from "next";
-import "./globals.css";
-import Chatbot from '@//components/chatbot'
+import { Geist, Geist_Mono } from "next/font/google"
+import "./globals.css"
+
+const geistSans = Geist({
+  subsets: ["latin"],
+  display: "swap",
+  variable: "--font-geist-sans",
+})
+
+const geistMono = Geist_Mono({
+  subsets: ["latin"],
+  display: "swap",
+  variable: "--font-geist-mono",
+})
 
 export const metadata: Metadata = {
-  title: "Alver Power Systems | Electrical, Solar & Manufacturing Experts",
-  description: `Alver Power System Ltd, a company that offers electrical 
-             consulting and services and is focused on offering full EPC services, including engineering, 
-             procurement, construction, operation, and maintenance, for electrical equipment in Kenya and 
-             Africa at large.`,
-  keywords: [
-    "Alver Power Systems",
-    "Alver Power",
-    "Alver",
-    "avr",
-    "automatic voltage regulator",
-    "meterboard",
-    "switchboard",
-    "switchboard manufacturing",
-    "meterboard manufacturing",
-    "CNC machining",
-    "laser cutting",
-    "solar energy solutions",
-    "electrical installations",
-    "Kenya",
-    "East Africa",
-    "renewable energy",
-    "solar PV systems",
-    "EPC services"
-  ],
-  authors: [{ name: "Alver Power Systems Ltd" }],
-  creator: "Alver Power Systems",
-  openGraph: {
-    title: "Alver Power Systems | Powering Innovation, Ensuring Reliability",
-    description: "Leading provider of electrical and solar energy solutions including switchboard manufacturing, solar installations, and custom fabrication services.",
-    url: "https://alverpower.com",
-    siteName: "Alver Power Systems",
-    type: "website"
-  }
-};
-
-export const viewport: Viewport = {
-  themeColor: "#ffffff",
-  width: "device-width",
-  initialScale: 1,
-};
+  title: "Kitchen Chronicles - Your Cooking Blog",
+  description: "Discover delicious recipes, cooking tips, and culinary inspiration",
+  generator: "v0.app",
+}
 
 export default function RootLayout({
   children,
-}: Readonly<{ children: React.ReactNode }>) {
-  const currentUser = {
-    id: 'abc123-user-id', 
-  }
+}: Readonly<{
+  children: React.ReactNode
+}>) {
   return (
-    <html lang="en">
-      <head>
-        <link rel="icon" href="/favicon.ico" />
-        <link rel="canonical" href="https://alverpower.com/" />
-        <script
-          type="application/ld+json"
-          dangerouslySetInnerHTML={{
-            __html: JSON.stringify({
-              "@context": "https://schema.org",
-              "@type": "Organization",
-              "name": "Alver Power Systems",
-              "url": "https://alverpower.com",
-              "logo": "https://alverpower.com/logo.jpg"
-            }),
-          }}
-        />
-      </head>
-      <body>
-        {children}
-        <Chatbot userId={currentUser.id} />
-      </body>
+    <html lang="en" className={`${geistSans.variable} ${geistMono.variable} antialiased`}>
+      <body className="font-sans">{children}</body>
     </html>
-  );
+  )
 }
