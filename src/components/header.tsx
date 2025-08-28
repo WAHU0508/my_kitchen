@@ -18,13 +18,9 @@ export default function Header() {
       >
         <Link href="/" className='flex flex-row gap-4'>
           <Image src={logo} alt="KitchenTik" width={50} height={45} />
-          <div className='flex flex-col text-white'>
-            <p className='text-[20px]'>KitchenTik</p>
-            <p className='text-[15px]'>Your kitchen, your sanctuary.</p>
-          </div>
         </Link>
         
-        <nav className='flex flex-row items-center justify-center space-x-6 text-white md:text-[14px]'>
+        <nav className='flex flex-row items-center justify-center space-x-8 text-white md:text-[16px]'>
           <p className='hover:text-[#e46f2b]'>Big Appliances</p>
           <p className='hover:text-[#e46f2b]'>Small Appliances</p>
           <p className='hover:text-[#e46f2b]'>Recipes</p>
