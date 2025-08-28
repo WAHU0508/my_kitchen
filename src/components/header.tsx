@@ -62,91 +62,14 @@ export default function Header() {
     <header className={`w-full relative hover:bg-white hover:text-black group flex flex-col items-center justify-center transition-all duration-500 ease-in-out ${visible ? 'opacity-100' : 'opacity-0 pointer-events-none'}`}>
       {/* Header for large and medium screens */}
       <div
-        className={`hidden w-full md:flex md:flex-row items-center justify-between lg:px-8 h-[60px] sticky top-0 z-50 transition-all duration-500 ease-in-out 
-          ${isScrolled ? 'bg-black/60 text-white group-hover:bg-white group-hover:text-black' : 'group-hover:bg-white group-hover:text-black'} 
-          ${pathname === '/about_us' ? 'text-black' : 'text-white'}`}
+        className='hidden w-full md:flex md:flex-row items-center justify-between lg:px-8 h-[60px] sticky top-0 z-50 transition-all duration-500 ease-in-out 
+         bg-[#e46f2b]/95'
       >
         <Link href='/'>
-          <Image src={logo} alt="Alver Power Logo" width={150} height={45} />
+          <Image src={logo} alt="KitchenTik" width={150} height={45} />
         </Link>
-        <nav className="h-full flex flex-row md:gap-4 lg:gap-6 items-center">
-            <Link
-              href="/"
-              className={`md:text-[12px] lg:text-[16px] h-full flex items-center justify-center text-center xl:text-[16px] hover:text-[#C45308] cursor-pointer transition-colors duration-300 ${
-                pathname === '/' ? 'text-[#C45308] border-b-4 border-[#C45308]' : ''
-              }`}
-            >
-              Home
-            </Link>
-
-          <Link
-            href='/about_us'
-            className={`md:text-[12px] lg:text-[16px] h-full flex items-center justify-center text-center xl:text-[16px] hover:text-[#C45308] cursor-pointer transition-colors duration-300 ${pathname === '/about_us' ? 'text-[#C45308] border-b-4 border-[#C45308]' : ''}`}
-          >
-            About Us
-          </Link>
-          <Link
-            href='/products_and_services'
-            className={`md:text-[12px] lg:text-[16px] h-full flex items-center justify-center text-center xl:text-[16px] hover:text-[#C45308] cursor-pointer transition-colors duration-300 ${pathname === '/products_and_services' ? 'text-[#C45308] border-b-4 border-[#C45308]' : ''}`}
-            onMouseEnter={() => setIsHovered(true)}
-            onMouseLeave={() => setIsHovered(false)}
-          >
-            Products & Services
-          </Link>
-          <Link
-            href='/contact_us'
-            className={`md:text-[12px] lg:text-[16px] h-full flex items-center justify-center text-center xl:text-[16px] hover:text-[#C45308] cursor-pointer transition-colors duration-300 ${pathname === '/contact_us' ? 'text-[#C45308] border-b-4 border-[#C45308]' : ''}`}
-          >
-            Contact Us
-          </Link>
-          {/* <button className={`${isScrolled? 'bg-black text-white' : 'bg-white text-black'} px-2 py-1 hover:bg-white hover:text-black transition-all duration-300`}>
-            Get Quote
-          </button> */}
-        </nav>
 
       </div>
-
-      <div className={`w-full bg-white rounded-b-md drop-shadow-2xl px-4 z-50 ${isHovered ? 'flex' : 'hidden'}`}
-          onMouseEnter={() => setIsHovered(true)}
-          onMouseLeave={() => setIsHovered(false)}
-      >
-        <div className="w-full px-8 py-8 flex flex-row justify-between ">
-         <div className='flex flex-col'>
-          <p className='text-[16px] text-black font-semibold'>Switchboard Manufacturing</p>
-          <Link href='/products_and_services/switchboard_manufacturing' className='text-[16px] text-black hover:text-[#C45308]'>Switchboards</Link>
-          <Link href='/products_and_services/switchboard_manufacturing' className='text-[16px] text-black hover:text-[#C45308]'>Meterboards</Link>
-         </div>
-
-         <div className='flex flex-col'>
-          <p className='text-[16px] text-black font-semibold'>Electrical Installation</p>
-          <Link href='/products_and_services/switchboard_manufacturing' className='text-[16px] text-black hover:text-[#C45308]'>Electrical works</Link>
-          <Link href='/products_and_services/electrical_installation' className='text-[16px] text-black hover:text-[#C45308]'>Structured Cabling</Link>
-         </div>
-
-         <div className='flex flex-col'>
-          <p className='text-[16px] text-black font-semibold'>Automatic Voltage Regulator(AVR)</p>
-          <Link href='/products_and_services/automatic_voltage_regulator' className='text-[16px] text-black hover:text-[#C45308]'>A-PLUS AVR</Link>
-         </div>
-
-         <div className='flex flex-col'>
-          <p className='text-[16px] text-black font-semibold'>Solar Solutions</p>
-          <Link href='/products_and_services/solar_solutions' className='text-[16px] text-black hover:text-[#C45308]'>Off grid solar solutions</Link>
-          <Link href='/products_and_services/solar_solutions' className='text-[16px] text-black hover:text-[#C45308]'>Solar grid tie system</Link>
-          <Link href='/products_and_services/solar_solutions' className='text-[16px] text-black hover:text-[#C45308]'>Solar street lighting</Link>
-          <Link href='/products_and_services/solar_solutions' className='text-[16px] text-black hover:text-[#C45308]'>Solar water pumping</Link>
-          <Link href='/products_and_services/solar_solutions' className='text-[16px] text-black hover:text-[#C45308]'>Solar water heating system</Link>
-          <Link href='/products_and_services/solar_solutions' className='text-[16px] text-black hover:text-[#C45308]'>Mini grid system</Link>
-         </div>
-        
-         <div className='flex flex-col'>
-          <p className='text-[16px] text-black font-semibold'>CNC</p>
-          <Link href='/products_and_services/CNC' className='text-[16px] text-black hover:text-[#C45308]'>CNC and Laser Machining</Link>
-         </div>   
-        
-        </div>
-
-      </div>
-
       
 
       {/* header for smaller screens */}
