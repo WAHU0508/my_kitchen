@@ -7,9 +7,9 @@ export default function Header() {
      <header className="border-b border-black bg-[#fffbeb]">
         <div className="container mx-auto px-4 py-6">
           <div className="flex items-center justify-between">
-            <div className="flex items-center gap-3">
-              <div className="bg-[#ea580c] text-white p-2 rounded-lg">
-                <Utensils className="h-6 w-6" />
+            <div className="flex items-center gap-6">
+              <div className="bg-[#ea580c] text-white p-8 rounded-lg">
+                <Utensils className="h-6 w-6 text-white "/>
               </div>
               <div>
                 <h1 className="text-2xl font-bold text-[#4b5563]">Kitchen Chronicles</h1>
