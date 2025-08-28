@@ -16,7 +16,7 @@ export default function Header() {
           transition-all duration-500 ease-in-out
         "
       >
-        <Link href="/" className='flex flex-row gap-4'>
+        <Link href="/" className='flex flex-row gap-4 md:w-[200px] lg:w-[300px]'>
           <Image src={logo} alt="KitchenTik" width={50} height={45} />
         </Link>
         
