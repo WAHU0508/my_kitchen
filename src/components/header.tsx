@@ -25,12 +25,11 @@ export default function Header() {
           <p className='hover:text-[#e46f2b] cursor-pointer'>Big Appliances</p>
           <p className='hover:text-[#e46f2b] cursor-pointer'>Small Appliances</p>
           <p className='hover:text-[#e46f2b] cursor-pointer'>Recipes</p>   
-        {/* Subscribe */}
-        <button className="bg-blue-600 hover:bg-blue-700 text-white md:text-[14px] rounded-[10px] px-4 py-2 md:ml-[50px] lg:ml-[100px]">
+        </nav>
+       {/* Subscribe */}
+        <button className="bg-blue-600 hover:bg-blue-700 text-white md:text-[14px] rounded-[10px] px-4 py-2">
           Subscribe
         </button>
-        </nav>
-  
         <div>
         </div>
       </div>
