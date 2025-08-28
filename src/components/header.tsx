@@ -20,10 +20,10 @@ export default function Header() {
           <Image src={logo} alt="KitchenTik" width={50} height={45} />
         </Link>
         
-        <nav className='space-x-6 text-white hover:text-[#e46f2b] md:text-[20px]'>
-          <p>Big Appliances</p>
-          <p>Small Appliances</p>
-          <p>Recipes</p>
+        <nav className='flex flex-row items-center justify-center space-x-6 text-white md:text-[14px]'>
+          <p className='hover:text-[#e46f2b]'>Big Appliances</p>
+          <p className='hover:text-[#e46f2b]'>Small Appliances</p>
+          <p className='hover:text-[#e46f2b]'>Recipes</p>
         </nav>
 
       </div>
