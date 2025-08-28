@@ -14,9 +14,9 @@ export default function Header() {
           w-full flex-row items-center justify-between 
           lg:px-8 h-[60px] 
           sticky top-0 z-50 
-          bg-[#e46f2b]/40 
+          bg-[#e46f2b]/95 
           backdrop-blur-md   /* blur background */
-          supports-[backdrop-filter]:bg-[#e46f2b]/40  /* ensure blur works */
+          supports-[backdrop-filter]:bg-[#e46f2b]/95  /* ensure blur works */
           transition-all duration-500 ease-in-out
         "
       >
