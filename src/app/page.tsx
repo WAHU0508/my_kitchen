@@ -2,7 +2,7 @@
 'use client'
 import React from 'react';
 import Image from 'next/image';
-import Categories from "@//components/categories_section.tsx";
+import Categories from "@//components/categories_section";
 import Header from '@//components/header'
 
 export default function HomePage() {
