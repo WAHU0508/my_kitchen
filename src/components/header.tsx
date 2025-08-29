@@ -13,7 +13,7 @@ export default function Header() {
           hidden md:flex 
           w-full flex-row items-center justify-between px-6
           lg:px-12 h-[60px]
-          bg-[#e46f2b]/50
+          bg-[#cc7800]/40
           backdrop-blur-md
           transition-all duration-500 ease-in-out
         "
@@ -24,9 +24,9 @@ export default function Header() {
         </Link>
 
         <nav className="flex flex-row items-center space-x-8 lg:space-x-12 text-white md:text-[16px]">
-          <p className="hover:text-[#e46f2b] cursor-pointer transition-colors duration-200">Big Appliances</p>
-          <p className="hover:text-[#e46f2b] cursor-pointer transition-colors duration-200">Small Appliances</p>
-          <p className="hover:text-[#e46f2b] cursor-pointer transition-colors duration-200">Recipes</p>
+          <p className="hover:text-[#cc7800] cursor-pointer transition-colors duration-200">Big Appliances</p>
+          <p className="hover:text-[#cc7800] cursor-pointer transition-colors duration-200">Small Appliances</p>
+          <p className="hover:text-[#cc7800] cursor-pointer transition-colors duration-200">Recipes</p>
         </nav>
 
         <button className="bg-blue-600 hover:bg-blue-700 text-white md:text-[14px] rounded-[10px] px-6 py-2 transition-colors duration-200">
