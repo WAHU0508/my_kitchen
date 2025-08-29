@@ -47,7 +47,7 @@ export default function HomePage() {
                </div>
             </div>
             {/* browse categories */}
-                <div className='w-full flex flex-col items-center justify-center px-12'>
+                <div className='w-full flex flex-col items-center justify-center px-4 md:px-6 lg:px-12'>
                     <h3 className="text-lg md:text-xl lg:text-3xl font-bold text-center text-black mt-6 mb-12">Browse Categories</h3>
 {/*                     <p className="text-lg text-gray-600 max-w-2xl mx-auto text-pretty text-center">
                       Discover everything you need for your kitchen, from powerful appliances to delicious recipes
