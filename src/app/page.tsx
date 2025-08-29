@@ -2,7 +2,7 @@
 'use client'
 import React from 'react';
 import Image from 'next/image';
-// import { ArrowLeft } from "lucide-react";
+import Categories from "@//components/categories_section.tsx";
 import Header from '@//components/header'
 
 export default function HomePage() {
@@ -47,8 +47,9 @@ export default function HomePage() {
                </div>
             </div>
             {/* browse categories */}
-                <div className='w-full flex items-center justify-center'>
+                <div className='w-full flex flex-col items-center justify-center'>
                     <h3 className="text-lg md:text-xl lg:text-3xl font-bold text-center text-black mt-6 mb-12">Browse Categories</h3>
+                    <Categories />
                 </div>
         </div>
     )
