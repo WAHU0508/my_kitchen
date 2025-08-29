@@ -39,7 +39,7 @@ export default function HomePage() {
                             <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M14 5l7 7m0 0l-7 7m7-7H3" />
                           </svg>
                         </button>
-                        <button className="border border-white hover:bg-gray-100 text-gray-900 font-semibold md:px-4 px-4 md:py-3 py-2 rounded-lg transition-colors duration-300 shadow-lg md:text-sm text-[12px] max-w-[200px] sm:max-w-none">
+                        <button className="border border-white hover:bg-gray-100 text-white hover:text-gray-900 font-semibold md:px-4 px-4 md:py-3 py-2 rounded-lg transition-colors duration-300 shadow-lg md:text-sm text-[12px] max-w-[200px] sm:max-w-none">
                           Product Reviews
                         </button>
                       </div>
