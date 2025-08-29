@@ -2,7 +2,7 @@ import React from 'react'
 
 export default function CategoriesSection () {
   return (
-    <div className="grid grid-cols-1 md:grid-cols-3 gap-4 lg:gap-6">
+    <div className="px-2 grid grid-cols-1 md:grid-cols-3 gap-4 lg:gap-6">
             {/* Amazon Appliance Reviews */}
             <div className="group bg-white rounded-lg shadow-md hover:shadow-lg transition-all duration-300 overflow-hidden border border-gray-100">
               <div className="aspect-[3/2] bg-gradient-to-br from-[#cc7800]/5 to-[#cc7800]/10 flex items-center justify-center p-4">
