@@ -45,11 +45,11 @@ export default function HomePage() {
                       </div>
                     </div>
                </div>
-               {/* browse categories */}
-                <div className='w-full flex items-center justify-center'>
-                    <h3 className="text-lg md:text-xl lg:text-3xl font-bold text-center text-black mb-12">Browse Categories</h3>
-                </div>
             </div>
+            {/* browse categories */}
+                <div className='w-full flex items-center justify-center'>
+                    <h3 className="text-lg md:text-xl lg:text-3xl font-bold text-center text-black mt-6 mb-12">Browse Categories</h3>
+                </div>
         </div>
     )
 }
