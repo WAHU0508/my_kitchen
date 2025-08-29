@@ -16,17 +16,17 @@ export default function HomePage() {
                 <Image
                     src='/rustic-kitchen.png'
                     alt='Rustic Kitchen'
-                    className="w-full lg:h-[700px] object-cover"
+                    className="w-full h-[700px] lg:h-[700px] object-cover"
                 />
                 {/* dark overlay */}
                 <div className="absolute inset-0 bg-black/40"></div>
                 {/* Header text */}
                 <div className="absolute inset-0 flex items-center justify-center">
-                    <div className="mt-[40px] md:mt-0 text-center max-w-4xl px-6">
-                      <h1 className="text-[16px] md:text-5xl lg:text-7xl font-bold text-white mb-2 md:mb-6 md:drop-shadow-2xl text-balance">
+                    <div className="mt-[30px] md:mt-0 text-center max-w-4xl px-6">
+                      <h1 className="text-[18px] md:text-5xl lg:text-7xl font-bold text-white mb-2 md:mb-6 md:drop-shadow-2xl text-balance">
                         Discover the joy of <span className='text-[#e46f2b]'>home cooking</span>
                       </h1>
-                      <p className="text-[12px] md:text-lg lg:text-xl text-white leading-relaxed md:drop-shadow-lg text-pretty">
+                      <p className="text-[12px] mb-2 md:text-lg lg:text-xl text-white leading-relaxed md:drop-shadow-lg text-pretty">
                         Transform your kitchen into a culinary haven with our premium appliances and expert recipes. From
                         everyday meals to special occasions, we provide everything you need to create memorable dining
                         experiences for you and your loved ones.
