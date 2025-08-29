@@ -32,7 +32,7 @@ export default function HomePage() {
                         experiences for you and your loved ones.
                       </p>
                       {/* Buttons */}
-                     <div className="flex flex-row md:gap-3 gap-1 justify-center items-center">
+                     <div className="flex flex-row md:gap-6 gap-4 justify-center items-center">
                         <button className="bg-[#e46f2b] hover:bg-[#d4621f] text-white font-semibold md:px-4 px-4 md:py-3 py-2 rounded-lg transition-colors duration-300 shadow-lg flex items-center justify-center gap-2 md:text-sm text-[12px] max-w-[200px] sm:max-w-none">
                           Explore Recipes
                           <svg className="w-4 h-4 sm:w-5 sm:h-5" fill="none" stroke="currentColor" viewBox="0 0 24 24">
