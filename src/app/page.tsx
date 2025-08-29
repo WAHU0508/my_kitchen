@@ -16,7 +16,7 @@ export default function HomePage() {
                 <Image
                     src='/rustic-kitchen.png'
                     alt='Rustic Kitchen'
-                    className="w-full h-[700px] lg:h-[700px] object-cover"
+                    className="w-full h-[500px] lg:h-[700px] object-cover"
                 />
                 {/* dark overlay */}
                 <div className="absolute inset-0 bg-black/40"></div>
