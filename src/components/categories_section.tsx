@@ -2,29 +2,29 @@ import React from 'react'
 
 export default function CategoriesSection () {
   return (
-    <div className="grid grid-cols-1 md:grid-cols-3 gap-6 lg:gap-8">
-            {/* Big Appliances */}
-            <div className="group bg-white rounded-xl shadow-lg hover:shadow-xl transition-all duration-300 overflow-hidden">
-              <div className="aspect-[4/3] bg-gradient-to-br from-[#e46f2b]/10 to-[#e46f2b]/20 flex items-center justify-center">
-                <div className="w-16 h-16 bg-[#e46f2b] rounded-full flex items-center justify-center">
-                  <svg className="w-8 h-8 text-white" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+    <div className="grid grid-cols-1 md:grid-cols-3 gap-4 lg:gap-6">
+            {/* Amazon Appliance Reviews */}
+            <div className="group bg-white rounded-lg shadow-md hover:shadow-lg transition-all duration-300 overflow-hidden border border-gray-100">
+              <div className="aspect-[3/2] bg-gradient-to-br from-[#e46f2b]/5 to-[#e46f2b]/10 flex items-center justify-center p-4">
+                <div className="w-12 h-12 bg-[#e46f2b] rounded-lg flex items-center justify-center">
+                  <svg className="w-6 h-6 text-white" fill="none" stroke="currentColor" viewBox="0 0 24 24">
                     <path
                       strokeLinecap="round"
                       strokeLinejoin="round"
                       strokeWidth={2}
-                      d="M19 21V5a2 2 0 00-2-2H7a2 2 0 00-2 2v16m14 0h2m-2 0h-5m-9 0H3m2 0h5M9 7h1m-1 4h1m4-4h1m-1 4h1m-5 10v-5a1 1 0 011-1h2a1 1 0 011 1v5m-4 0h4"
+                      d="M11.049 2.927c.3-.921 1.603-.921 1.902 0l1.519 4.674a1 1 0 00.95.69h4.915c.969 0 1.371 1.24.588 1.81l-3.976 2.888a1 1 0 00-.363 1.118l1.518 4.674c.3.922-.755 1.688-1.538 1.118l-3.976-2.888a1 1 0 00-1.176 0l-3.976 2.888c-.783.57-1.838-.197-1.538-1.118l1.518-4.674a1 1 0 00-.363-1.118l-3.976-2.888c-.784-.57-.38-1.81.588-1.81h4.914a1 1 0 00.951-.69l1.519-4.674z"
                     />
                   </svg>
                 </div>
               </div>
-              <div className="p-6">
-                <h3 className="text-xl font-semibold text-gray-900 mb-2">Big Appliances</h3>
-                <p className="text-gray-600 mb-4">
-                  Refrigerators, ovens, dishwashers and more major kitchen appliances
+              <div className="p-4">
+                <h3 className="text-lg font-semibold text-gray-900 mb-2">Amazon Reviews</h3>
+                <p className="text-gray-600 text-sm mb-3">
+                  Honest reviews of kitchen appliances from Amazon to help you make the best choice
                 </p>
-                <button className="text-[#e46f2b] font-medium hover:text-[#d4621f] transition-colors duration-200 flex items-center gap-2">
-                  Shop Now
-                  <svg className="w-4 h-4" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                <button className="text-[#e46f2b] font-medium hover:text-[#d4621f] transition-colors duration-200 flex items-center gap-1 text-sm">
+                  Read Reviews
+                  <svg className="w-3 h-3" fill="none" stroke="currentColor" viewBox="0 0 24 24">
                     <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M14 5l7 7m0 0l-7 7m7-7H3" />
                   </svg>
                 </button>
