@@ -35,7 +35,7 @@ export default function Header() {
       </div>
       
       {/* Small screens */}
-      <div className="md:hidden w-full bg-[#e46f2b]/40 backdrop-blur-md transition-all duration-500 ease-in-out">
+      <div className="md:hidden w-full bg-[#cc7800]/40 backdrop-blur-md transition-all duration-500 ease-in-out">
         <div className="flex items-center justify-between px-4 h-[60px]">
           <Link href="/" className="flex items-center">
             <Image src={logo} alt="KitchenTik" width={40} height={36} />
@@ -62,7 +62,7 @@ export default function Header() {
         </div>
 
         {isMobileMenuOpen && (
-          <div className="bg-[#e46f2b]/40 border-t border-white/20">
+          <div className="bg-[#cc7800]/40 border-t border-white/20">
             <nav className="flex flex-col py-4 px-4 space-y-4">
               <Link
                 href="/big-appliances"
