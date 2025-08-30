@@ -14,6 +14,9 @@ export default function Subscribers() {
                 placeholder="Enter your email address"
                 className="bg-white text-black border-0 flex-1"
               />
+              <button className="bg-blue-600 hover:bg-blue-700 text-white text-sm rounded-lg px-3 py-1.5 transition-colors duration-200">
+              Subscribe
+            </button>
       </div>
     </div>
   )
