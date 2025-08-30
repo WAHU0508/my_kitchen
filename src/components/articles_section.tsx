@@ -1,4 +1,8 @@
 import React from "react";
+import Image from "next/image"
+import hand_mixer_img from "@//assets/hand_mixer.png"
+import chicken_img from "@//assets/chicken.png"
+import kitchen_tools_img from "@//assets/kitchen_tools.png"
 
 export default function ArticlesSection() {
   return (
@@ -16,7 +20,7 @@ export default function ArticlesSection() {
             <article className="group bg-white rounded-xl shadow-lg hover:shadow-xl transition-all duration-300 overflow-hidden border border-gray-100">
               <div className="aspect-[16/10] relative overflow-hidden">
                 <Image
-                  src="/modern-stand-mixer-kitchen-appliance-review.png"
+                  src={hand_mixer_img}
                   alt="Stand Mixer Review"
                   width={480}
                   height={300}
@@ -51,7 +55,7 @@ export default function ArticlesSection() {
             <article className="group bg-white rounded-xl shadow-lg hover:shadow-xl transition-all duration-300 overflow-hidden border border-gray-100">
               <div className="aspect-[16/10] relative overflow-hidden">
                 <Image
-                  src="/crispy-air-fryer-chicken-wings-golden-brown.png"
+                  src={chicken_img}
                   alt="Air Fryer Chicken Wings"
                   width={480}
                   height={300}
@@ -86,7 +90,7 @@ export default function ArticlesSection() {
             <article className="group bg-white rounded-xl shadow-lg hover:shadow-xl transition-all duration-300 overflow-hidden border border-gray-100">
               <div className="aspect-[16/10] relative overflow-hidden">
                 <Image
-                  src="/essential-kitchen-tools-knives-cutting-board-utens.png"
+                  src={kitchen_tools_img}
                   alt="Essential Kitchen Tools"
                   width={480}
                   height={300}
