@@ -57,9 +57,8 @@ export default function HomePage() {
                 </div>
            {/* articles section */}
             <div className='w-full flex flex-col items-center justify-center px-4 md:px-6 lg:px-12'>
-                    <h3 className="text-lg md:text-xl lg:text-3xl font-bold text-center text-black mt-6 mb-6">Featured Articles</h3>
                     <Articles />
-                </div>
+            </div>
         </div>
     )
 }
