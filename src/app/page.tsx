@@ -4,6 +4,7 @@ import React from 'react';
 import Image from 'next/image';
 import Categories from "@//components/categories_section";
 import Header from '@//components/header'
+import Footer from '@//components/footer'
 import Articles from '@//components/articles_section'
 import Subscribers from "@//components/subscriber"
 
@@ -64,6 +65,11 @@ export default function HomePage() {
             <div className='w-full flex flex-col items-center justify-center px-4 md:px-6 lg:px-12'>
                 <Subscribers />
             </div>
+        {/* Footer Section */} 
+            <div className='w-full flex flex-col items-center justify-center'>
+                <Footer />
+            </div>
         </div>
+        
     )
 }
