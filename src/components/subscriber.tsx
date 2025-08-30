@@ -4,7 +4,7 @@ export default function Subscribers() {
   return (
     <div className='bg-[#cc7800] md:px-24 md:py-12 flex flex-col items-center justify-center rounded-lg'>
       <h2 className="text-3xl md:text-4xl font-bold mb-4 text-balance">Never Miss a Recipe</h2>
-      <p className="white text-lg mb-8 max-w-2xl mx-auto text-pretty leading-relaxed text-center">
+      <p className="white text-sm md:text-lg mb-8 max-w-2xl mx-auto text-pretty leading-relaxed text-center">
               Join our community of food lovers and get weekly recipes, cooking tips, and kitchen inspiration delivered
               straight to your inbox.
       </p>
@@ -18,7 +18,7 @@ export default function Subscribers() {
               Subscribe
             </button>
       </div>
-       <p className="text-white/70 text-sm mt-4 text-center">
+       <p className="text-white/70 text-xs md:text-sm mt-4 text-center">
               No spam, unsubscribe at any time. We respect your privacy.
        </p>
     </div>
