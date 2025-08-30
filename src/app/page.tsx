@@ -5,6 +5,7 @@ import Image from 'next/image';
 import Categories from "@//components/categories_section";
 import Header from '@//components/header'
 import Articles from '@//components/articles_section'
+import Subscribers from "@//components/subscriber"
 
 export default function HomePage() {
     return (
@@ -58,6 +59,10 @@ export default function HomePage() {
            {/* articles section */}
             <div className='w-full flex flex-col items-center justify-center px-4 md:px-6 lg:px-12'>
                 <Articles />
+            </div>
+        {/* Subscribe Section */}
+            <div className='w-full flex flex-col items-center justify-center px-4 md:px-6 lg:px-12'>
+                <Subscribers />
             </div>
         </div>
     )
