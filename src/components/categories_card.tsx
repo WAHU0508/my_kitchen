@@ -1,6 +1,6 @@
 import React from "react";
 
-function Card({ icon, title, description, buttonText }: any) {
+export default function Card({ icon, title, description, buttonText }: any) {
   return (
     <div className="group bg-white rounded-lg shadow-md hover:shadow-lg transition-all duration-300 overflow-hidden border border-gray-100">
       <div className="aspect-[3/2] bg-gradient-to-br from-[#cc7800]/5 to-[#cc7800]/10 flex items-center justify-center p-4">
