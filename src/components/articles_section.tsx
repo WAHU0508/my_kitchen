@@ -36,7 +36,7 @@ export default function ArticlesSection() {
                   Best Stand Mixers Under $200: KitchenAid vs Cuisinart
                 </h3>
                 <p className="text-gray-600 mb-4 text-pretty">
-                  We tested 5 popular stand mixers to find the best value for home bakers. Here's our detailed
+                  We tested 5 popular stand mixers to find the best value for home bakers. Here&apos;s our detailed
                   comparison...
                 </p>
                 <div className="flex items-center justify-between">
