@@ -9,11 +9,11 @@ export default function Subscribers() {
               straight to your inbox.
       </p>
       <div className="flex flex-row gap-4 max-w-md mx-auto">
-              <input
-                type="email"
-                placeholder="Enter your email address"
-                className="bg-white text-black border-0 flex-1"
-              />
+            <input
+              type="email"
+              placeholder="Enter your email"
+              className="bg-white flex-1 px-3 py-2 rounded-lg border border-gray-300 focus:ring-2 focus:ring-[#cc7800]/50 focus:outline-none text-gray-900 placeholder-gray-500 text-sm"
+            />
               <button className="bg-blue-600 hover:bg-blue-700 text-white text-sm rounded-lg px-3 py-1.5 transition-colors duration-200">
               Subscribe
             </button>
