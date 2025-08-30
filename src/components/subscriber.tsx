@@ -9,7 +9,7 @@ export default function Subscribers() {
               straight to your inbox.
       </p>
       <div className="flex flex-row gap-4 max-w-md mx-auto">
-              <Input
+              <input
                 type="email"
                 placeholder="Enter your email address"
                 className="bg-primary-foreground text-foreground border-0 flex-1"
