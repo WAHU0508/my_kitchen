@@ -97,14 +97,12 @@ export default function Footer() {
         <p className="text-[#3a3a3a] text-[8px] md:text-sm">
           &copy; 2024 Kitchen Chronicles. All rights reserved. Made with ❤️ for food lovers everywhere.
         </p>
-        <div className="flex gap-4">
-          <Link href="#" className="text-[#3a3a3a] hover:text-[#cc7800]">
+          <Link href="#" className="text-[#3a3a3a] hover:text-[#cc7800] text-underline">
             Privacy Policy
           </Link>
-          <Link href="#" className="text-[#3a3a3a] hover:text-[#cc7800]">
+          <Link href="#" className="text-[#3a3a3a] hover:text-[#cc7800] text-underline">
             Terms and conditions
           </Link>
-        </div>
       </div>
     </div>
   )
