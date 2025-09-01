@@ -9,7 +9,7 @@ export default function Footer() {
       <div className="grid grid-cols-1 md:grid-cols-4 gap-8 w-full">
         {/* Column 1: Logo + Description */}
         <div>
-          <div className="flex items-center gap-2 mb-4">
+          <div className="flex flex-row items-center gap-2 mb-4">
             <div className="text-[#3a3a3a] p-1 rounded">
               <Image
                 src={logo}
@@ -18,11 +18,13 @@ export default function Footer() {
                 height={50}
               />
             </div>
-            <span className="font-bold text-[#3a3a3a]">KitchenTik</span>
+           <div className="flex flex-col">
+            <p className="font-bold text-[#3a3a3a]">KitchenTik</p>
+            <p className="text-[#3a3a3a] text-sm text-pretty">
+              All Things Kitchen
+            </p>
           </div>
-          <p className="text-[#3a3a3a] text-sm text-pretty">
-            All Things Kitchen
-          </p>
+          </div>
         </div>
 
         {/* Column 2: Categories */}
