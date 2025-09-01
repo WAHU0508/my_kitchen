@@ -6,7 +6,7 @@ import logo from "@//assets/logo.png"
 export default function Footer() {
   return (
     <div className='mt-6 w-full flex flex-col items-center justify-center bg-[#fff8ea] px-2 md:px-8 py-4'>
-      <div className="grid grid-cols-1 md:grid-cols-4 gap-8 w-full">
+      <div className="grid grid-cols-1 md:grid-cols-4 gap-8 w-full items-center justify-center">
         {/* Column 1: Logo + Description */}
         <div>
           <div className="flex flex-row items-center gap-2 mb-4">
@@ -95,14 +95,14 @@ export default function Footer() {
       </div>
 
       {/* Bottom Bar */}
-      <div className='mt-6 w-full flex flex-col md:flex-row items-center justify-between bg-[#fff8ea] px-2 md:px-8 py-4 space-y-2 md:space-y-0'>
+      <div className='mt-6 w-full flex flex-reverse-col md:flex-row items-center justify-between bg-[#fff8ea] px-2 md:px-8 py-4 space-y-2 md:space-y-0'>
         <p className="text-[#3a3a3a] text-[8px] md:text-sm">
           &copy; 2024 Kitchen Chronicles. All rights reserved. Made with ❤️ for food lovers everywhere.
         </p>
-          <Link href="#" className="text-[#3a3a3a] hover:text-[#cc7800] text-underline">
+          <Link href="#" className="text-[8px] md:text-sm text-[#3a3a3a] hover:text-[#cc7800] text-underline">
             Privacy Policy
           </Link>
-          <Link href="#" className="text-[#3a3a3a] hover:text-[#cc7800] text-underline">
+          <Link href="#" className="text-[8px] md:text-sm text-[#3a3a3a] hover:text-[#cc7800] text-underline">
             Terms and conditions
           </Link>
       </div>
