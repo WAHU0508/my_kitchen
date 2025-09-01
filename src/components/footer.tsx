@@ -6,7 +6,7 @@ import logo from "@//assets/logo.png"
 export default function Footer() {
   return (
     <div className='mt-6 w-full flex flex-col items-center bg-[#fff8ea] px-2 md:px-8 py-4'>
-      <div className="grid grid-cols-1 md:grid-cols-4 gap-8 w-full items-center justify-center">
+      <div className="grid grid-cols-1 md:grid-cols-4 gap-8 w-full items-center">
         {/* Column 1: Logo + Description */}
         <div>
           <div className="flex flex-row items-center gap-2 mb-4">
