@@ -95,7 +95,7 @@ export default function Footer() {
       </div>
 
       {/* Bottom Bar */}
-      <div className='mt-6 w-full flex flex-reverse-col md:flex-row items-center justify-between bg-[#fff8ea] px-2 md:px-8 py-4 space-y-2 md:space-y-0'>
+      <div className='mt-6 w-full flex flex-reverse-col md:flex-row items-center justify-between bg-[#fff8ea] px-2 lg:px-8 py-4 space-y-2 md:space-y-0'>
         <p className="text-[#3a3a3a] text-[8px] md:text-sm">
           &copy; 2024 Kitchen Chronicles. All rights reserved. Made with ❤️ for food lovers everywhere.
         </p>
