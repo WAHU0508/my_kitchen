@@ -13,9 +13,7 @@ export default function Header() {
           hidden md:flex 
           w-full flex-row items-center justify-between px-6
           lg:px-12 h-[60px]
-          bg-[#ffffff]/40
-          backdrop-blur-md
-          transition-all duration-500 ease-in-out
+          bg-[#ffffff]
         "
       >
         {/* Logo */}
@@ -35,7 +33,7 @@ export default function Header() {
       </div>
       
       {/* Small screens */}
-      <div className="md:hidden w-full bg-[#ffffff]/40 backdrop-blur-md transition-all duration-500 ease-in-out">
+      <div className="md:hidden w-full bg-[#ffffff]">
         <div className="flex items-center justify-between px-4 h-[60px]">
           <Link href="/" className="flex items-center">
             <Image src={logo} alt="KitchenTik" width={40} height={36} />
