@@ -1,7 +1,7 @@
 import React from "react"
 import Image from "next/image"
 import Link from "next/link"
-import logo from "@/assets/logo.png" // also fixed the import path
+import logo from "@//assets/logo.png"
 
 export default function Footer() {
   return (
