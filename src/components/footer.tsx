@@ -26,17 +26,17 @@ export default function Footer() {
               <h4 className="font-semibold text-foreground mb-4">Categories</h4>
               <ul className="space-y-2 text-sm">
                 <li>
-                  <Link href="/big-appliances" className="text-[#3a3a3a] hover:text-[#]">
+                  <Link href="/big-appliances" className="text-[#3a3a3a] hover:text-[#cc7800]">
                     Big Appliances
                   </Link>
                 </li>
                 <li>
-                  <Link href="/small-appliances" className="text-[#3a3a3a] hover:text-primary">
+                  <Link href="/small-appliances" className="text-[#3a3a3a] hover:text-[#cc7800]">
                     Small Appliances
                   </Link>
                 </li>
                 <li>
-                  <Link href="/recipes" className="text-[#3a3a3a] hover:text-primary">
+                  <Link href="/recipes" className="text-[#3a3a3a] hover:text-[#cc7800]">
                     Recipes
                   </Link>
                 </li>
