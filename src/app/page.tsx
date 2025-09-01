@@ -6,7 +6,6 @@ import Categories from "@//components/categories_section";
 import Header from '@//components/header'
 import Footer from '@//components/footer'
 import Articles from '@//components/articles_section'
-import Subscribers from "@//components/subscriber"
 
 export default function HomePage() {
     return (
