@@ -117,14 +117,6 @@ export default function BigAppliancesPage() {
                 Transform your kitchen with the right appliances. Our in-depth reviews help you choose refrigerators,
                 ranges, dishwashers, and more that fit your needs and budget.
               </p>
-              <div className="flex flex-col sm:flex-row gap-4 justify-center items-center">
-                <button className="bg-[#cc7800] hover:bg-[#b36b00] text-white font-semibold px-8 py-3 rounded-lg transition-colors duration-300 shadow-lg">
-                  Browse All Reviews
-                </button>
-                <button className="border border-[#cc7800] hover:bg-[#cc7800] text-[#cc7800] hover:text-white font-semibold px-8 py-3 rounded-lg transition-colors duration-300">
-                  Buying Guides
-                </button>
-              </div>
             </div>
           </div>
         </div>
@@ -146,10 +138,10 @@ export default function BigAppliancesPage() {
                 onChange={(e) => setSortBy(e.target.value)}
                 className="border border-gray-300 rounded-lg px-3 py-2 text-sm focus:outline-none focus:ring-2 focus:ring-[#cc7800] focus:border-transparent"
               >
-                <option value="newest">Newest First</option>
-                <option value="oldest">Oldest First</option>
-                <option value="rating">Highest Rated</option>
-                <option value="title">Alphabetical</option>
+                <option value="newest" className="text-black hover:bg-[#cc7800]">Newest First</option>
+                <option value="oldest" className="text-black hover:bg-[#cc7800]">Oldest First</option>
+                <option value="rating" className="text-black hover:bg-[#cc7800]">Highest Rated</option>
+                <option value="title" className="text-black hover:bg-[#cc7800]">Alphabetical</option>
               </select>
             </div>
           </div>
