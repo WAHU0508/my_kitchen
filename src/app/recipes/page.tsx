@@ -3,7 +3,7 @@
 import { useState } from "react"
 import Image from "next/image"
 import Link from "next/link"
-import { Star, Clock, Users, ChefHat, Search, Filter } from "lucide-react"
+import { Star, Clock, Users, ChefHat, Heart, Search, Filter } from "lucide-react"
 import Header from "@//components/header"
 import Footer from "@//components/footer"
 
@@ -238,21 +238,21 @@ export default function RecipesPage() {
                   />
           
                   <div className="absolute bottom-4 left-4">
-                    <span className="bg-[#cc7800]-600 text-white px-3 py-1 rounded-full text-sm font-medium">
+                    <span className="bg-[#cc7800] text-white px-3 py-1 rounded-full text-sm font-medium">
                       {recipe.difficulty}
                     </span>
                   </div>
                 </div>
                 <div className="p-6">
                   <div className="flex items-center justify-between mb-2">
-                    <span className="text-sm text-[#cc7800]-600 font-medium">{recipe.category}</span>
+                    <span className="text-sm text-[#cc7800] font-medium">{recipe.category}</span>
                     <div className="flex items-center gap-1">
                       <Star className="w-4 h-4 fill-yellow-400 text-yellow-400" />
                       <span className="text-sm font-medium">{recipe.rating}</span>
                       <span className="text-xs text-[#000000]">({recipe.reviews})</span>
                     </div>
                   </div>
-                  <h3 className="text-xl font-bold mb-2 text-[#000000] group-hover:text-[#cc7800]-600 transition-colors">
+                  <h3 className="text-xl font-bold mb-2 text-[#000000] group-hover:text-[#cc7800] transition-colors">
                     {recipe.title}
                   </h3>
                   <p className="text-[#ffffff] text-sm mb-4 line-clamp-2">{recipe.description}</p>
@@ -270,7 +270,7 @@ export default function RecipesPage() {
                     <span className="text-sm text-[#000000]">by {recipe.chef}</span>
                     <Link
                       href={`/recipes/${recipe.id}`}
-                      className="bg-[#cc7800]-600 hover:bg-[#cc7800]-700 text-white px-4 py-2 rounded-lg font-medium transition-colors"
+                      className="bg-[#cc7800]/50 hover:bg-[#cc7800] text-[#000000] px-4 py-2 rounded-lg font-medium transition-colors"
                     >
                       View Recipe
                     </Link>
