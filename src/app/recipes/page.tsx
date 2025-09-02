@@ -8,14 +8,14 @@ import Header from "@//components/header"
 import Footer from "@//components/footer"
 
 const recipeCategories = [
-  { name: "Appetizers", count: 24, icon: "🥗", color: "bg-[#cc7800]-100 hover:bg-[#cc7800]-200" },
-  { name: "Main Courses", count: 45, icon: "🍖", color: "bg-[#cc7800]-200 hover:bg-[#cc7800]-300" },
+  { name: "Appetizers", count: 24, icon: "🥗", color: "bg-[#cc7800] hover:bg-[#b26600]" },
+  { name: "Main Courses", count: 45, icon: "🍖", color: "bg-[#e68a00] hover:bg-[#cc7800]" },
   { name: "Desserts", count: 32, icon: "🍰", color: "bg-amber-100 hover:bg-amber-200" },
   { name: "Breakfast", count: 18, icon: "🥞", color: "bg-yellow-100 hover:bg-yellow-200" },
-  { name: "Soups", count: 15, icon: "🍲", color: "bg-[#cc7800]-50 hover:bg-[#cc7800]-100" },
+  { name: "Soups", count: 15, icon: "🍲", color: "bg-[#ffe6cc] hover:bg-[#ffd1a3]" },
   { name: "Salads", count: 21, icon: "🥙", color: "bg-amber-50 hover:bg-amber-100" },
   { name: "Beverages", count: 12, icon: "🥤", color: "bg-yellow-50 hover:bg-yellow-100" },
-  { name: "Snacks", count: 28, icon: "🍿", color: "bg-[#cc7800]-100 hover:bg-[#cc7800]-200" },
+  { name: "Snacks", count: 28, icon: "🍿", color: "bg-[#cc7800] hover:bg-[#b26600]" },
 ]
 
 const featuredRecipes = [
@@ -255,7 +255,7 @@ export default function RecipesPage() {
                   <h3 className="text-xl font-bold mb-2 text-[#000000] group-hover:text-[#cc7800] transition-colors">
                     {recipe.title}
                   </h3>
-                  <p className="text-[#ffffff] text-sm mb-4 line-clamp-2">{recipe.description}</p>
+                  <p className="text-[#000000] text-sm mb-4 line-clamp-2">{recipe.description}</p>
                   <div className="flex items-center justify-between text-sm text-[#000000] mb-4">
                     <div className="flex items-center gap-1">
                       <Clock className="w-4 h-4" />
