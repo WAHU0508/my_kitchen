@@ -126,7 +126,7 @@ export default function RecipesPage() {
   })
 
   return (
-    <div className="min-h-screen bg-gradient-to-br from-[#cc7800]-50 via-amber-50 to-yellow-50">
+    <div className="min-h-screen bg-[#000000]">
       <Header />
 
       {/* Hero Section */}
@@ -190,7 +190,7 @@ export default function RecipesPage() {
                 onClick={() => setSelectedCategory(category.name)}
                 className={`p-4 rounded-xl transition-all duration-300 text-center ${
                   selectedCategory === category.name
-                    ? "bg-[#cc7800] text-white shadow-lg scale-105"
+                    ? "bg-[#cc7800] text-[#000000] shadow-lg scale-105"
                     : `${category.color} text-[#ffffff] shadow-md hover:shadow-lg`
                 }`}
               >
