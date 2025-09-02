@@ -8,14 +8,14 @@ import Header from "@//components/header"
 import Footer from "@//components/footer"
 
 const recipeCategories = [
-  { name: "Appetizers", count: 24, icon: "🥗", color: "bg-[#cc7800] hover:bg-[#b26600]" },
-  { name: "Main Courses", count: 45, icon: "🍖", color: "bg-[#e68a00] hover:bg-[#cc7800]" },
+  { name: "Appetizers", count: 24, icon: "🥗", color: "bg-orange-100 hover:bg-orange-200" },
+  { name: "Main Courses", count: 45, icon: "🍖", color: "bg-orange-200 hover:bg-orange-300" },
   { name: "Desserts", count: 32, icon: "🍰", color: "bg-amber-100 hover:bg-amber-200" },
   { name: "Breakfast", count: 18, icon: "🥞", color: "bg-yellow-100 hover:bg-yellow-200" },
-  { name: "Soups", count: 15, icon: "🍲", color: "bg-[#ffe6cc] hover:bg-[#ffd1a3]" },
+  { name: "Soups", count: 15, icon: "🍲", color: "bg-orange-50 hover:bg-orange-100" },
   { name: "Salads", count: 21, icon: "🥙", color: "bg-amber-50 hover:bg-amber-100" },
   { name: "Beverages", count: 12, icon: "🥤", color: "bg-yellow-50 hover:bg-yellow-100" },
-  { name: "Snacks", count: 28, icon: "🍿", color: "bg-[#cc7800] hover:bg-[#b26600]" },
+  { name: "Snacks", count: 28, icon: "🍿", color: "bg-orange-100 hover:bg-orange-200" },
 ]
 
 const featuredRecipes = [
@@ -190,7 +190,7 @@ export default function RecipesPage() {
                 onClick={() => setSelectedCategory(category.name)}
                 className={`p-4 rounded-xl transition-all duration-300 text-center ${
                   selectedCategory === category.name
-                    ? "bg-[#cc7800]-600 text-white shadow-lg scale-105"
+                    ? "bg-[#cc7800] text-white shadow-lg scale-105"
                     : `${category.color} text-[#ffffff] shadow-md hover:shadow-lg`
                 }`}
               >
@@ -207,13 +207,13 @@ export default function RecipesPage() {
               <Filter className="w-4 h-4" />
               <span>Showing {sortedRecipes.length} recipes</span>
               {selectedCategory !== "All" && (
-                <span className="bg-[#cc7800]-100 text-[#cc7800] px-2 py-1 rounded-full text-sm">{selectedCategory}</span>
+                <span className="bg-[#cc7800] text-[#cc7800] px-2 py-1 rounded-full text-sm">{selectedCategory}</span>
               )}
             </div>
             <select
               value={sortBy}
               onChange={(e) => setSortBy(e.target.value)}
-              className="px-4 py-2 rounded-lg border border-border bg-[#ffffff] text-[#ff[#ffffff] focus:ring-2 focus:ring-[#cc7800]-500/50"
+              className="px-4 py-2 rounded-lg border border-border bg-[#ffffff] text-[#ffffff] focus:ring-2 focus:ring-[#cc7800]-500/50"
             >
               <option value="popular">Most Popular</option>
               <option value="rating">Highest Rated</option>
