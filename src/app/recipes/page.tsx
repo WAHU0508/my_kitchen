@@ -126,7 +126,7 @@ export default function RecipesPage() {
   })
 
   return (
-    <div className="min-h-screen bg-[#000000]">
+    <div className="min-h-screen bg-[#ffffff]">
       <Header />
 
       {/* Hero Section */}
