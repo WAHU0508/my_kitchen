@@ -155,10 +155,10 @@ export default function RecipesPage() {
                   placeholder="Search recipes..."
                   value={searchTerm}
                   onChange={(e) => setSearchTerm(e.target.value)}
-                  className="w-full pl-10 pr-4 py-3 rounded-full border-0 shadow-lg focus:ring-2 focus:ring-[#cc7800]-500/50[#ffffff]"
+                  className="w-full pl-10 pr-4 py-3 rounded-full border-0 shadow-lg focus:ring-2 focus:ring-[#cc7800] text-[#ffffff]"
                 />
               </div>
-              <button className="bg-white text-[#cc7800]-600 hover:bg-[#cc7800]-600 hover:text-white font-semibold px-8 py-3 rounded-full transition-all duration-300 shadow-lg flex items-center gap-2">
+              <button className="bg-white text-[#cc7800] hover:bg-[#cc7800] hover:text-white font-semibold px-8 py-3 rounded-full transition-all duration-300 shadow-lg flex items-center gap-2">
                 <ChefHat className="w-5 h-5" />
                 Browse All
               </button>
@@ -170,14 +170,14 @@ export default function RecipesPage() {
       {/* Categories Section */}
       <div className="py-16 px-4 md:px-6 lg:px-12">
         <div className="max-w-7xl mx-auto">
-          <h2 className="text-3xl md:text-4xl font-bold text-center mb-12[#ffffff]">Recipe Categories</h2>
+          <h2 className="text-3xl md:text-4xl font-bold text-center mb-12 text-[#00000]">Recipe Categories</h2>
           <div className="grid grid-cols-2 md:grid-cols-4 lg:grid-cols-8 gap-4 mb-8">
             <button
               onClick={() => setSelectedCategory("All")}
               className={`p-4 rounded-xl transition-all duration-300 text-center ${
                 selectedCategory === "All"
                   ? "bg-[#cc7800]-600 text-white shadow-lg scale-105"
-                  : "bg-white hover:bg-[#cc7800]-50[#ffffff] shadow-md hover:shadow-lg"
+                  : "bg-white hover:bg-[#cc7800]/50 text-[#ffffff] shadow-md hover:shadow-lg"
               }`}
             >
               <div className="text-2xl mb-2">🍽️</div>
@@ -191,7 +191,7 @@ export default function RecipesPage() {
                 className={`p-4 rounded-xl transition-all duration-300 text-center ${
                   selectedCategory === category.name
                     ? "bg-[#cc7800]-600 text-white shadow-lg scale-105"
-                    : `${category.color}[#ffffff] shadow-md hover:shadow-lg`
+                    : `${category.color} text-[#ffffff] shadow-md hover:shadow-lg`
                 }`}
               >
                 <div className="text-2xl mb-2">{category.icon}</div>
@@ -207,7 +207,7 @@ export default function RecipesPage() {
               <Filter className="w-4 h-4" />
               <span>Showing {sortedRecipes.length} recipes</span>
               {selectedCategory !== "All" && (
-                <span className="bg-[#cc7800]-100 text-[#cc7800]-700 px-2 py-1 rounded-full text-sm">{selectedCategory}</span>
+                <span className="bg-[#cc7800]-100 text-[#cc7800] px-2 py-1 rounded-full text-sm">{selectedCategory}</span>
               )}
             </div>
             <select
@@ -270,7 +270,7 @@ export default function RecipesPage() {
                     <span className="text-sm text-[#000000]">by {recipe.chef}</span>
                     <Link
                       href={`/recipes/${recipe.id}`}
-                      className="bg-[#cc7800]/50 hover:bg-[#cc7800] text-[#000000] px-4 py-2 rounded-lg font-medium transition-colors"
+                      className="bg-[#cc7800]/80 hover:bg-[#cc7800] text-[#000000] px-4 py-2 rounded-lg font-medium transition-colors"
                     >
                       View Recipe
                     </Link>
