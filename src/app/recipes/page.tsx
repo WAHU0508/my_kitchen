@@ -8,14 +8,14 @@ import Header from "@//components/header"
 import Footer from "@//components/footer"
 
 const recipeCategories = [
-  { name: "Appetizers", count: 24, icon: "🥗", color: "bg-orange-100 hover:bg-orange-200" },
-  { name: "Main Courses", count: 45, icon: "🍖", color: "bg-orange-200 hover:bg-orange-300" },
+  { name: "Appetizers", count: 24, icon: "🥗", color: "bg-[#cc7800]-100 hover:bg-[#cc7800]-200" },
+  { name: "Main Courses", count: 45, icon: "🍖", color: "bg-[#cc7800]-200 hover:bg-[#cc7800]-300" },
   { name: "Desserts", count: 32, icon: "🍰", color: "bg-amber-100 hover:bg-amber-200" },
   { name: "Breakfast", count: 18, icon: "🥞", color: "bg-yellow-100 hover:bg-yellow-200" },
-  { name: "Soups", count: 15, icon: "🍲", color: "bg-orange-50 hover:bg-orange-100" },
+  { name: "Soups", count: 15, icon: "🍲", color: "bg-[#cc7800]-50 hover:bg-[#cc7800]-100" },
   { name: "Salads", count: 21, icon: "🥙", color: "bg-amber-50 hover:bg-amber-100" },
   { name: "Beverages", count: 12, icon: "🥤", color: "bg-yellow-50 hover:bg-yellow-100" },
-  { name: "Snacks", count: 28, icon: "🍿", color: "bg-orange-100 hover:bg-orange-200" },
+  { name: "Snacks", count: 28, icon: "🍿", color: "bg-[#cc7800]-100 hover:bg-[#cc7800]-200" },
 ]
 
 const featuredRecipes = [
@@ -126,7 +126,7 @@ export default function RecipesPage() {
   })
 
   return (
-    <div className="min-h-screen bg-gradient-to-br from-orange-50 via-amber-50 to-yellow-50">
+    <div className="min-h-screen bg-gradient-to-br from-[#cc7800]-50 via-amber-50 to-yellow-50">
       <Header />
 
       {/* Hero Section */}
@@ -137,11 +137,11 @@ export default function RecipesPage() {
           fill
           className="object-cover"
         />
-        <div className="absolute inset-0 bg-gradient-to-r from-orange-600/80 via-amber-600/60 to-yellow-600/70" />
+        <div className="absolute inset-0 bg-gradient-to-r from-[#cc7800]-600/80 via-amber-600/60 to-yellow-600/70" />
         <div className="absolute inset-0 flex items-center justify-center">
           <div className="text-center max-w-4xl px-6">
             <h1 className="text-4xl md:text-6xl lg:text-7xl font-bold text-white mb-6 text-balance">
-              Discover Your Next <span className="text-orange-200">Favorite Recipe</span>
+              Discover Your Next <span className="text-[#cc7800]-200">Favorite Recipe</span>
             </h1>
             <p className="text-lg md:text-xl text-white/90 leading-relaxed mb-8 text-pretty">
               From quick weeknight dinners to show-stopping desserts, explore our collection of chef-tested recipes that
@@ -149,16 +149,16 @@ export default function RecipesPage() {
             </p>
             <div className="flex flex-col sm:flex-row gap-4 justify-center items-center">
               <div className="relative w-full sm:w-96">
-                <Search className="absolute left-3 top-1/2 transform -translate-y-1/2 text-muted-foreground w-5 h-5" />
+                <Search className="absolute left-3 top-1/2 transform -translate-y-1/2 text-[#ffffff] w-5 h-5" />
                 <input
                   type="text"
                   placeholder="Search recipes..."
                   value={searchTerm}
                   onChange={(e) => setSearchTerm(e.target.value)}
-                  className="w-full pl-10 pr-4 py-3 rounded-full border-0 shadow-lg focus:ring-2 focus:ring-orange-500/50 text-foreground"
+                  className="w-full pl-10 pr-4 py-3 rounded-full border-0 shadow-lg focus:ring-2 focus:ring-[#cc7800]-500/50[#ffffff]"
                 />
               </div>
-              <button className="bg-white text-orange-600 hover:bg-orange-600 hover:text-white font-semibold px-8 py-3 rounded-full transition-all duration-300 shadow-lg flex items-center gap-2">
+              <button className="bg-white text-[#cc7800]-600 hover:bg-[#cc7800]-600 hover:text-white font-semibold px-8 py-3 rounded-full transition-all duration-300 shadow-lg flex items-center gap-2">
                 <ChefHat className="w-5 h-5" />
                 Browse All
               </button>
@@ -170,14 +170,14 @@ export default function RecipesPage() {
       {/* Categories Section */}
       <div className="py-16 px-4 md:px-6 lg:px-12">
         <div className="max-w-7xl mx-auto">
-          <h2 className="text-3xl md:text-4xl font-bold text-center mb-12 text-foreground">Recipe Categories</h2>
+          <h2 className="text-3xl md:text-4xl font-bold text-center mb-12[#ffffff]">Recipe Categories</h2>
           <div className="grid grid-cols-2 md:grid-cols-4 lg:grid-cols-8 gap-4 mb-8">
             <button
               onClick={() => setSelectedCategory("All")}
               className={`p-4 rounded-xl transition-all duration-300 text-center ${
                 selectedCategory === "All"
-                  ? "bg-orange-600 text-white shadow-lg scale-105"
-                  : "bg-white hover:bg-orange-50 text-foreground shadow-md hover:shadow-lg"
+                  ? "bg-[#cc7800]-600 text-white shadow-lg scale-105"
+                  : "bg-white hover:bg-[#cc7800]-50[#ffffff] shadow-md hover:shadow-lg"
               }`}
             >
               <div className="text-2xl mb-2">🍽️</div>
@@ -190,8 +190,8 @@ export default function RecipesPage() {
                 onClick={() => setSelectedCategory(category.name)}
                 className={`p-4 rounded-xl transition-all duration-300 text-center ${
                   selectedCategory === category.name
-                    ? "bg-orange-600 text-white shadow-lg scale-105"
-                    : `${category.color} text-foreground shadow-md hover:shadow-lg`
+                    ? "bg-[#cc7800]-600 text-white shadow-lg scale-105"
+                    : `${category.color}[#ffffff] shadow-md hover:shadow-lg`
                 }`}
               >
                 <div className="text-2xl mb-2">{category.icon}</div>
@@ -203,17 +203,17 @@ export default function RecipesPage() {
 
           {/* Filter and Sort */}
           <div className="flex flex-col sm:flex-row justify-between items-center mb-8 gap-4">
-            <div className="flex items-center gap-2 text-muted-foreground">
+            <div className="flex items-center gap-2 text-[#ffffff]">
               <Filter className="w-4 h-4" />
               <span>Showing {sortedRecipes.length} recipes</span>
               {selectedCategory !== "All" && (
-                <span className="bg-orange-100 text-orange-700 px-2 py-1 rounded-full text-sm">{selectedCategory}</span>
+                <span className="bg-[#cc7800]-100 text-[#cc7800]-700 px-2 py-1 rounded-full text-sm">{selectedCategory}</span>
               )}
             </div>
             <select
               value={sortBy}
               onChange={(e) => setSortBy(e.target.value)}
-              className="px-4 py-2 rounded-lg border border-border bg-card text-card-foreground focus:ring-2 focus:ring-orange-500/50"
+              className="px-4 py-2 rounded-lg border border-border bg-[#ffffff] text-[#ff[#ffffff] focus:ring-2 focus:ring-[#cc7800]-500/50"
             >
               <option value="popular">Most Popular</option>
               <option value="rating">Highest Rated</option>
@@ -227,7 +227,7 @@ export default function RecipesPage() {
             {sortedRecipes.map((recipe) => (
               <div
                 key={recipe.id}
-                className="bg-card rounded-2xl shadow-lg hover:shadow-xl transition-all duration-300 overflow-hidden group"
+                className="bg-[#ffffff] rounded-2xl shadow-lg hover:shadow-xl transition-all duration-300 overflow-hidden group"
               >
                 <div className="relative h-48 overflow-hidden">
                   <Image
@@ -236,29 +236,27 @@ export default function RecipesPage() {
                     fill
                     className="object-cover group-hover:scale-110 transition-transform duration-300"
                   />
-                  <button className="absolute top-4 right-4 p-2 bg-white/90 rounded-full hover:bg-white transition-colors">
-                    <Heart className="w-5 h-5 text-muted-foreground hover:text-red-500" />
-                  </button>
+          
                   <div className="absolute bottom-4 left-4">
-                    <span className="bg-orange-600 text-white px-3 py-1 rounded-full text-sm font-medium">
+                    <span className="bg-[#cc7800]-600 text-white px-3 py-1 rounded-full text-sm font-medium">
                       {recipe.difficulty}
                     </span>
                   </div>
                 </div>
                 <div className="p-6">
                   <div className="flex items-center justify-between mb-2">
-                    <span className="text-sm text-orange-600 font-medium">{recipe.category}</span>
+                    <span className="text-sm text-[#cc7800]-600 font-medium">{recipe.category}</span>
                     <div className="flex items-center gap-1">
                       <Star className="w-4 h-4 fill-yellow-400 text-yellow-400" />
                       <span className="text-sm font-medium">{recipe.rating}</span>
-                      <span className="text-xs text-muted-foreground">({recipe.reviews})</span>
+                      <span className="text-xs text-[#000000]">({recipe.reviews})</span>
                     </div>
                   </div>
-                  <h3 className="text-xl font-bold mb-2 text-card-foreground group-hover:text-orange-600 transition-colors">
+                  <h3 className="text-xl font-bold mb-2 text-[#000000] group-hover:text-[#cc7800]-600 transition-colors">
                     {recipe.title}
                   </h3>
-                  <p className="text-muted-foreground text-sm mb-4 line-clamp-2">{recipe.description}</p>
-                  <div className="flex items-center justify-between text-sm text-muted-foreground mb-4">
+                  <p className="text-[#ffffff] text-sm mb-4 line-clamp-2">{recipe.description}</p>
+                  <div className="flex items-center justify-between text-sm text-[#000000] mb-4">
                     <div className="flex items-center gap-1">
                       <Clock className="w-4 h-4" />
                       <span>{recipe.cookTime}</span>
@@ -269,10 +267,10 @@ export default function RecipesPage() {
                     </div>
                   </div>
                   <div className="flex items-center justify-between">
-                    <span className="text-sm text-muted-foreground">by {recipe.chef}</span>
+                    <span className="text-sm text-[#000000]">by {recipe.chef}</span>
                     <Link
                       href={`/recipes/${recipe.id}`}
-                      className="bg-orange-600 hover:bg-orange-700 text-white px-4 py-2 rounded-lg font-medium transition-colors"
+                      className="bg-[#cc7800]-600 hover:bg-[#cc7800]-700 text-white px-4 py-2 rounded-lg font-medium transition-colors"
                     >
                       View Recipe
                     </Link>
