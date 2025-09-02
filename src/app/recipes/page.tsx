@@ -170,14 +170,14 @@ export default function RecipesPage() {
       {/* Categories Section */}
       <div className="py-16 px-4 md:px-6 lg:px-12">
         <div className="max-w-7xl mx-auto">
-          <h2 className="text-3xl md:text-4xl font-bold text-center mb-12 text-[#00000]">Recipe Categories</h2>
+          <h2 className="text-3xl md:text-4xl font-bold text-center mb-12 text-black">Recipe Categories</h2>
           <div className="grid grid-cols-2 md:grid-cols-4 lg:grid-cols-8 gap-4 mb-8">
             <button
               onClick={() => setSelectedCategory("All")}
               className={`p-4 rounded-xl transition-all duration-300 text-center ${
                 selectedCategory === "All"
-                  ? "bg-[#cc7800]-600 text-white shadow-lg scale-105"
-                  : "bg-white hover:bg-[#cc7800]/50 text-[#ffffff] shadow-md hover:shadow-lg"
+                  ? "bg-[#cc7800] text-white shadow-lg scale-105"
+                  : "bg-white hover:bg-[#cc7800] text-black shadow-md hover:shadow-lg"
               }`}
             >
               <div className="text-2xl mb-2">🍽️</div>
@@ -190,8 +190,8 @@ export default function RecipesPage() {
                 onClick={() => setSelectedCategory(category.name)}
                 className={`p-4 rounded-xl transition-all duration-300 text-center ${
                   selectedCategory === category.name
-                    ? "bg-[#cc7800] text-[#000000] shadow-lg scale-105"
-                    : `${category.color} text-[#ffffff] shadow-md hover:shadow-lg`
+                    ? "bg-[#cc7800] text-white shadow-lg scale-105"
+                    : `${category.color} text-black shadow-md hover:shadow-lg`
                 }`}
               >
                 <div className="text-2xl mb-2">{category.icon}</div>
