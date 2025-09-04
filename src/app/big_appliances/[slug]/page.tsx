@@ -290,9 +290,10 @@ type ReviewPageProps = {
   }
 }
 
-// ✅ Next.js expects this to return an array of objects with `slug`
 export async function generateStaticParams() {
-  return Object.keys(reviewsData).map((slug) => ({ slug }))
+  return Object.keys(reviewsData).map((slug) => ({
+    params: { slug },
+  }))
 }
 
 export default function ReviewPage({ params }: ReviewPageProps) {
