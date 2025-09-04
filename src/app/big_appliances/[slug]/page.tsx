@@ -283,25 +283,24 @@ const reviewsData = {
   },
 }
 
-// ✅ Use your own prop typing (don’t extend PageProps)
 type ReviewPageProps = {
-  params: {
-    slug: string
-  }
-}
+  params: Promise<{
+    slug: string;
+  }>;
+};
 
 export async function generateStaticParams() {
   return Object.keys(reviewsData).map((slug) => ({
-    params: { slug },
-  }))
+    slug,  // ✅ Fixed: top level parameter
+  }));
 }
 
-export default function ReviewPage({ params }: ReviewPageProps) {
-  const { slug } = params
-  const review = reviewsData[slug as keyof typeof reviewsData]
+export default async function ReviewPage({ params }: ReviewPageProps) {
+  const { slug } = await params;  // ✅ Await the params promise
+  const review = reviewsData[slug as keyof typeof reviewsData];
 
   if (!review) {
-    notFound()
+    notFound();
   }
 
   return (
