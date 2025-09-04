@@ -108,12 +108,12 @@ export async function generateStaticParams() {
 }
 
 // Generate slug from title
-function generateSlug(title: string) {
-  return title
-    .toLowerCase()
-    .replace(/[^a-z0-9]+/g, "-")
-    .replace(/(^-|-$)/g, "")
-}
+// function generateSlug(title: string) {
+//   return title
+//     .toLowerCase()
+//     .replace(/[^a-z0-9]+/g, "-")
+//     .replace(/(^-|-$)/g, "")
+// }
 
 export default async function ReviewPage({ params }: { params: Promise<{ slug: string }> }) {
   const { slug } = await params
