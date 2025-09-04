@@ -1,8 +1,8 @@
 import { notFound } from "next/navigation"
 import Image from "next/image"
 import Link from "next/link"
-import Header from "@/components/header"
-import Footer from "@/components/footer"
+import Header from "@//components/header"
+import Footer from "@//components/footer"
 
 // Sample detailed review data - in a real app, this would come from a database
 const reviewsData = {
