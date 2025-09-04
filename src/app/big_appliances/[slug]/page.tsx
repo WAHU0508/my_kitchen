@@ -1,12 +1,13 @@
 import { notFound } from "next/navigation"
 import Image from "next/image"
-import Header from "@//components/header"
-import Footer from "@//components/footer"
+import Header from "@/components/header"
+import Footer from "@/components/footer"
+import { Review } from "@/types/review"
 
-async function getReviewsData() {
+// Fetch reviews from json-server
+async function getReviewsData(): Promise<Review[]> {
   const res = await fetch("http://localhost:3001/reviews", {
-    // Makes sure fetch works in SSG/SSR
-    cache: "no-store"
+    cache: "no-store", // ensures fresh data
   })
 
   if (!res.ok) throw new Error("Failed to fetch reviews")
@@ -14,14 +15,15 @@ async function getReviewsData() {
   return res.json()
 }
 
+// Pre-generate static params for each review slug
 export async function generateStaticParams() {
   const reviews = await getReviewsData()
-  return reviews.map((review: any) => ({ slug: review.slug }))
+  return reviews.map((review) => ({ slug: review.slug }))
 }
 
 export default async function ReviewPage({ params }: { params: { slug: string } }) {
   const reviews = await getReviewsData()
-  const review = reviews.find((r: any) => r.slug === params.slug)
+  const review = reviews.find((r) => r.slug === params.slug)
 
   if (!review) {
     notFound()
@@ -36,6 +38,7 @@ export default async function ReviewPage({ params }: { params: { slug: string } 
       <div className="max-w-4xl mx-auto px-4 sm:px-6 lg:px-8 py-16">
         <h1 className="text-4xl font-bold">{review.title}</h1>
         <p className="text-gray-600">{review.description}</p>
+
         <Image
           src={review.image || "/placeholder.svg"}
           alt={review.title}
@@ -48,7 +51,7 @@ export default async function ReviewPage({ params }: { params: { slug: string } 
         <p className="mb-6">{content.introduction}</p>
 
         {/* Sections */}
-        {content.sections.map((section: any, idx: number) => (
+        {content.sections.map((section, idx) => (
           <div key={idx} className="mb-6">
             <h2 className="text-2xl font-semibold">{section.title}</h2>
             <p className="text-gray-700">{section.content}</p>
@@ -60,7 +63,7 @@ export default async function ReviewPage({ params }: { params: { slug: string } 
           <div>
             <h3 className="text-lg font-bold text-green-600">Pros</h3>
             <ul className="list-disc pl-5">
-              {content.pros.map((p: string, idx: number) => (
+              {content.pros.map((p, idx) => (
                 <li key={idx}>{p}</li>
               ))}
             </ul>
@@ -68,7 +71,7 @@ export default async function ReviewPage({ params }: { params: { slug: string } 
           <div>
             <h3 className="text-lg font-bold text-red-600">Cons</h3>
             <ul className="list-disc pl-5">
-              {content.cons.map((c: string, idx: number) => (
+              {content.cons.map((c, idx) => (
                 <li key={idx}>{c}</li>
               ))}
             </ul>
