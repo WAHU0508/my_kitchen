@@ -1,8 +1,8 @@
 import { notFound } from "next/navigation"
 import Image from "next/image"
-import Header from "@/components/header"
-import Footer from "@/components/footer"
-import { Review } from "@/types/review"
+import Header from "@//components/header"
+import Footer from "@//components/footer"
+import { Review } from "@//types/review"
 
 // Fetch reviews from json-server
 async function getReviewsData(): Promise<Review[]> {
