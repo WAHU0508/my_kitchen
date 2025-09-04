@@ -3,17 +3,12 @@ import Image from "next/image"
 import Header from "@//components/header"
 import Footer from "@//components/footer"
 import { Review } from "@//types/review"
-
-type ReviewPageProps = {
-  params: {
-    slug: string
-  }
-}
+import type { PageProps } from "next"
 
 // Fetch reviews from json-server
 async function getReviewsData(): Promise<Review[]> {
   const res = await fetch("http://localhost:3001/reviews", {
-    cache: "no-store", // ensures fresh data
+    cache: "no-store",
   })
 
   if (!res.ok) throw new Error("Failed to fetch reviews")
@@ -21,19 +16,18 @@ async function getReviewsData(): Promise<Review[]> {
   return res.json()
 }
 
-// Pre-generate static params for each review slug
+// Pre-generate static params
 export async function generateStaticParams() {
   const reviews = await getReviewsData()
   return reviews.map((review) => ({ slug: review.slug }))
 }
 
-export default async function ReviewPage({ params }: ReviewPageProps) {
+// ✅ Use PageProps<{ slug: string }>
+export default async function ReviewPage({ params }: PageProps<{ slug: string }>) {
   const reviews = await getReviewsData()
   const review = reviews.find((r) => r.slug === params.slug)
 
-  if (!review) {
-    notFound()
-  }
+  if (!review) notFound()
 
   const content = review.content
 
