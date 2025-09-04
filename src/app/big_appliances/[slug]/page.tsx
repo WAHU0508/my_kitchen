@@ -1,8 +1,8 @@
 import { notFound } from "next/navigation"
 import Image from "next/image"
 import Link from "next/link"
-import Header from "@//components/header"
-import Footer from "@//components/footer"
+import Header from "@/components/header"
+import Footer from "@/components/footer"
 
 // Sample detailed review data - in a real app, this would come from a database
 const reviewsData = {
@@ -98,6 +98,190 @@ const reviewsData = {
         "The Thor Kitchen HRG3618U stands out as the best overall choice, combining professional performance with reliable construction. For budget-conscious buyers, the Cosmo COS-EPGR366 offers excellent value without compromising on essential features.",
     },
   },
+  "dishwasher-buying-guide-quiet-efficient-and-reliable": {
+    id: 3,
+    title: "Dishwasher Buying Guide: Quiet, Efficient, and Reliable",
+    description:
+      "Find the perfect dishwasher for your kitchen. We review noise levels, cleaning performance, and energy efficiency.",
+    image: "/modern-built-in-dishwasher-with-open-door.png",
+    category: "Dishwashers",
+    date: "Dec 14, 2024",
+    rating: 4.7,
+    author: "Emily Rodriguez",
+    readTime: "10 min read",
+    content: {
+      introduction:
+        "Choosing the right dishwasher involves balancing performance, efficiency, and noise levels. Our comprehensive guide reviews the top models to help you find the perfect fit for your kitchen and lifestyle.",
+      sections: [
+        {
+          title: "Key Features to Consider",
+          content:
+            "Modern dishwashers offer various wash cycles, adjustable racks, and energy-efficient options. We evaluated models based on cleaning performance, noise levels, and water efficiency.",
+        },
+        {
+          title: "Bosch 300 Series - Best Overall",
+          content:
+            "This dishwasher excels in quiet operation at just 44 dB, while delivering exceptional cleaning performance. The flexible rack system accommodates various dish sizes and shapes.",
+        },
+        {
+          title: "Whirlpool WDT730PAHZ - Best Value",
+          content:
+            "Offering solid performance at an affordable price, this model features a soil sensor and multiple wash cycles. The stainless steel tub ensures durability and better drying.",
+        },
+      ],
+      pros: [
+        "Whisper-quiet operation under 45 dB",
+        "Excellent cleaning performance on all dish types",
+        "Energy Star certified for efficiency",
+        "Flexible loading options with adjustable racks",
+      ],
+      cons: [
+        "Premium models can be expensive",
+        "Some cycles take longer for thorough cleaning",
+        "Installation may require professional help",
+      ],
+      verdict:
+        "The Bosch 300 Series stands out for its quiet operation and reliable performance, making it ideal for open-concept kitchens. For budget-conscious buyers, the Whirlpool WDT730PAHZ offers excellent value without sacrificing essential features.",
+    },
+  },
+  "french-door-vs-side-by-side-which-refrigerator-style-wins": {
+    id: 4,
+    title: "French Door vs Side-by-Side: Which Refrigerator Style Wins?",
+    description:
+      "Compare the pros and cons of different refrigerator configurations to find what works best for your family.",
+    image: "/french-door-refrigerator-with-water-dispenser.png",
+    category: "Refrigerators",
+    date: "Dec 12, 2024",
+    rating: 4.6,
+    author: "David Kim",
+    readTime: "8 min read",
+    content: {
+      introduction:
+        "Refrigerator configuration significantly impacts daily kitchen workflow. We compare French door and side-by-side models to help you choose the style that best fits your needs and space.",
+      sections: [
+        {
+          title: "French Door Advantages",
+          content:
+            "French door refrigerators offer wide shelves perfect for large platters and party trays. The bottom freezer drawer provides easy access to fresh foods at eye level.",
+        },
+        {
+          title: "Side-by-Side Benefits",
+          content:
+            "Side-by-side models excel in narrow kitchens where door swing space is limited. They offer convenient access to both fresh and frozen foods without bending.",
+        },
+        {
+          title: "Storage Capacity Comparison",
+          content:
+            "French door models typically offer more usable fresh food space, while side-by-side units provide better freezer organization with multiple shelves and bins.",
+        },
+      ],
+      pros: [
+        "French door: Wide shelves for large items",
+        "Side-by-side: Narrow door swing requirement",
+        "Both styles available in various sizes",
+        "Energy efficient options in both categories",
+      ],
+      cons: [
+        "French door: Requires more clearance space",
+        "Side-by-side: Narrower shelves limit large items",
+        "Premium features increase cost significantly",
+      ],
+      verdict:
+        "Choose French door for maximum fresh food storage and wide shelf space. Opt for side-by-side if you have limited door clearance or prefer easy freezer access without bending.",
+    },
+  },
+  "induction-vs-gas-cooktops-the-ultimate-cooking-showdown": {
+    id: 5,
+    title: "Induction vs Gas Cooktops: The Ultimate Cooking Showdown",
+    description:
+      "Explore the benefits and drawbacks of induction and gas cooking to make the right choice for your kitchen.",
+    image: "/induction-cooktop-with-pans-cooking.png",
+    category: "Cooktops",
+    date: "Dec 10, 2024",
+    rating: 4.8,
+    author: "Chef Maria Santos",
+    readTime: "11 min read",
+    content: {
+      introduction:
+        "The choice between induction and gas cooktops affects cooking performance, energy efficiency, and kitchen safety. Our detailed comparison helps you understand which technology suits your cooking style.",
+      sections: [
+        {
+          title: "Cooking Performance",
+          content:
+            "Induction offers precise temperature control and rapid heating, while gas provides visual flame control and works with all cookware types. Both excel in different cooking techniques.",
+        },
+        {
+          title: "Energy Efficiency",
+          content:
+            "Induction cooktops transfer 85-90% of energy directly to cookware, making them highly efficient. Gas cooktops lose more heat to the surrounding air but offer lower operating costs in many regions.",
+        },
+        {
+          title: "Safety and Maintenance",
+          content:
+            "Induction surfaces stay cooler and offer automatic shut-off features. Gas cooktops require proper ventilation and regular cleaning of burner components.",
+        },
+      ],
+      pros: [
+        "Induction: Precise control and energy efficiency",
+        "Gas: Universal cookware compatibility",
+        "Both: Professional cooking capabilities",
+        "Induction: Enhanced safety features",
+      ],
+      cons: [
+        "Induction: Requires compatible cookware",
+        "Gas: Higher heat loss and safety concerns",
+        "Both: Professional installation recommended",
+      ],
+      verdict:
+        "Choose induction for precision cooking, energy efficiency, and safety. Select gas if you prefer visual flame control and have existing compatible cookware.",
+    },
+  },
+  "best-built-in-ovens-for-baking-enthusiasts": {
+    id: 6,
+    title: "Best Built-in Ovens for Baking Enthusiasts",
+    description:
+      "Perfect your baking with these top-rated built-in ovens. Features even heating, precise temperature control, and more.",
+    image: "/built-in-wall-oven-with-baked-goods.png",
+    category: "Ranges & Ovens",
+    date: "Dec 8, 2024",
+    rating: 4.9,
+    author: "Baker Jennifer Lee",
+    readTime: "13 min read",
+    content: {
+      introduction:
+        "Serious baking requires precise temperature control and even heat distribution. We've tested the top built-in ovens to find models that deliver professional-quality results for home bakers.",
+      sections: [
+        {
+          title: "Essential Baking Features",
+          content:
+            "The best baking ovens offer true convection, precise temperature control, and multiple rack positions. Steam injection and proofing modes enhance versatility for bread baking.",
+        },
+        {
+          title: "Miele H6780BP - Best Overall",
+          content:
+            "This premium oven features MoisturePlus technology and precise temperature control within 5°F. The large capacity accommodates multiple baking sheets simultaneously.",
+        },
+        {
+          title: "Bosch HBL8451UC - Best Value",
+          content:
+            "Offering excellent baking performance at a competitive price, this oven includes true European convection and a temperature probe for perfect results.",
+        },
+      ],
+      pros: [
+        "Precise temperature control for consistent results",
+        "True convection for even heat distribution",
+        "Multiple rack positions for batch baking",
+        "Steam and proofing modes for bread making",
+      ],
+      cons: [
+        "Premium models require significant investment",
+        "Installation requires electrical and cabinet modifications",
+        "Learning curve for advanced features",
+      ],
+      verdict:
+        "The Miele H6780BP delivers unmatched baking precision and versatility for serious enthusiasts. The Bosch HBL8451UC provides excellent performance and features at a more accessible price point.",
+    },
+  },
 }
 
 // Generate static params for all reviews
@@ -108,12 +292,12 @@ export async function generateStaticParams() {
 }
 
 // Generate slug from title
-// function generateSlug(title: string) {
-//   return title
-//     .toLowerCase()
-//     .replace(/[^a-z0-9]+/g, "-")
-//     .replace(/(^-|-$)/g, "")
-// }
+function generateSlug(title: string) {
+  return title
+    .toLowerCase()
+    .replace(/[^a-z0-9]+/g, "-")
+    .replace(/(^-|-$)/g, "")
+}
 
 export default async function ReviewPage({ params }: { params: Promise<{ slug: string }> }) {
   const { slug } = await params
