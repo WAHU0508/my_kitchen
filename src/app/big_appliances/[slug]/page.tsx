@@ -4,6 +4,12 @@ import Header from "@//components/header"
 import Footer from "@//components/footer"
 import { Review } from "@//types/review"
 
+type ReviewPageProps = {
+  params: {
+    slug: string
+  }
+}
+
 // Fetch reviews from json-server
 async function getReviewsData(): Promise<Review[]> {
   const res = await fetch("http://localhost:3001/reviews", {
@@ -21,7 +27,7 @@ export async function generateStaticParams() {
   return reviews.map((review) => ({ slug: review.slug }))
 }
 
-export default async function ReviewPage({ params }: { params: { slug: string } }) {
+export default async function ReviewPage({ params }: ReviewPageProps) {
   const reviews = await getReviewsData()
   const review = reviews.find((r) => r.slug === params.slug)
 
