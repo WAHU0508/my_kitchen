@@ -503,6 +503,3 @@ export default function ReviewPage({ params }: { params: { slug: string } }) {
     </div>
   )
 }
-export function generateStaticParams(): { slug: string }[] {
-  return Object.keys(reviewsData).map((slug) => ({ slug }))
-}
