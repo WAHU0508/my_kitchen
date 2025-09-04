@@ -115,7 +115,13 @@ export async function generateStaticParams() {
 //     .replace(/(^-|-$)/g, "")
 // }
 
-export default function ReviewPage({ params }: { params: { slug: string } }) {
+type ReviewPageProps = {
+  params: {
+    slug: string
+  }
+}
+
+export default function ReviewPage({ params }: ReviewPageProps) {
   const review = reviewsData[params.slug as keyof typeof reviewsData]
 
   if (!review) {
