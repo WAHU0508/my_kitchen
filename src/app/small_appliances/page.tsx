@@ -74,6 +74,7 @@ export default function SmallAppliancesPage() {
   const categories = [
     { name: "All Categories", count: 156, icon: "📋" },
     { name: "Coffee Makers", count: 32, icon: "☕" },
+    { name: "Juicers", count: 14, icon: "🧃" },
     { name: "Blenders", count: 28, icon: "🥤" },
     { name: "Air Fryers", count: 24, icon: "🍟" },
     { name: "Mixers", count: 22, icon: "🥧" },
