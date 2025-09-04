@@ -299,8 +299,8 @@ export async function generateStaticParams() {
 //     .replace(/(^-|-$)/g, "")
 // }
 
-export default async function ReviewPage({ params }: { params: Promise<{ slug: string }> }) {
-  const { slug } = await params
+export default function ReviewPage({ params }: { params: { slug: string } }) {
+  const { slug } = params
   const review = reviewsData[slug as keyof typeof reviewsData]
 
   if (!review) {
