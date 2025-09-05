@@ -1,5 +1,6 @@
 import React from "react";
 import ArticleCard from "./articles_card";
+import Link from "next/link"
 import hand_mixer_img from "@//assets/hand_mixer.png";
 import chicken_img from "@//assets/chicken.png";
 import kitchen_tools_img from "@//assets/kitchen_tools.png";
