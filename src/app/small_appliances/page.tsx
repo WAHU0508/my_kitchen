@@ -1,13 +1,19 @@
 "use client"
 import { useState } from "react"
 import Image from "next/image"
+import Link from "next/link"
 import Header from "@//components/header"
 import Footer from "@//components/footer"
 
 export default function SmallAppliancesPage() {
   const [selectedCategory, setSelectedCategory] = useState("All Categories")
   const [sortBy, setSortBy] = useState("newest")
-
+  const generateSlug = (title: string) => {
+    return title
+      .toLowerCase()
+      .replace(/[^a-z0-9]+/g, "-")
+      .replace(/(^-|-$)/g, "")
+  }
   const smallAppliances = [
     {
       id: 1,
@@ -257,7 +263,10 @@ export default function SmallAppliancesPage() {
                   <p className="text-gray-600 mb-4 text-pretty">{appliance.description}</p>
                   <div className="flex items-center justify-between">
                     <span className="text-sm text-gray-500">{appliance.date}</span>
-                    <button className="text-[#cc7800] font-medium hover:text-[#b36b00] transition-colors duration-200 flex items-center gap-1">
+                    <Link
+                      href={`/big-appliances/${generateSlug(appliance.title)}`}
+                      className="text-[#cc7800] font-medium hover:text-[#b36b00] transition-colors duration-200 flex items-center gap-1"
+                    >
                       Read Review
                       <svg className="w-4 h-4" fill="none" stroke="currentColor" viewBox="0 0 24 24">
                         <path
@@ -267,7 +276,7 @@ export default function SmallAppliancesPage() {
                           d="M14 5l7 7m0 0l-7 7m7-7H3"
                         />
                       </svg>
-                    </button>
+                    </Link>
                   </div>
                 </div>
               </article>
