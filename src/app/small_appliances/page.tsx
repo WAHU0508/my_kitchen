@@ -264,7 +264,7 @@ export default function SmallAppliancesPage() {
                   <div className="flex items-center justify-between">
                     <span className="text-sm text-gray-500">{appliance.date}</span>
                     <Link
-                      href={`/big_appliances/${generateSlug(appliance.title)}`}
+                      href={`/small_appliances/${generateSlug(appliance.title)}`}
                       className="text-[#cc7800] font-medium hover:text-[#b36b00] transition-colors duration-200 flex items-center gap-1"
                     >
                       Read Review
