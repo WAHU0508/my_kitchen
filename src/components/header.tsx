@@ -22,9 +22,9 @@ export default function Header() {
         </Link>
 
         <nav className="flex flex-row items-center space-x-8 lg:space-x-12 text-black md:text-[16px]">
-          <p className="hover:text-[#cc7800] cursor-pointer transition-colors duration-200">Big Appliances</p>
-          <p className="hover:text-[#cc7800] cursor-pointer transition-colors duration-200">Small Appliances</p>
-          <p className="hover:text-[#cc7800] cursor-pointer transition-colors duration-200">Recipes</p>
+          <Link href="/big-appliances" className="hover:text-[#cc7800] cursor-pointer transition-colors duration-200">Big Appliances</Link>
+          <Link href="/small-appliances" className="hover:text-[#cc7800] cursor-pointer transition-colors duration-200">Small Appliances</Link>
+          <Link href="/recipes" className="hover:text-[#cc7800] cursor-pointer transition-colors duration-200">Recipes</Link>
         </nav>
 
 {/*         <button className="bg-blue-600 hover:bg-blue-700 text-white md:text-[14px] rounded-[10px] px-6 py-2 transition-colors duration-200">
@@ -69,7 +69,7 @@ export default function Header() {
                 Big Appliances
               </Link>
               <Link
-                href="/small-appliances"
+                href="/small_appliances"
                 className="text-black hover:text-orange-200 transition-colors duration-200 py-2"
               >
                 Small Appliances
