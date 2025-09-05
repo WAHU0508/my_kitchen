@@ -5,7 +5,7 @@ export default function CategoriesSection() {
   return (
     <div className="grid grid-cols-1 md:grid-cols-3 gap-4 lg:gap-6">
       <Card
-        title="Amazon Reviews"
+        title="Gadget Reviews"
         description="Honest reviews of kitchen appliances from Amazon to help you make the best choice"
         buttonText="Read Reviews"
         icon={
