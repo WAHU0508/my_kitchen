@@ -5,9 +5,10 @@ export default function CategoriesSection() {
   return (
     <div className="grid grid-cols-1 md:grid-cols-3 gap-4 lg:gap-6">
       <Card
-        title="Gadget Reviews"
-        description="Honest reviews of kitchen appliances from most outlets to help you make the best choice"
+        title="Big Appliances Reviews"
+        description="Honest reviews of kitchen appliances from most outlets to help you make the best choice."
         buttonText="Read Reviews"
+        link="/big-appliances"
         icon={
           <svg
             className="w-6 h-6 text-white"
@@ -29,6 +30,7 @@ export default function CategoriesSection() {
         title="Recipe Collection"
         description="Curated recipes and cooking tips to make the most of your kitchen appliances"
         buttonText="Browse Recipes"
+        link="/recipies"
         icon={
           <svg
             className="w-6 h-6 text-white"
@@ -47,9 +49,10 @@ export default function CategoriesSection() {
       />
 
       <Card
-        title="Kitchen Tips"
-        description="Expert advice and practical tips to elevate your cooking experience"
+        title="Small Appliances Reviews"
+        description="In-depth reviews and comparisons of blenders, toasters, air fryers, and other small kitchen gadgets to help you choose the right one for your needs."
         buttonText="Learn More"
+        link="/small_appliances"
         icon={
           <svg
             className="w-6 h-6 text-white"
