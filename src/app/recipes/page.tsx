@@ -13,6 +13,7 @@ type Recipe = {
   id: string
   title: string
   description: string
+  slug?: { current: string }
   image?: { asset: { url: string } }
   rating: number
   reviews: number
@@ -48,6 +49,7 @@ export default function RecipesPage() {
         `*[_type == "recipe"]{
           id,
           title,
+          slug,
           description,
           rating,
           reviews,
@@ -235,7 +237,7 @@ export default function RecipesPage() {
                   <div className="flex items-center justify-between">
                     <span className="text-sm text-[#000000]">by {recipe.chef}</span>
                     <Link
-                      href={`/recipes/[id]/${recipe.id}`}
+                      href={`/recipes/${recipe.slug?.current || recipe.id}`}
                       className="bg-[#cc7800]/80 hover:bg-[#cc7800] text-[#000000] px-4 py-2 rounded-lg font-medium transition-colors"
                     >
                       View Recipe
