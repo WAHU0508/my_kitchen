@@ -79,7 +79,7 @@ export default function RecipeClient({ recipe }: { recipe: Recipe }) {
             <h2 className="text-2xl font-bold text-gray-900 mb-6">Ingredients</h2>
             <div className="bg-gray-50 rounded-xl p-6">
               <ul className="space-y-3">
-                {recipe.ingredients.map((ingredient: string, index: number) => (
+                {recipe.ingredients?.map((ingredient: string, index: number) => (
                   <li key={index} className="flex items-center gap-3">
                     <button
                       onClick={() => toggleIngredient(index)}
@@ -108,7 +108,7 @@ export default function RecipeClient({ recipe }: { recipe: Recipe }) {
           <div className="mb-12">
             <h2 className="text-2xl font-bold text-gray-900 mb-6">Instructions</h2>
             <div className="space-y-6">
-              {recipe.instructions.map((instruction: string, index: number) => (
+              {recipe.instructions?.map((instruction: string, index: number) => (
                 <div key={index} className="flex gap-4">
                   <button
                     onClick={() => toggleInstruction(index)}
@@ -137,7 +137,7 @@ export default function RecipeClient({ recipe }: { recipe: Recipe }) {
             <h2 className="text-2xl font-bold text-gray-900 mb-6">Chef&apos;s Tips</h2>
             <div className="bg-orange-50 rounded-xl p-6">
               <ul className="space-y-3">
-                {recipe.tips.map((tip: string, index: number) => (
+                {recipe.tips?.map((tip: string, index: number) => (
                   <li key={index} className="flex items-start gap-3">
                     <ChefHat className="w-5 h-5 text-orange-600 flex-shrink-0 mt-0.5" />
                     <span className="text-gray-700">{tip}</span>
@@ -181,6 +181,7 @@ export default function RecipeClient({ recipe }: { recipe: Recipe }) {
             {/* Nutrition */}
             <div className="bg-white border border-gray-200 rounded-xl p-6">
               <h3 className="text-lg font-bold text-gray-900 mb-4">Nutrition (per serving)</h3>
+              {recipe.nutrition && (
               <div className="space-y-3">
                 <div className="flex justify-between">
                   <span className="text-gray-600">Calories:</span>
@@ -203,6 +204,7 @@ export default function RecipeClient({ recipe }: { recipe: Recipe }) {
                   <span className="font-medium">{recipe.nutrition.fiber}</span>
                 </div>
               </div>
+              )}
             </div>
           </div>
         </div>
