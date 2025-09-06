@@ -235,7 +235,7 @@ export default function RecipesPage() {
                   <div className="flex items-center justify-between">
                     <span className="text-sm text-[#000000]">by {recipe.chef}</span>
                     <Link
-                      href={`/recipes/${recipe.id}`}
+                      href={`/recipes/[id]/${recipe.id}`}
                       className="bg-[#cc7800]/80 hover:bg-[#cc7800] text-[#000000] px-4 py-2 rounded-lg font-medium transition-colors"
                     >
                       View Recipe
