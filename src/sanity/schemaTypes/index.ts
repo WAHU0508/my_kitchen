@@ -1,5 +1,5 @@
-import { type SchemaTypeDefinition } from 'sanity'
+import bigAppliance from "./bigAppliance"
+import smallAppliance from "./smallAppliance"
+import recipe from "./recipe"
 
-export const schema: { types: SchemaTypeDefinition[] } = {
-  types: [],
-}
+export const schemaTypes = [bigAppliance, smallAppliance, recipe]
