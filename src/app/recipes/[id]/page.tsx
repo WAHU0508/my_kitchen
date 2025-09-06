@@ -6,13 +6,18 @@ import { ArrowLeft, Star, Clock, Users } from "lucide-react"
 import { notFound } from "next/navigation"
 import RecipeClient from "@//components/recipies_component"
 import { client } from "@//sanity/lib/client"
-import type { Image as SanityImg } from "sanity";
+
+type SanityImageWithUrl = {
+  asset?: {
+    url?: string
+  }
+}
 
 type Recipe = {
-  _id: number
+  _id: string
   title: string
   description: string
-  image?: SanityImg;
+  image?: SanityImageWithUrl
   rating: number
   reviews: number
   cookTime: string
