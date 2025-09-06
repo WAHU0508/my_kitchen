@@ -1,4 +1,4 @@
-import { SanityImageSource } from "@sanity/image-url";
+import type { Image } from "sanity";
 
 export type ReviewSection = {
   title: string;
@@ -18,7 +18,7 @@ export type Review = {
   slug: string;
   title: string;
   description: string;
-  image?: SanityImageSource;
+  image?: Image;
   category: string;
   date: string;
   rating: number;
