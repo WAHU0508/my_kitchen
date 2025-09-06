@@ -2,9 +2,9 @@
 
 import { useState } from "react"
 import { Heart, Share2, Printer as Print, CheckCircle, ChefHat } from "lucide-react"
-// import type { Recipe } from "@//types/recipe"
+//import type { Recipe } from "@//types/recipe"
 
-export default function RecipeClient({ recipe }: { recipe: Recipe }) {
+export default function RecipeClient({ recipe }) {
   const [checkedIngredients, setCheckedIngredients] = useState<number[]>([])
   const [checkedInstructions, setCheckedInstructions] = useState<number[]>([])
   const [isFavorited, setIsFavorited] = useState(false)
