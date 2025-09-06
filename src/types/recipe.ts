@@ -2,7 +2,7 @@ export type Recipe = {
   id: number
   title: string
   description: string
-  image: string
+  imageUrl: string
   rating: number
   reviews: number
   cookTime: string
