@@ -318,7 +318,7 @@ const recipeDetails = {
   },
 }
 
-xport default function RecipePage({ params }: { params: { id: string } }) {
+export default function RecipePage({ params }: { params: { id: string } }) {
   const recipe = recipeDetails[Number(params.id) as keyof typeof recipeDetails]
 
   if (!recipe) {
