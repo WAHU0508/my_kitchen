@@ -16,17 +16,22 @@
     "@fortawesome/free-solid-svg-icons": "^6.7.2",
     "@fortawesome/react-fontawesome": "^0.2.2",
     "@googlemaps/js-api-loader": "^1.16.8",
+    "@sanity/image-url": "^1.2.0",
+    "@sanity/vision": "^4.6.1",
     "@supabase/supabase-js": "^2.49.4",
     "bootstrap": "^5.3.4",
     "formidable": "^3.5.3",
     "framer-motion": "^12.6.3",
     "lucide-react": "^0.487.0",
     "next": "15.2.4",
+    "next-sanity": "^10.0.16",
     "next-sitemap": "^4.2.3",
     "nodemailer": "^6.10.0",
     "react": "^19.0.0",
     "react-dom": "^19.0.0",
-    "react-icons": "^5.5.0"
+    "react-icons": "^5.5.0",
+    "sanity": "^4.6.1",
+    "styled-components": "^6.1.19"
   },
   "devDependencies": {
     "@eslint/eslintrc": "^3",
