@@ -326,7 +326,7 @@ interface RecipePageProps {
   }
 }
 
-export default function RecipePage({ params }: { params: { id: string } }) {
+export default function RecipePage({ params }: RecipePageProps) {
   const [checkedIngredients, setCheckedIngredients] = useState<number[]>([])
   const [checkedInstructions, setCheckedInstructions] = useState<number[]>([])
   const [isFavorited, setIsFavorited] = useState(false)
