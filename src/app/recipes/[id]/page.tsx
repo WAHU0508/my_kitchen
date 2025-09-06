@@ -3,7 +3,7 @@ import Link from "next/link"
 import Header from "@//components/header"
 import Footer from "@//components/footer"
 import { ArrowLeft, Star, Clock, Users } from "lucide-react"
-import { notFound } from "next/navigation"
+//import { notFound } from "next/navigation"
 import RecipeClient from "@//components/recipies_component"
 
 const recipeDetails = {
