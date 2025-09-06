@@ -10,28 +10,28 @@ type SanityImageWithUrl = {
 }
 
 type Recipe = {
-  _id: string
-  title: string
-  description: string
+  _id?: string
+  title?: string
+  description?: string
   image?: SanityImageWithUrl
-  rating: number
-  reviews: number
-  cookTime: string
-  prepTime: string
-  servings: number
-  difficulty: string
-  category: string
-  chef: string
-  ingredients: string[]
-  instructions: string[]
-  nutrition: {
+  rating?: number
+  reviews?: number
+  cookTime?: string
+  prepTime?: string
+  servings?: number
+  difficulty?: string
+  category?: string
+  chef?: string
+  ingredients?: string[]
+  instructions?: string[]
+  nutrition?: {
     calories: number
     protein: string
     carbs: string
     fat: string
     fiber: string
   }
-  tips: string[]
+  tips?: string[]
 }
 export default function RecipeClient({ recipe }: { recipe: Recipe }) {
   const [checkedIngredients, setCheckedIngredients] = useState<number[]>([])
