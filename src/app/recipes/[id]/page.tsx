@@ -333,7 +333,9 @@ export async function generateStaticParams() {
 
 export default async function RecipePage({ params }: RecipePageProps) {
   const { id } = await params
-  const recipe = recipeDetails[id as keyof typeof recipeDetails]
+  const recipeId = Number(id) as keyof typeof recipeDetails
+
+  const recipe = recipeDetails[recipeId]
 
   if (!recipe) return notFound()
 
