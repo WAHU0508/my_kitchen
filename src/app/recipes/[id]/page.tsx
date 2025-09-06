@@ -320,7 +320,7 @@ const recipeDetails = {
   },
 }
 
-interface RecipePageProps {
+type RecipePageProps = {
   params: {
     id: string
   }
