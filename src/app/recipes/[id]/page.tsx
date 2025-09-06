@@ -3,7 +3,7 @@ import Link from "next/link"
 import Header from "@//components/header"
 import Footer from "@//components/footer"
 import { ArrowLeft, Star, Clock, Users } from "lucide-react"
-//import { notFound } from "next/navigation"
+import { notFound } from "next/navigation"
 import RecipeClient from "@//components/recipies_component"
 
 const recipeDetails = {
@@ -318,27 +318,24 @@ const recipeDetails = {
   },
 }
 
-export default function RecipePage({ params }: { params: { id: string } }) {
-  const recipe = recipeDetails[Number(params.id) as keyof typeof recipeDetails]
+type RecipePageProps = {
+  params: Promise<{
+    id: string
+  }>
+}
 
-  if (!recipe) {
-    return (
-      <div className="min-h-screen bg-white">
-        <Header />
-        <div className="max-w-4xl mx-auto px-4 py-16 text-center">
-          <h1 className="text-2xl font-bold text-gray-900 mb-4">Recipe Not Found</h1>
-          <p className="text-gray-600 mb-8">The recipe you&apos;re looking for doesn&apos;t exist.</p>
-          <Link
-            href="/recipes"
-            className="bg-orange-600 text-white px-6 py-3 rounded-lg font-medium hover:bg-orange-700 transition-colors"
-          >
-            Back to Recipes
-          </Link>
-        </div>
-        <Footer />
-      </div>
-    )
-  }
+// ✅ Needed if you want to prerender all recipe pages
+export async function generateStaticParams() {
+  return Object.keys(recipeDetails).map((id) => ({
+    id,
+  }))
+}
+
+export default async function RecipePage({ params }: RecipePageProps) {
+  const { id } = await params
+  const recipe = recipeDetails[id as keyof typeof recipeDetails]
+
+  if (!recipe) return notFound()
 
   return (
     <div className="min-h-screen bg-white">
