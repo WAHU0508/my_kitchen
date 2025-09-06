@@ -14,11 +14,11 @@ export type Recipe = {
   ingredients: string[]
   instructions: string[]
   nutrition: {
-    calories: number
-    protein: number
-    carbs: number
-    fat: number
-    fiber: number
+    calories: string
+    protein: string
+    carbs: string
+    fat: string
+    fiber: string
   }
   tips: string[]
 }
