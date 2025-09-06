@@ -11,7 +11,7 @@ import { Review } from "@//types/review"
 const builder = imageUrlBuilder(client)
 
 function urlFor(source: SanityImage | undefined) {
-  return source ? builder.image(source) : null
+  return source ? builder.image(source).url() : "/placeholder.svg"
 }
 
 type ReviewPageProps = {
@@ -126,11 +126,7 @@ export default async function ReviewPage({ params }: ReviewPageProps) {
           {/* Hero Image */}
           <div className="aspect-[16/9] relative overflow-hidden rounded-2xl shadow-2xl mb-12">
             <Image
-              src={
-                review.image
-                  ? urlFor(review.image).width(800).height(450).url()
-                  : "/placeholder.svg"
-              }
+              src={urlFor(review.image)}
               alt={review.title}
               width={800}
               height={450}
