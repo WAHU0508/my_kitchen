@@ -5,12 +5,12 @@ import Header from "@//components/header"
 import Footer from "@//components/footer"
 import { client } from "@//sanity/lib/client"
 import imageUrlBuilder from "@sanity/image-url"
-import type { Image } from "sanity"
+import type { Image as SanityImage } from "sanity"
 import { Review } from "@//types/review" 
 
 const builder = imageUrlBuilder(client)
 
-function urlFor(source: Image | undefined) {
+function urlFor(source: SanityImage | undefined) {
   return source ? builder.image(source) : null
 }
 
