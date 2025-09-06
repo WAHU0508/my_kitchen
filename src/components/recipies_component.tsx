@@ -2,8 +2,37 @@
 
 import { useState } from "react"
 import { Heart, Share2, Printer as Print, CheckCircle, ChefHat } from "lucide-react"
-import type { Recipe } from "@//types/recipe"
+//import type { Recipe } from "@//types/recipe"
+type SanityImageWithUrl = {
+  asset?: {
+    url?: string
+  }
+}
 
+type Recipe = {
+  _id: string
+  title: string
+  description: string
+  image?: SanityImageWithUrl
+  rating: number
+  reviews: number
+  cookTime: string
+  prepTime: string
+  servings: number
+  difficulty: string
+  category: string
+  chef: string
+  ingredients: string[]
+  instructions: string[]
+  nutrition: {
+    calories: number
+    protein: string
+    carbs: string
+    fat: string
+    fiber: string
+  }
+  tips: string[]
+}
 export default function RecipeClient({ recipe }: { recipe: Recipe }) {
   const [checkedIngredients, setCheckedIngredients] = useState<number[]>([])
   const [checkedInstructions, setCheckedInstructions] = useState<number[]>([])
