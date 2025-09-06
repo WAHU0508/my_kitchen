@@ -162,7 +162,7 @@ export default function RecipesPage() {
               >
                 <div className="text-2xl mb-2">{category.icon}</div>
                 <div className="font-semibold text-sm">{category.name}</div>
-                <div className="text-xs opacity-70">{category.count}</div>
+                
               </button>
             ))}
           </div>
