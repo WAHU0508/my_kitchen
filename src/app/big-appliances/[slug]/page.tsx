@@ -5,32 +5,36 @@ import Header from "@//components/header"
 import Footer from "@//components/footer"
 import { client } from "@//sanity/lib/client"
 import imageUrlBuilder from "@sanity/image-url"
+import { Review } from "@//types/review"  // 👈 import the types
 
 const builder = imageUrlBuilder(client)
 
-function urlFor(source: any) {
+function urlFor(source: Review["image"]) {
   return builder.image(source)
 }
 
 type ReviewPageProps = {
-  params: Promise<{
-    slug: string
-  }>
+  params: Promise<{ slug: string }>
+}
+
+type SlugResult = {
+  slug: string
 }
 
 export async function generateStaticParams() {
-  const slugs = await client.fetch(
+  const slugs: SlugResult[] = await client.fetch(
     `*[_type == "bigAppliance"]{ "slug": slug.current }`
   )
-  return slugs.map((s: any) => ({ slug: s.slug }))
+  return slugs.map((s) => ({ slug: s.slug }))
 }
 
 export default async function ReviewPage({ params }: ReviewPageProps) {
   const { slug } = await params
 
-  const review = await client.fetch(
+  const review: Review | null = await client.fetch(
     `*[_type == "bigAppliance" && slug.current == $slug][0]{
       _id,
+      "slug": slug.current,
       title,
       description,
       image,
@@ -141,115 +145,54 @@ export default async function ReviewPage({ params }: ReviewPageProps) {
             </div>
 
             {/* Content Sections */}
-            {review.content?.sections?.map(
-              (section: any, index: number) => (
-                <div key={index} className="mb-8">
-                  <h2 className="text-2xl font-bold text-gray-900 mb-4">
-                    {section.title}
-                  </h2>
-                  <p className="text-gray-700 leading-relaxed">
-                    {section.content}
-                  </p>
-                </div>
-              )
-            )}
+            {review.content?.sections?.map((section, index) => (
+              <div key={index} className="mb-8">
+                <h2 className="text-2xl font-bold text-gray-900 mb-4">
+                  {section.title}
+                </h2>
+                <p className="text-gray-700 leading-relaxed">
+                  {section.content}
+                </p>
+              </div>
+            ))}
 
             {/* Pros and Cons */}
             <div className="grid md:grid-cols-2 gap-8 my-12">
               <div className="bg-green-50 p-6 rounded-xl border border-green-200">
                 <h3 className="text-xl font-bold text-green-800 mb-4 flex items-center gap-2">
-                  <svg
-                    className="w-5 h-5"
-                    fill="currentColor"
-                    viewBox="0 0 20 20"
-                  >
-                    <path
-                      fillRule="evenodd"
-                      d="M16.707 5.293a1 1 0 010 1.414l-8 8a1 1 0 01-1.414 0l-4-4a1 1 0 011.414-1.414L8 12.586l7.293-7.293a1 1 0 011.414 0z"
-                      clipRule="evenodd"
-                    />
-                  </svg>
                   Pros
                 </h3>
                 <ul className="space-y-2">
-                  {review.content?.pros?.map(
-                    (pro: string, index: number) => (
-                      <li
-                        key={index}
-                        className="text-green-700 flex items-start gap-2"
-                      >
-                        <svg
-                          className="w-4 h-4 mt-0.5 flex-shrink-0"
-                          fill="currentColor"
-                          viewBox="0 0 20 20"
-                        >
-                          <path
-                            fillRule="evenodd"
-                            d="M16.707 5.293a1 1 0 010 1.414l-8 8a1 1 0 01-1.414 0l-4-4a1 1 0 011.414-1.414L8 12.586l7.293-7.293a1 1 0 011.414 0z"
-                            clipRule="evenodd"
-                          />
-                        </svg>
-                        {pro}
-                      </li>
-                    )
-                  )}
+                  {review.content?.pros?.map((pro, index) => (
+                    <li
+                      key={index}
+                      className="text-green-700 flex items-start gap-2"
+                    >
+                      ✔ {pro}
+                    </li>
+                  ))}
                 </ul>
               </div>
 
               <div className="bg-red-50 p-6 rounded-xl border border-red-200">
                 <h3 className="text-xl font-bold text-red-800 mb-4 flex items-center gap-2">
-                  <svg
-                    className="w-5 h-5"
-                    fill="currentColor"
-                    viewBox="0 0 20 20"
-                  >
-                    <path
-                      fillRule="evenodd"
-                      d="M4.293 4.293a1 1 0 011.414 0L10 8.586l4.293-4.293a1 1 0 111.414 1.414L11.414 10l4.293 4.293a1 1 0 01-1.414 1.414L10 11.414l-4.293 4.293a1 1 0 01-1.414-1.414L8.586 10 4.293 5.707a1 1 0 010-1.414z"
-                      clipRule="evenodd"
-                    />
-                  </svg>
                   Cons
                 </h3>
                 <ul className="space-y-2">
-                  {review.content?.cons?.map(
-                    (con: string, index: number) => (
-                      <li
-                        key={index}
-                        className="text-red-700 flex items-start gap-2"
-                      >
-                        <svg
-                          className="w-4 h-4 mt-0.5 flex-shrink-0"
-                          fill="currentColor"
-                          viewBox="0 0 20 20"
-                        >
-                          <path
-                            fillRule="evenodd"
-                            d="M4.293 4.293a1 1 0 011.414 0L10 8.586l4.293-4.293a1 1 0 111.414 1.414L11.414 10l4.293 4.293a1 1 0 01-1.414 1.414L10 11.414l-4.293 4.293a1 1 0 01-1.414-1.414L8.586 10 4.293 5.707a1 1 0 010-1.414z"
-                            clipRule="evenodd"
-                          />
-                        </svg>
-                        {con}
-                      </li>
-                    )
-                  )}
+                  {review.content?.cons?.map((con, index) => (
+                    <li
+                      key={index}
+                      className="text-red-700 flex items-start gap-2"
+                    >
+                      ✖ {con}
+                    </li>
+                  ))}
                 </ul>
               </div>
             </div>
 
             <div className="bg-[#cc7800]/10 p-8 rounded-xl border border-[#cc7800]/20 my-12">
-              <h3 className="text-2xl font-bold text-gray-900 mb-4 flex items-center gap-2">
-                <svg
-                  className="w-6 h-6 text-[#cc7800]"
-                  fill="currentColor"
-                  viewBox="0 0 20 20"
-                >
-                  <path
-                    fillRule="evenodd"
-                    d="M6.267 3.455a3.066 3.066 0 001.745-.723 3.066 3.066 0 013.976 0 3.066 3.066 0 001.745.723 3.066 3.066 0 012.812 2.812c.051.643.304 1.254.723 1.745a3.066 3.066 0 010 3.976 3.066 3.066 0 00-.723 1.745 3.066 3.066 0 01-2.812 2.812 3.066 3.066 0 00-1.745.723 3.066 3.066 0 01-3.976 0 3.066 3.066 0 00-1.745-.723 3.066 3.066 0 01-2.812-2.812zm7.44 5.252a1 1 0 00-1.414-1.414L9 10.586 7.707 9.293a1 1 0 00-1.414 1.414l2 2a1 1 0 001.414 0l4-4z"
-                    clipRule="evenodd"
-                  />
-                </svg>
+              <h3 className="text-2xl font-bold text-gray-900 mb-4">
                 Final Verdict
               </h3>
               <p className="text-gray-700 leading-relaxed text-lg">
