@@ -339,7 +339,7 @@ export default function RecipePage({ params }: RecipePageProps) {
         <Header />
         <div className="max-w-4xl mx-auto px-4 py-16 text-center">
           <h1 className="text-2xl font-bold text-gray-900 mb-4">Recipe Not Found</h1>
-          <p className="text-gray-600 mb-8">The recipe you're looking for doesn't exist.</p>
+          <p className="text-gray-600 mb-8">The recipe you&apos;re looking for doesn&apos;t exist.</p>
           <Link
             href="/recipes"
             className="bg-orange-600 text-white px-6 py-3 rounded-lg font-medium hover:bg-orange-700 transition-colors"
@@ -494,7 +494,7 @@ export default function RecipePage({ params }: RecipePageProps) {
 
             {/* Tips */}
             <div className="mb-12">
-              <h2 className="text-2xl font-bold text-gray-900 mb-6">Chef's Tips</h2>
+              <h2 className="text-2xl font-bold text-gray-900 mb-6">Chef&apos;s Tips</h2>
               <div className="bg-orange-50 rounded-xl p-6">
                 <ul className="space-y-3">
                   {recipe.tips.map((tip, index) => (
