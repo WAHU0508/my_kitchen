@@ -25,14 +25,14 @@ type Recipe = {
 
 // Static categories (you can still keep them as before)
 const recipeCategories = [
-  { name: "Appetizers", count: 24, icon: "🥗", color: "bg-orange-100 hover:bg-orange-200" },
-  { name: "Main Courses", count: 45, icon: "🍖", color: "bg-orange-200 hover:bg-orange-300" },
-  { name: "Desserts", count: 32, icon: "🍰", color: "bg-amber-100 hover:bg-amber-200" },
-  { name: "Breakfast", count: 18, icon: "🥞", color: "bg-yellow-100 hover:bg-yellow-200" },
-  { name: "Soups", count: 15, icon: "🍲", color: "bg-orange-50 hover:bg-orange-100" },
-  { name: "Salads", count: 21, icon: "🥙", color: "bg-amber-50 hover:bg-amber-100" },
-  { name: "Beverages", count: 12, icon: "🥤", color: "bg-yellow-50 hover:bg-yellow-100" },
-  { name: "Snacks", count: 28, icon: "🍿", color: "bg-orange-100 hover:bg-orange-200" },
+  { name: "Appetizers", icon: "🥗", color: "bg-orange-100 hover:bg-orange-200" },
+  { name: "Main Courses", icon: "🍖", color: "bg-orange-200 hover:bg-orange-300" },
+  { name: "Desserts", icon: "🍰", color: "bg-amber-100 hover:bg-amber-200" },
+  { name: "Breakfast", icon: "🥞", color: "bg-yellow-100 hover:bg-yellow-200" },
+  { name: "Soups", icon: "🍲", color: "bg-orange-50 hover:bg-orange-100" },
+  { name: "Salads", icon: "🥙", color: "bg-amber-50 hover:bg-amber-100" },
+  { name: "Beverages", icon: "🥤", color: "bg-yellow-50 hover:bg-yellow-100" },
+  { name: "Snacks", icon: "🍿", color: "bg-orange-100 hover:bg-orange-200" },
 ]
 
 export default function RecipesPage() {
@@ -173,7 +173,7 @@ export default function RecipesPage() {
               <Filter className="w-4 h-4" />
               <span>Showing {sortedRecipes.length} recipes</span>
               {selectedCategory !== "All" && (
-                <span className="bg-[#cc7800] text-[#cc7800] px-2 py-1 rounded-full text-sm">{selectedCategory}</span>
+                <span className="bg-[#cc7800] text-[#ffffff] px-2 py-1 rounded-full text-sm">{selectedCategory}</span>
               )}
             </div>
             <select
