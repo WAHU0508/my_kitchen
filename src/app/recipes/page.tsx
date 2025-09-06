@@ -4,6 +4,7 @@ import { Star, Clock, Users, ChefHat, Search } from "lucide-react"
 import Header from "@//components/header"
 import Footer from "@//components/footer"
 import { client } from "@//sanity/lib/client"
+import { Recipe } from "@/types/recipe"
 
 // Categories (can stay static)
 const recipeCategories = [
@@ -18,7 +19,7 @@ const recipeCategories = [
 ]
 
 // Fetch recipes from Sanity
-async function getRecipes() {
+async function getRecipes(): Promise<Recipe[]> {
   return client.fetch(`
     *[_type == "recipe"]{
       _id,
@@ -28,10 +29,15 @@ async function getRecipes() {
       rating,
       reviews,
       cookTime,
+      prepTime,
       servings,
       difficulty,
       category,
-      chef
+      chef,
+      ingredients,
+      instructions,
+      nutrition,
+      tips
     }
   `)
 }
@@ -97,7 +103,7 @@ export default async function RecipesPage() {
 
           {/* Recipe Grid */}
           <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-8">
-            {recipes.map((recipe: any) => (
+            {recipes.map((recipe) => (
               <div
                 key={recipe._id}
                 className="bg-[#ffffff] rounded-2xl shadow-lg hover:shadow-xl transition-all duration-300 overflow-hidden group"
