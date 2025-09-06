@@ -1,4 +1,4 @@
-"use client"
+// "use client"
 
 import { useState } from "react"
 import Image from "next/image"
@@ -327,11 +327,12 @@ type RecipePageProps = {
 }
 
 export default function RecipePage({ params }: RecipePageProps) {
+  const { id } = await params
   const [checkedIngredients, setCheckedIngredients] = useState<number[]>([])
   const [checkedInstructions, setCheckedInstructions] = useState<number[]>([])
   const [isFavorited, setIsFavorited] = useState(false)
 
-  const recipe = recipeDetails[Number(params.id) as keyof typeof recipeDetails]
+  const recipe = recipeDetails[Number(id) as keyof typeof recipeDetails]
 
   if (!recipe) {
     return (
