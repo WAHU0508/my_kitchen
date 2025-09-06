@@ -1,6 +1,6 @@
 import Image from "next/image"
 import Link from "next/link"
-import { Star, Clock, Users, ChefHat, Search } from "lucide-react"
+import { Star, Clock, Users, ChefHat, Search, Filter } from "lucide-react"
 import Header from "@//components/header"
 import Footer from "@//components/footer"
 import { client } from "@//sanity/lib/client"
@@ -8,14 +8,14 @@ import { Recipe } from "@//types/recipe"
 
 // Categories (can stay static)
 const recipeCategories = [
-  { name: "Appetizers", icon: "🥗", color: "bg-orange-100 hover:bg-orange-200" },
-  { name: "Main Courses", icon: "🍖", color: "bg-orange-200 hover:bg-orange-300" },
-  { name: "Desserts", icon: "🍰", color: "bg-amber-100 hover:bg-amber-200" },
-  { name: "Breakfast", icon: "🥞", color: "bg-yellow-100 hover:bg-yellow-200" },
-  { name: "Soups", icon: "🍲", color: "bg-orange-50 hover:bg-orange-100" },
-  { name: "Salads", icon: "🥙", color: "bg-amber-50 hover:bg-amber-100" },
-  { name: "Beverages", icon: "🥤", color: "bg-yellow-50 hover:bg-yellow-100" },
-  { name: "Snacks", icon: "🍿", color: "bg-orange-100 hover:bg-orange-200" },
+  { name: "Appetizers", count: 24, icon: "🥗", color: "bg-orange-100 hover:bg-orange-200" },
+  { name: "Main Courses", count: 45, icon: "🍖", color: "bg-orange-200 hover:bg-orange-300" },
+  { name: "Desserts", count: 32, icon: "🍰", color: "bg-amber-100 hover:bg-amber-200" },
+  { name: "Breakfast", count: 18, icon: "🥞", color: "bg-yellow-100 hover:bg-yellow-200" },
+  { name: "Soups", count: 15, icon: "🍲", color: "bg-orange-50 hover:bg-orange-100" },
+  { name: "Salads", count: 21, icon: "🥙", color: "bg-amber-50 hover:bg-amber-100" },
+  { name: "Beverages", count: 12, icon: "🥤", color: "bg-yellow-50 hover:bg-yellow-100" },
+  { name: "Snacks", count: 28, icon: "🍿", color: "bg-orange-100 hover:bg-orange-200" },
 ]
 
 // Fetch recipes from Sanity
@@ -25,7 +25,7 @@ async function getRecipes(): Promise<Recipe[]> {
       id,
       title,
       description,
-      "imageUrl": image.asset->url,
+      "image": image.asset->url,
       rating,
       reviews,
       cookTime,
@@ -33,11 +33,7 @@ async function getRecipes(): Promise<Recipe[]> {
       servings,
       difficulty,
       category,
-      chef,
-      ingredients,
-      instructions,
-      nutrition,
-      tips
+      chef
     }
   `)
 }
@@ -97,6 +93,7 @@ export default async function RecipesPage() {
               >
                 <div className="text-2xl mb-2">{category.icon}</div>
                 <div className="font-semibold text-sm">{category.name}</div>
+                <div className="text-xs opacity-70">{category.count}</div>
               </button>
             ))}
           </div>
@@ -110,7 +107,7 @@ export default async function RecipesPage() {
               >
                 <div className="relative h-48 overflow-hidden">
                   <Image
-                    src={recipe.imageUrl || "/placeholder.svg"}
+                    src={recipe.image || "/placeholder.svg"}
                     alt={recipe.title}
                     fill
                     className="object-cover group-hover:scale-110 transition-transform duration-300"
