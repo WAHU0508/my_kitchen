@@ -14,7 +14,7 @@ export type Recipe = {
   ingredients: string[]
   instructions: string[]
   nutrition: {
-    calories: string
+    calories: number
     protein: string
     carbs: string
     fat: string
