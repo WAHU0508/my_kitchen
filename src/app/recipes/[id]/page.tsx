@@ -4,8 +4,8 @@ import { useState } from "react"
 import Image from "next/image"
 import Link from "next/link"
 import { Star, Clock, Users, ChefHat, ArrowLeft, Heart, Share2, Printer as Print, CheckCircle } from "lucide-react"
-import Header from "@/components/header"
-import Footer from "@/components/footer"
+import Header from "@//components/header"
+import Footer from "@//components/footer"
 
 // Extended recipe data with full details
 const recipeDetails = {
