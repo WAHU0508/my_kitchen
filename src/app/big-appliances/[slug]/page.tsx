@@ -5,12 +5,13 @@ import Header from "@//components/header"
 import Footer from "@//components/footer"
 import { client } from "@//sanity/lib/client"
 import imageUrlBuilder from "@sanity/image-url"
-import { Review } from "@//types/review"  // 👈 import the types
+import type { Image } from "sanity"
+import { Review } from "@//types/review" 
 
 const builder = imageUrlBuilder(client)
 
-function urlFor(source: Review["image"]) {
-  return builder.image(source)
+function urlFor(source: Image | undefined) {
+  return source ? builder.image(source) : null
 }
 
 type ReviewPageProps = {
