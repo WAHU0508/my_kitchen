@@ -105,7 +105,7 @@ export default async function RecipesPage() {
           <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-8">
             {recipes.map((recipe) => (
               <div
-                key={recipe._id}
+                key={recipe.id}
                 className="bg-[#ffffff] rounded-2xl shadow-lg hover:shadow-xl transition-all duration-300 overflow-hidden group"
               >
                 <div className="relative h-48 overflow-hidden">
