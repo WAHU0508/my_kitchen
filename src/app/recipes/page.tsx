@@ -4,7 +4,7 @@ import { Star, Clock, Users, ChefHat, Search } from "lucide-react"
 import Header from "@//components/header"
 import Footer from "@//components/footer"
 import { client } from "@//sanity/lib/client"
-import { Recipe } from "@/types/recipe"
+import { Recipe } from "@//types/recipe"
 
 // Categories (can stay static)
 const recipeCategories = [
