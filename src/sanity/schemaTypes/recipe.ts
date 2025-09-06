@@ -1,6 +1,6 @@
 import { defineType, defineField } from "sanity"
 
-export default const recipe = defineType({
+export default defineType({
   name: "recipe",
   title: "Recipe",
   type: "document",
