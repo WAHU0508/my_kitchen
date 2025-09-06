@@ -6,7 +6,31 @@ import { ArrowLeft, Star, Clock, Users } from "lucide-react"
 import { notFound } from "next/navigation"
 import RecipeClient from "@//components/recipies_component"
 import { client } from "@//sanity/lib/client"
-import Recipe from "@//types/recipe"
+
+type Recipe = {
+  _id: number
+  title: string
+  description: string
+  imageUrl: string
+  rating: number
+  reviews: number
+  cookTime: string
+  prepTime: string
+  servings: number
+  difficulty: string
+  category: string
+  chef: string
+  ingredients: string[]
+  instructions: string[]
+  nutrition: {
+    calories: number
+    protein: string
+    carbs: string
+    fat: string
+    fiber: string
+  }
+  tips: string[]
+}
 
 type RecipePageProps = {
   params: Promise<{ id: string }>
