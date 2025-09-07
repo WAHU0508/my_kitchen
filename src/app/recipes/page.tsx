@@ -236,18 +236,12 @@ export default function RecipesPage() {
                   </div>
                   <div className="flex items-center justify-between">
                     <span className="text-sm text-[#000000]">by {recipe.chef}</span>
-                    {recipe.slug?.current ? (
-                      <Link
-                        href={`/recipes/${recipe.slug.current}`}
-                        className="bg-[#cc7800]/80 hover:bg-[#cc7800] text-[#000000] px-4 py-2 rounded-lg font-medium transition-colors"
-                      >
-                        View Recipe
-                      </Link>
-                    ) : (
-                      <span className="px-4 py-2 rounded-lg text-gray-400 cursor-not-allowed">
-                        No Slug
-                      </span>
-                    )}
+                    <Link
+                      href={`/big-appliances/${appliance.slug?.current || appliance._id}`}
+                      className="text-[#cc7800] font-medium hover:text-[#b36b00] transition-colors duration-200 flex items-center gap-1"
+                    >
+                      Read Review →
+                    </Link>
                   </div>
                 </div>
               </div>
