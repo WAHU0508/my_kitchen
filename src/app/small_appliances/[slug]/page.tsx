@@ -71,7 +71,7 @@ export default async function ReviewPage({ params }: ReviewPageProps) {
               </Link>
               <span>/</span>
               <Link
-                href="/small-appliances"
+                href="/small_appliances"
                 className="hover:text-[#cc7800] transition-colors"
               >
                 Small Appliances
