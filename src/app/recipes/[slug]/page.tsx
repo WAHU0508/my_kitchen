@@ -80,7 +80,7 @@ export default async function RecipePage({ params }: RecipePageProps) {
     { slug }
   )
 
-  if (!review) {
+  if (!recipe) {
     notFound()
   }
 
