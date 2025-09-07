@@ -56,7 +56,7 @@ export async function generateStaticParams() {
 export default async function RecipePage({ params }: RecipePageProps) {
   const { slug } = await params
 
-  const review: Review | null = await client.fetch(
+  const recipe: Recipe | null = await client.fetch(
     `*[_type=="recipe" && slug.current==$slug][0]{
       _id,
       title,
