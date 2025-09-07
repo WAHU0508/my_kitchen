@@ -237,7 +237,7 @@ export default function RecipesPage() {
                   <div className="flex items-center justify-between">
                     <span className="text-sm text-[#000000]">by {recipe.chef}</span>
                     <Link
-                      href={`/recipes/${recipe.slug?.current || recipe._id}`}
+                      href={`/recipes/${recipe.slug?.current || recipe.id}`}
                       className="text-[#cc7800] font-medium hover:text-[#b36b00] transition-colors duration-200 flex items-center gap-1"
                     >
                       Read Review →
