@@ -39,16 +39,24 @@ type Recipe = {
 }
 
 type RecipePageProps = {
-  params: { slug: string }
+  params: Promise<{ slug: string }>
+}
+type SlugResult = {
+  slug: string
 }
 
 export async function generateStaticParams() {
-  const recipes: { slug: { current: string } }[] = await client.fetch(`*[_type=="recipe"]{ slug }`)
-  return recipes.map((r) => ({ slug: r.slug.current }))
-} 
-// ✅ Fetch recipe from Sanity
-async function getRecipe(slug: string): Promise<Recipe | null> {
-  return await client.fetch(
+  const slugs: SlugResult[] = await client.fetch(
+    `*[_type == "recipe"]{ "slug": slug.current }`
+  )
+  return slugs.map((s) => ({ slug: s.slug }))
+}
+
+
+export default async function RecipePage({ params }: RecipePageProps) {
+  const { slug } = await params
+
+  const review: Review | null = await client.fetch(
     `*[_type=="recipe" && slug.current==$slug][0]{
       _id,
       title,
@@ -71,13 +79,10 @@ async function getRecipe(slug: string): Promise<Recipe | null> {
     }`,
     { slug }
   )
-}
 
-
-export default async function RecipePage({ params }: RecipePageProps) {
-  const { slug } = params
-  const recipe = await getRecipe(slug)
-  if (!recipe) return notFound()
+  if (!review) {
+    notFound()
+  }
 
   return (
     <div className="min-h-screen bg-white">
