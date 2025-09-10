@@ -7,6 +7,7 @@ import Header from "@//components/header"
 import Footer from "@//components/footer"
 import { client } from "@//sanity/lib/client"
 
+//type definition
 type Appliance = {
   _id: string
   title: string
