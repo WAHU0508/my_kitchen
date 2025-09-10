@@ -13,7 +13,9 @@ type Appliance = {
   slug?: { current: string }
   description: string
   image?: { asset: { url: string } }
-  category: string
+  category?: {
+      title: string
+    },
   date: string
   rating: number
 }
@@ -22,6 +24,20 @@ export default function SmallAppliancesPage() {
   const [smallAppliances, setSmallAppliances] = useState<Appliance[]>([])
   const [selectedCategory, setSelectedCategory] = useState("All Categories")
   const [sortBy, setSortBy] = useState("newest")
+  const [categories, setCategories] = useState<{ title: string; icon?: string }[]>([])
+   useEffect(() => {
+    const fetchCategories = async () => {
+      const cats = await client.fetch(
+        `*[_type == "bigApplianceCategory"]{
+          title,
+          icon
+        }`
+      )
+      setCategories([{ title: "All Categories", icon: "📋" }, ...cats])
+    }
+
+    fetchCategories()
+  }, [])
 
   useEffect(() => {
     const fetchData = async () => {
@@ -47,23 +63,13 @@ export default function SmallAppliancesPage() {
     fetchData()
   }, [])
 
-  const categories = [
-    { name: "All Categories", icon: "📋" },
-    { name: "Coffee Makers", icon: "☕" },
-    { name: "Juicers", icon: "🧃" },
-    { name: "Blenders", icon: "🥤" },
-    { name: "Air Fryers", icon: "🍟" },
-    { name: "Mixers", icon: "🥧" },
-    { name: "Toasters", icon: "🍞" },
-    { name: "Food Processors", icon: "🥕" },
-    { name: "Electric Kettles", icon: "🫖" },
-  ]
-
-  const filteredAppliances = smallAppliances
-    .filter(
-      (appliance) =>
-        selectedCategory === "All Categories" || appliance.category === selectedCategory
-    )
+   // Apply filters
+  const filteredAppliances = bigAppliances
+  .filter(
+    (appliance) =>
+      selectedCategory === "All Categories" ||
+      appliance.category?.title === selectedCategory
+  )
     .sort((a, b) => {
       switch (sortBy) {
         case "newest":
@@ -131,15 +137,15 @@ export default function SmallAppliancesPage() {
             {categories.map((category, index) => (
               <button
                 key={index}
-                onClick={() => setSelectedCategory(category.name)}
-                className={`group flex items-center gap-2 px-4 py-2 rounded-full border transition-all ${
-                  selectedCategory === category.name
+                onClick={() => setSelectedCategory(category.title)}
+                className={`group flex items-center gap-2 px-4 py-2 rounded-full border transition-all duration-300 ${
+                  selectedCategory === category.title
                     ? "bg-[#cc7800] text-white border-[#cc7800] shadow-md"
                     : "bg-white text-gray-700 border-gray-300 hover:border-[#cc7800] hover:text-[#cc7800]"
                 }`}
               >
                 <span className="text-sm">{category.icon}</span>
-                <span className="font-medium text-sm">{category.name}</span>
+                <span className="font-medium text-sm">{category.title}</span>
               </button>
             ))}
           </div>
