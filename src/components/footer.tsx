@@ -111,7 +111,7 @@ export default function Footer() {
                 <Facebook size={24} />
               </Link>
               <Link href="https://www.pinterest.com" target="_blank" className="text-[#3a3a3a] hover:text-[#cc7800] transition-colors">
-                <PinterestIcon size={24} />
+                <PinterestIcon />
               </Link>
               <Link href="https://www.x.com" target="_blank" className="text-[#3a3a3a] hover:text-[#cc7800] transition-colors">
                 <X size={24} />
