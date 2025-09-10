@@ -28,7 +28,7 @@ export default function SmallAppliancesPage() {
    useEffect(() => {
     const fetchCategories = async () => {
       const cats = await client.fetch(
-        `*[_type == "bigApplianceCategory"]{
+        `*[_type == "smallApplianceCategory"]{
           title,
           icon
         }`
@@ -47,7 +47,9 @@ export default function SmallAppliancesPage() {
           title,
           slug,
           description,
-          category,
+          category->{
+            title
+          },
           date,
           rating,
           image {
@@ -64,7 +66,7 @@ export default function SmallAppliancesPage() {
   }, [])
 
    // Apply filters
-  const filteredAppliances = bigAppliances
+  const filteredAppliances = smallAppliances
   .filter(
     (appliance) =>
       selectedCategory === "All Categories" ||
