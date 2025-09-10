@@ -10,7 +10,7 @@ import { client } from "@//sanity/lib/client"
 type Appliance = {
   _id: string
   title: string
-  slug?: { current: string }
+  slug?: string
   description: string
   image?: { asset: { url: string } }
   category?: {
@@ -45,7 +45,7 @@ export default function SmallAppliancesPage() {
         `*[_type == "smallAppliance"]{
           _id,
           title,
-          slug,
+          "slug": slug.current,
           description,
           category->{
             title
