@@ -62,7 +62,8 @@ export default defineType({
     defineField({
       name: "category",
       title: "Category",
-      type: "string",
+      type: "reference",
+      to: [{ type: "recipeCategory" }],
     }),
     defineField({
       name: "chef",
