@@ -13,8 +13,8 @@ type Appliance = {
   slug?: { current: string }
   description: string
   image?: { asset: { url: string } }
-  category->{
-      title
+  category?: {
+      title: string
     },
   date: string
   rating: number
