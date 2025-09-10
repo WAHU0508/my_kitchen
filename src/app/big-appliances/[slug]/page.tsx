@@ -84,7 +84,7 @@ export default async function ReviewPage({ params }: ReviewPageProps) {
 
             <div className="text-center">
               <div className="inline-flex items-center gap-2 bg-[#cc7800] text-white px-4 py-2 rounded-full text-sm font-medium mb-6">
-                <span>{review.category}</span>
+                <span>{review.category?.title}</span>
               </div>
 
               <h1 className="text-4xl sm:text-5xl font-bold text-gray-900 mb-6 text-balance">
