@@ -72,20 +72,25 @@ export default function RecipesPage() {
         } | order(date desc)`
       )
       setRecipes(data)
+      console.log("Fetched recipes:", data)
     }
     fetchData()
   }, [])
+  // .filter((recipe) => {
+  //     if (selectedCategory === "All Categories") return true
 
+  //     const recipeCategory = recipe.category?.title?.toLowerCase().trim()
+  //     const selected = selectedCategory.toLowerCase().trim()
+
+  //     return recipeCategory === selected
+  //   })
   // ✅ Apply filters + sorting
   const filteredRecipes = recipes
     .filter((recipe) => {
-      if (selectedCategory === "All Categories") return true
-
-      const recipeCategory = recipe.category?.title?.toLowerCase().trim()
-      const selected = selectedCategory.toLowerCase().trim()
-
-      return recipeCategory === selected
-    })
+        if (selectedCategory === "All Categories") return true
+        if (!recipe.category?.title) return false
+        return recipe.category.title.toLowerCase().trim() === selectedCategory.toLowerCase().trim()
+      })
     .sort((a, b) => {
       switch (sortBy) {
         case "newest":
