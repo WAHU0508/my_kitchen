@@ -6,7 +6,7 @@ import Footer from "@//components/footer"
 import { client } from "@//sanity/lib/client"
 import imageUrlBuilder from "@sanity/image-url"
 import type { Image as SanityImage } from "sanity"
-import { Review } from "@//types/review" 
+import { Review } from "@//types/review"
 
 const builder = imageUrlBuilder(client)
 
@@ -14,8 +14,9 @@ function urlFor(source: SanityImage | undefined) {
   return source ? builder.image(source).url() : "/placeholder.svg"
 }
 
+// ✅ params is NOT a Promise
 type ReviewPageProps = {
-  params: Promise<{ slug: string }>
+  params: { slug: string }
 }
 
 type SlugResult = {
@@ -30,7 +31,8 @@ export async function generateStaticParams() {
 }
 
 export default async function ReviewPage({ params }: ReviewPageProps) {
-  const { slug } = await params
+  // ✅ no await needed
+  const { slug } = params
 
   const review: Review | null = await client.fetch(
     `*[_type == "smallAppliance" && slug.current == $slug][0]{
