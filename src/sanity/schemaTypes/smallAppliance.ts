@@ -19,7 +19,7 @@ export default defineType({
       type: "image",
       options: { hotspot: true },
     }),
-    defineField({ name: "category", title: "Category", type: "string" }),
+    defineField({name: "category", title: "Category", type: "reference", to: [{ type: "bigApplianceCategory" }],}),
     defineField({ name: "date", title: "Date", type: "date" }),
     defineField({ name: "rating", title: "Rating", type: "number" }),
     defineField({ name: "author", title: "Author", type: "string" }),
