@@ -70,11 +70,14 @@ export default function BigAppliancesPage() {
 
   // Apply filters
   const filteredAppliances = bigAppliances
-  .filter(
-    (appliance) =>
-      selectedCategory === "All Categories" ||
-      appliance.category?.title === selectedCategory
-  )
+  .filter((appliance) => {
+    if (selectedCategory === "All Categories") return true
+
+    const applianceCategory = appliance.category?.title?.toLowerCase().trim()
+    const selected = selectedCategory.toLowerCase().trim()
+
+    return applianceCategory === selected
+  })
   .sort((a, b) => {
     switch (sortBy) {
       case "newest":
@@ -89,7 +92,6 @@ export default function BigAppliancesPage() {
         return 0
     }
   })
-
   return (
     <div className="w-full flex flex-col items-center justify-center bg-white">
       {/* Header Section */}
