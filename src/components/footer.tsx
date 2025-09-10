@@ -87,6 +87,24 @@ export default function Footer() {
               </li>
             </ul>
           </div>
+          {/* Column 5: Social Media */}
+          <div>
+            <h4 className="font-semibold text-[#3a3a3a] mb-4 text-base">Follow Us</h4>
+            <div className="flex flex-row gap-4">
+              <Link href="https://www.instagram.com" target="_blank" className="text-[#3a3a3a] hover:text-[#cc7800] transition-colors">
+                <Instagram size={24} />
+              </Link>
+              <Link href="https://www.facebook.com" target="_blank" className="text-[#3a3a3a] hover:text-[#cc7800] transition-colors">
+                <Facebook size={24} />
+              </Link>
+              <Link href="https://www.pinterest.com" target="_blank" className="text-[#3a3a3a] hover:text-[#cc7800] transition-colors">
+                <Pinterest size={24} />
+              </Link>
+              <Link href="https://www.x.com" target="_blank" className="text-[#3a3a3a] hover:text-[#cc7800] transition-colors">
+                <X size={24} />
+              </Link>
+            </div>
+          </div>
         </div>
       </div>
 
