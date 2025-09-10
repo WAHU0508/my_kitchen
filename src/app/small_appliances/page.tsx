@@ -67,25 +67,28 @@ export default function SmallAppliancesPage() {
 
    // Apply filters
   const filteredAppliances = smallAppliances
-  .filter(
-    (appliance) =>
-      selectedCategory === "All Categories" ||
-      appliance.category?.title === selectedCategory
-  )
-    .sort((a, b) => {
-      switch (sortBy) {
-        case "newest":
-          return new Date(b.date).getTime() - new Date(a.date).getTime()
-        case "oldest":
-          return new Date(a.date).getTime() - new Date(b.date).getTime()
-        case "rating":
-          return b.rating - a.rating
-        case "title":
-          return a.title.localeCompare(b.title)
-        default:
-          return 0
-      }
-    })
+  .filter((appliance) => {
+    if (selectedCategory === "All Categories") return true
+
+    const applianceCategory = appliance.category?.title?.toLowerCase().trim()
+    const selected = selectedCategory.toLowerCase().trim()
+
+    return applianceCategory === selected
+  })
+  .sort((a, b) => {
+    switch (sortBy) {
+      case "newest":
+        return new Date(b.date).getTime() - new Date(a.date).getTime()
+      case "oldest":
+        return new Date(a.date).getTime() - new Date(b.date).getTime()
+      case "rating":
+        return b.rating - a.rating
+      case "title":
+        return a.title.localeCompare(b.title)
+      default:
+        return 0
+    }
+  })
 
   return (
     <div className="w-full flex flex-col items-center justify-center bg-white">
