@@ -190,7 +190,7 @@ export default function SmallAppliancesPage() {
                       {new Date(appliance.date).toDateString()}
                     </span>
                     <Link
-                      href={`/small_appliances/${appliance.slug?.current || appliance._id}`}
+                      href={`/small_appliances/${appliance.slug || appliance._id}`}
                       className="text-[#cc7800] font-medium hover:text-[#b36b00] flex items-center gap-1"
                     >
                       Read Review →
