@@ -5,16 +5,14 @@ import Header from "@//components/header"
 import Footer from "@//components/footer"
 import { client } from "@//sanity/lib/client"
 import imageUrlBuilder from "@sanity/image-url"
-import type { Image as SanityImage } from "sanity"
 import { Review } from "@//types/review"
 
 const builder = imageUrlBuilder(client)
 
-function urlFor(source: SanityImage | undefined) {
+function urlFor(source: any) {
   return source ? builder.image(source).url() : "/placeholder.svg"
 }
 
-// ✅ params is NOT a Promise
 type ReviewPageProps = {
   params: { slug: string }
 }
@@ -31,7 +29,6 @@ export async function generateStaticParams() {
 }
 
 export default async function ReviewPage({ params }: ReviewPageProps) {
-  // ✅ no await needed
   const { slug } = params
 
   const review: Review | null = await client.fetch(
@@ -41,7 +38,9 @@ export default async function ReviewPage({ params }: ReviewPageProps) {
       title,
       description,
       image,
-      category,
+      category->{
+        title
+      },
       date,
       rating,
       author,
@@ -84,7 +83,7 @@ export default async function ReviewPage({ params }: ReviewPageProps) {
 
             <div className="text-center">
               <div className="inline-flex items-center gap-2 bg-[#cc7800] text-white px-4 py-2 rounded-full text-sm font-medium mb-6">
-                <span>{review.category}</span>
+                <span>{review.category?.title}</span>
               </div>
 
               <h1 className="text-4xl sm:text-5xl font-bold text-gray-900 mb-6 text-balance">
@@ -143,7 +142,7 @@ export default async function ReviewPage({ params }: ReviewPageProps) {
               {review.content?.introduction}
             </div>
 
-            {/* Content Sections */}
+            {/* Sections */}
             {review.content?.sections?.map((section, index) => (
               <div key={index} className="mb-8">
                 <h2 className="text-2xl font-bold text-gray-900 mb-4">
@@ -155,7 +154,7 @@ export default async function ReviewPage({ params }: ReviewPageProps) {
               </div>
             ))}
 
-            {/* Pros and Cons */}
+            {/* Pros & Cons */}
             <div className="grid md:grid-cols-2 gap-8 my-12">
               <div className="bg-green-50 p-6 rounded-xl border border-green-200">
                 <h3 className="text-xl font-bold text-green-800 mb-4 flex items-center gap-2">
@@ -190,6 +189,7 @@ export default async function ReviewPage({ params }: ReviewPageProps) {
               </div>
             </div>
 
+            {/* Final Verdict */}
             <div className="bg-[#cc7800]/10 p-8 rounded-xl border border-[#cc7800]/20 my-12">
               <h3 className="text-2xl font-bold text-gray-900 mb-4">
                 Final Verdict
