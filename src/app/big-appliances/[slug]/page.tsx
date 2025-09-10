@@ -31,40 +31,25 @@ export async function generateStaticParams() {
 
 export default async function ReviewPage({ params }: ReviewPageProps) {
   const { slug } = await params
+
   const review: Review | null = await client.fetch(
-  `*[_type == "bigAppliance" && slug.current == $slug][0]{
-    _id,
-    "slug": slug.current,
-    title,
-    description,
-    image,
-    category->{
-      title
-    },
-    date,
-    rating,
-    author,
-    readTime,
-    content
-  }`,
-  { slug }
-)
-  // const review: Review | null = await client.fetch(
-  //   `*[_type == "bigAppliance" && slug.current == $slug][0]{
-  //     _id,
-  //     "slug": slug.current,
-  //     title,
-  //     description,
-  //     image,
-  //     category,
-  //     date,
-  //     rating,
-  //     author,
-  //     readTime,
-  //     content
-  //   }`,
-  //   { slug }
-  // )
+    `*[_type == "bigAppliance" && slug.current == $slug][0]{
+      _id,
+      "slug": slug.current,
+      title,
+      description,
+      image,
+      category->{
+        title
+      },
+      date,
+      rating,
+      author,
+      readTime,
+      content
+    }`,
+    { slug }
+  )
 
   if (!review) {
     notFound()
