@@ -173,7 +173,7 @@ export default function SmallAppliancesPage() {
                   />
                   <div className="absolute top-4 left-4">
                     <span className="bg-[#cc7800] text-white px-3 py-1 rounded-full text-xs font-medium">
-                      {appliance.category}
+                      {appliance.category?.title}
                     </span>
                   </div>
                 </div>
