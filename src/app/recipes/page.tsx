@@ -15,7 +15,6 @@ type Recipe = {
   image?: { asset: { url: string } }
   category?: {
     title: string
-    icon?: string
   }
   date: string
   rating: number
@@ -63,8 +62,7 @@ export default function RecipesPage() {
           difficulty,
           chef,
           category->{
-            title,
-            icon
+            title
           },
           image {
             asset->{
@@ -82,8 +80,10 @@ export default function RecipesPage() {
   const filteredRecipes = recipes
     .filter((recipe) => {
       if (selectedCategory === "All Categories") return true
+
       const recipeCategory = recipe.category?.title?.toLowerCase().trim()
       const selected = selectedCategory.toLowerCase().trim()
+
       return recipeCategory === selected
     })
     .sort((a, b) => {
