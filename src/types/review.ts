@@ -19,7 +19,9 @@ export type Review = {
   title: string;
   description: string;
   image?: Image;
-  category: string;
+  category?: {
+    title: string;
+  };
   date: string;
   rating: number;
   author: string;
