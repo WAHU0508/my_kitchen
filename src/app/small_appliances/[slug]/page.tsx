@@ -31,23 +31,41 @@ export async function generateStaticParams() {
 
 export default async function ReviewPage({ params }: ReviewPageProps) {
   const { slug } = await params
-
   const review: Review | null = await client.fetch(
-    `*[_type == "smallAppliance" && slug.current == $slug][0]{
-      _id,
-      "slug": slug.current,
-      title,
-      description,
-      image,
-      category,
-      date,
-      rating,
-      author,
-      readTime,
-      content
-    }`,
-    { slug }
-  )
+  `*[_type == "smallAppliance" && slug.current == $slug][0]{
+    _id,
+    "slug": slug.current,
+    title,
+    description,
+    image,
+    category->{
+      title
+    },
+    date,
+    rating,
+    author,
+    readTime,
+    content
+  }`,
+  { slug }
+)
+  
+  // const review: Review | null = await client.fetch(
+  //   `*[_type == "smallAppliance" && slug.current == $slug][0]{
+  //     _id,
+  //     "slug": slug.current,
+  //     title,
+  //     description,
+  //     image,
+  //     category,
+  //     date,
+  //     rating,
+  //     author,
+  //     readTime,
+  //     content
+  //   }`,
+  //   { slug }
+  // )
 
   if (!review) {
     notFound()
@@ -82,7 +100,7 @@ export default async function ReviewPage({ params }: ReviewPageProps) {
 
             <div className="text-center">
               <div className="inline-flex items-center gap-2 bg-[#cc7800] text-white px-4 py-2 rounded-full text-sm font-medium mb-6">
-                <span>{review.category}</span>
+                <span>{review.category?.title}</span>
               </div>
 
               <h1 className="text-4xl sm:text-5xl font-bold text-gray-900 mb-6 text-balance">
