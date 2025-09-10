@@ -4,6 +4,18 @@ import Link from "next/link"
 import logo from "@//assets/logo.png"
 import { Instagram, Facebook, Pinterest, X } from "lucide-react"
 
+const PinterestIcon = () => (
+  <svg
+    width="24"
+    height="24"
+    viewBox="0 0 24 24"
+    fill="currentColor"
+    xmlns="http://www.w3.org/2000/svg"
+  >
+    {/* Paste actual Pinterest SVG path here */}
+    <path d="M..." />
+  </svg>
+);
 export default function Footer() {
   return (
     <footer className="mt-6 w-full bg-[#fff8ea]">
@@ -99,7 +111,7 @@ export default function Footer() {
                 <Facebook size={24} />
               </Link>
               <Link href="https://www.pinterest.com" target="_blank" className="text-[#3a3a3a] hover:text-[#cc7800] transition-colors">
-                <Pinterest size={24} />
+                <PinterestIcon size={24} />
               </Link>
               <Link href="https://www.x.com" target="_blank" className="text-[#3a3a3a] hover:text-[#cc7800] transition-colors">
                 <X size={24} />
