@@ -21,7 +21,7 @@ type Appliance = {
 }
 
 export default function BigAppliancesPage() {
-  const [selectedCategory, setSelectedCategory] = useState("all")
+  const [selectedCategory, setSelectedCategory] = useState("All Categories")
   const [sortBy, setSortBy] = useState("newest")
   const [bigAppliances, setBigAppliances] = useState<Appliance[]>([])
   const [categories, setCategories] = useState<{ title: string; icon?: string }[]>([])
