@@ -62,7 +62,9 @@ export default function RecipesPage() {
           difficulty,
           chef,
           category->{
-            title
+            _id,
+            title,
+            icon
           },
           image {
             asset->{
