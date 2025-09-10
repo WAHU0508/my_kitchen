@@ -13,7 +13,9 @@ type Appliance = {
   slug?: { current: string }
   description: string
   image?: { asset: { url: string } }
-  category?: { title: string; slug?: { current: string } }
+  category->{
+      title
+    },
   date: string
   rating: number
 }
@@ -22,10 +24,7 @@ export default function BigAppliancesPage() {
   const [selectedCategory, setSelectedCategory] = useState("all")
   const [sortBy, setSortBy] = useState("newest")
   const [bigAppliances, setBigAppliances] = useState<Appliance[]>([])
-  const [categories, setCategories] = useState<
-    { title: string; slug: { current: string }; icon?: string }[]
-  >([])
-
+  const [categories, setCategories] = useState<{ title: string; icon?: string }[]>([])
   // Fetch categories from Sanity
   useEffect(() => {
     const fetchCategories = async () => {
@@ -145,9 +144,9 @@ export default function BigAppliancesPage() {
             {categories.map((category, index) => (
               <button
                 key={index}
-                onClick={() => setSelectedCategory(category.slug.current)}
+                onClick={() => setSelectedCategory(category.title)}
                 className={`group flex items-center gap-2 px-4 py-2 rounded-full border transition-all duration-300 ${
-                  selectedCategory === category.slug.current
+                  selectedCategory === category.title
                     ? "bg-[#cc7800] text-white border-[#cc7800] shadow-md"
                     : "bg-white text-gray-700 border-gray-300 hover:border-[#cc7800] hover:text-[#cc7800]"
                 }`}
