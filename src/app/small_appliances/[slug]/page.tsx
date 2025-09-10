@@ -5,16 +5,17 @@ import Header from "@//components/header"
 import Footer from "@//components/footer"
 import { client } from "@//sanity/lib/client"
 import imageUrlBuilder from "@sanity/image-url"
-import { Review } from "@//types/review"
+import type { Image as SanityImage } from "sanity"
+import { Review } from "@//types/review" 
 
 const builder = imageUrlBuilder(client)
 
-function urlFor(source: any) {
+function urlFor(source: SanityImage | undefined) {
   return source ? builder.image(source).url() : "/placeholder.svg"
 }
 
 type ReviewPageProps = {
-  params: { slug: string }
+  params: Promise<{ slug: string }>
 }
 
 type SlugResult = {
@@ -29,26 +30,42 @@ export async function generateStaticParams() {
 }
 
 export default async function ReviewPage({ params }: ReviewPageProps) {
-  const { slug } = params
-
+  const { slug } = await params
   const review: Review | null = await client.fetch(
-    `*[_type == "smallAppliance" && slug.current == $slug][0]{
-      _id,
-      "slug": slug.current,
-      title,
-      description,
-      image,
-      category->{
-        title
-      },
-      date,
-      rating,
-      author,
-      readTime,
-      content
-    }`,
-    { slug }
-  )
+  `*[_type == "smallAppliance" && slug.current == $slug][0]{
+    _id,
+    "slug": slug.current,
+    title,
+    description,
+    image,
+    category->{
+      title
+    },
+    date,
+    rating,
+    author,
+    readTime,
+    content
+  }`,
+  { slug }
+)
+  
+  // const review: Review | null = await client.fetch(
+  //   `*[_type == "smallAppliance" && slug.current == $slug][0]{
+  //     _id,
+  //     "slug": slug.current,
+  //     title,
+  //     description,
+  //     image,
+  //     category,
+  //     date,
+  //     rating,
+  //     author,
+  //     readTime,
+  //     content
+  //   }`,
+  //   { slug }
+  // )
 
   if (!review) {
     notFound()
@@ -142,7 +159,7 @@ export default async function ReviewPage({ params }: ReviewPageProps) {
               {review.content?.introduction}
             </div>
 
-            {/* Sections */}
+            {/* Content Sections */}
             {review.content?.sections?.map((section, index) => (
               <div key={index} className="mb-8">
                 <h2 className="text-2xl font-bold text-gray-900 mb-4">
@@ -154,7 +171,7 @@ export default async function ReviewPage({ params }: ReviewPageProps) {
               </div>
             ))}
 
-            {/* Pros & Cons */}
+            {/* Pros and Cons */}
             <div className="grid md:grid-cols-2 gap-8 my-12">
               <div className="bg-green-50 p-6 rounded-xl border border-green-200">
                 <h3 className="text-xl font-bold text-green-800 mb-4 flex items-center gap-2">
@@ -189,7 +206,6 @@ export default async function ReviewPage({ params }: ReviewPageProps) {
               </div>
             </div>
 
-            {/* Final Verdict */}
             <div className="bg-[#cc7800]/10 p-8 rounded-xl border border-[#cc7800]/20 my-12">
               <h3 className="text-2xl font-bold text-gray-900 mb-4">
                 Final Verdict
