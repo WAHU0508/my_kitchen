@@ -32,11 +32,10 @@ export default function BigAppliancesPage() {
       const cats = await client.fetch(
         `*[_type == "bigApplianceCategory"]{
           title,
-          slug,
           icon
         }`
       )
-      setCategories([{ title: "All Categories", slug: { current: "all" }, icon: "📋" }, ...cats])
+      setCategories([{ title: "All Categories", icon: "📋" }, ...cats])
     }
 
     fetchCategories()
@@ -72,25 +71,25 @@ export default function BigAppliancesPage() {
 
   // Apply filters
   const filteredAppliances = bigAppliances
-    .filter(
-      (appliance) =>
-        selectedCategory === "all" ||
-        appliance.category?.slug?.current === selectedCategory
-    )
-    .sort((a, b) => {
-      switch (sortBy) {
-        case "newest":
-          return new Date(b.date).getTime() - new Date(a.date).getTime()
-        case "oldest":
-          return new Date(a.date).getTime() - new Date(b.date).getTime()
-        case "rating":
-          return b.rating - a.rating
-        case "title":
-          return a.title.localeCompare(b.title)
-        default:
-          return 0
-      }
-    })
+  .filter(
+    (appliance) =>
+      selectedCategory === "All Categories" ||
+      appliance.category?.title === selectedCategory
+  )
+  .sort((a, b) => {
+    switch (sortBy) {
+      case "newest":
+        return new Date(b.date).getTime() - new Date(a.date).getTime()
+      case "oldest":
+        return new Date(a.date).getTime() - new Date(b.date).getTime()
+      case "rating":
+        return b.rating - a.rating
+      case "title":
+        return a.title.localeCompare(b.title)
+      default:
+        return 0
+    }
+  })
 
   return (
     <div className="w-full flex flex-col items-center justify-center bg-white">
