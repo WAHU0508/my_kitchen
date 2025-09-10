@@ -2,7 +2,7 @@
 
 import { defineType } from "sanity"
 
-export const recipeCategory = defineType({
+export default defineType({
   name: "recipeCategory",
   title: "Recipe Category",
   type: "document",
