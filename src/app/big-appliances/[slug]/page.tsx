@@ -39,7 +39,9 @@ export default async function ReviewPage({ params }: ReviewPageProps) {
       title,
       description,
       image,
-      category,
+      category->{
+        title
+      },
       date,
       rating,
       author,
