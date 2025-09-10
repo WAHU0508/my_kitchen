@@ -5,7 +5,7 @@ import Image from "next/image"
 import Link from "next/link"
 import Header from "@//components/header"
 import Footer from "@//components/footer"
-import { client } from "@//sanity/lib/client"  // ✅ Import Sanity client
+import { client } from "@//sanity/lib/client"
 
 type Appliance = {
   _id: string
@@ -13,16 +13,36 @@ type Appliance = {
   slug?: { current: string }
   description: string
   image?: { asset: { url: string } }
-  category: string
+  category?: { title: string; slug?: { current: string } }
   date: string
   rating: number
 }
 
 export default function BigAppliancesPage() {
-  const [selectedCategory, setSelectedCategory] = useState("All Categories")
+  const [selectedCategory, setSelectedCategory] = useState("all")
   const [sortBy, setSortBy] = useState("newest")
   const [bigAppliances, setBigAppliances] = useState<Appliance[]>([])
+  const [categories, setCategories] = useState<
+    { title: string; slug: { current: string }; icon?: string }[]
+  >([])
 
+  // Fetch categories from Sanity
+  useEffect(() => {
+    const fetchCategories = async () => {
+      const cats = await client.fetch(
+        `*[_type == "bigApplianceCategory"]{
+          title,
+          slug,
+          icon
+        }`
+      )
+      setCategories([{ title: "All Categories", slug: { current: "all" }, icon: "📋" }, ...cats])
+    }
+
+    fetchCategories()
+  }, [])
+
+  // Fetch appliances from Sanity
   useEffect(() => {
     const fetchData = async () => {
       const data = await client.fetch(
@@ -31,9 +51,12 @@ export default function BigAppliancesPage() {
           title,
           slug,
           description,
-          category,
           date,
           rating,
+          category->{
+            title,
+            slug
+          },
           image {
             asset->{
               url
@@ -47,21 +70,12 @@ export default function BigAppliancesPage() {
     fetchData()
   }, [])
 
-  const categories = [
-    { name: "All Categories", count: 87, icon: "📋" },
-    { name: "Refrigerators", count: 24, icon: "❄️" },
-    { name: "Ranges & Ovens", count: 18, icon: "🔥" },
-    { name: "Dishwashers", count: 15, icon: "🧽" },
-    { name: "Cooktops", count: 12, icon: "🍳" },
-    { name: "Microwaves", count: 10, icon: "⚡" },
-    { name: "Wine Coolers", count: 8, icon: "🍷" },
-  ]
-
+  // Apply filters
   const filteredAppliances = bigAppliances
     .filter(
       (appliance) =>
-        selectedCategory === "All Categories" ||
-        appliance.category === selectedCategory
+        selectedCategory === "all" ||
+        appliance.category?.slug?.current === selectedCategory
     )
     .sort((a, b) => {
       switch (sortBy) {
@@ -132,24 +146,15 @@ export default function BigAppliancesPage() {
             {categories.map((category, index) => (
               <button
                 key={index}
-                onClick={() => setSelectedCategory(category.name)}
+                onClick={() => setSelectedCategory(category.slug.current)}
                 className={`group flex items-center gap-2 px-4 py-2 rounded-full border transition-all duration-300 ${
-                  selectedCategory === category.name
+                  selectedCategory === category.slug.current
                     ? "bg-[#cc7800] text-white border-[#cc7800] shadow-md"
                     : "bg-white text-gray-700 border-gray-300 hover:border-[#cc7800] hover:text-[#cc7800]"
                 }`}
               >
                 <span className="text-sm">{category.icon}</span>
-                <span className="font-medium text-sm">{category.name}</span>
-                <span
-                  className={`text-xs px-2 py-0.5 rounded-full ${
-                    selectedCategory === category.name
-                      ? "bg-white/20 text-white"
-                      : "bg-gray-100 text-gray-600 group-hover:bg-[#cc7800]/10 group-hover:text-[#cc7800]"
-                  }`}
-                >
-                  {category.count}
-                </span>
+                <span className="font-medium text-sm">{category.title}</span>
               </button>
             ))}
           </div>
@@ -176,7 +181,7 @@ export default function BigAppliancesPage() {
                   <div className="absolute inset-0 bg-gradient-to-t from-black/20 to-transparent"></div>
                   <div className="absolute top-4 left-4">
                     <span className="bg-[#cc7800] text-white px-3 py-1 rounded-full text-xs font-medium">
-                      {appliance.category}
+                      {appliance.category?.title}
                     </span>
                   </div>
                   <div className="absolute top-4 right-4">
