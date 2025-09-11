@@ -76,8 +76,8 @@ export default function RecipesPage() {
     setRecipes(data)
     console.log("Fetched recipes with categories:", data)
     
-    // Let's also check what categories we're getting
-    data.forEach(recipe => {
+    // Let's also check what categories we're getting - ADDED TYPE ANNOTATION
+    data.forEach((recipe: Recipe) => {
       console.log(`Recipe: ${recipe.title}, Category:`, recipe.category)
     })
   }
