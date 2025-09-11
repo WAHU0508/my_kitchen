@@ -50,6 +50,11 @@ export default function Footer() {
                 </Link>
               </li>
               <li>
+                <Link href="/guides" className="text-[#3a3a3a] hover:text-[#cc7800] transition-colors">
+                  Guides
+                </Link>
+              </li>
+              <li>
                 <Link href="/recipes" className="text-[#3a3a3a] hover:text-[#cc7800] transition-colors">
                   Recipes
                 </Link>
