@@ -228,7 +228,7 @@ export default function RecipesPage() {
                 <div className="p-6">
                   <div className="flex items-center justify-between mb-2">
                     <span className="text-sm text-[#cc7800] font-medium">
-                      {recipe.category?.title || "Uncategorized"}
+                      {recipe.category || "Uncategorized"}
                     </span>
                     <div className="flex items-center gap-1">
                       <span className="text-sm font-medium">{recipe.rating}</span>
