@@ -128,7 +128,7 @@ export default function SmallAppliancesPage() {
                 id="sort"
                 value={sortBy}
                 onChange={(e) => setSortBy(e.target.value)}
-                className="border border-gray-300 rounded-lg px-3 py-2 text-sm focus:ring-2 focus:ring-[#cc7800]"
+                className="text-black border border-gray-300 rounded-lg px-3 py-2 text-sm focus:ring-2 focus:ring-[#cc7800]"
               >
                 <option value="newest">Newest First</option>
                 <option value="oldest">Oldest First</option>
