@@ -111,7 +111,7 @@ export default async function RecipePage({ params }: RecipePageProps) {
             </Link>
             <div className="flex items-center gap-2 mb-2">
               <span className="bg-orange-600 text-white px-3 py-1 rounded-full text-sm font-medium">
-                {recipe.category?.title || "Uncategorized"}
+                {recipe.category}
               </span>
               <span className="bg-white/20 text-white px-3 py-1 rounded-full text-sm font-medium">
                 {recipe.difficulty}
