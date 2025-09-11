@@ -8,11 +8,11 @@ import RecipeClient from "@//components/recipies_component"
 import { client } from "@//sanity/lib/client"
 import { Recipe } from "@//types/recipe"
 
-type SanityImageWithUrl = {
-  asset?: {
-    url?: string
-  }
-}
+// type SanityImageWithUrl = {
+//   asset?: {
+//     url?: string
+//   }
+// }
 
 // type Recipe = {
 //   _id: string
