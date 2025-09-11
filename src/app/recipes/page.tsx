@@ -150,6 +150,10 @@ export default function RecipesPage() {
                   className="w-full pl-10 pr-4 py-3 rounded-full border-0 shadow-lg focus:ring-2 focus:ring-[#cc7800] text-gray-900"
                 />
               </div>
+              <button className="bg-white text-[#cc7800] hover:bg-[#cc7800] hover:text-white font-semibold px-8 py-3 rounded-full transition-all duration-300 shadow-lg flex items-center gap-2">
+                <ChefHat className="w-5 h-5" />
+                Browse All
+              </button>
             </div>
           </div>
         </div>
