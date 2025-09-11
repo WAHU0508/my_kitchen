@@ -57,28 +57,28 @@ export default async function RecipePage({ params }: RecipePageProps) {
   const { slug } = await params
 
   const recipe: Recipe | null = await client.fetch(
-    `*[_type=="recipe" && slug.current==$slug][0]{
-      _id,
-      title,
-      description,
-      rating,
-      reviews,
-      cookTime,
-      prepTime,
-      servings,
-      difficulty,
-      category,
-      chef,
-      ingredients,
-      instructions,
-      nutrition,
-      tips,
-      image {
-        asset->{ url }
-      }
-    }`,
-    { slug }
-  )
+  `*[_type=="recipe" && slug.current==$slug][0]{
+    _id,
+    title,
+    description,
+    rating,
+    reviews,
+    cookTime,
+    prepTime,
+    servings,
+    difficulty->title,  // deref to string
+    category->title,    // deref to string
+    chef->name,         // deref to string
+    ingredients,
+    instructions,
+    nutrition,
+    tips,
+    image {
+      asset->{ url }
+    }
+  }`,
+  { slug }
+)
 
   if (!recipe) {
     notFound()
