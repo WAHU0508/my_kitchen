@@ -7,24 +7,24 @@ import { Star, Clock, Users, ChefHat, Search, Filter } from "lucide-react"
 import Header from "@//components/header"
 import Footer from "@//components/footer"
 import { client } from "@//sanity/lib/client"
-
-type Recipe = {
-  _id: string
-  title: string
-  slug?: { current: string }
-  description: string
-  image?: { asset: { url: string } }
-  category?: {
-    title: string
-  }
-  date: string
-  rating: number
-  reviews: number
-  cookTime: string
-  servings: number
-  difficulty: string
-  chef: string
-}
+import { Recipe } from "@//types/recipe"
+// type Recipe = {
+//   _id: string
+//   title: string
+//   slug?: { current: string }
+//   description: string
+//   image?: { asset: { url: string } }
+//   category?: {
+//     title: string
+//   }
+//   date: string
+//   rating: number
+//   reviews: number
+//   cookTime: string
+//   servings: number
+//   difficulty: string
+//   chef: string
+// }
 
 export default function RecipesPage() {
   const [selectedCategory, setSelectedCategory] = useState("All Categories")
