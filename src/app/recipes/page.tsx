@@ -99,19 +99,19 @@ export default function RecipesPage() {
       )
     })
     .sort((a, b) => {
-      switch (sortBy) {
-        case "newest":
-          return new Date(b.date).getTime() - new Date(a.date).getTime()
-        case "oldest":
-          return new Date(a.date).getTime() - new Date(b.date).getTime()
-        case "rating":
-          return b.rating - a.rating
-        case "title":
-          return a.title.localeCompare(b.title)
-        default:
-          return 0
-      }
-    })
+    switch (sortBy) {
+    case "newest":
+      return new Date(b.date || 0).getTime() - new Date(a.date || 0).getTime()
+    case "oldest":
+      return new Date(a.date || 0).getTime() - new Date(b.date || 0).getTime()
+    case "rating":
+      return b.rating - a.rating
+    case "title":
+      return a.title.localeCompare(b.title)
+    default:
+      return 0
+  }
+})
 
   return (
     <div className="min-h-screen bg-white">
