@@ -1,24 +1,30 @@
 export type Recipe = {
-  _id: number
+  _id: string
   title: string
+  slug?: { current: string }
   description: string
-  imageUrl: string
+  image?: { asset: { url: string } }
+  category?: {
+    _id: string
+    title: string
+    icon?: string
+  }
+  date?: string
   rating: number
   reviews: number
   cookTime: string
-  prepTime: string
+  prepTime?: string
   servings: number
   difficulty: string
-  category: string
   chef: string
-  ingredients: string[]
-  instructions: string[]
-  nutrition: {
+  ingredients?: string[]
+  instructions?: string[]
+  nutrition?: {
     calories: number
     protein: string
     carbs: string
     fat: string
     fiber: string
   }
-  tips: string[]
+  tips?: string[]
 }
