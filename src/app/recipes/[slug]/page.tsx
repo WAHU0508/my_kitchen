@@ -24,7 +24,9 @@ type Recipe = {
   prepTime: string
   servings: number
   difficulty: string
-  category: string
+  category?: {
+    title: string;
+  }
   chef: string
   ingredients: string[]
   instructions: string[]
@@ -67,7 +69,8 @@ export default async function RecipePage({ params }: RecipePageProps) {
     prepTime,
     servings,
     difficulty,
-    category->title,   
+    category->{
+    title},   
     chef,         
     ingredients,
     instructions,
