@@ -5,9 +5,7 @@ export type Recipe = {
   description: string
   image?: { asset: { url: string } }
   category?: {
-    _id: string
     title: string
-    icon?: string
   }
   date?: string
   rating: number
