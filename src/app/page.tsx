@@ -6,6 +6,7 @@ import Categories from "@//components/categories_section";
 import Header from '@//components/header'
 import Footer from '@//components/footer'
 import Articles from '@//components/articles_section'
+import Link from "next/link"
 
 export default function HomePage() {
     return (
@@ -35,15 +36,15 @@ export default function HomePage() {
                       </p>
                       {/* Buttons */}
                      <div className="flex flex-row md:gap-6 gap-4 justify-center items-center">
-                        <button className="bg-[#cc7800] hover:bg-[#b36b00] text-white font-semibold md:px-4 px-4 md:py-3 py-2 rounded-lg transition-colors duration-300 shadow-lg flex items-center justify-center gap-2 md:text-sm text-[12px] max-w-[200px] sm:max-w-none">
+                        <Link href="/recipes" className="bg-[#cc7800] hover:bg-[#b36b00] text-white font-semibold md:px-4 px-4 md:py-3 py-2 rounded-lg transition-colors duration-300 shadow-lg flex items-center justify-center gap-2 md:text-sm text-[12px] max-w-[200px] sm:max-w-none">
                           Explore Recipes
                           <svg className="w-4 h-4 sm:w-5 sm:h-5" fill="none" stroke="currentColor" viewBox="0 0 24 24">
                             <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M14 5l7 7m0 0l-7 7m7-7H3" />
                           </svg>
-                        </button>
-                        <button className="border border-white hover:bg-gray-100 text-white hover:text-gray-900 font-semibold md:px-4 px-4 md:py-3 py-2 rounded-lg transition-colors duration-300 shadow-lg md:text-sm text-[12px] max-w-[200px] sm:max-w-none">
+                        </Link>
+                        <Link href="/big-appliances" className="border border-white hover:bg-gray-100 text-white hover:text-gray-900 font-semibold md:px-4 px-4 md:py-3 py-2 rounded-lg transition-colors duration-300 shadow-lg md:text-sm text-[12px] max-w-[200px] sm:max-w-none">
                           Product Reviews
-                        </button>
+                        </Link>
                       </div>
                     </div>
                </div>
