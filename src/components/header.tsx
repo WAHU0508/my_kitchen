@@ -24,6 +24,7 @@ export default function Header() {
         <nav className="flex flex-row items-center space-x-8 lg:space-x-12 text-black md:text-[16px]">
           <Link href="/big-appliances" className="hover:text-[#cc7800] cursor-pointer transition-colors duration-200">Big Appliances</Link>
           <Link href="/small_appliances" className="hover:text-[#cc7800] cursor-pointer transition-colors duration-200">Small Appliances</Link>
+          <Link href="/guides" className="hover:text-[#cc7800] cursor-pointer transition-colors duration-200">Guides</Link>
           <Link href="/recipes" className="hover:text-[#cc7800] cursor-pointer transition-colors duration-200">Recipes</Link>
         </nav>
 
@@ -73,6 +74,12 @@ export default function Header() {
                 className="text-black hover:text-orange-200 transition-colors duration-200 py-2"
               >
                 Small Appliances
+              </Link>
+              <Link
+                href="/guides"
+                className="text-black hover:text-orange-200 transition-colors duration-200 py-2"
+              >
+                Guides
               </Link>
               <Link href="/recipes" className="text-black hover:text-orange-200 transition-colors duration-200 py-2">
                 Recipes
