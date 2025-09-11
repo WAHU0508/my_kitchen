@@ -82,11 +82,11 @@ export default function RecipesPage() {
       if (selectedCategory === "All Categories") return true
       
       // Check if category exists and has a title
-      if (!recipe.category || !recipe.category.title) {
+      if (!recipe.category) {
         return false
       }
       
-      const recipeCategory = recipe.category.title.toLowerCase().trim()
+      const recipeCategory = recipe.category.toLowerCase().trim()
       const selected = selectedCategory.toLowerCase().trim()
       
       return recipeCategory === selected
