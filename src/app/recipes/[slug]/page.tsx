@@ -66,9 +66,9 @@ export default async function RecipePage({ params }: RecipePageProps) {
     cookTime,
     prepTime,
     servings,
-    difficulty->title,  // deref to string
-    category->title,    // deref to string
-    chef->name,         // deref to string
+    difficulty->title,
+    category->title,   
+    chef->name,         
     ingredients,
     instructions,
     nutrition,
