@@ -70,8 +70,7 @@ export default async function RecipePage({ params }: RecipePageProps) {
     prepTime,
     servings,
     difficulty,
-    category->{
-    title},   
+    "category": category->title,   
     chef,         
     ingredients,
     instructions,
