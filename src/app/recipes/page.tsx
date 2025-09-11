@@ -47,37 +47,42 @@ export default function RecipesPage() {
 
   // ✅ Fetch recipes
   useEffect(() => {
-    const fetchData = async () => {
-      const data = await client.fetch(
-        `*[_type == "recipe"]{
+  const fetchData = async () => {
+    const data = await client.fetch(
+      `*[_type == "recipe"]{
+        _id,
+        title,
+        slug,
+        description,
+        date,
+        rating,
+        reviews,
+        cookTime,
+        servings,
+        difficulty,
+        chef,
+        category->{
           _id,
           title,
-          slug,
-          description,
-          date,
-          rating,
-          reviews,
-          cookTime,
-          servings,
-          difficulty,
-          chef,
-          category->{
-            _id,
-            title,
-            icon
-          },
-          image {
-            asset->{
-              url
-            }
+          icon
+        },
+        image {
+          asset->{
+            url
           }
-        } | order(date desc)`
-      )
-      setRecipes(data)
-      console.log("Fetched recipes:", data)
-    }
-    fetchData()
-  }, [])
+        }
+      } | order(date desc)`
+    )
+    setRecipes(data)
+    console.log("Fetched recipes with categories:", data)
+    
+    // Let's also check what categories we're getting
+    data.forEach(recipe => {
+      console.log(`Recipe: ${recipe.title}, Category:`, recipe.category)
+    })
+  }
+  fetchData()
+}, [])
   // .filter((recipe) => {
   //     if (selectedCategory === "All Categories") return true
 
@@ -88,28 +93,47 @@ export default function RecipesPage() {
   //   })
   // ✅ Apply filters + sorting
   const filteredRecipes = recipes
-    .filter((recipe) => {
-        if (selectedCategory === "All Categories") return true
-        if (!recipe.category?.title) return false
-        return recipe.category.title.toLowerCase().trim() === selectedCategory.toLowerCase().trim()
-      })
-    .sort((a, b) => {
-      switch (sortBy) {
-        case "newest":
-          return new Date(b.date).getTime() - new Date(a.date).getTime()
-        case "oldest":
-          return new Date(a.date).getTime() - new Date(b.date).getTime()
-        case "rating":
-          return b.rating - a.rating
-        case "title":
-          return a.title.localeCompare(b.title)
-        default:
-          return 0
-      }
-    })
+  .filter((recipe) => {
+    if (selectedCategory === "All Categories") return true
+    
+    // Check if category exists and has a title
+    if (!recipe.category || !recipe.category.title) {
+      console.log(`Recipe "${recipe.title}" has no category or category title`)
+      return false
+    }
+    
+    const recipeCategory = recipe.category.title.toLowerCase().trim()
+    const selected = selectedCategory.toLowerCase().trim()
+    
+    console.log(`Comparing: "${recipeCategory}" with "${selected}"`)
+    return recipeCategory === selected
+  })
+  .sort((a, b) => {
+    switch (sortBy) {
+      case "newest":
+        return new Date(b.date).getTime() - new Date(a.date).getTime()
+      case "oldest":
+        return new Date(a.date).getTime() - new Date(b.date).getTime()
+      case "rating":
+        return b.rating - a.rating
+      case "title":
+        return a.title.localeCompare(b.title)
+      default:
+        return 0
+    }
+  })
+  const DebugCategories = () => {
+  useEffect(() => {
+    console.log("All categories:", categories)
+    console.log("All recipes:", recipes)
+  }, [categories, recipes])
+  
+  return null
+}
 
   return (
     <div className="w-full flex flex-col items-center justify-center bg-white">
+      <DebugCategories />
       {/* Header */}
       <div className="w-full relative">
         <div className="w-full fixed top-0 left-0 z-20">
