@@ -4,9 +4,7 @@ export type Recipe = {
   slug?: { current: string }
   description: string
   image?: { asset: { url: string } }
-  category?: {
-    title: string
-  }
+  category: string
   date?: string
   rating: number
   reviews: number
