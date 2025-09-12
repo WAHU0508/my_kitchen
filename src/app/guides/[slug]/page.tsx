@@ -136,22 +136,25 @@ export default async function GuidePage({ params }: GuidePageProps) {
             <div className="text-xl text-gray-700 leading-relaxed mb-12 p-6 bg-gray-50 rounded-xl border-l-4 border-[#cc7800]">
               {guide.content?.introduction}
             </div>
-
-            {/* Content Sections */}
-            <div className="grid md:grid-cols-2 gap-8 my-12">
-              <ul className="space-y-2">
-                  {guide.content?.tips?.map((pro, index) => (
-                    <li
-                      key={index}
-                      className="text-green-700 flex items-start gap-2"
-                    >
-                       {pro}
+          
+            {/* Steps Section */}
+            {guide.content?.steps && guide.content.steps.length > 0 && (
+              <div className="mb-12">
+                <h2 className="text-2xl font-bold text-gray-900 mb-6">Steps</h2>
+                <ol className="space-y-6 list-decimal list-inside">
+                  {guide.content.steps.map((step, index) => (
+                    <li key={index} className="text-gray-700 leading-relaxed pl-2">
+                      <span className="font-bold text-[#cc7800]">
+                        Step {index + 1}:
+                      </span>{" "}
+                      {step}
                     </li>
                   ))}
-                </ul>
-            </div>
-
-            
+                </ol>
+              </div>
+            )}
+          
+            {/* Helpful Tips & Warnings */}
             <div className="grid md:grid-cols-2 gap-8 my-12">
               <div className="bg-green-50 p-6 rounded-xl border border-green-200">
                 <h3 className="text-xl font-bold text-green-800 mb-4 flex items-center gap-2">
@@ -159,26 +162,20 @@ export default async function GuidePage({ params }: GuidePageProps) {
                 </h3>
                 <ul className="space-y-2">
                   {guide.content?.tips?.map((pro, index) => (
-                    <li
-                      key={index}
-                      className="text-green-700 flex items-start gap-2"
-                    >
+                    <li key={index} className="text-green-700 flex items-start gap-2">
                       ✔ {pro}
                     </li>
                   ))}
                 </ul>
               </div>
-
+          
               <div className="bg-red-50 p-6 rounded-xl border border-red-200">
                 <h3 className="text-xl font-bold text-red-800 mb-4 flex items-center gap-2">
                   Warnings
                 </h3>
                 <ul className="space-y-2">
                   {guide.content?.warnings?.map((con, index) => (
-                    <li
-                      key={index}
-                      className="text-red-700 flex items-start gap-2"
-                    >
+                    <li key={index} className="text-red-700 flex items-start gap-2">
                       ✖ {con}
                     </li>
                   ))}
