@@ -19,46 +19,16 @@ export default defineType({
       type: "image",
       options: { hotspot: true },
     }),
-    defineField({
-      name: "category",
-      title: "Category",
-      type: "reference",
-      to: [{ type: "bigApplianceCategory" }],
-    }),
     defineField({ name: "date", title: "Date", type: "date" }),
-    defineField({ name: "rating", title: "Rating", type: "number" }),
-    defineField({ name: "author", title: "Author", type: "string" }),
-    defineField({ name: "readTime", title: "Read Time", type: "string" }),
-
-    // Content Section
     defineField({
       name: "content",
       title: "Content",
       type: "object",
       fields: [
-        defineField({
-          name: "introduction",
-          title: "Introduction",
-          type: "text",
-        }),
-        defineField({
-          name: "steps",
-          title: "Steps",
-          type: "array",
-          of: [{ type: "string" }],
-        }),
-        defineField({
-          name: "tips",
-          title: "Helpful Tips",
-          type: "array",
-          of: [{ type: "string" }],
-        }),
-        defineField({
-          name: "warnings",
-          title: "Warnings",
-          type: "array",
-          of: [{ type: "string" }],
-        }),
+        defineField({ name: "introduction", title: "Introduction", type: "text" }),
+        defineField({ name: "steps", title: "Steps", type: "array", of: [{ type: "string" }] }),
+        defineField({ name: "tips", title: "Helpful Tips", type: "array", of: [{ type: "string" }] }),
+        defineField({ name: "warnings", title: "Warnings", type: "array", of: [{ type: "string" }] }),
       ],
     }),
   ],
