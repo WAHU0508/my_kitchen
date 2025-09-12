@@ -1,5 +1,3 @@
-//app/guides/[slug]/page.tsx
-
 import { notFound } from "next/navigation"
 import Image from "next/image"
 import Link from "next/link"
@@ -42,9 +40,6 @@ export default async function GuidePage({ params }: GuidePageProps) {
       description,
       image,
       date,
-      rating,
-      author,
-      readTime,
       content
     }`,
     { slug }
@@ -82,36 +77,12 @@ export default async function GuidePage({ params }: GuidePageProps) {
             </nav>
 
             <div className="text-center">
-
               <h1 className="text-4xl sm:text-5xl font-bold text-gray-900 mb-6 text-balance">
                 {guide.title}
               </h1>
 
               <div className="flex items-center justify-center gap-6 text-gray-600 mb-8">
-                <div className="flex items-center gap-2">
-                  <div className="w-8 h-8 bg-[#cc7800] rounded-full flex items-center justify-center text-white text-sm font-medium">
-                    {guide.author
-                      ?.split(" ")
-                      .map((n: string) => n[0])
-                      .join("")}
-                  </div>
-                  <span>By {guide.author}</span>
-                </div>
-                <span>•</span>
                 <span>{guide.date}</span>
-                <span>•</span>
-                <span>{guide.readTime}</span>
-                <span>•</span>
-                <div className="flex items-center gap-1">
-                  <svg
-                    className="w-4 h-4 text-yellow-500"
-                    fill="currentColor"
-                    viewBox="0 0 20 20"
-                  >
-                    <path d="M9.049 2.927c.3-.921 1.603-.921 1.902 0l1.519 4.674a1 1 0 00.95.69h4.915c.969 0 1.371 1.24.588 1.81l-3.976 2.888a1 1 0 00-.363 1.118l1.518 4.674c.3.922-.755 1.688-1.538 1.118l-3.976-2.888a1 1 0 00-1.176 0l-3.976 2.888c-.783.57-1.838-.197-1.538-1.118l1.518-4.674a1 1 0 00-.363-1.118l-3.976-2.888c-.784-.57-.38-1.81.588-1.81h4.914a1 1 0 00.951-.69l1.519-4.674z" />
-                  </svg>
-                  <span className="font-medium">{guide.rating}</span>
-                </div>
               </div>
             </div>
           </div>
