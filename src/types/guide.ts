@@ -13,12 +13,6 @@ export type Guide = {
   title: string
   description: string
   image?: Image
-  category?: {
-    title: string
-  }
   date: string
-  rating: number
-  author: string
-  readTime: string
   content: GuideContent
 }
