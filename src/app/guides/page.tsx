@@ -26,7 +26,7 @@ export default function BigguidesPage() {
   useEffect(() => {
     const fetchData = async () => {
       const data = await client.fetch(
-        `*[_type == "guides"]{
+        `*[_type == "guide"]{
           _id,
           title,
           slug,
@@ -142,7 +142,7 @@ export default function BigguidesPage() {
                   <div className="flex items-center justify-between">
                     <span className="text-sm text-gray-500">{guide.date}</span>
                     <Link
-                      href={`/big-guides/${guide.slug?.current || guide._id}`}
+                      href={`/guides/${guide.slug?.current || guide._id}`}
                       className="text-[#cc7800] font-medium hover:text-[#b36b00] transition-colors duration-200 flex items-center gap-1"
                     >
                       Read Review →
